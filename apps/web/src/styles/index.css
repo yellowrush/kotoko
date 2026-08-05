@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+@source '../../../packages/ui/src/**/*.{ts,tsx}';
+
+@theme {
+  --color-brand-50: #fff4ec;
+  --color-brand-100: #ffe6d3;
+  --color-brand-200: #ffc9a5;
+  --color-brand-300: #ffa46e;
+  --color-brand-400: #ff7d38;
+  --color-brand-500: #f95f14;
+  --color-brand-600: #e04a08;
+  --color-brand-700: #b93a06;
+  --color-brand-800: #932f05;
+  --color-brand-900: #772704;
+
+  --font-sans: 'Noto Sans JP', 'Noto Sans SC', 'Noto Sans TC', system-ui, -apple-system, sans-serif;
+
+  --radius-button: 0.75rem;
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-gray-50 font-sans text-gray-900 antialiased;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-600;
+  }
+}
+
+@layer utilities {
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}

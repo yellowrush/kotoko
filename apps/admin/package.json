@@ -1,0 +1,12 @@
+{
+  "name": "@kodoko/admin",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "echo \"admin placeholder\"",
+    "lint": "echo \"admin placeholder\"",
+    "typecheck": "echo \"admin placeholder\"",
+    "test": "echo \"admin placeholder\""
+  }
+}

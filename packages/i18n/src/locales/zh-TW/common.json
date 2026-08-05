@@ -1,0 +1,71 @@
+{
+  "common": {
+    "appName": "Kodoko",
+    "tagline": "今天和孩子去哪裡？",
+    "loading": "載入中…",
+    "error": "發生錯誤",
+    "retry": "重試",
+    "save": "儲存",
+    "cancel": "取消",
+    "delete": "刪除",
+    "edit": "編輯",
+    "close": "關閉"
+  },
+  "nav": {
+    "home": "首頁",
+    "places": "去處",
+    "knowledge": "育兒知識",
+    "policies": "政策制度",
+    "profile": "我的頁面",
+    "settings": "設定"
+  },
+  "home": {
+    "title": "今天去哪裡？",
+    "currentChild": "目前兒童",
+    "weeklyKnowledge": "本週育兒知識",
+    "policyReminders": "政策提醒",
+    "localDataStatus": "本機資料",
+    "noChildYet": "先登記孩子資料吧",
+    "addChild": "新增孩子"
+  },
+  "onboarding": {
+    "title": "歡迎使用 Kodoko",
+    "description": "孩子資料僅保存在此裝置上。",
+    "start": "開始使用"
+  },
+  "children": {
+    "title": "孩子",
+    "new": "新增孩子",
+    "name": "暱稱",
+    "birthDate": "出生日期",
+    "age": "月齡",
+    "editTitle": "編輯孩子",
+    "noChildren": "尚未登記孩子資料"
+  },
+  "places": {
+    "title": "去處",
+    "map": "地圖",
+    "list": "清單"
+  },
+  "knowledge": {
+    "title": "育兒知識",
+    "byAge": "依年齡匹配的知識"
+  },
+  "policies": {
+    "title": "政策制度",
+    "disclaimer": "此資訊為官方資訊的摘要。詳細內容請務必查看官方頁面。"
+  },
+  "login": {
+    "title": "登入",
+    "description": "登入為選項。未登入也能使用核心功能。"
+  },
+  "settings": {
+    "title": "設定",
+    "localData": "裝置內資料",
+    "localDataNotice": "孩子資料僅保存在目前裝置。清除瀏覽器資料或更換裝置可能導致資料遺失。",
+    "export": "匯出資料",
+    "import": "匯入資料",
+    "deleteAll": "刪除全部本機資料",
+    "language": "語言"
+  }
+}

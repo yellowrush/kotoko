@@ -1,0 +1,29 @@
+{
+  "name": "@kodoko/local-db",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:migrations": "vitest run src/__tests__/migration.test.ts"
+  },
+  "dependencies": {
+    "@kodoko/config": "workspace:*",
+    "@kodoko/domain": "workspace:*",
+    "dexie": "^4.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^22.10.0",
+    "fake-indexeddb": "^6.0.0",
+    "vitest": "^3.0.0",
+    "typescript": "^5.8.0"
+  }
+}

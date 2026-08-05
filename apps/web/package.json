@@ -1,0 +1,49 @@
+{
+  "name": "@kodoko/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:e2e": "echo \"E2E not configured yet (Playwright lands in Sprint 8)\""
+  },
+  "dependencies": {
+    "@kodoko/api-client": "workspace:*",
+    "@kodoko/domain": "workspace:*",
+    "@kodoko/i18n": "workspace:*",
+    "@kodoko/local-db": "workspace:*",
+    "@kodoko/policy-engine": "workspace:*",
+    "@kodoko/recommendation": "workspace:*",
+    "@kodoko/ui": "workspace:*",
+    "@tanstack/react-query": "^5.62.0",
+    "i18next": "^24.2.0",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-i18next": "^15.2.0",
+    "react-router-dom": "^7.1.0",
+    "zod": "^3.24.0",
+    "zustand": "^5.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@kodoko/config": "workspace:*",
+    "@tailwindcss/vite": "^4.0.0",
+    "@testing-library/jest-dom": "^6.6.0",
+    "@testing-library/react": "^16.1.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "jsdom": "^26.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "^5.8.0",
+    "vite": "^6.0.0",
+    "vite-plugin-pwa": "^0.21.1",
+    "vitest": "^3.0.0"
+  }
+}

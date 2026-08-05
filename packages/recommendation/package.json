@@ -1,0 +1,25 @@
+{
+  "name": "@kodoko/recommendation",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@kodoko/config": "workspace:*",
+    "@kodoko/domain": "workspace:*"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@types/node": "^22.20.1",
+    "typescript": "^5.8.0",
+    "vitest": "^3.0.0"
+  }
+}

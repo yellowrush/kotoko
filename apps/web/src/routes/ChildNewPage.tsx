@@ -1,8 +1,10 @@
 import { type FormEvent, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import { isValidBirthDate } from '@kodoko/domain';
 import { Button } from '@kodoko/ui';
 import { useChildren } from '../hooks/useChildren';
+import { AgeLabel } from '../components/AgeLabel';
 import { PageHeader } from '../components/PageHeader';
 
 export function ChildNewPage() {
@@ -12,9 +14,11 @@ export function ChildNewPage() {
   const [name, setName] = useState('');
   const [birthDate, setBirthDate] = useState('');
 
+  const birthDateValid = birthDate !== '' && isValidBirthDate(birthDate);
+
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
-    if (!name.trim() || !birthDate || creating) return;
+    if (!name.trim() || !birthDateValid || creating) return;
     const created = await create({ displayName: name, birthDate });
     navigate(`/children/${created.id}/edit`);
   }
@@ -39,8 +43,16 @@ export function ChildNewPage() {
             onChange={(e) => setBirthDate(e.target.value)}
             className="rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-brand-600 focus:outline-none"
           />
+          {birthDate !== '' && !birthDateValid && (
+            <span className="text-xs text-red-600">{t('children.invalidBirthDate')}</span>
+          )}
+          {birthDateValid && (
+            <span className="text-xs text-gray-500">
+              <AgeLabel birthDate={birthDate} />
+            </span>
+          )}
         </label>
-        <Button type="submit" disabled={creating || !name.trim() || !birthDate}>
+        <Button type="submit" disabled={creating || !name.trim() || !birthDateValid}>
           {t('save')}
         </Button>
       </form>

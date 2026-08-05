@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { calculateAgeMonths, calculateAge, isValidBirthDate } from '../src/age';
+import { calculateAgeMonths, calculateAge, isValidBirthDate, formatAgeInMonths } from '../src/age';
 
 describe('calculateAgeMonths', () => {
   it('computes exact month difference', () => {
@@ -48,6 +48,24 @@ describe('calculateAge', () => {
       years: 3,
       months: 2,
     });
+  });
+});
+
+describe('formatAgeInMonths', () => {
+  it('formats in Japanese by default', () => {
+    expect(formatAgeInMonths(38)).toBe('3歳2ヶ月');
+    expect(formatAgeInMonths(9)).toBe('9ヶ月');
+  });
+
+  it('localizes for zh-CN and zh-TW', () => {
+    expect(formatAgeInMonths(38, 'zh-CN')).toBe('3岁2个月');
+    expect(formatAgeInMonths(9, 'zh-CN')).toBe('9个月');
+    expect(formatAgeInMonths(38, 'zh-TW')).toBe('3歲2個月');
+    expect(formatAgeInMonths(9, 'zh-TW')).toBe('9個月');
+  });
+
+  it('falls back to Japanese for unknown locales', () => {
+    expect(formatAgeInMonths(15, 'fr')).toBe('1歳3ヶ月');
   });
 });
 

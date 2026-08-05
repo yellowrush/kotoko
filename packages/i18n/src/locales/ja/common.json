@@ -26,7 +26,8 @@
     "policyReminders": "制度リマインダー",
     "localDataStatus": "ローカルデータ",
     "noChildYet": "こどもを登録しましょう",
-    "addChild": "こどもを追加"
+    "addChild": "こどもを追加",
+    "switchChild": "こどもを切り替える"
   },
   "onboarding": {
     "title": "ようこそコドコへ",
@@ -40,7 +41,10 @@
     "birthDate": "生年月日",
     "age": "月齢",
     "editTitle": "こどもを編集",
-    "noChildren": "こどもがまだ登録されていません"
+    "noChildren": "こどもがまだ登録されていません",
+    "selectChild": "{{name}}を選択",
+    "invalidBirthDate": "有効な生年月日を入力してください",
+    "notFound": "こどもが見つかりません"
   },
   "places": {
     "title": "おでかけ先",
@@ -65,6 +69,10 @@
     "localDataNotice": "こども情報はこの端末にのみ保存されます。ブラウザのデータを消去したり、端末を変更すると情報が失われる場合があります。",
     "export": "データを書き出す",
     "import": "データを取り込む",
+    "importMode": {
+      "merge": "マージ",
+      "overwrite": "上書き"
+    },
     "deleteAll": "すべてのローカルデータを削除",
     "language": "言語"
   }

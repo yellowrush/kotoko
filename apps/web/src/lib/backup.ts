@@ -1,8 +1,13 @@
 import { getDb } from './db';
-import { exportLocalBackup, importLocalBackup, type ImportMode } from '@kodoko/local-db';
+import {
+  clearAllData,
+  exportLocalBackupJson,
+  importLocalBackup,
+  type ImportMode,
+} from '@kodoko/local-db';
 
 export async function exportLocalData(): Promise<void> {
-  const raw = await exportLocalBackup(getDb());
+  const raw = await exportLocalBackupJson(getDb());
   const blob = new Blob([raw], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
   const anchor = document.createElement('a');
@@ -16,4 +21,8 @@ export async function importLocalData(file: File, mode: ImportMode = 'merge'): P
   const raw = await file.text();
   const result = await importLocalBackup(getDb(), raw, mode);
   return result.created;
+}
+
+export async function deleteLocalData(): Promise<void> {
+  await clearAllData(getDb());
 }

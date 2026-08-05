@@ -44,11 +44,20 @@ export function calculateAge(birthDate: string, asOf: Date = new Date()): AgeInM
   };
 }
 
-export function formatAgeInMonths(totalMonths: number, _locale?: string): string {
+const AGE_UNITS: Record<string, { years: string; months: string }> = {
+  ja: { years: '歳', months: 'ヶ月' },
+  'zh-CN': { years: '岁', months: '个月' },
+  'zh-TW': { years: '歲', months: '個月' },
+};
+
+export type AgeLocale = 'ja' | 'zh-CN' | 'zh-TW';
+
+export function formatAgeInMonths(totalMonths: number, locale: AgeLocale | string = 'ja'): string {
+  const units = AGE_UNITS[locale] ?? { years: '歳', months: 'ヶ月' };
   const years = Math.floor(totalMonths / 12);
   const months = totalMonths % 12;
-  if (years > 0) return `${years}歳${months}ヶ月`;
-  return `${months}ヶ月`;
+  if (years > 0) return `${years}${units.years}${months}${units.months}`;
+  return `${months}${units.months}`;
 }
 
 export function isValidBirthDate(iso: string): boolean {

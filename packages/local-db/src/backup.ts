@@ -1,28 +1,67 @@
 import { z } from 'zod';
+import type {
+  ChildProfile,
+  FavoritePlace,
+  KnowledgeProgress,
+  PolicyTaskState,
+  UserPreference,
+} from '@kodoko/domain';
 import type { KodokoLocalDatabase } from './db';
-import { zodChildProfile } from './schemas';
+import { zodLocalBackup } from './schemas';
 
 export const LOCAL_BACKUP_VERSION = 1;
 
-const zodLocalBackup = z.object({
-  app: z.literal('kodoko'),
-  version: z.number().int().positive(),
-  exportedAt: z.string().datetime({ offset: true }),
-  children: z.array(zodChildProfile),
-  preferences: z.array(z.any()),
-  favorites: z.array(z.any()),
-  knowledgeProgress: z.array(z.any()),
-  policyTasks: z.array(z.any()),
-});
+type BackupEntities = {
+  children: ChildProfile[];
+  preferences: UserPreference[];
+  favorites: FavoritePlace[];
+  knowledgeProgress: KnowledgeProgress[];
+  policyTasks: PolicyTaskState[];
+};
 
-export type LocalBackup = z.infer<typeof zodLocalBackup>;
-export type BackupValidationResult =
+export type LocalBackup = {
+  app: 'kodoko';
+  version: number;
+  exportedAt: string;
+} & BackupEntities;
+
+type Snapshot = BackupEntities;
+
+type BackupValidationResult =
   | { ok: true; version: number }
   | { ok: false; reason: 'invalid-header' | 'unsupported-version' | 'invalid-schema'; issues: z.ZodIssue[] };
 
+function backupTables(db: KodokoLocalDatabase) {
+  return [db.children, db.preferences, db.favorites, db.knowledgeProgress, db.policyTasks] as const;
+}
+
+async function snapshotAll(db: KodokoLocalDatabase): Promise<Snapshot> {
+  const [children, preferences, favorites, knowledgeProgress, policyTasks] = await Promise.all([
+    db.children.toArray(),
+    db.preferences.toArray(),
+    db.favorites.toArray(),
+    db.knowledgeProgress.toArray(),
+    db.policyTasks.toArray(),
+  ]);
+  return { children, preferences, favorites, knowledgeProgress, policyTasks };
+}
+
+async function restoreSnapshot(db: KodokoLocalDatabase, snapshot: Snapshot): Promise<void> {
+  await db.transaction('rw', ...backupTables(db), async () => {
+    for (const table of backupTables(db)) {
+      await table.clear();
+    }
+    await db.children.bulkPut(snapshot.children);
+    await db.preferences.bulkPut(snapshot.preferences);
+    await db.favorites.bulkPut(snapshot.favorites);
+    await db.knowledgeProgress.bulkPut(snapshot.knowledgeProgress);
+    await db.policyTasks.bulkPut(snapshot.policyTasks);
+  });
+}
+
 /**
  * 校验备份内容，防止原型污染与任意脚本内容。
- * 仅允许已知字段，多余字段会在解析时被剥离。
+ * 通过 strict 模式只接受已知字段与合法值，未知字段会被拒绝。
  */
 export function validateBackup(input: unknown): BackupValidationResult {
   if (Array.isArray(input) || typeof input !== 'object' || input === null) {
@@ -48,32 +87,39 @@ export function validateBackup(input: unknown): BackupValidationResult {
 
 export type ImportMode = 'overwrite' | 'merge';
 
-export async function exportLocalBackup(db: KodokoLocalDatabase): Promise<string> {
-  const [children, preferences, favorites, knowledgeProgress, policyTasks] = await Promise.all([
-    db.children.toArray(),
-    db.preferences.toArray(),
-    db.favorites.toArray(),
-    db.knowledgeProgress.toArray(),
-    db.policyTasks.toArray(),
-  ]);
+/** 返回当前本地数据快照（不含备份头）。 */
+export async function exportLocalBackup(db: KodokoLocalDatabase): Promise<Snapshot> {
+  return snapshotAll(db);
+}
 
-  const backup: LocalBackup = {
-    app: 'kodoko',
-    version: LOCAL_BACKUP_VERSION,
-    exportedAt: new Date().toISOString(),
-    children,
-    preferences,
-    favorites,
-    knowledgeProgress,
-    policyTasks,
-  };
+/** 导出为带 app 标识头的 JSON 字符串，用于下载/恢复。 */
+export async function exportLocalBackupJson(db: KodokoLocalDatabase): Promise<string> {
+  const backup = await snapshotAll(db);
+  return JSON.stringify(
+    {
+      app: 'kodoko',
+      version: LOCAL_BACKUP_VERSION,
+      exportedAt: new Date().toISOString(),
+      ...backup,
+    } satisfies LocalBackup,
+    null,
+    2,
+  );
+}
 
-  return JSON.stringify(backup, null, 2);
+/** 删除全部本地数据（儿童/偏好/收藏/已读/政策任务）。不可恢复，调用前由 UI 确认。 */
+export async function clearAllData(db: KodokoLocalDatabase): Promise<void> {
+  await db.transaction('rw', ...backupTables(db), async () => {
+    for (const table of backupTables(db)) {
+      await table.clear();
+    }
+  });
 }
 
 /**
- * 导入备份。导入前生成临时备份，失败时保持原数据。
- * overwrite 会先清空目标表，merge 则保留两端数据（按主键去重，冲突时以导入数据为准）。
+ * 导入备份。导入前生成临时备份（内存快照），失败时恢复原数据。
+ * overwrite 先清空目标表；merge 保留两端数据（按主键去重，冲突以导入数据为准）。
+ * 两种模式均在同一事务内执行，配合快照恢复保证失败时保持原数据。
  */
 export async function importLocalBackup(
   db: KodokoLocalDatabase,
@@ -92,35 +138,26 @@ export async function importLocalBackup(
     throw new Error(`INVALID_BACKUP:${validation.reason}`);
   }
 
-  const backup = validatedBackup(parsed);
-  if (mode === 'overwrite') {
-    await db.transaction('rw', db.children, db.preferences, db.favorites, db.knowledgeProgress, db.policyTasks, async () => {
-      await db.children.clear();
-      await db.preferences.clear();
-      await db.favorites.clear();
-      await db.knowledgeProgress.clear();
-      await db.policyTasks.clear();
+  const backup = zodLocalBackup.parse(parsed);
+  const snapshot = await snapshotAll(db);
+
+  try {
+    await db.transaction('rw', ...backupTables(db), async () => {
+      if (mode === 'overwrite') {
+        for (const table of backupTables(db)) {
+          await table.clear();
+        }
+      }
       await db.children.bulkAdd(backup.children);
-      await db.preferences.bulkAdd(backup.preferences as never[]);
-      await db.favorites.bulkAdd(backup.favorites as never[]);
-      await db.knowledgeProgress.bulkAdd(backup.knowledgeProgress as never[]);
-      await db.policyTasks.bulkAdd(backup.policyTasks as never[]);
+      await db.preferences.bulkPut(backup.preferences);
+      await db.favorites.bulkPut(backup.favorites);
+      await db.knowledgeProgress.bulkPut(backup.knowledgeProgress);
+      await db.policyTasks.bulkPut(backup.policyTasks);
     });
-  } else {
-    await db.children.bulkPut(backup.children);
-    await db.preferences.bulkPut(backup.preferences as never[]);
-    await db.favorites.bulkPut(backup.favorites as never[]);
-    await db.knowledgeProgress.bulkPut(backup.knowledgeProgress as never[]);
-    await db.policyTasks.bulkPut(backup.policyTasks as never[]);
+  } catch (err) {
+    await restoreSnapshot(db, snapshot);
+    throw err;
   }
 
   return { created: backup.children.length };
-}
-
-function validatedBackup(input: unknown): LocalBackup {
-  const result = zodLocalBackup.safeParse(input);
-  if (!result.success) {
-    throw new Error(`INVALID_BACKUP:${result.error.issues.map((i) => i.path.join('.')).join(',')}`);
-  }
-  return result.data;
 }

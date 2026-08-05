@@ -26,7 +26,8 @@
     "policyReminders": "政策提醒",
     "localDataStatus": "本機資料",
     "noChildYet": "先登記孩子資料吧",
-    "addChild": "新增孩子"
+    "addChild": "新增孩子",
+    "switchChild": "切換孩子"
   },
   "onboarding": {
     "title": "歡迎使用 Kodoko",
@@ -40,7 +41,10 @@
     "birthDate": "出生日期",
     "age": "月齡",
     "editTitle": "編輯孩子",
-    "noChildren": "尚未登記孩子資料"
+    "noChildren": "尚未登記孩子資料",
+    "selectChild": "選擇{{name}}",
+    "invalidBirthDate": "請輸入有效的出生日期",
+    "notFound": "找不到該孩子"
   },
   "places": {
     "title": "去處",
@@ -65,6 +69,10 @@
     "localDataNotice": "孩子資料僅保存在目前裝置。清除瀏覽器資料或更換裝置可能導致資料遺失。",
     "export": "匯出資料",
     "import": "匯入資料",
+    "importMode": {
+      "merge": "合併",
+      "overwrite": "覆寫"
+    },
     "deleteAll": "刪除全部本機資料",
     "language": "語言"
   }

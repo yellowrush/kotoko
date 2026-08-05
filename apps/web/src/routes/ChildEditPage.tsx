@@ -1,8 +1,10 @@
 import { type FormEvent, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { isValidBirthDate } from '@kodoko/domain';
 import { Button } from '@kodoko/ui';
 import { useChildren } from '../hooks/useChildren';
+import { AgeLabel } from '../components/AgeLabel';
 import { PageHeader } from '../components/PageHeader';
 
 export function ChildEditPage() {
@@ -22,9 +24,11 @@ export function ChildEditPage() {
     }
   }, [child]);
 
+  const birthDateValid = birthDate !== '' && isValidBirthDate(birthDate);
+
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
-    if (!childId || !name.trim() || !birthDate) return;
+    if (!childId || !name.trim() || !birthDateValid) return;
     await update(childId, { displayName: name, birthDate });
     navigate('/children');
   }
@@ -36,7 +40,7 @@ export function ChildEditPage() {
   }
 
   if (!loading && !child) {
-    return <p className="text-sm text-gray-500">Not found</p>;
+    return <p className="text-sm text-gray-500">{t('children.notFound')}</p>;
   }
 
   return (
@@ -59,8 +63,18 @@ export function ChildEditPage() {
             onChange={(e) => setBirthDate(e.target.value)}
             className="rounded-lg border border-gray-300 px-3 py-2 text-sm focus:border-brand-600 focus:outline-none"
           />
+          {birthDate !== '' && !birthDateValid && (
+            <span className="text-xs text-red-600">{t('children.invalidBirthDate')}</span>
+          )}
+          {birthDateValid && (
+            <span className="text-xs text-gray-500">
+              <AgeLabel birthDate={birthDate} />
+            </span>
+          )}
         </label>
-        <Button type="submit">{t('save')}</Button>
+        <Button type="submit" disabled={!name.trim() || !birthDateValid}>
+          {t('save')}
+        </Button>
         <Button type="button" variant="danger" onClick={onDelete}>
           {t('delete')}
         </Button>

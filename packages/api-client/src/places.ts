@@ -28,12 +28,12 @@ export async function fetchPlaces(
   client: ApiClient,
   query: PlaceQuery = {},
 ): Promise<PlaceDTO[]> {
-  const data = await client.get<unknown>(`/api/v1/places${buildQueryString(query)}`);
+  const data = await client.get<unknown>(`/places${buildQueryString(query)}`);
   const parsed = placeListSchema.parse(data);
   return parsed.places;
 }
 
 export async function fetchPlace(client: ApiClient, placeId: string): Promise<PlaceDTO> {
-  const data = await client.get<unknown>(`/api/v1/places/${placeId}`);
+  const data = await client.get<unknown>(`/places/${placeId}`);
   return placeSchema.parse(data);
 }

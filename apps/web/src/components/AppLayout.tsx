@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from 'react-router-dom';
+import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const NAV_ITEMS = [
@@ -8,8 +8,12 @@ const NAV_ITEMS = [
   { to: '/policies', key: 'policies' },
 ] as const;
 
+const FULL_BLEED_ROUTES = new Set(['/places']);
+
 export function AppLayout() {
   const { t } = useTranslation();
+  const { pathname } = useLocation();
+  const fullBleed = FULL_BLEED_ROUTES.has(pathname);
 
   return (
     <div className="mx-auto flex min-h-screen max-w-lg flex-col">
@@ -19,7 +23,7 @@ export function AppLayout() {
         </div>
       </header>
 
-      <main className="flex-1 px-4 pb-20 pt-4">
+      <main className={fullBleed ? 'flex-1 overflow-hidden' : 'flex-1 px-4 pb-20 pt-4'}>
         <Outlet />
       </main>
 

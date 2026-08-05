@@ -38,6 +38,18 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,svg,ico}'],
         navigateFallback: '/index.html',
+        runtimeCaching: [
+          {
+            // 公共内容：地点数据使用 Stale While Revalidate 缓存（AGENTS.md 10.2）
+            urlPattern: ({ request, url }) =>
+              request.method === 'GET' && url.pathname.startsWith('/api/v1/places'),
+            handler: 'StaleWhileRevalidate',
+            options: {
+              cacheName: 'kodoko-places',
+              expiration: { maxEntries: 50, maxAgeSeconds: 60 * 60 * 24 * 30 },
+            },
+          },
+        ],
       },
     }),
   ],

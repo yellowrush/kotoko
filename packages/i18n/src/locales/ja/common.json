@@ -9,7 +9,10 @@
     "cancel": "キャンセル",
     "delete": "削除",
     "edit": "編集",
-    "close": "閉じる"
+    "close": "閉じる",
+    "details": "詳細",
+    "expand": "開く",
+    "collapse": "閉じる"
   },
   "nav": {
     "home": "ホーム",
@@ -49,7 +52,66 @@
   "places": {
     "title": "おでかけ先",
     "map": "マップ",
-    "list": "リスト"
+    "list": "リスト",
+    "locate": "現在地へ",
+    "locationDenied": "位置情報が利用できません。マップを動かして探せます。",
+    "mapTilesUnavailable": "地図データを読み込めません。オフライン中は地点一覧をご利用ください。",
+    "spotsNear": "近くのスポット ({{count}})",
+    "spots": "スポット",
+    "noPlacesInRange": "この範囲にスポットが見つかりません。",
+    "notAgeSuitable": "年齢対象外",
+    "suitableAgeLabel": "推奨年齢",
+    "allAgesLabel": "全年齢OK",
+    "monthsUnit": "ヶ月",
+    "priceLabel": "料金目安",
+    "free": "無料",
+    "backToMap": "マップに戻る",
+    "favorite": "お気に入りに追加",
+    "favorited": "お気に入り済み",
+    "officialSite": "公式サイト",
+    "categories": {
+      "park": "公園",
+      "playground": "遊具公園",
+      "museum": "博物館",
+      "zoo": "動物園",
+      "aquarium": "水族館",
+      "library": "図書館",
+      "facility": "施設",
+      "indoor-play": "屋内遊び場",
+      "shop": "ショップ",
+      "restaurant": "レストラン",
+      "event": "イベント",
+      "other": "その他"
+    },
+    "filters": {
+      "all": "すべて",
+      "allArea": "全地域",
+      "r3": "3km",
+      "r5": "5km",
+      "r10": "10km",
+      "r20": "20km"
+    },
+    "filterIndoor": {
+      "indoor": "屋内",
+      "outdoor": "屋外",
+      "mixed": "両方"
+    },
+    "tags": {
+      "dining": "食事あり",
+      "group-play": "みんなで遊べる",
+      "stroller-friendly": "ベビーカーOK",
+      "quiet-zone": "静か"
+    },
+    "indoorOutdoor": {
+      "indoor": "屋内",
+      "outdoor": "屋外",
+      "mixed": "屋内・外"
+    },
+    "facilities": {
+      "stroller": "ベビーカー",
+      "nursingRoom": "授乳室",
+      "diaper": "オムツ替え"
+    }
   },
   "knowledge": {
     "title": "子育て知識",

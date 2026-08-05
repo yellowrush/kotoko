@@ -1,4 +1,9 @@
-import { createDatabase, DexieChildRepository, type KodokoLocalDatabase } from '@kodoko/local-db';
+import {
+  createDatabase,
+  DexieChildRepository,
+  FavoriteRepository,
+  type KodokoLocalDatabase,
+} from '@kodoko/local-db';
 
 let db: KodokoLocalDatabase | null = null;
 
@@ -9,4 +14,8 @@ export function getDb(): KodokoLocalDatabase {
 
 export function getChildRepository(): DexieChildRepository {
   return new DexieChildRepository(getDb());
+}
+
+export function getFavoriteRepository(): FavoriteRepository {
+  return new FavoriteRepository(getDb());
 }

@@ -9,7 +9,10 @@
     "cancel": "取消",
     "delete": "删除",
     "edit": "编辑",
-    "close": "关闭"
+    "close": "关闭",
+    "details": "详情",
+    "expand": "展开",
+    "collapse": "收起"
   },
   "nav": {
     "home": "首页",
@@ -49,7 +52,66 @@
   "places": {
     "title": "去处",
     "map": "地图",
-    "list": "列表"
+    "list": "列表",
+    "locate": "定位到我",
+    "locationDenied": "无法获取定位。可以拖动地图查找。",
+    "mapTilesUnavailable": "无法加载地图数据。离线时可使用地点列表。",
+    "spotsNear": "附近地点 ({{count}})",
+    "spots": "地点",
+    "noPlacesInRange": "此范围内没有找到地点。",
+    "notAgeSuitable": "年龄不符",
+    "suitableAgeLabel": "适合年龄",
+    "allAgesLabel": "全年龄OK",
+    "monthsUnit": "个月",
+    "priceLabel": "费用参考",
+    "free": "免费",
+    "backToMap": "返回地图",
+    "favorite": "加入收藏",
+    "favorited": "已收藏",
+    "officialSite": "官网",
+    "categories": {
+      "park": "公园",
+      "playground": "游乐场",
+      "museum": "博物馆",
+      "zoo": "动物园",
+      "aquarium": "水族馆",
+      "library": "图书馆",
+      "facility": "设施",
+      "indoor-play": "室内游乐",
+      "shop": "商场",
+      "restaurant": "餐厅",
+      "event": "活动",
+      "other": "其他"
+    },
+    "filters": {
+      "all": "全部",
+      "allArea": "全区域",
+      "r3": "3km",
+      "r5": "5km",
+      "r10": "10km",
+      "r20": "20km"
+    },
+    "filterIndoor": {
+      "indoor": "室内",
+      "outdoor": "室外",
+      "mixed": "两者"
+    },
+    "tags": {
+      "dining": "可就餐",
+      "group-play": "适合多人",
+      "stroller-friendly": "可推婴儿车",
+      "quiet-zone": "安静"
+    },
+    "indoorOutdoor": {
+      "indoor": "室内",
+      "outdoor": "室外",
+      "mixed": "室内外"
+    },
+    "facilities": {
+      "stroller": "婴儿车",
+      "nursingRoom": "哺乳室",
+      "diaper": "尿布台"
+    }
   },
   "knowledge": {
     "title": "育儿知识",

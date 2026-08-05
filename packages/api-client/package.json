@@ -13,7 +13,9 @@
     "test": "vitest run"
   },
   "dependencies": {
-    "@kodoko/config": "workspace:*"
+    "@kodoko/config": "workspace:*",
+    "@kodoko/domain": "workspace:*",
+    "zod": "^3.24.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.0.0",

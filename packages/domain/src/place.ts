@@ -12,6 +12,12 @@ export type PlaceCategory =
   | 'event'
   | 'other';
 
+export type PlaceTag =
+  | 'dining'
+  | 'group-play'
+  | 'stroller-friendly'
+  | 'quiet-zone';
+
 export type IndoorOutdoor = 'indoor' | 'outdoor' | 'mixed';
 
 export type ContentStatus = 'draft' | 'published' | 'archived';
@@ -31,6 +37,9 @@ export type Place = {
   strollerFriendly?: boolean;
   nursingRoom?: boolean;
   diaperChanging?: boolean;
+  tags?: PlaceTag[];
+  imageUrl?: string;
+  shortDescription?: string;
   sourceUrl?: string;
   sourceCheckedAt?: string;
   status: ContentStatus;

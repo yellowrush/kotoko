@@ -2,7 +2,6 @@ import { createBrowserRouter, Navigate } from 'react-router-dom';
 import { AppLayout } from '../components/AppLayout';
 import { HomePage } from '../routes/HomePage';
 import { OnboardingPage } from '../routes/OnboardingPage';
-import { PlacesPage } from '../routes/PlacesPage';
 import { PlacesMapPage } from '../routes/PlacesMapPage';
 import { PlaceDetailPage } from '../routes/PlaceDetailPage';
 import { ChildrenPage } from '../routes/ChildrenPage';
@@ -25,8 +24,8 @@ export const router = createBrowserRouter([
       { index: true, element: <Navigate to="/home" replace /> },
       { path: 'onboarding', element: <OnboardingPage /> },
       { path: 'home', element: <HomePage /> },
-      { path: 'places', element: <PlacesPage /> },
-      { path: 'places/map', element: <PlacesMapPage /> },
+      { path: 'places', element: <PlacesMapPage /> },
+      { path: 'places/map', element: <Navigate to="/places" replace /> },
       { path: 'places/:placeId', element: <PlaceDetailPage /> },
       { path: 'children', element: <ChildrenPage /> },
       { path: 'children/new', element: <ChildNewPage /> },

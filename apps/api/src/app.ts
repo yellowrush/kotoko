@@ -4,6 +4,7 @@ import type { FastifyInstance } from 'fastify';
 import { healthRoutes } from './routes/health';
 import { authRoutes } from './routes/auth';
 import { contentRoutes } from './routes/content';
+import { placesRoutes } from './routes/places';
 
 export const API_PREFIX = '/api/v1';
 
@@ -16,6 +17,7 @@ export function buildApp(): FastifyInstance {
   void app.register(healthRoutes, prefixOptions);
   void app.register(authRoutes, prefixOptions);
   void app.register(contentRoutes, prefixOptions);
+  void app.register(placesRoutes, prefixOptions);
 
   return app;
 }

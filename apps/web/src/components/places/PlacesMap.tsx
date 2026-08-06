@@ -55,6 +55,8 @@ export function PlacesMap({
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const [mapReady, setMapReady] = useState(false);
+  const userLocationRef = useRef(userLocation);
+  userLocationRef.current = userLocation;
   const markersRef = useRef<Record<string, maplibregl.Marker>>({});
   const userMarkerRef = useRef<maplibregl.Marker | null>(null);
   const onSelectRef = useRef(onSelectPlace);
@@ -83,11 +85,15 @@ export function PlacesMap({
       }
       if (cancelled) return;
 
+      // 初始視角：已取得當前位置時以其為中心，否則回退到預設中心。
+      // init 為 async（需先 fetch style），可能晚於定位完成，因此用 ref 讀取最新位置。
+      const user = userLocationRef.current;
+      const centerPoint = user ?? initialCenter;
       const map = new maplibregl.Map({
         container,
         style,
-        center: [initialCenter.longitude, initialCenter.latitude],
-        zoom: initialZoom,
+        center: [centerPoint.longitude, centerPoint.latitude],
+        zoom: user ? 13 : initialZoom,
       });
       map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
       map.on('error', () => onStyleErrorRef.current?.());

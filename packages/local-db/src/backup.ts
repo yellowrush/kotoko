@@ -3,13 +3,14 @@ import type {
   ChildProfile,
   FavoritePlace,
   KnowledgeProgress,
+  PlaceComment,
   PolicyTaskState,
   UserPreference,
 } from '@kodoko/domain';
 import type { KodokoLocalDatabase } from './db';
 import { zodLocalBackup } from './schemas';
 
-export const LOCAL_BACKUP_VERSION = 1;
+export const LOCAL_BACKUP_VERSION = 2;
 
 type BackupEntities = {
   children: ChildProfile[];
@@ -17,6 +18,7 @@ type BackupEntities = {
   favorites: FavoritePlace[];
   knowledgeProgress: KnowledgeProgress[];
   policyTasks: PolicyTaskState[];
+  placeComments: PlaceComment[];
 };
 
 export type LocalBackup = {
@@ -32,18 +34,27 @@ type BackupValidationResult =
   | { ok: false; reason: 'invalid-header' | 'unsupported-version' | 'invalid-schema'; issues: z.ZodIssue[] };
 
 function backupTables(db: KodokoLocalDatabase) {
-  return [db.children, db.preferences, db.favorites, db.knowledgeProgress, db.policyTasks] as const;
+  return [
+    db.children,
+    db.preferences,
+    db.favorites,
+    db.knowledgeProgress,
+    db.policyTasks,
+    db.placeComments,
+  ] as const;
 }
 
 async function snapshotAll(db: KodokoLocalDatabase): Promise<Snapshot> {
-  const [children, preferences, favorites, knowledgeProgress, policyTasks] = await Promise.all([
-    db.children.toArray(),
-    db.preferences.toArray(),
-    db.favorites.toArray(),
-    db.knowledgeProgress.toArray(),
-    db.policyTasks.toArray(),
-  ]);
-  return { children, preferences, favorites, knowledgeProgress, policyTasks };
+  const [children, preferences, favorites, knowledgeProgress, policyTasks, placeComments] =
+    await Promise.all([
+      db.children.toArray(),
+      db.preferences.toArray(),
+      db.favorites.toArray(),
+      db.knowledgeProgress.toArray(),
+      db.policyTasks.toArray(),
+      db.placeComments.toArray(),
+    ]);
+  return { children, preferences, favorites, knowledgeProgress, policyTasks, placeComments };
 }
 
 async function restoreSnapshot(db: KodokoLocalDatabase, snapshot: Snapshot): Promise<void> {
@@ -56,6 +67,7 @@ async function restoreSnapshot(db: KodokoLocalDatabase, snapshot: Snapshot): Pro
     await db.favorites.bulkPut(snapshot.favorites);
     await db.knowledgeProgress.bulkPut(snapshot.knowledgeProgress);
     await db.policyTasks.bulkPut(snapshot.policyTasks);
+    await db.placeComments.bulkPut(snapshot.placeComments);
   });
 }
 
@@ -107,7 +119,7 @@ export async function exportLocalBackupJson(db: KodokoLocalDatabase): Promise<st
   );
 }
 
-/** 删除全部本地数据（儿童/偏好/收藏/已读/政策任务）。不可恢复，调用前由 UI 确认。 */
+/** 删除全部本地数据（儿童/偏好/收藏/已读/政策任务/地点评论）。不可恢复，调用前由 UI 确认。 */
 export async function clearAllData(db: KodokoLocalDatabase): Promise<void> {
   await db.transaction('rw', ...backupTables(db), async () => {
     for (const table of backupTables(db)) {
@@ -153,6 +165,9 @@ export async function importLocalBackup(
       await db.favorites.bulkPut(backup.favorites);
       await db.knowledgeProgress.bulkPut(backup.knowledgeProgress);
       await db.policyTasks.bulkPut(backup.policyTasks);
+      if (backup.placeComments && backup.placeComments.length > 0) {
+        await db.placeComments.bulkPut(backup.placeComments);
+      }
     });
   } catch (err) {
     await restoreSnapshot(db, snapshot);

@@ -34,17 +34,15 @@ export function filterPlaces(
   filters: PlaceFilters,
   ageMonths?: number,
 ): FilteredPlace[] {
-  const radius = filters.radiusKm ?? 20;
-
   const result = places.filter((place) => {
     if (filters.category && place.category !== filters.category) return false;
     if (filters.indoorOutdoor && place.indoorOutdoor !== filters.indoorOutdoor) return false;
     if (filters.tags && filters.tags.length > 0 && !filters.tags.some((tag) => place.tags?.includes(tag as PlaceTag))) {
       return false;
     }
-    if (filters.userLocation) {
+    if (filters.userLocation && filters.radiusKm !== undefined) {
       const dist = haversineDistanceKm(filters.userLocation, place);
-      if (dist > radius) return false;
+      if (dist > filters.radiusKm) return false;
     }
     return true;
   });

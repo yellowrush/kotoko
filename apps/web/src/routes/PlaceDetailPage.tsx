@@ -10,7 +10,13 @@ import { useWeather } from '../hooks/useWeather';
 import { placeGeneralCodes, scorePlaceForChild } from '../lib/recommendations';
 import { RecommendationReasons } from '../components/RecommendationReasons';
 import { CATEGORY_ICON, TAG_ICON } from '../components/places/categoryMeta';
-import { PageHeader } from '../components/PageHeader';
+import { PlaceMediaCarousel } from '../components/places/PlaceMediaCarousel';
+import { PlaceLabelChips } from '../components/places/PlaceLabelChips';
+import { PlacePriceSection } from '../components/places/PlacePriceSection';
+import { PlaceReservationSection } from '../components/places/PlaceReservationSection';
+import { PlaceBasicInfo } from '../components/places/PlaceBasicInfo';
+
+const EXTRA_TAGS = ['group-play', 'quiet-zone'] as const;
 
 export function PlaceDetailPage() {
   const { t } = useTranslation();
@@ -43,7 +49,14 @@ export function PlaceDetailPage() {
   }, [place, recommendation, weather]);
 
   if (isLoading) {
-    return <p className="text-gray-400">{t('common.loading')}</p>;
+    return (
+      <div className="animate-pulse">
+        <div className="h-72 rounded-xl bg-gray-200" />
+        <div className="mt-4 h-6 w-1/2 rounded bg-gray-200" />
+        <div className="mt-3 h-4 w-2/3 rounded bg-gray-200" />
+        <div className="mt-8 h-32 rounded-xl bg-gray-100" />
+      </div>
+    );
   }
 
   if (isError || !place) {
@@ -58,99 +71,106 @@ export function PlaceDetailPage() {
   }
 
   const isFav = favoriteIds.has(place.id);
+  const officialUrl = place.websiteUrl ?? place.sourceUrl;
+  const extraTags = place.tags?.filter((tag) => (EXTRA_TAGS as readonly string[]).includes(tag)) ?? [];
 
   return (
     <div>
-      <PageHeader title={place.name} />
+      <PlaceMediaCarousel place={place} fallbackEmoji={CATEGORY_ICON[place.category]} />
 
-      <div className="flex h-40 items-center justify-center rounded-xl bg-gradient-to-br from-brand-100 to-amber-50 text-6xl">
-        {CATEGORY_ICON[place.category]}
-      </div>
-
-      <div className="mt-4 flex flex-col gap-2 text-sm">
-        <p className="flex items-center gap-2">
-          <span>{CATEGORY_ICON[place.category]}</span>
-          <span className="font-medium">{t(`places.categories.${place.category}`)}</span>
-          <span className="text-gray-400">· {t(`places.indoorOutdoor.${place.indoorOutdoor}`)}</span>
-          {place.tags && place.tags.length > 0 && (
-            <span className="flex gap-1">
-              {place.tags.map((tag) => (
-                <span key={tag} className="text-xs">
-                  {TAG_ICON[tag]} {t(`places.tags.${tag}`)}
-                </span>
-              ))}
-            </span>
+      <div className="mt-4 flex items-start justify-between gap-3">
+        <div className="min-w-0">
+          <h1 className="text-xl font-bold leading-snug text-gray-900">{place.name}</h1>
+          {place.shortDescription && (
+            <p className="mt-1 text-sm text-gray-500">{place.shortDescription}</p>
           )}
-        </p>
-
-        {place.shortDescription && <p className="text-gray-600">{place.shortDescription}</p>}
-
-        <p className="text-gray-500">📍 {place.address}</p>
-
-        <p className="flex flex-wrap items-center gap-3 text-gray-500">
-          {place.suitableAgeMinMonths !== undefined || place.suitableAgeMaxMonths !== undefined ? (
-            <span>
-              {t('places.suitableAgeLabel')}{' '}
-              <span className="font-medium">
-                {place.suitableAgeMinMonths ?? 0}~{place.suitableAgeMaxMonths ?? '∞'}{' '}
-                {t('places.monthsUnit')}
-              </span>
-            </span>
-          ) : (
-            <span>{t('places.allAgesLabel')}</span>
-          )}
-        </p>
-
-        <p className="flex flex-wrap gap-2 text-gray-600">
-          {place.strollerFriendly && <span>👶 {t('places.facilities.stroller')}</span>}
-          {place.nursingRoom && <span>🍼 {t('places.facilities.nursingRoom')}</span>}
-          {place.diaperChanging && <span>🟰 {t('places.facilities.diaper')}</span>}
-        </p>
-
-        {place.priceLevel !== undefined && (
-          <p className="text-gray-500">{t('places.priceLabel')}: {'￥'.repeat(place.priceLevel) || t('places.free')}</p>
-        )}
-
-        <div className="mt-2 flex gap-2">
-          <button
-            type="button"
-            onClick={() => void toggle(place.id)}
-            className={`rounded-lg border px-3 py-1.5 text-sm font-medium ${
-              isFav ? 'border-rose-400 bg-rose-50 text-rose-600' : 'border-gray-300 text-gray-600'
-            }`}
-          >
-            {isFav ? t('places.favorited') : t('places.favorite')}
-          </button>
         </div>
-
-        <div className="mt-4 rounded-xl bg-brand-50/60 p-3">
-          <h3 className="text-sm font-semibold text-gray-600">{t('places.whyRecommended')}</h3>
-          {recommendation && (
-            <p className="mt-1 text-xs text-gray-500">
-              {t('home.score')}: {recommendation.score}
-            </p>
-          )}
-          {reasonCodes.length > 0 && (
-            <div className="mt-2">
-              <RecommendationReasons
-                reasonCodes={reasonCodes}
-                distanceKm={coords ? haversineDistanceKm(coords, place) : null}
-              />
-            </div>
-          )}
-          {!active && <p className="mt-2 text-xs text-gray-400">{t('places.recommendedHint')}</p>}
-        </div>
-
-        {place.sourceUrl && (
+        {officialUrl && (
           <a
-            href={place.sourceUrl}
+            href={officialUrl}
             target="_blank"
             rel="noreferrer"
-            className="mt-2 inline-flex items-center gap-1 text-sm text-brand-700"
+            className="flex shrink-0 items-center gap-1 whitespace-nowrap rounded-lg border border-brand-200 bg-brand-50 px-2.5 py-1.5 text-sm font-medium text-brand-700"
           >
-            {t('places.officialSite')} ↗
+            {t('places.officialSite')}
+            <span aria-hidden>↗</span>
           </a>
         )}
+      </div>
+
+      <div className="mt-2 flex flex-wrap items-center gap-1.5 text-sm text-gray-600">
+        <span className="flex items-center gap-1 font-medium">
+          <span aria-hidden>{CATEGORY_ICON[place.category]}</span>
+          {t(`places.categories.${place.category}`)}
+        </span>
+        <span className="text-gray-400">·</span>
+        <span>{t(`places.indoorOutdoor.${place.indoorOutdoor}`)}</span>
+        {extraTags.map((tag) => (
+          <span key={tag} className="flex items-center gap-1 text-xs text-gray-400">
+            <span aria-hidden>{TAG_ICON[tag]}</span>
+            {t(`places.tags.${tag}`)}
+          </span>
+        ))}
+      </div>
+
+      <div className="mt-2.5">
+        <PlaceLabelChips place={place} />
+      </div>
+
+      <p className="mt-2.5 flex flex-wrap items-center gap-3 text-sm text-gray-500">
+        {place.suitableAgeMinMonths !== undefined || place.suitableAgeMaxMonths !== undefined ? (
+          <span>
+            {t('places.suitableAgeLabel')}{' '}
+            <span className="font-medium text-gray-700">
+              {place.suitableAgeMinMonths ?? 0}~{place.suitableAgeMaxMonths ?? '∞'}{' '}
+              {t('places.monthsUnit')}
+            </span>
+          </span>
+        ) : (
+          <span>{t('places.allAgesLabel')}</span>
+        )}
+        {coords && (
+          <span className="text-gray-400">
+            {t('places.distance', { distance: `${haversineDistanceKm(coords, place).toFixed(1)}km` })}
+          </span>
+        )}
+      </p>
+
+      <div className="mt-3 flex gap-2">
+        <button
+          type="button"
+          onClick={() => void toggle(place.id)}
+          className={`rounded-lg border px-3 py-1.5 text-sm font-medium ${
+            isFav ? 'border-rose-400 bg-rose-50 text-rose-600' : 'border-gray-300 text-gray-600'
+          }`}
+        >
+          {isFav ? t('places.favorited') : t('places.favorite')}
+        </button>
+      </div>
+
+      <div className="mt-4 rounded-xl bg-brand-50/60 p-3">
+        <h3 className="text-sm font-semibold text-gray-600">{t('places.whyRecommended')}</h3>
+        {recommendation && (
+          <p className="mt-1 text-xs text-gray-500">
+            {t('home.score')}: {recommendation.score}
+          </p>
+        )}
+        {reasonCodes.length > 0 && (
+          <div className="mt-2">
+            <RecommendationReasons
+              reasonCodes={reasonCodes}
+              distanceKm={coords ? haversineDistanceKm(coords, place) : null}
+            />
+          </div>
+        )}
+        {!active && <p className="mt-2 text-xs text-gray-400">{t('places.recommendedHint')}</p>}
+      </div>
+
+      <PlacePriceSection place={place} />
+      <PlaceReservationSection place={place} />
+
+      <div className="mt-4">
+        <PlaceBasicInfo place={place} />
       </div>
 
       <Link to="/places" className="mt-6 block text-sm text-gray-500">

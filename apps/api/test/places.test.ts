@@ -43,14 +43,27 @@ describe('GET /api/v1/places', () => {
 
   it('filters by radius from a center point', async () => {
     const app = buildApp();
-    // 東京駅付近を中心に半径 2km 以内
+    // 東京駅付近を中心に半径 2km 以内の地点のみ返す
     const res = await app.inject({
       method: 'GET',
       url: `${API_PREFIX}/places?latitude=35.6812&longitude=139.7671&radius=2`,
     });
     expect(res.statusCode).toBe(200);
     const body = res.json();
-    expect(body.total).toBe(0);
+    expect(body.places.length).toBeGreaterThan(0);
+    expect(body.places.length).toBeLessThan(80);
+    await app.close();
+  });
+
+  it('returns no places for a radius around an empty area', async () => {
+    const app = buildApp();
+    // 太平洋上を中心に半径 5km 以内には地点が存在しない
+    const res = await app.inject({
+      method: 'GET',
+      url: `${API_PREFIX}/places?latitude=35.2&longitude=140.9&radius=5`,
+    });
+    expect(res.statusCode).toBe(200);
+    expect(res.json().total).toBe(0);
     await app.close();
   });
 });

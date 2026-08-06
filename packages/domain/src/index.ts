@@ -1,5 +1,6 @@
 import type { ChildProfile, CreateChildInput, UpdateChildInput } from './child';
 import type { PolicyTaskState } from './policy';
+import type { PlaceReportType } from './place';
 
 export * from './child';
 export * from './place';
@@ -23,6 +24,25 @@ export type FavoritePlace = {
   id: string;
   childId?: string;
   placeId: string;
+  createdAt: string;
+};
+
+/** 本地保存的地点短评（不上传服务器）。 */
+export type PlaceComment = {
+  id: string;
+  placeId: string;
+  rating: number;
+  content: string;
+  createdAt: string;
+};
+
+/** 离线时排队等待发送的地点纠错报告。 */
+export type PendingPlaceReport = {
+  id: string;
+  placeId: string;
+  type: PlaceReportType;
+  detail: string;
+  contactEmail?: string;
   createdAt: string;
 };
 
@@ -58,4 +78,5 @@ export type LocalBackup = {
   favorites: FavoritePlace[];
   knowledgeProgress: KnowledgeProgress[];
   policyTasks: PolicyTaskState[];
+  placeComments: PlaceComment[];
 };

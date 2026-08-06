@@ -6,3 +6,5 @@ export * from './repositories/favorite';
 export * from './repositories/preference';
 export * from './repositories/knowledgeProgress';
 export * from './repositories/policyTask';
+export * from './repositories/placeComment';
+export * from './repositories/pendingReport';

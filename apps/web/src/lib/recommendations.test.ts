@@ -13,6 +13,10 @@ function makePlace(overrides: Partial<Place>): Place {
     municipalityCode: '13106',
     indoorOutdoor: 'outdoor',
     status: 'published',
+    media: [],
+    labels: [],
+    provenance: [],
+    version: 1,
     ...overrides,
   };
 }

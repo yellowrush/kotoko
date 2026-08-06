@@ -62,6 +62,36 @@ export const zodLocalMetadata = z
   })
   .strict();
 
+export const zodPlaceComment = z
+  .object({
+    id: z.string().min(1),
+    placeId: z.string().min(1),
+    rating: z.number().int().min(1).max(5),
+    content: z.string().min(1).max(1000),
+    createdAt: isoDateTime,
+  })
+  .strict();
+
+export const zodPendingPlaceReport = z
+  .object({
+    id: z.string().min(1),
+    placeId: z.string().min(1),
+    type: z.enum([
+      'business_hours',
+      'price',
+      'reservation',
+      'address',
+      'media',
+      'outdated',
+      'closed',
+      'other',
+    ]),
+    detail: z.string().min(1).max(2000).optional(),
+    contactEmail: z.string().email().optional(),
+    createdAt: isoDateTime,
+  })
+  .strict();
+
 export const zodLocalBackup = z
   .object({
     app: z.literal('kodoko'),
@@ -72,5 +102,6 @@ export const zodLocalBackup = z
     favorites: z.array(zodFavoritePlace),
     knowledgeProgress: z.array(zodKnowledgeProgress),
     policyTasks: z.array(zodPolicyTaskState),
+    placeComments: z.array(zodPlaceComment).optional(),
   })
   .strict();

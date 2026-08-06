@@ -22,11 +22,74 @@ const placeCategory = z.enum([
   'restaurant',
   'event',
   'other',
+  'children-hall',
+  'toy-play',
+  'amusement-park',
 ]) as z.ZodType<PlaceCategory>;
 
 const indoorOutdoor = z.enum(['indoor', 'outdoor', 'mixed']) as z.ZodType<IndoorOutdoor>;
 
 const placeTag = z.enum(['dining', 'group-play', 'stroller-friendly', 'quiet-zone']) as z.ZodType<PlaceTag>;
+
+const placeLabel = z.enum([
+  'indoor',
+  'outdoor',
+  'mixed',
+  'dining',
+  'baby-car',
+  'nursing-room',
+  'diaper-changing',
+  'free',
+  'reservation-required',
+  'reservation-optional',
+  'english-ok',
+  'petting',
+  'water-play',
+  'picnic',
+  'parking',
+  'wheelchair',
+]);
+
+const placeMedia = z.object({
+  id: z.string().min(1),
+  type: z.enum(['image', 'video']),
+  url: z.string().min(1),
+  thumbnailUrl: z.string().optional(),
+  alt: z.string().optional(),
+  credit: z.string().optional(),
+  license: z.string().optional(),
+  sourceUrl: z.string().optional(),
+  cover: z.boolean().optional(),
+});
+
+const placePrice = z.object({
+  id: z.string().min(1),
+  audience: z.enum(['adult', 'child', 'toddler', 'infant', 'family', 'group']),
+  labelJa: z.string().min(1),
+  labelZh: z.string().optional(),
+  amountYen: z.number().int().nonnegative().optional(),
+  free: z.boolean().optional(),
+  note: z.string().optional(),
+  validFrom: z.string().optional(),
+  validUntil: z.string().optional(),
+  checkedAt: z.string(),
+  sourceUrl: z.string(),
+});
+
+const placeReservation = z.object({
+  mode: z.enum(['none', 'optional', 'required', 'lottery', 'unknown']),
+  howToUrl: z.string().optional(),
+  note: z.string().optional(),
+  checkedAt: z.string(),
+  sourceUrl: z.string(),
+});
+
+const placeSource = z.object({
+  type: z.enum(['official', 'open-data', 'review-platform', 'manual', 'report']),
+  name: z.string().min(1),
+  url: z.string(),
+  fetchedAt: z.string(),
+});
 
 const contentStatus = z.enum(['draft', 'published', 'archived']) as z.ZodType<ContentStatus>;
 
@@ -55,6 +118,22 @@ export const placeSchema = z.object({
   sourceUrl: z.string().optional(),
   sourceCheckedAt: z.string().optional(),
   status: contentStatus,
+  nameZh: z.string().optional(),
+  description: z.string().optional(),
+  descriptionZh: z.string().optional(),
+  media: z.array(placeMedia).default([]),
+  labels: z.array(placeLabel).default([]),
+  prices: z.array(placePrice).optional(),
+  reservation: placeReservation.optional(),
+  businessHours: z.string().optional(),
+  closedDays: z.string().optional(),
+  parking: z.boolean().optional(),
+  accessInfo: z.string().optional(),
+  phone: z.string().optional(),
+  websiteUrl: z.string().optional(),
+  googlePlaceId: z.string().optional(),
+  provenance: z.array(placeSource).default([]),
+  version: z.number().int().positive().default(1),
 });
 
 export const placeListSchema = z.object({

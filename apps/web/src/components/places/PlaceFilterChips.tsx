@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { IndoorOutdoor, PlaceCategory } from '@kodoko/domain';
+import { CATEGORY_GROUP, PLACE_GROUPS } from '@kodoko/domain';
 import type { PlacesFilterState } from '../../hooks/usePlaces';
 
 const CATEGORIES: PlaceCategory[] = [
@@ -11,10 +12,20 @@ const CATEGORIES: PlaceCategory[] = [
   'aquarium',
   'library',
   'indoor-play',
+  'children-hall',
+  'toy-play',
+  'amusement-park',
   'restaurant',
   'event',
+  'shop',
   'facility',
+  'other',
 ];
+
+const CATEGORY_GROUPS = PLACE_GROUPS.map((group) => ({
+  group,
+  categories: CATEGORIES.filter((cat) => CATEGORY_GROUP[cat] === group),
+})).filter((g) => g.categories.length > 0);
 
 const INDOOR_OPTIONS: { value: IndoorOutdoor; key: string }[] = [
   { value: 'indoor', key: 'indoor' },
@@ -118,17 +129,21 @@ export function PlaceFilterChips({
           />
           <div className="absolute left-0 top-full z-[6] mt-2 flex w-[min(92vw,24rem)] flex-col gap-2.5 rounded-2xl border border-gray-200 bg-white p-3 shadow-xl">
             <ChipGroup title={t('places.filters.sectionCategory')}>
-              <Chip active={!filters.category} onClick={() => setCategory(undefined)}>
-                {t('places.filters.all')}
-              </Chip>
-              {CATEGORIES.map((cat) => (
-                <Chip
-                  key={cat}
-                  active={filters.category === cat}
-                  onClick={() => setCategory(filters.category === cat ? undefined : cat)}
-                >
-                  {t(`places.categories.${cat}`)}
-                </Chip>
+              {CATEGORY_GROUPS.map(({ group, categories }) => (
+                <div key={group} className="flex flex-col gap-1.5">
+                  <p className="text-[11px] font-semibold text-gray-400">{t(`places.groups.${group}`)}</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {categories.map((cat) => (
+                      <Chip
+                        key={cat}
+                        active={filters.category === cat}
+                        onClick={() => setCategory(filters.category === cat ? undefined : cat)}
+                      >
+                        {t(`places.categories.${cat}`)}
+                      </Chip>
+                    ))}
+                  </div>
+                </div>
               ))}
             </ChipGroup>
 
@@ -147,9 +162,6 @@ export function PlaceFilterChips({
             </ChipGroup>
 
             <ChipGroup title={t('places.filters.sectionRadius')}>
-              <Chip active={filters.radiusKm === undefined} onClick={() => setRadius(undefined)}>
-                {t('places.filters.allArea')}
-              </Chip>
               {RADIUS.map((r) => (
                 <Chip
                   key={r.key}

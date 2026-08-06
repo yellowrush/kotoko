@@ -28,5 +28,6 @@ Thumbs.db
 
 # turbo
 .turbo/
-.vercel
+.vercel/*
+!.vercel/project.json
 .env*

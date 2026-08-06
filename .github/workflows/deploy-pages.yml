@@ -44,8 +44,8 @@ jobs:
         env:
           # 專案站台：https://yellowrush.github.io/kotoko/
           VITE_BASE_PATH: /kotoko/
-          # 若未來將後端部署到其他位置（VPS / Render / Railway…），
-          # 在此 repo 的 Actions Secrets 設定 API_BASE_URL 即可覆寫預設的 /api/v1。
+          # 後端 API 部署在 Vercel（vercel.json + apps/api/vercel.ts）。
+          # 在此 repo 的 Actions Secrets 設定 API_BASE_URL 指向 Vercel 網域即可覆寫預設的 /api/v1。
           VITE_API_BASE_URL: ${{ secrets.API_BASE_URL }}
 
       - name: SPA fallback for GitHub Pages

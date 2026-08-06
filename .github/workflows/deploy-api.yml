@@ -1,4 +1,4 @@
-name: Deploy API to Koyeb
+name: Deploy API to Vercel
 
 on:
   push:
@@ -8,7 +8,9 @@ on:
       - 'packages/**'
       - 'pnpm-lock.yaml'
       - 'pnpm-workspace.yaml'
-      - 'Dockerfile'
+      - 'vercel.json'
+      - '.vercel/project.json'
+      - '.github/workflows/deploy-api.yml'
   workflow_dispatch:
 
 concurrency:
@@ -17,7 +19,7 @@ concurrency:
 
 jobs:
   verify-and-deploy:
-    name: Verify then deploy API to Koyeb
+    name: Verify then deploy API to Vercel
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -41,19 +43,12 @@ jobs:
       - name: Test API
         run: pnpm --filter @kodoko/api test
 
-      - name: Install and configure the Koyeb CLI
-        uses: koyeb-community/koyeb-actions@v2
-        with:
-          api_token: ${{ secrets.KOYEB_API_TOKEN }}
+      # .vercel/project.json 已 commit（僅含 orgId/projectId，無機密）
+      - name: Pull Vercel project settings
+        run: npx vercel@latest pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
 
-      - name: Build and deploy the application to Koyeb
-        uses: koyeb/action-git-deploy@v1
-        with:
-          app-name: kotoko-api
-          service-name: api
-          git-branch: develop
-          git-builder: docker
-          service-ports: '3001:http'
-          service-routes: '/:3001'
-          service-checks: '3001:http:/api/v1/health'
-          service-env: 'PORT=3001'
+      - name: Build project artifacts
+        run: npx vercel@latest build --prod --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Deploy to Vercel
+        run: npx vercel@latest deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }}

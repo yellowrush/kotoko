@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 // maplibre-gl 固定使用 v5（^5.24.0）：OpenFreeMap Quick Start 官方以 v5 为准，且
 // OpenFreeMap 当前下发的 liberty 样式仍大量使用 legacy `["geometry-type"]` 表达式，
 // 而 v6 的 style-spec v25 会对 legacy expressions 抛错（warning severity）导致图层不渲染。
@@ -54,6 +54,7 @@ export function PlacesMap({
 }: PlacesMapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
+  const [mapReady, setMapReady] = useState(false);
   const markersRef = useRef<Record<string, maplibregl.Marker>>({});
   const userMarkerRef = useRef<maplibregl.Marker | null>(null);
   const onSelectRef = useRef(onSelectPlace);
@@ -95,12 +96,14 @@ export function PlacesMap({
         map.addImage(e.id, createFallbackIcon());
       });
       mapRef.current = map;
+      setMapReady(true);
     };
 
     void init();
 
     return () => {
       cancelled = true;
+      setMapReady(false);
       markersRef.current = {};
       userMarkerRef.current = null;
       mapRef.current?.remove();
@@ -118,7 +121,7 @@ export function PlacesMap({
       center: [userLocation.longitude, userLocation.latitude],
       zoom: 13,
     });
-  }, [userLocation]);
+  }, [userLocation, mapReady]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -126,7 +129,7 @@ export function PlacesMap({
     const place = places.find((p) => p.id === selectedPlaceId);
     if (!place) return;
     map.flyTo({ center: [place.longitude, place.latitude], zoom: 14 });
-  }, [selectedPlaceId, places]);
+  }, [selectedPlaceId, places, mapReady]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -140,7 +143,7 @@ export function PlacesMap({
         .setLngLat([userLocation.longitude, userLocation.latitude])
         .addTo(map);
     }
-  }, [userLocation]);
+  }, [userLocation, mapReady]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -175,7 +178,7 @@ export function PlacesMap({
         delete markersRef.current[id];
       }
     }
-  }, [places, selectedPlaceId]);
+  }, [places, selectedPlaceId, mapReady]);
 
   return (
     <div className="absolute inset-0">

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 const NAV_ITEMS = [
   { to: '/home', key: 'home' },
   { to: '/places', key: 'places' },
+  { to: '/favorites', key: 'favorites' },
   { to: '/knowledge', key: 'knowledge' },
   { to: '/policies', key: 'policies' },
 ] as const;

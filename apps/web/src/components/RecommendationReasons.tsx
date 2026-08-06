@@ -13,6 +13,7 @@ const REASON_I18N: Record<string, { key: string; withDistance?: boolean }> = {
   indoor_outdoor: { key: 'home.reasons.indoorOutdoor' },
   facility: { key: 'home.reasons.facility' },
   interest: { key: 'home.reasons.interest' },
+  group: { key: 'home.reasons.group' },
   distance: { key: 'home.reasons.distance', withDistance: true },
 };
 

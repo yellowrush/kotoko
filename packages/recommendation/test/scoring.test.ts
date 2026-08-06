@@ -90,6 +90,40 @@ describe('scorePlace', () => {
     const r = scorePlace(far, input);
     expect(r.score).toBe(0);
   });
+
+  it('applies a walking-mode max distance of 2 km', () => {
+    const mid = place({ latitude: 35.7, longitude: 139.78 });
+    const input = baseInput({
+      userLocation: { latitude: 35.681, longitude: 139.767 },
+      transportMode: 'walking',
+    });
+    expect(scorePlace(mid, input).score).toBe(0);
+  });
+
+  it('allows the same place when travelling by car', () => {
+    const mid = place({ latitude: 35.7, longitude: 139.78 });
+    const input = baseInput({
+      userLocation: { latitude: 35.681, longitude: 139.767 },
+      transportMode: 'car',
+    });
+    expect(scorePlace(mid, input).score).toBeGreaterThan(0);
+  });
+
+  it('boosts group-play places when 3+ people go together', () => {
+    const groupPlace = place({ id: 'g', tags: ['group-play'] });
+    const plain = place({ id: 'p' });
+    const input = baseInput({ groupSize: 3 });
+    const rGroup = scorePlace(groupPlace, input);
+    const rPlain = scorePlace(plain, input);
+    expect(rGroup.score).toBeGreaterThan(rPlain.score);
+    expect(rGroup.reasons.some((x) => x.code === 'group')).toBe(true);
+  });
+
+  it('does not boost group-play places for small or unknown groups', () => {
+    const groupPlace = place({ tags: ['group-play'] });
+    expect(scorePlace(groupPlace, baseInput({ groupSize: 2 })).reasons.some((x) => x.code === 'group')).toBe(false);
+    expect(scorePlace(groupPlace, baseInput()).reasons.some((x) => x.code === 'group')).toBe(false);
+  });
 });
 
 describe('recommendPlaces', () => {

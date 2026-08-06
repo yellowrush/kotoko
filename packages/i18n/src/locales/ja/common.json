@@ -17,6 +17,7 @@
   "nav": {
     "home": "ホーム",
     "places": "行き先",
+    "favorites": "お気に入り",
     "knowledge": "子育て知識",
     "policies": "制度・手続き",
     "profile": "マイページ",
@@ -27,11 +28,17 @@
     "recommendationsTitle": "今日どこ行く？",
     "allPlaces": "すべて見る",
     "noRecommendations": "近くにまだ紹介できる場所がありません。",
-    "weather": "天気",
-    "weatherNone": "指定なし",
-    "weatherRain": "雨",
-    "weatherSnow": "雪",
-    "weatherStorm": "暴風雨",
+    "transport": "移動手段",
+    "transportNone": "指定なし",
+    "transportWalking": "徒歩",
+    "transportBicycle": "自転車",
+    "transportCar": "車",
+    "transportTrain": "電車",
+    "groupSize": "人数",
+    "groupNone": "指定なし",
+    "group1": "1人",
+    "group2": "2人",
+    "group3": "3人以上",
     "score": "おすすめ度",
     "reasons": {
       "ageMatch": "この月齢にぴったり",
@@ -40,7 +47,8 @@
       "weather": "雨・雪の日は屋内がおすすめ",
       "indoorOutdoor": "屋内/屋外の好みに一致",
       "facility": "設備が便利",
-      "interest": "こどもの興味に一致"
+      "interest": "こどもの興味に一致",
+      "group": "大人数に最適"
     },
     "currentChild": "いま見ているこども",
     "weeklyKnowledge": "今週の子育て知識",
@@ -85,6 +93,7 @@
     "free": "無料",
     "backToMap": "マップに戻る",
     "whyRecommended": "この場所がおすすめの理由",
+    "recommendedHint": "こどもを登録すると、こどもに合わせた理由が表示されます。",
     "favorite": "お気に入りに追加",
     "favorited": "お気に入り済み",
     "officialSite": "公式サイト",
@@ -144,6 +153,10 @@
   "policies": {
     "title": "制度・手続き",
     "disclaimer": "この情報は公式情報の要約です。詳細は必ず公式ページをご確認ください。"
+  },
+  "favorites": {
+    "title": "お気に入り",
+    "empty": "お気に入りはまだありません。施設詳細の「お気に入り」から追加できます。"
   },
   "login": {
     "title": "ログイン",

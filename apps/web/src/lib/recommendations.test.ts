@@ -107,6 +107,43 @@ describe('recommendForChild', () => {
   });
 });
 
+describe('transport and group pass-through', () => {
+  const MID = makePlace({ id: 'mid', latitude: 35.7, longitude: 139.78 });
+
+  it('applies walking distance, excluding places a child cannot walk to', () => {
+    const result = recommendForChild({
+      child: makeChild(),
+      places: [MID],
+      userLocation: TOKYO,
+      transportMode: 'walking',
+    });
+    expect(result).toHaveLength(0);
+  });
+
+  it('includes the same place when travelling by car', () => {
+    const result = recommendForChild({
+      child: makeChild(),
+      places: [MID],
+      userLocation: TOKYO,
+      transportMode: 'car',
+    });
+    expect(result.map((r) => r.place.id)).toEqual(['mid']);
+  });
+
+  it('ranks group-play places first for 3+ people', () => {
+    const groupPlace = makePlace({ id: 'g', tags: ['group-play'] });
+    const plain = makePlace({ id: 'p' });
+    const result = recommendForChild({
+      child: makeChild(),
+      places: [groupPlace, plain],
+      userLocation: TOKYO,
+      groupSize: 3,
+    });
+    expect(result[0]?.place.id).toBe('g');
+    expect(result[0]?.reasonCodes).toContain('group');
+  });
+});
+
 describe('scorePlaceForChild', () => {
   it('returns undefined without an active child', () => {
     expect(scorePlaceForChild({ child: undefined, place: NEAR })).toBeUndefined();

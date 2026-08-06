@@ -13,6 +13,7 @@ import { PoliciesPage } from '../routes/PoliciesPage';
 import { PolicyDetailPage } from '../routes/PolicyDetailPage';
 import { LoginPage } from '../routes/LoginPage';
 import { ProfilePage } from '../routes/ProfilePage';
+import { FavoritesPage } from '../routes/FavoritesPage';
 import { SettingsPage } from '../routes/SettingsPage';
 import { NotFoundPage } from '../routes/NotFoundPage';
 
@@ -27,6 +28,7 @@ export const router = createBrowserRouter([
       { path: 'places', element: <PlacesMapPage /> },
       { path: 'places/map', element: <Navigate to="/places" replace /> },
       { path: 'places/:placeId', element: <PlaceDetailPage /> },
+      { path: 'favorites', element: <FavoritesPage /> },
       { path: 'children', element: <ChildrenPage /> },
       { path: 'children/new', element: <ChildNewPage /> },
       { path: 'children/:childId/edit', element: <ChildEditPage /> },

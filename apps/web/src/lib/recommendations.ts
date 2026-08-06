@@ -5,6 +5,7 @@ import {
   recommendPlaces,
   scorePlace,
   type PlaceRecommendation,
+  type TransportMode,
 } from '@kodoko/recommendation';
 
 export type HomeRecommendation = {
@@ -26,6 +27,8 @@ export function recommendForChild(input: {
   places: Place[];
   userLocation?: GeoPoint | null;
   maxDistanceKm?: number;
+  transportMode?: TransportMode;
+  groupSize?: number;
   weather?: WeatherSummary;
 }): HomeRecommendation[] {
   if (!input.child) return [];
@@ -35,7 +38,9 @@ export function recommendForChild(input: {
     interests: input.child.interests,
     accessibilityNeeds: input.child.accessibilityNeeds,
     userLocation: input.userLocation ?? undefined,
-    maxDistanceKm: input.maxDistanceKm ?? HOME_MAX_DISTANCE_KM,
+    maxDistanceKm: input.maxDistanceKm ?? (input.transportMode ? undefined : HOME_MAX_DISTANCE_KM),
+    transportMode: input.transportMode,
+    groupSize: input.groupSize,
     weather: input.weather,
     places: input.places,
   });
@@ -65,4 +70,19 @@ export function scorePlaceForChild(input: {
     weather: input.weather,
     places: [input.place],
   });
+}
+
+// 沒有登錄兒童時仍顯示可解釋的推薦理由（設施/室內外/天氣），讓推薦區塊在有地點時必定出現。
+export function placeGeneralCodes(place: Place, weather?: WeatherSummary): string[] {
+  const codes: string[] = [];
+  if (place.strollerFriendly || place.nursingRoom || place.diaperChanging) {
+    codes.push('facility');
+  }
+  if (
+    weather &&
+    (weather.condition === 'rain' || weather.condition === 'snow' || weather.condition === 'storm')
+  ) {
+    codes.push('weather');
+  }
+  return codes;
 }

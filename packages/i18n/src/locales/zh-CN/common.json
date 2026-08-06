@@ -17,6 +17,7 @@
   "nav": {
     "home": "首页",
     "places": "去处",
+    "favorites": "收藏",
     "knowledge": "育儿知识",
     "policies": "政策制度",
     "profile": "我的页面",
@@ -27,11 +28,17 @@
     "recommendationsTitle": "今天去哪玩",
     "allPlaces": "查看全部",
     "noRecommendations": "附近还没有符合条件的去处。",
-    "weather": "天气",
-    "weatherNone": "不指定",
-    "weatherRain": "雨",
-    "weatherSnow": "雪",
-    "weatherStorm": "暴风雨",
+    "transport": "交通方式",
+    "transportNone": "不指定",
+    "transportWalking": "步行",
+    "transportBicycle": "自行车",
+    "transportCar": "开车",
+    "transportTrain": "电车",
+    "groupSize": "人数",
+    "groupNone": "不指定",
+    "group1": "1人",
+    "group2": "2人",
+    "group3": "3人以上",
     "score": "推荐度",
     "reasons": {
       "ageMatch": "适合本年龄段",
@@ -40,7 +47,8 @@
       "weather": "雨雪天推荐室内",
       "indoorOutdoor": "符合室内外偏好",
       "facility": "设施便利",
-      "interest": "符合孩子兴趣"
+      "interest": "符合孩子兴趣",
+      "group": "适合多人"
     },
     "currentChild": "当前儿童",
     "weeklyKnowledge": "本周育儿知识",
@@ -85,6 +93,7 @@
     "free": "免费",
     "backToMap": "返回地图",
     "whyRecommended": "推荐理由",
+    "recommendedHint": "登记孩子信息后，这里会显示与孩子更匹配的理由。",
     "favorite": "加入收藏",
     "favorited": "已收藏",
     "officialSite": "官网",
@@ -144,6 +153,10 @@
   "policies": {
     "title": "政策制度",
     "disclaimer": "此信息为官方信息的摘要。详细内容请务必查看官方页面。"
+  },
+  "favorites": {
+    "title": "我的收藏",
+    "empty": "还没有收藏的去处。在地点详情页点「加入收藏」即可。"
   },
   "login": {
     "title": "登录",

@@ -17,6 +17,7 @@
   "nav": {
     "home": "首頁",
     "places": "去處",
+    "favorites": "收藏",
     "knowledge": "育兒知識",
     "policies": "政策制度",
     "profile": "我的頁面",
@@ -27,11 +28,17 @@
     "recommendationsTitle": "今天去哪裡玩",
     "allPlaces": "查看全部",
     "noRecommendations": "附近還沒有符合條件的去處。",
-    "weather": "天氣",
-    "weatherNone": "不指定",
-    "weatherRain": "雨",
-    "weatherSnow": "雪",
-    "weatherStorm": "暴風雨",
+    "transport": "交通方式",
+    "transportNone": "不指定",
+    "transportWalking": "步行",
+    "transportBicycle": "自行車",
+    "transportCar": "開車",
+    "transportTrain": "電車",
+    "groupSize": "人數",
+    "groupNone": "不指定",
+    "group1": "1人",
+    "group2": "2人",
+    "group3": "3人以上",
     "score": "推薦度",
     "reasons": {
       "ageMatch": "適合本年齡段",
@@ -40,7 +47,8 @@
       "weather": "雨雪天推薦室內",
       "indoorOutdoor": "符合室內外偏好",
       "facility": "設施便利",
-      "interest": "符合孩子興趣"
+      "interest": "符合孩子興趣",
+      "group": "適合多人"
     },
     "currentChild": "目前兒童",
     "weeklyKnowledge": "本週育兒知識",
@@ -85,6 +93,7 @@
     "free": "免費",
     "backToMap": "返回地圖",
     "whyRecommended": "推薦理由",
+    "recommendedHint": "登記孩子資料後，這裡會顯示與孩子更匹配的理由。",
     "favorite": "加入收藏",
     "favorited": "已收藏",
     "officialSite": "官網",
@@ -144,6 +153,10 @@
   "policies": {
     "title": "政策制度",
     "disclaimer": "此資訊為官方資訊的摘要。詳細內容請務必查看官方頁面。"
+  },
+  "favorites": {
+    "title": "我的收藏",
+    "empty": "還沒有收藏的去處。在地點詳情頁點「加入收藏」即可。"
   },
   "login": {
     "title": "登入",

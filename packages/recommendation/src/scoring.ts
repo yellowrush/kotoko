@@ -1,11 +1,22 @@
 import type { GeoPoint, Place, WeatherSummary } from '@kodoko/domain';
 
+export type TransportMode = 'walking' | 'bicycle' | 'car' | 'train';
+
+export const TRANSPORT_MAX_DISTANCE_KM: Record<TransportMode, number> = {
+  walking: 2,
+  bicycle: 5,
+  car: 20,
+  train: 20,
+};
+
 export type RecommendationInput = {
   childAgeMonths: number;
   interests: string[];
   accessibilityNeeds: string[];
   userLocation?: GeoPoint;
   maxDistanceKm?: number;
+  transportMode?: TransportMode;
+  groupSize?: number;
   indoorOutdoorPreference?: 'indoor' | 'outdoor' | 'mixed';
   weather?: WeatherSummary;
   places: Place[];
@@ -80,7 +91,9 @@ export function scorePlace(place: Place, input: RecommendationInput): PlaceRecom
   // 距离匹配
   if (input.userLocation) {
     const distance = haversineDistanceKm(input.userLocation, place);
-    const maxKm = input.maxDistanceKm ?? 5;
+    const maxKm =
+      input.maxDistanceKm ??
+      (input.transportMode ? TRANSPORT_MAX_DISTANCE_KM[input.transportMode] : 5);
     if (distance > maxKm) {
       return {
         place,
@@ -142,6 +155,13 @@ export function scorePlace(place: Place, input: RecommendationInput): PlaceRecom
     const matched = input.interests.filter((i) => place.category === i).length;
     factors.interestMatch = matched > 0 ? 1 : 0.3;
     if (matched > 0) reasons.push({ code: 'interest', message: 'Matches child interest' });
+  }
+
+  // 人数匹配：多人同行（3 人以上）時，適合多人的場所加分
+  if (input.groupSize !== undefined && input.groupSize >= 3) {
+    const groupTagged = place.tags?.includes('group-play') ?? false;
+    factors.interestMatch = Math.max(factors.interestMatch, groupTagged ? 1 : 0.3);
+    if (groupTagged) reasons.push({ code: 'group', message: 'Great for groups' });
   }
 
   const score = Math.round(

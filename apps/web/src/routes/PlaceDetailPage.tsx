@@ -6,7 +6,8 @@ import { usePlace } from '../hooks/usePlaces';
 import { useFavorites } from '../hooks/useFavorites';
 import { useActiveChild } from '../hooks/useActiveChild';
 import { useGeolocation } from '../hooks/useGeolocation';
-import { scorePlaceForChild } from '../lib/recommendations';
+import { useWeather } from '../hooks/useWeather';
+import { placeGeneralCodes, scorePlaceForChild } from '../lib/recommendations';
 import { RecommendationReasons } from '../components/RecommendationReasons';
 import { CATEGORY_ICON, TAG_ICON } from '../components/places/categoryMeta';
 import { PageHeader } from '../components/PageHeader';
@@ -18,14 +19,28 @@ export function PlaceDetailPage() {
   const { favoriteIds, toggle } = useFavorites();
   const { active } = useActiveChild();
   const { coords } = useGeolocation();
+  const { data: weather } = useWeather(coords);
 
   const recommendation = useMemo(
     () =>
       place
-        ? scorePlaceForChild({ child: active, place, userLocation: coords ?? undefined })
+        ? scorePlaceForChild({
+            child: active,
+            place,
+            userLocation: coords ?? undefined,
+            weather: weather ?? undefined,
+          })
         : undefined,
-    [active, place, coords],
+    [active, place, coords, weather],
   );
+
+  const reasonCodes = useMemo(() => {
+    if (!place) return [];
+    if (recommendation) {
+      return [...new Set(recommendation.reasons.filter((r) => r.code !== 'not_published').map((r) => r.code))];
+    }
+    return placeGeneralCodes(place, weather ?? undefined);
+  }, [place, recommendation, weather]);
 
   if (isLoading) {
     return <p className="text-gray-400">{t('loading')}</p>;
@@ -108,20 +123,23 @@ export function PlaceDetailPage() {
           </button>
         </div>
 
-        {recommendation && recommendation.reasons.length > 0 && (
-          <div className="mt-4 rounded-xl bg-brand-50/60 p-3">
-            <h3 className="text-sm font-semibold text-gray-600">{t('places.whyRecommended')}</h3>
+        <div className="mt-4 rounded-xl bg-brand-50/60 p-3">
+          <h3 className="text-sm font-semibold text-gray-600">{t('places.whyRecommended')}</h3>
+          {recommendation && (
             <p className="mt-1 text-xs text-gray-500">
               {t('home.score')}: {recommendation.score}
             </p>
+          )}
+          {reasonCodes.length > 0 && (
             <div className="mt-2">
               <RecommendationReasons
-                reasonCodes={recommendation.reasons.map((reason) => reason.code)}
+                reasonCodes={reasonCodes}
                 distanceKm={coords ? haversineDistanceKm(coords, place) : null}
               />
             </div>
-          </div>
-        )}
+          )}
+          {!active && <p className="mt-2 text-xs text-gray-400">{t('places.recommendedHint')}</p>}
+        </div>
 
         {place.sourceUrl && (
           <a

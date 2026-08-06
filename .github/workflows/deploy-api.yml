@@ -1,0 +1,59 @@
+name: Deploy API to Koyeb
+
+on:
+  push:
+    branches: [develop]
+    paths:
+      - 'apps/api/**'
+      - 'packages/**'
+      - 'pnpm-lock.yaml'
+      - 'pnpm-workspace.yaml'
+      - 'Dockerfile'
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-api
+  cancel-in-progress: false
+
+jobs:
+  verify-and-deploy:
+    name: Verify then deploy API to Koyeb
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.28.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck API
+        run: pnpm --filter @kodoko/api typecheck
+
+      - name: Test API
+        run: pnpm --filter @kodoko/api test
+
+      - name: Install and configure the Koyeb CLI
+        uses: koyeb-community/koyeb-actions@v2
+        with:
+          api_token: ${{ secrets.KOYEB_API_TOKEN }}
+
+      - name: Build and deploy the application to Koyeb
+        uses: koyeb/action-git-deploy@v1
+        with:
+          app-name: kotoko-api
+          service-name: api
+          git-branch: develop
+          git-builder: docker
+          service-ports: '3001:http'
+          service-routes: '/:3001'
+          service-checks: '3001:http:/api/v1/health'
+          service-env: 'PORT=3001'

@@ -6,17 +6,15 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
-  build:
-    name: Build web app
+  build-and-deploy:
+    name: Build and deploy web app to gh-pages branch
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
@@ -34,11 +32,6 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      # 若 Pages Source 尚未設為 GitHub Actions，此步驟會立即失敗並給出明確錯誤，
-      # 而不是讓 deploy-pages 卡在 deployment_queued。
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
       - name: Build
         run: pnpm --filter @kodoko/web build
         env:
@@ -53,19 +46,12 @@ jobs:
           cp apps/web/dist/index.html apps/web/dist/404.html
           touch apps/web/dist/.nojekyll
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      # 使用 branch 部署（gh-pages）以繞開 GitHub Actions 部署佇列卡住的問題。
+      # 需要在 repo Settings → Pages → Source 改為「Deploy from a branch」→ gh-pages / (root)。
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: apps/web/dist
-
-  deploy:
-    name: Deploy to GitHub Pages
-    needs: build
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: apps/web/dist
+          publish_branch: gh-pages
+          force_orphan: false

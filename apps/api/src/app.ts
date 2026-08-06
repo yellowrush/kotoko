@@ -6,6 +6,7 @@ import { authRoutes } from './routes/auth';
 import { contentRoutes } from './routes/content';
 import { placesRoutes } from './routes/places';
 import { knowledgeRoutes } from './routes/knowledge';
+import { policiesRoutes } from './routes/policies';
 
 export const API_PREFIX = '/api/v1';
 
@@ -20,6 +21,7 @@ export function buildApp(): FastifyInstance {
   void app.register(contentRoutes, prefixOptions);
   void app.register(placesRoutes, prefixOptions);
   void app.register(knowledgeRoutes, prefixOptions);
+  void app.register(policiesRoutes, prefixOptions);
 
   return app;
 }

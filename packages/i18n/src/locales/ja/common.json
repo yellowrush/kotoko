@@ -180,7 +180,43 @@
   },
   "policies": {
     "title": "制度・手続き",
-    "disclaimer": "この情報は公式情報の要約です。詳細は必ず公式ページをご確認ください。"
+    "disclaimer": "この情報は公式情報の要約です。詳細は必ず公式ページをご確認ください。",
+    "viewAll": "すべて見る",
+    "noChild": "こどもを登録すると、年齢と居住地に合わせた制度を表示します。",
+    "matching": "対象の制度",
+    "notMatching": "そのほかの制度",
+    "noMatch": "条件に合う制度はありません。",
+    "deadline": "申請期限",
+    "daysLeft": "残り {{days}} 日",
+    "applicationStart": "申請開始",
+    "sourceChecked": "情報確認日",
+    "officialLink": "公式サイトで確認する",
+    "backToList": "制度一覧に戻る",
+    "condition": {
+      "ageMonths": "対象月齢（現在 {{months}} ヶ月）",
+      "municipality": "居住地: {{name}}",
+      "other": "その他の条件",
+      "matched": "条件に一致",
+      "notMatched": "条件に一致しない"
+    },
+    "level": {
+      "national": "全国",
+      "prefecture": "東京都",
+      "municipality": "市区町村"
+    },
+    "status": {
+      "new": "新規",
+      "viewed": "確認済み",
+      "planned": "対応予定",
+      "completed": "完了",
+      "dismissed": "スキップ",
+      "current": "対応状況"
+    },
+    "actions": {
+      "planned": "対応予定にする",
+      "completed": "完了にする",
+      "dismissed": "スキップする"
+    }
   },
   "favorites": {
     "title": "お気に入り",
@@ -201,6 +237,9 @@
       "overwrite": "上書き"
     },
     "deleteAll": "すべてのローカルデータを削除",
-    "language": "言語"
+    "language": "言語",
+    "municipality": "居住地（市区町村）",
+    "municipalityNotice": "この端末内での制度の絞り込みにのみ使います。サーバーには送信されません。",
+    "municipalityNone": "未選択"
   }
 }

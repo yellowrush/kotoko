@@ -180,7 +180,43 @@
   },
   "policies": {
     "title": "政策制度",
-    "disclaimer": "此資訊為官方資訊的摘要。詳細內容請務必查看官方頁面。"
+    "disclaimer": "此資訊為官方資訊的摘要。詳細內容請務必查看官方頁面。",
+    "viewAll": "查看全部",
+    "noChild": "登記孩子後，將顯示符合其年齡與居住地條件的制度。",
+    "matching": "符合條件的制度",
+    "notMatching": "其他制度",
+    "noMatch": "暫時沒有符合條件的制度。",
+    "deadline": "申請期限",
+    "daysLeft": "剩餘 {{days}} 天",
+    "applicationStart": "申請開始",
+    "sourceChecked": "資訊確認日期",
+    "officialLink": "前往官方網站查看",
+    "backToList": "返回制度列表",
+    "condition": {
+      "ageMonths": "適合月齡（現在 {{months}} 個月）",
+      "municipality": "居住地：{{name}}",
+      "other": "其他條件",
+      "matched": "條件符合",
+      "notMatched": "條件不符合"
+    },
+    "level": {
+      "national": "全國",
+      "prefecture": "東京都",
+      "municipality": "市町村"
+    },
+    "status": {
+      "new": "新",
+      "viewed": "已查看",
+      "planned": "計畫處理",
+      "completed": "已完成",
+      "dismissed": "略過",
+      "current": "處理狀態"
+    },
+    "actions": {
+      "planned": "設為計畫處理",
+      "completed": "設為完成",
+      "dismissed": "略過"
+    }
   },
   "favorites": {
     "title": "我的收藏",
@@ -201,6 +237,9 @@
       "overwrite": "覆寫"
     },
     "deleteAll": "刪除全部本機資料",
-    "language": "語言"
+    "language": "語言",
+    "municipality": "居住地（市町村）",
+    "municipalityNotice": "僅用於在本機篩選制度。不會上傳至伺服器。",
+    "municipalityNone": "未選擇"
   }
 }

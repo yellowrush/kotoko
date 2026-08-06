@@ -105,6 +105,53 @@ export function matchPolicy(rule: PolicyRule, context: PolicyContext): MatchResu
   return { matched, reasons };
 }
 
+export type LeafResult = {
+  field: string;
+  operator: PolicyOperator;
+  expected: unknown;
+  actual: unknown;
+  matched: boolean;
+};
+
+/** 構造化された leaf 評価結果。UI で理由を表示するために使う。 */
+export function evaluateLeaves(rule: PolicyRule, context: PolicyContext): LeafResult[] {
+  if ('all' in rule && Array.isArray(rule.all)) {
+    return rule.all.flatMap((child) => evaluateLeaves(child, context));
+  }
+  if ('any' in rule && Array.isArray(rule.any)) {
+    return rule.any.flatMap((child) => evaluateLeaves(child, context));
+  }
+  if ('field' in rule) {
+    const actual = resolveValue(context, rule.field);
+    return [
+      {
+        field: rule.field,
+        operator: rule.operator,
+        expected: rule.value,
+        actual,
+        matched: compare(rule.operator, actual, rule.value),
+      },
+    ];
+  }
+  return [];
+}
+
+export type PolicyLeafCheck = {
+  matched: boolean;
+  leaves: LeafResult[];
+  failingLeaves: LeafResult[];
+};
+
+/** ルール全体の判定と leaf 単位の判定をまとめて返す。 */
+export function checkPolicy(
+  rule: PolicyRule,
+  context: PolicyContext,
+): PolicyLeafCheck {
+  const matched = matchPolicy(rule, context).matched;
+  const leaves = evaluateLeaves(rule, context);
+  return { matched, leaves, failingLeaves: leaves.filter((leaf) => !leaf.matched) };
+}
+
 export type ChildContextPartials = {
   interests?: string[];
   accessibilityNeeds?: string[];

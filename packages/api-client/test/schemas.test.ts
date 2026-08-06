@@ -1,5 +1,12 @@
 import { describe, expect, it } from 'vitest';
-import { placeSchema, placeListSchema, knowledgeSchema, knowledgeListSchema } from '../src/schemas';
+import {
+  placeSchema,
+  placeListSchema,
+  knowledgeSchema,
+  knowledgeListSchema,
+  policySchema,
+  policyListSchema,
+} from '../src/schemas';
 
 const validPlace = {
   id: 'ueno-park',
@@ -89,6 +96,69 @@ describe('knowledgeListSchema', () => {
   it('rejects a list item that fails validation', () => {
     expect(() =>
       knowledgeListSchema.parse({ knowledge: [{ ...validKnowledge, minAgeMonths: -1 }], total: 1 }),
+    ).toThrow();
+  });
+});
+
+const validPolicy = {
+  id: 'p-child-allowance',
+  title: '児童手当',
+  contextHint: '子育て世帯に支給される手当です。',
+  authorityLevel: 'national',
+  eligibilityRule: {
+    all: [
+      { field: 'child.ageMonths', operator: 'lte', value: 216 },
+      { field: 'user.municipalityCode', operator: 'eq', value: '13108' },
+    ],
+  },
+  officialUrl: 'https://www.cfa.go.jp',
+  sourceCheckedAt: '2026-01-10T00:00:00.000Z',
+  version: 1,
+  status: 'published',
+  locale: 'ja',
+};
+
+describe('policySchema', () => {
+  it('accepts a valid policy with nested rules', () => {
+    expect(policySchema.parse(validPolicy)).toMatchObject({ id: 'p-child-allowance' });
+  });
+
+  it('accepts any-group rules', () => {
+    const withAny = {
+      ...validPolicy,
+      eligibilityRule: {
+        any: [
+          { field: 'user.municipalityCode', operator: 'eq', value: '13101' },
+          { field: 'user.municipalityCode', operator: 'eq', value: '13108' },
+        ],
+      },
+    };
+    expect(policySchema.parse(withAny).eligibilityRule).toHaveProperty('any');
+  });
+
+  it('rejects unknown operators', () => {
+    expect(() =>
+      policySchema.parse({
+        ...validPolicy,
+        eligibilityRule: { all: [{ field: 'a', operator: 'eval', value: 1 }] },
+      }),
+    ).toThrow();
+  });
+
+  it('rejects unknown authority level', () => {
+    expect(() => policySchema.parse({ ...validPolicy, authorityLevel: 'city' })).toThrow();
+  });
+});
+
+describe('policyListSchema', () => {
+  it('accepts a list response', () => {
+    const parsed = policyListSchema.parse({ policies: [validPolicy], total: 1 });
+    expect(parsed.policies).toHaveLength(1);
+  });
+
+  it('rejects a policy without an official url', () => {
+    expect(() =>
+      policyListSchema.parse({ policies: [{ ...validPolicy, officialUrl: '' }], total: 1 }),
     ).toThrow();
   });
 });

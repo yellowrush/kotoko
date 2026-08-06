@@ -5,6 +5,7 @@ export * from './child';
 export * from './place';
 export * from './knowledge';
 export * from './policy';
+export * from './region';
 export * from './age';
 
 export const kodokoBackupHeader = 'kodoko';

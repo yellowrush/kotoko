@@ -9,7 +9,9 @@ import { usePlaces } from '../hooks/usePlaces';
 import { useGeolocation } from '../hooks/useGeolocation';
 import { useWeather } from '../hooks/useWeather';
 import { useKnowledge, useKnowledgeProgress } from '../hooks/useKnowledge';
+import { usePolicies, usePolicyMatches, usePolicyTasks } from '../hooks/usePolicies';
 import { filterKnowledgeByAge, sortKnowledgeByRead } from '../lib/knowledge';
+import { daysUntil } from '../lib/policy';
 import { recommendForChild } from '../lib/recommendations';
 import { RecommendationReasons } from '../components/RecommendationReasons';
 import { AgeLabel } from '../components/AgeLabel';
@@ -81,6 +83,9 @@ export function HomePage() {
   const [groupSize, setGroupSize] = useState<number | undefined>();
   const { data: knowledge, isLoading: knowledgeLoading } = useKnowledge();
   const { readIds } = useKnowledgeProgress();
+  const { data: policies, isLoading: policiesLoading } = usePolicies();
+  const matches = usePolicyMatches();
+  const { statusFor } = usePolicyTasks();
 
   const weeklyKnowledge = useMemo(
     () =>
@@ -90,6 +95,18 @@ export function HomePage() {
       ).slice(0, 3),
     [knowledge, active, readIds],
   );
+
+  const policyReminders = useMemo(() => {
+    const list = (policies ?? [])
+      .filter((policy) => matches.get(policy.id)?.matched)
+      .filter((policy) => statusFor(policy.id) !== 'dismissed')
+      .sort((a, b) => {
+        const aDeadline = a.applicationDeadlineAt?.slice(0, 10) ?? '9999-12-31';
+        const bDeadline = b.applicationDeadlineAt?.slice(0, 10) ?? '9999-12-31';
+        return aDeadline.localeCompare(bDeadline);
+      });
+    return list.slice(0, 3);
+  }, [policies, matches, statusFor]);
 
   function renderWeatherLabel(): string {
     if (!coords) return t('home.weatherUnavailable');
@@ -263,8 +280,34 @@ export function HomePage() {
       </Card>
 
       <Card>
-        <h2 className="text-sm font-semibold text-gray-500">{t('home.policyReminders')}</h2>
-        <p className="mt-2 text-sm text-gray-400">Sprint 6</p>
+        <div className="flex items-center justify-between">
+          <h2 className="text-sm font-semibold text-gray-500">{t('home.policyReminders')}</h2>
+          <Link to="/policies" className="text-xs font-medium text-brand-700">
+            {t('policies.viewAll')}
+          </Link>
+        </div>
+        {policiesLoading ? (
+          <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>
+        ) : policyReminders.length === 0 ? (
+          <p className="mt-2 text-sm text-gray-400">{t('policies.noMatch')}</p>
+        ) : (
+          <ul className="mt-2 flex flex-col gap-2">
+            {policyReminders.map((policy) => (
+              <li key={policy.id}>
+                <Link to={`/policies/${policy.id}`} className="block hover:opacity-80">
+                  <p className="text-sm text-gray-700">{policy.title}</p>
+                  {policy.applicationDeadlineAt && (
+                    <p className="text-xs text-gray-400">
+                      {t('policies.deadline')}: {policy.applicationDeadlineAt.slice(0, 10)}
+                      {daysUntil(policy.applicationDeadlineAt) >= 0 &&
+                        `（${t('policies.daysLeft', { days: daysUntil(policy.applicationDeadlineAt) })}）`}
+                    </p>
+                  )}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </Card>
 
       <Card>

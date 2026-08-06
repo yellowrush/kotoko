@@ -6,12 +6,15 @@ import type { ImportMode } from '@kodoko/local-db';
 import { useAppStore } from '../store/appStore';
 import { changeLocale } from '../app/i18n';
 import { deleteLocalData, exportLocalData, importLocalData } from '../lib/backup';
+import { usePreference } from '../hooks/usePreference';
+import { MUNICIPALITIES } from '@kodoko/domain';
 import { PageHeader } from '../components/PageHeader';
 
 export function SettingsPage() {
   const { t } = useTranslation();
   const locale = useAppStore((s) => s.locale);
   const setLocale = useAppStore((s) => s.setLocale);
+  const { preference, setMunicipality } = usePreference();
   const [message, setMessage] = useState<string | null>(null);
   const [importMode, setImportMode] = useState<ImportMode>('merge');
 
@@ -62,6 +65,26 @@ export function SettingsPage() {
             </button>
           ))}
         </div>
+      </section>
+
+      <section className="rounded-lg border border-gray-200 bg-white p-4">
+        <h2 className="text-sm font-semibold text-gray-700">{t('settings.municipality')}</h2>
+        <p className="mt-1 text-xs text-gray-500">{t('settings.municipalityNotice')}</p>
+        <select
+          value={preference?.municipalityCode ?? ''}
+          onChange={(e) => {
+            const code = e.target.value || undefined;
+            void setMunicipality(code);
+          }}
+          className="mt-2 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm"
+        >
+          <option value="">{t('settings.municipalityNone')}</option>
+          {MUNICIPALITIES.map((m) => (
+            <option key={m.code} value={m.code}>
+              {m.nameJa}
+            </option>
+          ))}
+        </select>
       </section>
 
       <section className="rounded-lg border border-gray-200 bg-white p-4">

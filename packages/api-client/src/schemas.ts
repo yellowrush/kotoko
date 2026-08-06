@@ -110,3 +110,57 @@ export const knowledgeListSchema = z.object({
 export type KnowledgeDTO = z.infer<typeof knowledgeSchema>;
 export type KnowledgeListDTO = z.infer<typeof knowledgeListSchema>;
 export type { KnowledgeContent };
+
+const policyOperator = z.enum(['eq', 'neq', 'lt', 'lte', 'gt', 'gte', 'in', 'notIn', 'contains']);
+
+const policyField = z.enum([
+  'child.ageMonths',
+  'child.birthDate',
+  'child.interests',
+  'child.accessibilityNeeds',
+  'user.municipalityCode',
+  'user.isLoggedIn',
+  'today',
+]);
+
+const policyRuleLeafSchema = z.object({
+  field: policyField,
+  operator: policyOperator,
+  value: z.unknown().default(undefined),
+});
+
+const policyRuleSchema = z.lazy(() =>
+  z.union([
+    policyRuleLeafSchema,
+    z.object({ all: z.array(policyRuleSchema) }),
+    z.object({ any: z.array(policyRuleSchema) }),
+  ]),
+) as unknown as z.ZodType<import('@kodoko/domain').PolicyRule>;
+
+/**
+ * API DTO Schema for policies（与领域类型分离，见 AGENTS.md 18.1）。
+ * 政策规则只允许声明式 JSON，禁止动态 JavaScript。
+ */
+export const policySchema = z.object({
+  id: z.string().min(1),
+  title: z.string().min(1),
+  contextHint: z.string(),
+  authorityLevel: z.enum(['national', 'prefecture', 'municipality']),
+  municipalityCode: z.string().optional(),
+  eligibilityRule: policyRuleSchema,
+  applicationStartAt: z.string().optional(),
+  applicationDeadlineAt: z.string().optional(),
+  officialUrl: z.string().min(1),
+  sourceCheckedAt: z.string(),
+  version: z.number().int().positive(),
+  status: contentStatus,
+  locale: z.string().min(1),
+});
+
+export const policyListSchema = z.object({
+  policies: z.array(policySchema),
+  total: z.number().int().nonnegative(),
+});
+
+export type PolicyDTO = z.infer<typeof policySchema>;
+export type PolicyListDTO = z.infer<typeof policyListSchema>;

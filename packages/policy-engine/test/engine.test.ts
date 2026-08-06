@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { matchPolicy, isPolicyRule, childContext } from '../src/engine';
+import { matchPolicy, isPolicyRule, childContext, checkPolicy } from '../src/engine';
 import type { PolicyRule } from '@kodoko/domain';
 
 const AGE_LTE_216 = {
@@ -65,6 +65,50 @@ describe('matchPolicy', () => {
     const result = matchPolicy(rule, { child: { ageMonths: 24 }, user: { municipalityCode: '00000' } });
     expect(result.matched).toBe(false);
     expect(result.reasons.join(' ')).toContain('13108');
+  });
+});
+
+describe('checkPolicy', () => {
+  it('flattens leaves from nested groups', () => {
+    const rule = {
+      all: [
+        { field: 'child.ageMonths', operator: 'gte', value: 0 },
+        {
+          any: [
+            { field: 'user.municipalityCode', operator: 'eq', value: '13108' },
+            { field: 'user.municipalityCode', operator: 'eq', value: '13106' },
+          ],
+        },
+      ],
+    } satisfies PolicyRule;
+
+    const result = checkPolicy(rule, {
+      child: { ageMonths: 24 },
+      user: { municipalityCode: '00000' },
+    });
+    expect(result.matched).toBe(false);
+    expect(result.leaves).toHaveLength(3);
+    expect(result.failingLeaves.map((leaf) => leaf.field)).toEqual([
+      'user.municipalityCode',
+      'user.municipalityCode',
+    ]);
+  });
+
+  it('reports no failing leaves when matched', () => {
+    const result = checkPolicy(AGE_LTE_216, { child: { ageMonths: 100 } });
+    expect(result.matched).toBe(true);
+    expect(result.failingLeaves).toEqual([]);
+  });
+
+  it('exposes actual values for explainable UI', () => {
+    const result = checkPolicy(AGE_LTE_216, { child: { ageMonths: 300 } });
+    expect(result.failingLeaves[0]).toMatchObject({
+      field: 'child.ageMonths',
+      operator: 'lte',
+      expected: 216,
+      actual: 300,
+      matched: false,
+    });
   });
 });
 

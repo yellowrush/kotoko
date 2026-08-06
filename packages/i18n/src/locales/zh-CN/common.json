@@ -180,7 +180,43 @@
   },
   "policies": {
     "title": "政策制度",
-    "disclaimer": "此信息为官方信息的摘要。详细内容请务必查看官方页面。"
+    "disclaimer": "此信息为官方信息的摘要。详细内容请务必查看官方页面。",
+    "viewAll": "查看全部",
+    "noChild": "登记孩子后，将显示适合其年龄与居住地的制度。",
+    "matching": "符合条件的制度",
+    "notMatching": "其他制度",
+    "noMatch": "暂时没有符合条件的制度。",
+    "deadline": "申请期限",
+    "daysLeft": "剩余 {{days}} 天",
+    "applicationStart": "申请开始",
+    "sourceChecked": "信息确认日期",
+    "officialLink": "前往官网查看",
+    "backToList": "返回制度列表",
+    "condition": {
+      "ageMonths": "适合月龄（现在 {{months}} 个月）",
+      "municipality": "居住地：{{name}}",
+      "other": "其他条件",
+      "matched": "条件符合",
+      "notMatched": "条件不符合"
+    },
+    "level": {
+      "national": "全国",
+      "prefecture": "东京都",
+      "municipality": "市区町村"
+    },
+    "status": {
+      "new": "新",
+      "viewed": "已查看",
+      "planned": "计划处理",
+      "completed": "已完成",
+      "dismissed": "跳过",
+      "current": "处理状态"
+    },
+    "actions": {
+      "planned": "设为计划处理",
+      "completed": "设为完成",
+      "dismissed": "跳过"
+    }
   },
   "favorites": {
     "title": "我的收藏",
@@ -201,6 +237,9 @@
       "overwrite": "覆盖"
     },
     "deleteAll": "删除全部本地数据",
-    "language": "语言"
+    "language": "语言",
+    "municipality": "居住地（市区町村）",
+    "municipalityNotice": "仅用于在本机筛选制度。不会上传到服务器。",
+    "municipalityNone": "未选择"
   }
 }

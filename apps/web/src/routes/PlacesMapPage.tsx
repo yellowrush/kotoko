@@ -86,7 +86,7 @@ export function PlacesMapPage() {
         )}
       </div>
 
-      <div className="z-10">
+      <div className="z-10 bg-white pb-12">
         <PlaceBottomSheet
           places={filtered}
           selectedPlaceId={filters.placeId}

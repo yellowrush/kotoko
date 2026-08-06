@@ -23,19 +23,22 @@ export type PlacesMapProps = {
 
 function markerElement() {
   const el = document.createElement('div');
-  el.style.cursor = 'pointer';
-  updateMarkerElement(el, 1, false);
+  el.className = 'relative flex h-7 w-7 cursor-pointer items-center justify-center';
+  const inner = document.createElement('div');
+  inner.className = 'flex h-full w-full items-center justify-center rounded-full border-2 text-xs font-bold shadow-md transition';
+  el.appendChild(inner);
   return el;
 }
 
 function updateMarkerElement(el: HTMLElement, number: number, active: boolean) {
-  el.className = [
-    'flex h-7 w-7 items-center justify-center rounded-full border-2 text-xs font-bold shadow-md transition',
+  const inner = el.firstElementChild as HTMLElement;
+  inner.className = [
+    'flex h-full w-full items-center justify-center rounded-full border-2 text-xs font-bold shadow-md transition',
     active
       ? 'border-white bg-brand-700 text-white scale-125'
       : 'border-brand-700 bg-white text-brand-700',
   ].join(' ');
-  el.textContent = String(number);
+  inner.textContent = String(number);
 }
 
 export function PlacesMap({

@@ -32,6 +32,16 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Check API_BASE_URL secret availability
+        env:
+          API_BASE_URL: ${{ secrets.API_BASE_URL }}
+        run: |
+          if [ -n "$API_BASE_URL" ]; then
+            echo "API_BASE_URL_SECRET=SET"
+          else
+            echo "API_BASE_URL_SECRET=MISSING"
+          fi
+
       - name: Build
         run: pnpm --filter @kodoko/web build
         env:

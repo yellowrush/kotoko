@@ -21,7 +21,7 @@ export function AppLayout() {
       <header className="sticky top-0 z-10 border-b border-gray-200 bg-white/90 backdrop-blur">
         <div className="flex items-center justify-between px-4 py-3">
         <div className="flex items-center gap-2">
-          <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="" className="h-6 w-6" />
+          <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="こどこ" className="h-8 w-auto" />
         </div>
         </div>
       </header>

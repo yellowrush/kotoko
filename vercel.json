@@ -3,22 +3,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "apps/api/vercel.ts",
-      "use": "@vercel/node",
-      "config": {
-        "runtime": "nodejs20.x",
-        "esbuild": {
-          "bundle": true,
-          "target": "es2020",
-          "minify": true
-        }
-      }
+      "src": "apps/api/vercel.bundle.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "apps/api/vercel.ts"
+      "dest": "apps/api/vercel.bundle.js"
     }
   ]
 }

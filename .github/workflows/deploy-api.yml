@@ -43,6 +43,10 @@ jobs:
       - name: Test API
         run: pnpm --filter @kodoko/api test
 
+      # 打包成單一檔案（Vercel legacy builder 不會自行 bundle）
+      - name: Bundle serverless function
+        run: pnpm --filter @kodoko/api build:serverless
+
       # .vercel/project.json 已 commit（僅含 orgId/projectId，無機密）
       - name: Pull Vercel project settings
         run: npx vercel@latest pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}

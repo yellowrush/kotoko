@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Card } from '@kodoko/ui';
-import { calculateAgeMonths, findMunicipality } from '@kodoko/domain';
+import { calculateAgeMonths, findMunicipality, findNearestMunicipality } from '@kodoko/domain';
 import type { TransportMode } from '@kodoko/recommendation';
 import { useActiveChild } from '../hooks/useActiveChild';
 import { usePlaces } from '../hooks/usePlaces';
@@ -121,19 +121,27 @@ export function HomePage() {
 
   const municipality = findMunicipality(preference?.municipalityCode);
 
+  function locationPlace(city: string): string {
+    return t('home.place', { prefecture: t('home.prefecture'), city });
+  }
+
   function renderLocationInfo() {
     if (coords) {
-      return (
-        <p className="mt-1 text-xs text-gray-500">
-          {t('home.currentLocation', {
-            lat: coords.latitude.toFixed(3),
-            lng: coords.longitude.toFixed(3),
-          })}
-        </p>
-      );
+      const nearest = findNearestMunicipality(coords.latitude, coords.longitude);
+      if (nearest) {
+        return (
+          <p className="mt-1 text-xs text-gray-500">
+            {t('home.currentLocation', { place: locationPlace(nearest.nameJa) })}
+          </p>
+        );
+      }
     }
     if (municipality) {
-      return <p className="mt-1 text-xs text-gray-500">{t('home.residence', { name: municipality.nameJa })}</p>;
+      return (
+        <p className="mt-1 text-xs text-gray-500">
+          {t('home.residence', { place: locationPlace(municipality.nameJa) })}
+        </p>
+      );
     }
     return (
       <p className="mt-1 flex items-center gap-1 text-xs text-gray-500">

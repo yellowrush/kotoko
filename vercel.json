@@ -6,7 +6,12 @@
       "src": "apps/api/vercel.ts",
       "use": "@vercel/node",
       "config": {
-        "runtime": "nodejs20.x"
+        "runtime": "nodejs20.x",
+        "esbuild": {
+          "bundle": true,
+          "target": "es2020",
+          "minify": true
+        }
       }
     }
   ],

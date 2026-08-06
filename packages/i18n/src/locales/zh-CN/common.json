@@ -84,6 +84,7 @@
       "other": "其他"
     },
     "filters": {
+      "label": "筛选",
       "all": "全部",
       "allArea": "全区域",
       "r3": "3km",

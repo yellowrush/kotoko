@@ -84,6 +84,7 @@
       "other": "その他"
     },
     "filters": {
+      "label": "フィルター",
       "all": "すべて",
       "allArea": "全地域",
       "r3": "3km",

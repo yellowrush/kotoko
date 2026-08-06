@@ -141,5 +141,9 @@ export function PlacesMap({
     }
   }, [places, selectedPlaceId]);
 
-  return <div ref={containerRef} className="absolute inset-0" />;
+  return (
+    <div className="absolute inset-0">
+      <div ref={containerRef} className="h-full w-full" />
+    </div>
+  );
 }

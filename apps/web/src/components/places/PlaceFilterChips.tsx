@@ -1,6 +1,7 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { IndoorOutdoor, PlaceCategory } from '@kodoko/domain';
-import type { PlacesFilterState } from '../../hooks/usePlaces';
+import { DEFAULT_RADIUS_KM, type PlacesFilterState } from '../../hooks/usePlaces';
 
 const CATEGORIES: PlaceCategory[] = [
   'park',
@@ -52,9 +53,7 @@ function Chip({
       type="button"
       onClick={onClick}
       className={`shrink-0 rounded-full border px-3 py-1 text-xs font-medium transition ${
-        active
-          ? 'border-brand-600 bg-brand-600 text-white'
-          : 'border-gray-300 bg-white text-gray-600'
+        active ? 'border-brand-600 bg-brand-600 text-white' : 'border-gray-300 bg-white text-gray-600'
       }`}
     >
       {children}
@@ -70,54 +69,92 @@ export function PlaceFilterChips({
   toggleTag,
 }: PlaceFilterChipsProps) {
   const { t } = useTranslation();
+  const [open, setOpen] = useState(false);
+
+  const activeCount =
+    (filters.category ? 1 : 0) +
+    (filters.indoorOutdoor ? 1 : 0) +
+    (filters.tags.length > 0 ? 1 : 0) +
+    (filters.radiusKm !== undefined && filters.radiusKm !== DEFAULT_RADIUS_KM ? 1 : 0);
 
   return (
-    <div className="flex flex-col gap-2">
-      <div className="scrollbar-hide -mx-4 flex gap-1.5 overflow-x-auto px-4">
-        <Chip active={!filters.category} onClick={() => setCategory(undefined)}>
-          {t('places.filters.all')}
-        </Chip>
-        {CATEGORIES.map((cat) => (
-          <Chip
-            key={cat}
-            active={filters.category === cat}
-            onClick={() => setCategory(filters.category === cat ? undefined : cat)}
-          >
-            {t(`places.categories.${cat}`)}
-          </Chip>
-        ))}
-      </div>
-      <div className="flex items-center gap-1.5">
-        {INDOOR_OPTIONS.map((opt) => (
-          <Chip
-            key={opt.value}
-            active={filters.indoorOutdoor === opt.value}
-            onClick={() => setIndoorOutdoor(filters.indoorOutdoor === opt.value ? undefined : opt.value)}
-          >
-            {t(`places.filterIndoor.${opt.key}`)}
-          </Chip>
-        ))}
-        <span className="mx-1 h-4 w-px bg-gray-200" />
-        <Chip active={!filters.radiusKm} onClick={() => setRadius(undefined)}>
-          {t('places.filters.allArea')}
-        </Chip>
-        {RADIUS.map((r) => (
-          <Chip
-            key={r.key}
-            active={filters.radiusKm === r.value}
-            onClick={() => setRadius(filters.radiusKm === r.value ? undefined : r.value)}
-          >
-            {t(`places.filters.${r.key}`)}
-          </Chip>
-        ))}
-      </div>
-      <div className="flex gap-1.5">
-        {TAGS.map((tag) => (
-          <Chip key={tag} active={filters.tags.includes(tag)} onClick={() => toggleTag(tag)}>
-            {t(`places.tags.${tag}`)}
-          </Chip>
-        ))}
-      </div>
+    <div className="relative">
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
+        className="flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 shadow-md"
+      >
+        <span aria-hidden>⚲</span>
+        <span>{t('places.filters.label')}</span>
+        {activeCount > 0 && (
+          <span className="rounded-full bg-brand-600 px-1.5 text-[10px] font-bold text-white">
+            {activeCount}
+          </span>
+        )}
+      </button>
+
+      {open && (
+        <>
+          <button
+            type="button"
+            aria-label={t('common.collapse')}
+            onClick={() => setOpen(false)}
+            className="fixed inset-0 z-[5] cursor-default"
+          />
+          <div className="absolute left-0 top-full z-[6] mt-2 w-[min(88vw,22rem)] rounded-2xl border border-gray-200 bg-white p-3 shadow-xl">
+            <div className="flex flex-col gap-2">
+              <div className="scrollbar-hide -mx-1 flex gap-1.5 overflow-x-auto px-1">
+                <Chip active={!filters.category} onClick={() => setCategory(undefined)}>
+                  {t('places.filters.all')}
+                </Chip>
+                {CATEGORIES.map((cat) => (
+                  <Chip
+                    key={cat}
+                    active={filters.category === cat}
+                    onClick={() => setCategory(filters.category === cat ? undefined : cat)}
+                  >
+                    {t(`places.categories.${cat}`)}
+                  </Chip>
+                ))}
+              </div>
+              <div className="flex items-center gap-1.5">
+                {INDOOR_OPTIONS.map((opt) => (
+                  <Chip
+                    key={opt.value}
+                    active={filters.indoorOutdoor === opt.value}
+                    onClick={() =>
+                      setIndoorOutdoor(filters.indoorOutdoor === opt.value ? undefined : opt.value)
+                    }
+                  >
+                    {t(`places.filterIndoor.${opt.key}`)}
+                  </Chip>
+                ))}
+                <span className="mx-1 h-4 w-px bg-gray-200" />
+                <Chip active={filters.radiusKm === undefined} onClick={() => setRadius(undefined)}>
+                  {t('places.filters.allArea')}
+                </Chip>
+                {RADIUS.map((r) => (
+                  <Chip
+                    key={r.key}
+                    active={filters.radiusKm === r.value}
+                    onClick={() => setRadius(filters.radiusKm === r.value ? undefined : r.value)}
+                  >
+                    {t(`places.filters.${r.key}`)}
+                  </Chip>
+                ))}
+              </div>
+              <div className="flex gap-1.5">
+                {TAGS.map((tag) => (
+                  <Chip key={tag} active={filters.tags.includes(tag)} onClick={() => toggleTag(tag)}>
+                    {t(`places.tags.${tag}`)}
+                  </Chip>
+                ))}
+              </div>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 }

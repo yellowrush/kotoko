@@ -23,7 +23,7 @@ export function AppLayout() {
         </div>
       </header>
 
-      <main className={fullBleed ? 'flex-1 overflow-hidden' : 'flex-1 px-4 pb-20 pt-4'}>
+      <main className={fullBleed ? 'flex flex-1 flex-col overflow-hidden' : 'flex-1 px-4 pb-20 pt-4'}>
         <Outlet />
       </main>
 

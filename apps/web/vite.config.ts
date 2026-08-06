@@ -11,8 +11,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg'],
       manifest: {
-        name: 'Kodoko',
-        short_name: 'Kodoko',
+        name: 'こどこ',
+        short_name: 'こどこ',
         description: '今日、子どもとどこ行こう？',
         theme_color: '#e04a08',
         background_color: '#ffffff',

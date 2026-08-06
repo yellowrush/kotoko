@@ -14,6 +14,33 @@ type LeafReason =
   | { type: 'ageMonths'; months: number }
   | { type: 'municipality'; name: string };
 
+type AgeSummary = {
+  months?: number;
+  min?: number;
+  max?: number;
+  matched: boolean;
+};
+
+function summarizeAgeLeaves(leaves: LeafResult[]): AgeSummary | null {
+  const ageLeaves = leaves.filter((leaf) => leaf.field === 'child.ageMonths');
+  if (ageLeaves.length === 0) return null;
+
+  const monthsLeaf = ageLeaves.find((leaf) => typeof leaf.actual === 'number');
+  const gteValues = ageLeaves
+    .filter((leaf) => leaf.operator === 'gte' && typeof leaf.expected === 'number')
+    .map((leaf) => leaf.expected as number);
+  const lteValues = ageLeaves
+    .filter((leaf) => leaf.operator === 'lte' && typeof leaf.expected === 'number')
+    .map((leaf) => leaf.expected as number);
+
+  return {
+    months: typeof monthsLeaf?.actual === 'number' ? monthsLeaf.actual : undefined,
+    min: gteValues.length > 0 ? Math.max(...gteValues) : undefined,
+    max: lteValues.length > 0 ? Math.min(...lteValues) : undefined,
+    matched: ageLeaves.every((leaf) => leaf.matched),
+  };
+}
+
 function leafReason(leaf: LeafResult): LeafReason | null {
   if (leaf.field === 'child.ageMonths' && typeof leaf.actual === 'number') {
     return { type: 'ageMonths', months: leaf.actual };
@@ -69,13 +96,50 @@ export function PolicyDetailPage() {
       )}
 
       <section className="mt-4 rounded-xl bg-white p-3">
-        <h2 className="text-sm font-semibold text-gray-600">{t('policies.condition')}</h2>
+        <h2 className="text-sm font-semibold text-gray-600">{t('policies.conditions')}</h2>
         <ul className="mt-2 flex flex-col gap-1.5">
-          {(check?.leaves ?? []).map((leaf, index) => {
-            const reason = leafReason(leaf);
-            return (
+          {(() => {
+            const leaves = check?.leaves ?? [];
+            const age = summarizeAgeLeaves(leaves);
+            const otherLeaves = leaves.filter((leaf) => leaf.field !== 'child.ageMonths');
+            const rows: { matched: boolean; text: string }[] = [];
+
+            if (age) {
+              const ageText =
+                age.months === undefined
+                  ? t('policies.condition.ageMonthsUnknown')
+                  : age.min !== undefined && age.max !== undefined
+                    ? t('policies.condition.ageMonths', {
+                        min: age.min,
+                        max: age.max,
+                        months: age.months,
+                      })
+                    : age.min !== undefined
+                      ? t('policies.condition.ageMonthsFrom', {
+                          min: age.min,
+                          months: age.months,
+                        })
+                      : age.max !== undefined
+                        ? t('policies.condition.ageMonthsTo', {
+                            max: age.max,
+                            months: age.months,
+                          })
+                        : t('policies.condition.ageMonthsPlain', { months: age.months });
+              rows.push({ matched: age.matched, text: ageText });
+            }
+
+            for (const leaf of otherLeaves) {
+              const reason = leafReason(leaf);
+              const text =
+                reason?.type === 'municipality'
+                  ? t('policies.condition.municipality', { name: reason.name })
+                  : t('policies.condition.other');
+              rows.push({ matched: leaf.matched, text });
+            }
+
+            return rows.map((row, index) => (
               <li key={index} className="flex items-center gap-2 text-sm">
-                {leaf.matched ? (
+                {row.matched ? (
                   <span className="shrink-0 text-emerald-600" aria-label={t('policies.condition.matched')}>
                     ✓
                   </span>
@@ -84,16 +148,10 @@ export function PolicyDetailPage() {
                     ✗
                   </span>
                 )}
-                <span className={leaf.matched ? 'text-gray-700' : 'text-gray-400'}>
-                  {reason?.type === 'ageMonths'
-                    ? t('policies.condition.ageMonths', { months: reason.months })
-                    : reason?.type === 'municipality'
-                      ? t('policies.condition.municipality', { name: reason.name })
-                      : t('policies.condition.other')}
-                </span>
+                <span className={row.matched ? 'text-gray-700' : 'text-gray-400'}>{row.text}</span>
               </li>
-            );
-          })}
+            ));
+          })()}
         </ul>
       </section>
 

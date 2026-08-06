@@ -20,7 +20,16 @@ export function AppLayout() {
     <div className="mx-auto flex min-h-screen max-w-lg flex-col">
       <header className="sticky top-0 z-10 border-b border-gray-200 bg-white/90 backdrop-blur">
         <div className="flex items-center justify-between px-4 py-3">
+        <div className="flex items-center gap-2">
+          <svg viewBox="0 0 24 24" className="h-6 w-6" aria-hidden="true">
+            <circle cx="12" cy="8.5" r="3.8" className="fill-brand-600" />
+            <path
+              d="M4.5 20c1.3-4.2 4.2-6.2 7.5-6.2s6.2 2 7.5 6.2"
+              className="fill-brand-600"
+            />
+          </svg>
           <span className="text-sm font-bold text-brand-700">{t('appName')}</span>
+        </div>
         </div>
       </header>
 

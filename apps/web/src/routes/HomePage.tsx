@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Card } from '@kodoko/ui';
-import { calculateAgeMonths } from '@kodoko/domain';
+import { calculateAgeMonths, findMunicipality } from '@kodoko/domain';
 import type { TransportMode } from '@kodoko/recommendation';
 import { useActiveChild } from '../hooks/useActiveChild';
 import { usePlaces } from '../hooks/usePlaces';
@@ -10,12 +10,12 @@ import { useGeolocation } from '../hooks/useGeolocation';
 import { useWeather } from '../hooks/useWeather';
 import { useKnowledge, useKnowledgeProgress } from '../hooks/useKnowledge';
 import { usePolicies, usePolicyMatches, usePolicyTasks } from '../hooks/usePolicies';
+import { usePreference } from '../hooks/usePreference';
 import { filterKnowledgeByAge, sortKnowledgeByRead } from '../lib/knowledge';
 import { daysUntil } from '../lib/policy';
 import { recommendForChild } from '../lib/recommendations';
 import { RecommendationReasons } from '../components/RecommendationReasons';
 import { AgeLabel } from '../components/AgeLabel';
-import { PageHeader } from '../components/PageHeader';
 import { CATEGORY_ICON } from '../components/places/categoryMeta';
 
 const TRANSPORT_OPTIONS: { value: TransportMode | undefined; key: string }[] = [
@@ -74,6 +74,7 @@ export function HomePage() {
   const { children, active, setActive, loading: childLoading } = useActiveChild();
   const { data: places, isLoading: placesLoading, isError, refetch } = usePlaces();
   const { coords } = useGeolocation();
+  const { preference } = usePreference();
   const {
     data: weather,
     isPending: weatherPending,
@@ -118,6 +119,32 @@ export function HomePage() {
       : label;
   }
 
+  const municipality = findMunicipality(preference?.municipalityCode);
+
+  function renderLocationInfo() {
+    if (coords) {
+      return (
+        <p className="mt-1 text-xs text-gray-500">
+          {t('home.currentLocation', {
+            lat: coords.latitude.toFixed(3),
+            lng: coords.longitude.toFixed(3),
+          })}
+        </p>
+      );
+    }
+    if (municipality) {
+      return <p className="mt-1 text-xs text-gray-500">{t('home.residence', { name: municipality.nameJa })}</p>;
+    }
+    return (
+      <p className="mt-1 flex items-center gap-1 text-xs text-gray-500">
+        <span>{t('home.noLocation')}</span>
+        <Link to="/settings" className="font-medium text-brand-700">
+          {t('home.toSettings')}
+        </Link>
+      </p>
+    );
+  }
+
   const recommendations = useMemo(
     () =>
       recommendForChild({
@@ -133,8 +160,6 @@ export function HomePage() {
 
   return (
     <div className="flex flex-col gap-4">
-      <PageHeader title={t('home.title')} />
-
       <Card>
         <div className="flex items-center justify-between">
           <h2 className="text-sm font-semibold text-gray-500">{t('home.recommendationsTitle')}</h2>
@@ -147,6 +172,8 @@ export function HomePage() {
           <span>{t('home.currentWeather')}</span>
           <span className="font-medium text-gray-700">{renderWeatherLabel()}</span>
         </div>
+
+        {renderLocationInfo()}
 
         <div className="mt-2 flex flex-col gap-2">
           <ChipGroup
@@ -235,10 +262,25 @@ export function HomePage() {
           <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>
         ) : active ? (
           <div className="mt-2">
-            <p className="text-base font-medium">{active.displayName}</p>
+            <div className="flex items-center gap-2">
+              <p className="text-base font-medium">{active.displayName}</p>
+              <Link to={`/children/${active.id}/edit`} className="text-xs font-medium text-brand-700">
+                {t('edit')}
+              </Link>
+            </div>
             <p className="text-sm text-gray-500">
               <AgeLabel birthDate={active.birthDate} />
             </p>
+            <div className="mt-2 flex items-center gap-3 text-xs">
+              <Link to="/children/new" className="font-medium text-brand-700">
+                {t('home.addChild')}
+              </Link>
+              {children.length > 1 && (
+                <Link to="/children" className="text-gray-500">
+                  {t('home.allChildren')}
+                </Link>
+              )}
+            </div>
           </div>
         ) : (
           <div className="mt-2 flex items-center justify-between">
@@ -308,11 +350,6 @@ export function HomePage() {
             ))}
           </ul>
         )}
-      </Card>
-
-      <Card>
-        <h2 className="text-sm font-semibold text-gray-500">{t('home.localDataStatus')}</h2>
-        <p className="mt-2 text-sm text-gray-400">{children.length} children</p>
       </Card>
     </div>
   );

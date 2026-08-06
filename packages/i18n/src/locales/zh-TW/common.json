@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "Kodoko",
+    "appName": "こどこ",
     "tagline": "今天和孩子去哪裡？",
     "loading": "載入中…",
     "error": "發生錯誤",
@@ -24,7 +24,6 @@
     "settings": "設定"
   },
   "home": {
-    "title": "今天去哪裡？",
     "recommendationsTitle": "今天去哪裡玩",
     "allPlaces": "查看全部",
     "noRecommendations": "附近還沒有符合條件的去處。",
@@ -63,7 +62,11 @@
     "currentChild": "目前兒童",
     "weeklyKnowledge": "本週育兒知識",
     "policyReminders": "政策提醒",
-    "localDataStatus": "本機資料",
+    "currentLocation": "當前位置: {{lat}}, {{lng}}",
+    "residence": "居住地: {{name}}",
+    "noLocation": "暫無當前位置資訊",
+    "toSettings": "在設定中登記居住地",
+    "allChildren": "孩子列表",
     "noChildYet": "先登記孩子資料吧",
     "addChild": "新增孩子",
     "switchChild": "切換孩子"

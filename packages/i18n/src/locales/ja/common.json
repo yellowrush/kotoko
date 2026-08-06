@@ -1,6 +1,6 @@
 {
   "common": {
-    "appName": "コドコ",
+    "appName": "こどこ",
     "tagline": "今日、子どもとどこ行こう？",
     "loading": "読み込み中…",
     "error": "エラーが発生しました",
@@ -24,7 +24,6 @@
     "settings": "設定"
   },
   "home": {
-    "title": "今日、どこ行く？",
     "recommendationsTitle": "今日どこ行く？",
     "allPlaces": "すべて見る",
     "noRecommendations": "近くにまだ紹介できる場所がありません。",
@@ -63,7 +62,11 @@
     "currentChild": "いま見ているこども",
     "weeklyKnowledge": "今週の子育て知識",
     "policyReminders": "制度リマインダー",
-    "localDataStatus": "ローカルデータ",
+    "currentLocation": "現在地: {{lat}}, {{lng}}",
+    "residence": "居住地: {{name}}",
+    "noLocation": "現在地情報がありません",
+    "toSettings": "設定で居住地を登録",
+    "allChildren": "こども一覧",
     "noChildYet": "こどもを登録しましょう",
     "addChild": "こどもを追加",
     "switchChild": "こどもを切り替える"

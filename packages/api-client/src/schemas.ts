@@ -1,5 +1,13 @@
 import { z } from 'zod';
-import type { Place, PlaceCategory, IndoorOutdoor, PlaceTag, ContentStatus } from '@kodoko/domain';
+import type {
+  Place,
+  PlaceCategory,
+  IndoorOutdoor,
+  PlaceTag,
+  ContentStatus,
+  KnowledgeCategory,
+  KnowledgeContent,
+} from '@kodoko/domain';
 
 const placeCategory = z.enum([
   'park',
@@ -57,3 +65,48 @@ export const placeListSchema = z.object({
 export type PlaceDTO = z.infer<typeof placeSchema>;
 export type PlaceListDTO = z.infer<typeof placeListSchema>;
 export type { Place };
+
+const knowledgeCategory = z.enum([
+  'development',
+  'health',
+  'nutrition',
+  'safety',
+  'education',
+  'parenting',
+  'travel',
+  'policy',
+]) as z.ZodType<KnowledgeCategory>;
+
+/**
+ * API DTO Schema for knowledge content（与领域类型分离，见 AGENTS.md 18.1）。
+ */
+export const knowledgeSchema = z.object({
+  id: z.string().min(1),
+  title: z.string().min(1),
+  summary: z.string().min(1),
+  body: z.string().min(1),
+  minAgeMonths: z.number().int().nonnegative(),
+  maxAgeMonths: z.number().int().nonnegative(),
+  categories: z.array(knowledgeCategory),
+  locale: z.string().min(1),
+  sourceReferences: z.array(
+    z.object({
+      title: z.string().min(1),
+      url: z.string().optional(),
+      publishedAt: z.string().optional(),
+    }),
+  ),
+  reviewedAt: z.string().optional(),
+  validFrom: z.string().optional(),
+  validUntil: z.string().optional(),
+  status: contentStatus,
+});
+
+export const knowledgeListSchema = z.object({
+  knowledge: z.array(knowledgeSchema),
+  total: z.number().int().nonnegative(),
+});
+
+export type KnowledgeDTO = z.infer<typeof knowledgeSchema>;
+export type KnowledgeListDTO = z.infer<typeof knowledgeListSchema>;
+export type { KnowledgeContent };

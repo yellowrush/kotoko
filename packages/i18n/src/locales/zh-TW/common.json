@@ -158,7 +158,25 @@
   },
   "knowledge": {
     "title": "育兒知識",
-    "byAge": "依年齡匹配的知識"
+    "byAge": "依年齡匹配的知識",
+    "viewAll": "查看全部",
+    "noContent": "暫時沒有適合該月齡的知識。",
+    "noChild": "先登記孩子，就能看到適合他月齡的知識。",
+    "read": "已讀",
+    "unread": "未讀",
+    "sources": "資訊來源",
+    "ageRange": "適合月齡",
+    "backToList": "返回知識列表",
+    "categories": {
+      "development": "發育",
+      "health": "健康",
+      "nutrition": "營養",
+      "safety": "安全",
+      "education": "教育",
+      "parenting": "育兒",
+      "travel": "出遊",
+      "policy": "制度"
+    }
   },
   "policies": {
     "title": "政策制度",

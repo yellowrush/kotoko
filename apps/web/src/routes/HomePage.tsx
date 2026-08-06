@@ -2,11 +2,14 @@ import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Card } from '@kodoko/ui';
+import { calculateAgeMonths } from '@kodoko/domain';
 import type { TransportMode } from '@kodoko/recommendation';
 import { useActiveChild } from '../hooks/useActiveChild';
 import { usePlaces } from '../hooks/usePlaces';
 import { useGeolocation } from '../hooks/useGeolocation';
 import { useWeather } from '../hooks/useWeather';
+import { useKnowledge, useKnowledgeProgress } from '../hooks/useKnowledge';
+import { filterKnowledgeByAge, sortKnowledgeByRead } from '../lib/knowledge';
 import { recommendForChild } from '../lib/recommendations';
 import { RecommendationReasons } from '../components/RecommendationReasons';
 import { AgeLabel } from '../components/AgeLabel';
@@ -76,6 +79,17 @@ export function HomePage() {
   } = useWeather(coords);
   const [transportMode, setTransportMode] = useState<TransportMode | undefined>();
   const [groupSize, setGroupSize] = useState<number | undefined>();
+  const { data: knowledge, isLoading: knowledgeLoading } = useKnowledge();
+  const { readIds } = useKnowledgeProgress();
+
+  const weeklyKnowledge = useMemo(
+    () =>
+      sortKnowledgeByRead(
+        filterKnowledgeByAge(knowledge ?? [], active ? calculateAgeMonths(active.birthDate) : undefined),
+        readIds,
+      ).slice(0, 3),
+    [knowledge, active, readIds],
+  );
 
   function renderWeatherLabel(): string {
     if (!coords) return t('home.weatherUnavailable');
@@ -134,7 +148,7 @@ export function HomePage() {
           />
         </div>
 
-        {placesLoading && !isError && <p className="mt-2 text-sm text-gray-400">{t('loading')}</p>}
+        {placesLoading && !isError && <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>}
 
         {isError && (
           <div className="mt-2 flex items-center gap-2 text-sm text-gray-500">
@@ -201,7 +215,7 @@ export function HomePage() {
           )}
         </div>
         {childLoading ? (
-          <p className="mt-2 text-sm text-gray-400">{t('loading')}</p>
+          <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>
         ) : active ? (
           <div className="mt-2">
             <p className="text-base font-medium">{active.displayName}</p>
@@ -220,8 +234,32 @@ export function HomePage() {
       </Card>
 
       <Card>
-        <h2 className="text-sm font-semibold text-gray-500">{t('home.weeklyKnowledge')}</h2>
-        <p className="mt-2 text-sm text-gray-400">Sprint 5</p>
+        <div className="flex items-center justify-between">
+          <h2 className="text-sm font-semibold text-gray-500">{t('home.weeklyKnowledge')}</h2>
+          <Link to="/knowledge" className="text-xs font-medium text-brand-700">
+            {t('knowledge.viewAll')}
+          </Link>
+        </div>
+        {knowledgeLoading ? (
+          <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>
+        ) : weeklyKnowledge.length === 0 ? (
+          <p className="mt-2 text-sm text-gray-400">{t('knowledge.noContent')}</p>
+        ) : (
+          <ul className="mt-2 flex flex-col gap-2">
+            {weeklyKnowledge.map((item) => (
+              <li key={item.id}>
+                <Link to={`/knowledge/${item.id}`} className="block hover:opacity-80">
+                  <p className="flex items-center gap-2 text-sm text-gray-700">
+                    {!readIds.has(item.id) && (
+                      <span className="h-2 w-2 shrink-0 rounded-full bg-brand-600" aria-hidden="true" />
+                    )}
+                    <span className="min-w-0 truncate">{item.title}</span>
+                  </p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        )}
       </Card>
 
       <Card>

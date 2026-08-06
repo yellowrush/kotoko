@@ -19,7 +19,7 @@ export function ChildrenPage() {
           </Link>
         }
       />
-      {loading && <p className="text-sm text-gray-400">{t('loading')}</p>}
+      {loading && <p className="text-sm text-gray-400">{t('common.loading')}</p>}
       {!loading && children.length === 0 && (
         <p className="text-sm text-gray-500">{t('children.noChildren')}</p>
       )}

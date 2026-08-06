@@ -2,6 +2,7 @@ import {
   createDatabase,
   DexieChildRepository,
   FavoriteRepository,
+  KnowledgeProgressRepository,
   type KodokoLocalDatabase,
 } from '@kodoko/local-db';
 
@@ -18,4 +19,8 @@ export function getChildRepository(): DexieChildRepository {
 
 export function getFavoriteRepository(): FavoriteRepository {
   return new FavoriteRepository(getDb());
+}
+
+export function getKnowledgeProgressRepository(): KnowledgeProgressRepository {
+  return new KnowledgeProgressRepository(getDb());
 }

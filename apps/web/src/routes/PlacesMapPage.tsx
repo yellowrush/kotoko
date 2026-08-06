@@ -27,7 +27,7 @@ export function PlacesMapPage() {
   const center = coords ?? DEFAULT_CENTER;
 
   if (isLoading) {
-    return <div className="flex min-h-0 flex-1 items-center justify-center text-sm text-gray-400">{t('loading')}</div>;
+    return <div className="flex min-h-0 flex-1 items-center justify-center text-sm text-gray-400">{t('common.loading')}</div>;
   }
 
   if (isError) {

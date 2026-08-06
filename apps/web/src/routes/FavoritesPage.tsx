@@ -21,7 +21,7 @@ export function FavoritesPage() {
       <PageHeader title={t('favorites.title')} />
 
       {loading || isLoading ? (
-        <p className="text-sm text-gray-400">{t('loading')}</p>
+        <p className="text-sm text-gray-400">{t('common.loading')}</p>
       ) : favorites.length === 0 ? (
         <p className="text-sm text-gray-500">{t('favorites.empty')}</p>
       ) : (

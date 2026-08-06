@@ -158,7 +158,25 @@
   },
   "knowledge": {
     "title": "育儿知识",
-    "byAge": "按年龄匹配的知识"
+    "byAge": "按年龄匹配的知识",
+    "viewAll": "查看全部",
+    "noContent": "暂时没有适合该月龄的知识。",
+    "noChild": "先登记孩子，就能看到适合他月龄的知识。",
+    "read": "已读",
+    "unread": "未读",
+    "sources": "信息来源",
+    "ageRange": "适合月龄",
+    "backToList": "返回知识列表",
+    "categories": {
+      "development": "发育",
+      "health": "健康",
+      "nutrition": "营养",
+      "safety": "安全",
+      "education": "教育",
+      "parenting": "育儿",
+      "travel": "出行",
+      "policy": "制度"
+    }
   },
   "policies": {
     "title": "政策制度",

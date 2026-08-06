@@ -158,7 +158,25 @@
   },
   "knowledge": {
     "title": "子育て知識",
-    "byAge": "年齢に合わせた知識"
+    "byAge": "年齢に合わせた知識",
+    "viewAll": "すべて見る",
+    "noContent": "この月齢向けの知識はまだありません。",
+    "noChild": "こどもを登録すると、月齢に合った知識が表示されます。",
+    "read": "既読",
+    "unread": "未読",
+    "sources": "情報源",
+    "ageRange": "対象月齢",
+    "backToList": "知識一覧に戻る",
+    "categories": {
+      "development": "発達",
+      "health": "健康",
+      "nutrition": "栄養",
+      "safety": "安全",
+      "education": "教育",
+      "parenting": "子育て",
+      "travel": "お出かけ",
+      "policy": "制度"
+    }
   },
   "policies": {
     "title": "制度・手続き",

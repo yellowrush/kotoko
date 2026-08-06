@@ -43,7 +43,7 @@ export function PlaceDetailPage() {
   }, [place, recommendation, weather]);
 
   if (isLoading) {
-    return <p className="text-gray-400">{t('loading')}</p>;
+    return <p className="text-gray-400">{t('common.loading')}</p>;
   }
 
   if (isError || !place) {

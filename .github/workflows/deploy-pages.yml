@@ -34,6 +34,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      # 若 Pages Source 尚未設為 GitHub Actions，此步驟會立即失敗並給出明確錯誤，
+      # 而不是讓 deploy-pages 卡在 deployment_queued。
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Build
         run: pnpm --filter @kodoko/web build
         env:
@@ -57,6 +62,7 @@ jobs:
     name: Deploy to GitHub Pages
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

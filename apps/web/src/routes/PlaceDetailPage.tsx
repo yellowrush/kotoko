@@ -1,7 +1,13 @@
 import { Link, useParams } from 'react-router-dom';
+import { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
+import { haversineDistanceKm } from '@kodoko/recommendation';
 import { usePlace } from '../hooks/usePlaces';
 import { useFavorites } from '../hooks/useFavorites';
+import { useActiveChild } from '../hooks/useActiveChild';
+import { useGeolocation } from '../hooks/useGeolocation';
+import { scorePlaceForChild } from '../lib/recommendations';
+import { RecommendationReasons } from '../components/RecommendationReasons';
 import { CATEGORY_ICON, TAG_ICON } from '../components/places/categoryMeta';
 import { PageHeader } from '../components/PageHeader';
 
@@ -10,6 +16,16 @@ export function PlaceDetailPage() {
   const { placeId } = useParams();
   const { data: place, isLoading, isError, refetch } = usePlace(placeId);
   const { favoriteIds, toggle } = useFavorites();
+  const { active } = useActiveChild();
+  const { coords } = useGeolocation();
+
+  const recommendation = useMemo(
+    () =>
+      place
+        ? scorePlaceForChild({ child: active, place, userLocation: coords ?? undefined })
+        : undefined,
+    [active, place, coords],
+  );
 
   if (isLoading) {
     return <p className="text-gray-400">{t('loading')}</p>;
@@ -91,6 +107,21 @@ export function PlaceDetailPage() {
             {isFav ? t('places.favorited') : t('places.favorite')}
           </button>
         </div>
+
+        {recommendation && recommendation.reasons.length > 0 && (
+          <div className="mt-4 rounded-xl bg-brand-50/60 p-3">
+            <h3 className="text-sm font-semibold text-gray-600">{t('places.whyRecommended')}</h3>
+            <p className="mt-1 text-xs text-gray-500">
+              {t('home.score')}: {recommendation.score}
+            </p>
+            <div className="mt-2">
+              <RecommendationReasons
+                reasonCodes={recommendation.reasons.map((reason) => reason.code)}
+                distanceKm={coords ? haversineDistanceKm(coords, place) : null}
+              />
+            </div>
+          </div>
+        )}
 
         {place.sourceUrl && (
           <a

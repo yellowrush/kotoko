@@ -6,6 +6,8 @@ import * as maplibregl from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 import type { GeoPoint } from '@kodoko/domain';
 import type { FilteredPlace } from '../../lib/placeFilters';
+import type { StyleSpecification } from 'maplibre-gl';
+import { createFallbackIcon, patchOpenFreeMapStyle } from '../../lib/openFreeMapStylePatch';
 
 const STYLE_URL =
   import.meta.env.VITE_MAP_STYLE_URL ??
@@ -60,21 +62,48 @@ export function PlacesMap({
   onStyleErrorRef.current = onStyleError;
 
   useEffect(() => {
-    if (!containerRef.current || mapRef.current) return;
-    const map = new maplibregl.Map({
-      container: containerRef.current,
-      style: STYLE_URL,
-      center: [initialCenter.longitude, initialCenter.latitude],
-      zoom: initialZoom,
-    });
-    map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
-    map.on('error', () => onStyleErrorRef.current?.());
-    mapRef.current = map;
+    const container = containerRef.current;
+    if (!container || mapRef.current) return;
+
+    let cancelled = false;
+
+    // OpenFreeMap liberty 的数值比较 filter（admin_level / rank / ref_length）
+    // 在 null 值上会触发 maplibre 的 number 类型警告，先在加载前就地修补。
+    // fetch 或解析失败时退回原始 URL，保持原有降级行为。
+    const init = async () => {
+      let style: StyleSpecification | string = STYLE_URL;
+      try {
+        const res = await fetch(STYLE_URL);
+        if (res.ok) {
+          style = patchOpenFreeMapStyle((await res.json()) as StyleSpecification);
+        }
+      } catch {
+        // 保持默认 URL 加载
+      }
+      if (cancelled) return;
+
+      const map = new maplibregl.Map({
+        container,
+        style,
+        center: [initialCenter.longitude, initialCenter.latitude],
+        zoom: initialZoom,
+      });
+      map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+      map.on('error', () => onStyleErrorRef.current?.());
+      map.on('styleimagemissing', (e) => {
+        if (!e.id || map.hasImage(e.id)) return;
+        map.addImage(e.id, createFallbackIcon());
+      });
+      mapRef.current = map;
+    };
+
+    void init();
 
     return () => {
+      cancelled = true;
       markersRef.current = {};
       userMarkerRef.current = null;
-      map.remove();
+      mapRef.current?.remove();
       mapRef.current = null;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps

@@ -14,9 +14,6 @@ export type PlacesFilterState = {
 };
 
 const RADIUS_OPTIONS = ['3', '5', '10', '20'] as const;
-const ALL_AREA = 'all';
-
-export const DEFAULT_RADIUS_KM = 3;
 
 export function usePlaces() {
   return useQuery<Place[]>({
@@ -41,13 +38,9 @@ export function usePlacesFilters() {
     const indoorOutdoor = searchParams.get('indoorOutdoor') ?? undefined;
     const tags = (searchParams.get('tags') ?? '').split(',').filter(Boolean);
     const radiusParam = searchParams.get('radius');
-    let radiusKm: number | undefined;
-    if (radiusParam === ALL_AREA) radiusKm = undefined;
-    else if (RADIUS_OPTIONS.includes(radiusParam as (typeof RADIUS_OPTIONS)[number])) {
-      radiusKm = Number(radiusParam);
-    } else {
-      radiusKm = DEFAULT_RADIUS_KM;
-    }
+    const radiusKm = RADIUS_OPTIONS.includes(radiusParam as (typeof RADIUS_OPTIONS)[number])
+      ? Number(radiusParam)
+      : undefined;
     const placeId = searchParams.get('place') ?? undefined;
     return { category, indoorOutdoor, tags, radiusKm, placeId };
   }, [searchParams]);
@@ -79,7 +72,7 @@ export function usePlacesFilters() {
   );
   const setRadius = useCallback(
     (radiusKm: number | undefined) =>
-      update({ radius: radiusKm === undefined ? ALL_AREA : String(radiusKm) }),
+      update({ radius: radiusKm ? String(radiusKm) : undefined }),
     [update],
   );
   const setPlaceId = useCallback((placeId: string | undefined) => update({ place: placeId }), [update]);

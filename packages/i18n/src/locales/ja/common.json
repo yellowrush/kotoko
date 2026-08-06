@@ -85,6 +85,10 @@
     },
     "filters": {
       "label": "フィルター",
+      "sectionCategory": "カテゴリー",
+      "sectionIndoorOutdoor": "屋内・屋外",
+      "sectionRadius": "距離",
+      "sectionTags": "タグ",
       "all": "すべて",
       "allArea": "全地域",
       "r3": "3km",

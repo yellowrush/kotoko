@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import type { IndoorOutdoor, PlaceCategory } from '@kodoko/domain';
-import { DEFAULT_RADIUS_KM, type PlacesFilterState } from '../../hooks/usePlaces';
+import type { PlacesFilterState } from '../../hooks/usePlaces';
 
 const CATEGORIES: PlaceCategory[] = [
   'park',
@@ -61,6 +61,21 @@ function Chip({
   );
 }
 
+function ChipGroup({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div>
+      <p className="mb-1.5 text-xs font-semibold text-gray-500">{title}</p>
+      <div className="flex flex-wrap gap-1.5">{children}</div>
+    </div>
+  );
+}
+
 export function PlaceFilterChips({
   filters,
   setCategory,
@@ -74,8 +89,7 @@ export function PlaceFilterChips({
   const activeCount =
     (filters.category ? 1 : 0) +
     (filters.indoorOutdoor ? 1 : 0) +
-    (filters.tags.length > 0 ? 1 : 0) +
-    (filters.radiusKm !== undefined && filters.radiusKm !== DEFAULT_RADIUS_KM ? 1 : 0);
+    (filters.tags.length > 0 ? 1 : 0);
 
   return (
     <div className="relative">
@@ -102,56 +116,58 @@ export function PlaceFilterChips({
             onClick={() => setOpen(false)}
             className="fixed inset-0 z-[5] cursor-default"
           />
-          <div className="absolute left-0 top-full z-[6] mt-2 w-[min(88vw,22rem)] rounded-2xl border border-gray-200 bg-white p-3 shadow-xl">
-            <div className="flex flex-col gap-2">
-              <div className="scrollbar-hide -mx-1 flex gap-1.5 overflow-x-auto px-1">
-                <Chip active={!filters.category} onClick={() => setCategory(undefined)}>
-                  {t('places.filters.all')}
+          <div className="absolute left-0 top-full z-[6] mt-2 flex w-[min(92vw,24rem)] flex-col gap-2.5 rounded-2xl border border-gray-200 bg-white p-3 shadow-xl">
+            <ChipGroup title={t('places.filters.sectionCategory')}>
+              <Chip active={!filters.category} onClick={() => setCategory(undefined)}>
+                {t('places.filters.all')}
+              </Chip>
+              {CATEGORIES.map((cat) => (
+                <Chip
+                  key={cat}
+                  active={filters.category === cat}
+                  onClick={() => setCategory(filters.category === cat ? undefined : cat)}
+                >
+                  {t(`places.categories.${cat}`)}
                 </Chip>
-                {CATEGORIES.map((cat) => (
-                  <Chip
-                    key={cat}
-                    active={filters.category === cat}
-                    onClick={() => setCategory(filters.category === cat ? undefined : cat)}
-                  >
-                    {t(`places.categories.${cat}`)}
-                  </Chip>
-                ))}
-              </div>
-              <div className="flex items-center gap-1.5">
-                {INDOOR_OPTIONS.map((opt) => (
-                  <Chip
-                    key={opt.value}
-                    active={filters.indoorOutdoor === opt.value}
-                    onClick={() =>
-                      setIndoorOutdoor(filters.indoorOutdoor === opt.value ? undefined : opt.value)
-                    }
-                  >
-                    {t(`places.filterIndoor.${opt.key}`)}
-                  </Chip>
-                ))}
-                <span className="mx-1 h-4 w-px bg-gray-200" />
-                <Chip active={filters.radiusKm === undefined} onClick={() => setRadius(undefined)}>
-                  {t('places.filters.allArea')}
+              ))}
+            </ChipGroup>
+
+            <ChipGroup title={t('places.filters.sectionIndoorOutdoor')}>
+              {INDOOR_OPTIONS.map((opt) => (
+                <Chip
+                  key={opt.value}
+                  active={filters.indoorOutdoor === opt.value}
+                  onClick={() =>
+                    setIndoorOutdoor(filters.indoorOutdoor === opt.value ? undefined : opt.value)
+                  }
+                >
+                  {t(`places.filterIndoor.${opt.key}`)}
                 </Chip>
-                {RADIUS.map((r) => (
-                  <Chip
-                    key={r.key}
-                    active={filters.radiusKm === r.value}
-                    onClick={() => setRadius(filters.radiusKm === r.value ? undefined : r.value)}
-                  >
-                    {t(`places.filters.${r.key}`)}
-                  </Chip>
-                ))}
-              </div>
-              <div className="flex gap-1.5">
-                {TAGS.map((tag) => (
-                  <Chip key={tag} active={filters.tags.includes(tag)} onClick={() => toggleTag(tag)}>
-                    {t(`places.tags.${tag}`)}
-                  </Chip>
-                ))}
-              </div>
-            </div>
+              ))}
+            </ChipGroup>
+
+            <ChipGroup title={t('places.filters.sectionRadius')}>
+              <Chip active={filters.radiusKm === undefined} onClick={() => setRadius(undefined)}>
+                {t('places.filters.allArea')}
+              </Chip>
+              {RADIUS.map((r) => (
+                <Chip
+                  key={r.key}
+                  active={filters.radiusKm === r.value}
+                  onClick={() => setRadius(filters.radiusKm === r.value ? undefined : r.value)}
+                >
+                  {t(`places.filters.${r.key}`)}
+                </Chip>
+              ))}
+            </ChipGroup>
+
+            <ChipGroup title={t('places.filters.sectionTags')}>
+              {TAGS.map((tag) => (
+                <Chip key={tag} active={filters.tags.includes(tag)} onClick={() => toggleTag(tag)}>
+                  {t(`places.tags.${tag}`)}
+                </Chip>
+              ))}
+            </ChipGroup>
           </div>
         </>
       )}

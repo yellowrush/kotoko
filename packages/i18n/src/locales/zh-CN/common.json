@@ -85,6 +85,10 @@
     },
     "filters": {
       "label": "筛选",
+      "sectionCategory": "分类",
+      "sectionIndoorOutdoor": "室内外",
+      "sectionRadius": "距离",
+      "sectionTags": "标签",
       "all": "全部",
       "allArea": "全区域",
       "r3": "3km",

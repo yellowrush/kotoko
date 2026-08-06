@@ -60,8 +60,8 @@ export function PlacesMapPage() {
           </p>
         )}
 
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-[5] flex items-start justify-between gap-2 p-3">
-          <div className="pointer-events-auto">
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-[5] flex items-start gap-2 p-3">
+          <div className="pointer-events-auto w-fit">
             <PlaceFilterChips
               filters={filters}
               setCategory={setCategory}

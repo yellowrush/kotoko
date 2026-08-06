@@ -21,8 +21,14 @@ export type PlacesMapProps = {
   onStyleError?: () => void;
 };
 
-function markerElement(number: number, active: boolean) {
+function markerElement() {
   const el = document.createElement('div');
+  el.style.cursor = 'pointer';
+  updateMarkerElement(el, 1, false);
+  return el;
+}
+
+function updateMarkerElement(el: HTMLElement, number: number, active: boolean) {
   el.className = [
     'flex h-7 w-7 items-center justify-center rounded-full border-2 text-xs font-bold shadow-md transition',
     active
@@ -30,8 +36,6 @@ function markerElement(number: number, active: boolean) {
       : 'border-brand-700 bg-white text-brand-700',
   ].join(' ');
   el.textContent = String(number);
-  el.style.cursor = 'pointer';
-  return el;
 }
 
 export function PlacesMap({
@@ -119,17 +123,17 @@ export function PlacesMap({
     list.forEach((place, index) => {
       seen.add(place.id);
       const active = place.id === selectedPlaceId;
-      const element = markerElement(index + 1, active);
-      element.addEventListener('click', () => onSelectRef.current(place.id));
 
-      const existing = markersRef.current[place.id];
-      if (existing) {
-        existing.getElement().outerHTML = element.outerHTML;
-      } else {
-        markersRef.current[place.id] = new maplibregl.Marker({ element })
+      let marker = markersRef.current[place.id];
+      if (!marker) {
+        const element = markerElement();
+        element.addEventListener('click', () => onSelectRef.current(place.id));
+        marker = new maplibregl.Marker({ element })
           .setLngLat([place.longitude, place.latitude])
           .addTo(map);
+        markersRef.current[place.id] = marker;
       }
+      updateMarkerElement(marker.getElement() as HTMLElement, index + 1, active);
     });
 
     for (const id of Object.keys(markersRef.current)) {

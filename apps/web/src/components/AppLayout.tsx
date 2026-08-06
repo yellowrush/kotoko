@@ -22,7 +22,6 @@ export function AppLayout() {
         <div className="flex items-center justify-between px-4 py-3">
         <div className="flex items-center gap-2">
           <img src="/favicon.svg" alt="" className="h-6 w-6" />
-          <span className="text-sm font-bold text-brand-700">{t('appName')}</span>
         </div>
         </div>
       </header>

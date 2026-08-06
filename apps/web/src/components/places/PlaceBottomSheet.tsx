@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import type { FilteredPlace } from '../../lib/placeFilters';
@@ -15,6 +15,19 @@ type PlaceBottomSheetProps = {
 export function PlaceBottomSheet({ places, selectedPlaceId, onSelect, total }: PlaceBottomSheetProps) {
   const { t } = useTranslation();
   const [collapsed, setCollapsed] = useState(false);
+  const listRef = useRef<HTMLDivElement>(null);
+  const suppressScrollRef = useRef(false);
+
+  useEffect(() => {
+    const suppress = suppressScrollRef.current;
+    suppressScrollRef.current = false;
+    if (!selectedPlaceId || suppress) return;
+    const scroller = listRef.current;
+    if (!scroller) return;
+    const item = scroller.querySelector<HTMLElement>(`[data-place-id="${selectedPlaceId}"]`);
+    if (!item) return;
+    item.scrollIntoView({ block: 'start' });
+  }, [selectedPlaceId]);
 
   const sorted = [...places].sort((a, b) => {
     if (a.distanceKm !== null && b.distanceKm !== null) return a.distanceKm - b.distanceKm;
@@ -39,7 +52,7 @@ export function PlaceBottomSheet({ places, selectedPlaceId, onSelect, total }: P
       </button>
 
       {!collapsed && (
-        <div className="max-h-56 overflow-y-auto px-4 pb-4">
+        <div ref={listRef} className="max-h-56 overflow-y-auto px-4 pb-4">
           {sorted.length === 0 && (
             <p className="py-6 text-center text-sm text-gray-500">{t('places.noPlacesInRange')}</p>
           )}
@@ -47,10 +60,13 @@ export function PlaceBottomSheet({ places, selectedPlaceId, onSelect, total }: P
             {sorted.map((place, index) => {
               const active = place.id === selectedPlaceId;
               return (
-                <li key={place.id}>
+                <li key={place.id} data-place-id={place.id}>
                   <button
                     type="button"
-                    onClick={() => onSelect(place.id)}
+                    onClick={() => {
+                      suppressScrollRef.current = true;
+                      onSelect(place.id);
+                    }}
                     className={`w-full rounded-xl border p-3 text-left transition ${
                       active ? 'border-brand-600 bg-brand-50' : 'border-gray-200 bg-white'
                     }`}

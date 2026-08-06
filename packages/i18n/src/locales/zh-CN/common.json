@@ -34,6 +34,16 @@
     "transportBicycle": "自行车",
     "transportCar": "开车",
     "transportTrain": "电车",
+    "currentWeather": "今日天气",
+    "weatherUnavailable": "无法获取天气信息",
+    "weatherConditions": {
+      "sunny": "晴",
+      "cloudy": "阴",
+      "rain": "雨",
+      "snow": "雪",
+      "storm": "暴风雨",
+      "unknown": "未知"
+    },
     "groupSize": "人数",
     "groupNone": "不指定",
     "group1": "1人",

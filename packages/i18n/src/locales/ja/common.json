@@ -34,6 +34,16 @@
     "transportBicycle": "自転車",
     "transportCar": "車",
     "transportTrain": "電車",
+    "currentWeather": "今日の天気",
+    "weatherUnavailable": "天気情報を取得できません",
+    "weatherConditions": {
+      "sunny": "晴れ",
+      "cloudy": "曇り",
+      "rain": "雨",
+      "snow": "雪",
+      "storm": "荒天",
+      "unknown": "不明"
+    },
     "groupSize": "人数",
     "groupNone": "指定なし",
     "group1": "1人",

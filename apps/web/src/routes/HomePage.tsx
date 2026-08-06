@@ -69,9 +69,23 @@ export function HomePage() {
   const { children, active, setActive, loading: childLoading } = useActiveChild();
   const { data: places, isLoading: placesLoading, isError, refetch } = usePlaces();
   const { coords } = useGeolocation();
-  const { data: weather } = useWeather(coords);
+  const {
+    data: weather,
+    isPending: weatherPending,
+    isError: weatherError,
+  } = useWeather(coords);
   const [transportMode, setTransportMode] = useState<TransportMode | undefined>();
   const [groupSize, setGroupSize] = useState<number | undefined>();
+
+  function renderWeatherLabel(): string {
+    if (!coords) return t('home.weatherUnavailable');
+    if (weatherPending) return t('common.loading');
+    if (weatherError || !weather) return t('home.weatherUnavailable');
+    const label = t(`home.weatherConditions.${weather.condition}`);
+    return weather.temperatureCelsius !== undefined
+      ? `${label} ${Math.round(weather.temperatureCelsius)}°C`
+      : label;
+  }
 
   const recommendations = useMemo(
     () =>
@@ -96,6 +110,11 @@ export function HomePage() {
           <Link to="/places" className="text-xs font-medium text-brand-700">
             {t('home.allPlaces')}
           </Link>
+        </div>
+
+        <div className="mt-2 flex items-center gap-1 text-xs text-gray-500">
+          <span>{t('home.currentWeather')}</span>
+          <span className="font-medium text-gray-700">{renderWeatherLabel()}</span>
         </div>
 
         <div className="mt-2 flex flex-col gap-2">

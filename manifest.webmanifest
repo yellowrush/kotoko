@@ -1,0 +1,1 @@
+{"name":"こどこ","short_name":"こどこ","description":"今日、子どもとどこ行こう？","start_url":"/kotoko/","display":"standalone","background_color":"#ffffff","theme_color":"#e04a08","lang":"ja","scope":"/kotoko/","icons":[{"src":"pwa-192.svg","sizes":"192x192","type":"image/svg+xml","purpose":"any maskable"},{"src":"pwa-512.svg","sizes":"512x512","type":"image/svg+xml","purpose":"any maskable"}]}

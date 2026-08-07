@@ -7,6 +7,7 @@ import { amusementParkPlaces } from './amusement-parks';
 import { waterParkPlaces } from './water-parks';
 import { tokyoParkPlaces } from './tokyo-parks';
 import { trainMuseumPlaces } from './train-museums';
+import { librarySportPlaces } from './libraries-sports';
 import { supplementPlaces } from './supplements';
 
 /**
@@ -24,6 +25,7 @@ const allInputs = [
   ...waterParkPlaces,
   ...tokyoParkPlaces,
   ...trainMuseumPlaces,
+  ...librarySportPlaces,
   ...supplementPlaces,
 ];
 

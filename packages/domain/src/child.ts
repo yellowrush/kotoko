@@ -1,7 +1,10 @@
+export type ChildGender = 'boy' | 'girl' | 'other';
+
 export type ChildProfile = {
   id: string;
   displayName: string;
   birthDate: string;
+  gender?: ChildGender;
   interests: string[];
   accessibilityNeeds: string[];
   createdAt: string;
@@ -12,6 +15,7 @@ export type ChildProfile = {
 export type CreateChildInput = {
   displayName: string;
   birthDate: string;
+  gender?: ChildGender;
   interests?: string[];
   accessibilityNeeds?: string[];
 };
@@ -26,6 +30,7 @@ export function newChildProfile(input: CreateChildInput): ChildProfile {
     id: crypto.randomUUID(),
     displayName: input.displayName.trim(),
     birthDate: input.birthDate,
+    gender: input.gender,
     interests: input.interests ?? [],
     accessibilityNeeds: input.accessibilityNeeds ?? [],
     createdAt: now,

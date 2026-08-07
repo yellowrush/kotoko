@@ -2,11 +2,9 @@ import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 const NAV_ITEMS = [
-  { to: '/home', key: 'home' },
+  { to: '/home', key: 'profile' },
   { to: '/places', key: 'places' },
   { to: '/favorites', key: 'favorites' },
-  { to: '/knowledge', key: 'knowledge' },
-  { to: '/policies', key: 'policies' },
 ] as const;
 
 const FULL_BLEED_ROUTES = new Set(['/places']);

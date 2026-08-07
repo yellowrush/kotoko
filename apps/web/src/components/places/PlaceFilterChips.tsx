@@ -44,6 +44,7 @@ const RADIUS = [
 
 type PlaceFilterChipsProps = {
   filters: PlacesFilterState;
+  resultCount: number;
   setCategory: (c: string | undefined) => void;
   setIndoorOutdoor: (v: string | undefined) => void;
   setRadius: (r: number | undefined) => void;
@@ -89,6 +90,7 @@ function ChipGroup({
 
 export function PlaceFilterChips({
   filters,
+  resultCount,
   setCategory,
   setIndoorOutdoor,
   setRadius,
@@ -96,11 +98,6 @@ export function PlaceFilterChips({
 }: PlaceFilterChipsProps) {
   const { t } = useTranslation();
   const [open, setOpen] = useState(false);
-
-  const activeCount =
-    (filters.category ? 1 : 0) +
-    (filters.indoorOutdoor ? 1 : 0) +
-    (filters.tags.length > 0 ? 1 : 0);
 
   return (
     <div className="relative">
@@ -112,9 +109,9 @@ export function PlaceFilterChips({
       >
         <span aria-hidden>⚲</span>
         <span>{t('places.filters.label')}</span>
-        {activeCount > 0 && (
+        {resultCount > 0 && (
           <span className="rounded-full bg-brand-600 px-1.5 text-[10px] font-bold text-white">
-            {activeCount}
+            {resultCount}
           </span>
         )}
       </button>

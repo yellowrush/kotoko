@@ -8,6 +8,7 @@ import type { GeoPoint } from '@kodoko/domain';
 import type { FilteredPlace } from '../../lib/placeFilters';
 import type { StyleSpecification } from 'maplibre-gl';
 import { createFallbackIcon, patchOpenFreeMapStyle } from '../../lib/openFreeMapStylePatch';
+import { CATEGORY_ICON } from './categoryMeta';
 
 const STYLE_URL =
   import.meta.env.VITE_MAP_STYLE_URL ??
@@ -25,22 +26,22 @@ export type PlacesMapProps = {
 
 function markerElement() {
   const el = document.createElement('div');
-  el.className = 'relative flex h-7 w-7 cursor-pointer items-center justify-center';
+  el.className = 'relative flex h-8 w-8 cursor-pointer items-center justify-center';
   const inner = document.createElement('div');
-  inner.className = 'flex h-full w-full items-center justify-center rounded-full border-2 text-xs font-bold shadow-md transition';
+  inner.className = 'flex h-full w-full items-center justify-center rounded-full border-2 text-base shadow-md transition';
   el.appendChild(inner);
   return el;
 }
 
-function updateMarkerElement(el: HTMLElement, number: number, active: boolean) {
+function updateMarkerElement(el: HTMLElement, emoji: string, active: boolean) {
   const inner = el.firstElementChild as HTMLElement;
   inner.className = [
-    'flex h-full w-full items-center justify-center rounded-full border-2 text-xs font-bold shadow-md transition',
+    'flex h-full w-full items-center justify-center rounded-full border-2 text-base shadow-md transition',
     active
-      ? 'border-white bg-brand-700 text-white scale-125'
-      : 'border-brand-700 bg-white text-brand-700',
+      ? 'border-white bg-white scale-125 ring-2 ring-brand-600'
+      : 'border-brand-700 bg-white',
   ].join(' ');
-  inner.textContent = String(number);
+  inner.textContent = emoji;
 }
 
 export function PlacesMap({
@@ -161,7 +162,7 @@ export function PlacesMap({
       return 0;
     });
 
-    list.forEach((place, index) => {
+    list.forEach((place) => {
       seen.add(place.id);
       const active = place.id === selectedPlaceId;
 
@@ -174,7 +175,7 @@ export function PlacesMap({
           .addTo(map);
         markersRef.current[place.id] = marker;
       }
-      updateMarkerElement(marker.getElement() as HTMLElement, index + 1, active);
+      updateMarkerElement(marker.getElement() as HTMLElement, CATEGORY_ICON[place.category], active);
     });
 
     for (const id of Object.keys(markersRef.current)) {

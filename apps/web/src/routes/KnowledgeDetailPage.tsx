@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useKnowledgeDetail, useKnowledgeProgress } from '../hooks/useKnowledge';
 import { PageHeader } from '../components/PageHeader';
@@ -32,7 +32,7 @@ export function KnowledgeDetailPage() {
 
   return (
     <div>
-      <PageHeader title={item.title} />
+      <PageHeader title={item.title} backTo="/knowledge" />
 
       {item.categories.length > 0 && (
         <div className="flex flex-wrap gap-1">
@@ -77,10 +77,6 @@ export function KnowledgeDetailPage() {
           </ul>
         </div>
       )}
-
-      <Link to="/knowledge" className="mt-6 block text-sm text-gray-500">
-        ← {t('knowledge.backToList')}
-      </Link>
     </div>
   );
 }

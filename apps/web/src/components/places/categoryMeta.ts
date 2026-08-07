@@ -13,7 +13,7 @@ export const CATEGORY_ICON: Record<PlaceCategory, string> = {
   restaurant: '🍽️',
   event: '🎪',
   other: '📍',
-  'children-hall': '🧒',
+  'children-hall': '👶',
   'toy-play': '🧩',
   'amusement-park': '🎢',
 };

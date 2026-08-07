@@ -21,7 +21,7 @@ export function KnowledgePage() {
 
   return (
     <div>
-      <PageHeader title={t('knowledge.title')} />
+      <PageHeader title={t('knowledge.title')} backTo="/home" />
 
       {isLoading && <p className="text-sm text-gray-400">{t('common.loading')}</p>}
 

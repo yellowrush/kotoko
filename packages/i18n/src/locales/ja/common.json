@@ -12,7 +12,8 @@
     "close": "閉じる",
     "details": "詳細",
     "expand": "開く",
-    "collapse": "閉じる"
+    "collapse": "閉じる",
+    "back": "戻る"
   },
   "nav": {
     "home": "ホーム",
@@ -83,6 +84,11 @@
     "new": "こどもを追加",
     "name": "ニックネーム",
     "birthDate": "生年月日",
+    "gender": "性別",
+    "genderNone": "未選択",
+    "genderBoy": "男の子",
+    "genderGirl": "女の子",
+    "genderOther": "その他",
     "age": "月齢",
     "editTitle": "こどもを編集",
     "noChildren": "こどもがまだ登録されていません",
@@ -120,6 +126,8 @@
     "businessHours": "営業時間",
     "closedDays": "定休日",
     "phone": "電話",
+    "address": "住所",
+    "openInMap": "マップで開く",
     "parking": "駐車場",
     "parkingYes": "あり",
     "parkingNo": "なし",

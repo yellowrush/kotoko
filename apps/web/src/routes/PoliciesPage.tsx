@@ -51,7 +51,7 @@ export function PoliciesPage() {
 
   return (
     <div>
-      <PageHeader title={t('policies.title')} />
+<PageHeader title={t('policies.title')} backTo="/home" />
 
       {isLoading && <p className="text-sm text-gray-400">{t('common.loading')}</p>}
 

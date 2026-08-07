@@ -1,11 +1,17 @@
 import { type FormEvent, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { isValidBirthDate } from '@kodoko/domain';
+import { isValidBirthDate, type ChildGender } from '@kodoko/domain';
 import { Button } from '@kodoko/ui';
 import { useChildren } from '../hooks/useChildren';
 import { AgeLabel } from '../components/AgeLabel';
 import { PageHeader } from '../components/PageHeader';
+
+const GENDER_OPTIONS: { value: ChildGender; key: string }[] = [
+  { value: 'boy', key: 'children.genderBoy' },
+  { value: 'girl', key: 'children.genderGirl' },
+  { value: 'other', key: 'children.genderOther' },
+];
 
 export function ChildEditPage() {
   const { t } = useTranslation();
@@ -16,11 +22,13 @@ export function ChildEditPage() {
   const child = children.find((c) => c.id === childId);
   const [name, setName] = useState('');
   const [birthDate, setBirthDate] = useState('');
+  const [gender, setGender] = useState<ChildGender | undefined>(undefined);
 
   useEffect(() => {
     if (child) {
       setName(child.displayName);
       setBirthDate(child.birthDate);
+      setGender(child.gender);
     }
   }, [child]);
 
@@ -29,7 +37,7 @@ export function ChildEditPage() {
   async function onSubmit(e: FormEvent) {
     e.preventDefault();
     if (!childId || !name.trim() || !birthDateValid) return;
-    await update(childId, { displayName: name, birthDate });
+    await update(childId, { displayName: name, birthDate, gender });
     navigate('/children');
   }
 
@@ -45,7 +53,7 @@ export function ChildEditPage() {
 
   return (
     <div>
-      <PageHeader title={t('children.editTitle')} />
+      <PageHeader title={t('children.editTitle')} backTo="/children" />
       <form onSubmit={onSubmit} className="flex flex-col gap-4">
         <label className="flex flex-col gap-1">
           <span className="text-sm font-medium text-gray-700">{t('children.name')}</span>
@@ -72,6 +80,32 @@ export function ChildEditPage() {
             </span>
           )}
         </label>
+        <fieldset>
+          <legend className="text-sm font-medium text-gray-700">{t('children.gender')}</legend>
+          <div className="mt-2 flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => setGender(undefined)}
+              className={`rounded-full border px-3 py-1.5 text-sm ${
+                gender === undefined ? 'border-brand-600 bg-brand-600 text-white' : 'border-gray-300 text-gray-600'
+              }`}
+            >
+              {t('children.genderNone')}
+            </button>
+            {GENDER_OPTIONS.map((opt) => (
+              <button
+                key={opt.value}
+                type="button"
+                onClick={() => setGender(gender === opt.value ? undefined : opt.value)}
+                className={`rounded-full border px-3 py-1.5 text-sm ${
+                  gender === opt.value ? 'border-brand-600 bg-brand-600 text-white' : 'border-gray-300 text-gray-600'
+                }`}
+              >
+                {t(opt.key)}
+              </button>
+            ))}
+          </div>
+        </fieldset>
         <Button type="submit" disabled={!name.trim() || !birthDateValid}>
           {t('save')}
         </Button>

@@ -64,6 +64,7 @@ export function PlacesMapPage() {
           <div className="pointer-events-auto w-fit">
             <PlaceFilterChips
               filters={filters}
+              resultCount={filtered.length}
               setCategory={setCategory}
               setIndoorOutdoor={setIndoorOutdoor}
               setRadius={setRadius}

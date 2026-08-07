@@ -79,6 +79,9 @@ export function PlaceDetailPage() {
 
   return (
     <div>
+      <Link to="/places" className="mb-2 inline-flex items-center text-sm font-medium text-gray-600 hover:text-brand-700">
+        ← {t('common.back')}
+      </Link>
       <PlaceMediaCarousel place={place} fallbackEmoji={CATEGORY_ICON[place.category]} />
 
       <div className="mt-4 flex items-start justify-between gap-3">
@@ -184,10 +187,6 @@ export function PlaceDetailPage() {
       </div>
 
       <PlaceComments placeId={place.id} />
-
-      <Link to="/places" className="mt-6 block text-sm text-gray-500">
-        ← {t('places.backToMap')}
-      </Link>
 
       <PlaceReportDialog placeId={place.id} open={reportOpen} onClose={() => setReportOpen(false)} />
     </div>

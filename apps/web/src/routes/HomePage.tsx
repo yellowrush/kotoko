@@ -16,6 +16,7 @@ import { daysUntil } from '../lib/policy';
 import { recommendForChild } from '../lib/recommendations';
 import { RecommendationReasons } from '../components/RecommendationReasons';
 import { AgeLabel } from '../components/AgeLabel';
+import { ChildAvatar } from '../components/ChildAvatar';
 import { CATEGORY_ICON } from '../components/places/categoryMeta';
 
 const TRANSPORT_OPTIONS: { value: TransportMode | undefined; key: string }[] = [
@@ -270,13 +271,16 @@ export function HomePage() {
           <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>
         ) : active ? (
           <div className="mt-2">
-            <div className="flex items-center gap-2">
-              <p className="text-base font-medium">{active.displayName}</p>
-              <Link to={`/children/${active.id}/edit`} className="text-xs font-medium text-brand-700">
-                {t('edit')}
-              </Link>
+            <div className="flex items-center gap-3">
+              <ChildAvatar gender={active.gender} ageMonths={calculateAgeMonths(active.birthDate)} size="lg" />
+              <div className="min-w-0">
+                <p className="text-base font-medium">{active.displayName}</p>
+                <Link to={`/children/${active.id}/edit`} className="text-xs font-medium text-brand-700">
+                  {t('edit')}
+                </Link>
+              </div>
             </div>
-            <p className="text-sm text-gray-500">
+            <p className="mt-1.5 text-sm text-gray-500">
               <AgeLabel birthDate={active.birthDate} />
             </p>
             <div className="mt-2 flex items-center gap-3 text-xs">

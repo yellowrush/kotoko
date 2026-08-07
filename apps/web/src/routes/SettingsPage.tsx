@@ -42,7 +42,7 @@ export function SettingsPage() {
 
   return (
     <div className="flex flex-col gap-4">
-      <PageHeader title={t('settings.title')} />
+      <PageHeader title={t('settings.title')} backTo="/home" />
 
       <section className="rounded-lg border border-gray-200 bg-white p-4">
         <h2 className="text-sm font-semibold text-gray-700">{t('settings.language')}</h2>

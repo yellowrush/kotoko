@@ -14,6 +14,14 @@ function InfoRow({ label, children }: { label: string; children: React.ReactNode
   );
 }
 
+function mapsUrl(place: Place): string {
+  const query =
+    place.latitude !== undefined && place.longitude !== undefined
+      ? `${place.latitude},${place.longitude}`
+      : place.address;
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+}
+
 export function PlaceBasicInfo({ place }: PlaceBasicInfoProps) {
   const { t, i18n } = useTranslation();
 
@@ -36,7 +44,17 @@ export function PlaceBasicInfo({ place }: PlaceBasicInfoProps) {
       <section>
         <h3 className="text-sm font-semibold text-gray-700">{t('places.basicInfo')}</h3>
         <dl className="mt-1 divide-y divide-gray-100">
-          <InfoRow label="📍">{place.address}</InfoRow>
+          <InfoRow label={t('places.address')}>
+            <a
+              href={mapsUrl(place)}
+              target="_blank"
+              rel="noreferrer"
+              className="text-brand-700"
+              title={t('places.openInMap')}
+            >
+              {place.address}
+            </a>
+          </InfoRow>
           {place.businessHours && <InfoRow label={t('places.businessHours')}>{place.businessHours}</InfoRow>}
           {place.closedDays && <InfoRow label={t('places.closedDays')}>{place.closedDays}</InfoRow>}
           {place.parking !== undefined && (

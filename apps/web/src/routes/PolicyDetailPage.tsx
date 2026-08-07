@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { findMunicipality } from '@kodoko/domain';
 import type { LeafResult } from '@kodoko/policy-engine';
@@ -85,7 +85,7 @@ export function PolicyDetailPage() {
 
   return (
     <div>
-      <PageHeader title={policy.title} />
+      <PageHeader title={policy.title} backTo="/policies" />
 
       <span className="rounded-full bg-brand-50 px-2 py-0.5 text-xs text-brand-700">
         {t(`policies.level.${policy.authorityLevel}`)}
@@ -202,10 +202,6 @@ export function PolicyDetailPage() {
       </section>
 
       <p className="mt-3 text-xs text-gray-400">{t('policies.disclaimer')}</p>
-
-      <Link to="/policies" className="mt-6 block text-sm text-gray-500">
-        ← {t('policies.backToList')}
-      </Link>
     </div>
   );
 }

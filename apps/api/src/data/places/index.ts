@@ -4,6 +4,8 @@ import { basePlaces } from './base';
 import { childrenHallPlaces } from './children-halls';
 import { toyPlayPlaces } from './toy-plays';
 import { amusementParkPlaces } from './amusement-parks';
+import { waterParkPlaces } from './water-parks';
+import { tokyoParkPlaces } from './tokyo-parks';
 import { supplementPlaces } from './supplements';
 
 /**
@@ -18,6 +20,8 @@ const allInputs = [
   ...childrenHallPlaces,
   ...toyPlayPlaces,
   ...amusementParkPlaces,
+  ...waterParkPlaces,
+  ...tokyoParkPlaces,
   ...supplementPlaces,
 ];
 

@@ -148,6 +148,47 @@ describe('transport and group pass-through', () => {
   });
 });
 
+describe('recommendForChild with multiple children', () => {
+  const toddler = makeChild({ id: 'toddler', birthDate: '2022-01-15' });
+  const schooler = makeChild({ id: 'schooler', birthDate: '2017-01-15' });
+
+  it('prefers places suitable for every selected child', () => {
+    const broad = makePlace({ id: 'broad', suitableAgeMinMonths: 0, suitableAgeMaxMonths: 120 });
+    const narrow = makePlace({ id: 'narrow', suitableAgeMinMonths: 24, suitableAgeMaxMonths: 36 });
+    const result = recommendForChild({
+      children: [toddler, schooler],
+      places: [narrow, broad],
+      userLocation: TOKYO,
+    });
+    expect(result[0]?.place.id).toBe('broad');
+    expect(result[0]?.reasonCodes).toContain('age_match');
+  });
+
+  it('merges interests across all selected children', () => {
+    const zoo = makePlace({ id: 'zoo', category: 'zoo' });
+    const aquarium = makePlace({ id: 'aq', category: 'aquarium' });
+    const park = makePlace({ id: 'park', category: 'park' });
+    const childA = makeChild({ id: 'a', interests: ['zoo'] });
+    const childB = makeChild({ id: 'b', interests: ['aquarium'] });
+    const result = recommendForChild({
+      children: [childA, childB],
+      places: [park, zoo, aquarium],
+      userLocation: TOKYO,
+    });
+    expect(result.slice(0, 2).map((r) => r.place.id)).toEqual(['zoo', 'aq']);
+  });
+
+  it('returns partial age match reason when only some children fit', () => {
+    const narrow = makePlace({ id: 'narrow', suitableAgeMinMonths: 50, suitableAgeMaxMonths: 70 });
+    const result = recommendForChild({
+      children: [toddler, schooler],
+      places: [narrow],
+      userLocation: TOKYO,
+    });
+    expect(result[0]?.reasonCodes).toContain('age_partial');
+  });
+});
+
 describe('scorePlaceForChild', () => {
   it('returns undefined without an active child', () => {
     expect(scorePlaceForChild({ child: undefined, place: NEAR })).toBeUndefined();

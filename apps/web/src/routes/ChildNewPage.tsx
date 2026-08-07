@@ -86,7 +86,7 @@ export function ChildNewPage() {
           </div>
         </fieldset>
         <Button type="submit" disabled={creating || !name.trim() || !birthDateValid}>
-          {t('save')}
+          {t('common.save')}
         </Button>
       </form>
     </div>

@@ -4,7 +4,6 @@ import { HomePage } from '../routes/HomePage';
 import { OnboardingPage } from '../routes/OnboardingPage';
 import { PlacesMapPage } from '../routes/PlacesMapPage';
 import { PlaceDetailPage } from '../routes/PlaceDetailPage';
-import { ChildrenPage } from '../routes/ChildrenPage';
 import { ChildNewPage } from '../routes/ChildNewPage';
 import { ChildEditPage } from '../routes/ChildEditPage';
 import { KnowledgePage } from '../routes/KnowledgePage';
@@ -30,7 +29,6 @@ export const router = createBrowserRouter(
         { path: 'places/map', element: <Navigate to="/places" replace /> },
         { path: 'places/:placeId', element: <PlaceDetailPage /> },
         { path: 'favorites', element: <FavoritesPage /> },
-        { path: 'children', element: <ChildrenPage /> },
         { path: 'children/new', element: <ChildNewPage /> },
         { path: 'children/:childId/edit', element: <ChildEditPage /> },
         { path: 'knowledge', element: <KnowledgePage /> },

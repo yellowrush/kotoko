@@ -1,18 +1,18 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Card } from '@kodoko/ui';
 import { calculateAgeMonths, findMunicipality, findNearestMunicipality } from '@kodoko/domain';
 import type { TransportMode } from '@kodoko/recommendation';
-import { useActiveChild } from '../hooks/useActiveChild';
+import { useSelectedChildren } from '../hooks/useSelectedChildren';
 import { usePlaces } from '../hooks/usePlaces';
 import { useGeolocation } from '../hooks/useGeolocation';
 import { useWeather } from '../hooks/useWeather';
 import { useKnowledge, useKnowledgeProgress } from '../hooks/useKnowledge';
-import { usePolicies, usePolicyMatches, usePolicyTasks } from '../hooks/usePolicies';
+import { usePolicies, usePolicyTasks } from '../hooks/usePolicies';
 import { usePreference } from '../hooks/usePreference';
-import { filterKnowledgeByAge, sortKnowledgeByRead } from '../lib/knowledge';
-import { daysUntil } from '../lib/policy';
+import { filterKnowledgeByAges, sortKnowledgeByRead } from '../lib/knowledge';
+import { checkPolicyFor, daysUntil } from '../lib/policy';
 import { recommendForChild } from '../lib/recommendations';
 import { RecommendationReasons } from '../components/RecommendationReasons';
 import { AgeLabel } from '../components/AgeLabel';
@@ -72,7 +72,7 @@ function ChipGroup<T>({
 
 export function HomePage() {
   const { t } = useTranslation();
-  const { children, active, setActive, loading: childLoading } = useActiveChild();
+  const { children, selected, selectedIds, toggle, loading: childLoading } = useSelectedChildren();
   const { data: places, isLoading: placesLoading, isError, refetch } = usePlaces();
   const { coords } = useGeolocation();
   const { preference } = usePreference();
@@ -86,21 +86,36 @@ export function HomePage() {
   const { data: knowledge, isLoading: knowledgeLoading } = useKnowledge();
   const { readIds } = useKnowledgeProgress();
   const { data: policies, isLoading: policiesLoading } = usePolicies();
-  const matches = usePolicyMatches();
   const { statusFor } = usePolicyTasks();
+
+  // グループ人数は選択した子どもの人数に合わせて初期化する（最大 3 人以上）。
+  useEffect(() => {
+    if (selected.length >= 1) setGroupSize(Math.min(selected.length, 3));
+  }, [selected.length]);
+
+  const selectedAges = useMemo(() => selected.map((c) => calculateAgeMonths(c.birthDate)), [selected]);
+  const selectedBirthDates = useMemo(() => selected.map((c) => c.birthDate), [selected]);
 
   const weeklyKnowledge = useMemo(
     () =>
       sortKnowledgeByRead(
-        filterKnowledgeByAge(knowledge ?? [], active ? calculateAgeMonths(active.birthDate) : undefined),
+        filterKnowledgeByAges(knowledge ?? [], selectedAges),
         readIds,
       ).slice(0, 3),
-    [knowledge, active, readIds],
+    [knowledge, selectedAges, readIds],
   );
 
   const policyReminders = useMemo(() => {
     const list = (policies ?? [])
-      .filter((policy) => matches.get(policy.id)?.matched)
+      .filter((policy) =>
+        selectedBirthDates.length > 0 &&
+        selectedBirthDates.some((birthDate) =>
+          checkPolicyFor(policy, {
+            birthDate,
+            municipalityCode: preference?.municipalityCode,
+          }).matched,
+        ),
+      )
       .filter((policy) => statusFor(policy.id) !== 'dismissed')
       .sort((a, b) => {
         const aDeadline = a.applicationDeadlineAt?.slice(0, 10) ?? '9999-12-31';
@@ -108,7 +123,7 @@ export function HomePage() {
         return aDeadline.localeCompare(bDeadline);
       });
     return list.slice(0, 3);
-  }, [policies, matches, statusFor]);
+  }, [policies, selectedBirthDates, preference, statusFor]);
 
   function renderWeatherLabel(): string {
     if (!coords) return t('home.weatherUnavailable');
@@ -157,14 +172,14 @@ export function HomePage() {
   const recommendations = useMemo(
     () =>
       recommendForChild({
-        child: active,
+        children: selected,
         places: places ?? [],
         userLocation: coords ?? undefined,
         transportMode,
         groupSize,
         weather: weather ?? undefined,
       }),
-    [active, places, coords, transportMode, groupSize, weather],
+    [selected, places, coords, transportMode, groupSize, weather],
   );
 
   return (
@@ -212,7 +227,7 @@ export function HomePage() {
           </div>
         )}
 
-        {!isError && !active && (
+        {!isError && selected.length === 0 && (
           <div className="mt-3 flex items-center justify-between">
             <p className="text-sm text-gray-500">{t('home.noChildYet')}</p>
             <Link to="/children/new" className="text-sm font-medium text-brand-700">
@@ -221,7 +236,7 @@ export function HomePage() {
           </div>
         )}
 
-        {!isError && active && !placesLoading && recommendations.length === 0 && (
+        {!isError && selected.length > 0 && !placesLoading && recommendations.length === 0 && (
           <p className="mt-3 text-sm text-gray-400">{t('home.noRecommendations')}</p>
         )}
 
@@ -250,58 +265,75 @@ export function HomePage() {
       <Card>
         <div className="flex items-center justify-between">
           <h2 className="text-sm font-semibold text-gray-500">{t('home.currentChild')}</h2>
-          {!childLoading && children.length > 1 && (
-            <label className="flex items-center gap-1 text-xs text-gray-500">
-              {t('home.switchChild')}
-              <select
-                value={active?.id ?? ''}
-                onChange={(e) => setActive(e.target.value)}
-                className="rounded border border-gray-300 px-1 py-0.5 text-xs"
-              >
-                {children.map((child) => (
-                  <option key={child.id} value={child.id}>
-                    {child.displayName}
-                  </option>
-                ))}
-              </select>
-            </label>
+          {!childLoading && children.length > 0 && (
+            <Link to="/children/new" className="text-xs font-medium text-brand-700">
+              {t('home.addChild')}
+            </Link>
           )}
         </div>
         {childLoading ? (
           <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>
-        ) : active ? (
-          <div className="mt-2">
-            <div className="flex items-center gap-3">
-              <ChildAvatar gender={active.gender} ageMonths={calculateAgeMonths(active.birthDate)} size="lg" />
-              <div className="min-w-0">
-                <p className="text-base font-medium">{active.displayName}</p>
-                <Link to={`/children/${active.id}/edit`} className="text-xs font-medium text-brand-700">
-                  {t('edit')}
-                </Link>
-              </div>
-            </div>
-            <p className="mt-1.5 text-sm text-gray-500">
-              <AgeLabel birthDate={active.birthDate} />
-            </p>
-            <div className="mt-2 flex items-center gap-3 text-xs">
-              <Link to="/children/new" className="font-medium text-brand-700">
-                {t('home.addChild')}
-              </Link>
-              {children.length > 1 && (
-                <Link to="/children" className="text-gray-500">
-                  {t('home.allChildren')}
-                </Link>
-              )}
-            </div>
-          </div>
-        ) : (
+        ) : children.length === 0 ? (
           <div className="mt-2 flex items-center justify-between">
             <p className="text-sm text-gray-500">{t('home.noChildYet')}</p>
             <Link to="/children/new" className="text-sm font-medium text-brand-700">
               {t('home.addChild')}
             </Link>
           </div>
+        ) : (
+          <p className="mt-1 text-xs text-gray-400">{t('home.selectChildrenHint')}</p>
         )}
+        {childLoading ? null : children.length > 0 ? (
+          <ul className="mt-1 flex flex-col">
+            {children.map((child) => {
+              const isChecked = selectedIds.includes(child.id);
+              return (
+                <li
+                  key={child.id}
+                  className={`flex items-center gap-3 rounded-lg px-1 py-2 ${
+                    isChecked ? 'bg-brand-50/60' : ''
+                  }`}
+                >
+                  <button
+                    type="button"
+                    onClick={() => toggle(child.id)}
+                    aria-pressed={isChecked}
+                    aria-label={t('children.selectChild', { name: child.displayName })}
+                    className="flex min-w-0 flex-1 items-center gap-3 text-left"
+                  >
+                    <ChildAvatar
+                      gender={child.gender}
+                      ageMonths={calculateAgeMonths(child.birthDate)}
+                      size="md"
+                    />
+                    <span className="min-w-0">
+                      <span className={`block truncate text-sm font-medium ${isChecked ? 'text-brand-900' : 'text-gray-700'}`}>
+                        {child.displayName}
+                      </span>
+                      <span className="block text-xs text-gray-500">
+                        <AgeLabel birthDate={child.birthDate} />
+                      </span>
+                    </span>
+                  </button>
+                  <span
+                    aria-hidden
+                    className={`flex h-5 w-5 shrink-0 items-center justify-center rounded border ${
+                      isChecked ? 'border-brand-600 bg-brand-600 text-white' : 'border-gray-300'
+                    }`}
+                  >
+                    {isChecked ? '✓' : ''}
+                  </span>
+                  <Link
+                    to={`/children/${child.id}/edit`}
+                    className="shrink-0 text-xs font-medium text-brand-700"
+                  >
+                    {t('common.edit')}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        ) : null}
       </Card>
 
       <Card>

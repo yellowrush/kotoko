@@ -69,10 +69,9 @@
     "prefecture": "東京都",
     "noLocation": "現在地情報がありません",
     "toSettings": "設定で居住地を登録",
-    "allChildren": "こども一覧",
     "noChildYet": "こどもを登録しましょう",
     "addChild": "こどもを追加",
-    "switchChild": "こどもを切り替える"
+    "selectChildrenHint": "今日一緒に行くこどもを選択（複数可）"
   },
   "onboarding": {
     "title": "ようこそコドコへ",
@@ -80,7 +79,6 @@
     "start": "はじめる"
   },
   "children": {
-    "title": "こども",
     "new": "こどもを追加",
     "name": "ニックネーム",
     "birthDate": "生年月日",
@@ -91,7 +89,6 @@
     "genderOther": "その他",
     "age": "月齢",
     "editTitle": "こどもを編集",
-    "noChildren": "こどもがまだ登録されていません",
     "selectChild": "{{name}}を選択",
     "invalidBirthDate": "有効な生年月日を入力してください",
     "notFound": "こどもが見つかりません"

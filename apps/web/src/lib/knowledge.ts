@@ -8,6 +8,17 @@ export function filterKnowledgeByAge(
   return list.filter((item) => ageMonths >= item.minAgeMonths && ageMonths <= item.maxAgeMonths);
 }
 
+/** 複数子どもの場合、いずれかの子どもに該当する知識を残す（グループ向け）。 */
+export function filterKnowledgeByAges(
+  list: KnowledgeContent[],
+  ageMonthsList: number[],
+): KnowledgeContent[] {
+  if (ageMonthsList.length === 0) return list;
+  return list.filter((item) =>
+    ageMonthsList.some((age) => age >= item.minAgeMonths && age <= item.maxAgeMonths),
+  );
+}
+
 export function sortKnowledgeByRead(
   list: KnowledgeContent[],
   readIds: Set<string>,

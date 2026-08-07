@@ -69,10 +69,9 @@
     "prefecture": "東京都",
     "noLocation": "暫無當前位置資訊",
     "toSettings": "在設定中登記居住地",
-    "allChildren": "孩子列表",
     "noChildYet": "先登記孩子資料吧",
     "addChild": "新增孩子",
-    "switchChild": "切換孩子"
+    "selectChildrenHint": "選擇今天同行的孩子（可多選）"
   },
   "onboarding": {
     "title": "歡迎使用 Kodoko",
@@ -80,7 +79,6 @@
     "start": "開始使用"
   },
   "children": {
-    "title": "孩子",
     "new": "新增孩子",
     "name": "暱稱",
     "birthDate": "出生日期",
@@ -91,7 +89,6 @@
     "genderOther": "其他",
     "age": "月齡",
     "editTitle": "編輯孩子",
-    "noChildren": "尚未登記孩子資料",
     "selectChild": "選擇{{name}}",
     "invalidBirthDate": "請輸入有效的出生日期",
     "notFound": "找不到該孩子"

@@ -9,10 +9,17 @@ export const TRANSPORT_MAX_DISTANCE_KM: Record<TransportMode, number> = {
   train: 20,
 };
 
+export type ChildGroupMember = {
+  ageMonths: number;
+  interests: string[];
+  accessibilityNeeds: string[];
+};
+
 export type RecommendationInput = {
   childAgeMonths: number;
   interests: string[];
   accessibilityNeeds: string[];
+  children?: ChildGroupMember[];
   userLocation?: GeoPoint;
   maxDistanceKm?: number;
   transportMode?: TransportMode;
@@ -77,15 +84,26 @@ export function scorePlace(place: Place, input: RecommendationInput): PlaceRecom
   const reasons: RecommendationReason[] = [];
   const factors: ScoreFactors = { ageMatch: 0, distanceMatch: 0, weatherMatch: 0, indoorOutdoorMatch: 0, facilityScore: 0, interestMatch: 0 };
 
-  // 年龄匹配
+  // 同行グループ：複数子どもの場合は children、単一の場合は従来フィールドを使う。
+  const group: ChildGroupMember[] =
+    input.children && input.children.length > 0
+      ? input.children
+      : [{ ageMonths: input.childAgeMonths, interests: input.interests, accessibilityNeeds: input.accessibilityNeeds }];
+  const interests = [...new Set(group.flatMap((c) => c.interests))];
+
+  // 年龄匹配（全員が範囲内なら最適、一部のみなら部分一致）
   const min = place.suitableAgeMinMonths ?? 0;
   const max = place.suitableAgeMaxMonths ?? Infinity;
-  if (input.childAgeMonths >= min && input.childAgeMonths <= max) {
+  const inRange = group.filter((c) => c.ageMonths >= min && c.ageMonths <= max).length;
+  if (inRange === group.length) {
     factors.ageMatch = 1;
     reasons.push({ code: 'age_match', message: `Suitable for ${min}-${max === Infinity ? '+' : max} months` });
+  } else if (inRange > 0) {
+    factors.ageMatch = 0.6;
+    reasons.push({ code: 'age_partial', message: `Suitable for ages ${min}-${max === Infinity ? '+' : max} for ${inRange} of ${group.length} children` });
   } else {
     factors.ageMatch = 0.2;
-    reasons.push({ code: 'age_mismatch', message: 'Age range does not fully match' });
+    reasons.push({ code: 'age_mismatch', message: 'Age range does not match any child' });
   }
 
   // 距离匹配
@@ -148,11 +166,11 @@ export function scorePlace(place: Place, input: RecommendationInput): PlaceRecom
   }
   factors.facilityScore = facilityCount > 0 ? facility / 3 : 0.2;
 
-  // 兴趣匹配
-  if (input.interests.length === 0) {
+  // 兴趣匹配（複数子どもの興味は全員分の和集合で判定）
+  if (interests.length === 0) {
     factors.interestMatch = 0.5;
   } else {
-    const matched = input.interests.filter((i) => place.category === i).length;
+    const matched = interests.filter((i) => place.category === i).length;
     factors.interestMatch = matched > 0 ? 1 : 0.3;
     if (matched > 0) reasons.push({ code: 'interest', message: 'Matches child interest' });
   }

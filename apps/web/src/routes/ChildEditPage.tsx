@@ -38,13 +38,13 @@ export function ChildEditPage() {
     e.preventDefault();
     if (!childId || !name.trim() || !birthDateValid) return;
     await update(childId, { displayName: name, birthDate, gender });
-    navigate('/children');
+    navigate('/home');
   }
 
   async function onDelete() {
     if (!childId) return;
     await remove(childId);
-    navigate('/children');
+    navigate('/home');
   }
 
   if (!loading && !child) {
@@ -53,7 +53,7 @@ export function ChildEditPage() {
 
   return (
     <div>
-      <PageHeader title={t('children.editTitle')} backTo="/children" />
+      <PageHeader title={t('children.editTitle')} backTo="/home" />
       <form onSubmit={onSubmit} className="flex flex-col gap-4">
         <label className="flex flex-col gap-1">
           <span className="text-sm font-medium text-gray-700">{t('children.name')}</span>
@@ -107,10 +107,10 @@ export function ChildEditPage() {
           </div>
         </fieldset>
         <Button type="submit" disabled={!name.trim() || !birthDateValid}>
-          {t('save')}
+          {t('common.save')}
         </Button>
         <Button type="button" variant="danger" onClick={onDelete}>
-          {t('delete')}
+          {t('common.delete')}
         </Button>
       </form>
     </div>

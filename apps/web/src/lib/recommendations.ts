@@ -23,7 +23,8 @@ function dedupe(codes: string[]): string[] {
 }
 
 export function recommendForChild(input: {
-  child: ChildProfile | null | undefined;
+  children?: ChildProfile[];
+  child?: ChildProfile | null;
   places: Place[];
   userLocation?: GeoPoint | null;
   maxDistanceKm?: number;
@@ -31,12 +32,23 @@ export function recommendForChild(input: {
   groupSize?: number;
   weather?: WeatherSummary;
 }): HomeRecommendation[] {
-  if (!input.child) return [];
+  const party =
+    input.children && input.children.length > 0
+      ? input.children
+      : input.child
+        ? [input.child]
+        : [];
+  if (party.length === 0) return [];
 
   const recs = recommendPlaces({
-    childAgeMonths: calculateAgeMonths(input.child.birthDate),
-    interests: input.child.interests,
-    accessibilityNeeds: input.child.accessibilityNeeds,
+    children: party.map((c) => ({
+      ageMonths: calculateAgeMonths(c.birthDate),
+      interests: c.interests,
+      accessibilityNeeds: c.accessibilityNeeds,
+    })),
+    childAgeMonths: calculateAgeMonths(party[0]!.birthDate),
+    interests: party[0]!.interests,
+    accessibilityNeeds: party[0]!.accessibilityNeeds,
     userLocation: input.userLocation ?? undefined,
     maxDistanceKm: input.maxDistanceKm ?? (input.transportMode ? undefined : HOME_MAX_DISTANCE_KM),
     transportMode: input.transportMode,

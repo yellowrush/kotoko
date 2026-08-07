@@ -1,5 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 import { ApiClient, ApiError } from '../src/client';
+import { submitPlaceReport } from '../src/places';
 
 function jsonResponse(status: number, body: unknown): Response {
   return new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } });
@@ -44,5 +45,37 @@ describe('ApiClient', () => {
     const client = new ApiClient({ baseUrl: 'https://api.example.com', fetchImpl });
 
     await expect(client.get('/x')).rejects.toMatchObject({ code: 'HTTP_ERROR', status: 500 });
+  });
+});
+
+describe('submitPlaceReport', () => {
+  it('POSTs to the place report endpoint and validates the response', async () => {
+    const fetchImpl = vi.fn().mockResolvedValue(
+      jsonResponse(200, { id: 'r1', status: 'received' }),
+    );
+    const client = new ApiClient({ baseUrl: 'https://api.example.com', fetchImpl });
+
+    const result = await submitPlaceReport(client, 'ueno-park', {
+      type: 'price',
+      detail: '料金が変わりました',
+    });
+
+    expect(result).toEqual({ id: 'r1', status: 'received' });
+    expect(fetchImpl).toHaveBeenCalledWith(
+      'https://api.example.com/places/ueno-park/reports',
+      expect.objectContaining({
+        method: 'POST',
+        body: JSON.stringify({ type: 'price', detail: '料金が変わりました' }),
+      }),
+    );
+  });
+
+  it('rejects an unexpected response body', async () => {
+    const fetchImpl = vi.fn().mockResolvedValue(jsonResponse(200, { status: 'other' }));
+    const client = new ApiClient({ baseUrl: 'https://api.example.com', fetchImpl });
+
+    await expect(
+      submitPlaceReport(client, 'ueno-park', { type: 'other' }),
+    ).rejects.toThrow();
   });
 });

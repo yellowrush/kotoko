@@ -286,6 +286,40 @@
     "title": "我的收藏",
     "empty": "還沒有收藏的去處。在地點詳情頁點「加入收藏」即可。"
   },
+  "placeComments": {
+    "title": "大家的筆記",
+    "localOnly": "筆記僅保存在此裝置上。",
+    "empty": "還沒有筆記。",
+    "ratingLabel": "評分",
+    "placeholder": "寫寫帶孩子玩時的感受…",
+    "submit": "發布",
+    "delete": "刪除",
+    "cancel": "取消"
+  },
+  "placeReport": {
+    "title": "回報資訊修正",
+    "why": "發現資訊有誤或需要更新時可在此回報。為匿名傳送，無需登入。",
+    "typeLabel": "回報類型",
+    "detailLabel": "內容",
+    "detailPlaceholder": "具體內容（選填）",
+    "emailLabel": "聯絡信箱（選填）",
+    "submit": "傳送回報",
+    "submitted": "已收到您的回報。我們會確認後予以更正。",
+    "queuedOffline": "未連上網路，已儲存在此裝置上。連上網路時自動傳送。",
+    "submitFailed": "傳送失敗，請稍後重試。",
+    "close": "關閉",
+    "reportLink": "回報資訊修正",
+    "type": {
+      "business_hours": "營業時間",
+      "price": "費用",
+      "reservation": "預約方式",
+      "address": "地址 / 交通",
+      "media": "照片 / 圖片",
+      "outdated": "資訊過時",
+      "closed": "停業 / 遷址",
+      "other": "其他"
+    }
+  },
   "login": {
     "title": "登入",
     "description": "登入為選項。未登入也能使用核心功能。"

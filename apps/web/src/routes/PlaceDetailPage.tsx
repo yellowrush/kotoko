@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { haversineDistanceKm } from '@kodoko/recommendation';
 import { usePlace } from '../hooks/usePlaces';
@@ -15,6 +15,8 @@ import { PlaceLabelChips } from '../components/places/PlaceLabelChips';
 import { PlacePriceSection } from '../components/places/PlacePriceSection';
 import { PlaceReservationSection } from '../components/places/PlaceReservationSection';
 import { PlaceBasicInfo } from '../components/places/PlaceBasicInfo';
+import { PlaceComments } from '../components/places/PlaceComments';
+import { PlaceReportDialog } from '../components/places/PlaceReportDialog';
 
 const EXTRA_TAGS = ['group-play', 'quiet-zone'] as const;
 
@@ -26,6 +28,7 @@ export function PlaceDetailPage() {
   const { active } = useActiveChild();
   const { coords } = useGeolocation();
   const { data: weather } = useWeather(coords);
+  const [reportOpen, setReportOpen] = useState(false);
 
   const recommendation = useMemo(
     () =>
@@ -146,6 +149,13 @@ export function PlaceDetailPage() {
         >
           {isFav ? t('places.favorited') : t('places.favorite')}
         </button>
+        <button
+          type="button"
+          onClick={() => setReportOpen(true)}
+          className="rounded-lg border border-gray-300 px-3 py-1.5 text-sm font-medium text-gray-600"
+        >
+          {t('placeReport.reportLink')}
+        </button>
       </div>
 
       <div className="mt-4 rounded-xl bg-brand-50/60 p-3">
@@ -173,9 +183,13 @@ export function PlaceDetailPage() {
         <PlaceBasicInfo place={place} />
       </div>
 
+      <PlaceComments placeId={place.id} />
+
       <Link to="/places" className="mt-6 block text-sm text-gray-500">
         ← {t('places.backToMap')}
       </Link>
+
+      <PlaceReportDialog placeId={place.id} open={reportOpen} onClose={() => setReportOpen(false)} />
     </div>
   );
 }

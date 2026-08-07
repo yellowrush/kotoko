@@ -58,7 +58,7 @@ async function snapshotAll(db: KodokoLocalDatabase): Promise<Snapshot> {
 }
 
 async function restoreSnapshot(db: KodokoLocalDatabase, snapshot: Snapshot): Promise<void> {
-  await db.transaction('rw', ...backupTables(db), async () => {
+  await db.transaction('rw', backupTables(db), async () => {
     for (const table of backupTables(db)) {
       await table.clear();
     }
@@ -121,7 +121,7 @@ export async function exportLocalBackupJson(db: KodokoLocalDatabase): Promise<st
 
 /** 删除全部本地数据（儿童/偏好/收藏/已读/政策任务/地点评论）。不可恢复，调用前由 UI 确认。 */
 export async function clearAllData(db: KodokoLocalDatabase): Promise<void> {
-  await db.transaction('rw', ...backupTables(db), async () => {
+  await db.transaction('rw', backupTables(db), async () => {
     for (const table of backupTables(db)) {
       await table.clear();
     }
@@ -154,7 +154,7 @@ export async function importLocalBackup(
   const snapshot = await snapshotAll(db);
 
   try {
-    await db.transaction('rw', ...backupTables(db), async () => {
+    await db.transaction('rw', backupTables(db), async () => {
       if (mode === 'overwrite') {
         for (const table of backupTables(db)) {
           await table.clear();

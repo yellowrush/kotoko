@@ -286,6 +286,40 @@
     "title": "お気に入り",
     "empty": "お気に入りはまだありません。施設詳細の「お気に入り」から追加できます。"
   },
+  "placeComments": {
+    "title": "みんなのメモ",
+    "localOnly": "メモはこの端末にのみ保存されます。",
+    "empty": "まだメモはありません。",
+    "ratingLabel": "評価",
+    "placeholder": "子どもと楽しみやすい様子を書こう…",
+    "submit": "投稿",
+    "delete": "削除",
+    "cancel": "キャンセル"
+  },
+  "placeReport": {
+    "title": "情報の修正を報告",
+    "why": "掲載情報に誤りや更新があるときに報告できます。報告は匿名で送信され、ログイン不要です。",
+    "typeLabel": "報告の種類",
+    "detailLabel": "内容",
+    "detailPlaceholder": "具体的な内容（任意）",
+    "emailLabel": "連絡先メール（任意）",
+    "submit": "報告を送信",
+    "submitted": "報告を受け付けました。確認のうえ反映します。",
+    "queuedOffline": "ネットワークに接続されていないため、端末に保存しました。接続時に自動送信します。",
+    "submitFailed": "送信に失敗しました。しばらくしてから再度お試しください。",
+    "close": "閉じる",
+    "reportLink": "情報の修正を報告",
+    "type": {
+      "business_hours": "営業時間",
+      "price": "料金",
+      "reservation": "予約方法",
+      "address": "住所・アクセス",
+      "media": "写真・画像",
+      "outdated": "掲載情報が古い",
+      "closed": "閉店・移転",
+      "other": "その他"
+    }
+  },
   "login": {
     "title": "ログイン",
     "description": "ログインは任意です。ログインしなくても主要機能を利用できます。"

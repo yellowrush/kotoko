@@ -1,5 +1,7 @@
+import { z } from 'zod';
 import type { ApiClient } from './client';
 import { placeListSchema, placeSchema, type PlaceDTO } from './schemas';
+import type { PlaceReportType } from '@kodoko/domain';
 
 export type PlaceQuery = {
   category?: string;
@@ -36,4 +38,24 @@ export async function fetchPlaces(
 export async function fetchPlace(client: ApiClient, placeId: string): Promise<PlaceDTO> {
   const data = await client.get<unknown>(`/places/${placeId}`);
   return placeSchema.parse(data);
+}
+
+const reportResponseSchema = z.object({
+  id: z.string().min(1),
+  status: z.literal('received'),
+});
+
+export type SubmitPlaceReportInput = {
+  type: PlaceReportType;
+  detail?: string;
+  contactEmail?: string;
+};
+
+export async function submitPlaceReport(
+  client: ApiClient,
+  placeId: string,
+  input: SubmitPlaceReportInput,
+): Promise<{ id: string; status: 'received' }> {
+  const data = await client.post<unknown>(`/places/${placeId}/reports`, input);
+  return reportResponseSchema.parse(data);
 }

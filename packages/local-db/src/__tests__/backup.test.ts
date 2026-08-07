@@ -10,6 +10,8 @@ import {
 import { DexieChildRepository } from '../repositories/child';
 import { FavoriteRepository } from '../repositories/favorite';
 import { PreferenceRepository } from '../repositories/preference';
+import { PlaceCommentRepository } from '../repositories/placeComment';
+import { LOCAL_BACKUP_VERSION } from '../backup';
 
 const validBackupPayload = () => ({
   app: 'kodoko',
@@ -109,6 +111,42 @@ describe('backup export/import', () => {
     });
     expect(await new FavoriteRepository(importedDb).count()).toBe(1);
     expect((await new PreferenceRepository(importedDb).get())?.locale).toBe('zh-CN');
+  });
+
+  it('round-trips place comments through export and import', async () => {
+    const repo = new PlaceCommentRepository(db);
+    await repo.add({ placeId: 'p1', rating: 5, content: 'とても良かった' });
+    await repo.add({ placeId: 'p2', rating: 3, content: 'ふつう' });
+
+    const raw = await exportLocalBackupJson(db);
+    const parsed = JSON.parse(raw);
+    expect(parsed.placeComments).toHaveLength(2);
+    expect(parsed.version).toBe(LOCAL_BACKUP_VERSION);
+
+    const importedDb = createDatabase(`kodoko-import-comments-${crypto.randomUUID()}`);
+    await importLocalBackup(importedDb, raw, 'merge');
+
+    const restored = new PlaceCommentRepository(importedDb);
+    const byPlace = await restored.listByPlace('p1');
+    expect(byPlace).toHaveLength(1);
+    expect(byPlace[0]?.content).toBe('とても良かった');
+  });
+
+  it('imports legacy v1 back—ups without placeComments', async () => {
+    const legacy = {
+      app: 'kodoko',
+      version: 1,
+      exportedAt: '2026-01-01T00:00:00+09:00',
+      children: [],
+      preferences: [],
+      favorites: [],
+      knowledgeProgress: [],
+      policyTasks: [],
+    };
+    const importedDb = createDatabase(`koko-import-legacy-${crypto.randomUUID()}`);
+    const { created } = await importLocalBackup(importedDb, JSON.stringify(legacy), 'merge');
+    expect(created).toBe(0);
+    expect(await new PlaceCommentRepository(importedDb).count()).toBe(0);
   });
 
   it('overwrite mode replaces existing data', async () => {

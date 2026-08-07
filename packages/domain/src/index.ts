@@ -41,7 +41,7 @@ export type PendingPlaceReport = {
   id: string;
   placeId: string;
   type: PlaceReportType;
-  detail: string;
+  detail?: string;
   contactEmail?: string;
   createdAt: string;
 };

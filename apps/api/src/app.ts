@@ -5,6 +5,7 @@ import { healthRoutes } from './routes/health';
 import { authRoutes } from './routes/auth';
 import { contentRoutes } from './routes/content';
 import { placesRoutes } from './routes/places';
+import { reportRoutes } from './routes/reports';
 import { knowledgeRoutes } from './routes/knowledge';
 import { policiesRoutes } from './routes/policies';
 
@@ -20,6 +21,7 @@ export function buildApp(): FastifyInstance {
   void app.register(authRoutes, prefixOptions);
   void app.register(contentRoutes, prefixOptions);
   void app.register(placesRoutes, prefixOptions);
+  void app.register(reportRoutes, prefixOptions);
   void app.register(knowledgeRoutes, prefixOptions);
   void app.register(policiesRoutes, prefixOptions);
 

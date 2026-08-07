@@ -286,6 +286,40 @@
     "title": "我的收藏",
     "empty": "还没有收藏的去处。在地点详情页点「加入收藏」即可。"
   },
+  "placeComments": {
+    "title": "大家的笔记",
+    "localOnly": "笔记仅保存在此设备上。",
+    "empty": "还没有笔记。",
+    "ratingLabel": "评分",
+    "placeholder": "写写带孩子来玩时的感受…",
+    "submit": "发布",
+    "delete": "删除",
+    "cancel": "取消"
+  },
+  "placeReport": {
+    "title": "报告信息修正",
+    "why": "发现信息有误或需要更新时可在此报告。报告为匿名发送，无需登录。",
+    "typeLabel": "报告类型",
+    "detailLabel": "内容",
+    "detailPlaceholder": "具体内容（选填）",
+    "emailLabel": "联系邮箱（选填）",
+    "submit": "发送报告",
+    "submitted": "已收到您的报告，将确认后更新。",
+    "queuedOffline": "未连接到网络，已保存在此设备上。下次联网时自动发送。",
+    "submitFailed": "发送失败，请稍后重试。",
+    "close": "关闭",
+    "reportLink": "报告信息修正",
+    "type": {
+      "business_hours": "营业时间",
+      "price": "费用",
+      "reservation": "预约方式",
+      "address": "地址 / 交通",
+      "media": "照片 / 图片",
+      "outdated": "信息过时",
+      "closed": "停业 / 搬迁",
+      "other": "其他"
+    }
+  },
   "login": {
     "title": "登录",
     "description": "登录为可选项。未登录也能使用核心功能。"

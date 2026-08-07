@@ -3,6 +3,8 @@ import {
   DexieChildRepository,
   FavoriteRepository,
   KnowledgeProgressRepository,
+  PendingReportRepository,
+  PlaceCommentRepository,
   PreferenceRepository,
   PolicyTaskRepository,
   type KodokoLocalDatabase,
@@ -25,6 +27,14 @@ export function getFavoriteRepository(): FavoriteRepository {
 
 export function getKnowledgeProgressRepository(): KnowledgeProgressRepository {
   return new KnowledgeProgressRepository(getDb());
+}
+
+export function getPlaceCommentRepository(): PlaceCommentRepository {
+  return new PlaceCommentRepository(getDb());
+}
+
+export function getPendingReportRepository(): PendingReportRepository {
+  return new PendingReportRepository(getDb());
 }
 
 export function getPreferenceRepository(): PreferenceRepository {

@@ -6,6 +6,7 @@ import { toyPlayPlaces } from './toy-plays';
 import { amusementParkPlaces } from './amusement-parks';
 import { waterParkPlaces } from './water-parks';
 import { tokyoParkPlaces } from './tokyo-parks';
+import { trainMuseumPlaces } from './train-museums';
 import { supplementPlaces } from './supplements';
 
 /**
@@ -22,6 +23,7 @@ const allInputs = [
   ...amusementParkPlaces,
   ...waterParkPlaces,
   ...tokyoParkPlaces,
+  ...trainMuseumPlaces,
   ...supplementPlaces,
 ];
 

@@ -1,0 +1,550 @@
+{
+  "ueno-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "yoyogi-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "inokashira-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "hikarigaoka-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "wadabori-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "showa-kinen-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "ueno-zoo": {
+    "real": 3,
+    "ph": 0
+  },
+  "tama-zoo": {
+    "real": 3,
+    "ph": 0
+  },
+  "kasai-aquarium": {
+    "real": 3,
+    "ph": 0
+  },
+  "sumida-aquarium": {
+    "real": 3,
+    "ph": 0
+  },
+  "sunshine-aquarium": {
+    "real": 3,
+    "ph": 0
+  },
+  "national-science-museum": {
+    "real": 3,
+    "ph": 0
+  },
+  "miraikan": {
+    "real": 3,
+    "ph": 0
+  },
+  "railway-museum": {
+    "real": 3,
+    "ph": 0
+  },
+  "tokyo-tower": {
+    "real": 3,
+    "ph": 0
+  },
+  "kidzania-tokyo": {
+    "real": 1,
+    "ph": 2
+  },
+  "tokyo-toy-museum": {
+    "real": 1,
+    "ph": 2
+  },
+  "bornelund-harajuku": {
+    "real": 1,
+    "ph": 2
+  },
+  "tokyo-metro-library": {
+    "real": 3,
+    "ph": 0
+  },
+  "itabashi-children-zoo": {
+    "real": 0,
+    "ph": 3
+  },
+  "omiya-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "saitama-children-zoo": {
+    "real": 3,
+    "ph": 0
+  },
+  "koshigaya-laketown": {
+    "real": 3,
+    "ph": 0
+  },
+  "gusto-ikebukuro": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-kudan": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-nihonbashi": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-azabu": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-ochiai": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-hongo": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-asakusa": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-higashikomagata": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-kameido": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-gotanda": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-nishioi": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-omori": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-taishido": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-yoyogi": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-nakano": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-ogikubo": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-mejiro": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-oji": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-higashi": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-itabashi": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-shakujii": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-ayase": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-kanamachi": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-hirai": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-tsukishima": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-ebisu": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-nakameguro": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-tamagawadai": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-kamata": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-nishiarai": {
+    "real": 0,
+    "ph": 3
+  },
+  "children-hall-harajuku": {
+    "real": 0,
+    "ph": 3
+  },
+  "osaka-toy-museum": {
+    "real": 0,
+    "ph": 3
+  },
+  "tsuyama-toy-museum": {
+    "real": 0,
+    "ph": 3
+  },
+  "otaru-toy-museum": {
+    "real": 0,
+    "ph": 3
+  },
+  "mori-toy-museum": {
+    "real": 0,
+    "ph": 3
+  },
+  "toy-kingdom": {
+    "real": 0,
+    "ph": 3
+  },
+  "tdl": {
+    "real": 0,
+    "ph": 3
+  },
+  "tds": {
+    "real": 1,
+    "ph": 2
+  },
+  "usj": {
+    "real": 3,
+    "ph": 0
+  },
+  "yomiuriland": {
+    "real": 3,
+    "ph": 0
+  },
+  "tokyo-dome-city": {
+    "real": 0,
+    "ph": 3
+  },
+  "seaparadise": {
+    "real": 3,
+    "ph": 0
+  },
+  "nasu-highland": {
+    "real": 3,
+    "ph": 0
+  },
+  "huis-ten-bosch": {
+    "real": 3,
+    "ph": 0
+  },
+  "legoland-japan": {
+    "real": 0,
+    "ph": 3
+  },
+  "sanrio-puroland": {
+    "real": 3,
+    "ph": 0
+  },
+  "kameido-central-park": {
+    "real": 2,
+    "ph": 1
+  },
+  "tategawa-riverbed-park": {
+    "real": 0,
+    "ph": 3
+  },
+  "godoteien-garden": {
+    "real": 0,
+    "ph": 3
+  },
+  "kiba-shinsui-park": {
+    "real": 0,
+    "ph": 3
+  },
+  "koishiba-shinsui-park": {
+    "real": 0,
+    "ph": 3
+  },
+  "joto-park": {
+    "real": 0,
+    "ph": 3
+  },
+  "echujima-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "toyosu-park": {
+    "real": 2,
+    "ph": 1
+  },
+  "sendaihorikawa-park": {
+    "real": 1,
+    "ph": 2
+  },
+  "kiba-park": {
+    "real": 1,
+    "ph": 2
+  },
+  "umi-no-mori-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "sarue-onshi-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "kasai-rinkai-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "yumenoshima-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "ojima-komatsugawa-park": {
+    "real": 1,
+    "ph": 2
+  },
+  "hibiya-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "shinjuku-gyoen": {
+    "real": 3,
+    "ph": 0
+  },
+  "kinshi-park": {
+    "real": 1,
+    "ph": 2
+  },
+  "koganei-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "shioiri-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "ukima-park": {
+    "real": 2,
+    "ph": 1
+  },
+  "toneri-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "asukayama-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "shiba-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "tobu-museum": {
+    "real": 3,
+    "ph": 0
+  },
+  "metro-museum": {
+    "real": 0,
+    "ph": 3
+  },
+  "tokyu-train-bus-museum": {
+    "real": 3,
+    "ph": 0
+  },
+  "ome-railway-park": {
+    "real": 3,
+    "ph": 0
+  },
+  "keio-rail-land": {
+    "real": 3,
+    "ph": 0
+  },
+  "romancecar-museum": {
+    "real": 0,
+    "ph": 3
+  },
+  "toden-omoide-hiroba": {
+    "real": 3,
+    "ph": 0
+  },
+  "seibuen-yuuenchi": {
+    "real": 3,
+    "ph": 0
+  },
+  "shinjuku-chuo-library": {
+    "real": 0,
+    "ph": 3
+  },
+  "tokyo-gym": {
+    "real": 3,
+    "ph": 0
+  },
+  "bumb-tokyo-sports": {
+    "real": 0,
+    "ph": 3
+  },
+  "setagaya-chuo-library": {
+    "real": 0,
+    "ph": 3
+  },
+  "koto-chuo-library": {
+    "real": 0,
+    "ph": 3
+  },
+  "taito-chuo-library": {
+    "real": 1,
+    "ph": 2
+  },
+  "setagaya-sports-center": {
+    "real": 2,
+    "ph": 1
+  },
+  "edogawa-sogo-taikan": {
+    "real": 0,
+    "ph": 3
+  },
+  "higashin-arena": {
+    "real": 0,
+    "ph": 3
+  },
+  "gotanda-library": {
+    "real": 0,
+    "ph": 3
+  },
+  "nerima-chuo-library": {
+    "real": 0,
+    "ph": 3
+  },
+  "itabashi-chuo-library": {
+    "real": 2,
+    "ph": 1
+  },
+  "adachi-chuo-library": {
+    "real": 3,
+    "ph": 0
+  },
+  "nakano-chuo-library": {
+    "real": 2,
+    "ph": 1
+  },
+  "suginami-chuo-library": {
+    "real": 2,
+    "ph": 1
+  },
+  "ota-sogo-taikan": {
+    "real": 0,
+    "ph": 3
+  },
+  "nerima-sogo-taikan": {
+    "real": 0,
+    "ph": 3
+  },
+  "arakawa-furalibrary": {
+    "real": 0,
+    "ph": 3
+  },
+  "bunkyo-masago-chuo": {
+    "real": 1,
+    "ph": 2
+  },
+  "shibuya-chuo-library": {
+    "real": 2,
+    "ph": 1
+  },
+  "katsushika-chuo-library": {
+    "real": 1,
+    "ph": 2
+  },
+  "chiyoda-hibiya-library": {
+    "real": 0,
+    "ph": 3
+  },
+  "meguro-ku-court-library": {
+    "real": 0,
+    "ph": 3
+  },
+  "kita-chuo-library": {
+    "real": 3,
+    "ph": 0
+  },
+  "minato-mita-library": {
+    "real": 2,
+    "ph": 1
+  },
+  "komazawa-playground": {
+    "real": 0,
+    "ph": 3
+  },
+  "sarue-playground": {
+    "real": 0,
+    "ph": 3
+  },
+  "minamiikebukuro-park": {
+    "real": 0,
+    "ph": 3
+  },
+  "toyama-park-playground": {
+    "real": 0,
+    "ph": 3
+  },
+  "tetsugakudo-park": {
+    "real": 0,
+    "ph": 3
+  },
+  "gyosen-park": {
+    "real": 0,
+    "ph": 3
+  },
+  "shakujii-park-playground": {
+    "real": 0,
+    "ph": 3
+  },
+  "arakawa-nature-park": {
+    "real": 0,
+    "ph": 3
+  },
+  "sky-tree-event-plaza": {
+    "real": 0,
+    "ph": 3
+  },
+  "odaiba-event-plaza": {
+    "real": 0,
+    "ph": 3
+  },
+  "lalaport-tokyo-bay": {
+    "real": 3,
+    "ph": 0
+  }
+}

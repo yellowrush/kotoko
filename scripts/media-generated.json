@@ -304,30 +304,62 @@
     "lang": "ja",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Electric_Eel.jpg",
-        "credit": "Wikimedia Commons / Wikimedia Commons",
-        "license": "CC BY 2.5",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Electric_Eel.jpg",
-        "width": 1200,
-        "height": 900
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Sunshine_Aquarium_200819b.jpg/1280px-Sunshine_Aquarium_200819b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Sunshine_Aquarium_200819b.jpg/1280px-Sunshine_Aquarium_200819b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "江戸村のとくぞう / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunshine_Aquarium_200819b.jpg",
+        "width": 1280,
+        "height": 854
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Georgia_Aquarium_-_Ocean_Voyager_Tunnel_Jan_2006.jpg/1280px-Georgia_Aquarium_-_Ocean_Voyager_Tunnel_Jan_2006.jpg",
-        "credit": "Diliff / Wikimedia Commons",
-        "license": "CC BY 2.5",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Georgia_Aquarium_-_Ocean_Voyager_Tunnel_Jan_2006.jpg",
-        "width": 1200,
-        "height": 741
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sunshine_Aquarium_200819f.jpg/1280px-Sunshine_Aquarium_200819f.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sunshine_Aquarium_200819f.jpg/1280px-Sunshine_Aquarium_200819f.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "江戸村のとくぞう / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunshine_Aquarium_200819f.jpg",
+        "width": 1280,
+        "height": 854
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Honglongyu3.jpg/1280px-Honglongyu3.jpg",
-        "credit": "Photo taken by Fanghong / Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Honglongyu3.jpg",
-        "width": 1200,
-        "height": 620
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Sunshine_Aquarium_200819u.jpg/1280px-Sunshine_Aquarium_200819u.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Sunshine_Aquarium_200819u.jpg/1280px-Sunshine_Aquarium_200819u.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "江戸村のとくぞう / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunshine_Aquarium_200819u.jpg",
+        "width": 1280,
+        "height": 854
       }
-    ]
+    ],
+    "curated": {
+      "Sunshine Aquarium 200819b.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Sunshine_Aquarium_200819b.jpg/1280px-Sunshine_Aquarium_200819b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Sunshine_Aquarium_200819b.jpg/1280px-Sunshine_Aquarium_200819b.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "江戸村のとくぞう / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunshine_Aquarium_200819b.jpg",
+        "width": 1280,
+        "height": 854
+      },
+      "Sunshine Aquarium 200819f.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sunshine_Aquarium_200819f.jpg/1280px-Sunshine_Aquarium_200819f.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Sunshine_Aquarium_200819f.jpg/1280px-Sunshine_Aquarium_200819f.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "江戸村のとくぞう / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunshine_Aquarium_200819f.jpg",
+        "width": 1280,
+        "height": 854
+      },
+      "Sunshine Aquarium 200819u.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Sunshine_Aquarium_200819u.jpg/1280px-Sunshine_Aquarium_200819u.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Sunshine_Aquarium_200819u.jpg/1280px-Sunshine_Aquarium_200819u.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "江戸村のとくぞう / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunshine_Aquarium_200819u.jpg",
+        "width": 1280,
+        "height": 854
+      }
+    }
   },
   "national-science-museum": {
     "wikiTitle": "国立科学博物館",
@@ -394,30 +426,62 @@
     "lang": "ja",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Kichigahara-station-201510182.jpg",
-        "credit": "メルビル / Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kichigahara-station-201510182.jpg",
-        "width": 1200,
-        "height": 900
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3128_%2819263267403%29.jpg/1280px-Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3128_%2819263267403%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3128_%2819263267403%29.jpg/1280px-Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3128_%2819263267403%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Cheng-en Cheng from Taichung City, Taiwan / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3128_(19263267403).jpg",
+        "width": 1280,
+        "height": 1920
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Railway_Museum_20080614.jpg/1280px-The_Railway_Museum_20080614.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3127_%2819696161858%29.jpg/1280px-Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3127_%2819696161858%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3127_%2819696161858%29.jpg/1280px-Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3127_%2819696161858%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Cheng-en Cheng from Taichung City, Taiwan / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3127_(19696161858).jpg",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/C57_135_steam_locomotive_at_saitama_railway_museum.jpg/1280px-C57_135_steam_locomotive_at_saitama_railway_museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/C57_135_steam_locomotive_at_saitama_railway_museum.jpg/1280px-C57_135_steam_locomotive_at_saitama_railway_museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "credit": "kanegen / Wikimedia Commons",
         "license": "CC BY 2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Railway_Museum_20080614.jpg",
-        "width": 1200,
-        "height": 798
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Train_of_Maruseppu_Forest_Park_Ikoi-no-Mori.jpg/1280px-Train_of_Maruseppu_Forest_Park_Ikoi-no-Mori.jpg",
-        "credit": "Tokutotoo / Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Train_of_Maruseppu_Forest_Park_Ikoi-no-Mori.jpg",
-        "width": 1200,
-        "height": 800
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:C57_135_steam_locomotive_at_saitama_railway_museum.jpg",
+        "width": 1280,
+        "height": 851
       }
-    ]
+    ],
+    "curated": {
+      "Railway Museum, Saitama, 2015-07-21 DSC 3128 (19263267403).jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3128_%2819263267403%29.jpg/1280px-Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3128_%2819263267403%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3128_%2819263267403%29.jpg/1280px-Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3128_%2819263267403%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Cheng-en Cheng from Taichung City, Taiwan / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3128_(19263267403).jpg",
+        "width": 1280,
+        "height": 1920
+      },
+      "Railway Museum, Saitama, 2015-07-21 DSC 3127 (19696161858).jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3127_%2819696161858%29.jpg/1280px-Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3127_%2819696161858%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3127_%2819696161858%29.jpg/1280px-Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3127_%2819696161858%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Cheng-en Cheng from Taichung City, Taiwan / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Railway_Museum%2C_Saitama%2C_2015-07-21_DSC_3127_(19696161858).jpg",
+        "width": 1280,
+        "height": 853
+      },
+      "C57 135 steam locomotive at saitama railway museum.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/C57_135_steam_locomotive_at_saitama_railway_museum.jpg/1280px-C57_135_steam_locomotive_at_saitama_railway_museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/C57_135_steam_locomotive_at_saitama_railway_museum.jpg/1280px-C57_135_steam_locomotive_at_saitama_railway_museum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "kanegen / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:C57_135_steam_locomotive_at_saitama_railway_museum.jpg",
+        "width": 1280,
+        "height": 851
+      }
+    }
   },
   "tokyo-tower": {
     "wikiTitle": "東京タワー",
@@ -451,45 +515,68 @@
   },
   "kidzania-tokyo": {
     "wikiTitle": "キッザニア東京",
-    "lang": "ja",
+    "lang": "commons",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/KidZania_Tokyo.jpg/1280px-KidZania_Tokyo.jpg",
-        "credit": "しんぎんぐきゃっと / Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:KidZania_Tokyo.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/%E3%82%AD%E3%83%83%E3%82%B6%E3%83%8B%E3%82%A2_2019_%2849318094513%29.jpg/1280px-%E3%82%AD%E3%83%83%E3%82%B6%E3%83%8B%E3%82%A2_2019_%2849318094513%29.jpg",
+        "credit": "akiko yanagawa / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%82%AD%E3%83%83%E3%82%B6%E3%83%8B%E3%82%A2_2019_(49318094513).jpg",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Kuroneko-Yamato_in_KidZania_Tokyo_2010.jpg/1280px-Kuroneko-Yamato_in_KidZania_Tokyo_2010.jpg",
+        "credit": "takaaki nishioka / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kuroneko-Yamato_in_KidZania_Tokyo_2010.jpg",
         "width": 1200,
         "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/KidZania_saifu.jpg/1280px-KidZania_saifu.jpg",
+        "credit": "Nagi3desu / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:KidZania_saifu.jpg",
+        "width": 1200,
+        "height": 949
       }
     ]
   },
   "tokyo-toy-museum": {
     "wikiTitle": "東京おもちゃ美術館",
-    "lang": "ja",
+    "lang": "commons",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Entrance_of_Tokyo_Toy_Museum.jpg/1280px-Entrance_of_Tokyo_Toy_Museum.jpg",
-        "credit": "Tzu-hsun Hsu / Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Entrance_of_Tokyo_Toy_Museum.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/%E6%9D%B1%E4%BA%AC%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%BE%8E%E8%A1%93%E9%A4%A8_-_panoramio.jpg",
+        "credit": "koji_h / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E4%BA%AC%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%BE%8E%E8%A1%93%E9%A4%A8_-_panoramio.jpg",
+        "width": 1200,
+        "height": 891
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/%E6%9D%B1%E4%BA%AC%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%BE%8E%E8%A1%93%E9%A4%A8_%E3%81%9D%E3%82%8D%E3%81%B0%E3%82%93%E6%99%82%E8%A8%88_%2827899164703%29.jpg/1280px-%E6%9D%B1%E4%BA%AC%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%BE%8E%E8%A1%93%E9%A4%A8_%E3%81%9D%E3%82%8D%E3%81%B0%E3%82%93%E6%99%82%E8%A8%88_%2827899164703%29.jpg",
+        "credit": "Tzuhsun Hsu / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E4%BA%AC%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%BE%8E%E8%A1%93%E9%A4%A8_%E3%81%9D%E3%82%8D%E3%81%B0%E3%82%93%E6%99%82%E8%A8%88_(27899164703).jpg",
         "width": 1200,
         "height": 675
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/%E6%9D%B1%E4%BA%AC%E3%81%8A%E3%82%82%E3%81%A1%E3%82%84%E7%BE%8E%E8%A1%93%E9%A4%A8_%E8%AA%A4%E9%A3%B2%E6%92%B2%E6%BB%85_2016_%2828483109746%29.jpg/1280px-%E6%9D%B1%E4%BA%AC%E3%81%8A%E3%82%82%E3%81%A1%E3%82%84%E7%BE%8E%E8%A1%93%E9%A4%A8_%E8%AA%A4%E9%A3%B2%E6%92%B2%E6%BB%85_2016_%2828483109746%29.jpg",
+        "credit": "Tzuhsun Hsu / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E4%BA%AC%E3%81%8A%E3%82%82%E3%81%A1%E3%82%84%E7%BE%8E%E8%A1%93%E9%A4%A8_%E8%AA%A4%E9%A3%B2%E6%92%B2%E6%BB%85_2016_(28483109746).jpg",
+        "width": 1200,
+        "height": 2133
       }
     ]
   },
   "bornelund-harajuku": {
     "wikiTitle": "ボーネルンド",
     "lang": "ja",
-    "real": [
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/B%C3%B8rneLund_Asobinosekai_in_Ariake_Garden_2024.JPG/1280px-B%C3%B8rneLund_Asobinosekai_in_Ariake_Garden_2024.JPG",
-        "credit": "Fotointheworld / Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:B%C3%B8rneLund_Asobinosekai_in_Ariake_Garden_2024.JPG",
-        "width": 1200,
-        "height": 800
-      }
-    ]
+    "real": []
   },
   "tokyo-metro-library": {
     "wikiTitle": "東京都立図書館",
@@ -524,7 +611,53 @@
   "itabashi-children-zoo": {
     "wikiTitle": null,
     "lang": null,
-    "real": []
+    "real": [
+      {
+        "url": "https://itabashi-park-zoo.com/wp-content/uploads/2020/07/01.jpg",
+        "credit": "板橋こども動物園（指定管理者：ハーモニーセンター）",
+        "license": "official-site",
+        "sourceUrl": "https://itabashi-park-zoo.com/honen/",
+        "width": 1015,
+        "height": 762,
+        "thumbUrl": "https://itabashi-park-zoo.com/wp-content/uploads/2020/07/01.jpg"
+      },
+      {
+        "url": "https://itabashi-park-zoo.com/wp-content/uploads/2020/07/02-1024x768-1.jpg",
+        "credit": "板橋こども動物園（指定管理者：ハーモニーセンター）",
+        "license": "official-site",
+        "sourceUrl": "https://itabashi-park-zoo.com/honen/",
+        "width": 1024,
+        "height": 768,
+        "thumbUrl": "https://itabashi-park-zoo.com/wp-content/uploads/2020/07/02-1024x768-1.jpg"
+      },
+      {
+        "url": "https://itabashi-park-zoo.com/wp-content/uploads/2020/07/03-1024x761-1.jpg",
+        "credit": "板橋こども動物園（指定管理者：ハーモニーセンター）",
+        "license": "official-site",
+        "sourceUrl": "https://itabashi-park-zoo.com/honen/",
+        "width": 1024,
+        "height": 761,
+        "thumbUrl": "https://itabashi-park-zoo.com/wp-content/uploads/2020/07/03-1024x761-1.jpg"
+      },
+      {
+        "url": "https://itabashi-park-zoo.com/wp-content/uploads/2021/07/DSCF0566-scaled.jpg",
+        "credit": "板橋こども動物園（指定管理者：ハーモニーセンター）",
+        "license": "official-site",
+        "sourceUrl": "https://itabashi-park-zoo.com/honen/",
+        "width": 2560,
+        "height": 1707,
+        "thumbUrl": "https://itabashi-park-zoo.com/wp-content/uploads/2021/07/DSCF0566-scaled.jpg"
+      },
+      {
+        "url": "https://itabashi-park-zoo.com/wp-content/uploads/2023/03/IMG_1614-1.jpg",
+        "credit": "板橋こども動物園（指定管理者：ハーモニーセンター）",
+        "license": "official-site",
+        "sourceUrl": "https://itabashi-park-zoo.com/honen/",
+        "width": 914,
+        "height": 682,
+        "thumbUrl": "https://itabashi-park-zoo.com/wp-content/uploads/2023/03/IMG_1614-1.jpg"
+      }
+    ]
   },
   "omiya-park": {
     "wikiTitle": "大宮公園",
@@ -617,9 +750,34 @@
     ]
   },
   "gusto-ikebukuro": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "ガスト 池袋東口店",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/%E3%82%AC%E3%82%B9%E3%83%88_%E6%B1%A0%E8%A2%8B%E9%A7%85%E6%9D%B1%E5%8F%A3%E5%BA%97IMG_20220503_160535_03.jpg/1280px-%E3%82%AC%E3%82%B9%E3%83%88_%E6%B1%A0%E8%A2%8B%E9%A7%85%E6%9D%B1%E5%8F%A3%E5%BA%97IMG_20220503_160535_03.jpg",
+        "credit": "経済特区 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%82%AC%E3%82%B9%E3%83%88_%E6%B1%A0%E8%A2%8B%E9%A7%85%E6%9D%B1%E5%8F%A3%E5%BA%97IMG_20220503_160535_03.jpg",
+        "width": 1200,
+        "height": 675
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/%E3%82%AC%E3%82%B9%E3%83%88_%E6%B1%A0%E8%A2%8B%E9%A7%85%E6%9D%B1%E5%8F%A3%E5%BA%97IMG_20220503_160535_01.jpg/1280px-%E3%82%AC%E3%82%B9%E3%83%88_%E6%B1%A0%E8%A2%8B%E9%A7%85%E6%9D%B1%E5%8F%A3%E5%BA%97IMG_20220503_160535_01.jpg",
+        "credit": "経済特区 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%82%AC%E3%82%B9%E3%83%88_%E6%B1%A0%E8%A2%8B%E9%A7%85%E6%9D%B1%E5%8F%A3%E5%BA%97IMG_20220503_160535_01.jpg",
+        "width": 1200,
+        "height": 2133
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/%E3%82%AC%E3%82%B9%E3%83%88_%E6%B1%A0%E8%A2%8B%E9%A7%85%E6%9D%B1%E5%8F%A3%E5%BA%97IMG_20220503_160535_02.jpg/1280px-%E3%82%AC%E3%82%B9%E3%83%88_%E6%B1%A0%E8%A2%8B%E9%A7%85%E6%9D%B1%E5%8F%A3%E5%BA%97IMG_20220503_160535_02.jpg",
+        "credit": "経済特区 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%82%AC%E3%82%B9%E3%83%88_%E6%B1%A0%E8%A2%8B%E9%A7%85%E6%9D%B1%E5%8F%A3%E5%BA%97IMG_20220503_160535_02.jpg",
+        "width": 1200,
+        "height": 2133
+      }
+    ]
   },
   "children-hall-kudan": {
     "wikiTitle": null,
@@ -647,9 +805,18 @@
     "real": []
   },
   "children-hall-asakusa": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "台東区立浅草児童館",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Sh%C5%8Dhei_D%C5%8Dmu_Kan_and_H%C5%8Drin_Park%2C_Sotokanda_3%2C_Chiyoda%2C_Tokyo_%28%E6%98%8C%E5%B9%B3%E7%AB%A5%E5%A4%A2%E9%A4%A8%E3%81%A8%E8%8A%B3%E6%9E%97%E5%85%AC%E5%9C%92%2C_%E5%A4%96%E7%A5%9E%E7%94%B03%29_%282014-12-28_10-27-09_by_MiNe%29.jpg/1280px-Sh%C5%8Dhei_D%C5%8Dmu_Kan_and_H%C5%8Drin_Park%2C_Sotokanda_3%2C_Chiyoda%2C_Tokyo_%28%E6%98%8C%E5%B9%B3%E7%AB%A5%E5%A4%A2%E9%A4%A8%E3%81%A8%E8%8A%B3%E6%9E%97%E5%85%AC%E5%9C%92%2C_%E5%A4%96%E7%A5%9E%E7%94%B03%29_%282014-12-28_10-27-09_by_MiNe%29.jpg",
+        "credit": "MiNe from Taipei, Taiwan / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sh%C5%8Dhei_D%C5%8Dmu_Kan_and_H%C5%8Drin_Park,_Sotokanda_3,_Chiyoda,_Tokyo_(%E6%98%8C%E5%B9%B3%E7%AB%A5%E5%A4%A2%E9%A4%A8%E3%81%A8%E8%8A%B3%E6%9E%97%E5%85%AC%E5%9C%92,_%E5%A4%96%E7%A5%9E%E7%94%B03)_(2014-12-28_10-27-09_by_MiNe).jpg",
+        "width": 1200,
+        "height": 800
+      }
+    ]
   },
   "children-hall-higashikomagata": {
     "wikiTitle": null,
@@ -772,9 +939,18 @@
     "real": []
   },
   "osaka-toy-museum": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "大阪おもちゃ美術館",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Minakawa_Denki_Seisakusho_KAMIKAZE_ac.jpg/1280px-Minakawa_Denki_Seisakusho_KAMIKAZE_ac.jpg",
+        "credit": "Asturio Cantabrio / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minakawa_Denki_Seisakusho_KAMIKAZE_ac.jpg",
+        "width": 1200,
+        "height": 1500
+      }
+    ]
   },
   "tsuyama-toy-museum": {
     "wikiTitle": null,
@@ -787,33 +963,182 @@
     "real": []
   },
   "mori-toy-museum": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "森のおもちゃ美術館",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://hinohara-kankou.jp/wp/wp-content/uploads/slider/cache/4c488d27e7ca2786ccf186bb8157bd41/IMG_1582-scaled-e1636254553590.jpg",
+        "credit": "檜原村観光協会",
+        "license": "official-site",
+        "sourceUrl": "https://hinohara-kankou.jp/spot/hinohara-toymuseum/",
+        "width": 1800,
+        "height": 1350,
+        "thumbUrl": "https://hinohara-kankou.jp/wp/wp-content/uploads/slider/cache/4c488d27e7ca2786ccf186bb8157bd41/IMG_1582-scaled-e1636254553590.jpg"
+      },
+      {
+        "url": "https://hinohara-kankou.jp/wp/wp-content/uploads/slider/cache/597547eb280254ff72a8433000cfd75a/1665107998752.jpg",
+        "credit": "檜原村観光協会",
+        "license": "official-site",
+        "sourceUrl": "https://hinohara-kankou.jp/spot/hinohara-toymuseum/",
+        "width": 1109,
+        "height": 1479,
+        "thumbUrl": "https://hinohara-kankou.jp/wp/wp-content/uploads/slider/cache/597547eb280254ff72a8433000cfd75a/1665107998752.jpg"
+      },
+      {
+        "url": "https://hinohara-kankou.jp/wp/wp-content/uploads/slider/cache/85d3c84165fe2c9b3d3c416e70c13d92/IMG_5543-scaled.jpg",
+        "credit": "檜原村観光協会",
+        "license": "official-site",
+        "sourceUrl": "https://hinohara-kankou.jp/spot/hinohara-toymuseum/",
+        "width": 1920,
+        "height": 2560,
+        "thumbUrl": "https://hinohara-kankou.jp/wp/wp-content/uploads/slider/cache/85d3c84165fe2c9b3d3c416e70c13d92/IMG_5543-scaled.jpg"
+      },
+      {
+        "url": "https://hinohara-kankou.jp/wp/wp-content/uploads/slider/cache/8f85d3c7af4ee9b6070ae3a063300aa4/%E9%A4%A8%E5%86%8501-scaled.jpg",
+        "credit": "檜原村観光協会",
+        "license": "official-site",
+        "sourceUrl": "https://hinohara-kankou.jp/spot/hinohara-toymuseum/",
+        "width": 1921,
+        "height": 1281,
+        "thumbUrl": "https://hinohara-kankou.jp/wp/wp-content/uploads/slider/cache/8f85d3c7af4ee9b6070ae3a063300aa4/%E9%A4%A8%E5%86%8501-scaled.jpg"
+      }
+    ]
   },
   "toy-kingdom": {
     "wikiTitle": "おもちゃ王国",
-    "lang": "ja",
-    "real": []
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD_%E5%9B%A3%E4%BD%93%E5%85%A5%E5%8F%A3_%E4%B8%80%E8%88%AC%E5%85%A5%E5%8F%A3_%2813539756073%29.jpg/1280px-%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD_%E5%9B%A3%E4%BD%93%E5%85%A5%E5%8F%A3_%E4%B8%80%E8%88%AC%E5%85%A5%E5%8F%A3_%2813539756073%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD_%E5%9B%A3%E4%BD%93%E5%85%A5%E5%8F%A3_%E4%B8%80%E8%88%AC%E5%85%A5%E5%8F%A3_%2813539756073%29.jpg/1280px-%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD_%E5%9B%A3%E4%BD%93%E5%85%A5%E5%8F%A3_%E4%B8%80%E8%88%AC%E5%85%A5%E5%8F%A3_%2813539756073%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Martin Lewison / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD_%E5%9B%A3%E4%BD%93%E5%85%A5%E5%8F%A3_%E4%B8%80%E8%88%AC%E5%85%A5%E5%8F%A3_(13539756073).jpg",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD%E5%85%A5%E3%82%8A%E5%8F%A3_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD%E5%85%A5%E3%82%8A%E5%8F%A3_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "田附宏秀 / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD%E5%85%A5%E3%82%8A%E5%8F%A3_-_panoramio.jpg",
+        "width": 1280,
+        "height": 960
+      }
+    ],
+    "curated": {
+      "東条湖おもちゃ王国 団体入口 一般入口 (13539756073).jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD_%E5%9B%A3%E4%BD%93%E5%85%A5%E5%8F%A3_%E4%B8%80%E8%88%AC%E5%85%A5%E5%8F%A3_%2813539756073%29.jpg/1280px-%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD_%E5%9B%A3%E4%BD%93%E5%85%A5%E5%8F%A3_%E4%B8%80%E8%88%AC%E5%85%A5%E5%8F%A3_%2813539756073%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD_%E5%9B%A3%E4%BD%93%E5%85%A5%E5%8F%A3_%E4%B8%80%E8%88%AC%E5%85%A5%E5%8F%A3_%2813539756073%29.jpg/1280px-%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD_%E5%9B%A3%E4%BD%93%E5%85%A5%E5%8F%A3_%E4%B8%80%E8%88%AC%E5%85%A5%E5%8F%A3_%2813539756073%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Martin Lewison / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD_%E5%9B%A3%E4%BD%93%E5%85%A5%E5%8F%A3_%E4%B8%80%E8%88%AC%E5%85%A5%E5%8F%A3_(13539756073).jpg",
+        "width": 1280,
+        "height": 720
+      },
+      "東条湖おもちゃ王国入り口 - panoramio.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD%E5%85%A5%E3%82%8A%E5%8F%A3_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d6/%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD%E5%85%A5%E3%82%8A%E5%8F%A3_-_panoramio.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "田附宏秀 / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E6%9D%A1%E6%B9%96%E3%81%8A%E3%82%82%E3%81%A1%E3%82%83%E7%8E%8B%E5%9B%BD%E5%85%A5%E3%82%8A%E5%8F%A3_-_panoramio.jpg",
+        "width": 1280,
+        "height": 960
+      }
+    }
   },
   "tdl": {
     "wikiTitle": "東京ディズニーランド",
-    "lang": "ja",
-    "real": []
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/%E6%9D%B1%E4%BA%AC%E3%83%87%E3%82%A3%E3%82%BA%E3%83%8B%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E5%85%A5%E5%9C%92%E5%8F%A320200229.jpg/1280px-%E6%9D%B1%E4%BA%AC%E3%83%87%E3%82%A3%E3%82%BA%E3%83%8B%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E5%85%A5%E5%9C%92%E5%8F%A320200229.jpg",
+        "credit": "片割れ靴下 (unpaired sock) / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E4%BA%AC%E3%83%87%E3%82%A3%E3%82%BA%E3%83%8B%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89%E5%85%A5%E5%9C%92%E5%8F%A320200229.jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Tokyo_Disneyland_003.jpg/1280px-Tokyo_Disneyland_003.jpg",
+        "credit": "Emran Kassim / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Disneyland_003.jpg",
+        "width": 1200,
+        "height": 1807
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Tokyo_Disneyland_001.jpg/1280px-Tokyo_Disneyland_001.jpg",
+        "credit": "Emran Kassim / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Disneyland_001.jpg",
+        "width": 1200,
+        "height": 797
+      }
+    ]
   },
   "tds": {
     "wikiTitle": "東京ディズニーシー",
-    "lang": "ja",
+    "lang": "commons",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Tokyo_Disney_Sea_Aerial_2019.png/1280px-Tokyo_Disney_Sea_Aerial_2019.png",
-        "credit": "国土交通省 国土地理院 / Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Disney_Sea_Aerial_2019.png",
-        "width": 1200,
-        "height": 770
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Tokyo_Disney_Sea_Mountain.jpg/1280px-Tokyo_Disney_Sea_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Tokyo_Disney_Sea_Mountain.jpg/1280px-Tokyo_Disney_Sea_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "CasinoKat / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Disney_Sea_Mountain.jpg",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tokyo_Disney_Sea_%2852853629818%29.jpg/1280px-Tokyo_Disney_Sea_%2852853629818%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tokyo_Disney_Sea_%2852853629818%29.jpg/1280px-Tokyo_Disney_Sea_%2852853629818%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "othree / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Disney_Sea_(52853629818).jpg",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tokyo_Disney_Sea_%2852853358459%29.jpg/1280px-Tokyo_Disney_Sea_%2852853358459%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tokyo_Disney_Sea_%2852853358459%29.jpg/1280px-Tokyo_Disney_Sea_%2852853358459%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "othree / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Disney_Sea_(52853358459).jpg",
+        "width": 1280,
+        "height": 853
       }
-    ]
+    ],
+    "curated": {
+      "Tokyo Disney Sea Mountain.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Tokyo_Disney_Sea_Mountain.jpg/1280px-Tokyo_Disney_Sea_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Tokyo_Disney_Sea_Mountain.jpg/1280px-Tokyo_Disney_Sea_Mountain.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "CasinoKat / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Disney_Sea_Mountain.jpg",
+        "width": 1280,
+        "height": 853
+      },
+      "Tokyo Disney Sea (52853629818).jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tokyo_Disney_Sea_%2852853629818%29.jpg/1280px-Tokyo_Disney_Sea_%2852853629818%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tokyo_Disney_Sea_%2852853629818%29.jpg/1280px-Tokyo_Disney_Sea_%2852853629818%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "othree / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Disney_Sea_(52853629818).jpg",
+        "width": 1280,
+        "height": 853
+      },
+      "Tokyo Disney Sea (52853358459).jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tokyo_Disney_Sea_%2852853358459%29.jpg/1280px-Tokyo_Disney_Sea_%2852853358459%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Tokyo_Disney_Sea_%2852853358459%29.jpg/1280px-Tokyo_Disney_Sea_%2852853358459%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "othree / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Disney_Sea_(52853358459).jpg",
+        "width": 1280,
+        "height": 853
+      }
+    }
   },
   "usj": {
     "wikiTitle": "ユニバーサル・スタジオ・ジャパン",
@@ -876,9 +1201,34 @@
     ]
   },
   "tokyo-dome-city": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "東京ドームシティ アトラクションズ",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Tokyo_Dome_City_Ferris_Wheel.jpg/1280px-Tokyo_Dome_City_Ferris_Wheel.jpg",
+        "credit": "Lucas Garron / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Dome_City_Ferris_Wheel.jpg",
+        "width": 1200,
+        "height": 770
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Tokyo_Dome_City_2.jpg/1280px-Tokyo_Dome_City_2.jpg",
+        "credit": "Syced / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Dome_City_2.jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Tokyo_Dome_City_5.jpg/1280px-Tokyo_Dome_City_5.jpg",
+        "credit": "Syced / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Dome_City_5.jpg",
+        "width": 1200,
+        "height": 900
+      }
+    ]
   },
   "seaparadise": {
     "wikiTitle": "八景島シーパラダイス",
@@ -972,8 +1322,83 @@
   },
   "legoland-japan": {
     "wikiTitle": "レゴランド・ジャパン",
-    "lang": "ja",
-    "real": []
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Legoland_japan.jpg/1280px-Legoland_japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Legoland_japan.jpg/1280px-Legoland_japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Bariston / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Legoland_japan.jpg",
+        "width": 1280,
+        "height": 855
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/LEGOLAND_JAPAN_%2833511506735%29.jpg/1280px-LEGOLAND_JAPAN_%2833511506735%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/LEGOLAND_JAPAN_%2833511506735%29.jpg/1280px-LEGOLAND_JAPAN_%2833511506735%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "S.Brickman / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEGOLAND_JAPAN_(33511506735).jpg",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Build_and_Test_-_flickr_32707873974_0b48522426_o.jpg/1280px-Build_and_Test_-_flickr_32707873974_0b48522426_o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Build_and_Test_-_flickr_32707873974_0b48522426_o.jpg/1280px-Build_and_Test_-_flickr_32707873974_0b48522426_o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "S.Brickman / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Build_and_Test_-_flickr_32707873974_0b48522426_o.jpg",
+        "width": 1280,
+        "height": 1920
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Observation_Tower_-_flickr_33354070402_513f6872f6_o.jpg/1280px-Observation_Tower_-_flickr_33354070402_513f6872f6_o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Observation_Tower_-_flickr_33354070402_513f6872f6_o.jpg/1280px-Observation_Tower_-_flickr_33354070402_513f6872f6_o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "S.Brickman / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Observation_Tower_-_flickr_33354070402_513f6872f6_o.jpg",
+        "width": 1280,
+        "height": 1920
+      }
+    ],
+    "curated": {
+      "Legoland japan.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Legoland_japan.jpg/1280px-Legoland_japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Legoland_japan.jpg/1280px-Legoland_japan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Bariston / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Legoland_japan.jpg",
+        "width": 1280,
+        "height": 855
+      },
+      "LEGOLAND JAPAN (33511506735).jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/LEGOLAND_JAPAN_%2833511506735%29.jpg/1280px-LEGOLAND_JAPAN_%2833511506735%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/LEGOLAND_JAPAN_%2833511506735%29.jpg/1280px-LEGOLAND_JAPAN_%2833511506735%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "S.Brickman / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEGOLAND_JAPAN_(33511506735).jpg",
+        "width": 1280,
+        "height": 853
+      },
+      "Build and Test - flickr 32707873974 0b48522426 o.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Build_and_Test_-_flickr_32707873974_0b48522426_o.jpg/1280px-Build_and_Test_-_flickr_32707873974_0b48522426_o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Build_and_Test_-_flickr_32707873974_0b48522426_o.jpg/1280px-Build_and_Test_-_flickr_32707873974_0b48522426_o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "S.Brickman / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Build_and_Test_-_flickr_32707873974_0b48522426_o.jpg",
+        "width": 1280,
+        "height": 1920
+      },
+      "Observation Tower - flickr 33354070402 513f6872f6 o.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Observation_Tower_-_flickr_33354070402_513f6872f6_o.jpg/1280px-Observation_Tower_-_flickr_33354070402_513f6872f6_o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Observation_Tower_-_flickr_33354070402_513f6872f6_o.jpg/1280px-Observation_Tower_-_flickr_33354070402_513f6872f6_o.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "S.Brickman / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Observation_Tower_-_flickr_33354070402_513f6872f6_o.jpg",
+        "width": 1280,
+        "height": 1920
+      }
+    }
   },
   "sanrio-puroland": {
     "wikiTitle": "サンリオピューロランド",
@@ -1007,30 +1432,95 @@
   },
   "kameido-central-park": {
     "wikiTitle": "亀戸中央公園",
-    "lang": "ja",
+    "lang": "commons",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Kameido_chuo_park_1989_air.jpg",
-        "credit": "Wikimedia Commons / Wikimedia Commons",
-        "license": "Attribution",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kameido_chuo_park_1989_air.jpg",
-        "width": 1200,
-        "height": 830
-      },
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Kameido_chuo_park_entrance_koto_tokyo_2009.JPG/1280px-Kameido_chuo_park_entrance_koto_tokyo_2009.JPG",
-        "credit": "User:Kentin / Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kameido_chuo_park_entrance_koto_tokyo_2009.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/61/%E4%BA%80%E6%88%B8%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%921_-_panoramio.jpg",
+        "credit": "koji_h / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BA%80%E6%88%B8%E4%B8%AD%E5%A4%AE%E5%85%AC%E5%9C%921_-_panoramio.jpg",
         "width": 1200,
         "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Kameido_chuo_Park_2010-12.JPG/1280px-Kameido_chuo_Park_2010-12.JPG",
+        "credit": "Arashiyama / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kameido_chuo_Park_2010-12.JPG",
+        "width": 1200,
+        "height": 1800
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Kameido_chuo_Park_2010-11-12.JPG/1280px-Kameido_chuo_Park_2010-11-12.JPG",
+        "credit": "Arashiyama / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kameido_chuo_Park_2010-11-12.JPG",
+        "width": 1200,
+        "height": 800
       }
     ]
   },
   "tategawa-riverbed-park": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "竪川河川敷公園",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/%E7%AB%AA%E5%B7%9D%E6%B2%B3%E5%B7%9D%E6%95%B7%E5%85%AC%E5%9C%92.jpg/1280px-%E7%AB%AA%E5%B7%9D%E6%B2%B3%E5%B7%9D%E6%95%B7%E5%85%AC%E5%9C%92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/%E7%AB%AA%E5%B7%9D%E6%B2%B3%E5%B7%9D%E6%95%B7%E5%85%AC%E5%9C%92.jpg/1280px-%E7%AB%AA%E5%B7%9D%E6%B2%B3%E5%B7%9D%E6%95%B7%E5%85%AC%E5%9C%92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Souka Kinmei / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%AB%AA%E5%B7%9D%E6%B2%B3%E5%B7%9D%E6%95%B7%E5%85%AC%E5%9C%92.jpg",
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/%E7%AB%AA%E5%B7%9D%E6%B0%B4%E9%96%80.jpg/1280px-%E7%AB%AA%E5%B7%9D%E6%B0%B4%E9%96%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/%E7%AB%AA%E5%B7%9D%E6%B0%B4%E9%96%80.jpg/1280px-%E7%AB%AA%E5%B7%9D%E6%B0%B4%E9%96%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "多摩に暇人 / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%AB%AA%E5%B7%9D%E6%B0%B4%E9%96%80.jpg",
+        "width": 1280,
+        "height": 854
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/%E8%B6%8A%E4%B8%AD%E5%B3%B6%E6%94%AF%E7%B7%9A%E3%83%BB%E7%AB%AA%E5%B7%9D%E3%83%BB%E3%83%88%E3%83%A9%E3%82%B9%E6%A9%8B%E3%83%BB1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/%E8%B6%8A%E4%B8%AD%E5%B3%B6%E6%94%AF%E7%B7%9A%E3%83%BB%E7%AB%AA%E5%B7%9D%E3%83%BB%E3%83%88%E3%83%A9%E3%82%B9%E6%A9%8B%E3%83%BB1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E8%B6%8A%E4%B8%AD%E5%B3%B6%E6%94%AF%E7%B7%9A%E3%83%BB%E7%AB%AA%E5%B7%9D%E3%83%BB%E3%83%88%E3%83%A9%E3%82%B9%E6%A9%8B%E3%83%BB1.jpg",
+        "width": 1280,
+        "height": 1024
+      }
+    ],
+    "curated": {
+      "竪川河川敷公園.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/%E7%AB%AA%E5%B7%9D%E6%B2%B3%E5%B7%9D%E6%95%B7%E5%85%AC%E5%9C%92.jpg/1280px-%E7%AB%AA%E5%B7%9D%E6%B2%B3%E5%B7%9D%E6%95%B7%E5%85%AC%E5%9C%92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/%E7%AB%AA%E5%B7%9D%E6%B2%B3%E5%B7%9D%E6%95%B7%E5%85%AC%E5%9C%92.jpg/1280px-%E7%AB%AA%E5%B7%9D%E6%B2%B3%E5%B7%9D%E6%95%B7%E5%85%AC%E5%9C%92.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Souka Kinmei / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%AB%AA%E5%B7%9D%E6%B2%B3%E5%B7%9D%E6%95%B7%E5%85%AC%E5%9C%92.jpg",
+        "width": 1280,
+        "height": 720
+      },
+      "竪川水門.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/%E7%AB%AA%E5%B7%9D%E6%B0%B4%E9%96%80.jpg/1280px-%E7%AB%AA%E5%B7%9D%E6%B0%B4%E9%96%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/%E7%AB%AA%E5%B7%9D%E6%B0%B4%E9%96%80.jpg/1280px-%E7%AB%AA%E5%B7%9D%E6%B0%B4%E9%96%80.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "多摩に暇人 / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%AB%AA%E5%B7%9D%E6%B0%B4%E9%96%80.jpg",
+        "width": 1280,
+        "height": 854
+      },
+      "越中島支線・竪川・トラス橋・1.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/%E8%B6%8A%E4%B8%AD%E5%B3%B6%E6%94%AF%E7%B7%9A%E3%83%BB%E7%AB%AA%E5%B7%9D%E3%83%BB%E3%83%88%E3%83%A9%E3%82%B9%E6%A9%8B%E3%83%BB1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1f/%E8%B6%8A%E4%B8%AD%E5%B3%B6%E6%94%AF%E7%B7%9A%E3%83%BB%E7%AB%AA%E5%B7%9D%E3%83%BB%E3%83%88%E3%83%A9%E3%82%B9%E6%A9%8B%E3%83%BB1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E8%B6%8A%E4%B8%AD%E5%B3%B6%E6%94%AF%E7%B7%9A%E3%83%BB%E7%AB%AA%E5%B7%9D%E3%83%BB%E3%83%88%E3%83%A9%E3%82%B9%E6%A9%8B%E3%83%BB1.jpg",
+        "width": 1280,
+        "height": 1024
+      }
+    }
   },
   "godoteien-garden": {
     "wikiTitle": null,
@@ -1040,16 +1530,148 @@
   "kiba-shinsui-park": {
     "wikiTitle": null,
     "lang": null,
-    "real": []
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Kiba_park.jpg/1280px-Kiba_park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Kiba_park.jpg/1280px-Kiba_park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kiba_park.jpg",
+        "width": 1280,
+        "height": 882
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kiba_Park_bridge.jpg/1280px-Kiba_Park_bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kiba_Park_bridge.jpg/1280px-Kiba_Park_bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "NMaia / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kiba_Park_bridge.jpg",
+        "width": 1280,
+        "height": 1707
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Sunday_afternoon_at_Kiba_Park.jpg/1280px-Sunday_afternoon_at_Kiba_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Sunday_afternoon_at_Kiba_Park.jpg/1280px-Sunday_afternoon_at_Kiba_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "NMaia / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunday_afternoon_at_Kiba_Park.jpg",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05243.jpg/1280px-Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05243.jpg/1280px-Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Daderot / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05243.jpg",
+        "width": 1280,
+        "height": 853
+      }
+    ],
+    "curated": {
+      "Kiba park.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Kiba_park.jpg/1280px-Kiba_park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Kiba_park.jpg/1280px-Kiba_park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kiba_park.jpg",
+        "width": 1280,
+        "height": 882
+      },
+      "Kiba Park bridge.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kiba_Park_bridge.jpg/1280px-Kiba_Park_bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Kiba_Park_bridge.jpg/1280px-Kiba_Park_bridge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "NMaia / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kiba_Park_bridge.jpg",
+        "width": 1280,
+        "height": 1707
+      },
+      "Sunday afternoon at Kiba Park.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Sunday_afternoon_at_Kiba_Park.jpg/1280px-Sunday_afternoon_at_Kiba_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Sunday_afternoon_at_Kiba_Park.jpg/1280px-Sunday_afternoon_at_Kiba_Park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "NMaia / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunday_afternoon_at_Kiba_Park.jpg",
+        "width": 1280,
+        "height": 960
+      },
+      "Kiba Park - Koto, Tokyo, Japan - DSC05243.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05243.jpg/1280px-Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05243.jpg/1280px-Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05243.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Daderot / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05243.jpg",
+        "width": 1280,
+        "height": 853
+      }
+    }
   },
   "koishiba-shinsui-park": {
     "wikiTitle": "古石場川親水公園",
-    "lang": "ja",
-    "real": []
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/%E5%B0%8F%E6%B4%A5%E6%A9%8B1.jpg/1280px-%E5%B0%8F%E6%B4%A5%E6%A9%8B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/%E5%B0%8F%E6%B4%A5%E6%A9%8B1.jpg/1280px-%E5%B0%8F%E6%B4%A5%E6%A9%8B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "HiroCamossi / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%B0%8F%E6%B4%A5%E6%A9%8B1.jpg",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%E5%B0%8F%E6%B4%A5%E6%A9%8B2.jpg/1280px-%E5%B0%8F%E6%B4%A5%E6%A9%8B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%E5%B0%8F%E6%B4%A5%E6%A9%8B2.jpg/1280px-%E5%B0%8F%E6%B4%A5%E6%A9%8B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "HiroCamossi / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%B0%8F%E6%B4%A5%E6%A9%8B2.jpg",
+        "width": 1280,
+        "height": 1707
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/%E5%B0%8F%E6%B4%A5%E6%A9%8B3.jpg/1280px-%E5%B0%8F%E6%B4%A5%E6%A9%8B3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/%E5%B0%8F%E6%B4%A5%E6%A9%8B3.jpg/1280px-%E5%B0%8F%E6%B4%A5%E6%A9%8B3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "HiroCamossi / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%B0%8F%E6%B4%A5%E6%A9%8B3.jpg",
+        "width": 1280,
+        "height": 1707
+      }
+    ],
+    "curated": {
+      "小津橋1.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/%E5%B0%8F%E6%B4%A5%E6%A9%8B1.jpg/1280px-%E5%B0%8F%E6%B4%A5%E6%A9%8B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/%E5%B0%8F%E6%B4%A5%E6%A9%8B1.jpg/1280px-%E5%B0%8F%E6%B4%A5%E6%A9%8B1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "HiroCamossi / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%B0%8F%E6%B4%A5%E6%A9%8B1.jpg",
+        "width": 1280,
+        "height": 960
+      },
+      "小津橋2.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%E5%B0%8F%E6%B4%A5%E6%A9%8B2.jpg/1280px-%E5%B0%8F%E6%B4%A5%E6%A9%8B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/%E5%B0%8F%E6%B4%A5%E6%A9%8B2.jpg/1280px-%E5%B0%8F%E6%B4%A5%E6%A9%8B2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "HiroCamossi / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%B0%8F%E6%B4%A5%E6%A9%8B2.jpg",
+        "width": 1280,
+        "height": 1707
+      },
+      "小津橋3.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/%E5%B0%8F%E6%B4%A5%E6%A9%8B3.jpg/1280px-%E5%B0%8F%E6%B4%A5%E6%A9%8B3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/%E5%B0%8F%E6%B4%A5%E6%A9%8B3.jpg/1280px-%E5%B0%8F%E6%B4%A5%E6%A9%8B3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "HiroCamossi / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%B0%8F%E6%B4%A5%E6%A9%8B3.jpg",
+        "width": 1280,
+        "height": 1707
+      }
+    }
   },
   "joto-park": {
-    "wikiTitle": null,
-    "lang": null,
+    "wikiTitle": "城東公園",
+    "lang": "commons",
     "real": []
   },
   "echujima-park": {
@@ -1084,21 +1706,29 @@
   },
   "toyosu-park": {
     "wikiTitle": "豊洲公園",
-    "lang": "ja",
+    "lang": "commons",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Toyosu-Park.jpg/1280px-Toyosu-Park.jpg",
-        "credit": "Momotarou2012 / Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyosu-Park.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/%E8%B1%8A%E6%B4%B2_-_panoramio_%283%29.jpg",
+        "credit": "resource70 / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E8%B1%8A%E6%B4%B2_-_panoramio_(3).jpg",
         "width": 1200,
-        "height": 675
+        "height": 900
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Toyosu_Park.jpg/1280px-Toyosu_Park.jpg",
-        "credit": "Ryoma35988 (ja:利用者:Ryoma35988) / Wikimedia Commons",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Harumibashi_Park.jpg/1280px-Harumibashi_Park.jpg",
+        "credit": "Ryoma35988 / Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyosu_Park.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harumibashi_Park.jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Tobus_S-F448_Toyosu-01.jpg/1280px-Tobus_S-F448_Toyosu-01.jpg",
+        "credit": "Comyu / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tobus_S-F448_Toyosu-01.jpg",
         "width": 1200,
         "height": 900
       }
@@ -1106,29 +1736,61 @@
   },
   "sendaihorikawa-park": {
     "wikiTitle": "仙台堀川公園",
-    "lang": "ja",
+    "lang": "commons",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Sendaiborigawa_park_entrance_koto_tokyo_2009.JPG/1280px-Sendaiborigawa_park_entrance_koto_tokyo_2009.JPG",
-        "credit": "User:Kentin / Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sendaiborigawa_park_entrance_koto_tokyo_2009.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/IMAG1459_%2827628005053%29.jpg/1280px-IMAG1459_%2827628005053%29.jpg",
+        "credit": "franck injapan from Tokyo, Japan / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:IMAG1459_(27628005053).jpg",
         "width": 1200,
-        "height": 900
+        "height": 904
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/IMAG1457_%2828139541812%29.jpg/1280px-IMAG1457_%2828139541812%29.jpg",
+        "credit": "franck injapan from Tokyo, Japan / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:IMAG1457_(28139541812).jpg",
+        "width": 1200,
+        "height": 1593
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/IMAG1455_%2827962888270%29.jpg/1280px-IMAG1455_%2827962888270%29.jpg",
+        "credit": "franck injapan from Tokyo, Japan / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:IMAG1455_(27962888270).jpg",
+        "width": 1200,
+        "height": 904
       }
     ]
   },
   "kiba-park": {
     "wikiTitle": "木場公園",
-    "lang": "ja",
+    "lang": "commons",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Kiba_park_entrance_koto_tokyo_2009.JPG/1280px-Kiba_park_entrance_koto_tokyo_2009.JPG",
-        "credit": "User:Kentin / Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kiba_park_entrance_koto_tokyo_2009.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05243.jpg/1280px-Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05243.jpg",
+        "credit": "Daderot / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kiba_Park_-_Koto,_Tokyo,_Japan_-_DSC05243.jpg",
         "width": 1200,
-        "height": 900
+        "height": 800
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Fountain_-_Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05250.jpg/1280px-Fountain_-_Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05250.jpg",
+        "credit": "Daderot / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fountain_-_Kiba_Park_-_Koto,_Tokyo,_Japan_-_DSC05250.jpg",
+        "width": 1200,
+        "height": 800
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Walkway_-_Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05252.jpg/1280px-Walkway_-_Kiba_Park_-_Koto%2C_Tokyo%2C_Japan_-_DSC05252.jpg",
+        "credit": "Daderot / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Walkway_-_Kiba_Park_-_Koto,_Tokyo,_Japan_-_DSC05252.jpg",
+        "width": 1200,
+        "height": 800
       }
     ]
   },
@@ -1254,13 +1916,29 @@
   },
   "ojima-komatsugawa-park": {
     "wikiTitle": "大島小松川公園",
-    "lang": "ja",
+    "lang": "commons",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Ojima_komatsugawa_park_2009.JPG/1280px-Ojima_komatsugawa_park_2009.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/%E9%83%BD%E7%AB%8B_%E5%A4%A7%E5%B3%B6%E5%B0%8F%E6%9D%BE%E5%B7%9D%E5%85%AC%E5%9C%92_-_panoramio.jpg",
+        "credit": "koji_h / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%83%BD%E7%AB%8B_%E5%A4%A7%E5%B3%B6%E5%B0%8F%E6%9D%BE%E5%B7%9D%E5%85%AC%E5%9C%92_-_panoramio.jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/%E9%83%BD%E7%AB%8B%E5%A4%A7%E5%B3%B6%E5%B0%8F%E6%9D%BE%E5%B7%9D%E5%85%AC%E5%9C%92_-_panoramio.jpg",
+        "credit": "koji_h / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%83%BD%E7%AB%8B%E5%A4%A7%E5%B3%B6%E5%B0%8F%E6%9D%BE%E5%B7%9D%E5%85%AC%E5%9C%92_-_panoramio.jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Ojima_komatsugawa_park_kaze_plaza.JPG/1280px-Ojima_komatsugawa_park_kaze_plaza.JPG",
         "credit": "User:Kentin / Wikimedia Commons",
         "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ojima_komatsugawa_park_2009.JPG",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ojima_komatsugawa_park_kaze_plaza.JPG",
         "width": 1200,
         "height": 900
       }
@@ -1328,15 +2006,31 @@
   },
   "kinshi-park": {
     "wikiTitle": "錦糸公園",
-    "lang": "ja",
+    "lang": "commons",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Kinshi_Park_%282007.09.16%29.jpg/1280px-Kinshi_Park_%282007.09.16%29.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Sumida_City_Gymnasium.jpg/1280px-Sumida_City_Gymnasium.jpg",
         "credit": "Lombroso / Wikimedia Commons",
         "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kinshi_Park_(2007.09.16).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sumida_City_Gymnasium.jpg",
         "width": 1200,
         "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Kinshi-park_oldstyle.jpg/1280px-Kinshi-park_oldstyle.jpg",
+        "credit": "Unknown authorUnknown author / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kinshi-park_oldstyle.jpg",
+        "width": 1200,
+        "height": 868
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/050_Henmi_Takashi_Kinshi_Park_1932.jpg",
+        "credit": "Henmi Takashi / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:050_Henmi_Takashi_Kinshi_Park_1932.jpg",
+        "width": 1200,
+        "height": 896
       }
     ]
   },
@@ -1402,23 +2096,31 @@
   },
   "ukima-park": {
     "wikiTitle": "浮間公園",
-    "lang": "ja",
+    "lang": "commons",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Ukima-ga-ike_3A4A3197.jpg/1280px-Ukima-ga-ike_3A4A3197.jpg",
-        "credit": "Infinite0694 / Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ukima-ga-ike_3A4A3197.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/%E9%83%BD%E7%AB%8B%E6%B5%AE%E9%96%93%E5%85%AC%E5%9C%92_-_panoramio.jpg",
+        "credit": "koji_h / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%83%BD%E7%AB%8B%E6%B5%AE%E9%96%93%E5%85%AC%E5%9C%92_-_panoramio.jpg",
         "width": 1200,
-        "height": 800
+        "height": 900
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/%E6%B5%AE%E9%96%93%E5%85%AC%E5%9C%92%E3%83%BB%E6%A1%9C.JPG/1280px-%E6%B5%AE%E9%96%93%E5%85%AC%E5%9C%92%E3%83%BB%E6%A1%9C.JPG",
-        "credit": "ToMSR / Wikimedia Commons",
-        "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%B5%AE%E9%96%93%E5%85%AC%E5%9C%92%E3%83%BB%E6%A1%9C.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/%E6%95%A3%E6%AD%A9%E6%97%A5%E5%92%8C%E3%81%AE%E6%B5%AE%E9%96%93%E5%85%AC%E5%9C%92_-_panoramio.jpg/1280px-%E6%95%A3%E6%AD%A9%E6%97%A5%E5%92%8C%E3%81%AE%E6%B5%AE%E9%96%93%E5%85%AC%E5%9C%92_-_panoramio.jpg",
+        "credit": "y_a_s_u_ / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%95%A3%E6%AD%A9%E6%97%A5%E5%92%8C%E3%81%AE%E6%B5%AE%E9%96%93%E5%85%AC%E5%9C%92_-_panoramio.jpg",
         "width": 1200,
-        "height": 904
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/%E6%95%A3%E6%AD%A9%E6%97%A5%E5%92%8C%E3%81%AE%E6%B5%AE%E9%96%93%E5%85%AC%E5%9C%92_-_panoramio_-_y_a_s_u_.jpg/1280px-%E6%95%A3%E6%AD%A9%E6%97%A5%E5%92%8C%E3%81%AE%E6%B5%AE%E9%96%93%E5%85%AC%E5%9C%92_-_panoramio_-_y_a_s_u_.jpg",
+        "credit": "y_a_s_u_ / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%95%A3%E6%AD%A9%E6%97%A5%E5%92%8C%E3%81%AE%E6%B5%AE%E9%96%93%E5%85%AC%E5%9C%92_-_panoramio_-_y_a_s_u_.jpg",
+        "width": 1200,
+        "height": 900
       }
     ]
   },
@@ -1543,9 +2245,84 @@
     ]
   },
   "metro-museum": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "地下鉄博物館（ちかはく）",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Metro_Museum%2C_entrance-1.jpg/1280px-Metro_Museum%2C_entrance-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Metro_Museum%2C_entrance-1.jpg/1280px-Metro_Museum%2C_entrance-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "掬茶 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Metro_Museum%2C_entrance-1.jpg",
+        "width": 1280,
+        "height": 722
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Chikatetsu_Hakubutsukan_2023-08-23_%282%29.jpg/1280px-Chikatetsu_Hakubutsukan_2023-08-23_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Chikatetsu_Hakubutsukan_2023-08-23_%282%29.jpg/1280px-Chikatetsu_Hakubutsukan_2023-08-23_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Mauricio V. Genta / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chikatetsu_Hakubutsukan_2023-08-23_(2).jpg",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/%E5%9C%B0%E4%B8%8B%E9%89%84%E5%8D%9A%E7%89%A9%E9%A4%A8%E3%81%AE%E5%85%A5%E5%8F%A3_%284012528869%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/%E5%9C%B0%E4%B8%8B%E9%89%84%E5%8D%9A%E7%89%A9%E9%A4%A8%E3%81%AE%E5%85%A5%E5%8F%A3_%284012528869%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Kazuhiko Maeda from Tokyo, Japan / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%9C%B0%E4%B8%8B%E9%89%84%E5%8D%9A%E7%89%A9%E9%A4%A8%E3%81%AE%E5%85%A5%E5%8F%A3_(4012528869).jpg",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Tokyo_Metro_01-129_in_Metro_Museum_20231008.jpg/1280px-Tokyo_Metro_01-129_in_Metro_Museum_20231008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Tokyo_Metro_01-129_in_Metro_Museum_20231008.jpg/1280px-Tokyo_Metro_01-129_in_Metro_Museum_20231008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Rsa / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Metro_01-129_in_Metro_Museum_20231008.jpg",
+        "width": 1280,
+        "height": 1253
+      }
+    ],
+    "curated": {
+      "Metro Museum, entrance-1.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Metro_Museum%2C_entrance-1.jpg/1280px-Metro_Museum%2C_entrance-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Metro_Museum%2C_entrance-1.jpg/1280px-Metro_Museum%2C_entrance-1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "掬茶 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Metro_Museum%2C_entrance-1.jpg",
+        "width": 1280,
+        "height": 722
+      },
+      "Chikatetsu Hakubutsukan 2023-08-23 (2).jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Chikatetsu_Hakubutsukan_2023-08-23_%282%29.jpg/1280px-Chikatetsu_Hakubutsukan_2023-08-23_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Chikatetsu_Hakubutsukan_2023-08-23_%282%29.jpg/1280px-Chikatetsu_Hakubutsukan_2023-08-23_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Mauricio V. Genta / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chikatetsu_Hakubutsukan_2023-08-23_(2).jpg",
+        "width": 1280,
+        "height": 960
+      },
+      "地下鉄博物館の入口 (4012528869).jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/%E5%9C%B0%E4%B8%8B%E9%89%84%E5%8D%9A%E7%89%A9%E9%A4%A8%E3%81%AE%E5%85%A5%E5%8F%A3_%284012528869%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/%E5%9C%B0%E4%B8%8B%E9%89%84%E5%8D%9A%E7%89%A9%E9%A4%A8%E3%81%AE%E5%85%A5%E5%8F%A3_%284012528869%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Kazuhiko Maeda from Tokyo, Japan / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%9C%B0%E4%B8%8B%E9%89%84%E5%8D%9A%E7%89%A9%E9%A4%A8%E3%81%AE%E5%85%A5%E5%8F%A3_(4012528869).jpg",
+        "width": 1280,
+        "height": 960
+      },
+      "Tokyo Metro 01-129 in Metro Museum 20231008.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Tokyo_Metro_01-129_in_Metro_Museum_20231008.jpg/1280px-Tokyo_Metro_01-129_in_Metro_Museum_20231008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Tokyo_Metro_01-129_in_Metro_Museum_20231008.jpg/1280px-Tokyo_Metro_01-129_in_Metro_Museum_20231008.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Rsa / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Metro_01-129_in_Metro_Museum_20231008.jpg",
+        "width": 1280,
+        "height": 1253
+      }
+    }
   },
   "tokyu-train-bus-museum": {
     "wikiTitle": "電車とバスの博物館",
@@ -1639,8 +2416,33 @@
   },
   "romancecar-museum": {
     "wikiTitle": "ロマンスカーミュージアム",
-    "lang": "ja",
-    "real": []
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/ROMANCECAR_MUSEUM_20210305.jpg/1280px-ROMANCECAR_MUSEUM_20210305.jpg",
+        "credit": "YT1001 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:ROMANCECAR_MUSEUM_20210305.jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/ROMANCECAR_MUSEUM_20210423.jpg/1280px-ROMANCECAR_MUSEUM_20210423.jpg",
+        "credit": "Kaze315 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:ROMANCECAR_MUSEUM_20210423.jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/ROMANCECAR_GALLERY_in_Romancecar_Museum.jpg/1280px-ROMANCECAR_GALLERY_in_Romancecar_Museum.jpg",
+        "credit": "Kaze315 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:ROMANCECAR_GALLERY_in_Romancecar_Museum.jpg",
+        "width": 1200,
+        "height": 868
+      }
+    ]
   },
   "toden-omoide-hiroba": {
     "wikiTitle": "荒川電車営業所",
@@ -1703,9 +2505,66 @@
     ]
   },
   "shinjuku-chuo-library": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "新宿区立中央図書館・こども図書館",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Shinjuku_Chuo_Library_2013-04-25.JPG/1280px-Shinjuku_Chuo_Library_2013-04-25.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Shinjuku_Chuo_Library_2013-04-25.JPG/1280px-Shinjuku_Chuo_Library_2013-04-25.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Asanagi / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shinjuku_Chuo_Library_2013-04-25.JPG",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Shinjuku_central_library_shimoochiai.JPG/1280px-Shinjuku_central_library_shimoochiai.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Shinjuku_central_library_shimoochiai.JPG/1280px-Shinjuku_central_library_shimoochiai.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "User:Kentin / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shinjuku_central_library_shimoochiai.JPG",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/%E6%96%B0%E5%AE%BF%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg/1280px-%E6%96%B0%E5%AE%BF%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/%E6%96%B0%E5%AE%BF%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg/1280px-%E6%96%B0%E5%AE%BF%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Japaninter031 / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%96%B0%E5%AE%BF%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
+        "width": 1280,
+        "height": 960
+      }
+    ],
+    "curated": {
+      "Shinjuku Chuo Library 2013-04-25.JPG": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Shinjuku_Chuo_Library_2013-04-25.JPG/1280px-Shinjuku_Chuo_Library_2013-04-25.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Shinjuku_Chuo_Library_2013-04-25.JPG/1280px-Shinjuku_Chuo_Library_2013-04-25.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Asanagi / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shinjuku_Chuo_Library_2013-04-25.JPG",
+        "width": 1280,
+        "height": 960
+      },
+      "Shinjuku central library shimoochiai.JPG": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Shinjuku_central_library_shimoochiai.JPG/1280px-Shinjuku_central_library_shimoochiai.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Shinjuku_central_library_shimoochiai.JPG/1280px-Shinjuku_central_library_shimoochiai.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "User:Kentin / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shinjuku_central_library_shimoochiai.JPG",
+        "width": 1280,
+        "height": 960
+      },
+      "新宿区立中央図書館.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/%E6%96%B0%E5%AE%BF%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg/1280px-%E6%96%B0%E5%AE%BF%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/%E6%96%B0%E5%AE%BF%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg/1280px-%E6%96%B0%E5%AE%BF%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Japaninter031 / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%96%B0%E5%AE%BF%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
+        "width": 1280,
+        "height": 960
+      }
+    }
   },
   "tokyo-gym": {
     "wikiTitle": "東京体育館",
@@ -1738,31 +2597,200 @@
     ]
   },
   "bumb-tokyo-sports": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
-  },
-  "setagaya-chuo-library": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
-  },
-  "koto-chuo-library": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
-  },
-  "taito-chuo-library": {
-    "wikiTitle": "台東区立図書館",
-    "lang": "ja",
+    "wikiTitle": "BumB東京スポーツ文化館",
+    "lang": "commons",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Taito-Ku_Lifelong_Learning_Center.JPG/1280px-Taito-Ku_Lifelong_Learning_Center.JPG",
-        "credit": "あばさー / Wikimedia Commons",
-        "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taito-Ku_Lifelong_Learning_Center.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E6%96%87%E5%8C%96%E9%A4%A8.jpg/1280px-%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E6%96%87%E5%8C%96%E9%A4%A8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E6%96%87%E5%8C%96%E9%A4%A8.jpg/1280px-%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E6%96%87%E5%8C%96%E9%A4%A8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "多摩に暇人 / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E6%96%87%E5%8C%96%E9%A4%A8.jpg",
+        "width": 1280,
+        "height": 854
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Yumenoshima_park_koto_tokyo_summer_2014.jpg/1280px-Yumenoshima_park_koto_tokyo_summer_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Yumenoshima_park_koto_tokyo_summer_2014.jpg/1280px-Yumenoshima_park_koto_tokyo_summer_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "nesnad / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yumenoshima_park_koto_tokyo_summer_2014.jpg",
+        "width": 1280,
+        "height": 956
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/%E5%A4%A2%E3%81%AE%E5%B3%B6%E5%85%AC%E5%9C%92_-_panoramio_-_Yoshio_Kohara.jpg/1280px-%E5%A4%A2%E3%81%AE%E5%B3%B6%E5%85%AC%E5%9C%92_-_panoramio_-_Yoshio_Kohara.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/%E5%A4%A2%E3%81%AE%E5%B3%B6%E5%85%AC%E5%9C%92_-_panoramio_-_Yoshio_Kohara.jpg/1280px-%E5%A4%A2%E3%81%AE%E5%B3%B6%E5%85%AC%E5%9C%92_-_panoramio_-_Yoshio_Kohara.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Yoshio Kohara / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A4%A2%E3%81%AE%E5%B3%B6%E5%85%AC%E5%9C%92_-_panoramio_-_Yoshio_Kohara.jpg",
+        "width": 1280,
+        "height": 960
+      }
+    ],
+    "curated": {
+      "東京スポーツ文化館.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E6%96%87%E5%8C%96%E9%A4%A8.jpg/1280px-%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E6%96%87%E5%8C%96%E9%A4%A8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E6%96%87%E5%8C%96%E9%A4%A8.jpg/1280px-%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E6%96%87%E5%8C%96%E9%A4%A8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "多摩に暇人 / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%84%E6%96%87%E5%8C%96%E9%A4%A8.jpg",
+        "width": 1280,
+        "height": 854
+      },
+      "Yumenoshima park koto tokyo summer 2014.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Yumenoshima_park_koto_tokyo_summer_2014.jpg/1280px-Yumenoshima_park_koto_tokyo_summer_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Yumenoshima_park_koto_tokyo_summer_2014.jpg/1280px-Yumenoshima_park_koto_tokyo_summer_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "nesnad / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yumenoshima_park_koto_tokyo_summer_2014.jpg",
+        "width": 1280,
+        "height": 956
+      },
+      "夢の島公園 - panoramio - Yoshio Kohara.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/%E5%A4%A2%E3%81%AE%E5%B3%B6%E5%85%AC%E5%9C%92_-_panoramio_-_Yoshio_Kohara.jpg/1280px-%E5%A4%A2%E3%81%AE%E5%B3%B6%E5%85%AC%E5%9C%92_-_panoramio_-_Yoshio_Kohara.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/%E5%A4%A2%E3%81%AE%E5%B3%B6%E5%85%AC%E5%9C%92_-_panoramio_-_Yoshio_Kohara.jpg/1280px-%E5%A4%A2%E3%81%AE%E5%B3%B6%E5%85%AC%E5%9C%92_-_panoramio_-_Yoshio_Kohara.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Yoshio Kohara / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A4%A2%E3%81%AE%E5%B3%B6%E5%85%AC%E5%9C%92_-_panoramio_-_Yoshio_Kohara.jpg",
+        "width": 1280,
+        "height": 960
+      }
+    }
+  },
+  "setagaya-chuo-library": {
+    "wikiTitle": "世田谷区立中央図書館",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Setagaya_Central_Library.jpg/1280px-Setagaya_Central_Library.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Setagaya_Central_Library.jpg/1280px-Setagaya_Central_Library.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Keeezawa / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Setagaya_Central_Library.jpg",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Setagaya_educational_center_tsurumaki_tokyo_2014.jpg/1280px-Setagaya_educational_center_tsurumaki_tokyo_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Setagaya_educational_center_tsurumaki_tokyo_2014.jpg/1280px-Setagaya_educational_center_tsurumaki_tokyo_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Kentin / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Setagaya_educational_center_tsurumaki_tokyo_2014.jpg",
+        "width": 1280,
+        "height": 960
+      }
+    ],
+    "curated": {
+      "Setagaya Central Library.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Setagaya_Central_Library.jpg/1280px-Setagaya_Central_Library.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Setagaya_Central_Library.jpg/1280px-Setagaya_Central_Library.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Keeezawa / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Setagaya_Central_Library.jpg",
+        "width": 1280,
+        "height": 960
+      },
+      "Setagaya educational center tsurumaki tokyo 2014.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Setagaya_educational_center_tsurumaki_tokyo_2014.jpg/1280px-Setagaya_educational_center_tsurumaki_tokyo_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Setagaya_educational_center_tsurumaki_tokyo_2014.jpg/1280px-Setagaya_educational_center_tsurumaki_tokyo_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Kentin / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Setagaya_educational_center_tsurumaki_tokyo_2014.jpg",
+        "width": 1280,
+        "height": 960
+      }
+    }
+  },
+  "koto-chuo-library": {
+    "wikiTitle": "江東図書館（区立中央館）",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/KotoLibrary.jpg/1280px-KotoLibrary.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/KotoLibrary.jpg/1280px-KotoLibrary.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Langlebigkeit Manie / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:KotoLibrary.jpg",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Kotolibrary_2.jpg/1280px-Kotolibrary_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Kotolibrary_2.jpg/1280px-Kotolibrary_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Langlebigkeit Manie / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kotolibrary_2.jpg",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Koto_City_Koto_Library_20241201.jpg/1280px-Koto_City_Koto_Library_20241201.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Koto_City_Koto_Library_20241201.jpg/1280px-Koto_City_Koto_Library_20241201.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Suikotei / Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koto_City_Koto_Library_20241201.jpg",
+        "width": 1280,
+        "height": 961
+      }
+    ],
+    "curated": {
+      "KotoLibrary.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/KotoLibrary.jpg/1280px-KotoLibrary.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/KotoLibrary.jpg/1280px-KotoLibrary.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Langlebigkeit Manie / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:KotoLibrary.jpg",
+        "width": 1280,
+        "height": 960
+      },
+      "Koto City Koto Library 20241201.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Koto_City_Koto_Library_20241201.jpg/1280px-Koto_City_Koto_Library_20241201.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Koto_City_Koto_Library_20241201.jpg/1280px-Koto_City_Koto_Library_20241201.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Suikotei / Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koto_City_Koto_Library_20241201.jpg",
+        "width": 1280,
+        "height": 961
+      },
+      "Kotolibrary 2.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Kotolibrary_2.jpg/1280px-Kotolibrary_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Kotolibrary_2.jpg/1280px-Kotolibrary_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Langlebigkeit Manie / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kotolibrary_2.jpg",
+        "width": 1280,
+        "height": 960
+      }
+    }
+  },
+  "taito-chuo-library": {
+    "wikiTitle": "台東区立中央図書館",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/%E4%BC%81%E7%94%BB%E5%B1%95%E3%80%8C%E5%90%89%E5%8E%9F%E7%B4%B0%E8%A6%8B%E3%81%AE%E4%B8%96%E7%95%8C%E2%85%A2_%E5%BE%8C%E7%B7%A8%E3%80%8D_03.jpg/1280px-%E4%BC%81%E7%94%BB%E5%B1%95%E3%80%8C%E5%90%89%E5%8E%9F%E7%B4%B0%E8%A6%8B%E3%81%AE%E4%B8%96%E7%95%8C%E2%85%A2_%E5%BE%8C%E7%B7%A8%E3%80%8D_03.jpg",
+        "credit": "番記者 / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BC%81%E7%94%BB%E5%B1%95%E3%80%8C%E5%90%89%E5%8E%9F%E7%B4%B0%E8%A6%8B%E3%81%AE%E4%B8%96%E7%95%8C%E2%85%A2_%E5%BE%8C%E7%B7%A8%E3%80%8D_03.jpg",
         "width": 1200,
-        "height": 900
+        "height": 1800
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/%E4%BC%81%E7%94%BB%E5%B1%95%E3%80%8C%E5%90%89%E5%8E%9F%E7%B4%B0%E8%A6%8B%E3%81%AE%E4%B8%96%E7%95%8C%E2%85%A2_%E5%BE%8C%E7%B7%A8%E3%80%8D_01.jpg/1280px-%E4%BC%81%E7%94%BB%E5%B1%95%E3%80%8C%E5%90%89%E5%8E%9F%E7%B4%B0%E8%A6%8B%E3%81%AE%E4%B8%96%E7%95%8C%E2%85%A2_%E5%BE%8C%E7%B7%A8%E3%80%8D_01.jpg",
+        "credit": "番記者 / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BC%81%E7%94%BB%E5%B1%95%E3%80%8C%E5%90%89%E5%8E%9F%E7%B4%B0%E8%A6%8B%E3%81%AE%E4%B8%96%E7%95%8C%E2%85%A2_%E5%BE%8C%E7%B7%A8%E3%80%8D_01.jpg",
+        "width": 1200,
+        "height": 1800
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/%E4%BC%81%E7%94%BB%E5%B1%95%E3%80%8C%E5%90%89%E5%8E%9F%E7%B4%B0%E8%A6%8B%E3%81%AE%E4%B8%96%E7%95%8C%E2%85%A2_%E5%BE%8C%E7%B7%A8%E3%80%8D_02.jpg/1280px-%E4%BC%81%E7%94%BB%E5%B1%95%E3%80%8C%E5%90%89%E5%8E%9F%E7%B4%B0%E8%A6%8B%E3%81%AE%E4%B8%96%E7%95%8C%E2%85%A2_%E5%BE%8C%E7%B7%A8%E3%80%8D_02.jpg",
+        "credit": "番記者 / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%BC%81%E7%94%BB%E5%B1%95%E3%80%8C%E5%90%89%E5%8E%9F%E7%B4%B0%E8%A6%8B%E3%81%AE%E4%B8%96%E7%95%8C%E2%85%A2_%E5%BE%8C%E7%B7%A8%E3%80%8D_02.jpg",
+        "width": 1200,
+        "height": 800
       }
     ]
   },
@@ -1771,22 +2799,98 @@
     "lang": "ja",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/OKURA_track.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/OKURA_track.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/OKURA_track.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
         "credit": "sasa21 / Wikimedia Commons",
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:OKURA_track.jpg",
-        "width": 1200,
-        "height": 629
+        "width": 1280,
+        "height": 671
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/OkuraTaiikukan_2013.JPG/1280px-OkuraTaiikukan_2013.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/OkuraTaiikukan_2013.JPG/1280px-OkuraTaiikukan_2013.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/OkuraTaiikukan_2013.JPG/1280px-OkuraTaiikukan_2013.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "credit": "sasa21 / Wikimedia Commons",
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:OkuraTaiikukan_2013.JPG",
-        "width": 1200,
-        "height": 675
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Okura_Sports_Park-Gate-202111.JPG/1280px-Okura_Sports_Park-Gate-202111.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Okura_Sports_Park-Gate-202111.JPG/1280px-Okura_Sports_Park-Gate-202111.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Nyao148 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okura_Sports_Park-Gate-202111.JPG",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Field_Track_Stand%2C_%C5%8Ckura_Sports_Park%2C_Setagaya%2C_Tokyo.jpg/1280px-Field_Track_Stand%2C_%C5%8Ckura_Sports_Park%2C_Setagaya%2C_Tokyo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Field_Track_Stand%2C_%C5%8Ckura_Sports_Park%2C_Setagaya%2C_Tokyo.jpg/1280px-Field_Track_Stand%2C_%C5%8Ckura_Sports_Park%2C_Setagaya%2C_Tokyo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Doricono / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Field_Track_Stand%2C_%C5%8Ckura_Sports_Park%2C_Setagaya%2C_Tokyo.jpg",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Okura_Sports_Park-Gym-202111.JPG/1280px-Okura_Sports_Park-Gym-202111.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Okura_Sports_Park-Gym-202111.JPG/1280px-Okura_Sports_Park-Gym-202111.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Nyao148 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okura_Sports_Park-Gym-202111.JPG",
+        "width": 1280,
+        "height": 870
       }
-    ]
+    ],
+    "curated": {
+      "OKURA_track.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ed/OKURA_track.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ed/OKURA_track.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "sasa21 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:OKURA_track.jpg",
+        "width": 1280,
+        "height": 671
+      },
+      "OkuraTaiikukan_2013.JPG": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/OkuraTaiikukan_2013.JPG/1280px-OkuraTaiikukan_2013.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/OkuraTaiikukan_2013.JPG/1280px-OkuraTaiikukan_2013.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "sasa21 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:OkuraTaiikukan_2013.JPG",
+        "width": 1280,
+        "height": 720
+      },
+      "Okura Sports Park-Gate-202111.JPG": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Okura_Sports_Park-Gate-202111.JPG/1280px-Okura_Sports_Park-Gate-202111.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Okura_Sports_Park-Gate-202111.JPG/1280px-Okura_Sports_Park-Gate-202111.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Nyao148 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okura_Sports_Park-Gate-202111.JPG",
+        "width": 1280,
+        "height": 960
+      },
+      "Field Track Stand, Ōkura Sports Park, Setagaya, Tokyo.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Field_Track_Stand%2C_%C5%8Ckura_Sports_Park%2C_Setagaya%2C_Tokyo.jpg/1280px-Field_Track_Stand%2C_%C5%8Ckura_Sports_Park%2C_Setagaya%2C_Tokyo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Field_Track_Stand%2C_%C5%8Ckura_Sports_Park%2C_Setagaya%2C_Tokyo.jpg/1280px-Field_Track_Stand%2C_%C5%8Ckura_Sports_Park%2C_Setagaya%2C_Tokyo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Doricono / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Field_Track_Stand%2C_%C5%8Ckura_Sports_Park%2C_Setagaya%2C_Tokyo.jpg",
+        "width": 1280,
+        "height": 853
+      },
+      "Okura Sports Park-Gym-202111.JPG": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Okura_Sports_Park-Gym-202111.JPG/1280px-Okura_Sports_Park-Gym-202111.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Okura_Sports_Park-Gym-202111.JPG/1280px-Okura_Sports_Park-Gym-202111.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Nyao148 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okura_Sports_Park-Gym-202111.JPG",
+        "width": 1280,
+        "height": 870
+      }
+    }
   },
   "edogawa-sogo-taikan": {
     "wikiTitle": null,
@@ -1794,9 +2898,34 @@
     "real": []
   },
   "higashin-arena": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "ひがしんアリーナ（墨田区総合体育館）",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/%E3%82%8A%E3%81%9D%E3%81%AA%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97_B.LEAGUE_2025-26_B1%E3%83%AA%E3%83%BC%E3%82%B0%E6%88%A6_%E7%AC%AC6%E7%AF%80_%E3%82%B5%E3%83%B3%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BC%E3%82%BA%E6%B8%8B%E8%B0%B7_vs_%E3%83%AC%E3%83%90%E3%83%B3%E3%82%AC%E5%8C%97%E6%B5%B7%E9%81%93_%E3%81%B2%E3%81%8C%E3%81%97%E3%82%93%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A_2025%E5%B9%B410%E6%9C%8829%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202510291646_IMG_0097.jpg/1280px-thumbnail.jpg",
+        "credit": "ウィ貴公子 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%82%8A%E3%81%9D%E3%81%AA%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97_B.LEAGUE_2025-26_B1%E3%83%AA%E3%83%BC%E3%82%B0%E6%88%A6_%E7%AC%AC6%E7%AF%80_%E3%82%B5%E3%83%B3%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BC%E3%82%BA%E6%B8%8B%E8%B0%B7_vs_%E3%83%AC%E3%83%90%E3%83%B3%E3%82%AC%E5%8C%97%E6%B5%B7%E9%81%93_%E3%81%B2%E3%81%8C%E3%81%97%E3%82%93%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A_2025%E5%B9%B410%E6%9C%8829%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202510291646_IMG_0097.jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/%E3%82%8A%E3%81%9D%E3%81%AA%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97_B.LEAGUE_2025-26_B1%E3%83%AA%E3%83%BC%E3%82%B0%E6%88%A6_%E7%AC%AC6%E7%AF%80_%E3%82%B5%E3%83%B3%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BC%E3%82%BA%E6%B8%8B%E8%B0%B7_vs_%E3%83%AC%E3%83%90%E3%83%B3%E3%82%AC%E5%8C%97%E6%B5%B7%E9%81%93_%E3%81%B2%E3%81%8C%E3%81%97%E3%82%93%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A_2025%E5%B9%B410%E6%9C%8829%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202510291754_DSCN3343.jpg/1280px-thumbnail.jpg",
+        "credit": "ウィ貴公子 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%82%8A%E3%81%9D%E3%81%AA%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97_B.LEAGUE_2025-26_B1%E3%83%AA%E3%83%BC%E3%82%B0%E6%88%A6_%E7%AC%AC6%E7%AF%80_%E3%82%B5%E3%83%B3%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BC%E3%82%BA%E6%B8%8B%E8%B0%B7_vs_%E3%83%AC%E3%83%90%E3%83%B3%E3%82%AC%E5%8C%97%E6%B5%B7%E9%81%93_%E3%81%B2%E3%81%8C%E3%81%97%E3%82%93%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A_2025%E5%B9%B410%E6%9C%8829%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202510291754_DSCN3343.jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/%E3%82%8A%E3%81%9D%E3%81%AA%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97_B.LEAGUE_2025-26_B1%E3%83%AA%E3%83%BC%E3%82%B0%E6%88%A6_%E7%AC%AC6%E7%AF%80_%E3%82%B5%E3%83%B3%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BC%E3%82%BA%E6%B8%8B%E8%B0%B7_vs_%E3%83%AC%E3%83%90%E3%83%B3%E3%82%AC%E5%8C%97%E6%B5%B7%E9%81%93_%E3%81%B2%E3%81%8C%E3%81%97%E3%82%93%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A_2025%E5%B9%B410%E6%9C%8829%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202510291734_DSCN3231.jpg/1280px-thumbnail.jpg",
+        "credit": "ウィ貴公子 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%82%8A%E3%81%9D%E3%81%AA%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97_B.LEAGUE_2025-26_B1%E3%83%AA%E3%83%BC%E3%82%B0%E6%88%A6_%E7%AC%AC6%E7%AF%80_%E3%82%B5%E3%83%B3%E3%83%AD%E3%83%83%E3%82%AB%E3%83%BC%E3%82%BA%E6%B8%8B%E8%B0%B7_vs_%E3%83%AC%E3%83%90%E3%83%B3%E3%82%AC%E5%8C%97%E6%B5%B7%E9%81%93_%E3%81%B2%E3%81%8C%E3%81%97%E3%82%93%E3%82%A2%E3%83%AA%E3%83%BC%E3%83%8A_2025%E5%B9%B410%E6%9C%8829%E6%97%A5%E3%81%AE%E6%9D%B1%E4%BA%AC_202510291734_DSCN3231.jpg",
+        "width": 1200,
+        "height": 900
+      }
+    ]
   },
   "gotanda-library": {
     "wikiTitle": null,
@@ -1804,29 +2933,62 @@
     "real": []
   },
   "nerima-chuo-library": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
-  },
-  "itabashi-chuo-library": {
-    "wikiTitle": "板橋区立図書館",
-    "lang": "ja",
+    "wikiTitle": "練馬区立練馬図書館（生涯学習センター内）",
+    "lang": "commons",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/%E6%9D%BF%E6%A9%8B%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg/1280px-%E6%9D%BF%E6%A9%8B%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
-        "credit": "板橋区 / Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%BF%E6%A9%8B%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/08/Nerima_Library.jpg",
+        "credit": "星組背番号10 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nerima_Library.jpg",
         "width": 1200,
-        "height": 800
+        "height": 900
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8_1F%EF%BD%9E3F.jpg/1280px-%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8_1F%EF%BD%9E3F.jpg",
-        "credit": "Souka Kinmei / Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8_1F%EF%BD%9E3F.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Nerima_Library_2013-02-24.JPG/1280px-Nerima_Library_2013-02-24.JPG",
+        "credit": "Asanagi / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nerima_Library_2013-02-24.JPG",
         "width": 1200,
-        "height": 716
+        "height": 755
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Minami-tanaka_Library%2C_Nerima%2C_Tokyo_01.jpg",
+        "credit": "Tokorokoko / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minami-tanaka_Library,_Nerima,_Tokyo_01.jpg",
+        "width": 1200,
+        "height": 900
+      }
+    ]
+  },
+  "itabashi-chuo-library": {
+    "wikiTitle": "板橋区立中央図書館",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Itabashi_central_library_tokiwadai_2009.JPG/1280px-Itabashi_central_library_tokiwadai_2009.JPG",
+        "credit": "Kamemaru2000 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Itabashi_central_library_tokiwadai_2009.JPG",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Itabashicentrallibrary.jpg/1280px-Itabashicentrallibrary.jpg",
+        "credit": "Missmikage / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Itabashicentrallibrary.jpg",
+        "width": 1200,
+        "height": 1600
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Itabashi_City_Central_Library_ac.jpg/1280px-Itabashi_City_Central_Library_ac.jpg",
+        "credit": "Asturio Cantabrio / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Itabashi_City_Central_Library_ac.jpg",
+        "width": 1200,
+        "height": 800
       }
     ]
   },
@@ -1862,224 +3024,875 @@
   },
   "nakano-chuo-library": {
     "wikiTitle": "中野区立中央図書館",
-    "lang": "ja",
+    "lang": "commons",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Nakano_City_Central_Library_entrance_2023-01-09.jpg/1280px-Nakano_City_Central_Library_entrance_2023-01-09.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nakano_Chuo_Library_2013-02-07.JPG/1280px-Nakano_Chuo_Library_2013-02-07.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nakano_Chuo_Library_2013-02-07.JPG/1280px-Nakano_Chuo_Library_2013-02-07.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "credit": "Asanagi / Wikimedia Commons",
         "license": "CC0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nakano_City_Central_Library_entrance_2023-01-09.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nakano_Chuo_Library_2013-02-07.JPG",
+        "width": 1280,
+        "height": 981
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Nakano_City_Central_Library_ac_%281%29.jpg/1280px-Nakano_City_Central_Library_ac_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Nakano_City_Central_Library_ac_%281%29.jpg/1280px-Nakano_City_Central_Library_ac_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Asturio Cantabrio / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nakano_City_Central_Library_ac_(1).jpg",
+        "width": 1280,
+        "height": 851
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nakano_City_Central_Library_ac_%283%29.jpg/1280px-Nakano_City_Central_Library_ac_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nakano_City_Central_Library_ac_%283%29.jpg/1280px-Nakano_City_Central_Library_ac_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Asturio Cantabrio / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nakano_City_Central_Library_ac_(3).jpg",
+        "width": 1280,
+        "height": 851
+      }
+    ],
+    "curated": {
+      "Nakano Chuo Library 2013-02-07.JPG": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nakano_Chuo_Library_2013-02-07.JPG/1280px-Nakano_Chuo_Library_2013-02-07.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Nakano_Chuo_Library_2013-02-07.JPG/1280px-Nakano_Chuo_Library_2013-02-07.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Asanagi / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nakano_Chuo_Library_2013-02-07.JPG",
+        "width": 1280,
+        "height": 981
+      },
+      "Nakano City Central Library ac (1).jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Nakano_City_Central_Library_ac_%281%29.jpg/1280px-Nakano_City_Central_Library_ac_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Nakano_City_Central_Library_ac_%281%29.jpg/1280px-Nakano_City_Central_Library_ac_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Asturio Cantabrio / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nakano_City_Central_Library_ac_(1).jpg",
+        "width": 1280,
+        "height": 851
+      },
+      "Nakano City Central Library ac (3).jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nakano_City_Central_Library_ac_%283%29.jpg/1280px-Nakano_City_Central_Library_ac_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nakano_City_Central_Library_ac_%283%29.jpg/1280px-Nakano_City_Central_Library_ac_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Asturio Cantabrio / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nakano_City_Central_Library_ac_(3).jpg",
+        "width": 1280,
+        "height": 851
+      }
+    }
+  },
+  "suginami-chuo-library": {
+    "wikiTitle": "杉並区立中央図書館",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/%E6%9D%89%E4%B8%A6%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg/1280px-%E6%9D%89%E4%B8%A6%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
+        "credit": "Mochi GuP / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%89%E4%B8%A6%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
         "width": 1200,
         "height": 900
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Nakano_Zero_ac.jpg/1280px-Nakano_Zero_ac.jpg",
-        "credit": "Asturio Cantabrio / Wikimedia Commons",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/28/Suginami_City_Central_Library.jpg",
+        "credit": "Aoisora be / Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nakano_Zero_ac.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suginami_City_Central_Library.jpg",
         "width": 1200,
-        "height": 798
-      }
-    ]
-  },
-  "suginami-chuo-library": {
-    "wikiTitle": "杉並区立中央図書館",
-    "lang": "ja",
-    "real": [
-      {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Mahatma_Gandhi_in_Suginami_Ward.jpg/1280px-Mahatma_Gandhi_in_Suginami_Ward.jpg",
-        "credit": "Manish Prabhune / Wikimedia Commons",
-        "license": "CC0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mahatma_Gandhi_in_Suginami_Ward.jpg",
-        "width": 1200,
-        "height": 1542
+        "height": 901
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Suginami_City_Central_Library_ac_%283%29.jpg/1280px-Suginami_City_Central_Library_ac_%283%29.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Suginami_City_Central_Library_ac_%281%29.jpg/1280px-Suginami_City_Central_Library_ac_%281%29.jpg",
         "credit": "Asturio Cantabrio / Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suginami_City_Central_Library_ac_(3).jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suginami_City_Central_Library_ac_(1).jpg",
         "width": 1200,
         "height": 798
       }
     ]
   },
   "ota-sogo-taikan": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "EBARA WAVE アリーナおおた（大田区総合体育館）",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Ota_city_general_gymnasium.jpg/1280px-Ota_city_general_gymnasium.jpg",
+        "credit": "Chiba ryo / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ota_city_general_gymnasium.jpg",
+        "width": 1200,
+        "height": 923
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Ota_city_general_gymnasium_arena.JPG/1280px-Ota_city_general_gymnasium_arena.JPG",
+        "credit": "Chiba ryo / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ota_city_general_gymnasium_arena.JPG",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Ota_City_Gymnasium_1.jpg/1280px-Ota_City_Gymnasium_1.jpg",
+        "credit": "https://www.flickr.com/photos/tina_tokyo/ / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ota_City_Gymnasium_1.jpg",
+        "width": 1200,
+        "height": 798
+      }
+    ]
   },
   "nerima-sogo-taikan": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "練馬区立総合体育館",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Nerima_sogo_gymnasium.jpg/1280px-Nerima_sogo_gymnasium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Nerima_sogo_gymnasium.jpg/1280px-Nerima_sogo_gymnasium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Tengusabaki / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nerima_sogo_gymnasium.jpg",
+        "width": 1280,
+        "height": 960
+      }
+    ],
+    "curated": {
+      "Nerima sogo gymnasium.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Nerima_sogo_gymnasium.jpg/1280px-Nerima_sogo_gymnasium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Nerima_sogo_gymnasium.jpg/1280px-Nerima_sogo_gymnasium.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Tengusabaki / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nerima_sogo_gymnasium.jpg",
+        "width": 1280,
+        "height": 960
+      }
+    }
   },
   "arakawa-furalibrary": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "ゆいの森あらかわ（荒川区立中央図書館）",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Arakawa_Central_Library%2C_Tokyo.jpg/1280px-Arakawa_Central_Library%2C_Tokyo.jpg",
+        "credit": "Eugene Ormandy / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arakawa_Central_Library,_Tokyo.jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Yuinomori_Arakawa.jpg/1280px-Yuinomori_Arakawa.jpg",
+        "credit": "photo: Qurren (talk) Taken with Canon PowerShot G9 X / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yuinomori_Arakawa.jpg",
+        "width": 1200,
+        "height": 901
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/69/SA-04_station_number.png",
+        "credit": "CrossHatch / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SA-04_station_number.png",
+        "width": 1200,
+        "height": 1200
+      }
+    ]
   },
   "bunkyo-masago-chuo": {
     "wikiTitle": "文京区立真砂中央図書館",
     "lang": "ja",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bunkyo-Ku_Masago_Central_Library.JPG/1280px-Bunkyo-Ku_Masago_Central_Library.JPG",
-        "credit": "あばさー / Wikimedia Commons",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bunkyo-Ku_Masago_Central_Library.JPG/1280px-Bunkyo-Ku_Masago_Central_Library.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bunkyo-Ku_Masago_Central_Library.JPG/1280px-Bunkyo-Ku_Masago_Central_Library.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Abasaa / Wikimedia Commons",
         "license": "Public domain",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bunkyo-Ku_Masago_Central_Library.JPG",
-        "width": 1200,
-        "height": 900
+        "width": 1280,
+        "height": 960
       }
-    ]
+    ],
+    "curated": {
+      "Bunkyo-Ku Masago Central Library.JPG": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bunkyo-Ku_Masago_Central_Library.JPG/1280px-Bunkyo-Ku_Masago_Central_Library.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bunkyo-Ku_Masago_Central_Library.JPG/1280px-Bunkyo-Ku_Masago_Central_Library.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Abasaa / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bunkyo-Ku_Masago_Central_Library.JPG",
+        "width": 1280,
+        "height": 960
+      }
+    }
   },
   "shibuya-chuo-library": {
     "wikiTitle": "渋谷区立図書館",
     "lang": "ja",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Shibuya-City-Central-Library-02.jpg/1280px-Shibuya-City-Central-Library-02.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Shibuya-City-Central-Library-01.jpg/1280px-Shibuya-City-Central-Library-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Shibuya-City-Central-Library-01.jpg/1280px-Shibuya-City-Central-Library-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Rs1421 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shibuya-City-Central-Library-01.jpg",
+        "width": 1280,
+        "height": 854
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Shibuya-City-Central-Library-02.jpg/1280px-Shibuya-City-Central-Library-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Shibuya-City-Central-Library-02.jpg/1280px-Shibuya-City-Central-Library-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "credit": "Rs1421 / Wikimedia Commons",
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shibuya-City-Central-Library-02.jpg",
-        "width": 1200,
-        "height": 800
+        "width": 1280,
+        "height": 854
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/%E3%83%A1%E3%83%AB%E3%82%AF%E3%83%9E%E3%83%BC%E3%83%AB-24.JPG/1280px-%E3%83%A1%E3%83%AB%E3%82%AF%E3%83%9E%E3%83%BC%E3%83%AB-24.JPG",
-        "credit": "江戸村のとくぞう (Edomura no Tokuzo) / Wikimedia Commons",
-        "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%83%A1%E3%83%AB%E3%82%AF%E3%83%9E%E3%83%BC%E3%83%AB-24.JPG",
-        "width": 1200,
-        "height": 896
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Shibuya_City_Central_Library.jpg/1280px-Shibuya_City_Central_Library.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Shibuya_City_Central_Library.jpg/1280px-Shibuya_City_Central_Library.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Syced / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shibuya_City_Central_Library.jpg",
+        "width": 1280,
+        "height": 964
       }
-    ]
+    ],
+    "curated": {
+      "Shibuya-City-Central-Library-01.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Shibuya-City-Central-Library-01.jpg/1280px-Shibuya-City-Central-Library-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Shibuya-City-Central-Library-01.jpg/1280px-Shibuya-City-Central-Library-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Rs1421 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shibuya-City-Central-Library-01.jpg",
+        "width": 1280,
+        "height": 854
+      },
+      "Shibuya-City-Central-Library-02.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Shibuya-City-Central-Library-02.jpg/1280px-Shibuya-City-Central-Library-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Shibuya-City-Central-Library-02.jpg/1280px-Shibuya-City-Central-Library-02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Rs1421 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shibuya-City-Central-Library-02.jpg",
+        "width": 1280,
+        "height": 854
+      },
+      "Shibuya City Central Library.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Shibuya_City_Central_Library.jpg/1280px-Shibuya_City_Central_Library.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Shibuya_City_Central_Library.jpg/1280px-Shibuya_City_Central_Library.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Syced / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shibuya_City_Central_Library.jpg",
+        "width": 1280,
+        "height": 964
+      }
+    }
   },
   "katsushika-chuo-library": {
     "wikiTitle": "葛飾区立中央図書館",
-    "lang": "ja",
+    "lang": "commons",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Venasis_Kanamachi.jpg/1280px-Venasis_Kanamachi.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Venasis_Kanamachi.jpg/1280px-Venasis_Kanamachi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Venasis_Kanamachi.jpg/1280px-Venasis_Kanamachi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "credit": "Suikotei This photo was taken with Canon PowerShot A2200 / Wikimedia Commons",
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Venasis_Kanamachi.jpg",
-        "width": 1200,
-        "height": 900
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Venasis_kanamachi_overview_katsushika_2014.jpg/1280px-Venasis_kanamachi_overview_katsushika_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Venasis_kanamachi_overview_katsushika_2014.jpg/1280px-Venasis_kanamachi_overview_katsushika_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Kentin / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Venasis_kanamachi_overview_katsushika_2014.jpg",
+        "width": 1280,
+        "height": 1386
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/%E8%91%9B%E9%A3%BE%E5%8C%BA%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8-%E5%B9%B4%E6%9C%AB%E5%B9%B4%E5%A7%8B%E9%96%8B%E9%A4%A82012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/%E8%91%9B%E9%A3%BE%E5%8C%BA%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8-%E5%B9%B4%E6%9C%AB%E5%B9%B4%E5%A7%8B%E9%96%8B%E9%A4%A82012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "とほほのほ / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E8%91%9B%E9%A3%BE%E5%8C%BA%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8-%E5%B9%B4%E6%9C%AB%E5%B9%B4%E5%A7%8B%E9%96%8B%E9%A4%A82012.jpg",
+        "width": 1280,
+        "height": 2134
       }
-    ]
+    ],
+    "curated": {
+      "Venasis Kanamachi.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Venasis_Kanamachi.jpg/1280px-Venasis_Kanamachi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Venasis_Kanamachi.jpg/1280px-Venasis_Kanamachi.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Suikotei This photo was taken with Canon PowerShot A2200 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Venasis_Kanamachi.jpg",
+        "width": 1280,
+        "height": 960
+      },
+      "Venasis kanamachi overview katsushika 2014.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Venasis_kanamachi_overview_katsushika_2014.jpg/1280px-Venasis_kanamachi_overview_katsushika_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Venasis_kanamachi_overview_katsushika_2014.jpg/1280px-Venasis_kanamachi_overview_katsushika_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Kentin / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Venasis_kanamachi_overview_katsushika_2014.jpg",
+        "width": 1280,
+        "height": 1386
+      },
+      "葛飾区中央図書館-年末年始開館2012.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/%E8%91%9B%E9%A3%BE%E5%8C%BA%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8-%E5%B9%B4%E6%9C%AB%E5%B9%B4%E5%A7%8B%E9%96%8B%E9%A4%A82012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e1/%E8%91%9B%E9%A3%BE%E5%8C%BA%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8-%E5%B9%B4%E6%9C%AB%E5%B9%B4%E5%A7%8B%E9%96%8B%E9%A4%A82012.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "とほほのほ / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E8%91%9B%E9%A3%BE%E5%8C%BA%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8-%E5%B9%B4%E6%9C%AB%E5%B9%B4%E5%A7%8B%E9%96%8B%E9%A4%A82012.jpg",
+        "width": 1280,
+        "height": 2134
+      }
+    }
   },
   "chiyoda-hibiya-library": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "日比谷図書文化館（千代田区立）",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Hibiya_Library_%282006.05.05%29.jpg/1280px-Hibiya_Library_%282006.05.05%29.jpg",
+        "credit": "Lombroso / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hibiya_Library_(2006.05.05).jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Hibiya_library_1908.jpg/1280px-Hibiya_library_1908.jpg",
+        "credit": "小川一真写真部 / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hibiya_library_1908.jpg",
+        "width": 1200,
+        "height": 853
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Hibiya_Library_%26_Museum_-_Hibiya_Park_-_Tokyo%2C_Japan_-_DSC09767.JPG/1280px-Hibiya_Library_%26_Museum_-_Hibiya_Park_-_Tokyo%2C_Japan_-_DSC09767.JPG",
+        "credit": "Daderot / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hibiya_Library_%26_Museum_-_Hibiya_Park_-_Tokyo,_Japan_-_DSC09767.JPG",
+        "width": 1200,
+        "height": 800
+      }
+    ]
   },
   "meguro-ku-court-library": {
     "wikiTitle": null,
     "lang": null,
-    "real": []
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/%E7%9B%AE%E9%BB%92%E5%8C%BA%E6%B0%91%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC_%E5%B1%8B%E5%A4%96%E3%83%97%E3%83%BC%E3%83%AB.jpg/1280px-%E7%9B%AE%E9%BB%92%E5%8C%BA%E6%B0%91%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC_%E5%B1%8B%E5%A4%96%E3%83%97%E3%83%BC%E3%83%AB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/%E7%9B%AE%E9%BB%92%E5%8C%BA%E6%B0%91%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC_%E5%B1%8B%E5%A4%96%E3%83%97%E3%83%BC%E3%83%AB.jpg/1280px-%E7%9B%AE%E9%BB%92%E5%8C%BA%E6%B0%91%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC_%E5%B1%8B%E5%A4%96%E3%83%97%E3%83%BC%E3%83%AB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Syced / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%9B%AE%E9%BB%92%E5%8C%BA%E6%B0%91%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC_%E5%B1%8B%E5%A4%96%E3%83%97%E3%83%BC%E3%83%AB.jpg",
+        "width": 1280,
+        "height": 960
+      }
+    ],
+    "curated": {
+      "目黒区民センター 屋外プール.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/%E7%9B%AE%E9%BB%92%E5%8C%BA%E6%B0%91%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC_%E5%B1%8B%E5%A4%96%E3%83%97%E3%83%BC%E3%83%AB.jpg/1280px-%E7%9B%AE%E9%BB%92%E5%8C%BA%E6%B0%91%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC_%E5%B1%8B%E5%A4%96%E3%83%97%E3%83%BC%E3%83%AB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/%E7%9B%AE%E9%BB%92%E5%8C%BA%E6%B0%91%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC_%E5%B1%8B%E5%A4%96%E3%83%97%E3%83%BC%E3%83%AB.jpg/1280px-%E7%9B%AE%E9%BB%92%E5%8C%BA%E6%B0%91%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC_%E5%B1%8B%E5%A4%96%E3%83%97%E3%83%BC%E3%83%AB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Syced / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E7%9B%AE%E9%BB%92%E5%8C%BA%E6%B0%91%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC_%E5%B1%8B%E5%A4%96%E3%83%97%E3%83%BC%E3%83%AB.jpg",
+        "width": 1280,
+        "height": 960
+      }
+    }
   },
   "kita-chuo-library": {
     "wikiTitle": "北区立中央図書館",
     "lang": "ja",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Kita-Ku_Central_Library.JPG",
-        "credit": "あばさー / Wikimedia Commons",
-        "license": "Public domain",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kita-Ku_Central_Library.JPG",
-        "width": 1200,
-        "height": 900
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Kita_central_library_tokyo.JPG/1280px-Kita_central_library_tokyo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Kita_central_library_tokyo.JPG/1280px-Kita_central_library_tokyo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Kamemaru2000 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kita_central_library_tokyo.JPG",
+        "width": 1280,
+        "height": 960
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/%E3%83%AA%E3%83%99%E3%83%83%E3%83%88%E6%89%93%E3%81%A1%E3%81%AE%E9%89%84%E9%AA%A8%E6%94%AF%E6%9F%B1.jpg/1280px-%E3%83%AA%E3%83%99%E3%83%83%E3%83%88%E6%89%93%E3%81%A1%E3%81%AE%E9%89%84%E9%AA%A8%E6%94%AF%E6%9F%B1.jpg",
-        "credit": "Souka Kinmei / Wikimedia Commons",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kita-City-Central-Library-2017021901.jpg/1280px-Kita-City-Central-Library-2017021901.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kita-City-Central-Library-2017021901.jpg/1280px-Kita-City-Central-Library-2017021901.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Hasec / Wikimedia Commons",
         "license": "CC0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%83%AA%E3%83%99%E3%83%83%E3%83%88%E6%89%93%E3%81%A1%E3%81%AE%E9%89%84%E9%AA%A8%E6%94%AF%E6%9F%B1.jpg",
-        "width": 1200,
-        "height": 675
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kita-City-Central-Library-2017021901.jpg",
+        "width": 1280,
+        "height": 720
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/%E4%B8%80%E8%88%AC%E6%9B%B8%E6%9E%B6%E3%81%AE%E6%A7%98%E5%AD%90.jpg/1280px-%E4%B8%80%E8%88%AC%E6%9B%B8%E6%9E%B6%E3%81%AE%E6%A7%98%E5%AD%90.jpg",
-        "credit": "Souka Kinmei / Wikimedia Commons",
-        "license": "CC0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%B8%80%E8%88%AC%E6%9B%B8%E6%9E%B6%E3%81%AE%E6%A7%98%E5%AD%90.jpg",
-        "width": 1200,
-        "height": 675
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/%E5%8C%97%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8_%282519898551%29.jpg/1280px-%E5%8C%97%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8_%282519898551%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/%E5%8C%97%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8_%282519898551%29.jpg/1280px-%E5%8C%97%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8_%282519898551%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Takanori Nakanowatari from Tokyo, Japan / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8_(2519898551).jpg",
+        "width": 1280,
+        "height": 853
       }
-    ]
+    ],
+    "curated": {
+      "Kita central library tokyo.JPG": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Kita_central_library_tokyo.JPG/1280px-Kita_central_library_tokyo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Kita_central_library_tokyo.JPG/1280px-Kita_central_library_tokyo.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Kamemaru2000 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kita_central_library_tokyo.JPG",
+        "width": 1280,
+        "height": 960
+      },
+      "Kita-City-Central-Library-2017021901.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kita-City-Central-Library-2017021901.jpg/1280px-Kita-City-Central-Library-2017021901.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Kita-City-Central-Library-2017021901.jpg/1280px-Kita-City-Central-Library-2017021901.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Hasec / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kita-City-Central-Library-2017021901.jpg",
+        "width": 1280,
+        "height": 720
+      },
+      "北区立中央図書館 (2519898551).jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/%E5%8C%97%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8_%282519898551%29.jpg/1280px-%E5%8C%97%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8_%282519898551%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/%E5%8C%97%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8_%282519898551%29.jpg/1280px-%E5%8C%97%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8_%282519898551%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Takanori Nakanowatari from Tokyo, Japan / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%8C%97%E5%8C%BA%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8_(2519898551).jpg",
+        "width": 1280,
+        "height": 853
+      }
+    }
   },
   "minato-mita-library": {
     "wikiTitle": "港区立図書館",
     "lang": "ja",
     "real": [
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Minatokuritsu_kounan_tosyokan.jpg/1280px-Minatokuritsu_kounan_tosyokan.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Minato_City_Minato_Library_ac_%281%29.jpg/1280px-Minato_City_Minato_Library_ac_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Minato_City_Minato_Library_ac_%281%29.jpg/1280px-Minato_City_Minato_Library_ac_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Asturio Cantabrio / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minato_City_Minato_Library_ac_(1).jpg",
+        "width": 1280,
+        "height": 851
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Minato_City_Minato_Library_ac_%282%29.jpg/1280px-Minato_City_Minato_Library_ac_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Minato_City_Minato_Library_ac_%282%29.jpg/1280px-Minato_City_Minato_Library_ac_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Asturio Cantabrio / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minato_City_Minato_Library_ac_(2).jpg",
+        "width": 1280,
+        "height": 851
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Minato_City_Minato_Library_ac_%283%29.jpg/1280px-Minato_City_Minato_Library_ac_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Minato_City_Minato_Library_ac_%283%29.jpg/1280px-Minato_City_Minato_Library_ac_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Asturio Cantabrio / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minato_City_Minato_Library_ac_(3).jpg",
+        "width": 1280,
+        "height": 851
+      }
+    ],
+    "curated": {
+      "Minato City Minato Library ac (1).jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Minato_City_Minato_Library_ac_%281%29.jpg/1280px-Minato_City_Minato_Library_ac_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Minato_City_Minato_Library_ac_%281%29.jpg/1280px-Minato_City_Minato_Library_ac_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Asturio Cantabrio / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minato_City_Minato_Library_ac_(1).jpg",
+        "width": 1280,
+        "height": 851
+      },
+      "Minato City Minato Library ac (2).jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Minato_City_Minato_Library_ac_%282%29.jpg/1280px-Minato_City_Minato_Library_ac_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Minato_City_Minato_Library_ac_%282%29.jpg/1280px-Minato_City_Minato_Library_ac_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Asturio Cantabrio / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minato_City_Minato_Library_ac_(2).jpg",
+        "width": 1280,
+        "height": 851
+      },
+      "Minato City Minato Library ac (3).jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Minato_City_Minato_Library_ac_%283%29.jpg/1280px-Minato_City_Minato_Library_ac_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Minato_City_Minato_Library_ac_%283%29.jpg/1280px-Minato_City_Minato_Library_ac_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Asturio Cantabrio / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minato_City_Minato_Library_ac_(3).jpg",
+        "width": 1280,
+        "height": 851
+      }
+    }
+  },
+  "komazawa-playground": {
+    "wikiTitle": "駒沢オリンピック公園 遊具広場",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Old_equipment_in_Komazawa_Olympic_Park_2.jpg/1280px-Old_equipment_in_Komazawa_Olympic_Park_2.jpg",
+        "credit": "Syced / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_equipment_in_Komazawa_Olympic_Park_2.jpg",
+        "width": 1200,
+        "height": 1594
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Old_equipment_in_Komazawa_Olympic_Park_3.jpg/1280px-Old_equipment_in_Komazawa_Olympic_Park_3.jpg",
+        "credit": "Syced / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_equipment_in_Komazawa_Olympic_Park_3.jpg",
+        "width": 1200,
+        "height": 1594
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Old_equipment_in_Komazawa_Olympic_Park_5.jpg/1280px-Old_equipment_in_Komazawa_Olympic_Park_5.jpg",
+        "credit": "Syced / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_equipment_in_Komazawa_Olympic_Park_5.jpg",
+        "width": 1200,
+        "height": 1594
+      }
+    ]
+  },
+  "sarue-playground": {
+    "wikiTitle": "猿江恩賜公園 遊具エリア",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/%E9%83%BD%E7%AB%8B%E7%8C%BF%E6%B1%9F%E6%81%A9%E8%B3%9C%E5%85%AC%E5%9C%92-1_-_panoramio.jpg/1280px-%E9%83%BD%E7%AB%8B%E7%8C%BF%E6%B1%9F%E6%81%A9%E8%B3%9C%E5%85%AC%E5%9C%92-1_-_panoramio.jpg",
+        "credit": "koji_h / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E9%83%BD%E7%AB%8B%E7%8C%BF%E6%B1%9F%E6%81%A9%E8%B3%9C%E5%85%AC%E5%9C%92-1_-_panoramio.jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Sarue_onshi_park.jpg/1280px-Sarue_onshi_park.jpg",
+        "credit": "Wikimedia Commons / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sarue_onshi_park.jpg",
+        "width": 1200,
+        "height": 1741
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Sarue_Park-3.jpg/1280px-Sarue_Park-3.jpg",
+        "credit": "江戸村のとくぞう / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sarue_Park-3.jpg",
+        "width": 1200,
+        "height": 779
+      }
+    ]
+  },
+  "minamiikebukuro-park": {
+    "wikiTitle": "南池袋公園 プレイパーク",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Minami_ikebukuro_kouen.jpg/1280px-Minami_ikebukuro_kouen.jpg",
         "credit": "コヲダ / Wikimedia Commons",
         "license": "CC BY-SA 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minatokuritsu_kounan_tosyokan.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minami_ikebukuro_kouen.jpg",
+        "width": 1200,
+        "height": 764
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Minami_Ikebukuro_Park_%2852480583012%29.jpg/1280px-Minami_Ikebukuro_Park_%2852480583012%29.jpg",
+        "credit": "Dick Thomas Johnson from Tokyo, Japan / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minami_Ikebukuro_Park_(52480583012).jpg",
         "width": 1200,
         "height": 800
       },
       {
-        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/%E6%B8%AF%E5%8C%BA%E7%AB%8B%E9%AB%98%E8%BC%AA%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg/1280px-%E6%B8%AF%E5%8C%BA%E7%AB%8B%E9%AB%98%E8%BC%AA%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
-        "credit": "Syced / Wikimedia Commons",
-        "license": "CC0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%B8%AF%E5%8C%BA%E7%AB%8B%E9%AB%98%E8%BC%AA%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Minami_Ikebukuro_Park_%2852481629048%29.jpg/1280px-Minami_Ikebukuro_Park_%2852481629048%29.jpg",
+        "credit": "Dick Thomas Johnson from Tokyo, Japan / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minami_Ikebukuro_Park_(52481629048).jpg",
+        "width": 1200,
+        "height": 1800
+      }
+    ]
+  },
+  "toyama-park-playground": {
+    "wikiTitle": "戸山公園 遊具広場",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/HakoneYama2005-6ToyamaKoen.jpg",
+        "credit": "No machine-readable author provided. Kinori assumed (based on copyright claims). / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:HakoneYama2005-6ToyamaKoen.jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Park_toyama.JPG",
+        "credit": "koji_h / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Park_toyama.JPG",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Toyama_park_okubo_area_2009.JPG/1280px-Toyama_park_okubo_area_2009.JPG",
+        "credit": "User:Kentin / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyama_park_okubo_area_2009.JPG",
         "width": 1200,
         "height": 900
       }
     ]
   },
-  "komazawa-playground": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
-  },
-  "sarue-playground": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
-  },
-  "minamiikebukuro-park": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
-  },
-  "toyama-park-playground": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
-  },
   "tetsugakudo-park": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "哲学堂公園 遊具広場",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/%E4%B8%AD%E9%87%8E%E5%8C%BA%E7%AB%8B%E5%93%B2%E5%AD%A6%E5%A0%82%E5%85%AC%E5%9C%92%EF%BC%88%E5%9B%9B%E8%81%96%E5%A0%82%EF%BC%89_-_panoramio.jpg/1280px-%E4%B8%AD%E9%87%8E%E5%8C%BA%E7%AB%8B%E5%93%B2%E5%AD%A6%E5%A0%82%E5%85%AC%E5%9C%92%EF%BC%88%E5%9B%9B%E8%81%96%E5%A0%82%EF%BC%89_-_panoramio.jpg",
+        "credit": "koji_h / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E4%B8%AD%E9%87%8E%E5%8C%BA%E7%AB%8B%E5%93%B2%E5%AD%A6%E5%A0%82%E5%85%AC%E5%9C%92%EF%BC%88%E5%9B%9B%E8%81%96%E5%A0%82%EF%BC%89_-_panoramio.jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Shiseido_tetsugakudo.jpg/1280px-Shiseido_tetsugakudo.jpg",
+        "credit": "Wikimedia Commons / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shiseido_tetsugakudo.jpg",
+        "width": 1200,
+        "height": 820
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Sansoen_tetsugakudo.jpg/1280px-Sansoen_tetsugakudo.jpg",
+        "credit": "Wikimedia Commons / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sansoen_tetsugakudo.jpg",
+        "width": 1200,
+        "height": 833
+      }
+    ]
   },
   "gyosen-park": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "行船公園 遊具エリア",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gyosen-park_genshin-an-house.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gyosen-park_genshin-an-house.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Comyu / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gyosen-park_genshin-an-house.jpg",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Edogawa_Shizen_Zoo.jpg/1280px-Edogawa_Shizen_Zoo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Edogawa_Shizen_Zoo.jpg/1280px-Edogawa_Shizen_Zoo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "しんぎんぐきゃっと / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edogawa_Shizen_Zoo.jpg",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%85%89%E5%85%AC%E7%8C%AE%E4%B8%8A%E7%81%AF%E7%AF%AD.jpg/1280px-%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%85%89%E5%85%AC%E7%8C%AE%E4%B8%8A%E7%81%AF%E7%AF%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%85%89%E5%85%AC%E7%8C%AE%E4%B8%8A%E7%81%AF%E7%AF%AD.jpg/1280px-%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%85%89%E5%85%AC%E7%8C%AE%E4%B8%8A%E7%81%AF%E7%AF%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "しんぎんぐきゃっと / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%85%89%E5%85%AC%E7%8C%AE%E4%B8%8A%E7%81%AF%E7%AF%AD.jpg",
+        "width": 1280,
+        "height": 960
+      }
+    ],
+    "curated": {
+      "Gyosen-park genshin-an-house.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gyosen-park_genshin-an-house.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Gyosen-park_genshin-an-house.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "credit": "Comyu / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gyosen-park_genshin-an-house.jpg",
+        "width": 1280,
+        "height": 960
+      },
+      "Edogawa Shizen Zoo.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Edogawa_Shizen_Zoo.jpg/1280px-Edogawa_Shizen_Zoo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Edogawa_Shizen_Zoo.jpg/1280px-Edogawa_Shizen_Zoo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "しんぎんぐきゃっと / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Edogawa_Shizen_Zoo.jpg",
+        "width": 1280,
+        "height": 960
+      },
+      "徳川家光公献上灯篭.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%85%89%E5%85%AC%E7%8C%AE%E4%B8%8A%E7%81%AF%E7%AF%AD.jpg/1280px-%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%85%89%E5%85%AC%E7%8C%AE%E4%B8%8A%E7%81%AF%E7%AF%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%85%89%E5%85%AC%E7%8C%AE%E4%B8%8A%E7%81%AF%E7%AF%AD.jpg/1280px-%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%85%89%E5%85%AC%E7%8C%AE%E4%B8%8A%E7%81%AF%E7%AF%AD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "しんぎんぐきゃっと / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%BE%B3%E5%B7%9D%E5%AE%B6%E5%85%89%E5%85%AC%E7%8C%AE%E4%B8%8A%E7%81%AF%E7%AF%AD.jpg",
+        "width": 1280,
+        "height": 960
+      }
+    }
   },
   "shakujii-park-playground": {
     "wikiTitle": null,
     "lang": null,
-    "real": []
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Shakujii_Park_-_entrance_-_may_10_2015.jpg/1280px-Shakujii_Park_-_entrance_-_may_10_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Shakujii_Park_-_entrance_-_may_10_2015.jpg/1280px-Shakujii_Park_-_entrance_-_may_10_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Nesnad / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shakujii_Park_-_entrance_-_may_10_2015.jpg",
+        "width": 1280,
+        "height": 906
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Nerima_Syakujii_park_sampoji_pond.jpg/1280px-Nerima_Syakujii_park_sampoji_pond.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Nerima_Syakujii_park_sampoji_pond.jpg/1280px-Nerima_Syakujii_park_sampoji_pond.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ribbon / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nerima_Syakujii_park_sampoji_pond.jpg",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Shakujii_Park_%40_Nerima_%289669708911%29.jpg/1280px-Shakujii_Park_%40_Nerima_%289669708911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Shakujii_Park_%40_Nerima_%289669708911%29.jpg/1280px-Shakujii_Park_%40_Nerima_%289669708911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Guilhem Vellut from Annecy, France / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shakujii_Park_%40_Nerima_(9669708911).jpg",
+        "width": 1280,
+        "height": 960
+      }
+    ],
+    "curated": {
+      "Shakujii Park - entrance - may 10 2015.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Shakujii_Park_-_entrance_-_may_10_2015.jpg/1280px-Shakujii_Park_-_entrance_-_may_10_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Shakujii_Park_-_entrance_-_may_10_2015.jpg/1280px-Shakujii_Park_-_entrance_-_may_10_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Nesnad / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shakujii_Park_-_entrance_-_may_10_2015.jpg",
+        "width": 1280,
+        "height": 906
+      },
+      "Nerima Syakujii park sampoji pond.jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Nerima_Syakujii_park_sampoji_pond.jpg/1280px-Nerima_Syakujii_park_sampoji_pond.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Nerima_Syakujii_park_sampoji_pond.jpg/1280px-Nerima_Syakujii_park_sampoji_pond.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Ribbon / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nerima_Syakujii_park_sampoji_pond.jpg",
+        "width": 1280,
+        "height": 853
+      },
+      "Shakujii Park @ Nerima (9669708911).jpg": {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Shakujii_Park_%40_Nerima_%289669708911%29.jpg/1280px-Shakujii_Park_%40_Nerima_%289669708911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Shakujii_Park_%40_Nerima_%289669708911%29.jpg/1280px-Shakujii_Park_%40_Nerima_%289669708911%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "credit": "Guilhem Vellut from Annecy, France / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shakujii_Park_%40_Nerima_(9669708911).jpg",
+        "width": 1280,
+        "height": 960
+      }
+    }
   },
   "arakawa-nature-park": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "荒川自然公園 遊具エリア",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Arakawa_Nature_Park.JPG/1280px-Arakawa_Nature_Park.JPG",
+        "credit": "Abasaa / Wikimedia Commons",
+        "license": "Public domain",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arakawa_Nature_Park.JPG",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Rose_%40_Arakawa_Shizen_Park_%40_Arakawa_%289446940703%29.jpg/1280px-Rose_%40_Arakawa_Shizen_Park_%40_Arakawa_%289446940703%29.jpg",
+        "credit": "Guilhem Vellut from Annecy, France / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rose_@_Arakawa_Shizen_Park_@_Arakawa_(9446940703).jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Arakawa_Shizen_Park_%40_Arakawa_%289446939915%29.jpg/1280px-Arakawa_Shizen_Park_%40_Arakawa_%289446939915%29.jpg",
+        "credit": "Guilhem Vellut from Annecy, France / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arakawa_Shizen_Park_@_Arakawa_(9446939915).jpg",
+        "width": 1200,
+        "height": 1600
+      }
+    ]
   },
   "sky-tree-event-plaza": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "東京スカイツリータウン イベント広場",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%84%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%A6%E3%83%B3_2017_%E3%82%A2%E3%82%A4%E3%82%B9%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%88%E3%83%91%E3%83%BC%E3%82%AF_%2833128617196%29.jpg/1280px-%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%84%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%A6%E3%83%B3_2017_%E3%82%A2%E3%82%A4%E3%82%B9%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%88%E3%83%91%E3%83%BC%E3%82%AF_%2833128617196%29.jpg",
+        "credit": "bangdoll from Taipei,Taiwan / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E4%BA%AC%E3%82%B9%E3%82%AB%E3%82%A4%E3%83%84%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%A6%E3%83%B3_2017_%E3%82%A2%E3%82%A4%E3%82%B9%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%88%E3%83%91%E3%83%BC%E3%82%AF_(33128617196).jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Tokyo_Skytree_Town_%2853080458902%29.jpg/1280px-Tokyo_Skytree_Town_%2853080458902%29.jpg",
+        "credit": "Dick Thomas Johnson from Tokyo, Japan / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Skytree_Town_(53080458902).jpg",
+        "width": 1200,
+        "height": 1800
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Tokyo_Skytree_Town_%2853081429240%29.jpg/1280px-Tokyo_Skytree_Town_%2853081429240%29.jpg",
+        "credit": "Dick Thomas Johnson from Tokyo, Japan / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Skytree_Town_(53081429240).jpg",
+        "width": 1200,
+        "height": 1800
+      }
+    ]
   },
   "odaiba-event-plaza": {
-    "wikiTitle": null,
-    "lang": null,
-    "real": []
+    "wikiTitle": "お台場 ダイバーシティ イベント広場",
+    "lang": "commons",
+    "real": [
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Diver_City_Tokyo_-02.jpg/1280px-Diver_City_Tokyo_-02.jpg",
+        "credit": "Aimaimyi / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diver_City_Tokyo_-02.jpg",
+        "width": 1200,
+        "height": 900
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Diver_City_Tokyo_-03.jpg/1280px-Diver_City_Tokyo_-03.jpg",
+        "credit": "Aimaimyi / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diver_City_Tokyo_-03.jpg",
+        "width": 1200,
+        "height": 538
+      },
+      {
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Zepp_DiverCity.JPG/1280px-Zepp_DiverCity.JPG",
+        "credit": "Own work / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zepp_DiverCity.JPG",
+        "width": 1200,
+        "height": 799
+      }
+    ]
   },
   "lalaport-tokyo-bay": {
     "wikiTitle": "ららぽーとTOKYO-BAY",

@@ -1,13 +1,16 @@
-﻿import { useMemo, useState } from 'react';
-import { useAppTranslation } from '../hooks/useAppTranslation';
+import { lazy, Suspense, useMemo, useState } from 'react';
 import { calculateAgeMonths } from '@kodoko/domain';
-import { PlacesMap } from '../components/places/PlacesMap';
+import { useAppTranslation } from '../hooks/useAppTranslation';
 import { PlaceFilterChips } from '../components/places/PlaceFilterChips';
 import { PlaceBottomSheet } from '../components/places/PlaceBottomSheet';
 import { usePlaces, usePlacesFilters } from '../hooks/usePlaces';
-import { useGeolocation, DEFAULT_CENTER } from '../hooks/useGeolocation';
+import { DEFAULT_CENTER, useGeolocation } from '../hooks/useGeolocation';
 import { useActiveChild } from '../hooks/useActiveChild';
 import { filterPlaces } from '../lib/placeFilters';
+
+const PlacesMap = lazy(() =>
+  import('../components/places/PlacesMap').then((mod) => ({ default: mod.PlacesMap })),
+);
 
 export function PlacesMapPage() {
   const { t } = useAppTranslation();
@@ -27,7 +30,11 @@ export function PlacesMapPage() {
   const center = coords ?? DEFAULT_CENTER;
 
   if (isLoading) {
-    return <div className="flex min-h-0 flex-1 items-center justify-center text-sm text-gray-400">{t('common.loading')}</div>;
+    return (
+      <div className="flex min-h-0 flex-1 items-center justify-center text-sm text-gray-400">
+        {t('common.loading')}
+      </div>
+    );
   }
 
   if (isError) {
@@ -44,15 +51,23 @@ export function PlacesMapPage() {
   return (
     <div className="relative flex min-h-0 flex-1 flex-col">
       <div className="relative min-h-0 flex-1 overflow-hidden">
-        <PlacesMap
-          places={filtered}
-          selectedPlaceId={filters.placeId}
-          onSelectPlace={setPlaceId}
-          initialCenter={center}
-          initialZoom={coords ? 13 : 10}
-          userLocation={coords}
-          onStyleError={() => setTileError(true)}
-        />
+        <Suspense
+          fallback={
+            <div className="flex h-full items-center justify-center bg-gray-100 text-sm text-gray-500">
+              {t('common.loading')}
+            </div>
+          }
+        >
+          <PlacesMap
+            places={filtered}
+            selectedPlaceId={filters.placeId}
+            onSelectPlace={setPlaceId}
+            initialCenter={center}
+            initialZoom={coords ? 13 : 10}
+            userLocation={coords}
+            onStyleError={() => setTileError(true)}
+          />
+        </Suspense>
 
         {tileError && (
           <p className="absolute left-3 top-16 z-[6] max-w-[60%] rounded bg-amber-50 px-2 py-1 text-xs text-amber-700">
@@ -60,7 +75,7 @@ export function PlacesMapPage() {
           </p>
         )}
 
-        <div className="pointer-events-none absolute inset-x-0 top-0 z-[5] flex items-start gap-2 p-3">
+        <div className="pointer-events-none absolute inset-x-0 top-0 z-[20] flex items-start gap-2 p-3">
           <div className="pointer-events-auto w-fit">
             <PlaceFilterChips
               filters={filters}
@@ -74,12 +89,13 @@ export function PlacesMapPage() {
           <button
             type="button"
             onClick={request}
-            className="pointer-events-auto flex items-center gap-1 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 shadow-md"
+            className="pointer-events-auto flex min-h-11 items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 shadow-md"
           >
             <span aria-hidden>📍</span>
             {t('places.locate')}
           </button>
         </div>
+
         {requested && status === 'denied' && (
           <p className="absolute bottom-2 left-3 z-[6] rounded bg-amber-50 px-2 py-1 text-xs text-amber-700">
             {t('places.locationDenied')}
@@ -92,10 +108,8 @@ export function PlacesMapPage() {
           places={filtered}
           selectedPlaceId={filters.placeId}
           onSelect={setPlaceId}
-          total={filtered.length}
         />
       </div>
     </div>
   );
 }
-

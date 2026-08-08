@@ -20,21 +20,30 @@ import { AgeLabel } from '../components/AgeLabel';
 import { ChildAvatar } from '../components/ChildAvatar';
 import { CATEGORY_ICON } from '../components/places/categoryMeta';
 
-const TRANSPORT_OPTIONS: { value: TransportMode | undefined; key: string }[] = [
-  { value: undefined, key: 'home.transportNone' },
-  { value: 'walking', key: 'home.transportWalking' },
-  { value: 'bicycle', key: 'home.transportBicycle' },
-  { value: 'car', key: 'home.transportCar' },
-  { value: 'train', key: 'home.transportTrain' },
+const TRANSPORT_OPTIONS: { value: TransportMode | undefined; key: string; emoji: string }[] = [
+  { value: undefined, key: 'home.transportNone', emoji: '🧭' },
+  { value: 'walking', key: 'home.transportWalking', emoji: '🚶' },
+  { value: 'bicycle', key: 'home.transportBicycle', emoji: '🚲' },
+  { value: 'car', key: 'home.transportCar', emoji: '🚗' },
+  { value: 'train', key: 'home.transportTrain', emoji: '🚃' },
 ];
 
 // 3 人以上視為多人同行，觸發 group-play 加分。
-const GROUP_OPTIONS: { value: number | undefined; key: string }[] = [
-  { value: undefined, key: 'home.groupNone' },
-  { value: 1, key: 'home.group1' },
-  { value: 2, key: 'home.group2' },
-  { value: 3, key: 'home.group3' },
+const GROUP_OPTIONS: { value: number | undefined; key: string; emoji: string }[] = [
+  { value: undefined, key: 'home.groupNone', emoji: '👪' },
+  { value: 1, key: 'home.group1', emoji: '1️⃣' },
+  { value: 2, key: 'home.group2', emoji: '2️⃣' },
+  { value: 3, key: 'home.group3', emoji: '3️⃣' },
 ];
+
+const WEATHER_EMOJI = {
+  sunny: '☀️',
+  cloudy: '☁️',
+  rain: '☔',
+  snow: '❄️',
+  storm: '⛈️',
+  unknown: '🌤️',
+} as const;
 
 const POLICY_STATUS_PRIORITY: Record<PolicyTaskState['status'], number> = {
   new: 0,
@@ -48,38 +57,44 @@ function policyStatusPriority(status: PolicyTaskState['status']): number {
   return POLICY_STATUS_PRIORITY[status];
 }
 
-function ChipGroup<T>({
+function DropdownPill<T extends string | number | undefined>({
   label,
+  emoji,
   options,
   value,
   onChange,
   tKey,
 }: {
   label: string;
-  options: { value: T; key: string }[];
+  emoji: string;
+  options: { value: T; key: string; emoji: string }[];
   value: T | undefined;
   onChange: (next: T | undefined) => void;
   tKey: (key: string) => string;
 }) {
+  const selectedValue = value === undefined ? '' : String(value);
+
   return (
-    <div className="flex flex-wrap items-center gap-1 text-xs text-gray-500">
-      <span className="mr-1">{label}</span>
-      {options.map((option) => {
-        const active = option.value === value;
-        return (
-          <button
-            key={option.key}
-            type="button"
-            onClick={() => onChange(active ? undefined : option.value)}
-            className={`rounded-full border px-2 py-0.5 ${
-              active ? 'border-brand-700 bg-brand-700 text-white' : 'border-gray-300 bg-white text-gray-600'
-            }`}
-          >
+    <label className="flex min-h-11 min-w-0 items-center gap-2 rounded-xl border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm focus-within:border-brand-500 focus-within:ring-2 focus-within:ring-brand-100">
+      <span aria-hidden="true" className="text-base">
+        {emoji}
+      </span>
+      <span className="shrink-0 whitespace-nowrap text-gray-600">{label}</span>
+      <select
+        value={selectedValue}
+        onChange={(event) => {
+          const next = options.find((option) => (option.value === undefined ? '' : String(option.value)) === event.target.value);
+          onChange(next?.value);
+        }}
+        className="min-w-0 flex-1 bg-transparent text-right text-sm font-semibold text-gray-900 outline-none"
+      >
+        {options.map((option) => (
+          <option key={option.key} value={option.value === undefined ? '' : String(option.value)}>
             {tKey(option.key)}
-          </button>
-        );
-      })}
-    </div>
+          </option>
+        ))}
+      </select>
+    </label>
   );
 }
 
@@ -160,6 +175,10 @@ export function HomePage() {
     return t('home.place', { prefecture: t('home.prefecture'), city });
   }
 
+  function locationLabel(key: 'home.currentLocation' | 'home.residence'): string {
+    return t(key, { place: '' }).trim();
+  }
+
   function renderLocationInfo() {
     if (recommendationLocation.source === 'gps') {
       const nearest = findNearestMunicipality(
@@ -168,26 +187,39 @@ export function HomePage() {
       );
       if (nearest) {
         return (
-          <p className="mt-1 text-xs text-gray-500">
-            {t('home.currentLocation', { place: locationPlace(nearest.nameJa) })}
-          </p>
+          <div className="flex items-center justify-between gap-3 rounded-xl border border-sky-200 bg-sky-50 px-3 py-2 text-sm text-sky-900">
+            <span className="flex shrink-0 items-center gap-2">
+              <span aria-hidden="true">📍</span>
+              <span>{locationLabel('home.currentLocation')}</span>
+            </span>
+            <span className="min-w-0 flex-1 text-right font-semibold">{locationPlace(nearest.nameJa)}</span>
+          </div>
         );
       }
     }
     if (recommendationLocation.source === 'municipality') {
       return (
-        <p className="mt-1 text-xs text-gray-500">
-          {t('home.residence', { place: locationPlace(recommendationLocation.municipality.nameJa) })}
-        </p>
+        <div className="flex items-center justify-between gap-3 rounded-xl border border-sky-200 bg-sky-50 px-3 py-2 text-sm text-sky-900">
+          <span className="flex shrink-0 items-center gap-2">
+            <span aria-hidden="true">🏠</span>
+            <span>{locationLabel('home.residence')}</span>
+          </span>
+          <span className="min-w-0 flex-1 text-right font-semibold">
+            {locationPlace(recommendationLocation.municipality.nameJa)}
+          </span>
+        </div>
       );
     }
     return (
-      <p className="mt-1 flex items-center gap-1 text-xs text-gray-500">
-        <span>{t('home.noLocation')}</span>
+      <div className="flex items-center justify-between gap-3 rounded-xl border border-gray-200 bg-gray-50 px-3 py-2 text-sm text-gray-600">
+        <span className="flex min-w-0 items-center gap-2">
+          <span aria-hidden="true">⚙️</span>
+          <span>{t('home.noLocation')}</span>
+        </span>
         <Link to="/settings" className="font-medium text-brand-700">
           {t('home.toSettings')}
         </Link>
-      </p>
+      </div>
     );
   }
 
@@ -221,29 +253,35 @@ export function HomePage() {
     <div className="flex flex-col gap-4">
       <Card>
         <div className="flex items-center justify-between">
-          <h2 className="text-sm font-semibold text-gray-500">{t('home.recommendationsTitle')}</h2>
-          <Link to="/places" className="text-xs font-medium text-brand-700">
+          <h2 className="text-base font-semibold text-gray-900">{t('home.recommendationsTitle')}</h2>
+          <Link to="/places" className="text-sm font-medium text-brand-700">
             {t('home.allPlaces')}
           </Link>
         </div>
 
-        <div className="mt-2 flex items-center gap-1 text-xs text-gray-500">
-          <span>{t('home.currentWeather')}</span>
-          <span className="font-medium text-gray-700">{renderWeatherLabel()}</span>
+        <div className="mt-3 grid gap-2">
+          <div className="flex items-center justify-between gap-3 rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-900">
+            <span className="flex shrink-0 items-center gap-2">
+              <span aria-hidden="true">{weather ? WEATHER_EMOJI[weather.condition] : '🌤️'}</span>
+              <span>{t('home.currentWeather')}</span>
+            </span>
+            <span className="min-w-0 flex-1 text-right font-semibold">{renderWeatherLabel()}</span>
+          </div>
+          {renderLocationInfo()}
         </div>
 
-        {renderLocationInfo()}
-
-        <div className="mt-2 flex flex-col gap-2">
-          <ChipGroup
+        <div className="mt-3 grid gap-2">
+          <DropdownPill
             label={t('home.transport')}
+            emoji="🚃"
             options={TRANSPORT_OPTIONS}
             value={transportMode}
             onChange={(next) => setTransportMode(next)}
             tKey={t}
           />
-          <ChipGroup
+          <DropdownPill
             label={t('home.groupSize')}
+            emoji="👪"
             options={GROUP_OPTIONS}
             value={groupSize}
             onChange={(next) => setGroupSize(next)}
@@ -284,17 +322,17 @@ export function HomePage() {
             <Link
               key={r.place.id}
               to={`/places/${r.place.id}`}
-              className="mt-2 flex items-center gap-2 rounded-lg border border-gray-100 bg-white p-2 hover:bg-gray-50"
+              className="mt-2 flex min-h-16 items-center gap-2 rounded-xl border border-gray-300 bg-white p-3 shadow-sm transition hover:border-brand-300 hover:bg-brand-50/30 focus-visible:outline-brand-600"
             >
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-700 text-xs font-bold text-white">
                 {index + 1}
               </span>
               <span className="shrink-0 text-lg">{CATEGORY_ICON[r.place.category]}</span>
               <span className="min-w-0 flex-1">
-                <span className="block truncate text-sm font-medium">{r.place.name}</span>
+                <span className="block truncate text-base font-semibold text-gray-900">{r.place.name}</span>
                 <RecommendationReasons reasonCodes={r.reasonCodes} distanceKm={r.distanceKm} />
               </span>
-              <span className="shrink-0 text-xs text-gray-500">
+              <span className="shrink-0 rounded-full bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
                 {t('home.score')} {r.score}
               </span>
             </Link>
@@ -303,9 +341,9 @@ export function HomePage() {
 
       <Card>
         <div className="flex items-center justify-between">
-          <h2 className="text-sm font-semibold text-gray-500">{t('home.currentChild')}</h2>
+          <h2 className="text-base font-semibold text-gray-900">{t('home.currentChild')}</h2>
           {!childLoading && children.length > 0 && (
-            <Link to="/children/new" className="text-xs font-medium text-brand-700">
+            <Link to="/children/new" className="text-sm font-medium text-brand-700">
               {t('home.addChild')}
             </Link>
           )}
@@ -320,17 +358,17 @@ export function HomePage() {
             </Link>
           </div>
         ) : (
-          <p className="mt-1 text-xs text-gray-400">{t('home.selectChildrenHint')}</p>
+          <p className="mt-1 text-sm text-gray-500">{t('home.selectChildrenHint')}</p>
         )}
         {childLoading ? null : children.length > 0 ? (
-          <ul className="mt-1 flex flex-col">
+          <ul className="mt-2 flex flex-col gap-2">
             {children.map((child) => {
               const isChecked = selectedIds.includes(child.id);
               return (
                 <li
                   key={child.id}
-                  className={`flex items-center gap-3 rounded-lg px-1 py-2 ${
-                    isChecked ? 'bg-brand-50/60' : ''
+                  className={`flex items-center gap-3 rounded-xl border px-2 py-2 shadow-sm ${
+                    isChecked ? 'border-brand-300 bg-brand-50/70' : 'border-gray-200 bg-white'
                   }`}
                 >
                   <button
@@ -338,7 +376,7 @@ export function HomePage() {
                     onClick={() => toggle(child.id)}
                     aria-pressed={isChecked}
                     aria-label={t('children.selectChild', { name: child.displayName })}
-                    className="flex min-w-0 flex-1 items-center gap-3 text-left"
+                    className="touch-target flex min-w-0 flex-1 items-center gap-3 text-left"
                   >
                     <ChildAvatar
                       gender={child.gender}
@@ -347,17 +385,17 @@ export function HomePage() {
                       selected={isChecked}
                     />
                     <span className="min-w-0">
-                      <span className={`block truncate text-sm font-medium ${isChecked ? 'text-brand-900' : 'text-gray-700'}`}>
+                      <span className={`block truncate text-base font-semibold ${isChecked ? 'text-brand-900' : 'text-gray-800'}`}>
                         {child.displayName}
                       </span>
-                      <span className="block text-xs text-gray-500">
+                      <span className="block text-sm text-gray-500">
                         <AgeLabel birthDate={child.birthDate} />
                       </span>
                     </span>
                   </button>
                   <Link
                     to={`/children/${child.id}/edit`}
-                    className="shrink-0 text-xs font-medium text-brand-700"
+                    className="touch-target inline-flex shrink-0 items-center text-sm font-medium text-brand-700"
                   >
                     {t('common.edit')}
                   </Link>
@@ -370,8 +408,8 @@ export function HomePage() {
 
       <Card>
         <div className="flex items-center justify-between">
-          <h2 className="text-sm font-semibold text-gray-500">{t('home.weeklyKnowledge')}</h2>
-          <Link to="/knowledge" className="text-xs font-medium text-brand-700">
+          <h2 className="text-base font-semibold text-gray-900">{t('home.weeklyKnowledge')}</h2>
+          <Link to="/knowledge" className="text-sm font-medium text-brand-700">
             {t('knowledge.viewAll')}
           </Link>
         </div>
@@ -383,12 +421,16 @@ export function HomePage() {
           <ul className="mt-2 flex flex-col gap-2">
             {weeklyKnowledge.map((item) => (
               <li key={item.id}>
-                <Link to={`/knowledge/${item.id}`} className="block hover:opacity-80">
-                  <p className="flex items-center gap-2 text-sm text-gray-700">
+                <Link
+                  to={`/knowledge/${item.id}`}
+                  className="flex min-h-12 items-center gap-3 rounded-xl border border-gray-200 bg-white px-3 py-2 shadow-sm hover:border-brand-200 hover:bg-brand-50/30"
+                >
+                  <span className="text-lg" aria-hidden="true">📘</span>
+                  <p className="flex min-w-0 items-center gap-2 text-sm text-gray-700">
                     {!readIds.has(item.id) && (
                       <span className="h-2 w-2 shrink-0 rounded-full bg-brand-600" aria-hidden="true" />
                     )}
-                    <span className="min-w-0 truncate">{item.title}</span>
+                    <span className="min-w-0 truncate font-medium">{item.title}</span>
                   </p>
                 </Link>
               </li>
@@ -399,8 +441,8 @@ export function HomePage() {
 
       <Card>
         <div className="flex items-center justify-between">
-          <h2 className="text-sm font-semibold text-gray-500">{t('home.policyReminders')}</h2>
-          <Link to="/policies" className="text-xs font-medium text-brand-700">
+          <h2 className="text-base font-semibold text-gray-900">{t('home.policyReminders')}</h2>
+          <Link to="/policies" className="text-sm font-medium text-brand-700">
             {t('policies.viewAll')}
           </Link>
         </div>
@@ -412,8 +454,14 @@ export function HomePage() {
           <ul className="mt-2 flex flex-col gap-2">
             {policyReminders.map((policy) => (
               <li key={policy.id}>
-                <Link to={`/policies/${policy.id}`} className="block hover:opacity-80">
-                  <p className="text-sm text-gray-700">{policy.title}</p>
+                <Link
+                  to={`/policies/${policy.id}`}
+                  className="block rounded-xl border border-gray-200 bg-white px-3 py-2 shadow-sm hover:border-brand-200 hover:bg-brand-50/30"
+                >
+                  <p className="flex items-center gap-2 text-sm font-medium text-gray-800">
+                    <span aria-hidden="true">📌</span>
+                    <span className="min-w-0 truncate">{policy.title}</span>
+                  </p>
                   {policy.applicationDeadlineAt && (
                     <p className="text-xs text-gray-400">
                       {t('policies.deadline')}: {policy.applicationDeadlineAt.slice(0, 10)}

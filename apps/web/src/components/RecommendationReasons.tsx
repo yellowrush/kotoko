@@ -25,7 +25,7 @@ export function RecommendationReasons({ reasonCodes, distanceKm }: Recommendatio
   if (visible.length === 0) return null;
 
   return (
-    <div className="flex flex-wrap gap-1">
+    <div className="mt-1 flex flex-wrap gap-1">
       {visible.map((code) => {
         const entry = REASON_I18N[code];
         if (!entry) return null;
@@ -35,7 +35,7 @@ export function RecommendationReasons({ reasonCodes, distanceKm }: Recommendatio
             ? `${t(key)} ${formatDistanceKm(distanceKm)}`
             : t(key);
         return (
-          <span key={code} className="rounded-full bg-brand-50 px-2 py-0.5 text-xs text-brand-700">
+          <span key={code} className="rounded-full bg-brand-50 px-2 py-0.5 text-sm text-brand-700">
             {label}
           </span>
         );

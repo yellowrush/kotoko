@@ -45,12 +45,10 @@ export function KnowledgePage() {
         </div>
       )}
 
-      {!isError && !active && (
-        <p className="mb-3 text-xs text-gray-400">{t('knowledge.noChild')}</p>
-      )}
+      {!isError && !active && <p className="mb-3 text-sm text-gray-500">{t('knowledge.noChild')}</p>}
 
       {!isError && !isLoading && (
-        <div className="mb-3 flex rounded-lg bg-gray-100 p-1 text-xs">
+        <div className="mb-4 flex rounded-xl bg-gray-100 p-1 text-sm">
           {(['forChild', 'upcoming', 'all'] as const).map((option) => {
             const activeOption = !active && option !== 'all' ? false : view === option;
             return (
@@ -59,7 +57,7 @@ export function KnowledgePage() {
                 type="button"
                 onClick={() => setView(option)}
                 disabled={!active && option !== 'all'}
-                className={`flex-1 rounded-md px-2 py-1 font-medium ${
+                className={`touch-target flex-1 rounded-lg px-2 py-1 font-medium ${
                   activeOption ? 'bg-white text-brand-700 shadow-sm' : 'text-gray-500'
                 } disabled:text-gray-300`}
               >
@@ -80,9 +78,13 @@ export function KnowledgePage() {
             <li key={item.id}>
               <Link
                 to={`/knowledge/${item.id}`}
-                className="block rounded-lg border border-gray-100 bg-white p-3 hover:bg-gray-50"
+                className="grid grid-cols-[auto_1fr] gap-3 rounded-xl border border-gray-200 bg-white p-3 shadow-sm transition hover:border-brand-200 hover:bg-brand-50/30"
               >
-                <p className="flex items-center gap-2 text-sm font-medium">
+                <span className="mt-0.5 text-xl" aria-hidden="true">
+                  📘
+                </span>
+                <div className="min-w-0">
+                  <p className="flex items-center gap-2 text-base font-semibold text-gray-900">
                   {readIds.has(item.id) ? (
                     <span className="shrink-0 rounded-full bg-gray-200 px-2 py-0.5 text-xs text-gray-600">
                       {t('knowledge.read')}
@@ -95,11 +97,12 @@ export function KnowledgePage() {
                   )}
                   <span className="min-w-0 truncate">{item.title}</span>
                 </p>
-                <p className="mt-1 line-clamp-2 text-xs text-gray-500">{item.summary}</p>
-                <p className="mt-1 text-xs text-gray-400">
+                  <p className="mt-1 line-clamp-2 text-sm text-gray-600">{item.summary}</p>
+                  <p className="mt-2 text-sm text-gray-500">
                   {t('knowledge.ageRange')}: {item.minAgeMonths}~{item.maxAgeMonths}{' '}
                   {t('places.monthsUnit')}
                 </p>
+                </div>
               </Link>
             </li>
           ))}

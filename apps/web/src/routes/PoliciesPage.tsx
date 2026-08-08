@@ -8,27 +8,32 @@ import { daysUntil } from '../lib/policy';
 import { PolicyStatusBadge } from '../components/PolicyStatusBadge';
 import { PageHeader } from '../components/PageHeader';
 
-function PolicyItem({ policy, status }: { policy: Policy; status: string }) {
+function PolicyItem({ policy, status }: { policy: Policy; status: PolicyTaskState['status'] }) {
   const { t } = useAppTranslation();
   return (
     <Link
       to={`/policies/${policy.id}`}
-      className="block rounded-lg border border-gray-100 bg-white p-3 hover:bg-gray-50"
+      className="grid grid-cols-[auto_1fr] gap-3 rounded-xl border border-gray-200 bg-white p-3 shadow-sm transition hover:border-brand-200 hover:bg-brand-50/30"
     >
-      <p className="flex items-center gap-2 text-sm font-medium">
-        <span className="min-w-0 truncate">{policy.title}</span>
-        <PolicyStatusBadge status={status} />
-      </p>
-      {policy.contextHint && (
-        <p className="mt-1 line-clamp-2 text-xs text-gray-500">{policy.contextHint}</p>
-      )}
-      {policy.applicationDeadlineAt && (
-        <p className="mt-1 text-xs text-gray-400">
-          {t('policies.deadline')}: {policy.applicationDeadlineAt.slice(0, 10)}
-          {daysUntil(policy.applicationDeadlineAt) >= 0 &&
-            `（${t('policies.daysLeft', { days: daysUntil(policy.applicationDeadlineAt) })}）`}
+      <span className="mt-0.5 text-xl" aria-hidden="true">
+        📌
+      </span>
+      <div className="min-w-0">
+        <p className="flex items-center gap-2 text-base font-semibold text-gray-900">
+          <span className="min-w-0 truncate">{policy.title}</span>
+          <PolicyStatusBadge status={status} />
         </p>
-      )}
+        {policy.contextHint && (
+          <p className="mt-1 line-clamp-2 text-sm text-gray-600">{policy.contextHint}</p>
+        )}
+        {policy.applicationDeadlineAt && (
+          <p className="mt-2 text-sm text-gray-500">
+            {t('policies.deadline')}: {policy.applicationDeadlineAt.slice(0, 10)}
+            {daysUntil(policy.applicationDeadlineAt) >= 0 &&
+              `（${t('policies.daysLeft', { days: daysUntil(policy.applicationDeadlineAt) })}）`}
+          </p>
+        )}
+      </div>
     </Link>
   );
 }
@@ -46,7 +51,7 @@ function PolicySection({
 
   return (
     <section>
-      <h2 className="mb-2 text-sm font-semibold text-gray-500">{title}</h2>
+      <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">{title}</h2>
       <ul className="flex flex-col gap-2">
         {policies.map((policy) => (
           <li key={policy.id}>
@@ -91,9 +96,7 @@ export function PoliciesPage() {
         </div>
       )}
 
-      {!isError && !active && (
-        <p className="mb-3 text-xs text-gray-400">{t('policies.noChild')}</p>
-      )}
+      {!isError && !active && <p className="mb-3 text-sm text-gray-500">{t('policies.noChild')}</p>}
 
       {!isError && (
         <div className="flex flex-col gap-4">

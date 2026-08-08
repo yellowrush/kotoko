@@ -50,6 +50,7 @@ const homeMocks = vi.hoisted(() => ({
   coords: null as { latitude: number; longitude: number } | null,
   children: [] as ChildProfile[],
   selected: [] as ChildProfile[],
+  toggleChild: vi.fn(),
 }));
 
 vi.mock('../src/hooks/useSelectedChildren', () => ({
@@ -57,7 +58,7 @@ vi.mock('../src/hooks/useSelectedChildren', () => ({
     children: homeMocks.children,
     selected: homeMocks.selected,
     selectedIds: homeMocks.selected.map((item) => item.id),
-    toggle: vi.fn(),
+    toggle: homeMocks.toggleChild,
     setSelectedIds: vi.fn(),
     loading: false,
   }),
@@ -100,6 +101,7 @@ afterEach(() => {
 
 describe('HomePage recommendations', () => {
   beforeEach(() => {
+    homeMocks.toggleChild.mockClear();
     homeMocks.coords = null;
     homeMocks.children = [child];
     homeMocks.selected = [child];
@@ -126,7 +128,25 @@ describe('HomePage recommendations', () => {
     );
 
     expect(screen.getByText('Fallback Park')).toBeInTheDocument();
-    expect(screen.getByText(/距離/)).toBeInTheDocument();
+    expect(screen.getByText(/居住地:/)).toBeInTheDocument();
+    expect(screen.getByText('今日の天気')).toBeInTheDocument();
+  });
+
+  it('uses dropdown controls for transport and group size', () => {
+    render(
+      <MemoryRouter>
+        <HomePage />
+      </MemoryRouter>,
+    );
+
+    const transport = screen.getByRole('combobox', { name: /交通手段:/ });
+    const group = screen.getByRole('combobox', { name: /人数:/ });
+
+    fireEvent.change(transport, { target: { value: 'walking' } });
+    fireEvent.change(group, { target: { value: '2' } });
+
+    expect(transport).toHaveValue('walking');
+    expect(group).toHaveValue('2');
   });
 
   it('keeps cached recommendations visible when places refetch fails', async () => {
@@ -159,7 +179,7 @@ describe('HomePage recommendations', () => {
       </MemoryRouter>,
     );
 
-    expect(screen.getAllByText('こどもを追加').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('子どもを追加').length).toBeGreaterThan(0);
   });
 
   it('asks the user to select a child when all existing children are deselected', () => {
@@ -171,7 +191,20 @@ describe('HomePage recommendations', () => {
       </MemoryRouter>,
     );
 
-    expect(screen.getByText('今日一緒に行くこどもを選択してください。')).toBeInTheDocument();
+    expect(screen.getByText('今日一緒に行く子どもを選んでください。')).toBeInTheDocument();
     expect(screen.queryByText('Fallback Park')).not.toBeInTheDocument();
+  });
+
+  it('keeps child cards selectable with pressed state', () => {
+    render(
+      <MemoryRouter>
+        <HomePage />
+      </MemoryRouter>,
+    );
+
+    const button = screen.getByRole('button', { name: 'Akiを選択' });
+    expect(button).toHaveAttribute('aria-pressed', 'true');
+    fireEvent.click(button);
+    expect(homeMocks.toggleChild).toHaveBeenCalledWith('c1');
   });
 });

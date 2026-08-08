@@ -64,7 +64,7 @@ function Chip({
     <button
       type="button"
       onClick={onClick}
-      className={`shrink-0 rounded-full border px-3 py-1 text-xs font-medium transition ${
+      className={`shrink-0 rounded-full border px-3 py-1.5 text-sm font-medium transition ${
         active ? 'border-brand-600 bg-brand-600 text-white' : 'border-gray-300 bg-white text-gray-600'
       }`}
     >
@@ -105,7 +105,7 @@ export function PlaceFilterChips({
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
-        className="flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-xs font-medium text-gray-700 shadow-md"
+        className="flex min-h-11 items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 shadow-md"
       >
         <span aria-hidden>⚲</span>
         <span>{t('places.filters.label')}</span>
@@ -122,9 +122,9 @@ export function PlaceFilterChips({
             type="button"
             aria-label={t('common.collapse')}
             onClick={() => setOpen(false)}
-            className="fixed inset-0 z-[5] cursor-default"
+            className="fixed inset-0 z-[20] cursor-default"
           />
-          <div className="absolute left-0 top-full z-[6] mt-2 flex w-[min(92vw,24rem)] flex-col gap-2.5 rounded-2xl border border-gray-200 bg-white p-3 shadow-xl">
+          <div className="absolute left-0 top-full z-[30] mt-2 flex max-h-[min(70vh,28rem)] w-[min(92vw,24rem)] flex-col gap-2.5 overflow-y-auto overscroll-contain rounded-2xl border border-gray-200 bg-white p-3 shadow-xl">
             <ChipGroup title={t('places.filters.sectionCategory')}>
               {CATEGORY_GROUPS.map(({ group, categories }) => (
                 <div key={group} className="flex flex-col gap-1.5">

@@ -50,7 +50,7 @@ beforeEach(async () => {
   });
 });
 
-function renderPage() {
+function renderDetailPage() {
   return render(
     <MemoryRouter initialEntries={['/policies/p-weaning-class']}>
       <Routes>
@@ -62,19 +62,19 @@ function renderPage() {
 
 describe('PolicyDetailPage conditions', () => {
   it('does not render the English i18n object fallback warning', async () => {
-    renderPage();
+    renderDetailPage();
     expect(screen.queryByText(/returned an object/i)).toBeNull();
   });
 
   it('merges age conditions into a single row', async () => {
-    const { container } = renderPage();
+    const { container } = renderDetailPage();
     expect(container.querySelectorAll('ul li')).toHaveLength(2);
-    expect(screen.getAllByText(/適合月齡|対象月齢/).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/対象月齢 4〜12 ヶ月/).length).toBeGreaterThan(0);
   });
 
   it('keeps the section header as a plain label', async () => {
-    renderPage();
-    expect(screen.getAllByText(/適用條件|適用条件/).length).toBeGreaterThan(0);
+    renderDetailPage();
+    expect(screen.getAllByText('適用条件').length).toBeGreaterThan(0);
   });
 });
 
@@ -115,10 +115,10 @@ describe('PoliciesPage sections', () => {
       </MemoryRouter>,
     );
 
-    expect(screen.getAllByText(/新提醒|新しいリマインダー/).length).toBeGreaterThan(0);
-    expect(screen.getAllByText(/已計畫|対応予定/).length).toBeGreaterThan(0);
-    expect(screen.getAllByText(/全部適用|すべての対象制度/).length).toBeGreaterThan(0);
-    expect(screen.getAllByText(/暫不適用|今は対象外/).length).toBeGreaterThan(0);
+    expect(screen.getAllByText('新しいお知らせ').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('予定済み').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('対象の制度').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('今は対象外').length).toBeGreaterThan(0);
     expect(screen.getByText('新政策')).toBeInTheDocument();
     expect(screen.getByText('計畫政策')).toBeInTheDocument();
     expect(screen.getByText('已看政策')).toBeInTheDocument();
@@ -133,7 +133,7 @@ afterEach(() => {
 function makePolicy(overrides: Partial<Policy> = {}): Policy {
   return {
     id: 'p-weaning-class',
-    title: '離乳食ふれあい講座（台東区の例）',
+    title: '離乳食講習会',
     contextHint: '離乳食の進め方を学べる講座の例です。',
     authorityLevel: 'municipality',
     municipalityCode: '13106',

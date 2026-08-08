@@ -1,5 +1,6 @@
 import Fastify from 'fastify';
 import cors from '@fastify/cors';
+import helmet from '@fastify/helmet';
 import type { FastifyInstance } from 'fastify';
 import { healthRoutes } from './routes/health';
 import { authRoutes } from './routes/auth';
@@ -11,10 +12,31 @@ import { policiesRoutes } from './routes/policies';
 
 export const API_PREFIX = '/api/v1';
 
+const LOCAL_WEB_ORIGINS = ['http://localhost:5173', 'http://127.0.0.1:5173'];
+
+function allowedWebOrigins(): Set<string> {
+  const configured = (process.env.WEB_ORIGIN ?? '')
+    .split(',')
+    .map((origin) => origin.trim())
+    .filter(Boolean);
+  return new Set([...LOCAL_WEB_ORIGINS, ...configured]);
+}
+
+function isAllowedCorsOrigin(origin: string | undefined): boolean {
+  if (!origin) return true;
+  return allowedWebOrigins().has(origin);
+}
+
 export function buildApp(): FastifyInstance {
   const app = Fastify({ logger: true });
 
-  void app.register(cors, { origin: true, credentials: true });
+  void app.register(helmet);
+  void app.register(cors, {
+    credentials: true,
+    origin(origin, callback) {
+      callback(null, isAllowedCorsOrigin(origin));
+    },
+  });
 
   const prefixOptions = { prefix: API_PREFIX };
   void app.register(healthRoutes, prefixOptions);

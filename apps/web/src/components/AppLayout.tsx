@@ -53,13 +53,17 @@ export function AppLayout() {
   const fullBleed = FULL_BLEED_ROUTES.has(pathname);
 
   return (
-    <div className="mx-auto flex min-h-screen max-w-lg flex-col">
+    <div className="mx-auto flex min-h-screen max-w-lg flex-col text-[15px] sm:text-base">
       <header className="sticky top-0 z-10 border-b border-gray-200 bg-white/90 backdrop-blur">
         <div className="flex items-center justify-between px-4 py-3">
-          <div className="flex items-center gap-2">
-            <Link to="/home" aria-label="こどこ">
-              <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="こどこ" className="h-8 w-auto" />
+          <div className="flex min-w-0 items-center gap-2.5">
+            <Link to="/home" aria-label={t('common.appName')} className="shrink-0">
+              <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt={t('common.appName')} className="h-8 w-auto" />
             </Link>
+            <div className="min-w-0">
+              <p className="truncate text-sm font-semibold leading-tight text-gray-900">{t('common.appName')}</p>
+              <p className="truncate text-xs leading-tight text-gray-500">{t('common.logoSubtitle')}</p>
+            </div>
           </div>
           <LanguageSelect />
         </div>
@@ -76,7 +80,7 @@ export function AppLayout() {
               key={item.to}
               to={item.to}
               className={({ isActive }) =>
-                `flex flex-1 flex-col items-center gap-1 py-2 text-xs font-medium ${
+                `flex min-h-12 flex-1 flex-col items-center justify-center gap-1 py-2 text-sm font-medium ${
                   isActive ? 'text-brand-700' : 'text-gray-500'
                 }`
               }

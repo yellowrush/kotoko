@@ -1,1 +1,0 @@
-import{a as s,j as e,L as n}from"./index-G0TmueIp.js";function o(){const{t}=s();return e.jsxs("div",{className:"flex flex-col items-center gap-3 py-16 text-center",children:[e.jsx("h1",{className:"text-lg font-semibold",children:"404"}),e.jsx(n,{to:"/home",className:"text-sm text-brand-700",children:t("nav.home")})]})}export{o as NotFoundPage};

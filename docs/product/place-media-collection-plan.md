@@ -1,6 +1,6 @@
 ﻿# 地点媒体（照片/视频）全量采集计划
 
-> 状态：計画中（进行中）　更新日：2026-08-07
+> 状态：計画中（进行中）　更新日：2026-08-08
 > 关联：AGENTS.md §23 Sprint 3「地点」、详情页改版（媒体轮播）。
 
 ## 1. 背景与目标
@@ -130,6 +130,7 @@ Quote：计划中的顺序是「官网 → 搜索引擎 → Google Map」，与 
 全量完成后：
 
 - [x] 运行 `pnpm lint && pnpm typecheck && pnpm test && pnpm build`（lint/typecheck/test/build 全绿；test 默认超时已从 5s 调整为 20s）。
+- [x] 非児童館 placeholder 尾巴已复核；无安全公开媒体的条目标记为 `placeholder-blocked`，保留官方 `sourceUrl` 作为后续采集入口。
 - [ ] 是否重新生成跟踪表（见顶部脚本）确认全部 `3/3`。
 
 ---
@@ -221,37 +222,37 @@ Quote：计划中的顺序是「官网 → 搜索引擎 → Google Map」，与 
 | 48 | `tokyo-gym` | 東京体育館 | facility | [官网](https://www.tef.or.jp/tmg/) | 実写 3 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
 | 49 | `bumb-tokyo-sports` | BumB東京スポーツ文化館 | facility | [官网](https://www.ys-tokyobay.co.jp/) | 実写 3 | P4 (Wikimedia) | 3/3 | 0/1 | 本館+夢の島公園 (CC) |
 | 50 | `setagaya-sports-center` | 世田谷区立総合運動場 | facility | [官网](https://www.city.setagaya.lg.jp/01430/9045.html) | 実写 5 | P4 (Wikimedia) | 3/3 | 0/1 | 大倉山公園関連 (CC) |
-| 51 | `edogawa-sogo-taikan` | 江戸川区総合体育館 | facility | [官网](https://www.edogawa-sotai.com/) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
+| 51 | `edogawa-sogo-taikan` | 江戸川区総合体育館 | facility | [官网](https://www.edogawa-sotai.com/) | blocked placeholder 3 | blocked | 3/3 | 0/1 | 安全な公開媒体未確認、公式URLで追跡 |
 | 52 | `higashin-arena` | ひがしんアリーナ（墨田区総合体育館） | facility | [官网](https://www.sumidacity-gym.com/) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
 | 53 | `ota-sogo-taikan` | EBARA WAVE アリーナおおた（大田区総合体育館） | facility | [官网](https://www.ota.esforta.jp/arena/) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
-| 54 | `nerima-sogo-taikan` | 練馬区立総合体育館 | facility | [官网](https://www.city.nerima.tokyo.jp/shisetsu/koen/taiku/sogo.html) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
+| 54 | `nerima-sogo-taikan` | 練馬区立総合体育館 | facility | [官网](https://www.city.nerima.tokyo.jp/shisetsu/koen/taiku/sogo.html) | 実写 1 + blocked 2 | P4 + blocked | 3/3 | 0/1 | Wikimedia 1 枚、追加 2 枚は安全媒体未確認 |
 
 ### 屋内あそび（indoor-play）— 2 件
 | # | Place ID | 名称 | 分类 | 官网URL | 媒体现状 | 優先 | 照片 | 视频 | 備考 |
 |---|----------|------|------|---------|----------|------|------|------|------|
 | 55 | `kidzania-tokyo` | キッザニア東京 | indoor-play | [官网](https://www.kidzania.jp/tokyo/) | 実写 1 + 補 2 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
-| 56 | `bornelund-harajuku` | ボーネルンド あそびのせかい | indoor-play | [官网](https://www.bornelund.co.jp/shop/store/395) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 他店写真を除外、placeholder 化 |
+| 56 | `bornelund-harajuku` | ボーネルンド あそびのせかい | indoor-play | [官网](https://www.bornelund.co.jp/shop/store/395) | blocked placeholder 3 | blocked | 3/3 | 0/1 | 他店写真を除外、安全な公開媒体未確認 |
 
 ### 図書館（library）— 19 件
 | # | Place ID | 名称 | 分类 | 官网URL | 媒体现状 | 優先 | 照片 | 视频 | 備考 |
 |---|----------|------|------|---------|----------|------|------|------|------|
 | 57 | `tokyo-metro-library` | 東京都立中央図書館 | library | [官网](https://www.library.metro.tokyo.lg.jp/) | 実写 3 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
 | 58 | `shinjuku-chuo-library` | 新宿区立中央図書館・こども図書館 | library | [官网](https://www.library.shinjuku.tokyo.jp/facility/chuo/) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
-| 59 | `setagaya-chuo-library` | 世田谷区立中央図書館 | library | [官网](https://www.city.setagaya.lg.jp/02261/9023.html) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
+| 59 | `setagaya-chuo-library` | 世田谷区立中央図書館 | library | [官网](https://www.city.setagaya.lg.jp/02261/9023.html) | 実写 2 + blocked 1 | P4 + blocked | 3/3 | 0/1 | Wikimedia 2 枚、追加 1 枚は安全媒体未確認 |
 | 60 | `koto-chuo-library` | 江東図書館（区立中央館） | library | [官网](https://www.koto-lib.tokyo.jp/) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
 | 61 | `taito-chuo-library` | 台東区立中央図書館 | library | [官网](https://www.city.taito.lg.jp/library/) | 実写 1 + 補 2 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
-| 62 | `gotanda-library` | 品川区立五反田図書館 | library | [官网](https://library.city.shinagawa.tokyo.jp/tabid/153/Default.aspx) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
+| 62 | `gotanda-library` | 品川区立五反田図書館 | library | [官网](https://library.city.shinagawa.tokyo.jp/tabid/153/Default.aspx) | blocked placeholder 3 | blocked | 3/3 | 0/1 | 安全な公開媒体未確認、公式URLで追跡 |
 | 63 | `nerima-chuo-library` | 練馬区立練馬図書館（生涯学習センター内） | library | [官网](https://www.city.nerima.tokyo.jp/shisetsu/bunka/lib/nerima.html) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
 | 64 | `itabashi-chuo-library` | 板橋区立中央図書館 | library | [官网](https://www.city.itabashi.tokyo.jp/library/) | 実写 2 + 補 1 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
 | 65 | `adachi-chuo-library` | 足立区立中央図書館 | library | [官网](https://www.city.adachi.tokyo.jp/toshokan/) | 実写 3 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
 | 66 | `nakano-chuo-library` | 中野区立中央図書館 | library | [官网](https://library.city.tokyo-nakano.lg.jp/) | 実写 2 + 補 1 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
 | 67 | `suginami-chuo-library` | 杉並区立中央図書館 | library | [官网](https://www.city.suginami.tokyo.jp/kusei/gaiyou/shisetsu/genre/bunka/toshokan/index.html) | 実写 2 + 補 1 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
 | 68 | `arakawa-furalibrary` | ゆいの森あらかわ（荒川区立中央図書館） | library | [官网](https://yui-forest.jp/) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
-| 69 | `bunkyo-masago-chuo` | 文京区立真砂中央図書館 | library | [官网](https://www.lib.city.bunkyo.tokyo.jp/) | 実写 1 + 補 2 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
+| 69 | `bunkyo-masago-chuo` | 文京区立真砂中央図書館 | library | [官网](https://www.lib.city.bunkyo.tokyo.jp/) | 実写 1 + blocked 2 | P4 + blocked | 3/3 | 0/1 | Wikimedia 1 枚、追加 2 枚は安全媒体未確認 |
 | 70 | `shibuya-chuo-library` | 渋谷区立中央図書館 | library | [官网](https://www.lib.city.shibuya.tokyo.jp/library/central/) | 実写 2 + 補 1 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
 | 71 | `katsushika-chuo-library` | 葛飾区立中央図書館 | library | [官网](https://www.lib.city.katsushika.lg.jp/) | 実写 1 + 補 2 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
 | 72 | `chiyoda-hibiya-library` | 日比谷図書文化館（千代田区立） | library | [官网](https://www.library.chiyoda.tokyo.jp/) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
-| 73 | `meguro-ku-court-library` | 目黑区民センター図書館 | library | [官网](https://www.meguro-library.jp/) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
+| 73 | `meguro-ku-court-library` | 目黑区民センター図書館 | library | [官网](https://www.meguro-library.jp/) | 実写 1 + blocked 2 | P4 + blocked | 3/3 | 0/1 | Wikimedia 1 枚、追加 2 枚は安全媒体未確認 |
 | 74 | `kita-chuo-library` | 北区立中央図書館 | library | [官网](https://www.library.city.kita.lg.jp/) | 実写 3 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
 | 75 | `minato-mita-library` | 港区立三田図書館 | library | [官网](https://www.lib-minato.jp/library/mita.html) | 実写 2 + 補 1 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
 
@@ -281,10 +282,10 @@ Quote：计划中的顺序是「官网 → 搜索引擎 → Google Map」，与 
 | 92 | `omiya-park` | 大宮公園 | park | [官网](https://www.saitamapark.or.jp/omiya/) | 実写 3 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
 | 93 | `kameido-central-park` | 亀戸中央公園 | park | [官网](https://tokyo-eastpark.com/parksearch/kameido) | 実写 2 + 補 1 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
 | 94 | `tategawa-riverbed-park` | 竪川河川敷公園 | park | [官网](https://www.tatekawa-riverbed-park.jp/) | 実写 3 | P4 (Wikimedia) | 3/3 | 0/1 | 竪川/水門/トラス橋 (CC) |
-| 95 | `godoteien-garden` | 三代豊国五渡亭園 | park | [官网](http://www.gonohashi.jp/gototeien-1.htm) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
+| 95 | `godoteien-garden` | 三代豊国五渡亭園 | park | [官网](http://www.gonohashi.jp/gototeien-1.htm) | blocked placeholder 3 | blocked | 3/3 | 0/1 | 安全な公開媒体未確認、公式URLで追跡 |
 | 96 | `kiba-shinsui-park` | 木場親水公園 | park | [官网](https://www.city.koto.lg.jp/470601/shisetsuannai/kokyo/koen/kuritsukoen/16421.html) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
 | 97 | `koishiba-shinsui-park` | 古石場川親水公園 | park | [官网](https://www.gotokyo.org/jp/spot/1098/index.html) | 実写 3 | P4 (Wikimedia) | 3/3 | 0/1 | 小津橋 (CC BY-SA 4.0) |
-| 98 | `joto-park` | 城東公園 | park | [官网](https://www.city.koto.lg.jp/470601/riyou/koen/shisetsuannai.html) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 誤図（クリニック/深セン）除外 |
+| 98 | `joto-park` | 城東公園 | park | [官网](https://www.city.koto.lg.jp/470601/riyou/koen/shisetsuannai.html) | blocked placeholder 3 | blocked | 3/3 | 0/1 | 誤図（クリニック/深セン）除外、安全媒体未確認 |
 | 99 | `echujima-park` | 越中島公園 | park | [官网](https://ja.wikipedia.org/wiki/%E8%B6%8A%E4%B8%AD%E5%B3%B6%E5%85%AC%E5%9C%92) | 実写 3 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
 | 100 | `toyosu-park` | 豊洲公園 | park | [官网](https://www.city.koto.lg.jp/470601/shisetsuannai/kokyo/koen/kuritsukoen/16394.html) | 実写 2 + 補 1 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
 | 101 | `sendaihorikawa-park` | 仙台堀川公園 | park | [官网](https://www.city.koto.lg.jp/promotion/spot/sendaibori.html) | 実写 1 + 補 2 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
@@ -331,11 +332,11 @@ Quote：计划中的顺序是「官网 → 搜索引擎 → Google Map」，与 
 | # | Place ID | 名称 | 分类 | 官网URL | 媒体现状 | 優先 | 照片 | 视频 | 備考 |
 |---|----------|------|------|---------|----------|------|------|------|------|
 | 128 | `tokyo-toy-museum` | 東京おもちゃ美術館 | toy-play | [官网](https://goodtoy.org/ttm/) | 実写 1 + 補 2 | P4 (Wikimedia) | 3/3 | 0/1 | Wikimedia CC |
-| 129 | `osaka-toy-museum` | 大阪おもちゃ美術館 | toy-play | [官网](https://toy-museum.jp/) | 実写 1 + 補 2 | P2 | 3/3 | 0/1 | 館ビル未確定（要確認） |
-| 130 | `tsuyama-toy-museum` | 津山おもちゃ美術館 | toy-play | [官网](https://toy-museum.jp/) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
-| 131 | `otaru-toy-museum` | 小樽おもちゃ美術館 | toy-play | [官网](https://toy-museum.jp/) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
+| 129 | `osaka-toy-museum` | 大阪おもちゃ美術館 | toy-play | [官网](https://toy-museum.jp/) | 実写 1 + blocked 2 | P4 + blocked | 3/3 | 0/1 | 館ビル未確定、追加 2 枚は安全媒体未確認 |
+| 130 | `tsuyama-toy-museum` | 津山おもちゃ美術館 | toy-play | [官网](https://toy-museum.jp/) | blocked placeholder 3 | blocked | 3/3 | 0/1 | 安全な公開媒体未確認、公式URLで追跡 |
+| 131 | `otaru-toy-museum` | 小樽おもちゃ美術館 | toy-play | [官网](https://toy-museum.jp/) | blocked placeholder 3 | blocked | 3/3 | 0/1 | 安全な公開媒体未確認、公式URLで追跡 |
 | 132 | `mori-toy-museum` | 森のおもちゃ美術館 | toy-play | [官网](https://toy-museum.jp/) | 実写 4 | P1 (官网) | 3/3 | 0/1 | 檜原村観光協会 公式 4 枚 |
-| 133 | `toy-kingdom` | おもちゃ王国 | toy-play | [官网](https://www.toykingdom.co.jp/) | 補 3 (placeholder) | placeholder | 3/3 | 0/1 | 準備中 (Kodoko) |
+| 133 | `toy-kingdom` | おもちゃ王国 | toy-play | [官网](https://www.toykingdom.co.jp/) | 実写 2 + blocked 1 | P4 + blocked | 3/3 | 0/1 | Wikimedia 2 枚、追加 1 枚は安全媒体未確認 |
 
 ### 動物園（zoo）— 4 件
 | # | Place ID | 名称 | 分类 | 官网URL | 媒体现状 | 優先 | 照片 | 视频 | 備考 |

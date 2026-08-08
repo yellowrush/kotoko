@@ -60,6 +60,8 @@ export function PlacesMap({
   userLocationRef.current = userLocation;
   const markersRef = useRef<Record<string, maplibregl.Marker>>({});
   const userMarkerRef = useRef<maplibregl.Marker | null>(null);
+  const lastSelectedRef = useRef<string | undefined>(undefined);
+  const lastUserLocRef = useRef<GeoPoint | undefined>(undefined);
   const onSelectRef = useRef(onSelectPlace);
   onSelectRef.current = onSelectPlace;
   const onStyleErrorRef = useRef(onStyleError);
@@ -122,21 +124,28 @@ export function PlacesMap({
   useEffect(() => {
     const map = mapRef.current;
     if (!map) return;
-    if (!userLocation) return;
+    if (selectedPlaceId) {
+      if (lastSelectedRef.current === selectedPlaceId) return;
+      lastSelectedRef.current = selectedPlaceId;
+      const place = places.find((p) => p.id === selectedPlaceId);
+      if (!place) return;
+      map.flyTo({ center: [place.longitude, place.latitude], zoom: 14 });
+    } else {
+      lastSelectedRef.current = undefined;
+    }
+  }, [selectedPlaceId, places, mapReady]);
 
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !userLocation) return;
+    // 定位 flyTo 放在 selected-place flyTo 之后：两者同时变化时以“現在地へ”为准。
+    if (lastUserLocRef.current === userLocation) return;
+    lastUserLocRef.current = userLocation;
     map.flyTo({
       center: [userLocation.longitude, userLocation.latitude],
       zoom: 13,
     });
   }, [userLocation, mapReady]);
-
-  useEffect(() => {
-    const map = mapRef.current;
-    if (!map || !selectedPlaceId) return;
-    const place = places.find((p) => p.id === selectedPlaceId);
-    if (!place) return;
-    map.flyTo({ center: [place.longitude, place.latitude], zoom: 14 });
-  }, [selectedPlaceId, places, mapReady]);
 
   useEffect(() => {
     const map = mapRef.current;

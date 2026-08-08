@@ -1,6 +1,5 @@
 ﻿import { NavLink, Outlet, useLocation, Link } from 'react-router-dom';
 import { useAppTranslation } from '../hooks/useAppTranslation';
-import { LANGUAGE_OPTIONS, useLocale } from '../hooks/useLocale';
 
 const NAV_ITEMS = [
   { to: '/home', key: 'profile' },
@@ -10,43 +9,6 @@ const NAV_ITEMS = [
 
 const FULL_BLEED_ROUTES = new Set(['/places']);
 
-function LanguageSelect() {
-  const { t } = useAppTranslation();
-  const { locale, setLocale } = useLocale();
-  const current = LANGUAGE_OPTIONS.find((option) => option.value === locale) ?? {
-    value: 'ja',
-    label: '日本語',
-  };
-
-  return (
-    <details className="group relative">
-      <summary
-        aria-label={t('settings.language')}
-        className="flex h-9 cursor-pointer list-none items-center gap-1 rounded-md border border-gray-200 bg-white px-2 text-sm font-medium text-gray-700 shadow-sm marker:hidden"
-      >
-        <span>{current.label}</span>
-      </summary>
-      <div className="absolute right-0 top-10 z-20 min-w-32 overflow-hidden rounded-md border border-gray-200 bg-white py-1 shadow-lg">
-        {LANGUAGE_OPTIONS.map((option) => (
-          <button
-            key={option.value}
-            type="button"
-            onClick={(event) => {
-              setLocale(option.value);
-              event.currentTarget.closest('details')?.removeAttribute('open');
-            }}
-            className={`block w-full px-3 py-2 text-left text-sm ${
-              option.value === locale ? 'bg-brand-50 text-brand-800' : 'text-gray-700 hover:bg-gray-50'
-            }`}
-          >
-            {option.label}
-          </button>
-        ))}
-      </div>
-    </details>
-  );
-}
-
 export function AppLayout() {
   const { t } = useAppTranslation();
   const { pathname } = useLocation();
@@ -55,7 +17,7 @@ export function AppLayout() {
   return (
     <div className="mx-auto flex min-h-screen max-w-lg flex-col text-[15px] sm:text-base">
       <header className="sticky top-0 z-10 border-b border-gray-200 bg-white/90 backdrop-blur">
-        <div className="flex items-center justify-between px-4 py-3">
+        <div className="flex items-center px-4 py-3">
           <div className="flex min-w-0 items-center gap-2.5">
             <Link to="/home" aria-label={t('common.appName')} className="shrink-0">
               <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt={t('common.appName')} className="h-8 w-auto" />
@@ -65,7 +27,6 @@ export function AppLayout() {
               <p className="truncate text-xs leading-tight text-gray-500">{t('common.logoSubtitle')}</p>
             </div>
           </div>
-          <LanguageSelect />
         </div>
       </header>
 

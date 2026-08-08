@@ -1,5 +1,5 @@
 import { beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
-import { fireEvent, render, screen, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { createMemoryRouter, RouterProvider } from 'react-router-dom';
 import { AppLayout } from '../src/components/AppLayout';
 import { changeLocale, initI18n } from '../src/app/i18n';
@@ -17,14 +17,16 @@ beforeAll(async () => {
   await initI18n();
 });
 
-describe('AppLayout language selector', () => {
+describe('AppLayout locale behavior', () => {
   beforeEach(async () => {
     setPreference.mockClear();
     useAppStore.setState({ locale: 'ja' });
     await changeLocale('ja');
   });
 
-  it('switches the chrome language and stores the selected locale', async () => {
+  it('does not render the header language dropdown while honoring the app locale', () => {
+    useAppStore.setState({ locale: 'zh-CN' });
+
     const router = createMemoryRouter([
       {
         path: '/',
@@ -35,11 +37,11 @@ describe('AppLayout language selector', () => {
 
     render(<RouterProvider router={router} />);
 
-    expect(screen.getByText('親子のおでかけと育児メモ')).toBeInTheDocument();
-    fireEvent.click(screen.getByRole('button', { name: '简体中文' }));
+    expect(screen.queryByLabelText('言語')).not.toBeInTheDocument();
+    expect(screen.queryByLabelText('语言')).not.toBeInTheDocument();
+    expect(screen.queryByLabelText('語言')).not.toBeInTheDocument();
 
-    await waitFor(() => expect(screen.getByRole('link', { name: '我的收藏' })).toBeInTheDocument());
-    expect(useAppStore.getState().locale).toBe('zh-CN');
-    expect(setPreference).toHaveBeenCalledWith({ locale: 'zh-CN' });
+    expect(screen.getByRole('link', { name: '我的收藏' })).toBeInTheDocument();
+    expect(setPreference).not.toHaveBeenCalled();
   });
 });

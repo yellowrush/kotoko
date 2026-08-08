@@ -1,0 +1,1 @@
+import{a as i,j as t,L as r}from"./index-G0TmueIp.js";import{P as n}from"./PageHeader-Cg_PKCC1.js";function a(){const{t:e}=i();return t.jsx("div",{children:t.jsx(n,{title:e("nav.profile"),description:"Sprint 7",children:t.jsx(r,{to:"/login",className:"text-sm text-brand-700",children:e("login.title")})})})}export{a as ProfilePage};

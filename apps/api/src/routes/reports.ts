@@ -2,6 +2,11 @@ import type { FastifyInstance, FastifyReply } from 'fastify';
 import { z } from 'zod';
 import type { PlaceReportType } from '@kodoko/domain';
 import { seedPlaces } from '../data/places';
+import {
+  createReportIssue,
+  resetReportIssueState,
+  type ReportIssueResult,
+} from '../lib/github';
 
 export type PlaceReportRecord = {
   id: string;
@@ -11,6 +16,7 @@ export type PlaceReportRecord = {
   contactEmail?: string;
   ip: string;
   createdAt: string;
+  issue?: ReportIssueResult;
 };
 
 const reportBodySchema = z
@@ -73,6 +79,7 @@ function parseReportBody(body: unknown, reply: FastifyReply) {
 export function resetReportState() {
   reportStore.length = 0;
   ipHits.clear();
+  resetReportIssueState();
 }
 
 export async function reportRoutes(app: FastifyInstance) {
@@ -105,7 +112,21 @@ export async function reportRoutes(app: FastifyInstance) {
     };
     reportStore.push(record);
 
-    return { id: record.id, status: 'received' };
+    const issue = await createReportIssue({
+      reportId: record.id,
+      place,
+      placeId,
+      type: record.type,
+      detail: record.detail,
+      createdAt: record.createdAt,
+    });
+    record.issue = issue;
+
+    if (issue.status === 'failed') {
+      request.log.warn({ reportId: record.id, issue }, 'Failed to create report issue');
+    }
+
+    return { id: record.id, status: 'received', issue };
   });
 
   // 审核队列。正式后台接入前仅提供最小查询。

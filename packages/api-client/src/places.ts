@@ -43,7 +43,26 @@ export async function fetchPlace(client: ApiClient, placeId: string): Promise<Pl
 const reportResponseSchema = z.object({
   id: z.string().min(1),
   status: z.literal('received'),
+  issue: z
+    .discriminatedUnion('status', [
+      z.object({
+        status: z.literal('created'),
+        issueNumber: z.number(),
+        issueUrl: z.string().url(),
+      }),
+      z.object({
+        status: z.literal('skipped'),
+        reason: z.enum(['missing_config', 'duplicate']),
+      }),
+      z.object({
+        status: z.literal('failed'),
+        reason: z.string(),
+      }),
+    ])
+    .optional(),
 });
+
+export type SubmitPlaceReportResult = z.infer<typeof reportResponseSchema>;
 
 export type SubmitPlaceReportInput = {
   type: PlaceReportType;
@@ -55,7 +74,7 @@ export async function submitPlaceReport(
   client: ApiClient,
   placeId: string,
   input: SubmitPlaceReportInput,
-): Promise<{ id: string; status: 'received' }> {
+): Promise<SubmitPlaceReportResult> {
   const data = await client.post<unknown>(`/places/${placeId}/reports`, input);
   return reportResponseSchema.parse(data);
 }

@@ -1,0 +1,129 @@
+name: Report Issue Agent
+
+on:
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'Report issue number to route to the agent'
+        required: true
+        type: number
+      command:
+        description: 'Agent command to apply'
+        required: true
+        default: '/fix'
+        type: choice
+        options:
+          - /fix
+          - /codex
+          - /opencode
+
+permissions:
+  contents: read
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: report-agent-${{ github.event.issue.number || inputs.issue_number }}
+  cancel-in-progress: false
+
+jobs:
+  assign-agent:
+    name: Route report issue to coding agent
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    if: github.event_name == 'workflow_dispatch' || github.event.issue.pull_request == null
+    env:
+      REPORT_AGENT_ASSIGNEE: ${{ vars.REPORT_AGENT_ASSIGNEE || 'copilot' }}
+      REPORT_CODEX_ASSIGNEE: ${{ vars.REPORT_CODEX_ASSIGNEE || 'codex' }}
+      REPORT_OPENCODE_ASSIGNEE: ${{ vars.REPORT_OPENCODE_ASSIGNEE || '' }}
+      REPORT_AGENT_BASE_BRANCH: ${{ vars.REPORT_AGENT_BASE_BRANCH || 'develop' }}
+    steps:
+      - name: Validate command and assign agent
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const allowedCommands = new Set(['/fix', '/codex', '/opencode']);
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const issueNumber = context.eventName === 'workflow_dispatch'
+              ? Number(core.getInput('issue_number'))
+              : context.payload.issue?.number;
+            const command = context.eventName === 'workflow_dispatch'
+              ? core.getInput('command').trim()
+              : String(context.payload.comment?.body ?? '').trim().split(/\s+/)[0];
+
+            if (!issueNumber || !Number.isInteger(issueNumber)) {
+              core.setFailed('A valid report issue number is required.');
+              return;
+            }
+
+            if (!allowedCommands.has(command)) {
+              core.info(`Ignoring unsupported command: ${command || '(empty)'}`);
+              return;
+            }
+
+            const { data: issue } = await github.rest.issues.get({
+              owner,
+              repo,
+              issue_number: issueNumber,
+            });
+            const labels = issue.labels
+              .map((label) => typeof label === 'string' ? label : label.name)
+              .filter(Boolean);
+
+            if (!labels.includes('report')) {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: issueNumber,
+                body: 'This command only routes issues with the `report` label.',
+              });
+              return;
+            }
+
+            const defaultAssignee = process.env.REPORT_AGENT_ASSIGNEE;
+            const assignee = command === '/codex'
+              ? process.env.REPORT_CODEX_ASSIGNEE
+              : command === '/opencode'
+                ? process.env.REPORT_OPENCODE_ASSIGNEE || defaultAssignee
+                : defaultAssignee;
+            const baseBranch = process.env.REPORT_AGENT_BASE_BRANCH;
+            const prompt = [
+              `Agent request received via \`${command}\`.`,
+              '',
+              'Please follow `AGENTS.md` and treat this as a public place data correction for Kodoko.',
+              '',
+              `- Base branch: \`${baseBranch}\``,
+              '- Change only public place data or narrowly required support code.',
+              '- Do not add child, family, contact email, precise private location, analytics, or IndexedDB data.',
+              '- Prefer official or trusted public sources and include source URLs in the PR.',
+              '- Run `pnpm lint`, `pnpm typecheck`, `pnpm test`, and `pnpm build` before opening the PR.',
+              '- PR body should mention child data impact, IndexedDB impact, API impact, rollback, and `Closes #${issueNumber}`.',
+            ].join('\n');
+
+            await github.rest.issues.createComment({
+              owner,
+              repo,
+              issue_number: issueNumber,
+              body: prompt,
+            });
+
+            try {
+              await github.rest.issues.addAssignees({
+                owner,
+                repo,
+                issue_number: issueNumber,
+                assignees: [assignee],
+              });
+            } catch (error) {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: issueNumber,
+                body: `Could not assign \`${assignee}\`. Check that the coding agent is enabled for this repository and that workflow permissions allow issue assignment.`,
+              });
+              throw error;
+            }

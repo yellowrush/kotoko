@@ -1,5 +1,7 @@
 # API
 
+See [place-report-issues.md](place-report-issues.md) for the public place report to GitHub Issue workflow.
+
 后端 API 规范。前缀 `/api/v1`，JSON camelCase，时间 ISO 8601，错误格式结构化。
 
 ## First Release 接口范围
@@ -14,6 +16,7 @@ PATCH  /api/v1/me
 
 GET    /api/v1/places
 GET    /api/v1/places/:placeId
+POST   /api/v1/places/:placeId/reports
 
 GET    /api/v1/knowledge
 GET    /api/v1/knowledge/:knowledgeId

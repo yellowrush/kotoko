@@ -140,13 +140,16 @@ describe('HomePage recommendations', () => {
     );
 
     const transport = screen.getByRole('combobox', { name: /交通手段:/ });
-    const group = screen.getByRole('combobox', { name: /人数:/ });
+    const group = screen.getByRole('combobox', { name: /子どもの人数:/ });
 
+    expect(screen.getByText('🧭')).toBeInTheDocument();
     fireEvent.change(transport, { target: { value: 'walking' } });
     fireEvent.change(group, { target: { value: '2' } });
 
     expect(transport).toHaveValue('walking');
     expect(group).toHaveValue('2');
+    expect(screen.getByText('🚶')).toBeInTheDocument();
+    expect(screen.getByText('👪')).toBeInTheDocument();
   });
 
   it('highlights top recommendations with medal ranking and score badge', () => {

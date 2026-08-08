@@ -88,6 +88,7 @@ function DropdownPill<T extends string | number | undefined>({
   value,
   onChange,
   tKey,
+  dynamicIcon = false,
 }: {
   label: string;
   emoji: string;
@@ -95,13 +96,16 @@ function DropdownPill<T extends string | number | undefined>({
   value: T | undefined;
   onChange: (next: T | undefined) => void;
   tKey: (key: string) => string;
+  dynamicIcon?: boolean;
 }) {
   const selectedValue = value === undefined ? '' : String(value);
+  const selectedOption = options.find((option) => (option.value === undefined ? '' : String(option.value)) === selectedValue);
+  const displayEmoji = dynamicIcon ? selectedOption?.emoji ?? emoji : emoji;
 
   return (
     <label className="flex min-h-11 min-w-0 items-center gap-2 rounded-xl border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm focus-within:border-brand-500 focus-within:ring-2 focus-within:ring-brand-100">
       <span aria-hidden="true" className="text-base">
-        {emoji}
+        {displayEmoji}
       </span>
       <span className="shrink-0 whitespace-nowrap text-gray-600">{label}</span>
       <select
@@ -211,31 +215,31 @@ export function HomePage() {
       );
       if (nearest) {
         return (
-          <div className="flex items-center justify-between gap-3 rounded-xl border border-sky-200 bg-sky-50 px-3 py-2 text-sm text-sky-900">
+          <div className="flex min-h-11 items-center justify-between gap-3 rounded-xl border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm">
             <span className="flex shrink-0 items-center gap-2">
               <span aria-hidden="true">📍</span>
               <span>{locationLabel('home.currentLocation')}</span>
             </span>
-            <span className="min-w-0 flex-1 text-right font-semibold">{locationPlace(nearest.nameJa)}</span>
+            <span className="min-w-0 flex-1 text-right font-semibold text-gray-900">{locationPlace(nearest.nameJa)}</span>
           </div>
         );
       }
     }
     if (recommendationLocation.source === 'municipality') {
       return (
-        <div className="flex items-center justify-between gap-3 rounded-xl border border-sky-200 bg-sky-50 px-3 py-2 text-sm text-sky-900">
+        <div className="flex min-h-11 items-center justify-between gap-3 rounded-xl border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm">
           <span className="flex shrink-0 items-center gap-2">
             <span aria-hidden="true">🏠</span>
             <span>{locationLabel('home.residence')}</span>
           </span>
-          <span className="min-w-0 flex-1 text-right font-semibold">
+          <span className="min-w-0 flex-1 text-right font-semibold text-gray-900">
             {locationPlace(recommendationLocation.municipality.nameJa)}
           </span>
         </div>
       );
     }
     return (
-      <div className="flex items-center justify-between gap-3 rounded-xl border border-gray-200 bg-gray-50 px-3 py-2 text-sm text-gray-600">
+      <div className="flex min-h-11 items-center justify-between gap-3 rounded-xl border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm">
         <span className="flex min-w-0 items-center gap-2">
           <span aria-hidden="true">⚙️</span>
           <span>{t('home.noLocation')}</span>
@@ -284,12 +288,12 @@ export function HomePage() {
         </div>
 
         <div className="mt-3 grid gap-2">
-          <div className="flex items-center justify-between gap-3 rounded-xl border border-amber-200 bg-amber-50 px-3 py-2 text-sm text-amber-900">
+          <div className="flex min-h-11 items-center justify-between gap-3 rounded-xl border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm">
             <span className="flex shrink-0 items-center gap-2">
               <span aria-hidden="true">{weather ? WEATHER_EMOJI[weather.condition] : '🌤️'}</span>
               <span>{t('home.currentWeather')}</span>
             </span>
-            <span className="min-w-0 flex-1 text-right font-semibold">{renderWeatherLabel()}</span>
+            <span className="min-w-0 flex-1 text-right font-semibold text-gray-900">{renderWeatherLabel()}</span>
           </div>
           {renderLocationInfo()}
         </div>
@@ -302,6 +306,7 @@ export function HomePage() {
             value={transportMode}
             onChange={(next) => setTransportMode(next)}
             tKey={t}
+            dynamicIcon
           />
           <DropdownPill
             label={t('home.groupSize')}

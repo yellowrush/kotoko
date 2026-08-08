@@ -6,6 +6,7 @@ import {
   knowledgeListSchema,
   policySchema,
   policyListSchema,
+  contentVersionSchema,
 } from '../src/schemas';
 
 const validPlace = {
@@ -159,6 +160,62 @@ describe('policyListSchema', () => {
   it('rejects a policy without an official url', () => {
     expect(() =>
       policyListSchema.parse({ policies: [{ ...validPolicy, officialUrl: '' }], total: 1 }),
+    ).toThrow();
+  });
+});
+
+describe('contentVersionSchema', () => {
+  it('accepts a public content version response', () => {
+    const parsed = contentVersionSchema.parse({
+      places: {
+        count: 10,
+        latestSourceCheckedAt: '2026-08-08T00:00:00.000Z',
+        latestReviewedAt: null,
+        maxVersion: 2,
+        signature: 'places-signature',
+      },
+      knowledge: {
+        count: 3,
+        latestSourceCheckedAt: null,
+        latestReviewedAt: '2026-08-08T00:00:00.000Z',
+        maxVersion: 0,
+        signature: 'knowledge-signature',
+      },
+      policies: {
+        count: 4,
+        latestSourceCheckedAt: '2026-08-08T00:00:00.000Z',
+        latestReviewedAt: null,
+        maxVersion: 1,
+        signature: 'policies-signature',
+      },
+      publishedAt: '2026-08-08T00:00:00.000Z',
+      signature: 'all-content-signature',
+    });
+
+    expect(parsed.places.count).toBe(10);
+  });
+
+  it('rejects missing collection signatures', () => {
+    expect(() =>
+      contentVersionSchema.parse({
+        places: { count: 1, latestSourceCheckedAt: null, latestReviewedAt: null, maxVersion: 1 },
+        knowledge: {
+          count: 1,
+          latestSourceCheckedAt: null,
+          latestReviewedAt: null,
+          maxVersion: 0,
+          signature: 'knowledge',
+        },
+        policies: {
+          count: 1,
+          latestSourceCheckedAt: null,
+          latestReviewedAt: null,
+          maxVersion: 1,
+          signature: 'policies',
+        },
+        publishedAt: null,
+        signature: 'all',
+      }),
     ).toThrow();
   });
 });

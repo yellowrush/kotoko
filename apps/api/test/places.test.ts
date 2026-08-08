@@ -91,7 +91,7 @@ describe('GET /api/v1/content/version', () => {
     const app = buildApp();
     const res = await app.inject({ method: 'GET', url: `${API_PREFIX}/content/version` });
     expect(res.statusCode).toBe(200);
-    expect(res.json().places).toBeGreaterThan(0);
+    expect(res.json().places.count).toBeGreaterThan(0);
     await app.close();
   });
 });

@@ -1,5 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 import { ApiClient, ApiError } from '../src/client';
+import { fetchContentVersion } from '../src/content';
 import { submitPlaceReport } from '../src/places';
 
 function jsonResponse(status: number, body: unknown): Response {
@@ -77,5 +78,46 @@ describe('submitPlaceReport', () => {
     await expect(
       submitPlaceReport(client, 'ueno-park', { type: 'other' }),
     ).rejects.toThrow();
+  });
+});
+
+describe('fetchContentVersion', () => {
+  it('GETs the content version endpoint and validates the response', async () => {
+    const fetchImpl = vi.fn().mockResolvedValue(
+      jsonResponse(200, {
+        places: {
+          count: 10,
+          latestSourceCheckedAt: '2026-08-08T00:00:00.000Z',
+          latestReviewedAt: null,
+          maxVersion: 2,
+          signature: 'places',
+        },
+        knowledge: {
+          count: 3,
+          latestSourceCheckedAt: null,
+          latestReviewedAt: '2026-08-08T00:00:00.000Z',
+          maxVersion: 0,
+          signature: 'knowledge',
+        },
+        policies: {
+          count: 4,
+          latestSourceCheckedAt: '2026-08-08T00:00:00.000Z',
+          latestReviewedAt: null,
+          maxVersion: 1,
+          signature: 'policies',
+        },
+        publishedAt: '2026-08-08T00:00:00.000Z',
+        signature: 'all',
+      }),
+    );
+    const client = new ApiClient({ baseUrl: 'https://api.example.com', fetchImpl });
+
+    const result = await fetchContentVersion(client);
+
+    expect(result.signature).toBe('all');
+    expect(fetchImpl).toHaveBeenCalledWith(
+      'https://api.example.com/content/version',
+      expect.objectContaining({ method: 'GET' }),
+    );
   });
 });

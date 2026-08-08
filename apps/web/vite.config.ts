@@ -49,11 +49,14 @@ export default defineConfig({
           {
             // 公共内容：地点数据使用 Stale While Revalidate 缓存（AGENTS.md 10.2）
             urlPattern: ({ request, url }) =>
-              request.method === 'GET' && url.pathname.startsWith('/api/v1/places'),
-            handler: 'StaleWhileRevalidate',
+              request.method === 'GET' &&
+              /^\/api\/v1\/(places|knowledge|policies)(\/|$)/.test(url.pathname),
+            handler: 'NetworkFirst',
             options: {
-              cacheName: 'kodoko-places',
-              expiration: { maxEntries: 50, maxAgeSeconds: 60 * 60 * 24 * 30 },
+              cacheName: 'kodoko-public-content',
+              networkTimeoutSeconds: 3,
+              expiration: { maxEntries: 150, maxAgeSeconds: 60 * 60 * 24 * 7 },
+              cacheableResponse: { statuses: [0, 200] },
             },
           },
         ],

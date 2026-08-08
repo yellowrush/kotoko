@@ -243,3 +243,22 @@ export const policyListSchema = z.object({
 
 export type PolicyDTO = z.infer<typeof policySchema>;
 export type PolicyListDTO = z.infer<typeof policyListSchema>;
+
+export const contentCollectionVersionSchema = z.object({
+  count: z.number().int().nonnegative(),
+  latestSourceCheckedAt: z.string().nullable(),
+  latestReviewedAt: z.string().nullable(),
+  maxVersion: z.number().int().nonnegative(),
+  signature: z.string().min(1),
+});
+
+export const contentVersionSchema = z.object({
+  places: contentCollectionVersionSchema,
+  knowledge: contentCollectionVersionSchema,
+  policies: contentCollectionVersionSchema,
+  publishedAt: z.string().nullable(),
+  signature: z.string().min(1),
+});
+
+export type ContentCollectionVersionDTO = z.infer<typeof contentCollectionVersionSchema>;
+export type ContentVersionDTO = z.infer<typeof contentVersionSchema>;

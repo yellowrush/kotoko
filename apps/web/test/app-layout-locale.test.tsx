@@ -37,7 +37,11 @@ describe('AppLayout language selector', () => {
 
     fireEvent.click(screen.getByRole('button', { name: '简体中文' }));
 
-    await waitFor(() => expect(screen.getByRole('link', { name: '我的页面' })).toBeInTheDocument());
+    await waitFor(() =>
+      expect(
+        screen.getByRole('link', { name: '个人中心' }),
+      ).toBeInTheDocument(),
+    );
     expect(useAppStore.getState().locale).toBe('zh-CN');
     expect(setPreference).toHaveBeenCalledWith({ locale: 'zh-CN' });
   });

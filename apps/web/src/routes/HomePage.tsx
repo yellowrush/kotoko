@@ -45,6 +45,30 @@ const WEATHER_EMOJI = {
   unknown: '🌤️',
 } as const;
 
+const RECOMMENDATION_RANKS = [
+  {
+    medal: '🥇',
+    border: 'border-amber-300',
+    bg: 'bg-amber-50',
+    badge: 'bg-amber-100 text-amber-900 ring-amber-200',
+    score: 'bg-amber-500 text-white shadow-amber-200',
+  },
+  {
+    medal: '🥈',
+    border: 'border-slate-300',
+    bg: 'bg-slate-50',
+    badge: 'bg-slate-100 text-slate-800 ring-slate-200',
+    score: 'bg-slate-500 text-white shadow-slate-200',
+  },
+  {
+    medal: '🥉',
+    border: 'border-orange-300',
+    bg: 'bg-orange-50',
+    badge: 'bg-orange-100 text-orange-900 ring-orange-200',
+    score: 'bg-orange-500 text-white shadow-orange-200',
+  },
+] as const;
+
 const POLICY_STATUS_PRIORITY: Record<PolicyTaskState['status'], number> = {
   new: 0,
   planned: 1,
@@ -318,25 +342,46 @@ export function HomePage() {
         )}
 
         {!hasBlockingPlacesError &&
-          recommendations.map((r, index) => (
-            <Link
-              key={r.place.id}
-              to={`/places/${r.place.id}`}
-              className="mt-2 flex min-h-16 items-center gap-2 rounded-xl border border-gray-300 bg-white p-3 shadow-sm transition hover:border-brand-300 hover:bg-brand-50/30 focus-visible:outline-brand-600"
-            >
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-700 text-xs font-bold text-white">
-                {index + 1}
-              </span>
-              <span className="shrink-0 text-lg">{CATEGORY_ICON[r.place.category]}</span>
-              <span className="min-w-0 flex-1">
-                <span className="block truncate text-base font-semibold text-gray-900">{r.place.name}</span>
-                <RecommendationReasons reasonCodes={r.reasonCodes} distanceKm={r.distanceKm} />
-              </span>
-              <span className="shrink-0 rounded-full bg-gray-100 px-2 py-1 text-xs font-medium text-gray-600">
-                {t('home.score')} {r.score}
-              </span>
-            </Link>
-          ))}
+          recommendations.map((r, index) => {
+            const rank = RECOMMENDATION_RANKS[index];
+            return (
+              <Link
+                key={r.place.id}
+                to={`/places/${r.place.id}`}
+                className={`mt-2 flex min-h-20 items-start gap-3 rounded-xl border p-3 shadow-sm transition hover:border-brand-300 hover:bg-brand-50/30 focus-visible:outline-brand-600 ${
+                  rank ? `${rank.border} ${rank.bg}` : 'border-gray-300 bg-white'
+                }`}
+              >
+                <span
+                  className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-xl ring-1 ${
+                    rank ? rank.badge : 'bg-brand-700 text-white ring-brand-200'
+                  }`}
+                  aria-hidden="true"
+                >
+                  {rank ? rank.medal : index + 1}
+                </span>
+                <span className="min-w-0 flex-1">
+                  <span className="flex items-start gap-2">
+                    <span className="shrink-0 text-lg" aria-hidden="true">
+                      {CATEGORY_ICON[r.place.category]}
+                    </span>
+                    <span className="min-w-0 text-base font-semibold leading-snug text-gray-900">
+                      {r.place.name}
+                    </span>
+                  </span>
+                  <RecommendationReasons reasonCodes={r.reasonCodes} distanceKm={r.distanceKm} />
+                </span>
+                <span
+                  className={`shrink-0 rounded-xl px-2.5 py-1.5 text-center text-xs font-bold shadow-md ${
+                    rank ? rank.score : 'bg-brand-700 text-white shadow-brand-100'
+                  }`}
+                >
+                  <span className="block text-[10px] leading-none opacity-90">{t('home.score')}</span>
+                  <span className="block text-base leading-tight">{r.score}</span>
+                </span>
+              </Link>
+            );
+          })}
       </Card>
 
       <Card>

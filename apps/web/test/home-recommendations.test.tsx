@@ -149,6 +149,18 @@ describe('HomePage recommendations', () => {
     expect(group).toHaveValue('2');
   });
 
+  it('highlights top recommendations with medal ranking and score badge', () => {
+    render(
+      <MemoryRouter>
+        <HomePage />
+      </MemoryRouter>,
+    );
+
+    expect(screen.getByText('🥇')).toBeInTheDocument();
+    expect(screen.getByText('Fallback Park')).not.toHaveClass('truncate');
+    expect(screen.getByText('スコア')).toBeInTheDocument();
+  });
+
   it('keeps cached recommendations visible when places refetch fails', async () => {
     homeMocks.placesState = {
       data: [place({ id: 'cached', name: 'Cached Park' })],

@@ -1,6 +1,16 @@
 import { describe, expect, it } from 'vitest';
+import type { PolicyRule } from '@kodoko/domain';
 import { buildApp, API_PREFIX } from '../src/app';
 import { seedPolicies } from '../src/data/policies';
+
+function ruleMatchesAge(rule: PolicyRule, ageMonths: number): boolean {
+  if ('all' in rule) return rule.all.every((child) => ruleMatchesAge(child, ageMonths));
+  if ('any' in rule) return rule.any.some((child) => ruleMatchesAge(child, ageMonths));
+  if (rule.field !== 'child.ageMonths') return true;
+  if (rule.operator === 'gte') return ageMonths >= Number(rule.value);
+  if (rule.operator === 'lte') return ageMonths <= Number(rule.value);
+  return true;
+}
 
 describe('GET /api/v1/policies', () => {
   it('returns only published policies in the requested locale', async () => {
@@ -44,12 +54,24 @@ describe('GET /api/v1/policies', () => {
   it('exposes municipality codes for client-side filtering', async () => {
     const app = buildApp();
     const res = await app.inject({ method: 'GET', url: `${API_PREFIX}/policies?locale=ja` });
-    const diaper = res.json().policies.find((p: { id: string }) => p.id === 'p-diaper-support');
-    expect(diaper?.municipalityCode).toBe('13113');
+    const housework = res.json().policies.find((p: { id: string }) => p.id === 'p-shibuya-housework-support');
+    expect(housework?.municipalityCode).toBe('13113');
     expect(
-      diaper?.eligibilityRule.all.some((l: { field: string }) => l.field === 'user.municipalityCode'),
+      housework?.eligibilityRule.all.some((l: { field: string }) => l.field === 'user.municipalityCode'),
     ).toBe(true);
     await app.close();
+  });
+
+  it('uses specific official pages for municipality policy reminders', () => {
+    const jaPolicies = seedPolicies.filter((p) => p.locale === 'ja');
+    expect(jaPolicies.some((p) => p.id === 'p-diaper-support')).toBe(false);
+    expect(jaPolicies.find((p) => p.id === 'p-medical-subsidy')?.officialUrl).toContain('kodomo_ij.html');
+    expect(jaPolicies.find((p) => p.id === 'p-shibuya-housework-support')?.officialUrl).toContain(
+      'kajisapota.html',
+    );
+    expect(jaPolicies.find((p) => p.id === 'p-weaning-class')?.officialUrl).toContain(
+      'rinyushokukoshukai.html',
+    );
   });
 
   it('serves the same ids in every supported locale', async () => {
@@ -62,5 +84,35 @@ describe('GET /api/v1/policies', () => {
     for (const locales of Object.values(ids)) {
       expect(locales.size).toBe(3);
     }
+  });
+
+  it('includes age-based vaccine, health-checkup, and childcare reminders', () => {
+    const jaIds = new Set(seedPolicies.filter((p) => p.locale === 'ja').map((p) => p.id));
+    for (const id of [
+      'p-routine-vaccination-2-month-start',
+      'p-routine-vaccination-1-year',
+      'p-routine-vaccination-3-year-je',
+      'p-routine-vaccination-school-entry-mr',
+      'p-infant-health-checkups',
+      'p-childcare-application-prep',
+    ]) {
+      expect(jaIds.has(id)).toBe(true);
+    }
+  });
+
+  it('matches new vaccine reminders only in their target age windows', () => {
+    const twoMonth = seedPolicies.find(
+      (p) => p.id === 'p-routine-vaccination-2-month-start' && p.locale === 'ja',
+    );
+    const oneYear = seedPolicies.find(
+      (p) => p.id === 'p-routine-vaccination-1-year' && p.locale === 'ja',
+    );
+
+    expect(twoMonth).toBeTruthy();
+    expect(oneYear).toBeTruthy();
+    expect(ruleMatchesAge(twoMonth!.eligibilityRule, 2)).toBe(true);
+    expect(ruleMatchesAge(twoMonth!.eligibilityRule, 12)).toBe(false);
+    expect(ruleMatchesAge(oneYear!.eligibilityRule, 12)).toBe(true);
+    expect(ruleMatchesAge(oneYear!.eligibilityRule, 6)).toBe(false);
   });
 });

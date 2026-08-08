@@ -232,6 +232,11 @@
     "unread": "未读",
     "sources": "信息来源",
     "ageRange": "适合月龄",
+    "views": {
+      "forChild": "当前年龄",
+      "upcoming": "近期留意",
+      "all": "全部"
+    },
     "backToList": "返回知识列表",
     "categories": {
       "development": "发育",
@@ -252,6 +257,12 @@
     "matching": "符合条件的制度",
     "notMatching": "其他制度",
     "noMatch": "暂时没有符合条件的制度。",
+    "sections": {
+      "new": "新提醒",
+      "planned": "已计划",
+      "applicable": "全部适用",
+      "notApplicable": "暂不适用"
+    },
     "deadline": "申请期限",
     "daysLeft": "剩余 {{days}} 天",
     "applicationStart": "申请开始",

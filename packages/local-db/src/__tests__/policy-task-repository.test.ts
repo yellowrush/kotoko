@@ -40,4 +40,16 @@ describe('PolicyTaskRepository', () => {
     await repo.setStatus('c1', 'p1', 'planned');
     expect(await repo.statusFor('c2', 'p1')).toBeUndefined();
   });
+
+  it('stores the same policy independently for different children', async () => {
+    await repo.setStatus('c1', 'p1', 'planned');
+    await repo.setStatus('c2', 'p1', 'completed');
+
+    expect((await repo.statusFor('c1', 'p1'))?.status).toBe('planned');
+    expect((await repo.statusFor('c2', 'p1'))?.status).toBe('completed');
+    expect((await repo.listByChildren(['c1', 'c2'])).map((task) => task.childId).sort()).toEqual([
+      'c1',
+      'c2',
+    ]);
+  });
 });

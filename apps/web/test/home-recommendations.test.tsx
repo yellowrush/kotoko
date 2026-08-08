@@ -83,6 +83,7 @@ vi.mock('../src/hooks/useKnowledge', () => ({
 vi.mock('../src/hooks/usePolicies', () => ({
   usePolicies: () => ({ data: [], isLoading: false }),
   usePolicyTasks: () => ({ statusFor: () => 'new' }),
+  usePolicyTasksForChildren: () => ({ statusFor: () => 'new' }),
 }));
 
 vi.mock('../src/hooks/usePreference', () => ({

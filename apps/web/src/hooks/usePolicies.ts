@@ -52,15 +52,23 @@ export function usePolicyMatches() {
 
 export function usePolicyTasks() {
   const { active } = useActiveChild();
-  const [tasks, setTasks] = useState<Map<string, PolicyTaskState>>(new Map());
-  const [loading, setLoading] = useState(true);
   const childId = active?.id;
 
+  return usePolicyTasksForChildren(childId ? [childId] : []);
+}
+
+export function usePolicyTasksForChildren(childIds: string[]) {
+  const { active } = useActiveChild();
+  const [tasks, setTasks] = useState<Map<string, PolicyTaskState>>(new Map());
+  const [loading, setLoading] = useState(true);
+  const scopeKey = childIds.join('|');
+  const scopedChildIds = useMemo(() => (scopeKey ? scopeKey.split('|') : []), [scopeKey]);
+
   const reload = useCallback(async () => {
-    const list = await getPolicyTaskRepository().listByChild(childId);
-    setTasks(new Map(list.map((task) => [task.policyId, task])));
+    const list = await getPolicyTaskRepository().listByChildren(scopedChildIds);
+    setTasks(new Map(list.map((task) => [taskKey(task.childId, task.policyId), task])));
     setLoading(false);
-  }, [childId]);
+  }, [scopedChildIds]);
 
   useEffect(() => {
     setLoading(true);
@@ -68,17 +76,27 @@ export function usePolicyTasks() {
   }, [reload]);
 
   const setStatus = useCallback(
-    async (policyId: string, status: PolicyTaskState['status']) => {
-      const saved = await getPolicyTaskRepository().setStatus(childId, policyId, status);
-      setTasks((prev) => new Map(prev).set(policyId, saved));
+    async (policyId: string, status: PolicyTaskState['status'], childIdOverride?: string) => {
+      const targetChildId = childIdOverride ?? active?.id;
+      if (!targetChildId) return;
+      const saved = await getPolicyTaskRepository().setStatus(targetChildId, policyId, status);
+      setTasks((prev) => new Map(prev).set(taskKey(targetChildId, policyId), saved));
     },
-    [childId],
+    [active?.id],
   );
 
   const statusFor = useCallback(
-    (policyId: string): PolicyTaskState['status'] => tasks.get(policyId)?.status ?? 'new',
-    [tasks],
+    (policyId: string, childIdOverride?: string): PolicyTaskState['status'] => {
+      const targetChildId = childIdOverride ?? active?.id;
+      if (!targetChildId) return 'new';
+      return tasks.get(taskKey(targetChildId, policyId))?.status ?? 'new';
+    },
+    [tasks, active?.id],
   );
 
   return { tasks, loading, setStatus, statusFor };
+}
+
+function taskKey(childId: string | undefined, policyId: string): string {
+  return `${childId ?? 'none'}:${policyId}`;
 }

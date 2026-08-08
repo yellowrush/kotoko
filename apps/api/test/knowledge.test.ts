@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { buildApp, API_PREFIX } from '../src/app';
+import { seedKnowledge } from '../src/data/knowledge';
 
 describe('GET /api/v1/knowledge', () => {
   it('returns published knowledge for the requested locale', async () => {
@@ -30,6 +31,29 @@ describe('GET /api/v1/knowledge', () => {
       expect(body.knowledge.every((k: { locale: string }) => k.locale === locale)).toBe(true);
     }
     await app.close();
+  });
+
+  it('keeps every knowledge id translated in all supported locales', () => {
+    const localesById = new Map<string, Set<string>>();
+    for (const item of seedKnowledge) {
+      const locales = localesById.get(item.id) ?? new Set<string>();
+      locales.add(item.locale);
+      localesById.set(item.id, locales);
+    }
+
+    for (const locales of localesById.values()) {
+      expect(locales).toEqual(new Set(['ja', 'zh-CN', 'zh-TW']));
+    }
+  });
+
+  it('explains the main age-based vaccine checkpoints', () => {
+    const ja = seedKnowledge.find((item) => item.id === 'k-vaccination' && item.locale === 'ja');
+    expect(ja?.sourceReferences.some((source) => source.url?.includes('mhlw.go.jp'))).toBe(true);
+    expect(ja?.body).toContain('ロタウイルス');
+    expect(ja?.body).toContain('BCG');
+    expect(ja?.body).toContain('MR');
+    expect(ja?.body).toContain('日本脳炎');
+    expect(ja?.body).toContain('HPV');
   });
 });
 

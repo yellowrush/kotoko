@@ -232,6 +232,11 @@
     "unread": "未讀",
     "sources": "資訊來源",
     "ageRange": "適合月齡",
+    "views": {
+      "forChild": "目前年齡",
+      "upcoming": "近期留意",
+      "all": "全部"
+    },
     "backToList": "返回知識列表",
     "categories": {
       "development": "發育",
@@ -252,6 +257,12 @@
     "matching": "符合條件的制度",
     "notMatching": "其他制度",
     "noMatch": "暫時沒有符合條件的制度。",
+    "sections": {
+      "new": "新提醒",
+      "planned": "已計畫",
+      "applicable": "全部適用",
+      "notApplicable": "暫不適用"
+    },
     "deadline": "申請期限",
     "daysLeft": "剩餘 {{days}} 天",
     "applicationStart": "申請開始",

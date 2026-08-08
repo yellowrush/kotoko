@@ -1,6 +1,11 @@
 import { describe, expect, it } from 'vitest';
 import type { KnowledgeContent } from '@kodoko/domain';
-import { filterKnowledgeByAge, sortKnowledgeByRead } from './knowledge';
+import {
+  filterKnowledgeByAge,
+  filterUpcomingKnowledgeByAge,
+  prioritizeKnowledgeForAges,
+  sortKnowledgeByRead,
+} from './knowledge';
 
 function makeItem(overrides: Partial<KnowledgeContent> & { id: string }): KnowledgeContent {
   return {
@@ -44,5 +49,44 @@ describe('sortKnowledgeByRead', () => {
     const b = makeItem({ id: 'b' });
     const result = sortKnowledgeByRead([b, a], new Set());
     expect(result.map((k) => k.id)).toEqual(['b', 'a']);
+  });
+});
+
+describe('filterUpcomingKnowledgeByAge', () => {
+  it('returns only content starting in the next six months', () => {
+    const current = makeItem({ id: 'current', minAgeMonths: 10, maxAgeMonths: 12 });
+    const soon = makeItem({ id: 'soon', minAgeMonths: 15, maxAgeMonths: 24 });
+    const later = makeItem({ id: 'later', minAgeMonths: 18, maxAgeMonths: 36 });
+
+    const result = filterUpcomingKnowledgeByAge([current, soon, later], 12);
+    expect(result.map((k) => k.id)).toEqual(['soon', 'later']);
+  });
+
+  it('returns nothing when no child age is available', () => {
+    expect(filterUpcomingKnowledgeByAge([makeItem({ id: 'a' })], undefined)).toEqual([]);
+  });
+});
+
+describe('prioritizeKnowledgeForAges', () => {
+  it('prioritizes unread current content before upcoming and read content', () => {
+    const readCurrent = makeItem({ id: 'read-current', minAgeMonths: 10, maxAgeMonths: 12 });
+    const unreadUpcoming = makeItem({ id: 'unread-upcoming', minAgeMonths: 14, maxAgeMonths: 24 });
+    const unreadCurrent = makeItem({ id: 'unread-current', minAgeMonths: 11, maxAgeMonths: 13 });
+
+    const result = prioritizeKnowledgeForAges(
+      [readCurrent, unreadUpcoming, unreadCurrent],
+      [12],
+      new Set(['read-current']),
+    );
+
+    expect(result.map((k) => k.id)).toEqual([
+      'unread-current',
+      'unread-upcoming',
+      'read-current',
+    ]);
+  });
+
+  it('does not fall back to all content when no children are selected', () => {
+    expect(prioritizeKnowledgeForAges([makeItem({ id: 'a' })], [], new Set())).toEqual([]);
   });
 });

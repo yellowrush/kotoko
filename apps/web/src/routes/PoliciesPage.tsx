@@ -1,7 +1,7 @@
-﻿import { useMemo } from 'react';
+import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppTranslation } from '../hooks/useAppTranslation';
-import type { Policy } from '@kodoko/domain';
+import type { Policy, PolicyTaskState } from '@kodoko/domain';
 import { useActiveChild } from '../hooks/useActiveChild';
 import { usePolicies, usePolicyMatches, usePolicyTasks } from '../hooks/usePolicies';
 import { daysUntil } from '../lib/policy';
@@ -33,6 +33,31 @@ function PolicyItem({ policy, status }: { policy: Policy; status: string }) {
   );
 }
 
+function PolicySection({
+  title,
+  policies,
+  statusFor,
+}: {
+  title: string;
+  policies: Policy[];
+  statusFor: (policyId: string) => PolicyTaskState['status'];
+}) {
+  if (policies.length === 0) return null;
+
+  return (
+    <section>
+      <h2 className="mb-2 text-sm font-semibold text-gray-500">{title}</h2>
+      <ul className="flex flex-col gap-2">
+        {policies.map((policy) => (
+          <li key={policy.id}>
+            <PolicyItem policy={policy} status={statusFor(policy.id)} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
 export function PoliciesPage() {
   const { t } = useAppTranslation();
   const { data: policies, isLoading, isError, refetch } = usePolicies();
@@ -40,18 +65,20 @@ export function PoliciesPage() {
   const matches = usePolicyMatches();
   const { statusFor } = usePolicyTasks();
 
-  const { matched, notMatched } = useMemo(() => {
+  const { newReminders, planned, applicable, notMatched } = useMemo(() => {
     const list = policies ?? [];
-    if (!active) return { matched: list, notMatched: [] };
+    const matched = active ? list.filter((p) => matches.get(p.id)?.matched) : list;
     return {
-      matched: list.filter((p) => matches.get(p.id)?.matched),
-      notMatched: list.filter((p) => !matches.get(p.id)?.matched),
+      newReminders: matched.filter((p) => statusFor(p.id) === 'new'),
+      planned: matched.filter((p) => statusFor(p.id) === 'planned'),
+      applicable: matched.filter((p) => !['new', 'planned'].includes(statusFor(p.id))),
+      notMatched: active ? list.filter((p) => !matches.get(p.id)?.matched) : [],
     };
-  }, [policies, active, matches]);
+  }, [policies, active, matches, statusFor]);
 
   return (
     <div>
-<PageHeader title={t('policies.title')} backTo="/home" />
+      <PageHeader title={t('policies.title')} backTo="/home" />
 
       {isLoading && <p className="text-sm text-gray-400">{t('common.loading')}</p>}
 
@@ -70,35 +97,33 @@ export function PoliciesPage() {
 
       {!isError && (
         <div className="flex flex-col gap-4">
-          <section>
-            <h2 className="mb-2 text-sm font-semibold text-gray-500">{t('policies.matching')}</h2>
-            {matched.length === 0 ? (
-              <p className="text-sm text-gray-500">{t('policies.noMatch')}</p>
-            ) : (
-              <ul className="flex flex-col gap-2">
-                {matched.map((policy) => (
-                  <li key={policy.id}>
-                    <PolicyItem policy={policy} status={statusFor(policy.id)} />
-                  </li>
-                ))}
-              </ul>
-            )}
-          </section>
-
-          {notMatched.length > 0 && (
-            <section>
-              <h2 className="mb-2 text-sm font-semibold text-gray-500">
-                {t('policies.notMatching')}
-              </h2>
-              <ul className="flex flex-col gap-2">
-                {notMatched.map((policy) => (
-                  <li key={policy.id}>
-                    <PolicyItem policy={policy} status={statusFor(policy.id)} />
-                  </li>
-                ))}
-              </ul>
-            </section>
+          {newReminders.length === 0 && planned.length === 0 && applicable.length === 0 ? (
+            <p className="text-sm text-gray-500">{t('policies.noMatch')}</p>
+          ) : (
+            <>
+              <PolicySection
+                title={t('policies.sections.new')}
+                policies={newReminders}
+                statusFor={statusFor}
+              />
+              <PolicySection
+                title={t('policies.sections.planned')}
+                policies={planned}
+                statusFor={statusFor}
+              />
+              <PolicySection
+                title={t('policies.sections.applicable')}
+                policies={applicable}
+                statusFor={statusFor}
+              />
+            </>
           )}
+
+          <PolicySection
+            title={t('policies.sections.notApplicable')}
+            policies={notMatched}
+            statusFor={statusFor}
+          />
         </div>
       )}
     </div>

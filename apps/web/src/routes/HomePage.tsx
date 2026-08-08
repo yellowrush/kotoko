@@ -2,16 +2,16 @@
 import { useAppTranslation } from '../hooks/useAppTranslation';
 import { Link } from 'react-router-dom';
 import { Card } from '@kodoko/ui';
-import { calculateAgeMonths, findNearestMunicipality } from '@kodoko/domain';
+import { calculateAgeMonths, findNearestMunicipality, type Policy, type PolicyTaskState } from '@kodoko/domain';
 import type { TransportMode } from '@kodoko/recommendation';
 import { useSelectedChildren } from '../hooks/useSelectedChildren';
 import { usePlaces } from '../hooks/usePlaces';
 import { useGeolocation } from '../hooks/useGeolocation';
 import { useWeather } from '../hooks/useWeather';
 import { useKnowledge, useKnowledgeProgress } from '../hooks/useKnowledge';
-import { usePolicies, usePolicyTasks } from '../hooks/usePolicies';
+import { usePolicies, usePolicyTasksForChildren } from '../hooks/usePolicies';
 import { usePreference } from '../hooks/usePreference';
-import { filterKnowledgeByAges, sortKnowledgeByRead } from '../lib/knowledge';
+import { prioritizeKnowledgeForAges } from '../lib/knowledge';
 import { checkPolicyFor, daysUntil } from '../lib/policy';
 import { recommendForChild } from '../lib/recommendations';
 import { resolveRecommendationLocation } from '../lib/recommendationLocation';
@@ -35,6 +35,18 @@ const GROUP_OPTIONS: { value: number | undefined; key: string }[] = [
   { value: 2, key: 'home.group2' },
   { value: 3, key: 'home.group3' },
 ];
+
+const POLICY_STATUS_PRIORITY: Record<PolicyTaskState['status'], number> = {
+  new: 0,
+  planned: 1,
+  viewed: 2,
+  completed: 3,
+  dismissed: 4,
+};
+
+function policyStatusPriority(status: PolicyTaskState['status']): number {
+  return POLICY_STATUS_PRIORITY[status];
+}
 
 function ChipGroup<T>({
   label,
@@ -87,7 +99,7 @@ export function HomePage() {
   const { data: knowledge, isLoading: knowledgeLoading } = useKnowledge();
   const { readIds } = useKnowledgeProgress();
   const { data: policies, isLoading: policiesLoading } = usePolicies();
-  const { statusFor } = usePolicyTasks();
+  const { statusFor } = usePolicyTasksForChildren(selectedIds);
 
   // グループ人数は選択した子どもの人数に合わせて初期化する（最大 3 人以上）。
   useEffect(() => {
@@ -95,36 +107,39 @@ export function HomePage() {
   }, [selected.length]);
 
   const selectedAges = useMemo(() => selected.map((c) => calculateAgeMonths(c.birthDate)), [selected]);
-  const selectedBirthDates = useMemo(() => selected.map((c) => c.birthDate), [selected]);
-
   const weeklyKnowledge = useMemo(
-    () =>
-      sortKnowledgeByRead(
-        filterKnowledgeByAges(knowledge ?? [], selectedAges),
-        readIds,
-      ).slice(0, 3),
+    () => prioritizeKnowledgeForAges(knowledge ?? [], selectedAges, readIds).slice(0, 3),
     [knowledge, selectedAges, readIds],
   );
 
   const policyReminders = useMemo(() => {
     const list = (policies ?? [])
-      .filter((policy) =>
-        selectedBirthDates.length > 0 &&
-        selectedBirthDates.some((birthDate) =>
-          checkPolicyFor(policy, {
-            birthDate,
-            municipalityCode: preference?.municipalityCode,
-          }).matched,
-        ),
-      )
-      .filter((policy) => statusFor(policy.id) !== 'dismissed')
+      .map((policy) => {
+        const statuses = selected
+          .filter((child) =>
+            checkPolicyFor(policy, {
+              birthDate: child.birthDate,
+              municipalityCode: preference?.municipalityCode,
+            }).matched,
+          )
+          .map((child) => statusFor(policy.id, child.id))
+          .filter((status) => status !== 'dismissed');
+        if (statuses.length === 0) return null;
+        return {
+          policy,
+          priority: Math.min(...statuses.map(policyStatusPriority)),
+        };
+      })
+      .filter((item): item is { policy: Policy; priority: number } => item !== null)
       .sort((a, b) => {
-        const aDeadline = a.applicationDeadlineAt?.slice(0, 10) ?? '9999-12-31';
-        const bDeadline = b.applicationDeadlineAt?.slice(0, 10) ?? '9999-12-31';
+        if (a.priority !== b.priority) return a.priority - b.priority;
+        const aDeadline = a.policy.applicationDeadlineAt?.slice(0, 10) ?? '9999-12-31';
+        const bDeadline = b.policy.applicationDeadlineAt?.slice(0, 10) ?? '9999-12-31';
         return aDeadline.localeCompare(bDeadline);
-      });
+      })
+      .map((item) => item.policy);
     return list.slice(0, 3);
-  }, [policies, selectedBirthDates, preference, statusFor]);
+  }, [policies, selected, preference, statusFor]);
 
   function renderWeatherLabel(): string {
     if (!coords) return t('home.weatherUnavailable');
@@ -329,6 +344,7 @@ export function HomePage() {
                       gender={child.gender}
                       ageMonths={calculateAgeMonths(child.birthDate)}
                       size="md"
+                      selected={isChecked}
                     />
                     <span className="min-w-0">
                       <span className={`block truncate text-sm font-medium ${isChecked ? 'text-brand-900' : 'text-gray-700'}`}>
@@ -339,14 +355,6 @@ export function HomePage() {
                       </span>
                     </span>
                   </button>
-                  <span
-                    aria-hidden
-                    className={`flex h-5 w-5 shrink-0 items-center justify-center rounded border ${
-                      isChecked ? 'border-brand-600 bg-brand-600 text-white' : 'border-gray-300'
-                    }`}
-                  >
-                    {isChecked ? '✓' : ''}
-                  </span>
                   <Link
                     to={`/children/${child.id}/edit`}
                     className="shrink-0 text-xs font-medium text-brand-700"

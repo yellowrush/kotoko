@@ -232,6 +232,11 @@
     "unread": "未読",
     "sources": "情報源",
     "ageRange": "対象月齢",
+    "views": {
+      "forChild": "今の年齢",
+      "upcoming": "近いうち",
+      "all": "すべて"
+    },
     "backToList": "知識一覧に戻る",
     "categories": {
       "development": "発達",
@@ -252,6 +257,12 @@
     "matching": "対象の制度",
     "notMatching": "そのほかの制度",
     "noMatch": "条件に合う制度はありません。",
+    "sections": {
+      "new": "新しいリマインダー",
+      "planned": "対応予定",
+      "applicable": "すべての対象制度",
+      "notApplicable": "今は対象外"
+    },
     "deadline": "申請期限",
     "daysLeft": "残り {{days}} 日",
     "applicationStart": "申請開始",

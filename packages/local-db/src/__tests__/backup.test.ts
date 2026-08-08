@@ -11,6 +11,7 @@ import { DexieChildRepository } from '../repositories/child';
 import { FavoriteRepository } from '../repositories/favorite';
 import { PreferenceRepository } from '../repositories/preference';
 import { PlaceCommentRepository } from '../repositories/placeComment';
+import { PolicyTaskRepository } from '../repositories/policyTask';
 import { LOCAL_BACKUP_VERSION } from '../backup';
 
 const validBackupPayload = () => ({
@@ -130,6 +131,17 @@ describe('backup export/import', () => {
     const byPlace = await restored.listByPlace('p1');
     expect(byPlace).toHaveLength(1);
     expect(byPlace[0]?.content).toBe('とても良かった');
+  });
+
+  it('does not export the internal policy task primary key', async () => {
+    const policyTasks = new PolicyTaskRepository(db);
+    await policyTasks.setStatus('c1', 'p-child-allowance', 'planned');
+
+    const raw = await exportLocalBackupJson(db);
+    const parsed = JSON.parse(raw);
+    expect(parsed.policyTasks).toHaveLength(1);
+    expect(parsed.policyTasks[0].id).toBeUndefined();
+    expect(validateBackup(parsed).ok).toBe(true);
   });
 
   it('imports legacy v1 back—ups without placeComments', async () => {

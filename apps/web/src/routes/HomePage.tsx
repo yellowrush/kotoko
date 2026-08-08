@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+﻿import { useEffect, useMemo, useState } from 'react';
+import { useAppTranslation } from '../hooks/useAppTranslation';
 import { Link } from 'react-router-dom';
 import { Card } from '@kodoko/ui';
 import { calculateAgeMonths, findMunicipality, findNearestMunicipality } from '@kodoko/domain';
@@ -71,7 +71,7 @@ function ChipGroup<T>({
 }
 
 export function HomePage() {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   const { children, selected, selectedIds, toggle, loading: childLoading } = useSelectedChildren();
   const { data: places, isLoading: placesLoading, isError, refetch } = usePlaces();
   const { coords } = useGeolocation();

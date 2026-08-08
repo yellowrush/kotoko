@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+﻿import { useAppTranslation } from '../hooks/useAppTranslation';
 
 const STATUS_STYLES: Record<string, string> = {
   new: 'bg-gray-100 text-gray-600',
@@ -9,7 +9,7 @@ const STATUS_STYLES: Record<string, string> = {
 };
 
 export function PolicyStatusBadge({ status }: { status: string }) {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   return (
     <span
       className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-medium ${STATUS_STYLES[status] ?? STATUS_STYLES.new}`}

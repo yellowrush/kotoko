@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+﻿import { useAppTranslation } from '../../hooks/useAppTranslation';
 import type { Place } from '@kodoko/domain';
 
 type PlacePriceSectionProps = {
@@ -6,7 +6,7 @@ type PlacePriceSectionProps = {
 };
 
 export function PlacePriceSection({ place }: PlacePriceSectionProps) {
-  const { t, i18n } = useTranslation();
+  const { t, locale } = useAppTranslation();
   const prices = place.prices ?? [];
   const first = prices[0];
 
@@ -32,7 +32,7 @@ export function PlacePriceSection({ place }: PlacePriceSectionProps) {
         <p className="mt-2 flex items-center justify-between gap-2 text-xs text-gray-400">
           <span>
             {t('places.priceUpdatedAt', {
-              date: new Date(first.checkedAt).toLocaleDateString(i18n.language),
+              date: new Date(first.checkedAt).toLocaleDateString(locale),
             })}
           </span>
           <a

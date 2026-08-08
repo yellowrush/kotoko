@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+﻿import { useAppTranslation } from '../../hooks/useAppTranslation';
 import type { Place } from '@kodoko/domain';
 
 type PlaceBasicInfoProps = {
@@ -23,10 +23,10 @@ function mapsUrl(place: Place): string {
 }
 
 export function PlaceBasicInfo({ place }: PlaceBasicInfoProps) {
-  const { t, i18n } = useTranslation();
+  const { t, locale } = useAppTranslation();
 
   const description =
-    i18n.language === 'ja'
+    locale === 'ja'
       ? place.description
       : place.descriptionZh ?? place.description;
 

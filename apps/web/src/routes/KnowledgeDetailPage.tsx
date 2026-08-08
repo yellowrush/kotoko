@@ -1,11 +1,11 @@
-import { useEffect } from 'react';
+﻿import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useAppTranslation } from '../hooks/useAppTranslation';
 import { useKnowledgeDetail, useKnowledgeProgress } from '../hooks/useKnowledge';
 import { PageHeader } from '../components/PageHeader';
 
 export function KnowledgeDetailPage() {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   const { knowledgeId } = useParams();
   const { data: item, isLoading, isError, refetch } = useKnowledgeDetail(knowledgeId);
   const { markRead } = useKnowledgeProgress();

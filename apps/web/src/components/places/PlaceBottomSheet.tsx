@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+﻿import { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useAppTranslation } from '../../hooks/useAppTranslation';
 import type { FilteredPlace } from '../../lib/placeFilters';
 import { formatDistanceKm } from '../../lib/placeFilters';
 import { CATEGORY_ICON } from './categoryMeta';
@@ -13,7 +13,7 @@ type PlaceBottomSheetProps = {
 };
 
 export function PlaceBottomSheet({ places, selectedPlaceId, onSelect, total }: PlaceBottomSheetProps) {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   const [collapsed, setCollapsed] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
   const suppressScrollRef = useRef(false);

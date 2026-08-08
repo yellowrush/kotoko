@@ -1,7 +1,7 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import { resources, DEFAULT_LOCALE, type Locale } from '@kodoko/i18n';
+import { resources, DEFAULT_LOCALE, normalizeLocale, type Locale } from '@kodoko/i18n';
 
 let initialized = false;
 
@@ -14,11 +14,11 @@ export async function initI18n(): Promise<typeof i18n> {
     fallbackLng: DEFAULT_LOCALE,
     defaultNS: 'common',
     supportedLngs: ['ja', 'zh-CN', 'zh-TW'],
-    nonExplicitSupportedLngs: true,
     interpolation: { escapeValue: false },
     detection: {
       order: ['localStorage', 'navigator'],
       caches: ['localStorage'],
+      convertDetectedLanguage: normalizeLocale,
     },
   });
 

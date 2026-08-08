@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+﻿import { useAppTranslation } from '../../hooks/useAppTranslation';
 import type { Place, PlaceMedia } from '@kodoko/domain';
 
 function PlaceMediaSlide({ media, index }: { media: PlaceMedia; index: number }) {
@@ -33,7 +33,7 @@ type PlaceMediaCarouselProps = {
 };
 
 export function PlaceMediaCarousel({ place, fallbackEmoji }: PlaceMediaCarouselProps) {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
 
   if (place.media.length === 0) {
     return (

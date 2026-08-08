@@ -1,6 +1,6 @@
-import { useMemo } from 'react';
+﻿import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useAppTranslation } from '../hooks/useAppTranslation';
 import { calculateAgeMonths } from '@kodoko/domain';
 import { useActiveChild } from '../hooks/useActiveChild';
 import { useKnowledge, useKnowledgeProgress } from '../hooks/useKnowledge';
@@ -8,7 +8,7 @@ import { filterKnowledgeByAge, sortKnowledgeByRead } from '../lib/knowledge';
 import { PageHeader } from '../components/PageHeader';
 
 export function KnowledgePage() {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   const { data: knowledge, isLoading, isError, refetch } = useKnowledge();
   const { active } = useActiveChild();
   const { readIds } = useKnowledgeProgress();

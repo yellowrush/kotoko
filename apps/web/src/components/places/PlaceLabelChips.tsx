@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+﻿import { useAppTranslation } from '../../hooks/useAppTranslation';
 import type { Place, PlaceLabel } from '@kodoko/domain';
 import { LABEL_ICON } from './categoryMeta';
 
@@ -10,7 +10,7 @@ type PlaceLabelChipsProps = {
 };
 
 export function PlaceLabelChips({ place, showLocation = true }: PlaceLabelChipsProps) {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
 
   const labels = showLocation
     ? place.labels

@@ -1,6 +1,6 @@
-import { Link, useParams } from 'react-router-dom';
+﻿import { Link, useParams } from 'react-router-dom';
 import { useMemo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useAppTranslation } from '../hooks/useAppTranslation';
 import { haversineDistanceKm } from '@kodoko/recommendation';
 import { usePlace } from '../hooks/usePlaces';
 import { useFavorites } from '../hooks/useFavorites';
@@ -21,7 +21,7 @@ import { PlaceReportDialog } from '../components/places/PlaceReportDialog';
 const EXTRA_TAGS = ['group-play', 'quiet-zone'] as const;
 
 export function PlaceDetailPage() {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   const { placeId } = useParams();
   const { data: place, isLoading, isError, refetch } = usePlace(placeId);
   const { favoriteIds, toggle } = useFavorites();

@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+﻿import { useState } from 'react';
+import { useAppTranslation } from '../../hooks/useAppTranslation';
 import { usePlaceComments } from '../../hooks/usePlaceComments';
 
 function Stars({
@@ -32,7 +32,7 @@ function Stars({
 }
 
 export function PlaceComments({ placeId }: { placeId: string }) {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   const { comments, loading, add, remove } = usePlaceComments(placeId);
   const [rating, setRating] = useState(5);
   const [content, setContent] = useState('');

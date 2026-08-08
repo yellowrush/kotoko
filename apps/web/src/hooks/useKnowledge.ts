@@ -5,16 +5,10 @@ import type { KnowledgeContent } from '@kodoko/domain';
 import { getApiClient } from '../lib/api';
 import { getKnowledgeProgressRepository } from '../lib/db';
 import { useActiveChild } from './useActiveChild';
-import { i18n } from '../app/i18n';
-
-function currentLocale(): string {
-  const lang = i18n.language;
-  if (lang === 'zh-CN' || lang === 'zh-TW' || lang === 'ja') return lang;
-  return 'ja';
-}
+import { useLocale } from './useLocale';
 
 export function useKnowledge() {
-  const locale = currentLocale();
+  const { locale } = useLocale();
   return useQuery<KnowledgeContent[]>({
     queryKey: ['knowledge', locale],
     queryFn: async () => fetchKnowledge(getApiClient(), { locale }),
@@ -22,7 +16,7 @@ export function useKnowledge() {
 }
 
 export function useKnowledgeDetail(knowledgeId: string | undefined) {
-  const locale = currentLocale();
+  const { locale } = useLocale();
   return useQuery<KnowledgeContent>({
     queryKey: ['knowledge-detail', knowledgeId, locale],
     queryFn: async () => {

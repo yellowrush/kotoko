@@ -1,5 +1,5 @@
-import { useMemo, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+﻿import { useMemo, useState } from 'react';
+import { useAppTranslation } from '../hooks/useAppTranslation';
 import { calculateAgeMonths } from '@kodoko/domain';
 import { PlacesMap } from '../components/places/PlacesMap';
 import { PlaceFilterChips } from '../components/places/PlaceFilterChips';
@@ -10,7 +10,7 @@ import { useActiveChild } from '../hooks/useActiveChild';
 import { filterPlaces } from '../lib/placeFilters';
 
 export function PlacesMapPage() {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   const { data: places, isLoading, isError, refetch } = usePlaces();
   const { filters, setCategory, setIndoorOutdoor, setRadius, setPlaceId, toggleTag } = usePlacesFilters();
   const { status, coords, requested, request } = useGeolocation();
@@ -98,3 +98,4 @@ export function PlacesMapPage() {
     </div>
   );
 }
+

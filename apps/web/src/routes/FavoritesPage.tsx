@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+﻿import { Link } from 'react-router-dom';
+import { useAppTranslation } from '../hooks/useAppTranslation';
 import { haversineDistanceKm } from '@kodoko/recommendation';
 import { useFavorites } from '../hooks/useFavorites';
 import { usePlaces } from '../hooks/usePlaces';
@@ -9,7 +9,7 @@ import { CATEGORY_ICON } from '../components/places/categoryMeta';
 import { PageHeader } from '../components/PageHeader';
 
 export function FavoritesPage() {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   const { favoriteIds, loading, toggle } = useFavorites();
   const { data: places, isLoading } = usePlaces();
   const { coords } = useGeolocation();

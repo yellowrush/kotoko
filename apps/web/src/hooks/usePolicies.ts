@@ -8,16 +8,10 @@ import { getPolicyTaskRepository } from '../lib/db';
 import { useActiveChild } from './useActiveChild';
 import { usePreference } from './usePreference';
 import { checkPolicyFor } from '../lib/policy';
-import { i18n } from '../app/i18n';
-
-function currentLocale(): string {
-  const lang = i18n.language;
-  if (lang === 'zh-CN' || lang === 'zh-TW' || lang === 'ja') return lang;
-  return 'ja';
-}
+import { useLocale } from './useLocale';
 
 export function usePolicies() {
-  const locale = currentLocale();
+  const { locale } = useLocale();
   return useQuery<Policy[]>({
     queryKey: ['policies', locale],
     queryFn: async () => fetchPolicies(getApiClient(), { locale }),
@@ -25,7 +19,7 @@ export function usePolicies() {
 }
 
 export function usePolicyDetail(policyId: string | undefined) {
-  const locale = currentLocale();
+  const { locale } = useLocale();
   return useQuery<Policy>({
     queryKey: ['policy-detail', policyId, locale],
     queryFn: async () => {

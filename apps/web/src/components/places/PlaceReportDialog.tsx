@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+﻿import { useState } from 'react';
+import { useAppTranslation } from '../../hooks/useAppTranslation';
 import type { PlaceReportType } from '@kodoko/domain';
 import { PLACE_REPORT_TYPES } from '@kodoko/domain';
 import { submitReportWithQueue } from '../../lib/reportQueue';
@@ -13,7 +13,7 @@ export function PlaceReportDialog({
   open: boolean;
   onClose: () => void;
 }) {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   const [type, setType] = useState<PlaceReportType>('business_hours');
   const [detail, setDetail] = useState('');
   const [email, setEmail] = useState('');

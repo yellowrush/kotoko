@@ -1,6 +1,6 @@
-import { useEffect } from 'react';
+﻿import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useAppTranslation } from '../hooks/useAppTranslation';
 import { findMunicipality } from '@kodoko/domain';
 import type { LeafResult } from '@kodoko/policy-engine';
 import { usePolicyDetail, usePolicyMatches, usePolicyTasks } from '../hooks/usePolicies';
@@ -55,7 +55,7 @@ function leafReason(leaf: LeafResult): LeafReason | null {
 }
 
 export function PolicyDetailPage() {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   const { policyId } = useParams();
   const { data: policy, isLoading, isError, refetch } = usePolicyDetail(policyId);
   const matches = usePolicyMatches();

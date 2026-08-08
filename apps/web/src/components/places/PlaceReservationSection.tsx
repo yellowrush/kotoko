@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+﻿import { useAppTranslation } from '../../hooks/useAppTranslation';
 import type { Place } from '@kodoko/domain';
 
 type PlaceReservationSectionProps = {
@@ -6,7 +6,7 @@ type PlaceReservationSectionProps = {
 };
 
 export function PlaceReservationSection({ place }: PlaceReservationSectionProps) {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
 
   const reservation = place.reservation;
   if (!reservation) return null;

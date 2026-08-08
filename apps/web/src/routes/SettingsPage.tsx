@@ -1,19 +1,16 @@
-import { useCallback, useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { LOCALES, normalizeLocale } from '@kodoko/i18n';
+﻿import { useCallback, useState } from 'react';
+import { useAppTranslation } from '../hooks/useAppTranslation';
 import { Button } from '@kodoko/ui';
 import type { ImportMode } from '@kodoko/local-db';
-import { useAppStore } from '../store/appStore';
-import { changeLocale } from '../app/i18n';
 import { deleteLocalData, exportLocalData, importLocalData } from '../lib/backup';
 import { usePreference } from '../hooks/usePreference';
+import { LANGUAGE_OPTIONS, useLocale } from '../hooks/useLocale';
 import { MUNICIPALITIES } from '@kodoko/domain';
 import { PageHeader } from '../components/PageHeader';
 
 export function SettingsPage() {
-  const { t } = useTranslation();
-  const locale = useAppStore((s) => s.locale);
-  const setLocale = useAppStore((s) => s.setLocale);
+  const { t } = useAppTranslation();
+  const { locale, setLocale } = useLocale();
   const { preference, setMunicipality } = usePreference();
   const [message, setMessage] = useState<string | null>(null);
   const [importMode, setImportMode] = useState<ImportMode>('merge');
@@ -47,21 +44,18 @@ export function SettingsPage() {
       <section className="rounded-lg border border-gray-200 bg-white p-4">
         <h2 className="text-sm font-semibold text-gray-700">{t('settings.language')}</h2>
         <div className="mt-2 flex flex-wrap gap-2">
-          {LOCALES.map((code) => (
+          {LANGUAGE_OPTIONS.map((option) => (
             <button
-              key={code}
+              key={option.value}
               type="button"
-              onClick={() => {
-                setLocale(code);
-                void changeLocale(code);
-              }}
+              onClick={() => void setLocale(option.value)}
               className={`rounded-full px-3 py-1 text-sm font-medium ${
-                normalizeLocale(locale) === code
+                locale === option.value
                   ? 'bg-brand-600 text-white'
                   : 'bg-gray-100 text-gray-700'
               }`}
             >
-              {code}
+              {option.label}
             </button>
           ))}
         </div>
@@ -133,3 +127,4 @@ export function SettingsPage() {
     </div>
   );
 }
+

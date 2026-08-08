@@ -1,8 +1,8 @@
-import { useTranslation } from 'react-i18next';
+﻿import { useAppTranslation } from '../hooks/useAppTranslation';
 import { Link } from 'react-router-dom';
 
 export function NotFoundPage() {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   return (
     <div className="flex flex-col items-center gap-3 py-16 text-center">
       <h1 className="text-lg font-semibold">404</h1>

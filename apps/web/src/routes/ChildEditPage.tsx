@@ -1,6 +1,6 @@
-import { type FormEvent, useEffect, useState } from 'react';
+﻿import { type FormEvent, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useAppTranslation } from '../hooks/useAppTranslation';
 import { isValidBirthDate, type ChildGender } from '@kodoko/domain';
 import { Button } from '@kodoko/ui';
 import { useChildren } from '../hooks/useChildren';
@@ -14,7 +14,7 @@ const GENDER_OPTIONS: { value: ChildGender; key: string }[] = [
 ];
 
 export function ChildEditPage() {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   const navigate = useNavigate();
   const { childId } = useParams();
   const { children, update, remove, loading } = useChildren();
@@ -116,3 +116,4 @@ export function ChildEditPage() {
     </div>
   );
 }
+

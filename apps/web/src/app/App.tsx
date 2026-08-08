@@ -3,9 +3,6 @@ import { RouterProvider } from 'react-router-dom';
 import { AppErrorBoundary } from '../lib/error';
 import { queryClient } from './queryClient';
 import { router } from './router';
-import { initI18n } from './i18n';
-
-void initI18n();
 
 export function App() {
   return (

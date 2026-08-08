@@ -30,6 +30,11 @@ describe('i18n resources', () => {
     expect(isLocale('zh-TW')).toBe(true);
     expect(isLocale('fr')).toBe(false);
     expect(normalizeLocale(null)).toBe('ja');
+    expect(normalizeLocale('ja-JP')).toBe('ja');
+    expect(normalizeLocale('zh')).toBe('zh-CN');
+    expect(normalizeLocale('zh-Hans-CN')).toBe('zh-CN');
+    expect(normalizeLocale('zh_Hant_TW')).toBe('zh-TW');
+    expect(normalizeLocale('zh-HK')).toBe('zh-TW');
     expect(normalizeLocale('fr')).toBe('ja');
   });
 });

@@ -1,6 +1,6 @@
-import { useMemo } from 'react';
+﻿import { useMemo } from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useAppTranslation } from '../hooks/useAppTranslation';
 import type { Policy } from '@kodoko/domain';
 import { useActiveChild } from '../hooks/useActiveChild';
 import { usePolicies, usePolicyMatches, usePolicyTasks } from '../hooks/usePolicies';
@@ -9,7 +9,7 @@ import { PolicyStatusBadge } from '../components/PolicyStatusBadge';
 import { PageHeader } from '../components/PageHeader';
 
 function PolicyItem({ policy, status }: { policy: Policy; status: string }) {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   return (
     <Link
       to={`/policies/${policy.id}`}
@@ -34,7 +34,7 @@ function PolicyItem({ policy, status }: { policy: Policy; status: string }) {
 }
 
 export function PoliciesPage() {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   const { data: policies, isLoading, isError, refetch } = usePolicies();
   const { active } = useActiveChild();
   const matches = usePolicyMatches();

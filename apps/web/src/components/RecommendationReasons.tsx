@@ -1,4 +1,4 @@
-import { useTranslation } from 'react-i18next';
+﻿import { useAppTranslation } from '../hooks/useAppTranslation';
 import { formatDistanceKm } from '../lib/placeFilters';
 
 type RecommendationReasonsProps = {
@@ -18,7 +18,7 @@ const REASON_I18N: Record<string, { key: string; withDistance?: boolean }> = {
 };
 
 export function RecommendationReasons({ reasonCodes, distanceKm }: RecommendationReasonsProps) {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
 
   const visible = [...new Set(reasonCodes)].filter((code) => code in REASON_I18N);
   if (visible.length === 0) return null;

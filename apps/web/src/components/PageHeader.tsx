@@ -1,6 +1,6 @@
-import type { ReactNode } from 'react';
+﻿import type { ReactNode } from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+import { useAppTranslation } from '../hooks/useAppTranslation';
 
 export function PagePlaceholder({
   title,
@@ -30,7 +30,7 @@ export function PageHeader({
   /** 设置后会在标题上方左侧渲染一个返回按钮。 */
   backTo?: string;
 }) {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   return (
     <div className="mb-4">
       {backTo && (

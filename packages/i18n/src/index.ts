@@ -20,6 +20,31 @@ export function isLocale(value: string | null | undefined): value is Locale {
 }
 
 export function normalizeLocale(value: string | null | undefined): Locale {
+  if (!value) return DEFAULT_LOCALE;
   if (isLocale(value)) return value;
+
+  const normalized = value.replaceAll('_', '-').toLowerCase();
+  if (normalized === 'ja' || normalized.startsWith('ja-')) return 'ja';
+  if (
+    normalized === 'zh-tw' ||
+    normalized === 'zh-hant' ||
+    normalized.startsWith('zh-tw-') ||
+    normalized.startsWith('zh-hant-') ||
+    normalized.startsWith('zh-hk') ||
+    normalized.startsWith('zh-mo')
+  ) {
+    return 'zh-TW';
+  }
+  if (
+    normalized === 'zh' ||
+    normalized === 'zh-cn' ||
+    normalized === 'zh-hans' ||
+    normalized.startsWith('zh-cn-') ||
+    normalized.startsWith('zh-hans-') ||
+    normalized.startsWith('zh-sg')
+  ) {
+    return 'zh-CN';
+  }
+
   return DEFAULT_LOCALE;
 }

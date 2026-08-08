@@ -1,9 +1,9 @@
-import { useTranslation } from 'react-i18next';
+﻿import { useAppTranslation } from '../hooks/useAppTranslation';
 import { Link } from 'react-router-dom';
 import { PagePlaceholder } from '../components/PageHeader';
 
 export function ProfilePage() {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   return (
     <div>
       <PagePlaceholder title={t('nav.profile')} description="Sprint 7">

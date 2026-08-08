@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+﻿import { useState } from 'react';
+import { useAppTranslation } from '../../hooks/useAppTranslation';
 import type { IndoorOutdoor, PlaceCategory } from '@kodoko/domain';
 import { CATEGORY_GROUP, PLACE_GROUPS } from '@kodoko/domain';
 import type { PlacesFilterState } from '../../hooks/usePlaces';
@@ -96,7 +96,7 @@ export function PlaceFilterChips({
   setRadius,
   toggleTag,
 }: PlaceFilterChipsProps) {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   const [open, setOpen] = useState(false);
 
   return (

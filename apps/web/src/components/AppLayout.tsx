@@ -1,5 +1,6 @@
-import { NavLink, Outlet, useLocation, Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
+﻿import { NavLink, Outlet, useLocation, Link } from 'react-router-dom';
+import { useAppTranslation } from '../hooks/useAppTranslation';
+import { LANGUAGE_OPTIONS, useLocale } from '../hooks/useLocale';
 
 const NAV_ITEMS = [
   { to: '/home', key: 'profile' },
@@ -9,8 +10,45 @@ const NAV_ITEMS = [
 
 const FULL_BLEED_ROUTES = new Set(['/places']);
 
+function LanguageSelect() {
+  const { t } = useAppTranslation();
+  const { locale, setLocale } = useLocale();
+  const current = LANGUAGE_OPTIONS.find((option) => option.value === locale) ?? {
+    value: 'ja',
+    label: '日本語',
+  };
+
+  return (
+    <details className="group relative">
+      <summary
+        aria-label={t('settings.language')}
+        className="flex h-9 cursor-pointer list-none items-center gap-1 rounded-md border border-gray-200 bg-white px-2 text-sm font-medium text-gray-700 shadow-sm marker:hidden"
+      >
+        <span>{current.label}</span>
+      </summary>
+      <div className="absolute right-0 top-10 z-20 min-w-32 overflow-hidden rounded-md border border-gray-200 bg-white py-1 shadow-lg">
+        {LANGUAGE_OPTIONS.map((option) => (
+          <button
+            key={option.value}
+            type="button"
+            onClick={(event) => {
+              setLocale(option.value);
+              event.currentTarget.closest('details')?.removeAttribute('open');
+            }}
+            className={`block w-full px-3 py-2 text-left text-sm ${
+              option.value === locale ? 'bg-brand-50 text-brand-800' : 'text-gray-700 hover:bg-gray-50'
+            }`}
+          >
+            {option.label}
+          </button>
+        ))}
+      </div>
+    </details>
+  );
+}
+
 export function AppLayout() {
-  const { t } = useTranslation();
+  const { t } = useAppTranslation();
   const { pathname } = useLocation();
   const fullBleed = FULL_BLEED_ROUTES.has(pathname);
 
@@ -18,11 +56,12 @@ export function AppLayout() {
     <div className="mx-auto flex min-h-screen max-w-lg flex-col">
       <header className="sticky top-0 z-10 border-b border-gray-200 bg-white/90 backdrop-blur">
         <div className="flex items-center justify-between px-4 py-3">
-        <div className="flex items-center gap-2">
-          <Link to="/home" aria-label="こどこ">
-            <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="こどこ" className="h-8 w-auto" />
-          </Link>
-        </div>
+          <div className="flex items-center gap-2">
+            <Link to="/home" aria-label="こどこ">
+              <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt="こどこ" className="h-8 w-auto" />
+            </Link>
+          </div>
+          <LanguageSelect />
         </div>
       </header>
 
@@ -50,3 +89,4 @@ export function AppLayout() {
     </div>
   );
 }
+

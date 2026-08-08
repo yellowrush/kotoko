@@ -1,5 +1,6 @@
 ﻿import { NavLink, Outlet, useLocation, Link } from 'react-router-dom';
 import { useAppTranslation } from '../hooks/useAppTranslation';
+import { PwaInstallButton } from './PwaInstallButton';
 
 const NAV_ITEMS = [
   { to: '/home', key: 'profile' },
@@ -17,7 +18,7 @@ export function AppLayout() {
   return (
     <div className="mx-auto flex min-h-screen max-w-lg flex-col text-[15px] sm:text-base">
       <header className="sticky top-0 z-10 border-b border-gray-200 bg-white/90 backdrop-blur">
-        <div className="flex items-center px-4 py-3">
+        <div className="flex items-center justify-between gap-3 px-4 py-3">
           <div className="flex min-w-0 items-center gap-2.5">
             <Link to="/home" aria-label={t('common.appName')} className="shrink-0">
               <img src={`${import.meta.env.BASE_URL}favicon.svg`} alt={t('common.appName')} className="h-8 w-auto" />
@@ -27,6 +28,7 @@ export function AppLayout() {
               <p className="truncate text-xs leading-tight text-gray-500">{t('common.logoSubtitle')}</p>
             </div>
           </div>
+          <PwaInstallButton />
         </div>
       </header>
 

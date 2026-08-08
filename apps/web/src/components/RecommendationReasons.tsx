@@ -8,6 +8,7 @@ type RecommendationReasonsProps = {
 
 const REASON_I18N: Record<string, { key: string; withDistance?: boolean }> = {
   age_match: { key: 'home.reasons.ageMatch' },
+  age_partial: { key: 'home.reasons.agePartial' },
   age_mismatch: { key: 'home.reasons.ageMismatch' },
   weather: { key: 'home.reasons.weather' },
   indoor_outdoor: { key: 'home.reasons.indoorOutdoor' },

@@ -5,13 +5,26 @@ import type { ImportMode } from '@kodoko/local-db';
 import { deleteLocalData, exportLocalData, importLocalData } from '../lib/backup';
 import { usePreference } from '../hooks/usePreference';
 import { LANGUAGE_OPTIONS, useLocale } from '../hooks/useLocale';
-import { MUNICIPALITIES } from '@kodoko/domain';
+import { MUNICIPALITIES, type IndoorOutdoor } from '@kodoko/domain';
 import { PageHeader } from '../components/PageHeader';
+
+const RADIUS_OPTIONS: Array<number | undefined> = [undefined, 3, 5, 10, 20];
+const INDOOR_OUTDOOR_OPTIONS: Array<IndoorOutdoor | undefined> = [
+  undefined,
+  'indoor',
+  'outdoor',
+  'mixed',
+];
 
 export function SettingsPage() {
   const { t } = useAppTranslation();
   const { locale, setLocale } = useLocale();
-  const { preference, setMunicipality } = usePreference();
+  const {
+    preference,
+    setMunicipality,
+    setRadiusKm,
+    setIndoorOutdoorPreference,
+  } = usePreference();
   const [message, setMessage] = useState<string | null>(null);
   const [importMode, setImportMode] = useState<ImportMode>('merge');
 
@@ -79,6 +92,55 @@ export function SettingsPage() {
             </option>
           ))}
         </select>
+      </section>
+
+      <section className="rounded-lg border border-gray-200 bg-white p-4">
+        <h2 className="text-sm font-semibold text-gray-700">{t('settings.recommendation')}</h2>
+        <p className="mt-1 text-xs text-gray-500">{t('settings.recommendationNotice')}</p>
+
+        <div className="mt-3">
+          <p className="text-xs font-medium text-gray-500">{t('settings.radiusKm')}</p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {RADIUS_OPTIONS.map((radius) => {
+              const active = preference?.radiusKm === radius || (!preference?.radiusKm && radius === undefined);
+              return (
+                <button
+                  key={radius ?? 'none'}
+                  type="button"
+                  onClick={() => void setRadiusKm(radius)}
+                  className={`rounded-full px-3 py-1 text-sm font-medium ${
+                    active ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-700'
+                  }`}
+                >
+                  {radius ? t('settings.radiusOption', { km: radius }) : t('settings.radiusNone')}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="mt-3">
+          <p className="text-xs font-medium text-gray-500">{t('settings.indoorOutdoorPreference')}</p>
+          <div className="mt-2 flex flex-wrap gap-2">
+            {INDOOR_OUTDOOR_OPTIONS.map((value) => {
+              const active =
+                preference?.indoorOutdoorPreference === value ||
+                (!preference?.indoorOutdoorPreference && value === undefined);
+              return (
+                <button
+                  key={value ?? 'none'}
+                  type="button"
+                  onClick={() => void setIndoorOutdoorPreference(value)}
+                  className={`rounded-full px-3 py-1 text-sm font-medium ${
+                    active ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-700'
+                  }`}
+                >
+                  {t(`settings.indoorOutdoor.${value ?? 'none'}`)}
+                </button>
+              );
+            })}
+          </div>
+        </div>
       </section>
 
       <section className="rounded-lg border border-gray-200 bg-white p-4">

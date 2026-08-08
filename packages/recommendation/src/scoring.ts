@@ -110,8 +110,9 @@ export function scorePlace(place: Place, input: RecommendationInput): PlaceRecom
   if (input.userLocation) {
     const distance = haversineDistanceKm(input.userLocation, place);
     const maxKm =
-      input.maxDistanceKm ??
-      (input.transportMode ? TRANSPORT_MAX_DISTANCE_KM[input.transportMode] : 5);
+      input.transportMode
+        ? TRANSPORT_MAX_DISTANCE_KM[input.transportMode]
+        : (input.maxDistanceKm ?? 5);
     if (distance > maxKm) {
       return {
         place,

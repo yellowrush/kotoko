@@ -52,6 +52,7 @@
     "score": "推薦度",
     "reasons": {
       "ageMatch": "適合本年齡段",
+      "agePartial": "適合部分同行孩子的年齡",
       "ageMismatch": "年齡略不相符",
       "distance": "距離",
       "weather": "雨雪天推薦室內",
@@ -70,6 +71,7 @@
     "noLocation": "暫無當前位置資訊",
     "toSettings": "在設定中登記居住地",
     "noChildYet": "先登記孩子資料吧",
+    "noSelectedChildren": "請選擇今天同行的孩子。",
     "addChild": "新增孩子",
     "selectChildrenHint": "選擇今天同行的孩子（可多選）"
   },
@@ -343,6 +345,18 @@
     "language": "語言",
     "municipality": "居住地（市町村）",
     "municipalityNotice": "僅用於在本機篩選制度。不會上傳至伺服器。",
-    "municipalityNone": "未選擇"
+    "municipalityNone": "未選擇",
+    "recommendation": "今天去哪裡玩設定",
+    "recommendationNotice": "只使用裝置內設定，調整推薦距離和室內外偏好。",
+    "radiusKm": "常用距離",
+    "radiusNone": "不指定",
+    "radiusOption": "{{km}}km",
+    "indoorOutdoorPreference": "室內外偏好",
+    "indoorOutdoor": {
+      "none": "不指定",
+      "indoor": "室內",
+      "outdoor": "戶外",
+      "mixed": "都可以"
+    }
   }
 }

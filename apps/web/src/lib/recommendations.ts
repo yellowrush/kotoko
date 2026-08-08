@@ -1,4 +1,4 @@
-import type { ChildProfile, GeoPoint, Place, WeatherSummary } from '@kodoko/domain';
+import type { ChildProfile, GeoPoint, IndoorOutdoor, Place, WeatherSummary } from '@kodoko/domain';
 import { calculateAgeMonths } from '@kodoko/domain';
 import {
   haversineDistanceKm,
@@ -30,6 +30,7 @@ export function recommendForChild(input: {
   maxDistanceKm?: number;
   transportMode?: TransportMode;
   groupSize?: number;
+  indoorOutdoorPreference?: IndoorOutdoor;
   weather?: WeatherSummary;
 }): HomeRecommendation[] {
   const party =
@@ -53,6 +54,7 @@ export function recommendForChild(input: {
     maxDistanceKm: input.maxDistanceKm ?? (input.transportMode ? undefined : HOME_MAX_DISTANCE_KM),
     transportMode: input.transportMode,
     groupSize: input.groupSize,
+    indoorOutdoorPreference: input.indoorOutdoorPreference,
     weather: input.weather,
     places: input.places,
   });

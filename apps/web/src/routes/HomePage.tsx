@@ -2,7 +2,7 @@
 import { useAppTranslation } from '../hooks/useAppTranslation';
 import { Link } from 'react-router-dom';
 import { Card } from '@kodoko/ui';
-import { calculateAgeMonths, findMunicipality, findNearestMunicipality } from '@kodoko/domain';
+import { calculateAgeMonths, findNearestMunicipality } from '@kodoko/domain';
 import type { TransportMode } from '@kodoko/recommendation';
 import { useSelectedChildren } from '../hooks/useSelectedChildren';
 import { usePlaces } from '../hooks/usePlaces';
@@ -14,6 +14,7 @@ import { usePreference } from '../hooks/usePreference';
 import { filterKnowledgeByAges, sortKnowledgeByRead } from '../lib/knowledge';
 import { checkPolicyFor, daysUntil } from '../lib/policy';
 import { recommendForChild } from '../lib/recommendations';
+import { resolveRecommendationLocation } from '../lib/recommendationLocation';
 import { RecommendationReasons } from '../components/RecommendationReasons';
 import { AgeLabel } from '../components/AgeLabel';
 import { ChildAvatar } from '../components/ChildAvatar';
@@ -135,15 +136,21 @@ export function HomePage() {
       : label;
   }
 
-  const municipality = findMunicipality(preference?.municipalityCode);
+  const recommendationLocation = useMemo(
+    () => resolveRecommendationLocation(coords, preference?.municipalityCode),
+    [coords, preference?.municipalityCode],
+  );
 
   function locationPlace(city: string): string {
     return t('home.place', { prefecture: t('home.prefecture'), city });
   }
 
   function renderLocationInfo() {
-    if (coords) {
-      const nearest = findNearestMunicipality(coords.latitude, coords.longitude);
+    if (recommendationLocation.source === 'gps') {
+      const nearest = findNearestMunicipality(
+        recommendationLocation.point.latitude,
+        recommendationLocation.point.longitude,
+      );
       if (nearest) {
         return (
           <p className="mt-1 text-xs text-gray-500">
@@ -152,10 +159,10 @@ export function HomePage() {
         );
       }
     }
-    if (municipality) {
+    if (recommendationLocation.source === 'municipality') {
       return (
         <p className="mt-1 text-xs text-gray-500">
-          {t('home.residence', { place: locationPlace(municipality.nameJa) })}
+          {t('home.residence', { place: locationPlace(recommendationLocation.municipality.nameJa) })}
         </p>
       );
     }
@@ -174,13 +181,26 @@ export function HomePage() {
       recommendForChild({
         children: selected,
         places: places ?? [],
-        userLocation: coords ?? undefined,
+        userLocation: recommendationLocation.point,
+        maxDistanceKm: transportMode ? undefined : preference?.radiusKm,
         transportMode,
         groupSize,
+        indoorOutdoorPreference: preference?.indoorOutdoorPreference,
         weather: weather ?? undefined,
       }),
-    [selected, places, coords, transportMode, groupSize, weather],
+    [
+      selected,
+      places,
+      recommendationLocation.point,
+      transportMode,
+      groupSize,
+      preference?.radiusKm,
+      preference?.indoorOutdoorPreference,
+      weather,
+    ],
   );
+  const hasPlaces = (places?.length ?? 0) > 0;
+  const hasBlockingPlacesError = isError && !hasPlaces;
 
   return (
     <div className="flex flex-col gap-4">
@@ -216,7 +236,7 @@ export function HomePage() {
           />
         </div>
 
-        {placesLoading && !isError && <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>}
+        {placesLoading && !hasPlaces && !isError && <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>}
 
         {isError && (
           <div className="mt-2 flex items-center gap-2 text-sm text-gray-500">
@@ -227,7 +247,7 @@ export function HomePage() {
           </div>
         )}
 
-        {!isError && selected.length === 0 && (
+        {!hasBlockingPlacesError && children.length === 0 && (
           <div className="mt-3 flex items-center justify-between">
             <p className="text-sm text-gray-500">{t('home.noChildYet')}</p>
             <Link to="/children/new" className="text-sm font-medium text-brand-700">
@@ -236,11 +256,15 @@ export function HomePage() {
           </div>
         )}
 
-        {!isError && selected.length > 0 && !placesLoading && recommendations.length === 0 && (
+        {!hasBlockingPlacesError && children.length > 0 && selected.length === 0 && (
+          <p className="mt-3 text-sm text-gray-500">{t('home.noSelectedChildren')}</p>
+        )}
+
+        {!hasBlockingPlacesError && selected.length > 0 && !placesLoading && recommendations.length === 0 && (
           <p className="mt-3 text-sm text-gray-400">{t('home.noRecommendations')}</p>
         )}
 
-        {!isError &&
+        {!hasBlockingPlacesError &&
           recommendations.map((r, index) => (
             <Link
               key={r.place.id}

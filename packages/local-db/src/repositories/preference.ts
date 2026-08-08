@@ -13,12 +13,22 @@ export class PreferenceRepository {
   async set(input: Partial<Omit<UserPreference, 'id' | 'updatedAt'>>): Promise<UserPreference> {
     const now = new Date().toISOString();
     const existing = await this.get();
+    const pick = <K extends keyof Omit<UserPreference, 'id' | 'updatedAt'>>(
+      key: K,
+      fallback: UserPreference[K],
+    ): UserPreference[K] =>
+      Object.prototype.hasOwnProperty.call(input, key)
+        ? (input[key] as UserPreference[K])
+        : fallback;
     const merged: UserPreference = {
       id: DEFAULT_PREFERENCE_ID,
-      locale: input.locale ?? existing?.locale ?? 'ja',
-      municipalityCode: input.municipalityCode ?? existing?.municipalityCode,
-      radiusKm: input.radiusKm ?? existing?.radiusKm,
-      indoorOutdoorPreference: input.indoorOutdoorPreference ?? existing?.indoorOutdoorPreference,
+      locale: pick('locale', existing?.locale ?? 'ja'),
+      municipalityCode: pick('municipalityCode', existing?.municipalityCode),
+      radiusKm: pick('radiusKm', existing?.radiusKm),
+      indoorOutdoorPreference: pick(
+        'indoorOutdoorPreference',
+        existing?.indoorOutdoorPreference,
+      ),
       updatedAt: now,
     };
     await this.db.preferences.put(merged);

@@ -109,6 +109,30 @@ describe('recommendForChild', () => {
     const result = recommendForChild({ child: makeChild(), places: [NEAR] });
     expect(result[0]?.distanceKm).toBeNull();
   });
+
+  it('uses max distance preferences when no transport mode is selected', () => {
+    const result = recommendForChild({
+      child: makeChild(),
+      places: [FAR, NEAR],
+      userLocation: TOKYO,
+      maxDistanceKm: 3,
+    });
+
+    expect(result.map((r) => r.place.id)).toEqual(['near']);
+  });
+
+  it('passes indoor/outdoor preference into scoring', () => {
+    const indoor = makePlace({ id: 'in', indoorOutdoor: 'indoor' });
+    const outdoor = makePlace({ id: 'out', indoorOutdoor: 'outdoor' });
+    const result = recommendForChild({
+      child: makeChild(),
+      places: [outdoor, indoor],
+      indoorOutdoorPreference: 'indoor',
+    });
+
+    expect(result[0]?.place.id).toBe('in');
+    expect(result[0]?.reasonCodes).toContain('indoor_outdoor');
+  });
 });
 
 describe('transport and group pass-through', () => {
@@ -132,6 +156,17 @@ describe('transport and group pass-through', () => {
       transportMode: 'car',
     });
     expect(result.map((r) => r.place.id)).toEqual(['mid']);
+  });
+
+  it('lets transport mode override a broader max distance preference', () => {
+    const result = recommendForChild({
+      child: makeChild(),
+      places: [MID],
+      userLocation: TOKYO,
+      maxDistanceKm: 20,
+      transportMode: 'walking',
+    });
+    expect(result).toHaveLength(0);
   });
 
   it('ranks group-play places first for 3+ people', () => {

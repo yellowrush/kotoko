@@ -109,6 +109,32 @@ describe('scorePlace', () => {
     expect(scorePlace(mid, input).score).toBeGreaterThan(0);
   });
 
+  it('uses transport distance before an explicit distance preference', () => {
+    const mid = place({ latitude: 35.7, longitude: 139.78 });
+    const input = baseInput({
+      userLocation: { latitude: 35.681, longitude: 139.767 },
+      maxDistanceKm: 20,
+      transportMode: 'walking',
+    });
+    expect(scorePlace(mid, input).score).toBe(0);
+  });
+
+  it('applies indoor and outdoor preferences', () => {
+    const indoor = place({ id: 'in', indoorOutdoor: 'indoor' });
+    const outdoor = place({ id: 'out', indoorOutdoor: 'outdoor' });
+    const input = baseInput({ indoorOutdoorPreference: 'indoor' });
+
+    expect(scorePlace(indoor, input).score).toBeGreaterThan(scorePlace(outdoor, input).score);
+    expect(scorePlace(indoor, input).reasons.some((x) => x.code === 'indoor_outdoor')).toBe(true);
+  });
+
+  it('keeps municipality fallback outside the recommendation package', () => {
+    const result = scorePlace(place(), baseInput());
+
+    expect(result.score).toBeGreaterThan(0);
+    expect(result.reasons.some((x) => x.code === 'distance')).toBe(false);
+  });
+
   it('boosts group-play places when 3+ people go together', () => {
     const groupPlace = place({ id: 'g', tags: ['group-play'] });
     const plain = place({ id: 'p' });

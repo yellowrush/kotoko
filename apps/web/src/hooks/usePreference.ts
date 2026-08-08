@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import type { UserPreference } from '@kodoko/domain';
+import type { IndoorOutdoor, UserPreference } from '@kodoko/domain';
 import { getPreferenceRepository } from '../lib/db';
 
 export function usePreference() {
@@ -25,5 +25,27 @@ export function usePreference() {
     [reload],
   );
 
-  return { preference, loading, setMunicipality };
+  const setRadiusKm = useCallback(
+    async (radiusKm?: number) => {
+      await getPreferenceRepository().set({ radiusKm });
+      await reload();
+    },
+    [reload],
+  );
+
+  const setIndoorOutdoorPreference = useCallback(
+    async (indoorOutdoorPreference?: IndoorOutdoor) => {
+      await getPreferenceRepository().set({ indoorOutdoorPreference });
+      await reload();
+    },
+    [reload],
+  );
+
+  return {
+    preference,
+    loading,
+    setMunicipality,
+    setRadiusKm,
+    setIndoorOutdoorPreference,
+  };
 }

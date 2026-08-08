@@ -52,6 +52,7 @@
     "score": "おすすめ度",
     "reasons": {
       "ageMatch": "この月齢にぴったり",
+      "agePartial": "一部のこどもの年齢に合います",
       "ageMismatch": "年齢にやや合わないかも",
       "distance": "距離",
       "weather": "雨・雪の日は屋内がおすすめ",
@@ -70,6 +71,7 @@
     "noLocation": "現在地情報がありません",
     "toSettings": "設定で居住地を登録",
     "noChildYet": "こどもを登録しましょう",
+    "noSelectedChildren": "今日一緒に行くこどもを選択してください。",
     "addChild": "こどもを追加",
     "selectChildrenHint": "今日一緒に行くこどもを選択（複数可）"
   },
@@ -343,6 +345,18 @@
     "language": "言語",
     "municipality": "居住地（市区町村）",
     "municipalityNotice": "この端末内での制度の絞り込みにのみ使います。サーバーには送信されません。",
-    "municipalityNone": "未選択"
+    "municipalityNone": "未選択",
+    "recommendation": "今日どこ行く？の設定",
+    "recommendationNotice": "端末内の設定だけを使って、おすすめの距離や屋内外の好みを調整します。",
+    "radiusKm": "よく使う距離",
+    "radiusNone": "指定なし",
+    "radiusOption": "{{km}}km",
+    "indoorOutdoorPreference": "屋内・屋外の好み",
+    "indoorOutdoor": {
+      "none": "指定なし",
+      "indoor": "屋内",
+      "outdoor": "屋外",
+      "mixed": "どちらでも"
+    }
   }
 }

@@ -1,1 +1,0 @@
-import{a as r,j as o,L as t}from"./index-CUlsZ0My.js";import{B as i}from"./Button-CyPWwJBi.js";import{P as e}from"./PageHeader-DcG_1yCV.js";function c(){const{t:n}=r();return o.jsx(e,{title:n("onboarding.title"),description:n("onboarding.description"),children:o.jsx(t,{to:"/children/new",children:o.jsx(i,{children:n("onboarding.start")})})})}export{c as OnboardingPage};

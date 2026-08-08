@@ -18,11 +18,11 @@
   },
   "nav": {
     "home": "首页",
-    "places": "地点",
-    "favorites": "收藏",
+    "places": "去哪玩",
+    "favorites": "我的收藏",
     "knowledge": "知识",
     "policies": "制度",
-    "profile": "我的",
+    "profile": "首頁",
     "settings": "设置"
   },
   "home": {

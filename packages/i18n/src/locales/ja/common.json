@@ -19,10 +19,10 @@
   "nav": {
     "home": "ホーム",
     "places": "場所",
-    "favorites": "保存",
+    "favorites": "お気に入り",
     "knowledge": "知識",
     "policies": "制度",
-    "profile": "マイページ",
+    "profile": "ホーム",
     "settings": "設定"
   },
   "home": {

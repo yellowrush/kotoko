@@ -31,7 +31,7 @@ export class ApiError extends Error {
   }
 }
 
-const DEFAULT_HEADERS: Record<string, string> = {
+const JSON_HEADERS: Record<string, string> = {
   'Content-Type': 'application/json',
 };
 
@@ -56,11 +56,11 @@ export class ApiClient {
   async request<T>(method: string, path: string, options?: { body?: unknown }): Promise<T> {
     const init: RequestInit = {
       method,
-      headers: DEFAULT_HEADERS,
       credentials: 'include',
     };
 
     if (options?.body !== undefined) {
+      init.headers = JSON_HEADERS;
       init.body = JSON.stringify(options.body);
     }
 

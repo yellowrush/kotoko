@@ -8,7 +8,7 @@ function jsonResponse(status: number, body: unknown): Response {
 }
 
 describe('ApiClient', () => {
-  it('sends credentials and json headers', async () => {
+  it('sends credentials without json headers for bodyless requests', async () => {
     const fetchImpl = vi.fn().mockResolvedValue(jsonResponse(200, { ok: true }));
     const client = new ApiClient({ baseUrl: 'https://api.example.com', fetchImpl });
 
@@ -17,8 +17,28 @@ describe('ApiClient', () => {
     expect(fetchImpl).toHaveBeenCalledWith('https://api.example.com/api/v1/health', expect.objectContaining({
       method: 'GET',
       credentials: 'include',
-      headers: expect.objectContaining({ 'Content-Type': 'application/json' }),
     }));
+    expect(fetchImpl).toHaveBeenCalledWith(
+      'https://api.example.com/api/v1/health',
+      expect.not.objectContaining({ headers: expect.anything() }),
+    );
+  });
+
+  it('sends json headers when a request has a body', async () => {
+    const fetchImpl = vi.fn().mockResolvedValue(jsonResponse(200, { ok: true }));
+    const client = new ApiClient({ baseUrl: 'https://api.example.com', fetchImpl });
+
+    await client.post('/api/v1/auth/login', { email: 'parent@example.test' });
+
+    expect(fetchImpl).toHaveBeenCalledWith(
+      'https://api.example.com/api/v1/auth/login',
+      expect.objectContaining({
+        method: 'POST',
+        credentials: 'include',
+        headers: expect.objectContaining({ 'Content-Type': 'application/json' }),
+        body: JSON.stringify({ email: 'parent@example.test' }),
+      }),
+    );
   });
 
   it('parses success json', async () => {

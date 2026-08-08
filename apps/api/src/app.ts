@@ -13,18 +13,28 @@ import { policiesRoutes } from './routes/policies';
 export const API_PREFIX = '/api/v1';
 
 const LOCAL_WEB_ORIGINS = ['http://localhost:5173', 'http://127.0.0.1:5173'];
+const PRODUCTION_WEB_ORIGINS = ['https://yellowrush.github.io'];
+
+function normalizeOrigin(origin: string): string {
+  try {
+    return new URL(origin).origin;
+  } catch {
+    return origin.replace(/\/+$/, '');
+  }
+}
 
 function allowedWebOrigins(): Set<string> {
   const configured = (process.env.WEB_ORIGIN ?? '')
     .split(',')
     .map((origin) => origin.trim())
-    .filter(Boolean);
-  return new Set([...LOCAL_WEB_ORIGINS, ...configured]);
+    .filter(Boolean)
+    .map(normalizeOrigin);
+  return new Set([...LOCAL_WEB_ORIGINS, ...PRODUCTION_WEB_ORIGINS, ...configured]);
 }
 
 function isAllowedCorsOrigin(origin: string | undefined): boolean {
   if (!origin) return true;
-  return allowedWebOrigins().has(origin);
+  return allowedWebOrigins().has(normalizeOrigin(origin));
 }
 
 export function buildApp(): FastifyInstance {

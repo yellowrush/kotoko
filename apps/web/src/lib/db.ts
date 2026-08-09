@@ -5,6 +5,7 @@ import {
   KnowledgeProgressRepository,
   PendingReportRepository,
   PlaceCommentRepository,
+  PlaceVisitRepository,
   PreferenceRepository,
   PolicyTaskRepository,
   type KodokoLocalDatabase,
@@ -31,6 +32,10 @@ export function getKnowledgeProgressRepository(): KnowledgeProgressRepository {
 
 export function getPlaceCommentRepository(): PlaceCommentRepository {
   return new PlaceCommentRepository(getDb());
+}
+
+export function getPlaceVisitRepository(): PlaceVisitRepository {
+  return new PlaceVisitRepository(getDb());
 }
 
 export function getPendingReportRepository(): PendingReportRepository {

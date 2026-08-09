@@ -27,6 +27,18 @@ export type FavoritePlace = {
   createdAt: string;
 };
 
+export type PlaceVisitSource = 'manual';
+
+export type PlaceVisit = {
+  id: string;
+  placeId: string;
+  visitDate: string;
+  recordedAt: string;
+  updatedAt: string;
+  source: PlaceVisitSource;
+  schemaVersion: number;
+};
+
 /** 本地保存的地点短评（不上传服务器）。 */
 export type PlaceComment = {
   id: string;
@@ -76,6 +88,7 @@ export type LocalBackup = {
   children: ChildProfile[];
   preferences: UserPreference[];
   favorites: FavoritePlace[];
+  placeVisits: PlaceVisit[];
   knowledgeProgress: KnowledgeProgress[];
   policyTasks: PolicyTaskState[];
   placeComments: PlaceComment[];

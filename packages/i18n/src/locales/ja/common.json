@@ -327,6 +327,18 @@
     "title": "お気に入り",
     "empty": "お気に入りはまだありません。施設詳細の「お気に入り」から追加できます。"
   },
+  "placeVisits": {
+    "title": "行った場所",
+    "homeTitle": "行った場所",
+    "homeDescription": "今日行った場所を記録します。データはこの端末だけに保存されます。",
+    "viewAll": "見る",
+    "markVisited": "行ったことにする",
+    "visitedToday": "今日行った",
+    "latestVisit": "最近：{{date}}",
+    "localOnly": "行った場所の記録はこの端末だけに保存され、サーバーには送信されません。",
+    "empty": "まだ記録がありません。場所の詳細ページから今日行った場所を記録できます。",
+    "unknownPlace": "公開終了または未キャッシュの場所"
+  },
   "placeComments": {
     "title": "みんなのメモ",
     "localOnly": "メモはこの端末にのみ保存されます。",

@@ -1,10 +1,12 @@
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { useMemo, useState } from 'react';
+import { localDateString } from '@kodoko/local-db';
 import { detailBackTo } from '../lib/navigation';
 import { useAppTranslation } from '../hooks/useAppTranslation';
 import { haversineDistanceKm } from '@kodoko/recommendation';
 import { usePlace } from '../hooks/usePlaces';
 import { useFavorites } from '../hooks/useFavorites';
+import { usePlaceVisit } from '../hooks/usePlaceVisits';
 import { useActiveChild } from '../hooks/useActiveChild';
 import { useGeolocation } from '../hooks/useGeolocation';
 import { useWeather } from '../hooks/useWeather';
@@ -28,6 +30,7 @@ export function PlaceDetailPage() {
   const { placeId } = useParams();
   const { data: place, isLoading, isError, refetch } = usePlace(placeId);
   const { favoriteIds, toggle } = useFavorites();
+  const { latestVisit, recordToday } = usePlaceVisit(place?.id);
   const { active } = useActiveChild();
   const { coords } = useGeolocation();
   const { data: weather } = useWeather(coords);
@@ -87,6 +90,7 @@ export function PlaceDetailPage() {
   }
 
   const isFav = favoriteIds.has(place.id);
+  const visitedToday = latestVisit?.visitDate === localDateString();
   const officialUrl = place.websiteUrl ?? place.sourceUrl;
   const extraTags =
     place.tags?.filter((tag) =>
@@ -178,7 +182,7 @@ export function PlaceDetailPage() {
         )}
       </p>
 
-      <div className="mt-3 flex gap-2">
+      <div className="mt-3 flex flex-wrap gap-2">
         <button
           type="button"
           onClick={() => void toggle(place.id)}
@@ -192,12 +196,30 @@ export function PlaceDetailPage() {
         </button>
         <button
           type="button"
+          onClick={() => void recordToday()}
+          disabled={visitedToday}
+          className={`min-h-11 rounded-full border px-3 py-1.5 text-sm font-semibold shadow-sm ${
+            visitedToday
+              ? 'border-emerald-300 bg-emerald-50 text-emerald-700'
+              : 'border-brand-100 bg-white text-gray-600'
+          }`}
+        >
+          {visitedToday ? t('placeVisits.visitedToday') : t('placeVisits.markVisited')}
+        </button>
+        <button
+          type="button"
           onClick={() => setReportOpen(true)}
           className="min-h-11 rounded-full border border-brand-100 bg-white px-3 py-1.5 text-sm font-semibold text-gray-600 shadow-sm"
         >
           {t('placeReport.reportLink')}
         </button>
       </div>
+
+      {latestVisit && (
+        <p className="mt-2 text-xs text-gray-500">
+          {t('placeVisits.latestVisit', { date: latestVisit.visitDate })}
+        </p>
+      )}
 
       <div className="kodoko-panel mt-4 bg-brand-50/70 p-3">
         <h3 className="text-sm font-semibold text-gray-600">

@@ -7,4 +7,5 @@ export * from './repositories/preference';
 export * from './repositories/knowledgeProgress';
 export * from './repositories/policyTask';
 export * from './repositories/placeComment';
+export * from './repositories/placeVisit';
 export * from './repositories/pendingReport';

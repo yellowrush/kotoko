@@ -573,6 +573,25 @@ export function HomePage() {
       </Card>
 
       <Card>
+        <div className="flex items-center justify-between gap-3">
+          <div className="min-w-0">
+            <h2 className="text-base font-semibold text-gray-900">
+              {t('placeVisits.homeTitle')}
+            </h2>
+            <p className="mt-1 text-sm text-gray-500">
+              {t('placeVisits.homeDescription')}
+            </p>
+          </div>
+          <Link
+            to="/visits"
+            className="inline-flex min-h-10 shrink-0 items-center rounded-full bg-brand-50 px-3 text-sm font-semibold text-brand-700 shadow-sm"
+          >
+            {t('placeVisits.viewAll')}
+          </Link>
+        </div>
+      </Card>
+
+      <Card>
         <div className="flex items-center justify-between">
           <h2 className="text-base font-semibold text-gray-900">
             {t('home.currentChild')}

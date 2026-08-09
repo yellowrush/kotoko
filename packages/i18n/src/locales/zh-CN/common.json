@@ -327,6 +327,18 @@
     "title": "我的收藏",
     "empty": "还没有收藏的去处。在地点详情页点「加入收藏」即可。"
   },
+  "placeVisits": {
+    "title": "去过的场所",
+    "homeTitle": "去过的场所",
+    "homeDescription": "记录今天已经去过哪里，数据只保存在这台设备。",
+    "viewAll": "查看",
+    "markVisited": "记录去过",
+    "visitedToday": "今天已去过",
+    "latestVisit": "最近一次：{{date}}",
+    "localOnly": "去过记录只保存在当前设备，不会上传到服务器。",
+    "empty": "还没有去过记录。可以在场所详情页记录今天去过。",
+    "unknownPlace": "已下架或未缓存的场所"
+  },
   "placeComments": {
     "title": "大家的笔记",
     "localOnly": "笔记仅保存在此设备上。",

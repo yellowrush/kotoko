@@ -11,6 +11,7 @@ import { DexieChildRepository } from '../repositories/child';
 import { FavoriteRepository } from '../repositories/favorite';
 import { PreferenceRepository } from '../repositories/preference';
 import { PlaceCommentRepository } from '../repositories/placeComment';
+import { PlaceVisitRepository } from '../repositories/placeVisit';
 import { PolicyTaskRepository } from '../repositories/policyTask';
 import { LOCAL_BACKUP_VERSION } from '../backup';
 
@@ -21,6 +22,7 @@ const validBackupPayload = () => ({
   children: [],
   preferences: [],
   favorites: [],
+  placeVisits: [],
   knowledgeProgress: [],
   policyTasks: [],
 });
@@ -133,6 +135,22 @@ describe('backup export/import', () => {
     expect(byPlace[0]?.content).toBe('とても良かった');
   });
 
+  it('round-trips place visits through export and import', async () => {
+    const repo = new PlaceVisitRepository(db);
+    await repo.record({ placeId: 'p1', visitDate: '2026-08-09' });
+
+    const raw = await exportLocalBackupJson(db);
+    const parsed = JSON.parse(raw);
+    expect(parsed.placeVisits).toHaveLength(1);
+    expect(parsed.version).toBe(LOCAL_BACKUP_VERSION);
+
+    const importedDb = createDatabase(`kodoko-import-visits-${crypto.randomUUID()}`);
+    await importLocalBackup(importedDb, raw, 'merge');
+
+    const restored = new PlaceVisitRepository(importedDb);
+    expect(await restored.hasVisitedOn('p1', '2026-08-09')).toBe(true);
+  });
+
   it('does not export the internal policy task primary key', async () => {
     const policyTasks = new PolicyTaskRepository(db);
     await policyTasks.setStatus('c1', 'p-child-allowance', 'planned');
@@ -159,6 +177,7 @@ describe('backup export/import', () => {
     const { created } = await importLocalBackup(importedDb, JSON.stringify(legacy), 'merge');
     expect(created).toBe(0);
     expect(await new PlaceCommentRepository(importedDb).count()).toBe(0);
+    expect(await new PlaceVisitRepository(importedDb).count()).toBe(0);
   });
 
   it('overwrite mode replaces existing data', async () => {
@@ -226,11 +245,13 @@ describe('clearAllData', () => {
     const repo = new DexieChildRepository(db);
     await repo.create({ displayName: 'a', birthDate: '2020-01-01' });
     await new FavoriteRepository(db).add('c1', 'p1');
+    await new PlaceVisitRepository(db).record({ placeId: 'p1', visitDate: '2026-08-09' });
 
     await clearAllData(db);
 
     expect(await repo.list()).toHaveLength(0);
     expect(await new FavoriteRepository(db).count()).toBe(0);
+    expect(await new PlaceVisitRepository(db).count()).toBe(0);
     expect(await new PreferenceRepository(db).get()).toBeNull();
   });
 });

@@ -36,6 +36,9 @@ const ProfilePage = lazy(() => import('../routes/ProfilePage').then((mod) => ({ 
 const FavoritesPage = lazy(() =>
   import('../routes/FavoritesPage').then((mod) => ({ default: mod.FavoritesPage })),
 );
+const PlaceVisitsPage = lazy(() =>
+  import('../routes/PlaceVisitsPage').then((mod) => ({ default: mod.PlaceVisitsPage })),
+);
 const SettingsPage = lazy(() => import('../routes/SettingsPage').then((mod) => ({ default: mod.SettingsPage })));
 const NotFoundPage = lazy(() => import('../routes/NotFoundPage').then((mod) => ({ default: mod.NotFoundPage })));
 
@@ -60,6 +63,7 @@ export const router = createBrowserRouter(
         { path: 'places/map', element: <Navigate to="/places" replace /> },
         { path: 'places/:placeId', element: routeElement(<PlaceDetailPage />) },
         { path: 'favorites', element: routeElement(<FavoritesPage />) },
+        { path: 'visits', element: routeElement(<PlaceVisitsPage />) },
         { path: 'children/new', element: routeElement(<ChildNewPage />) },
         { path: 'children/:childId/edit', element: routeElement(<ChildEditPage />) },
         { path: 'knowledge', element: routeElement(<KnowledgePage />) },

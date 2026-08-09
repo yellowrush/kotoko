@@ -327,6 +327,18 @@
     "title": "我的收藏",
     "empty": "還沒有收藏的去處。在地點詳情頁點「加入收藏」即可。"
   },
+  "placeVisits": {
+    "title": "去過的場所",
+    "homeTitle": "去過的場所",
+    "homeDescription": "記錄今天已經去過哪裡，資料只保存在這台裝置。",
+    "viewAll": "查看",
+    "markVisited": "記錄去過",
+    "visitedToday": "今天已去過",
+    "latestVisit": "最近一次：{{date}}",
+    "localOnly": "去過記錄只保存在目前裝置，不會上傳到伺服器。",
+    "empty": "還沒有去過記錄。可以在場所詳情頁記錄今天去過。",
+    "unknownPlace": "已下架或未快取的場所"
+  },
   "placeComments": {
     "title": "大家的筆記",
     "localOnly": "筆記僅保存在此裝置上。",

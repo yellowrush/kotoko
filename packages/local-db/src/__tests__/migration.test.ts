@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import Dexie from 'dexie';
 import { createDatabase } from '../db';
 
-describe('schema migration v1 -> v4', () => {
+describe('schema migration v1 -> v5', () => {
   it('preserves children written under v1 when opening the current schema', async () => {
     const name = `kodoko-migration-${crypto.randomUUID()}`;
 
@@ -26,7 +26,7 @@ describe('schema migration v1 -> v4', () => {
     expect(legacy?.displayName).toBe('れい');
 
     const metadata = await current.metadata.get('schema');
-    expect(metadata?.schemaVersion).toBe(4);
+    expect(metadata?.schemaVersion).toBe(5);
 
     // new tables are queryable
     await current.favorites.add({ id: 'f1', childId: 'legacy-child', placeId: 'p1', createdAt: new Date().toISOString() });
@@ -39,11 +39,21 @@ describe('schema migration v1 -> v4', () => {
     });
     expect(await current.favorites.count()).toBe(1);
     expect(await current.placeComments.count()).toBe(1);
+    await current.placeVisits.add({
+      id: 'v1',
+      placeId: 'p1',
+      visitDate: '2026-08-09',
+      recordedAt: new Date().toISOString(),
+      updatedAt: new Date().toISOString(),
+      source: 'manual',
+      schemaVersion: 1,
+    });
+    expect(await current.placeVisits.count()).toBe(1);
 
     current.close();
   });
 
-  it('migrates v2 data into v4 preserving values', async () => {
+  it('migrates v2 data into v5 preserving values', async () => {
     const name = `kodoko-migration-v2-${crypto.randomUUID()}`;
 
     const v2db = new Dexie(name);
@@ -62,7 +72,7 @@ describe('schema migration v1 -> v4', () => {
     const current = createDatabase(name);
     expect(await current.favorites.count()).toBe(1);
     expect((await current.favorites.get('f-v2'))?.placeId).toBe('p9');
-    expect((await current.metadata.get('schema'))?.schemaVersion).toBe(4);
+    expect((await current.metadata.get('schema'))?.schemaVersion).toBe(5);
     // new v3 tables are empty & writable
     await current.placeComments.add({
       id: 'c9',
@@ -72,10 +82,20 @@ describe('schema migration v1 -> v4', () => {
       createdAt: '2025-01-01T00:00:00.000Z',
     });
     expect(await current.placeComments.count()).toBe(1);
+    await current.placeVisits.add({
+      id: 'v9',
+      placeId: 'p9',
+      visitDate: '2026-08-09',
+      recordedAt: '2026-08-09T00:00:00.000Z',
+      updatedAt: '2026-08-09T00:00:00.000Z',
+      source: 'manual',
+      schemaVersion: 1,
+    });
+    expect(await current.placeVisits.count()).toBe(1);
     current.close();
   });
 
-  it('migrates v3 policy tasks and allows the same policy for another child', async () => {
+  it('migrates v3 policy tasks into v5 and allows the same policy for another child', async () => {
     const name = `kodoko-migration-v3-policy-${crypto.randomUUID()}`;
 
     const v3db = new Dexie(name);
@@ -120,7 +140,7 @@ describe('schema migration v1 -> v4', () => {
       updatedAt: '2025-01-02T00:00:00.000Z',
     });
     expect(await current.policyTaskEntries.count()).toBe(2);
-    expect((await current.metadata.get('schema'))?.schemaVersion).toBe(4);
+    expect((await current.metadata.get('schema'))?.schemaVersion).toBe(5);
     current.close();
   });
 

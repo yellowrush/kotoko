@@ -7,11 +7,12 @@ import type {
   PolicyTaskState,
   LocalMetadata,
   PlaceComment,
+  PlaceVisit,
   PendingPlaceReport,
 } from '@kodoko/domain';
 
 export const DATABASE_NAME = 'kodoko-local';
-export const SCHEMA_VERSION = 4;
+export const SCHEMA_VERSION = 5;
 
 export type StoredPolicyTaskState = PolicyTaskState & { id: string };
 
@@ -23,6 +24,7 @@ export class KodokoLocalDatabase extends Dexie {
   policyTasks!: EntityTable<PolicyTaskState, 'policyId'>;
   policyTaskEntries!: EntityTable<StoredPolicyTaskState, 'id'>;
   placeComments!: EntityTable<PlaceComment, 'id'>;
+  placeVisits!: EntityTable<PlaceVisit, 'id'>;
   pendingReports!: EntityTable<PendingPlaceReport, 'id'>;
   metadata!: EntityTable<LocalMetadata, 'id'>;
 
@@ -91,6 +93,25 @@ export class KodokoLocalDatabase extends Dexie {
           .table('metadata')
           .put({ id: 'schema', schemaVersion: 4, updatedAt: new Date().toISOString() } satisfies LocalMetadata);
       });
+
+    this.version(5)
+      .stores({
+        children: 'id, birthDate, createdAt, updatedAt',
+        preferences: 'id, updatedAt',
+        favorites: 'id, childId, placeId, [childId+placeId]',
+        knowledgeProgress: 'id, childId, knowledgeId, [childId+knowledgeId]',
+        policyTasks: 'policyId, status, updatedAt',
+        policyTaskEntries: 'id, &[childId+policyId], childId, policyId, status, updatedAt',
+        placeComments: 'id, placeId, createdAt',
+        placeVisits: 'id, &[placeId+visitDate], placeId, visitDate, recordedAt, updatedAt',
+        pendingReports: 'id, placeId, createdAt',
+        metadata: 'id',
+      })
+      .upgrade(async (tx) => {
+        await tx
+          .table('metadata')
+          .put({ id: 'schema', schemaVersion: 5, updatedAt: new Date().toISOString() } satisfies LocalMetadata);
+      });
   }
 }
 
@@ -110,5 +131,6 @@ export type {
   PolicyTaskState,
   LocalMetadata,
   PlaceComment,
+  PlaceVisit,
   PendingPlaceReport,
 };

@@ -4,6 +4,7 @@ import type {
   FavoritePlace,
   KnowledgeProgress,
   PlaceComment,
+  PlaceVisit,
   PolicyTaskState,
   UserPreference,
 } from '@kodoko/domain';
@@ -11,12 +12,13 @@ import type { KodokoLocalDatabase } from './db';
 import { policyTaskEntryId } from './db';
 import { zodLocalBackup } from './schemas';
 
-export const LOCAL_BACKUP_VERSION = 2;
+export const LOCAL_BACKUP_VERSION = 3;
 
 type BackupEntities = {
   children: ChildProfile[];
   preferences: UserPreference[];
   favorites: FavoritePlace[];
+  placeVisits: PlaceVisit[];
   knowledgeProgress: KnowledgeProgress[];
   policyTasks: PolicyTaskState[];
   placeComments: PlaceComment[];
@@ -39,6 +41,7 @@ function backupTables(db: KodokoLocalDatabase) {
     db.children,
     db.preferences,
     db.favorites,
+    db.placeVisits,
     db.knowledgeProgress,
     db.policyTasks,
     db.policyTaskEntries,
@@ -47,11 +50,12 @@ function backupTables(db: KodokoLocalDatabase) {
 }
 
 async function snapshotAll(db: KodokoLocalDatabase): Promise<Snapshot> {
-  const [children, preferences, favorites, knowledgeProgress, policyTasks, placeComments] =
+  const [children, preferences, favorites, placeVisits, knowledgeProgress, policyTasks, placeComments] =
     await Promise.all([
       db.children.toArray(),
       db.preferences.toArray(),
       db.favorites.toArray(),
+      db.placeVisits.toArray(),
       db.knowledgeProgress.toArray(),
       db.policyTaskEntries.toArray(),
       db.placeComments.toArray(),
@@ -60,6 +64,7 @@ async function snapshotAll(db: KodokoLocalDatabase): Promise<Snapshot> {
     children,
     preferences,
     favorites,
+    placeVisits,
     knowledgeProgress,
     policyTasks: policyTasks.map((task) => ({
       policyId: task.policyId,
@@ -80,6 +85,7 @@ async function restoreSnapshot(db: KodokoLocalDatabase, snapshot: Snapshot): Pro
     await db.children.bulkPut(snapshot.children);
     await db.preferences.bulkPut(snapshot.preferences);
     await db.favorites.bulkPut(snapshot.favorites);
+    await db.placeVisits.bulkPut(snapshot.placeVisits);
     await db.knowledgeProgress.bulkPut(snapshot.knowledgeProgress);
     await db.policyTaskEntries.bulkPut(snapshot.policyTasks.filter((task) => task.childId).map(toStoredPolicyTask));
     await db.placeComments.bulkPut(snapshot.placeComments);
@@ -178,6 +184,9 @@ export async function importLocalBackup(
       await db.children.bulkAdd(backup.children);
       await db.preferences.bulkPut(backup.preferences);
       await db.favorites.bulkPut(backup.favorites);
+      if (backup.placeVisits && backup.placeVisits.length > 0) {
+        await db.placeVisits.bulkPut(backup.placeVisits);
+      }
       await db.knowledgeProgress.bulkPut(backup.knowledgeProgress);
       await db.policyTaskEntries.bulkPut(backup.policyTasks.filter((task) => task.childId).map(toStoredPolicyTask));
       if (backup.placeComments && backup.placeComments.length > 0) {

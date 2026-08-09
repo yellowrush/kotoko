@@ -34,6 +34,18 @@ export const zodFavoritePlace = z
   })
   .strict();
 
+export const zodPlaceVisit = z
+  .object({
+    id: z.string().min(1),
+    placeId: z.string().min(1),
+    visitDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+    recordedAt: isoDateTime,
+    updatedAt: isoDateTime,
+    source: z.literal('manual'),
+    schemaVersion: z.number().int().positive(),
+  })
+  .strict();
+
 export const zodKnowledgeProgress = z
   .object({
     id: z.string().min(1),
@@ -101,6 +113,7 @@ export const zodLocalBackup = z
     children: z.array(zodChildProfile),
     preferences: z.array(zodUserPreference),
     favorites: z.array(zodFavoritePlace),
+    placeVisits: z.array(zodPlaceVisit).optional(),
     knowledgeProgress: z.array(zodKnowledgeProgress),
     policyTasks: z.array(zodPolicyTaskState),
     placeComments: z.array(zodPlaceComment).optional(),

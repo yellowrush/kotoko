@@ -224,6 +224,27 @@
       "diaper": "オムツ替え"
     }
   },
+  "placeShare": {
+    "button": "共有",
+    "open": "この場所を共有",
+    "title": "場所を共有",
+    "native": "スマホの共有メニューを開く",
+    "copyHint": "WeChat・Instagram はリンクをコピーしてアプリに貼り付けてください。",
+    "targets": {
+      "facebook": "Facebook",
+      "line": "LINE",
+      "x": "X",
+      "wechat": "WeChat",
+      "instagram": "Instagram",
+      "copyLink": "リンクをコピー"
+    },
+    "status": {
+      "copied": "共有文をコピーしました。",
+      "shared": "共有画面を開きました。",
+      "unavailable": "このブラウザでは共有メニューを利用できません。",
+      "error": "共有に失敗しました。"
+    }
+  },
   "knowledge": {
     "title": "育児知識",
     "byAge": "年齢に合わせた知識",

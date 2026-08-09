@@ -224,6 +224,27 @@
       "diaper": "尿布台"
     }
   },
+  "placeShare": {
+    "button": "分享",
+    "open": "分享这个地点",
+    "title": "分享地点",
+    "native": "打开手机分享菜单",
+    "copyHint": "微信、Instagram 可先复制分享文案，再粘贴到对应应用。",
+    "targets": {
+      "facebook": "Facebook",
+      "line": "LINE",
+      "x": "X",
+      "wechat": "微信",
+      "instagram": "Instagram",
+      "copyLink": "复制链接"
+    },
+    "status": {
+      "copied": "已复制分享文案。",
+      "shared": "已打开分享页面。",
+      "unavailable": "当前浏览器不支持系统分享菜单。",
+      "error": "分享失败，请稍后重试。"
+    }
+  },
   "knowledge": {
     "title": "育儿知识",
     "byAge": "按年龄匹配的知识",

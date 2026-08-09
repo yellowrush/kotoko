@@ -224,6 +224,27 @@
       "diaper": "尿布台"
     }
   },
+  "placeShare": {
+    "button": "分享",
+    "open": "分享這個地點",
+    "title": "分享地點",
+    "native": "開啟手機分享選單",
+    "copyHint": "微信、Instagram 可先複製分享文案，再貼到對應應用。",
+    "targets": {
+      "facebook": "Facebook",
+      "line": "LINE",
+      "x": "X",
+      "wechat": "微信",
+      "instagram": "Instagram",
+      "copyLink": "複製連結"
+    },
+    "status": {
+      "copied": "已複製分享文案。",
+      "shared": "已開啟分享頁面。",
+      "unavailable": "目前瀏覽器不支援系統分享選單。",
+      "error": "分享失敗，請稍後再試。"
+    }
+  },
   "knowledge": {
     "title": "育兒知識",
     "byAge": "依年齡匹配的知識",

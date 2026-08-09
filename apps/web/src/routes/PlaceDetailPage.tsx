@@ -18,6 +18,7 @@ import { PlaceReservationSection } from '../components/places/PlaceReservationSe
 import { PlaceBasicInfo } from '../components/places/PlaceBasicInfo';
 import { PlaceComments } from '../components/places/PlaceComments';
 import { PlaceReportDialog } from '../components/places/PlaceReportDialog';
+import { PlaceShareButton } from '../components/places/PlaceShareButton';
 
 const EXTRA_TAGS = ['group-play', 'quiet-zone'] as const;
 
@@ -95,12 +96,15 @@ export function PlaceDetailPage() {
 
   return (
     <div>
-      <Link
-        to={backTo}
-        className="mb-2 inline-flex min-h-10 items-center rounded-full border border-brand-100 bg-white/80 px-3 text-sm font-semibold text-gray-600 shadow-sm hover:bg-brand-50 hover:text-brand-700"
-      >
-        ← {t('common.back')}
-      </Link>
+      <div className="mb-2 flex items-center justify-between gap-3">
+        <Link
+          to={backTo}
+          className="inline-flex min-h-10 items-center rounded-full border border-brand-100 bg-white/80 px-3 text-sm font-semibold text-gray-600 shadow-sm hover:bg-brand-50 hover:text-brand-700"
+        >
+          ← {t('common.back')}
+        </Link>
+        <PlaceShareButton place={place} />
+      </div>
       <PlaceMediaCarousel
         place={place}
         fallbackEmoji={CATEGORY_ICON[place.category]}

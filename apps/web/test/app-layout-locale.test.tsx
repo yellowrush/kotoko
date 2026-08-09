@@ -41,7 +41,30 @@ describe('AppLayout locale behavior', () => {
     expect(screen.queryByLabelText('语言')).not.toBeInTheDocument();
     expect(screen.queryByLabelText('語言')).not.toBeInTheDocument();
 
-    expect(screen.getByRole('link', { name: 'お気に入り' })).toBeInTheDocument();
+    expect(
+      screen.getByRole('link', { name: 'マイリスト' }),
+    ).toBeInTheDocument();
     expect(setPreference).not.toHaveBeenCalled();
+  });
+
+  it('removes the app header on place detail pages', () => {
+    const router = createMemoryRouter(
+      [
+        {
+          path: '/',
+          element: <AppLayout />,
+          children: [
+            { path: 'places/:placeId', element: <div data-testid="detail" /> },
+          ],
+        },
+      ],
+      { initialEntries: ['/places/p1'] },
+    );
+
+    const { container } = render(<RouterProvider router={router} />);
+
+    expect(screen.getByTestId('detail')).toBeInTheDocument();
+    expect(container.querySelector('header')).not.toBeInTheDocument();
+    expect(container.querySelector('main')).toHaveClass('pt-4');
   });
 });

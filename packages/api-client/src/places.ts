@@ -49,6 +49,7 @@ const reportResponseSchema = z.object({
         status: z.literal('created'),
         issueNumber: z.number(),
         issueUrl: z.string().url(),
+        labelStatus: z.enum(['applied', 'failed']).optional(),
       }),
       z.object({
         status: z.literal('skipped'),

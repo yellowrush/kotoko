@@ -61,8 +61,9 @@ describe('POST /api/v1/places/:placeId/reports', () => {
       status: 'created',
       issueNumber: 42,
       issueUrl: 'https://github.com/yellowrush/kotoko/issues/42',
+      labelStatus: 'applied',
     });
-    expect(fetchMock).toHaveBeenCalledTimes(1);
+    expect(fetchMock).toHaveBeenCalledTimes(4);
 
     const call = vi.mocked(fetchMock).mock.calls[0];
     expect(call?.[0]).toBe('https://api.github.com/repos/yellowrush/kotoko/issues');
@@ -74,7 +75,7 @@ describe('POST /api/v1/places/:placeId/reports', () => {
       labels: string[];
     };
     expect(body.title).toContain('[場所回報]');
-    expect(body.labels).toEqual(['report', 'report:address']);
+    expect(body).not.toHaveProperty('labels');
     expect(body.body).toContain('ueno-park');
     expect(body.body).toContain('The public address shown on the page differs from the official site.');
     expect(body.body).not.toContain('parent@example.com');
@@ -96,6 +97,68 @@ describe('POST /api/v1/places/:placeId/reports', () => {
 
     expect(res.statusCode).toBe(200);
     expect(res.json().issue).toEqual({ status: 'failed', reason: 'github_http_400' });
+    await app.close();
+  });
+
+  it('keeps the GitHub issue when label creation is not allowed', async () => {
+    process.env.GITHUB_TOKEN = 'test-token';
+    process.env.GITHUB_ISSUE_REPO = 'yellowrush/kotoko';
+
+    const fetchMock = vi.fn(async (input: Parameters<typeof fetch>[0]) => {
+      const url = String(input);
+      if (url.endsWith('/issues')) {
+        return new Response(JSON.stringify({ number: 44, html_url: 'https://github.com/yellowrush/kotoko/issues/44' }), {
+          status: 201,
+          headers: { 'Content-Type': 'application/json' },
+        });
+      }
+      return new Response(JSON.stringify({ message: 'Resource not accessible by personal access token' }), {
+        status: 403,
+        headers: { 'Content-Type': 'application/json' },
+      });
+    }) as unknown as typeof fetch;
+    globalThis.fetch = fetchMock;
+
+    const app = buildApp();
+    const res = await app.inject({
+      method: 'POST',
+      url: `${API_PREFIX}/places/ueno-park/reports`,
+      payload: { type: 'reservation', detail: 'Reservation URL is outdated.' },
+    });
+
+    expect(res.statusCode).toBe(200);
+    expect(res.json().issue).toEqual({
+      status: 'created',
+      issueNumber: 44,
+      issueUrl: 'https://github.com/yellowrush/kotoko/issues/44',
+      labelStatus: 'failed',
+    });
+    expect(fetchMock).toHaveBeenCalledTimes(3);
+    await app.close();
+  });
+
+  it('returns a useful GitHub failure reason when the API rejects the token', async () => {
+    process.env.GITHUB_TOKEN = 'test-token';
+    process.env.GITHUB_ISSUE_REPO = 'yellowrush/kotoko';
+    globalThis.fetch = vi.fn(async () =>
+      new Response(JSON.stringify({ message: 'Resource not accessible by personal access token' }), {
+        status: 403,
+        headers: { 'Content-Type': 'application/json' },
+      }),
+    ) as unknown as typeof fetch;
+
+    const app = buildApp();
+    const res = await app.inject({
+      method: 'POST',
+      url: `${API_PREFIX}/places/ueno-park/reports`,
+      payload: { type: 'media', detail: 'The image no longer matches this place.' },
+    });
+
+    expect(res.statusCode).toBe(200);
+    expect(res.json().issue).toEqual({
+      status: 'failed',
+      reason: 'github_http_403_resource_not_accessible_by_personal_access_token',
+    });
     await app.close();
   });
 
@@ -127,7 +190,7 @@ describe('POST /api/v1/places/:placeId/reports', () => {
     expect(first.json().issue.status).toBe('created');
     expect(duplicate.statusCode).toBe(200);
     expect(duplicate.json().issue).toEqual({ status: 'skipped', reason: 'duplicate' });
-    expect(fetchMock).toHaveBeenCalledTimes(1);
+    expect(fetchMock).toHaveBeenCalledTimes(4);
     await app.close();
   });
 

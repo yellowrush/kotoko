@@ -11,7 +11,12 @@ export type ReportIssueInput = {
 };
 
 export type ReportIssueResult =
-  | { status: 'created'; issueNumber: number; issueUrl: string }
+  | {
+      status: 'created';
+      issueNumber: number;
+      issueUrl: string;
+      labelStatus: 'applied' | 'failed';
+    }
   | { status: 'skipped'; reason: 'missing_config' | 'duplicate' }
   | { status: 'failed'; reason: string };
 
@@ -95,6 +100,16 @@ function issueLabels(type: PlaceReportType): string[] {
   return ['report', `report:${type}`];
 }
 
+function labelColor(name: string): string {
+  return name === 'report' ? 'fb923c' : 'fed7aa';
+}
+
+function labelDescription(name: string): string {
+  return name === 'report'
+    ? 'Public place correction report'
+    : 'Public place correction report category';
+}
+
 function sourceLines(place: Place): string[] {
   const urls = [
     place.sourceUrl,
@@ -144,6 +159,71 @@ function parseGitHubIssueResponse(data: GitHubIssueResponse): {
   return { issueNumber: data.number, issueUrl: data.html_url };
 }
 
+function githubHeaders(token: string): Record<string, string> {
+  return {
+    Accept: 'application/vnd.github+json',
+    Authorization: `Bearer ${token}`,
+    'Content-Type': 'application/json',
+    'User-Agent': 'kodoko-report-issue',
+    'X-GitHub-Api-Version': '2022-11-28',
+  };
+}
+
+function compactReason(value: string): string {
+  return truncate(
+    compactWhitespace(value)
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, '_')
+      .replace(/^_+|_+$/g, ''),
+    120,
+  );
+}
+
+async function githubFailureReason(response: Response): Promise<string> {
+  try {
+    const data = (await response.json()) as { message?: unknown };
+    if (typeof data.message === 'string' && data.message.trim()) {
+      return `github_http_${response.status}_${compactReason(data.message)}`;
+    }
+  } catch {
+    // Fall through to plain HTTP status.
+  }
+  return `github_http_${response.status}`;
+}
+
+async function ensureLabel(config: { token: string; repo: string; apiUrl: string }, name: string): Promise<boolean> {
+  const response = await fetch(`${config.apiUrl}/repos/${config.repo}/labels`, {
+    method: 'POST',
+    headers: githubHeaders(config.token),
+    body: JSON.stringify({
+      name,
+      color: labelColor(name),
+      description: labelDescription(name),
+    }),
+  });
+
+  return response.ok || response.status === 422;
+}
+
+async function applyIssueLabels(
+  config: { token: string; repo: string; apiUrl: string },
+  issueNumber: number,
+  labels: string[],
+): Promise<'applied' | 'failed'> {
+  const labelsReady = await Promise.all(labels.map((label) => ensureLabel(config, label)));
+  if (labelsReady.some((ready) => !ready)) return 'failed';
+
+  const response = await fetch(
+    `${config.apiUrl}/repos/${config.repo}/issues/${issueNumber}/labels`,
+    {
+      method: 'POST',
+      headers: githubHeaders(config.token),
+      body: JSON.stringify({ labels }),
+    },
+  );
+  return response.ok ? 'applied' : 'failed';
+}
+
 export function resetReportIssueState() {
   recentIssueKeys.clear();
 }
@@ -160,28 +240,22 @@ export async function createReportIssue(input: ReportIssueInput): Promise<Report
   try {
     const response = await fetch(`${config.apiUrl}/repos/${config.repo}/issues`, {
       method: 'POST',
-      headers: {
-        Accept: 'application/vnd.github+json',
-        Authorization: `Bearer ${config.token}`,
-        'Content-Type': 'application/json',
-        'User-Agent': 'kodoko-report-issue',
-        'X-GitHub-Api-Version': '2022-11-28',
-      },
+      headers: githubHeaders(config.token),
       body: JSON.stringify({
         title: issueTitle(input),
         body: issueBody(input),
-        labels: issueLabels(input.type),
       }),
     });
 
     if (!response.ok) {
-      return { status: 'failed', reason: `github_http_${response.status}` };
+      return { status: 'failed', reason: await githubFailureReason(response) };
     }
 
     const parsed = parseGitHubIssueResponse((await response.json()) as GitHubIssueResponse);
     if (!parsed) return { status: 'failed', reason: 'invalid_github_response' };
+    const labelStatus = await applyIssueLabels(config, parsed.issueNumber, issueLabels(input.type));
     rememberIssueKey(input, now);
-    return { status: 'created', ...parsed };
+    return { status: 'created', ...parsed, labelStatus };
   } catch (error) {
     return {
       status: 'failed',

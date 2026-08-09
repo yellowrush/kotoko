@@ -1,1 +1,0 @@
-import{a as i,j as t,L as r}from"./index-e-sgELHm.js";import{P as n}from"./PageHeader-3FFe5Kqz.js";function a(){const{t:e}=i();return t.jsx("div",{children:t.jsx(n,{title:e("nav.profile"),description:"Sprint 7",children:t.jsx(r,{to:"/login",className:"text-sm text-brand-700",children:e("login.title")})})})}export{a as ProfilePage};

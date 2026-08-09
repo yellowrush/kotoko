@@ -6,7 +6,7 @@ import { initI18n } from '../app/i18n';
 import { KnowledgePage } from '../routes/KnowledgePage';
 
 const mockState = vi.hoisted(() => ({
-  child: {
+  children: [{
     id: 'c1',
     displayName: 'Aki',
     birthDate: '2025-08-08',
@@ -15,8 +15,7 @@ const mockState = vi.hoisted(() => ({
     createdAt: '2026-01-01T00:00:00.000Z',
     updatedAt: '2026-01-01T00:00:00.000Z',
     schemaVersion: 1,
-  } as ChildProfile,
-  active: undefined as ChildProfile | undefined,
+  }] as ChildProfile[],
   knowledge: [
     {
       id: 'current',
@@ -57,8 +56,8 @@ const mockState = vi.hoisted(() => ({
   ] as KnowledgeContent[],
 }));
 
-vi.mock('../hooks/useActiveChild', () => ({
-  useActiveChild: () => ({ active: mockState.active }),
+vi.mock('../hooks/useChildren', () => ({
+  useChildren: () => ({ children: mockState.children, loading: false }),
 }));
 
 vi.mock('../hooks/useKnowledge', () => ({
@@ -76,7 +75,7 @@ describe('KnowledgePage views', () => {
     vi.useFakeTimers();
     vi.setSystemTime(new Date('2026-08-08T00:00:00.000Z'));
     await initI18n();
-    mockState.active = mockState.child;
+    mockState.children = [mockState.children[0]!];
   });
 
   afterEach(() => {
@@ -100,6 +99,30 @@ describe('KnowledgePage views', () => {
     fireEvent.click(screen.getByRole('button', { name: 'すべて' }));
     expect(screen.getAllByText('Current Article').length).toBeGreaterThan(0);
     expect(screen.getAllByText('Upcoming Article').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Later Article').length).toBeGreaterThan(0);
+  });
+
+  it('uses all registered children for the matching view', () => {
+    mockState.children = [
+      {
+        ...mockState.children[0]!,
+        id: 'c1',
+        birthDate: '2025-08-08',
+      },
+      {
+        ...mockState.children[0]!,
+        id: 'c2',
+        birthDate: '2024-02-08',
+      },
+    ];
+
+    render(
+      <MemoryRouter>
+        <KnowledgePage />
+      </MemoryRouter>,
+    );
+
+    expect(screen.getAllByText('Current Article').length).toBeGreaterThan(0);
     expect(screen.getAllByText('Later Article').length).toBeGreaterThan(0);
   });
 });

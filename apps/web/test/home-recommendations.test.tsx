@@ -1,7 +1,7 @@
 import { afterEach, beforeAll, beforeEach, describe, expect, it, vi } from 'vitest';
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import type { ChildProfile, Place, UserPreference } from '@kodoko/domain';
+import type { ChildProfile, KnowledgeContent, Place, Policy, UserPreference } from '@kodoko/domain';
 import { initI18n } from '../src/app/i18n';
 import { HomePage } from '../src/routes/HomePage';
 
@@ -14,6 +14,13 @@ const child: ChildProfile = {
   createdAt: '2026-01-01T00:00:00.000Z',
   updatedAt: '2026-01-01T00:00:00.000Z',
   schemaVersion: 1,
+};
+
+const otherChild: ChildProfile = {
+  ...child,
+  id: 'c2',
+  displayName: 'Haru',
+  birthDate: '2025-08-01',
 };
 
 const place = (overrides: Partial<Place>): Place => ({
@@ -51,6 +58,10 @@ const homeMocks = vi.hoisted(() => ({
   children: [] as ChildProfile[],
   selected: [] as ChildProfile[],
   toggleChild: vi.fn(),
+  knowledge: [] as KnowledgeContent[],
+  policies: [] as Policy[],
+  policyStatusById: {} as Record<string, 'new' | 'viewed' | 'planned' | 'completed' | 'dismissed'>,
+  policyTasksLoading: false,
 }));
 
 vi.mock('../src/hooks/useSelectedChildren', () => ({
@@ -77,14 +88,20 @@ vi.mock('../src/hooks/useWeather', () => ({
 }));
 
 vi.mock('../src/hooks/useKnowledge', () => ({
-  useKnowledge: () => ({ data: [], isLoading: false }),
+  useKnowledge: () => ({ data: homeMocks.knowledge, isLoading: false }),
   useKnowledgeProgress: () => ({ readIds: new Set(), loading: false }),
 }));
 
 vi.mock('../src/hooks/usePolicies', () => ({
-  usePolicies: () => ({ data: [], isLoading: false }),
+  usePolicies: () => ({ data: homeMocks.policies, isLoading: false }),
   usePolicyTasks: () => ({ statusFor: () => 'new' }),
-  usePolicyTasksForChildren: () => ({ statusFor: () => 'new' }),
+  usePolicyTasksForChildren: () => ({
+    loading: homeMocks.policyTasksLoading,
+    statusFor: (policyId: string, childId?: string) =>
+      homeMocks.policyStatusById[`${childId ?? 'none'}:${policyId}`] ??
+      homeMocks.policyStatusById[policyId] ??
+      'new',
+  }),
 }));
 
 vi.mock('../src/hooks/usePreference', () => ({
@@ -118,6 +135,10 @@ describe('HomePage recommendations', () => {
       isError: false,
       refetch: vi.fn(),
     };
+    homeMocks.knowledge = [];
+    homeMocks.policies = [];
+    homeMocks.policyStatusById = {};
+    homeMocks.policyTasksLoading = false;
   });
 
   it('uses municipality fallback when GPS is unavailable', () => {
@@ -222,4 +243,111 @@ describe('HomePage recommendations', () => {
     fireEvent.click(button);
     expect(homeMocks.toggleChild).toHaveBeenCalledWith('c1');
   });
+
+  it('renders viewed policy reminders with a white background', () => {
+    homeMocks.policies = [policy({ id: 'policy-viewed', title: 'Viewed Policy' })];
+    homeMocks.policyStatusById = { 'policy-viewed': 'viewed' };
+
+    render(
+      <MemoryRouter>
+        <HomePage />
+      </MemoryRouter>,
+    );
+
+    const reminderLink = screen.getByText('Viewed Policy').closest('a');
+    expect(reminderLink).toHaveClass('bg-white');
+    expect(reminderLink).not.toHaveClass('bg-brand-50/70');
+  });
+
+  it('uses registered children policy status when deciding whether a selected reminder is read', () => {
+    homeMocks.children = [child, otherChild];
+    homeMocks.selected = [otherChild];
+    homeMocks.policies = [policy({ id: 'p-routine-vaccination-3-year-je', title: '3歳からの日本脳炎ワクチンを確認' })];
+    homeMocks.policyStatusById = {
+      'c1:p-routine-vaccination-3-year-je': 'completed',
+      'c2:p-routine-vaccination-3-year-je': 'new',
+    };
+
+    render(
+      <MemoryRouter>
+        <HomePage />
+      </MemoryRouter>,
+    );
+
+    const reminderLink = screen.getByText('3歳からの日本脳炎ワクチンを確認').closest('a');
+    expect(reminderLink).toHaveClass('bg-white');
+    expect(reminderLink).not.toHaveClass('bg-brand-50/70');
+  });
+
+  it('shows knowledge and policy reminders for registered children, not only selected children', () => {
+    homeMocks.children = [child, otherChild];
+    homeMocks.selected = [otherChild];
+    homeMocks.knowledge = [
+      knowledgeContent({
+        id: 'knowledge-for-older-child',
+        title: 'Older child knowledge',
+        minAgeMonths: 36,
+        maxAgeMonths: 48,
+      }),
+    ];
+    homeMocks.policies = [
+      policy({
+        id: 'policy-for-older-child',
+        title: 'Older child policy',
+        eligibilityRule: {
+          all: [
+            { field: 'child.ageMonths', operator: 'gte', value: 36 },
+            { field: 'child.ageMonths', operator: 'lte', value: 48 },
+          ],
+        },
+      }),
+    ];
+    homeMocks.policyStatusById = { 'c1:policy-for-older-child': 'new' };
+
+    render(
+      <MemoryRouter>
+        <HomePage />
+      </MemoryRouter>,
+    );
+
+    expect(screen.getByText('Older child knowledge')).toBeInTheDocument();
+    expect(screen.getByText('Older child policy')).toBeInTheDocument();
+  });
 });
+
+function knowledgeContent(overrides: Partial<KnowledgeContent> = {}): KnowledgeContent {
+  return {
+    id: 'knowledge-item',
+    title: 'Knowledge Item',
+    summary: 'Knowledge summary',
+    body: 'Knowledge body',
+    minAgeMonths: 0,
+    maxAgeMonths: 216,
+    categories: ['parenting'],
+    locale: 'ja',
+    sourceReferences: [],
+    status: 'published',
+    ...overrides,
+  };
+}
+
+function policy(overrides: Partial<Policy> = {}): Policy {
+  return {
+    id: 'policy-new',
+    title: 'Policy Reminder',
+    contextHint: 'Policy reminder context',
+    authorityLevel: 'municipality',
+    municipalityCode: '13106',
+    eligibilityRule: {
+      all: [
+        { field: 'child.ageMonths', operator: 'gte', value: 0 },
+        { field: 'child.ageMonths', operator: 'lte', value: 216 },
+      ],
+    },
+    officialUrl: 'https://example.com/policy',
+    sourceCheckedAt: '2026-01-01T00:00:00.000Z',
+    version: 1,
+    status: 'published',
+    ...overrides,
+  };
+}

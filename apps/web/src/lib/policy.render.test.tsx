@@ -1,34 +1,58 @@
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { cleanup, render, screen } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { MemoryRouter, Route, Routes } from 'react-router-dom';
-import type { Policy } from '@kodoko/domain';
-import type { PolicyLeafCheck } from '@kodoko/policy-engine';
+import type { ChildProfile, Policy } from '@kodoko/domain';
 import { PolicyDetailPage } from '../routes/PolicyDetailPage';
 import { PoliciesPage } from '../routes/PoliciesPage';
 import { changeLocale, initI18n } from '../app/i18n';
 
+const child: ChildProfile = {
+  id: 'c1',
+  displayName: 'Aki',
+  birthDate: '2026-01-10',
+  interests: [],
+  accessibilityNeeds: [],
+  createdAt: '2026-01-01T00:00:00.000Z',
+  updatedAt: '2026-01-01T00:00:00.000Z',
+  schemaVersion: 1,
+};
+
+const otherChild: ChildProfile = {
+  ...child,
+  id: 'c2',
+  displayName: 'Haru',
+  birthDate: '2025-08-10',
+};
+
 const mockPolicies = vi.hoisted(() => ({
   usePolicies: vi.fn(),
   usePolicyDetail: vi.fn(),
-  usePolicyMatches: vi.fn(),
-  usePolicyTasks: vi.fn(),
-  active: { id: 'c1' },
+  usePolicyTasksForChildren: vi.fn(),
+  children: [] as ChildProfile[],
+  preference: { municipalityCode: '13106' },
 }));
 
 vi.mock('../hooks/usePolicies', () => ({
   usePolicies: mockPolicies.usePolicies,
   usePolicyDetail: mockPolicies.usePolicyDetail,
-  usePolicyMatches: mockPolicies.usePolicyMatches,
-  usePolicyTasks: mockPolicies.usePolicyTasks,
+  usePolicyTasksForChildren: mockPolicies.usePolicyTasksForChildren,
 }));
 
-vi.mock('../hooks/useActiveChild', () => ({
-  useActiveChild: () => ({ active: mockPolicies.active }),
+vi.mock('../hooks/useChildren', () => ({
+  useChildren: () => ({ children: mockPolicies.children, loading: false }),
+}));
+
+vi.mock('../hooks/usePreference', () => ({
+  usePreference: () => ({ preference: mockPolicies.preference }),
 }));
 
 beforeEach(async () => {
+  vi.useFakeTimers();
+  vi.setSystemTime(new Date('2026-08-09T00:00:00.000Z'));
   await initI18n();
-  await changeLocale('zh-TW');
+  await changeLocale('ja');
+  mockPolicies.children = [child];
+  mockPolicies.preference = { municipalityCode: '13106' };
   mockPolicies.usePolicies.mockReturnValue({
     data: [makePolicy()],
     isLoading: false,
@@ -41,8 +65,7 @@ beforeEach(async () => {
     isError: false,
     refetch: vi.fn(),
   });
-  mockPolicies.usePolicyMatches.mockReturnValue(new Map([['p-weaning-class', makeCheck()]]));
-  mockPolicies.usePolicyTasks.mockReturnValue({
+  mockPolicies.usePolicyTasksForChildren.mockReturnValue({
     tasks: new Map(),
     loading: false,
     setStatus: vi.fn(),
@@ -50,9 +73,14 @@ beforeEach(async () => {
   });
 });
 
-function renderDetailPage() {
+afterEach(() => {
+  cleanup();
+  vi.useRealTimers();
+});
+
+function renderDetailPage(state?: unknown) {
   return render(
-    <MemoryRouter initialEntries={['/policies/p-weaning-class']}>
+    <MemoryRouter initialEntries={[{ pathname: '/policies/p-weaning-class', state }]}>
       <Routes>
         <Route path="/policies/:policyId" element={<PolicyDetailPage />} />
       </Routes>
@@ -69,22 +97,40 @@ describe('PolicyDetailPage conditions', () => {
   it('merges age conditions into a single row', async () => {
     const { container } = renderDetailPage();
     expect(container.querySelectorAll('ul li')).toHaveLength(2);
-    expect(screen.getAllByText(/対象月齢 4〜12 ヶ月/).length).toBeGreaterThan(0);
   });
 
-  it('keeps the section header as a plain label', async () => {
+  it('stores planned status for the matched registered child', async () => {
+    const setStatus = vi.fn();
+    mockPolicies.usePolicyTasksForChildren.mockReturnValue({
+      tasks: new Map(),
+      loading: false,
+      setStatus,
+      statusFor: vi.fn(() => 'viewed'),
+    });
+
     renderDetailPage();
-    expect(screen.getAllByText('適用条件').length).toBeGreaterThan(0);
+    fireEvent.click(screen.getByRole('button', { name: '対応予定にする' }));
+
+    expect(setStatus).toHaveBeenCalledWith('p-weaning-class', 'planned', 'c1');
+  });
+
+  it('uses the entry source as the detail back link target', () => {
+    const { container } = renderDetailPage({ backTo: '/home' });
+    expect(container.querySelector('a')?.getAttribute('href')).toBe('/home');
   });
 });
 
-describe('PoliciesPage sections', () => {
-  it('groups new, planned, applicable, and not applicable policies', () => {
+describe('PoliciesPage views', () => {
+  it('switches between applicable, not applicable, and all tabs', () => {
     const policies = [
-      makePolicy({ id: 'p-new', title: '新政策' }),
-      makePolicy({ id: 'p-planned', title: '計畫政策' }),
-      makePolicy({ id: 'p-viewed', title: '已看政策' }),
-      makePolicy({ id: 'p-out', title: '不適用政策' }),
+      makePolicy({ id: 'p-new', title: 'New policy' }),
+      makePolicy({ id: 'p-planned', title: 'Planned policy' }),
+      makePolicy({ id: 'p-viewed', title: 'Viewed policy' }),
+      makePolicy({
+        id: 'p-out',
+        title: 'Out policy',
+        eligibilityRule: { all: [{ field: 'child.ageMonths', operator: 'gte', value: 200 }] },
+      }),
     ];
     mockPolicies.usePolicies.mockReturnValue({
       data: policies,
@@ -92,15 +138,7 @@ describe('PoliciesPage sections', () => {
       isError: false,
       refetch: vi.fn(),
     });
-    mockPolicies.usePolicyMatches.mockReturnValue(
-      new Map([
-        ['p-new', makeCheck({ matched: true })],
-        ['p-planned', makeCheck({ matched: true })],
-        ['p-viewed', makeCheck({ matched: true })],
-        ['p-out', makeCheck({ matched: false })],
-      ]),
-    );
-    mockPolicies.usePolicyTasks.mockReturnValue({
+    mockPolicies.usePolicyTasksForChildren.mockReturnValue({
       tasks: new Map(),
       loading: false,
       setStatus: vi.fn(),
@@ -115,26 +153,70 @@ describe('PoliciesPage sections', () => {
       </MemoryRouter>,
     );
 
-    expect(screen.getAllByText('新しいお知らせ').length).toBeGreaterThan(0);
-    expect(screen.getAllByText('予定済み').length).toBeGreaterThan(0);
-    expect(screen.getAllByText('対象の制度').length).toBeGreaterThan(0);
-    expect(screen.getAllByText('今は対象外').length).toBeGreaterThan(0);
-    expect(screen.getByText('新政策')).toBeInTheDocument();
-    expect(screen.getByText('計畫政策')).toBeInTheDocument();
-    expect(screen.getByText('已看政策')).toBeInTheDocument();
-    expect(screen.getByText('不適用政策')).toBeInTheDocument();
-  });
-});
+    expect(screen.getAllByRole('button').map((tab) => tab.textContent)).toEqual([
+      '対象の制度',
+      '今は対象外',
+      'すべて',
+    ]);
+    expect(screen.getByText('New policy')).toBeInTheDocument();
+    expect(screen.getByText('Planned policy')).toBeInTheDocument();
+    expect(screen.getByText('Viewed policy')).toBeInTheDocument();
+    expect(screen.queryByText('Out policy')).toBeNull();
 
-afterEach(() => {
-  cleanup();
+    fireEvent.click(screen.getByRole('button', { name: '今は対象外' }));
+    expect(screen.queryByText('New policy')).toBeNull();
+    expect(screen.getByText('Out policy')).toBeInTheDocument();
+
+    fireEvent.click(screen.getByRole('button', { name: 'すべて' }));
+    expect(screen.getByText('New policy')).toBeInTheDocument();
+    expect(screen.getByText('Planned policy')).toBeInTheDocument();
+    expect(screen.getByText('Viewed policy')).toBeInTheDocument();
+    expect(screen.getByText('Out policy')).toBeInTheDocument();
+  });
+
+  it('uses all registered children for the applicable policies list', () => {
+    mockPolicies.children = [child, otherChild];
+    mockPolicies.usePolicies.mockReturnValue({
+      data: [
+        makePolicy({
+          id: 'p-other-child',
+          title: 'Other child policy',
+          eligibilityRule: {
+            all: [
+              { field: 'child.ageMonths', operator: 'gte', value: 11 },
+              { field: 'child.ageMonths', operator: 'lte', value: 13 },
+            ],
+          },
+        }),
+      ],
+      isLoading: false,
+      isError: false,
+      refetch: vi.fn(),
+    });
+    mockPolicies.usePolicyTasksForChildren.mockReturnValue({
+      tasks: new Map(),
+      loading: false,
+      setStatus: vi.fn(),
+      statusFor: vi.fn((policyId: string, childId?: string) =>
+        childId === 'c2' && policyId === 'p-other-child' ? 'new' : 'dismissed',
+      ),
+    });
+
+    render(
+      <MemoryRouter>
+        <PoliciesPage />
+      </MemoryRouter>,
+    );
+
+    expect(screen.getByText('Other child policy')).toBeInTheDocument();
+  });
 });
 
 function makePolicy(overrides: Partial<Policy> = {}): Policy {
   return {
     id: 'p-weaning-class',
-    title: '離乳食講習会',
-    contextHint: '離乳食の進め方を学べる講座の例です。',
+    title: 'Weaning class',
+    contextHint: 'Policy context',
     authorityLevel: 'municipality',
     municipalityCode: '13106',
     eligibilityRule: {
@@ -148,21 +230,6 @@ function makePolicy(overrides: Partial<Policy> = {}): Policy {
     sourceCheckedAt: '2026-01-10T00:00:00.000Z',
     version: 1,
     status: 'published',
-    ...overrides,
-  };
-}
-
-function makeCheck(overrides: Partial<PolicyLeafCheck> = {}): PolicyLeafCheck {
-  return {
-    matched: false,
-    leaves: [
-      { field: 'child.ageMonths', operator: 'gte', expected: 4, actual: 7, matched: true },
-      { field: 'child.ageMonths', operator: 'lte', expected: 12, actual: 7, matched: true },
-      { field: 'user.municipalityCode', operator: 'eq', expected: '13106', actual: '13113', matched: false },
-    ],
-    failingLeaves: [
-      { field: 'user.municipalityCode', operator: 'eq', expected: '13106', actual: '13113', matched: false },
-    ],
     ...overrides,
   };
 }

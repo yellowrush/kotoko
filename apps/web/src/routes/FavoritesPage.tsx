@@ -28,7 +28,11 @@ export function FavoritesPage() {
         <ul className="flex flex-col gap-2">
           {favorites.map((place) => (
             <li key={place.id} className="flex items-center gap-2 rounded-lg border border-gray-100 bg-white p-2">
-              <Link to={`/places/${place.id}`} className="flex min-w-0 flex-1 items-center gap-2">
+              <Link
+                to={`/places/${place.id}`}
+                state={{ backTo: '/favorites' }}
+                className="flex min-w-0 flex-1 items-center gap-2"
+              >
                 <span className="shrink-0 text-lg">{CATEGORY_ICON[place.category]}</span>
                 <span className="min-w-0">
                   <span className="block truncate text-sm font-medium">{place.name}</span>

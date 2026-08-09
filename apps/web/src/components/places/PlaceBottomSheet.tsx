@@ -115,6 +115,7 @@ export function PlaceBottomSheet({
                   </button>
 <Link
                     to={`/places/${place.id}`}
+                    state={{ backTo: '/places' }}
                     aria-label={`${t('common.details')}: ${place.name}`}
                     className={`inline-flex min-h-10 shrink-0 items-center justify-center rounded-full border border-brand-200 px-4 text-sm font-semibold text-brand-700 shadow-sm transition focus-visible:outline-brand-600 ${
                       active ? 'border-brand-300 bg-transparent' : 'border-brand-200 bg-white hover:border-brand-400 hover:bg-brand-50'

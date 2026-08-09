@@ -1,5 +1,6 @@
-﻿import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { useMemo, useState } from 'react';
+import { detailBackTo } from '../lib/navigation';
 import { useAppTranslation } from '../hooks/useAppTranslation';
 import { haversineDistanceKm } from '@kodoko/recommendation';
 import { usePlace } from '../hooks/usePlaces';
@@ -22,6 +23,7 @@ const EXTRA_TAGS = ['group-play', 'quiet-zone'] as const;
 
 export function PlaceDetailPage() {
   const { t } = useAppTranslation();
+  const location = useLocation();
   const { placeId } = useParams();
   const { data: place, isLoading, isError, refetch } = usePlace(placeId);
   const { favoriteIds, toggle } = useFavorites();
@@ -76,10 +78,11 @@ export function PlaceDetailPage() {
   const isFav = favoriteIds.has(place.id);
   const officialUrl = place.websiteUrl ?? place.sourceUrl;
   const extraTags = place.tags?.filter((tag) => (EXTRA_TAGS as readonly string[]).includes(tag)) ?? [];
+  const backTo = detailBackTo(location.state, '/places');
 
   return (
     <div>
-      <Link to="/places" className="mb-2 inline-flex items-center text-sm font-medium text-gray-600 hover:text-brand-700">
+      <Link to={backTo} className="mb-2 inline-flex items-center text-sm font-medium text-gray-600 hover:text-brand-700">
         ← {t('common.back')}
       </Link>
       <PlaceMediaCarousel place={place} fallbackEmoji={CATEGORY_ICON[place.category]} />

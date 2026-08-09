@@ -1,12 +1,15 @@
-﻿import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useCallback, useEffect, useMemo } from 'react';
+import { useLocation, useParams } from 'react-router-dom';
 import { useAppTranslation } from '../hooks/useAppTranslation';
-import { findMunicipality } from '@kodoko/domain';
+import { findMunicipality, type PolicyTaskState } from '@kodoko/domain';
 import type { LeafResult } from '@kodoko/policy-engine';
-import { usePolicyDetail, usePolicyMatches, usePolicyTasks } from '../hooks/usePolicies';
-import { daysUntil } from '../lib/policy';
+import { usePolicyDetail, usePolicyTasksForChildren } from '../hooks/usePolicies';
+import { checkPolicyFor, daysUntil } from '../lib/policy';
 import { PolicyStatusBadge } from '../components/PolicyStatusBadge';
 import { PageHeader } from '../components/PageHeader';
+import { useChildren } from '../hooks/useChildren';
+import { usePreference } from '../hooks/usePreference';
+import { detailBackTo } from '../lib/navigation';
 
 const STATUS_ACTIONS = ['planned', 'completed', 'dismissed'] as const;
 
@@ -56,17 +59,47 @@ function leafReason(leaf: LeafResult): LeafReason | null {
 
 export function PolicyDetailPage() {
   const { t } = useAppTranslation();
+  const location = useLocation();
   const { policyId } = useParams();
   const { data: policy, isLoading, isError, refetch } = usePolicyDetail(policyId);
-  const matches = usePolicyMatches();
-  const { setStatus, statusFor } = usePolicyTasks();
+  const { children } = useChildren();
+  const { preference } = usePreference();
+  const childIds = useMemo(() => children.map((child) => child.id), [children]);
+  const { setStatus, statusFor } = usePolicyTasksForChildren(childIds);
+  const backTo = detailBackTo(location.state, '/policies');
 
-  const check = policyId ? matches.get(policyId) : undefined;
-  const currentStatus = policyId ? statusFor(policyId) : 'new';
+  const policyChecks = useMemo(() => {
+    if (!policy) return [];
+    return children.map((child) => ({
+      child,
+      check: checkPolicyFor(policy, {
+        birthDate: child.birthDate,
+        municipalityCode: preference?.municipalityCode,
+      }),
+    }));
+  }, [policy, children, preference]);
+  const matchedPolicyChecks = useMemo(
+    () => policyChecks.filter((item) => item.check.matched),
+    [policyChecks],
+  );
+  const targetPolicyChecks = matchedPolicyChecks.length > 0 ? matchedPolicyChecks : policyChecks;
+  const check = matchedPolicyChecks[0]?.check ?? policyChecks[0]?.check;
+  const currentStatus =
+    policy && targetPolicyChecks.length > 0
+      ? bestPolicyStatus(targetPolicyChecks.map(({ child }) => statusFor(policy.id, child.id)))
+      : 'new';
+
+  const setStatusForTargets = useCallback(
+    async (status: PolicyTaskState['status']) => {
+      if (!policy || targetPolicyChecks.length === 0) return;
+      await Promise.all(targetPolicyChecks.map(({ child }) => setStatus(policy.id, status, child.id)));
+    },
+    [policy, setStatus, targetPolicyChecks],
+  );
 
   useEffect(() => {
-    if (policyId && currentStatus === 'new') void setStatus(policyId, 'viewed');
-  }, [policyId, currentStatus, setStatus]);
+    if (currentStatus === 'new') void setStatusForTargets('viewed');
+  }, [currentStatus, setStatusForTargets]);
 
   if (isLoading) {
     return <p className="text-gray-400">{t('common.loading')}</p>;
@@ -85,7 +118,7 @@ export function PolicyDetailPage() {
 
   return (
     <div>
-      <PageHeader title={policy.title} backTo="/policies" />
+      <PageHeader title={policy.title} backTo={backTo} />
 
       <span className="rounded-full bg-brand-50 px-2 py-0.5 text-xs text-brand-700">
         {t(`policies.level.${policy.authorityLevel}`)}
@@ -188,7 +221,7 @@ export function PolicyDetailPage() {
             <button
               key={action}
               type="button"
-              onClick={() => void setStatus(policy.id, action)}
+              onClick={() => void setStatusForTargets(action)}
               className={`rounded-full px-3 py-1 text-xs font-medium ${
                 currentStatus === action
                   ? 'bg-brand-600 text-white'
@@ -203,5 +236,19 @@ export function PolicyDetailPage() {
 
       <p className="mt-3 text-xs text-gray-400">{t('policies.disclaimer')}</p>
     </div>
+  );
+}
+
+const POLICY_STATUS_PRIORITY: Record<PolicyTaskState['status'], number> = {
+  new: 0,
+  planned: 1,
+  viewed: 2,
+  completed: 3,
+  dismissed: 4,
+};
+
+function bestPolicyStatus(statuses: PolicyTaskState['status'][]): PolicyTaskState['status'] {
+  return statuses.reduce((best, current) =>
+    POLICY_STATUS_PRIORITY[current] < POLICY_STATUS_PRIORITY[best] ? current : best,
   );
 }

@@ -1,14 +1,17 @@
 ﻿import { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import { useAppTranslation } from '../hooks/useAppTranslation';
 import { useKnowledgeDetail, useKnowledgeProgress } from '../hooks/useKnowledge';
 import { PageHeader } from '../components/PageHeader';
+import { detailBackTo } from '../lib/navigation';
 
 export function KnowledgeDetailPage() {
   const { t } = useAppTranslation();
+  const location = useLocation();
   const { knowledgeId } = useParams();
   const { data: item, isLoading, isError, refetch } = useKnowledgeDetail(knowledgeId);
   const { markRead } = useKnowledgeProgress();
+  const backTo = detailBackTo(location.state, '/knowledge');
 
   const itemId = item?.id;
   useEffect(() => {
@@ -32,7 +35,7 @@ export function KnowledgeDetailPage() {
 
   return (
     <div>
-      <PageHeader title={item.title} backTo="/knowledge" />
+      <PageHeader title={item.title} backTo={backTo} />
 
       {item.categories.length > 0 && (
         <div className="flex flex-wrap gap-1">

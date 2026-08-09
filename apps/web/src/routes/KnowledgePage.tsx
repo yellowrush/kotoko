@@ -2,11 +2,11 @@ import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppTranslation } from '../hooks/useAppTranslation';
 import { calculateAgeMonths } from '@kodoko/domain';
-import { useActiveChild } from '../hooks/useActiveChild';
+import { useChildren } from '../hooks/useChildren';
 import { useKnowledge, useKnowledgeProgress } from '../hooks/useKnowledge';
 import {
-  filterKnowledgeByAge,
-  filterUpcomingKnowledgeByAge,
+  filterKnowledgeByAges,
+  filterUpcomingKnowledgeByAges,
   sortKnowledgeByRead,
 } from '../lib/knowledge';
 import { PageHeader } from '../components/PageHeader';
@@ -16,19 +16,20 @@ type KnowledgeView = 'forChild' | 'upcoming' | 'all';
 export function KnowledgePage() {
   const { t } = useAppTranslation();
   const { data: knowledge, isLoading, isError, refetch } = useKnowledge();
-  const { active } = useActiveChild();
+  const { children } = useChildren();
   const { readIds } = useKnowledgeProgress();
   const [view, setView] = useState<KnowledgeView>('forChild');
-  const ageMonths = active ? calculateAgeMonths(active.birthDate) : undefined;
+  const ageMonthsList = useMemo(() => children.map((child) => calculateAgeMonths(child.birthDate)), [children]);
+  const hasChildren = children.length > 0;
 
   const visible = useMemo(() => {
     const list = knowledge ?? [];
-    if (!active || view === 'all') return sortKnowledgeByRead(list, readIds);
+    if (!hasChildren || view === 'all') return sortKnowledgeByRead(list, readIds);
     if (view === 'upcoming') {
-      return sortKnowledgeByRead(filterUpcomingKnowledgeByAge(list, ageMonths), readIds);
+      return sortKnowledgeByRead(filterUpcomingKnowledgeByAges(list, ageMonthsList), readIds);
     }
-    return sortKnowledgeByRead(filterKnowledgeByAge(list, ageMonths), readIds);
-  }, [knowledge, active, view, ageMonths, readIds]);
+    return sortKnowledgeByRead(filterKnowledgeByAges(list, ageMonthsList), readIds);
+  }, [knowledge, hasChildren, view, ageMonthsList, readIds]);
 
   return (
     <div>
@@ -45,18 +46,18 @@ export function KnowledgePage() {
         </div>
       )}
 
-      {!isError && !active && <p className="mb-3 text-sm text-gray-500">{t('knowledge.noChild')}</p>}
+      {!isError && !hasChildren && <p className="mb-3 text-sm text-gray-500">{t('knowledge.noChild')}</p>}
 
       {!isError && !isLoading && (
         <div className="mb-4 flex rounded-xl bg-gray-100 p-1 text-sm">
           {(['forChild', 'upcoming', 'all'] as const).map((option) => {
-            const activeOption = !active && option !== 'all' ? false : view === option;
+            const activeOption = !hasChildren && option !== 'all' ? false : view === option;
             return (
               <button
                 key={option}
                 type="button"
                 onClick={() => setView(option)}
-                disabled={!active && option !== 'all'}
+                disabled={!hasChildren && option !== 'all'}
                 className={`touch-target flex-1 rounded-lg px-2 py-1 font-medium ${
                   activeOption ? 'bg-white text-brand-700 shadow-sm' : 'text-gray-500'
                 } disabled:text-gray-300`}
@@ -78,6 +79,7 @@ export function KnowledgePage() {
             <li key={item.id}>
               <Link
                 to={`/knowledge/${item.id}`}
+                state={{ backTo: '/knowledge' }}
                 className="grid grid-cols-[auto_1fr] gap-3 rounded-xl border border-gray-200 bg-white p-3 shadow-sm transition hover:border-brand-200 hover:bg-brand-50/30"
               >
                 <span className="mt-0.5 text-xl" aria-hidden="true">

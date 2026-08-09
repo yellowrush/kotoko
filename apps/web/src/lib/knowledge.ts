@@ -30,6 +30,19 @@ export function filterUpcomingKnowledgeByAge(
   );
 }
 
+export function filterUpcomingKnowledgeByAges(
+  list: KnowledgeContent[],
+  ageMonthsList: number[],
+  windowMonths = 6,
+): KnowledgeContent[] {
+  if (ageMonthsList.length === 0) return [];
+  return list.filter((item) =>
+    ageMonthsList.some(
+      (age) => age < item.minAgeMonths && item.minAgeMonths <= age + windowMonths,
+    ),
+  );
+}
+
 export function prioritizeKnowledgeForAges(
   list: KnowledgeContent[],
   ageMonthsList: number[],

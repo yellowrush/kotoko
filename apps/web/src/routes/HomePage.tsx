@@ -77,6 +77,11 @@ const POLICY_STATUS_PRIORITY: Record<PolicyTaskState['status'], number> = {
   dismissed: 4,
 };
 
+const POLICY_REMINDER_ITEM_STYLES = {
+  unread: 'border-gray-200 bg-white hover:bg-white',
+  read: 'border-gray-200 bg-white hover:bg-white',
+} as const;
+
 function policyStatusPriority(status: PolicyTaskState['status']): number {
   return POLICY_STATUS_PRIORITY[status];
 }
@@ -142,32 +147,33 @@ export function HomePage() {
   const { data: knowledge, isLoading: knowledgeLoading } = useKnowledge();
   const { readIds } = useKnowledgeProgress();
   const { data: policies, isLoading: policiesLoading } = usePolicies();
-  const { statusFor, loading: policyTasksLoading } = usePolicyTasksForChildren(selectedIds);
+  const policyTaskChildIds = useMemo(() => children.map((child) => child.id), [children]);
+  const { statusFor, loading: policyTasksLoading } = usePolicyTasksForChildren(policyTaskChildIds);
 
   // グループ人数は選択した子どもの人数に合わせて初期化する（最大 3 人以上）。
   useEffect(() => {
     if (selected.length >= 1) setGroupSize(Math.min(selected.length, 3));
   }, [selected.length]);
 
-  const selectedAges = useMemo(() => selected.map((c) => calculateAgeMonths(c.birthDate)), [selected]);
+  const registeredChildAges = useMemo(() => children.map((c) => calculateAgeMonths(c.birthDate)), [children]);
   const weeklyKnowledge = useMemo(
-    () => prioritizeKnowledgeForAges(knowledge ?? [], selectedAges, readIds).slice(0, 3),
-    [knowledge, selectedAges, readIds],
+    () => prioritizeKnowledgeForAges(knowledge ?? [], registeredChildAges, readIds).slice(0, 3),
+    [knowledge, registeredChildAges, readIds],
   );
 
   const policyReminders = useMemo(() => {
     const list = (policies ?? [])
       .map((policy) => {
-        const statuses = selected
-          .filter((child) =>
-            checkPolicyFor(policy, {
-              birthDate: child.birthDate,
-              municipalityCode: preference?.municipalityCode,
-            }).matched,
-          )
+        const matchedChildren = children.filter((child) =>
+          checkPolicyFor(policy, {
+            birthDate: child.birthDate,
+            municipalityCode: preference?.municipalityCode,
+          }).matched,
+        );
+        const statuses = matchedChildren
           .map((child) => statusFor(policy.id, child.id))
           .filter((status) => status !== 'dismissed');
-if (statuses.length === 0) return null;
+        if (matchedChildren.length === 0 || statuses.length === 0) return null;
         return {
           policy,
           priority: Math.min(...statuses.map(policyStatusPriority)),
@@ -184,7 +190,7 @@ if (statuses.length === 0) return null;
       })
       .map((item) => ({ policy: item.policy, unread: item.unread }));
     return list.slice(0, 3);
-  }, [policies, selected, preference, statusFor, policyTasksLoading]);
+  }, [policies, children, preference, statusFor, policyTasksLoading]);
 
   function renderWeatherLabel(): string {
     if (!coords) return t('home.weatherUnavailable');
@@ -355,6 +361,7 @@ if (statuses.length === 0) return null;
               <Link
                 key={r.place.id}
                 to={`/places/${r.place.id}`}
+                state={{ backTo: '/home' }}
                 className={`mt-2 flex min-h-20 items-start gap-3 rounded-xl border p-3 shadow-sm transition hover:border-brand-300 hover:bg-brand-50/30 focus-visible:outline-brand-600 ${
                   rank ? `${rank.border} ${rank.bg}` : 'border-gray-300 bg-white'
                 }`}
@@ -477,6 +484,7 @@ if (statuses.length === 0) return null;
                 <li key={item.id}>
                   <Link
                     to={`/knowledge/${item.id}`}
+                    state={{ backTo: '/home' }}
                     className={`flex min-h-14 items-center gap-3 rounded-xl border px-3 py-2 shadow-sm transition hover:border-brand-300 ${
                       unread
                         ? 'border-brand-300 bg-brand-50/70 hover:bg-brand-50'
@@ -516,10 +524,9 @@ if (statuses.length === 0) return null;
               <li key={policy.id}>
                 <Link
                   to={`/policies/${policy.id}`}
+                  state={{ backTo: '/home' }}
                   className={`flex min-h-14 items-center gap-3 rounded-xl border px-3 py-2 shadow-sm transition hover:border-brand-300 ${
-                    unread
-                      ? 'border-brand-300 bg-brand-50/70 hover:bg-brand-50'
-                      : 'border-gray-200 bg-white hover:bg-brand-50/30'
+                    unread ? POLICY_REMINDER_ITEM_STYLES.unread : POLICY_REMINDER_ITEM_STYLES.read
                   }`}
                 >
                   <span aria-hidden="true">📌</span>

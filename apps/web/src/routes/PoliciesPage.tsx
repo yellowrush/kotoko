@@ -1,18 +1,29 @@
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppTranslation } from '../hooks/useAppTranslation';
 import type { Policy, PolicyTaskState } from '@kodoko/domain';
-import { useActiveChild } from '../hooks/useActiveChild';
-import { usePolicies, usePolicyMatches, usePolicyTasks } from '../hooks/usePolicies';
-import { daysUntil } from '../lib/policy';
+import { useChildren } from '../hooks/useChildren';
+import { usePolicies, usePolicyTasksForChildren } from '../hooks/usePolicies';
+import { checkPolicyFor, daysUntil } from '../lib/policy';
+import { usePreference } from '../hooks/usePreference';
 import { PolicyStatusBadge } from '../components/PolicyStatusBadge';
 import { PageHeader } from '../components/PageHeader';
+
+type PolicyListItem = {
+  policy: Policy;
+  status: PolicyTaskState['status'];
+};
+
+type PolicyView = 'applicable' | 'notApplicable' | 'all';
+
+const POLICY_VIEWS: PolicyView[] = ['applicable', 'notApplicable', 'all'];
 
 function PolicyItem({ policy, status }: { policy: Policy; status: PolicyTaskState['status'] }) {
   const { t } = useAppTranslation();
   return (
     <Link
       to={`/policies/${policy.id}`}
+      state={{ backTo: '/policies' }}
       className="grid grid-cols-[auto_1fr] gap-3 rounded-xl border border-gray-200 bg-white p-3 shadow-sm transition hover:border-brand-200 hover:bg-brand-50/30"
     >
       <span className="mt-0.5 text-xl" aria-hidden="true">
@@ -38,48 +49,67 @@ function PolicyItem({ policy, status }: { policy: Policy; status: PolicyTaskStat
   );
 }
 
-function PolicySection({
-  title,
-  policies,
-  statusFor,
-}: {
-  title: string;
-  policies: Policy[];
-  statusFor: (policyId: string) => PolicyTaskState['status'];
-}) {
-  if (policies.length === 0) return null;
-
-  return (
-    <section>
-      <h2 className="mb-2 text-sm font-semibold uppercase tracking-wide text-gray-500">{title}</h2>
-      <ul className="flex flex-col gap-2">
-        {policies.map((policy) => (
-          <li key={policy.id}>
-            <PolicyItem policy={policy} status={statusFor(policy.id)} />
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-}
-
 export function PoliciesPage() {
   const { t } = useAppTranslation();
   const { data: policies, isLoading, isError, refetch } = usePolicies();
-  const { active } = useActiveChild();
-  const matches = usePolicyMatches();
-  const { statusFor } = usePolicyTasks();
+  const { children } = useChildren();
+  const { preference } = usePreference();
+  const [view, setView] = useState<PolicyView>('applicable');
+  const childIds = useMemo(() => children.map((child) => child.id), [children]);
+  const { statusFor } = usePolicyTasksForChildren(childIds);
 
-  const { newReminders, planned, applicable, notMatched } = useMemo(() => {
+  const { applicable, notMatched, all } = useMemo(() => {
     const list = policies ?? [];
-    const matched = active ? list.filter((p) => matches.get(p.id)?.matched) : list;
+    const unmatchedItems = list
+      .filter(
+        (policy) =>
+          children.length === 0 ||
+          !children.some((child) =>
+            checkPolicyFor(policy, {
+              birthDate: child.birthDate,
+              municipalityCode: preference?.municipalityCode,
+            }).matched,
+          ),
+      )
+      .map((policy) => ({ policy, status: 'new' as const }));
+
+    const matchedItems = list
+      .map((policy) => {
+        const matchedChildren = children.filter((child) =>
+          checkPolicyFor(policy, {
+            birthDate: child.birthDate,
+            municipalityCode: preference?.municipalityCode,
+          }).matched,
+        );
+        if (matchedChildren.length === 0) return null;
+
+        const statuses = matchedChildren
+          .map((child) => statusFor(policy.id, child.id))
+          .filter((status) => status !== 'dismissed');
+        if (statuses.length === 0) return null;
+
+        return { policy, status: bestPolicyStatus(statuses) };
+      })
+      .filter((item): item is PolicyListItem => item !== null);
+
     return {
-      newReminders: matched.filter((p) => statusFor(p.id) === 'new'),
-      planned: matched.filter((p) => statusFor(p.id) === 'planned'),
-      applicable: matched.filter((p) => !['new', 'planned'].includes(statusFor(p.id))),
-      notMatched: active ? list.filter((p) => !matches.get(p.id)?.matched) : [],
+      applicable: matchedItems,
+      notMatched: children.length > 0 ? unmatchedItems : [],
+      all: children.length > 0 ? [...matchedItems, ...unmatchedItems] : unmatchedItems,
     };
-  }, [policies, active, matches, statusFor]);
+  }, [policies, children, preference, statusFor]);
+
+  const visibleItems = useMemo(() => {
+    switch (view) {
+      case 'notApplicable':
+        return notMatched;
+      case 'all':
+        return all;
+      case 'applicable':
+      default:
+        return applicable;
+    }
+  }, [view, applicable, notMatched, all]);
 
   return (
     <div>
@@ -96,39 +126,56 @@ export function PoliciesPage() {
         </div>
       )}
 
-      {!isError && !active && <p className="mb-3 text-sm text-gray-500">{t('policies.noChild')}</p>}
+      {!isError && children.length === 0 && <p className="mb-3 text-sm text-gray-500">{t('policies.noChild')}</p>}
 
-      {!isError && (
-        <div className="flex flex-col gap-4">
-          {newReminders.length === 0 && planned.length === 0 && applicable.length === 0 ? (
-            <p className="text-sm text-gray-500">{t('policies.noMatch')}</p>
-          ) : (
-            <>
-              <PolicySection
-                title={t('policies.sections.new')}
-                policies={newReminders}
-                statusFor={statusFor}
-              />
-              <PolicySection
-                title={t('policies.sections.planned')}
-                policies={planned}
-                statusFor={statusFor}
-              />
-              <PolicySection
-                title={t('policies.sections.applicable')}
-                policies={applicable}
-                statusFor={statusFor}
-              />
-            </>
-          )}
-
-          <PolicySection
-            title={t('policies.sections.notApplicable')}
-            policies={notMatched}
-            statusFor={statusFor}
-          />
+      {!isError && !isLoading && (
+        <div className="mb-4 flex rounded-xl bg-gray-100 p-1 text-sm">
+          {POLICY_VIEWS.map((option) => {
+            const activeOption = children.length === 0 && option !== 'all' ? false : view === option;
+            return (
+              <button
+                key={option}
+                type="button"
+                onClick={() => setView(option)}
+                disabled={children.length === 0 && option !== 'all'}
+                className={`touch-target flex-1 rounded-lg px-2 py-1 font-medium ${
+                  activeOption ? 'bg-white text-brand-700 shadow-sm' : 'text-gray-500'
+                } disabled:text-gray-300`}
+              >
+                {option === 'all' ? t('knowledge.views.all') : t(`policies.sections.${option}`)}
+              </button>
+            );
+          })}
         </div>
       )}
+
+      {!isError && !isLoading && visibleItems.length === 0 && (
+        <p className="text-sm text-gray-500">{t('policies.noMatch')}</p>
+      )}
+
+      {!isError && (
+        <ul className="flex flex-col gap-2">
+          {visibleItems.map(({ policy, status }) => (
+            <li key={policy.id}>
+              <PolicyItem policy={policy} status={status} />
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
+  );
+}
+
+const POLICY_STATUS_PRIORITY: Record<PolicyTaskState['status'], number> = {
+  new: 0,
+  planned: 1,
+  viewed: 2,
+  completed: 3,
+  dismissed: 4,
+};
+
+function bestPolicyStatus(statuses: PolicyTaskState['status'][]): PolicyTaskState['status'] {
+  return statuses.reduce((best, current) =>
+    POLICY_STATUS_PRIORITY[current] < POLICY_STATUS_PRIORITY[best] ? current : best,
   );
 }

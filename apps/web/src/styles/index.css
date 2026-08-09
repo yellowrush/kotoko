@@ -102,21 +102,6 @@
       0 16px 28px var(--kodoko-shadow);
   }
 
-  .kodoko-card::before {
-    content: '';
-    position: absolute;
-    inset: 0.55rem 0.55rem auto;
-    height: 2px;
-    border-radius: 9999px;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(249, 95, 20, 0.18),
-      transparent
-    );
-    pointer-events: none;
-  }
-
   .kodoko-button {
     min-height: 44px;
     border-radius: 9999px;

@@ -8,7 +8,6 @@ import {
   importLocalData,
 } from '../lib/backup';
 import { usePreference } from '../hooks/usePreference';
-import { LANGUAGE_OPTIONS, useLocale } from '../hooks/useLocale';
 import { MUNICIPALITIES, type IndoorOutdoor } from '@kodoko/domain';
 import { PageHeader } from '../components/PageHeader';
 
@@ -22,7 +21,6 @@ const INDOOR_OUTDOOR_OPTIONS: Array<IndoorOutdoor | undefined> = [
 
 export function SettingsPage() {
   const { t } = useAppTranslation();
-  const { locale, setLocale } = useLocale();
   const {
     preference,
     setMunicipality,
@@ -57,28 +55,6 @@ export function SettingsPage() {
   return (
     <div className="flex flex-col gap-4">
       <PageHeader title={t('settings.title')} backTo="/home" />
-
-      <section className="kodoko-panel p-4">
-        <h2 className="text-sm font-semibold text-gray-700">
-          {t('settings.language')}
-        </h2>
-        <div className="mt-2 flex flex-wrap gap-2">
-          {LANGUAGE_OPTIONS.map((option) => (
-            <button
-              key={option.value}
-              type="button"
-              onClick={() => void setLocale(option.value)}
-              className={`min-h-10 rounded-full px-3 py-1 text-sm font-semibold shadow-sm ${
-                locale === option.value
-                  ? 'bg-brand-600 text-white'
-                  : 'bg-white text-gray-700 ring-1 ring-brand-100'
-              }`}
-            >
-              {option.label}
-            </button>
-          ))}
-        </div>
-      </section>
 
       <section className="kodoko-panel p-4">
         <h2 className="text-sm font-semibold text-gray-700">

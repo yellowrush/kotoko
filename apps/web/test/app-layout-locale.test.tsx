@@ -24,7 +24,7 @@ describe('AppLayout locale behavior', () => {
     await changeLocale('ja');
   });
 
-  it('does not render the header language dropdown while honoring the app locale', () => {
+  it('does not render the header language dropdown while keeping Japanese fixed', () => {
     useAppStore.setState({ locale: 'zh-CN' });
 
     const router = createMemoryRouter([
@@ -41,7 +41,7 @@ describe('AppLayout locale behavior', () => {
     expect(screen.queryByLabelText('语言')).not.toBeInTheDocument();
     expect(screen.queryByLabelText('語言')).not.toBeInTheDocument();
 
-    expect(screen.getByRole('link', { name: '我的收藏' })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: 'お気に入り' })).toBeInTheDocument();
     expect(setPreference).not.toHaveBeenCalled();
   });
 });

@@ -1,7 +1,6 @@
 import { useCallback } from 'react';
-import { normalizeLocale, type Locale } from '@kodoko/i18n';
+import { DEFAULT_LOCALE, type Locale } from '@kodoko/i18n';
 import { changeLocale } from '../app/i18n';
-import { getPreferenceRepository } from '../lib/db';
 import { useAppStore } from '../store/appStore';
 
 export const LANGUAGE_OPTIONS: { value: Locale; label: string }[] = [
@@ -11,16 +10,13 @@ export const LANGUAGE_OPTIONS: { value: Locale; label: string }[] = [
 ];
 
 export function useLocale() {
-  const storeLocale = useAppStore((s) => s.locale);
   const setStoreLocale = useAppStore((s) => s.setLocale);
-  const locale = storeLocale;
+  const locale = DEFAULT_LOCALE;
 
   const setLocale = useCallback(
-    (next: Locale) => {
-      const localeToSave = normalizeLocale(next);
-      setStoreLocale(localeToSave);
-      void changeLocale(localeToSave);
-      void getPreferenceRepository().set({ locale: localeToSave });
+    (_next: Locale) => {
+      setStoreLocale(DEFAULT_LOCALE);
+      void changeLocale(DEFAULT_LOCALE);
     },
     [setStoreLocale],
   );

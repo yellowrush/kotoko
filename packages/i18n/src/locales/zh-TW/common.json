@@ -227,6 +227,10 @@
       "stroller": "嬰兒車",
       "nursingRoom": "哺乳室",
       "diaper": "尿布台"
+    },
+    "random": {
+      "resultEyebrow": "今天就去這裡",
+      "viewDetails": "查看詳細"
     }
   },
   "placeShare": {

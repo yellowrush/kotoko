@@ -227,6 +227,10 @@
       "stroller": "ベビーカー",
       "nursingRoom": "授乳室",
       "diaper": "オムツ替え"
+    },
+    "random": {
+      "resultEyebrow": "今日の候補",
+      "viewDetails": "詳細を見る"
     }
   },
   "placeShare": {

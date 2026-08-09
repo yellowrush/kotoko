@@ -1,5 +1,7 @@
-﻿import { NavLink, Outlet, useLocation, Link } from 'react-router-dom';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { NavLink, Outlet, useLocation, Link } from 'react-router-dom';
 import { useAppTranslation } from '../hooks/useAppTranslation';
+import { requestRandomPlace } from '../lib/randomPlace';
 import { PwaInstallButton } from './PwaInstallButton';
 
 const NAV_ITEMS = [
@@ -52,9 +54,48 @@ function PlacesLineIcon() {
 export function AppLayout() {
   const { t } = useAppTranslation();
   const { pathname } = useLocation();
+  const longPressTimerRef = useRef<number | null>(null);
+  const longPressTriggeredRef = useRef(false);
+  const randomAnimationTimerRef = useRef<number | null>(null);
+  const [randomizingPlaces, setRandomizingPlaces] = useState(false);
   const fullBleed = FULL_BLEED_ROUTES.has(pathname);
   const hideAppHeader = isPlacesRoute(pathname);
   const placeDetail = isPlaceDetailRoute(pathname);
+
+  const clearLongPressTimer = useCallback(() => {
+    if (longPressTimerRef.current !== null) {
+      window.clearTimeout(longPressTimerRef.current);
+      longPressTimerRef.current = null;
+    }
+  }, []);
+
+  const startPlacesLongPress = useCallback(() => {
+    clearLongPressTimer();
+    if (pathname !== '/places') return;
+    longPressTriggeredRef.current = false;
+      longPressTimerRef.current = window.setTimeout(() => {
+        longPressTriggeredRef.current = true;
+        setRandomizingPlaces(true);
+        requestRandomPlace();
+        if (randomAnimationTimerRef.current !== null) {
+          window.clearTimeout(randomAnimationTimerRef.current);
+        }
+      randomAnimationTimerRef.current = window.setTimeout(() => {
+        setRandomizingPlaces(false);
+        randomAnimationTimerRef.current = null;
+      }, 900);
+    }, 620);
+  }, [clearLongPressTimer, pathname]);
+
+  useEffect(
+    () => () => {
+      clearLongPressTimer();
+      if (randomAnimationTimerRef.current !== null) {
+        window.clearTimeout(randomAnimationTimerRef.current);
+      }
+    },
+    [clearLongPressTimer],
+  );
 
   return (
     <div className="mx-auto flex min-h-screen max-w-lg flex-col text-[15px] text-gray-900 sm:text-base">
@@ -113,8 +154,29 @@ export function AppLayout() {
                   <NavLink
                     key={item.to}
                     to={item.to}
+                    onPointerDown={startPlacesLongPress}
+                    onPointerUp={clearLongPressTimer}
+                    onPointerCancel={clearLongPressTimer}
+                    onPointerLeave={clearLongPressTimer}
+                    onMouseDown={startPlacesLongPress}
+                    onMouseUp={clearLongPressTimer}
+                    onMouseLeave={clearLongPressTimer}
+                    onTouchStart={startPlacesLongPress}
+                    onTouchEnd={clearLongPressTimer}
+                    onTouchCancel={clearLongPressTimer}
+                    onDragStart={(event) => event.preventDefault()}
+                    onContextMenu={(event) => {
+                      if (pathname === '/places') event.preventDefault();
+                    }}
+                    onClick={(event) => {
+                      if (!longPressTriggeredRef.current) return;
+                      event.preventDefault();
+                      longPressTriggeredRef.current = false;
+                    }}
                     className={({ isActive }) =>
                       `kodoko-bottom-nav-primary absolute left-1/2 top-1/2 z-10 flex h-[5.4rem] w-[5.4rem] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-1 rounded-full border-[3px] px-2 text-center font-extrabold transition sm:h-24 sm:w-24 ${
+                        randomizingPlaces ? 'is-randomizing ' : ''
+                      }${
                         isActive
                           ? 'is-active border-brand-800 bg-brand-600 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.28),0_6px_0_rgba(119,39,4,0.38),0_20px_30px_rgba(120,53,15,0.3)]'
                           : 'border-brand-300 bg-brand-50 text-brand-800 shadow-[inset_0_1px_0_rgba(255,255,255,0.8),0_6px_0_rgba(249,95,20,0.22),0_18px_28px_rgba(120,53,15,0.22)] hover:bg-brand-100'

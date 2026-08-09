@@ -1,7 +1,7 @@
 import { beforeAll, describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import { initI18n } from '../../app/i18n';
+import { i18n, initI18n } from '../../app/i18n';
 import { PlaceBottomSheet } from './PlaceBottomSheet';
 import type { FilteredPlace } from '../../lib/placeFilters';
 
@@ -29,7 +29,7 @@ beforeAll(async () => {
 });
 
 describe('PlaceBottomSheet', () => {
-  it('renders a clean nearby list title and a large independent detail link', () => {
+  it('renders a clean nearby list title and a compact independent detail link', () => {
     const onSelect = vi.fn();
 
     render(
@@ -44,16 +44,21 @@ describe('PlaceBottomSheet', () => {
       </MemoryRouter>,
     );
 
-    expect(screen.getByText('近くのスポット')).toBeInTheDocument();
-    expect(screen.queryByText(/近くのスポット\s*\(/)).not.toBeInTheDocument();
+    expect(screen.getByText(i18n.t('places.spotsNear'))).toBeInTheDocument();
+    expect(
+      screen.queryByText(i18n.t('common.details')),
+    ).not.toBeInTheDocument();
 
     const selectButton = screen.getByText('Ueno Park').closest('button');
     expect(selectButton).not.toBeNull();
     fireEvent.click(selectButton!);
     expect(onSelect).toHaveBeenCalledWith('p1');
 
-    const detailLink = screen.getByRole('link', { name: '詳細: Ueno Park' });
-    expect(detailLink).toHaveClass('min-h-10');
+    const detailLink = screen.getByRole('link', {
+      name: `${i18n.t('common.details')}: Ueno Park`,
+    });
+    expect(detailLink).toHaveClass('h-11');
+    expect(detailLink).toHaveClass('w-11');
     expect(detailLink).toHaveClass('shrink-0');
     expect(detailLink).toHaveAttribute('href', '/places/p1');
   });

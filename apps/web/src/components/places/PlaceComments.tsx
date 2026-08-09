@@ -2,6 +2,25 @@
 import { useAppTranslation } from '../../hooks/useAppTranslation';
 import { usePlaceComments } from '../../hooks/usePlaceComments';
 
+function RoundedStar({ active }: { active: boolean }) {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className={`h-5 w-5 stroke-current ${
+        active ? 'fill-current' : 'fill-white'
+      }`}
+    >
+      <path
+        d="M12 3.6 14.4 8.5l5.4.8-3.9 3.8.9 5.4L12 16l-4.8 2.5.9-5.4-3.9-3.8 5.4-.8L12 3.6Z"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      />
+    </svg>
+  );
+}
+
 function Stars({
   value,
   onChange,
@@ -20,11 +39,13 @@ function Stars({
           disabled={readonly}
           onClick={onChange ? () => onChange(n) : undefined}
           aria-label={`${n}点`}
-          className={`inline-flex min-h-10 min-w-10 items-center justify-center text-xl leading-none ${
-            readonly ? 'cursor-default' : ''
+          className={`inline-flex min-h-10 min-w-10 items-center justify-center rounded-2xl border-2 transition ${
+            readonly
+              ? 'cursor-default border-transparent bg-transparent'
+              : 'border-amber-100 bg-white shadow-[0_2px_0_rgba(120,53,15,0.1)] active:translate-y-0.5'
           } ${n <= value ? 'text-amber-400' : 'text-gray-300'}`}
         >
-          ★
+          <RoundedStar active={n <= value} />
         </button>
       ))}
     </div>

@@ -51,6 +51,23 @@ async function copyText(text: string) {
   textArea.remove();
 }
 
+function ShareIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className="h-4 w-4 fill-none stroke-current"
+    >
+      <path
+        d="M10.6 10.7 15.4 8M10.6 13.3l4.8 2.7M7.5 15a3 3 0 1 1 0-6 3 3 0 0 1 0 6ZM17 9.5a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      />
+    </svg>
+  );
+}
+
 export function PlaceShareButton({ place }: { place: Place }) {
   const { t } = useAppTranslation();
   const [open, setOpen] = useState(false);
@@ -107,10 +124,10 @@ export function PlaceShareButton({ place }: { place: Place }) {
           setStatus('idle');
           setOpen(true);
         }}
-        className="inline-flex min-h-10 shrink-0 items-center gap-1 rounded-full border border-brand-100 bg-white px-3 py-1.5 text-sm font-semibold text-gray-600 shadow-sm hover:bg-brand-50 hover:text-brand-700"
+        className="inline-flex min-h-10 shrink-0 items-center gap-1.5 rounded-full border-2 border-sky-200 bg-sky-50 px-3 py-1.5 text-sm font-semibold text-sky-700 shadow-[0_3px_0_rgba(14,165,233,0.16)] hover:bg-sky-100"
         aria-label={t('placeShare.open')}
       >
-        <span aria-hidden>↗</span>
+        <ShareIcon />
         {t('placeShare.button')}
       </button>
 
@@ -148,7 +165,7 @@ export function PlaceShareButton({ place }: { place: Place }) {
                 className="mt-4 flex min-h-12 w-full items-center justify-between rounded-lg border border-brand-200 bg-brand-50 px-3 text-left text-sm font-semibold text-brand-700"
               >
                 <span>{t('placeShare.native')}</span>
-                <span aria-hidden>↗</span>
+                <ShareIcon />
               </button>
             )}
 

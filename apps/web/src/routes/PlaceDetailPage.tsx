@@ -1,9 +1,9 @@
-import { Link, useLocation, useParams } from 'react-router-dom';
 import { useMemo, useState } from 'react';
+import { Link, useLocation, useParams } from 'react-router-dom';
 import { localDateString } from '@kodoko/local-db';
+import { haversineDistanceKm } from '@kodoko/recommendation';
 import { detailBackTo } from '../lib/navigation';
 import { useAppTranslation } from '../hooks/useAppTranslation';
-import { haversineDistanceKm } from '@kodoko/recommendation';
 import { usePlace } from '../hooks/usePlaces';
 import { useFavorites } from '../hooks/useFavorites';
 import { usePlaceVisit } from '../hooks/usePlaceVisits';
@@ -12,17 +12,98 @@ import { useGeolocation } from '../hooks/useGeolocation';
 import { useWeather } from '../hooks/useWeather';
 import { placeGeneralCodes, scorePlaceForChild } from '../lib/recommendations';
 import { RecommendationReasons } from '../components/RecommendationReasons';
-import { CATEGORY_ICON, TAG_ICON } from '../components/places/categoryMeta';
+import { CATEGORY_ICON } from '../components/places/categoryMeta';
 import { PlaceMediaCarousel } from '../components/places/PlaceMediaCarousel';
-import { PlaceLabelChips } from '../components/places/PlaceLabelChips';
-import { PlacePriceSection } from '../components/places/PlacePriceSection';
 import { PlaceReservationSection } from '../components/places/PlaceReservationSection';
 import { PlaceBasicInfo } from '../components/places/PlaceBasicInfo';
 import { PlaceComments } from '../components/places/PlaceComments';
 import { PlaceReportDialog } from '../components/places/PlaceReportDialog';
 import { PlaceShareButton } from '../components/places/PlaceShareButton';
 
-const EXTRA_TAGS = ['group-play', 'quiet-zone'] as const;
+function ArrowLeftIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className="h-4 w-4 fill-none stroke-current"
+    >
+      <path
+        d="M15 6l-6 6 6 6"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2.5"
+      />
+    </svg>
+  );
+}
+
+function ExternalLinkIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className="h-4 w-4 fill-none stroke-current"
+    >
+      <path
+        d="M14 5h5v5M19 5l-9 9M18 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2.2"
+      />
+    </svg>
+  );
+}
+
+function FavoriteIcon({ active }: { active: boolean }) {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className={`h-5 w-5 ${active ? 'fill-current' : 'fill-none'} stroke-current`}
+    >
+      <path
+        d="M12 20s-7-4.3-9-9.2C1.6 7.3 3.7 4 7.1 4c2 0 3.5 1.1 4.4 2.4C12.4 5.1 13.9 4 15.9 4c3.4 0 5.5 3.3 4.1 6.8C18.9 15.7 12 20 12 20Z"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      />
+    </svg>
+  );
+}
+
+function CheckIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className="h-5 w-5 fill-none stroke-current"
+    >
+      <path
+        d="M20 6L9 17l-5-5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2.5"
+      />
+    </svg>
+  );
+}
+
+function ReportIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className="h-5 w-5 fill-none stroke-current"
+    >
+      <path
+        d="M12 8v5M12 17h.01M10.3 4.9 3.8 16.1A2 2 0 0 0 5.5 19h13a2 2 0 0 0 1.7-2.9L13.7 4.9a2 2 0 0 0-3.4 0Z"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+      />
+    </svg>
+  );
+}
 
 export function PlaceDetailPage() {
   const { t } = useAppTranslation();
@@ -92,126 +173,89 @@ export function PlaceDetailPage() {
   const isFav = favoriteIds.has(place.id);
   const visitedToday = latestVisit?.visitDate === localDateString();
   const officialUrl = place.websiteUrl ?? place.sourceUrl;
-  const extraTags =
-    place.tags?.filter((tag) =>
-      (EXTRA_TAGS as readonly string[]).includes(tag),
-    ) ?? [];
   const backTo = detailBackTo(location.state, '/places');
+  const distanceKm = coords ? haversineDistanceKm(coords, place) : null;
+
+  const officialSiteAction = officialUrl ? (
+    <a
+      href={officialUrl}
+      target="_blank"
+      rel="noreferrer"
+      className="inline-flex min-h-10 items-center gap-1 rounded-full border-2 border-white/90 bg-white/95 px-3 py-1.5 text-sm font-bold text-brand-700 shadow-[0_3px_0_rgba(120,53,15,0.18),0_10px_18px_rgba(0,0,0,0.16)] backdrop-blur"
+    >
+      {t('places.officialSite')}
+      <ExternalLinkIcon />
+    </a>
+  ) : undefined;
 
   return (
     <div>
-      <div className="mb-2 flex items-center justify-between gap-3">
+      <div className="mb-2 grid grid-cols-[auto_1fr_auto] items-center gap-2">
         <Link
           to={backTo}
-          className="inline-flex min-h-10 items-center rounded-full border border-brand-100 bg-white/80 px-3 text-sm font-semibold text-gray-600 shadow-sm hover:bg-brand-50 hover:text-brand-700"
+          className="inline-flex min-h-10 items-center gap-1 justify-self-start rounded-full border border-brand-100 bg-white/80 px-3 text-sm font-semibold text-gray-600 shadow-sm hover:bg-brand-50 hover:text-brand-700"
         >
-          ← {t('common.back')}
+          <ArrowLeftIcon />
+          {t('common.back')}
         </Link>
-        <PlaceShareButton place={place} />
-      </div>
-      <PlaceMediaCarousel
-        place={place}
-        fallbackEmoji={CATEGORY_ICON[place.category]}
-      />
-
-      <div className="mt-4 flex items-start justify-between gap-3">
-        <div className="min-w-0">
-          <h1 className="text-xl font-bold leading-snug text-gray-900">
+        <div className="min-w-0 text-center">
+          <h1 className="truncate text-base font-bold leading-snug text-gray-900">
             {place.name}
           </h1>
           {place.shortDescription && (
-            <p className="mt-1 text-sm text-gray-500">
+            <p className="mt-0.5 truncate text-xs leading-relaxed text-gray-500">
               {place.shortDescription}
             </p>
           )}
         </div>
-        {officialUrl && (
-          <a
-            href={officialUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="flex min-h-10 shrink-0 items-center gap-1 whitespace-nowrap rounded-full border border-brand-200 bg-brand-50 px-3 py-1.5 text-sm font-semibold text-brand-700 shadow-sm"
-          >
-            {t('places.officialSite')}
-            <span aria-hidden>↗</span>
-          </a>
-        )}
+        <PlaceShareButton place={place} />
       </div>
 
-      <div className="mt-2 flex flex-wrap items-center gap-1.5 text-sm text-gray-600">
-        <span className="flex items-center gap-1 font-medium">
-          <span aria-hidden>{CATEGORY_ICON[place.category]}</span>
-          {t(`places.categories.${place.category}`)}
-        </span>
-        <span className="text-gray-400">·</span>
-        <span>{t(`places.indoorOutdoor.${place.indoorOutdoor}`)}</span>
-        {extraTags.map((tag) => (
-          <span
-            key={tag}
-            className="flex items-center gap-1 text-xs text-gray-400"
-          >
-            <span aria-hidden>{TAG_ICON[tag]}</span>
-            {t(`places.tags.${tag}`)}
-          </span>
-        ))}
-      </div>
+      <PlaceMediaCarousel
+        place={place}
+        fallbackEmoji={CATEGORY_ICON[place.category]}
+        action={officialSiteAction}
+      />
 
-      <div className="mt-2.5">
-        <PlaceLabelChips place={place} />
-      </div>
-
-      <p className="mt-2.5 flex flex-wrap items-center gap-3 text-sm text-gray-500">
-        {place.suitableAgeMinMonths !== undefined ||
-        place.suitableAgeMaxMonths !== undefined ? (
-          <span>
-            {t('places.suitableAgeLabel')}{' '}
-            <span className="font-medium text-gray-700">
-              {place.suitableAgeMinMonths ?? 0}~
-              {place.suitableAgeMaxMonths ?? '∞'} {t('places.monthsUnit')}
-            </span>
-          </span>
-        ) : (
-          <span>{t('places.allAgesLabel')}</span>
-        )}
-        {coords && (
-          <span className="text-gray-400">
-            {t('places.distance', {
-              distance: `${haversineDistanceKm(coords, place).toFixed(1)}km`,
-            })}
-          </span>
-        )}
-      </p>
-
-      <div className="mt-3 flex flex-wrap gap-2">
+      <div className="mt-3 grid grid-cols-3 gap-2">
         <button
           type="button"
           onClick={() => void toggle(place.id)}
-          className={`min-h-11 rounded-full border px-3 py-1.5 text-sm font-semibold shadow-sm ${
+          className={`flex min-h-14 flex-col items-center justify-center gap-1 rounded-2xl border-2 px-2 py-2 text-center text-xs font-bold leading-tight shadow-[0_4px_0_rgba(120,53,15,0.12)] transition active:translate-y-0.5 ${
             isFav
-              ? 'border-rose-400 bg-rose-50 text-rose-600'
-              : 'border-brand-100 bg-white text-gray-600'
+              ? 'border-rose-300 bg-rose-50 text-rose-600'
+              : 'border-brand-200 bg-white text-gray-600 hover:bg-brand-50'
           }`}
         >
-          {isFav ? t('places.favorited') : t('places.favorite')}
+          <FavoriteIcon active={isFav} />
+          <span className="line-clamp-2">
+            {isFav ? t('places.favorited') : t('places.favorite')}
+          </span>
         </button>
         <button
           type="button"
           onClick={() => void recordToday()}
           disabled={visitedToday}
-          className={`min-h-11 rounded-full border px-3 py-1.5 text-sm font-semibold shadow-sm ${
+          className={`flex min-h-14 flex-col items-center justify-center gap-1 rounded-2xl border-2 px-2 py-2 text-center text-xs font-bold leading-tight shadow-[0_4px_0_rgba(120,53,15,0.12)] transition active:translate-y-0.5 disabled:cursor-default ${
             visitedToday
               ? 'border-emerald-300 bg-emerald-50 text-emerald-700'
-              : 'border-brand-100 bg-white text-gray-600'
+              : 'border-brand-200 bg-white text-gray-600 hover:bg-brand-50'
           }`}
         >
-          {visitedToday ? t('placeVisits.visitedToday') : t('placeVisits.markVisited')}
+          <CheckIcon />
+          <span className="line-clamp-2">
+            {visitedToday
+              ? t('placeVisits.visitedToday')
+              : t('placeVisits.markVisited')}
+          </span>
         </button>
         <button
           type="button"
           onClick={() => setReportOpen(true)}
-          className="min-h-11 rounded-full border border-brand-100 bg-white px-3 py-1.5 text-sm font-semibold text-gray-600 shadow-sm"
+          className="flex min-h-14 flex-col items-center justify-center gap-1 rounded-2xl border-2 border-amber-200 bg-amber-50 px-2 py-2 text-center text-xs font-bold leading-tight text-amber-700 shadow-[0_4px_0_rgba(120,53,15,0.12)] transition hover:bg-amber-100 active:translate-y-0.5"
         >
-          {t('placeReport.reportLink')}
+          <ReportIcon />
+          <span className="line-clamp-2">{t('placeReport.reportLink')}</span>
         </button>
       </div>
 
@@ -234,7 +278,7 @@ export function PlaceDetailPage() {
           <div className="mt-2">
             <RecommendationReasons
               reasonCodes={reasonCodes}
-              distanceKm={coords ? haversineDistanceKm(coords, place) : null}
+              distanceKm={distanceKm}
             />
           </div>
         )}
@@ -245,13 +289,11 @@ export function PlaceDetailPage() {
         )}
       </div>
 
-      <PlacePriceSection place={place} />
-      <PlaceReservationSection place={place} />
-
       <div className="mt-4">
-        <PlaceBasicInfo place={place} />
+        <PlaceBasicInfo place={place} distanceKm={distanceKm} />
       </div>
 
+      <PlaceReservationSection place={place} />
       <PlaceComments placeId={place.id} />
 
       <PlaceReportDialog

@@ -1,5 +1,6 @@
-﻿import { useAppTranslation } from '../../hooks/useAppTranslation';
+import type { ReactNode } from 'react';
 import type { Place, PlaceMedia } from '@kodoko/domain';
+import { useAppTranslation } from '../../hooks/useAppTranslation';
 
 function PlaceMediaSlide({
   media,
@@ -21,6 +22,7 @@ function PlaceMediaSlide({
       </div>
     );
   }
+
   return (
     <div className="h-72 w-full shrink-0 snap-center bg-gray-100">
       <img
@@ -36,19 +38,22 @@ function PlaceMediaSlide({
 type PlaceMediaCarouselProps = {
   place: Place;
   fallbackEmoji: string;
+  action?: ReactNode;
 };
 
 export function PlaceMediaCarousel({
   place,
   fallbackEmoji,
+  action,
 }: PlaceMediaCarouselProps) {
   const { t } = useAppTranslation();
 
   if (place.media.length === 0) {
     return (
-      <div className="kodoko-panel flex h-40 flex-col items-center justify-center gap-2 bg-gradient-to-br from-brand-100 to-amber-50 text-sm font-medium text-gray-500">
+      <div className="kodoko-panel relative flex h-40 flex-col items-center justify-center gap-2 bg-gradient-to-br from-brand-100 to-amber-50 text-sm font-medium text-gray-500">
         <span className="text-6xl">{fallbackEmoji}</span>
         <span>{t('places.mediaPending')}</span>
+        {action && <div className="absolute bottom-3 right-3">{action}</div>}
       </div>
     );
   }
@@ -65,6 +70,7 @@ export function PlaceMediaCarousel({
           {t('places.mediaCount', { count: place.media.length })}
         </span>
       )}
+      {action && <div className="absolute bottom-3 right-3">{action}</div>}
     </div>
   );
 }

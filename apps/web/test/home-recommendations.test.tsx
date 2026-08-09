@@ -149,6 +149,9 @@ describe('HomePage recommendations', () => {
     );
 
     expect(screen.getByText('Fallback Park')).toBeInTheDocument();
+    expect(screen.queryByText(/居住地:/)).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { expanded: false }));
+
     expect(screen.getByText(/居住地:/)).toBeInTheDocument();
     expect(screen.getByText('今日の天気')).toBeInTheDocument();
   });
@@ -159,6 +162,9 @@ describe('HomePage recommendations', () => {
         <HomePage />
       </MemoryRouter>,
     );
+
+    expect(screen.queryByRole('combobox')).not.toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { expanded: false }));
 
     const transport = screen.getByRole('combobox', { name: /交通手段:/ });
     const group = screen.getByRole('combobox', { name: /子どもの人数:/ });

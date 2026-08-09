@@ -95,6 +95,27 @@ const POLICY_REMINDER_ITEM_STYLES = {
   read: 'border-gray-200 bg-white hover:bg-white',
 } as const;
 
+function FilterLineIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      viewBox="0 0 24 24"
+      className="h-5 w-5 fill-none stroke-current"
+    >
+      <path
+        d="M5 7h14M8 12h8M10 17h4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2.4"
+      />
+      <circle cx="9" cy="7" r="1.8" fill="currentColor" />
+      <circle cx="15" cy="12" r="1.8" fill="currentColor" />
+      <circle cx="12" cy="17" r="1.8" fill="currentColor" />
+    </svg>
+  );
+}
+
 function policyStatusPriority(status: PolicyTaskState['status']): number {
   return POLICY_STATUS_PRIORITY[status];
 }
@@ -184,6 +205,7 @@ function CompactInfoPill({
 export function HomePage() {
   const { t, locale } = useAppTranslation();
   const [now, setNow] = useState(() => new Date());
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const {
     children,
     selected,
@@ -394,43 +416,60 @@ export function HomePage() {
           <h2 className="text-base font-semibold text-gray-900">
             {t('home.recommendationsTitle')}
           </h2>
-          <Link
-            to="/places"
-            className="inline-flex min-h-10 items-center rounded-full bg-brand-50 px-3 text-sm font-semibold text-brand-700 shadow-sm"
-          >
-            {t('home.allPlaces')}
-          </Link>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              aria-label={t('places.filters.label')}
+              aria-expanded={filtersOpen}
+              onClick={() => setFiltersOpen((open) => !open)}
+              className={`inline-flex h-10 w-10 items-center justify-center rounded-full border-2 text-brand-800 shadow-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 ${
+                filtersOpen
+                  ? 'border-brand-800 bg-brand-100 shadow-inner'
+                  : 'border-brand-200 bg-brand-50 hover:bg-brand-100'
+              }`}
+            >
+              <FilterLineIcon />
+            </button>
+            <Link
+              to="/places"
+              className="inline-flex min-h-10 items-center rounded-full bg-brand-50 px-3 text-sm font-semibold text-brand-700 shadow-sm"
+            >
+              {t('home.allPlaces')}
+            </Link>
+          </div>
         </div>
 
         <time className="mt-2 block text-sm font-bold text-brand-800">
           {currentDateTime}
         </time>
 
-        <div className="mt-2 grid grid-cols-2 gap-2">
-          <CompactInfoPill
-            emoji={weather ? WEATHER_EMOJI[weather.condition] : '🌤️'}
-            label={t('home.currentWeather')}
-            value={renderWeatherLabel()}
-          />
-          {renderLocationInfo()}
-          <DropdownPill
-            label={t('home.transport')}
-            emoji="🚃"
-            options={TRANSPORT_OPTIONS}
-            value={transportMode}
-            onChange={(next) => setTransportMode(next)}
-            tKey={t}
-            dynamicIcon
-          />
-          <DropdownPill
-            label={t('home.groupSize')}
-            emoji="👪"
-            options={GROUP_OPTIONS}
-            value={groupSize}
-            onChange={(next) => setGroupSize(next)}
-            tKey={t}
-          />
-        </div>
+        {filtersOpen && (
+          <div className="mt-2 grid gap-2">
+            <CompactInfoPill
+              emoji={weather ? WEATHER_EMOJI[weather.condition] : '🌤️'}
+              label={t('home.currentWeather')}
+              value={renderWeatherLabel()}
+            />
+            {renderLocationInfo()}
+            <DropdownPill
+              label={t('home.transport')}
+              emoji="🚃"
+              options={TRANSPORT_OPTIONS}
+              value={transportMode}
+              onChange={(next) => setTransportMode(next)}
+              tKey={t}
+              dynamicIcon
+            />
+            <DropdownPill
+              label={t('home.groupSize')}
+              emoji="👪"
+              options={GROUP_OPTIONS}
+              value={groupSize}
+              onChange={(next) => setGroupSize(next)}
+              tKey={t}
+            />
+          </div>
+        )}
 
         {placesLoading && !hasPlaces && !isError && (
           <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>

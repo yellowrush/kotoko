@@ -1,0 +1,1 @@
+import{e as s,j as t}from"./index-Ba-ZHdOj.js";import{c as n,f as r}from"./age-DXpZ1jlL.js";function m({birthDate:o}){const{locale:e}=s(),a=n(o);return t.jsx(t.Fragment,{children:r(a,e)})}export{m as A};

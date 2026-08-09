@@ -125,11 +125,13 @@ function DropdownPill<T extends string | number | undefined>({
   const displayEmoji = dynamicIcon ? (selectedOption?.emoji ?? emoji) : emoji;
 
   return (
-    <label className="kodoko-control flex min-w-0 items-center gap-2 px-3 py-2 text-sm font-semibold text-gray-700 focus-within:border-brand-500 focus-within:ring-2 focus-within:ring-brand-100">
-      <span aria-hidden="true" className="text-base">
+    <label className="kodoko-control flex min-w-0 items-center gap-1.5 px-2.5 py-1.5 text-[13px] font-semibold text-gray-700 focus-within:border-brand-500 focus-within:ring-2 focus-within:ring-brand-100">
+      <span aria-hidden="true" className="shrink-0 text-base leading-none">
         {displayEmoji}
       </span>
-      <span className="shrink-0 whitespace-nowrap text-gray-600">{label}</span>
+      <span className="shrink-0 whitespace-nowrap text-[11px] leading-none text-gray-500">
+        {label}
+      </span>
       <select
         value={selectedValue}
         onChange={(event) => {
@@ -140,7 +142,7 @@ function DropdownPill<T extends string | number | undefined>({
           );
           onChange(next?.value);
         }}
-        className="min-w-0 flex-1 bg-transparent text-right !text-sm font-semibold text-gray-900 outline-none [text-align-last:right]"
+        className="min-w-0 flex-1 bg-transparent text-right !text-[13px] font-bold text-gray-900 outline-none [text-align-last:right]"
       >
         {options.map((option) => (
           <option
@@ -155,8 +157,33 @@ function DropdownPill<T extends string | number | undefined>({
   );
 }
 
+function CompactInfoPill({
+  emoji,
+  label,
+  value,
+}: {
+  emoji: string;
+  label: string;
+  value: string;
+}) {
+  return (
+    <div className="kodoko-control flex min-w-0 items-center gap-1.5 px-2.5 py-1.5 text-[13px] font-semibold text-gray-700">
+      <span aria-hidden="true" className="shrink-0 text-base leading-none">
+        {emoji}
+      </span>
+      <span className="shrink-0 whitespace-nowrap text-[11px] leading-none text-gray-500">
+        {label}
+      </span>
+      <span className="min-w-0 flex-1 truncate text-right font-bold text-gray-900">
+        {value}
+      </span>
+    </div>
+  );
+}
+
 export function HomePage() {
-  const { t } = useAppTranslation();
+  const { t, locale } = useAppTranslation();
+  const [now, setNow] = useState(() => new Date());
   const {
     children,
     selected,
@@ -191,10 +218,27 @@ export function HomePage() {
   const { statusFor, loading: policyTasksLoading } =
     usePolicyTasksForChildren(policyTaskChildIds);
 
+  useEffect(() => {
+    const timer = window.setInterval(() => setNow(new Date()), 30_000);
+    return () => window.clearInterval(timer);
+  }, []);
+
   // グループ人数は選択した子どもの人数に合わせて初期化する（最大 3 人以上）。
   useEffect(() => {
     if (selected.length >= 1) setGroupSize(Math.min(selected.length, 3));
   }, [selected.length]);
+
+  const currentDateTime = useMemo(() => {
+    const dateTimeLocale =
+      locale === 'zh-CN' ? 'zh-CN' : locale === 'zh-TW' ? 'zh-TW' : 'ja-JP';
+    return new Intl.DateTimeFormat(dateTimeLocale, {
+      weekday: 'short',
+      month: 'short',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    }).format(now);
+  }, [locale, now]);
 
   const registeredChildAges = useMemo(
     () => children.map((c) => calculateAgeMonths(c.birthDate)),
@@ -282,40 +326,34 @@ export function HomePage() {
       );
       if (nearest) {
         return (
-          <div className="kodoko-control flex items-center justify-between gap-3 px-3 py-2 text-sm font-semibold text-gray-700">
-            <span className="flex shrink-0 items-center gap-2">
-              <span aria-hidden="true">📍</span>
-              <span>{locationLabel('home.currentLocation')}</span>
-            </span>
-            <span className="min-w-0 flex-1 text-right font-semibold text-gray-900">
-              {locationPlace(nearest.nameJa)}
-            </span>
-          </div>
+          <CompactInfoPill
+            emoji="📍"
+            label={locationLabel('home.currentLocation')}
+            value={locationPlace(nearest.nameJa)}
+          />
         );
       }
     }
     if (recommendationLocation.source === 'municipality') {
       return (
-        <div className="kodoko-control flex items-center justify-between gap-3 px-3 py-2 text-sm font-semibold text-gray-700">
-          <span className="flex shrink-0 items-center gap-2">
-            <span aria-hidden="true">🏠</span>
-            <span>{locationLabel('home.residence')}</span>
-          </span>
-          <span className="min-w-0 flex-1 text-right font-semibold text-gray-900">
-            {locationPlace(recommendationLocation.municipality.nameJa)}
-          </span>
-        </div>
+        <CompactInfoPill
+          emoji="🏠"
+          label={locationLabel('home.residence')}
+          value={locationPlace(recommendationLocation.municipality.nameJa)}
+        />
       );
     }
     return (
-      <div className="kodoko-control flex items-center justify-between gap-3 px-3 py-2 text-sm font-semibold text-gray-700">
-        <span className="flex min-w-0 items-center gap-2">
-          <span aria-hidden="true">⚙️</span>
-          <span>{t('home.noLocation')}</span>
+      <div className="kodoko-control flex min-w-0 items-center gap-1.5 px-2.5 py-1.5 text-[13px] font-semibold text-gray-700">
+        <span aria-hidden="true" className="shrink-0 text-base leading-none">
+          ⚙️
+        </span>
+        <span className="min-w-0 flex-1 truncate text-[11px] leading-none text-gray-500">
+          {t('home.noLocation')}
         </span>
         <Link
           to="/settings"
-          className="inline-flex min-h-9 items-center rounded-full bg-brand-50 px-2.5 font-semibold text-brand-700"
+          className="inline-flex min-h-8 shrink-0 items-center rounded-full bg-brand-50 px-2 text-xs font-bold text-brand-700"
         >
           {t('home.toSettings')}
         </Link>
@@ -364,22 +402,17 @@ export function HomePage() {
           </Link>
         </div>
 
-        <div className="mt-3 grid gap-2">
-          <div className="kodoko-control flex items-center justify-between gap-3 px-3 py-2 text-sm font-semibold text-gray-700">
-            <span className="flex shrink-0 items-center gap-2">
-              <span aria-hidden="true">
-                {weather ? WEATHER_EMOJI[weather.condition] : '🌤️'}
-              </span>
-              <span>{t('home.currentWeather')}</span>
-            </span>
-            <span className="min-w-0 flex-1 text-right font-semibold text-gray-900">
-              {renderWeatherLabel()}
-            </span>
-          </div>
-          {renderLocationInfo()}
-        </div>
+        <time className="mt-2 block text-sm font-bold text-brand-800">
+          {currentDateTime}
+        </time>
 
-        <div className="mt-3 grid gap-2">
+        <div className="mt-2 grid grid-cols-2 gap-2">
+          <CompactInfoPill
+            emoji={weather ? WEATHER_EMOJI[weather.condition] : '🌤️'}
+            label={t('home.currentWeather')}
+            value={renderWeatherLabel()}
+          />
+          {renderLocationInfo()}
           <DropdownPill
             label={t('home.transport')}
             emoji="🚃"

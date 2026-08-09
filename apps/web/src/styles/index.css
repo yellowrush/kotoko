@@ -25,10 +25,11 @@
   :root {
     --kodoko-paper: #fffdf8;
     --kodoko-paper-warm: #fff4ec;
-    --kodoko-line: rgba(249, 95, 20, 0.18);
-    --kodoko-line-strong: rgba(224, 74, 8, 0.28);
-    --kodoko-shadow: rgba(120, 53, 15, 0.14);
-    --kodoko-press-shadow: rgba(120, 53, 15, 0.18);
+    --kodoko-leaf: #7fb06d;
+    --kodoko-line: rgba(224, 74, 8, 0.24);
+    --kodoko-line-strong: rgba(185, 58, 6, 0.42);
+    --kodoko-shadow: rgba(120, 53, 15, 0.18);
+    --kodoko-press-shadow: rgba(120, 53, 15, 0.24);
   }
 
   html {
@@ -36,22 +37,22 @@
   }
 
   body {
-    background-color: #fffaf3;
+    background-color: #fff7ed;
     background-image:
       linear-gradient(
         180deg,
-        rgba(255, 244, 236, 0.92),
-        rgba(255, 255, 255, 0.62) 42%,
-        rgba(255, 244, 236, 0.82)
+        rgba(255, 230, 211, 0.9),
+        rgba(255, 253, 248, 0.72) 42%,
+        rgba(255, 244, 236, 0.88)
       ),
       radial-gradient(
-        circle at 1px 1px,
-        rgba(249, 95, 20, 0.11) 1px,
+        circle at 2px 2px,
+        rgba(249, 95, 20, 0.12) 1.2px,
         transparent 0
       );
     background-size:
       auto,
-      18px 18px;
+      22px 22px;
     @apply font-sans text-base leading-relaxed text-gray-900 antialiased;
   }
 
@@ -88,27 +89,30 @@
   .kodoko-card {
     position: relative;
     overflow: hidden;
-    border: 1px solid var(--kodoko-line);
-    border-radius: 0.5rem;
+    border: 2px solid var(--kodoko-line);
+    border-radius: 1.35rem;
     background:
       linear-gradient(
         180deg,
-        rgba(255, 255, 255, 0.98),
-        rgba(255, 253, 248, 0.95)
+        rgba(255, 255, 255, 0.98) 0%,
+        rgba(255, 253, 248, 0.96) 58%,
+        rgba(255, 244, 236, 0.88) 100%
       ),
       var(--kodoko-paper);
     box-shadow:
-      0 4px 0 rgba(249, 95, 20, 0.09),
-      0 16px 28px var(--kodoko-shadow);
+      inset 0 1px 0 rgba(255, 255, 255, 0.85),
+      0 5px 0 rgba(249, 95, 20, 0.15),
+      0 18px 34px var(--kodoko-shadow);
   }
 
   .kodoko-button {
     min-height: 44px;
     border-radius: 9999px;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     box-shadow:
-      0 3px 0 var(--kodoko-press-shadow),
-      0 10px 18px rgba(120, 53, 15, 0.12);
+      inset 0 1px 0 rgba(255, 255, 255, 0.28),
+      0 4px 0 var(--kodoko-press-shadow),
+      0 12px 20px rgba(120, 53, 15, 0.14);
     transform: translateY(0);
     transition:
       background-color 160ms ease,
@@ -120,17 +124,18 @@
 
   .kodoko-button:not(:disabled):active {
     box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.22),
       0 1px 0 var(--kodoko-press-shadow),
-      0 6px 12px rgba(120, 53, 15, 0.12);
-    transform: translateY(2px);
+      0 7px 12px rgba(120, 53, 15, 0.12);
+    transform: translateY(3px);
   }
 
   .kodoko-button-primary {
-    @apply border-brand-700 bg-brand-600 text-white hover:bg-brand-700 focus-visible:outline-brand-600;
+    @apply border-brand-800 bg-brand-600 text-white hover:bg-brand-700 focus-visible:outline-brand-600;
   }
 
   .kodoko-button-secondary {
-    @apply border-brand-200 bg-brand-50 text-brand-800 hover:bg-brand-100 focus-visible:outline-brand-600;
+    @apply border-brand-300 bg-brand-50 text-brand-800 hover:bg-brand-100 focus-visible:outline-brand-600;
   }
 
   .kodoko-button-ghost {
@@ -142,52 +147,77 @@
   }
 
   .kodoko-badge {
-    border: 1px solid rgba(255, 255, 255, 0.78);
-    box-shadow: inset 0 -1px 0 rgba(120, 53, 15, 0.08);
+    border: 1px solid rgba(120, 53, 15, 0.08);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.72),
+      inset 0 -1px 0 rgba(120, 53, 15, 0.08);
   }
 
   .kodoko-panel {
-    border: 1px solid var(--kodoko-line);
-    border-radius: 0.5rem;
-    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid var(--kodoko-line);
+    border-radius: 1.35rem;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.97),
+        rgba(255, 253, 248, 0.94)
+      ),
+      rgba(255, 255, 255, 0.95);
     box-shadow:
-      0 3px 0 rgba(249, 95, 20, 0.08),
-      0 12px 24px rgba(120, 53, 15, 0.11);
+      inset 0 1px 0 rgba(255, 255, 255, 0.8),
+      0 4px 0 rgba(249, 95, 20, 0.13),
+      0 14px 26px rgba(120, 53, 15, 0.14);
   }
 
   .kodoko-control {
     min-height: 44px;
-    border: 1px solid var(--kodoko-line);
+    border: 2px solid var(--kodoko-line);
     border-radius: 9999px;
-    background: rgba(255, 255, 255, 0.95);
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.98),
+        rgba(255, 250, 243, 0.94)
+      ),
+      rgba(255, 255, 255, 0.95);
     box-shadow:
-      0 2px 0 rgba(249, 95, 20, 0.08),
-      0 8px 16px rgba(120, 53, 15, 0.09);
+      inset 0 1px 0 rgba(255, 255, 255, 0.8),
+      0 3px 0 rgba(249, 95, 20, 0.12),
+      0 10px 18px rgba(120, 53, 15, 0.12);
   }
 
   .kodoko-list-item {
-    border: 1px solid var(--kodoko-line);
-    border-radius: 0.5rem;
-    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid var(--kodoko-line);
+    border-radius: 1.1rem;
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.98),
+        rgba(255, 253, 248, 0.94)
+      ),
+      rgba(255, 255, 255, 0.95);
     box-shadow:
-      0 2px 0 rgba(249, 95, 20, 0.06),
-      0 8px 18px rgba(120, 53, 15, 0.08);
+      inset 0 1px 0 rgba(255, 255, 255, 0.74),
+      0 3px 0 rgba(249, 95, 20, 0.1),
+      0 10px 20px rgba(120, 53, 15, 0.1);
   }
 
   .kodoko-segmented {
-    border: 1px solid var(--kodoko-line);
+    border: 2px solid var(--kodoko-line);
     border-radius: 9999px;
-    background: rgba(255, 244, 236, 0.82);
-    box-shadow: inset 0 2px 8px rgba(120, 53, 15, 0.08);
+    background: rgba(255, 230, 211, 0.84);
+    box-shadow:
+      inset 0 2px 8px rgba(120, 53, 15, 0.08),
+      0 2px 0 rgba(249, 95, 20, 0.08);
   }
 
   .maplibregl-ctrl-group {
     overflow: hidden;
-    border: 1px solid var(--kodoko-line);
-    border-radius: 0.5rem;
+    border: 2px solid var(--kodoko-line);
+    border-radius: 1rem;
     box-shadow:
-      0 3px 0 rgba(249, 95, 20, 0.08),
-      0 10px 18px rgba(120, 53, 15, 0.12);
+      0 4px 0 rgba(249, 95, 20, 0.11),
+      0 12px 22px rgba(120, 53, 15, 0.14);
   }
 
   .maplibregl-ctrl-group button {

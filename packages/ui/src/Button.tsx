@@ -10,7 +10,7 @@ const VARIANTS: Record<ButtonVariant, string> = {
 };
 
 const BASE =
-  'kodoko-button inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-50';
+  'kodoko-button inline-flex items-center justify-center gap-2 px-4 py-2 text-sm font-bold focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-50';
 
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   variant?: ButtonVariant;

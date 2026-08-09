@@ -44,7 +44,7 @@ export function PlaceBottomSheet({
   });
 
   return (
-    <div className="pointer-events-auto flex flex-col rounded-t-2xl border-t border-brand-100 bg-white/95 shadow-[0_-8px_0_rgba(249,95,20,0.06),0_-18px_30px_rgba(120,53,15,0.14)] backdrop-blur">
+    <div className="pointer-events-auto flex flex-col rounded-t-[1.75rem] border-2 border-b-0 border-brand-200 bg-white/95 shadow-[0_-7px_0_rgba(249,95,20,0.1),0_-20px_34px_rgba(120,53,15,0.18)] backdrop-blur">
       <button
         type="button"
         onClick={onToggleCollapsed}
@@ -53,13 +53,13 @@ export function PlaceBottomSheet({
         aria-label={collapsed ? t('common.expand') : t('common.collapse')}
       >
         <span className="flex min-w-0 items-center gap-3">
-          <span className="h-1 w-8 shrink-0 rounded-full bg-gray-300" />
+          <span className="h-1.5 w-10 shrink-0 rounded-full bg-brand-200" />
           <span className="min-w-0 truncate text-base font-semibold text-gray-900">
             {t('places.spotsNear')}
           </span>
         </span>
         <span
-          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-50 text-lg text-brand-700"
+          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border-2 border-brand-200 bg-brand-50 text-lg text-brand-700 shadow-[0_2px_0_rgba(249,95,20,0.14)]"
           aria-hidden="true"
         >
           <svg

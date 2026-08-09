@@ -10,6 +10,37 @@ const NAV_ITEMS = [
 
 const FULL_BLEED_ROUTES = new Set(['/places']);
 
+function PlacesLineIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      viewBox="0 0 48 48"
+      className="h-9 w-9 fill-none stroke-current"
+    >
+      <path
+        d="M8 34c7-8 12 5 18-3s6-15 14-10"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="3"
+      />
+      <path
+        d="M14 29a5 5 0 1 0-7 0l3.5 6z"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="3"
+      />
+      <path
+        d="M32 17v17M32 18c4-2 7-1 10 1v9c-3-2-6-3-10-1"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="3"
+      />
+      <circle cx="10.5" cy="24.5" r="1.2" fill="currentColor" />
+    </svg>
+  );
+}
+
 export function AppLayout() {
   const { t } = useAppTranslation();
   const { pathname } = useLocation();
@@ -50,29 +81,57 @@ export function AppLayout() {
         className={
           fullBleed
             ? 'flex flex-1 flex-col overflow-hidden'
-            : 'flex-1 px-4 pb-28 pt-4'
+            : 'flex-1 px-4 pb-36 pt-4'
         }
       >
         <Outlet />
       </main>
 
-      <nav className="safe-bottom fixed inset-x-3 bottom-3 z-10 mx-auto max-w-lg">
-        <div className="mx-auto flex rounded-full border border-brand-100 bg-white/95 p-1.5 shadow-[0_8px_0_rgba(249,95,20,0.08),0_18px_34px_rgba(120,53,15,0.18)] backdrop-blur">
-          {NAV_ITEMS.map((item) => (
-            <NavLink
-              key={item.to}
-              to={item.to}
-              className={({ isActive }) =>
-                `flex min-h-12 flex-1 flex-col items-center justify-center gap-1 rounded-full px-2 py-2 text-sm font-bold transition sm:text-base ${
-                  isActive
-                    ? 'bg-brand-100 text-brand-800 shadow-inner'
-                    : 'text-gray-500 hover:bg-brand-50'
-                }`
+      <nav className="safe-bottom fixed inset-x-3 bottom-6 z-10 mx-auto max-w-lg">
+        <div className="relative mx-auto h-24">
+          <div className="absolute inset-x-0 bottom-0 grid h-[4.6rem] grid-cols-[1fr_6rem_1fr] items-end rounded-[2rem] border-2 border-brand-200 bg-white/95 px-2 pb-2 pt-2 shadow-[0_7px_0_rgba(249,95,20,0.13),0_20px_34px_rgba(120,53,15,0.2)] backdrop-blur">
+            {NAV_ITEMS.map((item) => {
+              const isPrimary = item.key === 'places';
+              if (isPrimary) {
+                return (
+                  <NavLink
+                    key={item.to}
+                    to={item.to}
+                    className={({ isActive }) =>
+                      `relative -top-4 col-start-2 mx-auto flex h-[5.4rem] w-[5.4rem] flex-col items-center justify-center gap-1 rounded-full border-[3px] px-2 text-center font-extrabold transition active:translate-y-1 sm:h-24 sm:w-24 ${
+                        isActive
+                          ? 'border-brand-800 bg-brand-600 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.28),0_6px_0_rgba(119,39,4,0.38),0_20px_30px_rgba(120,53,15,0.3)]'
+                          : 'border-brand-300 bg-brand-50 text-brand-800 shadow-[inset_0_1px_0_rgba(255,255,255,0.8),0_6px_0_rgba(249,95,20,0.22),0_18px_28px_rgba(120,53,15,0.22)] hover:bg-brand-100'
+                      }`
+                    }
+                  >
+                    <PlacesLineIcon />
+                    <span className="text-[11px] leading-none sm:text-xs">
+                      {t(`nav.${item.key}`)}
+                    </span>
+                  </NavLink>
+                );
               }
-            >
-              {t(`nav.${item.key}`)}
-            </NavLink>
-          ))}
+
+              return (
+                <NavLink
+                  key={item.to}
+                  to={item.to}
+                  className={({ isActive }) =>
+                    `flex min-h-12 flex-col items-center justify-center gap-1 rounded-full px-2 py-2 text-sm font-bold transition sm:text-base ${
+                      item.key === 'profile' ? 'col-start-1' : 'col-start-3'
+                    } ${
+                      isActive
+                        ? 'bg-brand-100 text-brand-800 shadow-inner'
+                        : 'text-gray-500 hover:bg-brand-50'
+                    }`
+                  }
+                >
+                  {t(`nav.${item.key}`)}
+                </NavLink>
+              );
+            })}
+          </div>
         </div>
       </nav>
     </div>

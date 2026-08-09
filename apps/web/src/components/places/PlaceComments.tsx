@@ -12,7 +12,7 @@ function Stars({
   readonly?: boolean;
 }) {
   return (
-    <div className="flex items-center gap-0.5">
+    <div className="flex items-center gap-1">
       {[1, 2, 3, 4, 5].map((n) => (
         <button
           key={n}
@@ -20,9 +20,9 @@ function Stars({
           disabled={readonly}
           onClick={onChange ? () => onChange(n) : undefined}
           aria-label={`${n}点`}
-          className={`text-lg leading-none ${readonly ? 'cursor-default' : ''} ${
-            n <= value ? 'text-amber-400' : 'text-gray-300'
-          }`}
+          className={`inline-flex min-h-10 min-w-10 items-center justify-center text-xl leading-none ${
+            readonly ? 'cursor-default' : ''
+          } ${n <= value ? 'text-amber-400' : 'text-gray-300'}`}
         >
           ★
         </button>
@@ -51,10 +51,14 @@ export function PlaceComments({ placeId }: { placeId: string }) {
 
   return (
     <div className="mt-4">
-      <h3 className="text-sm font-semibold text-gray-700">{t('placeComments.title')}</h3>
-      <p className="mt-0.5 text-xs text-gray-400">{t('placeComments.localOnly')}</p>
+      <h3 className="text-sm font-semibold text-gray-700">
+        {t('placeComments.title')}
+      </h3>
+      <p className="mt-0.5 text-xs text-gray-400">
+        {t('placeComments.localOnly')}
+      </p>
 
-      <div className="mt-3 rounded-xl border border-gray-200 p-3">
+      <div className="kodoko-panel mt-3 p-3">
         <Stars value={rating} onChange={setRating} />
         <textarea
           value={content}
@@ -62,15 +66,17 @@ export function PlaceComments({ placeId }: { placeId: string }) {
           placeholder={t('placeComments.placeholder')}
           maxLength={1000}
           rows={2}
-          className="mt-2 w-full resize-none rounded-lg border border-gray-300 p-2 text-sm outline-none focus:border-brand-500"
+          className="mt-2 w-full resize-none rounded-lg border border-brand-100 p-2 text-sm outline-none focus:border-brand-500"
         />
         <div className="mt-2 flex items-center justify-between">
-          <span className="text-[11px] text-gray-400">{content.length}/1000</span>
+          <span className="text-[11px] text-gray-400">
+            {content.length}/1000
+          </span>
           <button
             type="button"
             disabled={!canSubmit}
             onClick={() => void handleSubmit()}
-            className="rounded-lg bg-brand-600 px-3 py-1.5 text-sm font-medium text-white disabled:opacity-40"
+            className="kodoko-button kodoko-button-primary min-h-10 px-3 py-1.5 text-sm font-semibold disabled:opacity-40"
           >
             {t('placeComments.submit')}
           </button>
@@ -78,13 +84,15 @@ export function PlaceComments({ placeId }: { placeId: string }) {
       </div>
 
       {loading ? (
-        <p className="mt-3 animate-pulse text-sm text-gray-400">{t('common.loading')}</p>
+        <p className="mt-3 animate-pulse text-sm text-gray-400">
+          {t('common.loading')}
+        </p>
       ) : comments.length === 0 ? (
         <p className="mt-3 text-sm text-gray-400">{t('placeComments.empty')}</p>
       ) : (
         <ul className="mt-3 flex flex-col gap-2">
           {comments.map((c) => (
-            <li key={c.id} className="rounded-xl border border-gray-100 bg-gray-50/60 p-3">
+            <li key={c.id} className="kodoko-list-item bg-gray-50/70 p-3">
               <div className="flex items-center justify-between">
                 <Stars value={c.rating} readonly />
                 <button
@@ -95,7 +103,9 @@ export function PlaceComments({ placeId }: { placeId: string }) {
                   {t('placeComments.delete')}
                 </button>
               </div>
-              <p className="mt-1.5 whitespace-pre-wrap text-sm text-gray-700">{c.content}</p>
+              <p className="mt-1.5 whitespace-pre-wrap text-sm text-gray-700">
+                {c.content}
+              </p>
             </li>
           ))}
         </ul>

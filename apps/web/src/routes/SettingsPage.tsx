@@ -1,8 +1,12 @@
-﻿import { useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { useAppTranslation } from '../hooks/useAppTranslation';
 import { Button } from '@kodoko/ui';
 import type { ImportMode } from '@kodoko/local-db';
-import { deleteLocalData, exportLocalData, importLocalData } from '../lib/backup';
+import {
+  deleteLocalData,
+  exportLocalData,
+  importLocalData,
+} from '../lib/backup';
 import { usePreference } from '../hooks/usePreference';
 import { LANGUAGE_OPTIONS, useLocale } from '../hooks/useLocale';
 import { MUNICIPALITIES, type IndoorOutdoor } from '@kodoko/domain';
@@ -54,18 +58,20 @@ export function SettingsPage() {
     <div className="flex flex-col gap-4">
       <PageHeader title={t('settings.title')} backTo="/home" />
 
-      <section className="rounded-lg border border-gray-200 bg-white p-4">
-        <h2 className="text-sm font-semibold text-gray-700">{t('settings.language')}</h2>
+      <section className="kodoko-panel p-4">
+        <h2 className="text-sm font-semibold text-gray-700">
+          {t('settings.language')}
+        </h2>
         <div className="mt-2 flex flex-wrap gap-2">
           {LANGUAGE_OPTIONS.map((option) => (
             <button
               key={option.value}
               type="button"
               onClick={() => void setLocale(option.value)}
-              className={`rounded-full px-3 py-1 text-sm font-medium ${
+              className={`min-h-10 rounded-full px-3 py-1 text-sm font-semibold shadow-sm ${
                 locale === option.value
                   ? 'bg-brand-600 text-white'
-                  : 'bg-gray-100 text-gray-700'
+                  : 'bg-white text-gray-700 ring-1 ring-brand-100'
               }`}
             >
               {option.label}
@@ -74,16 +80,20 @@ export function SettingsPage() {
         </div>
       </section>
 
-      <section className="rounded-lg border border-gray-200 bg-white p-4">
-        <h2 className="text-sm font-semibold text-gray-700">{t('settings.municipality')}</h2>
-        <p className="mt-1 text-xs text-gray-500">{t('settings.municipalityNotice')}</p>
+      <section className="kodoko-panel p-4">
+        <h2 className="text-sm font-semibold text-gray-700">
+          {t('settings.municipality')}
+        </h2>
+        <p className="mt-1 text-xs text-gray-500">
+          {t('settings.municipalityNotice')}
+        </p>
         <select
           value={preference?.municipalityCode ?? ''}
           onChange={(e) => {
             const code = e.target.value || undefined;
             void setMunicipality(code);
           }}
-          className="mt-2 w-full rounded-lg border border-gray-200 bg-white px-3 py-2 text-sm"
+          className="mt-2 w-full rounded-full border border-brand-100 bg-white/95 px-3 py-2 text-sm shadow-sm focus:border-brand-500 focus:outline-none"
         >
           <option value="">{t('settings.municipalityNone')}</option>
           {MUNICIPALITIES.map((m) => (
@@ -94,25 +104,37 @@ export function SettingsPage() {
         </select>
       </section>
 
-      <section className="rounded-lg border border-gray-200 bg-white p-4">
-        <h2 className="text-sm font-semibold text-gray-700">{t('settings.recommendation')}</h2>
-        <p className="mt-1 text-xs text-gray-500">{t('settings.recommendationNotice')}</p>
+      <section className="kodoko-panel p-4">
+        <h2 className="text-sm font-semibold text-gray-700">
+          {t('settings.recommendation')}
+        </h2>
+        <p className="mt-1 text-xs text-gray-500">
+          {t('settings.recommendationNotice')}
+        </p>
 
         <div className="mt-3">
-          <p className="text-xs font-medium text-gray-500">{t('settings.radiusKm')}</p>
+          <p className="text-xs font-medium text-gray-500">
+            {t('settings.radiusKm')}
+          </p>
           <div className="mt-2 flex flex-wrap gap-2">
             {RADIUS_OPTIONS.map((radius) => {
-              const active = preference?.radiusKm === radius || (!preference?.radiusKm && radius === undefined);
+              const active =
+                preference?.radiusKm === radius ||
+                (!preference?.radiusKm && radius === undefined);
               return (
                 <button
                   key={radius ?? 'none'}
                   type="button"
                   onClick={() => void setRadiusKm(radius)}
-                  className={`rounded-full px-3 py-1 text-sm font-medium ${
-                    active ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-700'
+                  className={`min-h-10 rounded-full px-3 py-1 text-sm font-semibold shadow-sm ${
+                    active
+                      ? 'bg-brand-600 text-white'
+                      : 'bg-white text-gray-700 ring-1 ring-brand-100'
                   }`}
                 >
-                  {radius ? t('settings.radiusOption', { km: radius }) : t('settings.radiusNone')}
+                  {radius
+                    ? t('settings.radiusOption', { km: radius })
+                    : t('settings.radiusNone')}
                 </button>
               );
             })}
@@ -120,7 +142,9 @@ export function SettingsPage() {
         </div>
 
         <div className="mt-3">
-          <p className="text-xs font-medium text-gray-500">{t('settings.indoorOutdoorPreference')}</p>
+          <p className="text-xs font-medium text-gray-500">
+            {t('settings.indoorOutdoorPreference')}
+          </p>
           <div className="mt-2 flex flex-wrap gap-2">
             {INDOOR_OUTDOOR_OPTIONS.map((value) => {
               const active =
@@ -131,8 +155,10 @@ export function SettingsPage() {
                   key={value ?? 'none'}
                   type="button"
                   onClick={() => void setIndoorOutdoorPreference(value)}
-                  className={`rounded-full px-3 py-1 text-sm font-medium ${
-                    active ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-700'
+                  className={`min-h-10 rounded-full px-3 py-1 text-sm font-semibold shadow-sm ${
+                    active
+                      ? 'bg-brand-600 text-white'
+                      : 'bg-white text-gray-700 ring-1 ring-brand-100'
                   }`}
                 >
                   {t(`settings.indoorOutdoor.${value ?? 'none'}`)}
@@ -143,9 +169,13 @@ export function SettingsPage() {
         </div>
       </section>
 
-      <section className="rounded-lg border border-gray-200 bg-white p-4">
-        <h2 className="text-sm font-semibold text-gray-700">{t('settings.localData')}</h2>
-        <p className="mt-2 text-xs text-gray-500">{t('settings.localDataNotice')}</p>
+      <section className="kodoko-panel p-4">
+        <h2 className="text-sm font-semibold text-gray-700">
+          {t('settings.localData')}
+        </h2>
+        <p className="mt-2 text-xs text-gray-500">
+          {t('settings.localDataNotice')}
+        </p>
 
         <div className="mt-3 flex gap-1">
           {(['merge', 'overwrite'] as const).map((mode) => (
@@ -153,8 +183,10 @@ export function SettingsPage() {
               key={mode}
               type="button"
               onClick={() => setImportMode(mode)}
-              className={`flex-1 rounded-full px-3 py-1 text-xs font-medium ${
-                importMode === mode ? 'bg-brand-600 text-white' : 'bg-gray-100 text-gray-700'
+              className={`min-h-10 flex-1 rounded-full px-3 py-1 text-xs font-semibold shadow-sm ${
+                importMode === mode
+                  ? 'bg-brand-600 text-white'
+                  : 'bg-white text-gray-700 ring-1 ring-brand-100'
               }`}
             >
               {t(`settings.importMode.${mode}`)}
@@ -163,7 +195,9 @@ export function SettingsPage() {
         </div>
 
         <div className="mt-3 flex flex-col gap-2">
-          <Button onClick={() => void onExport()}>{t('settings.export')}</Button>
+          <Button onClick={() => void onExport()}>
+            {t('settings.export')}
+          </Button>
           <label className="flex w-full cursor-pointer">
             <span className="sr-only">{t('settings.import')}</span>
             <input
@@ -189,4 +223,3 @@ export function SettingsPage() {
     </div>
   );
 }
-

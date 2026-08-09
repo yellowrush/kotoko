@@ -2,7 +2,12 @@
 import { useAppTranslation } from '../hooks/useAppTranslation';
 import { Link } from 'react-router-dom';
 import { Card } from '@kodoko/ui';
-import { calculateAgeMonths, findNearestMunicipality, type Policy, type PolicyTaskState } from '@kodoko/domain';
+import {
+  calculateAgeMonths,
+  findNearestMunicipality,
+  type Policy,
+  type PolicyTaskState,
+} from '@kodoko/domain';
 import type { TransportMode } from '@kodoko/recommendation';
 import { useSelectedChildren } from '../hooks/useSelectedChildren';
 import { usePlaces } from '../hooks/usePlaces';
@@ -20,7 +25,11 @@ import { AgeLabel } from '../components/AgeLabel';
 import { ChildAvatar } from '../components/ChildAvatar';
 import { CATEGORY_ICON } from '../components/places/categoryMeta';
 
-const TRANSPORT_OPTIONS: { value: TransportMode | undefined; key: string; emoji: string }[] = [
+const TRANSPORT_OPTIONS: {
+  value: TransportMode | undefined;
+  key: string;
+  emoji: string;
+}[] = [
   { value: undefined, key: 'home.transportNone', emoji: '🧭' },
   { value: 'walking', key: 'home.transportWalking', emoji: '🚶' },
   { value: 'bicycle', key: 'home.transportBicycle', emoji: '🚲' },
@@ -29,7 +38,11 @@ const TRANSPORT_OPTIONS: { value: TransportMode | undefined; key: string; emoji:
 ];
 
 // 3 人以上視為多人同行，觸發 group-play 加分。
-const GROUP_OPTIONS: { value: number | undefined; key: string; emoji: string }[] = [
+const GROUP_OPTIONS: {
+  value: number | undefined;
+  key: string;
+  emoji: string;
+}[] = [
   { value: undefined, key: 'home.groupNone', emoji: '👪' },
   { value: 1, key: 'home.group1', emoji: '1️⃣' },
   { value: 2, key: 'home.group2', emoji: '2️⃣' },
@@ -104,11 +117,15 @@ function DropdownPill<T extends string | number | undefined>({
   dynamicIcon?: boolean;
 }) {
   const selectedValue = value === undefined ? '' : String(value);
-  const selectedOption = options.find((option) => (option.value === undefined ? '' : String(option.value)) === selectedValue);
-  const displayEmoji = dynamicIcon ? selectedOption?.emoji ?? emoji : emoji;
+  const selectedOption = options.find(
+    (option) =>
+      (option.value === undefined ? '' : String(option.value)) ===
+      selectedValue,
+  );
+  const displayEmoji = dynamicIcon ? (selectedOption?.emoji ?? emoji) : emoji;
 
   return (
-    <label className="flex min-h-11 min-w-0 items-center gap-2 rounded-xl border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm focus-within:border-brand-500 focus-within:ring-2 focus-within:ring-brand-100">
+    <label className="kodoko-control flex min-w-0 items-center gap-2 px-3 py-2 text-sm font-semibold text-gray-700 focus-within:border-brand-500 focus-within:ring-2 focus-within:ring-brand-100">
       <span aria-hidden="true" className="text-base">
         {displayEmoji}
       </span>
@@ -116,13 +133,20 @@ function DropdownPill<T extends string | number | undefined>({
       <select
         value={selectedValue}
         onChange={(event) => {
-          const next = options.find((option) => (option.value === undefined ? '' : String(option.value)) === event.target.value);
+          const next = options.find(
+            (option) =>
+              (option.value === undefined ? '' : String(option.value)) ===
+              event.target.value,
+          );
           onChange(next?.value);
         }}
-        className="min-w-0 flex-1 bg-transparent text-right text-sm font-semibold text-gray-900 outline-none"
+        className="min-w-0 flex-1 bg-transparent text-right !text-sm font-semibold text-gray-900 outline-none [text-align-last:right]"
       >
         {options.map((option) => (
-          <option key={option.key} value={option.value === undefined ? '' : String(option.value)}>
+          <option
+            key={option.key}
+            value={option.value === undefined ? '' : String(option.value)}
+          >
             {tKey(option.key)}
           </option>
         ))}
@@ -133,8 +157,19 @@ function DropdownPill<T extends string | number | undefined>({
 
 export function HomePage() {
   const { t } = useAppTranslation();
-  const { children, selected, selectedIds, toggle, loading: childLoading } = useSelectedChildren();
-  const { data: places, isLoading: placesLoading, isError, refetch } = usePlaces();
+  const {
+    children,
+    selected,
+    selectedIds,
+    toggle,
+    loading: childLoading,
+  } = useSelectedChildren();
+  const {
+    data: places,
+    isLoading: placesLoading,
+    isError,
+    refetch,
+  } = usePlaces();
   const { coords } = useGeolocation();
   const { preference } = usePreference();
   const {
@@ -142,33 +177,48 @@ export function HomePage() {
     isPending: weatherPending,
     isError: weatherError,
   } = useWeather(coords);
-  const [transportMode, setTransportMode] = useState<TransportMode | undefined>();
+  const [transportMode, setTransportMode] = useState<
+    TransportMode | undefined
+  >();
   const [groupSize, setGroupSize] = useState<number | undefined>();
   const { data: knowledge, isLoading: knowledgeLoading } = useKnowledge();
   const { readIds } = useKnowledgeProgress();
   const { data: policies, isLoading: policiesLoading } = usePolicies();
-  const policyTaskChildIds = useMemo(() => children.map((child) => child.id), [children]);
-  const { statusFor, loading: policyTasksLoading } = usePolicyTasksForChildren(policyTaskChildIds);
+  const policyTaskChildIds = useMemo(
+    () => children.map((child) => child.id),
+    [children],
+  );
+  const { statusFor, loading: policyTasksLoading } =
+    usePolicyTasksForChildren(policyTaskChildIds);
 
   // グループ人数は選択した子どもの人数に合わせて初期化する（最大 3 人以上）。
   useEffect(() => {
     if (selected.length >= 1) setGroupSize(Math.min(selected.length, 3));
   }, [selected.length]);
 
-  const registeredChildAges = useMemo(() => children.map((c) => calculateAgeMonths(c.birthDate)), [children]);
+  const registeredChildAges = useMemo(
+    () => children.map((c) => calculateAgeMonths(c.birthDate)),
+    [children],
+  );
   const weeklyKnowledge = useMemo(
-    () => prioritizeKnowledgeForAges(knowledge ?? [], registeredChildAges, readIds).slice(0, 3),
+    () =>
+      prioritizeKnowledgeForAges(
+        knowledge ?? [],
+        registeredChildAges,
+        readIds,
+      ).slice(0, 3),
     [knowledge, registeredChildAges, readIds],
   );
 
   const policyReminders = useMemo(() => {
     const list = (policies ?? [])
       .map((policy) => {
-        const matchedChildren = children.filter((child) =>
-          checkPolicyFor(policy, {
-            birthDate: child.birthDate,
-            municipalityCode: preference?.municipalityCode,
-          }).matched,
+        const matchedChildren = children.filter(
+          (child) =>
+            checkPolicyFor(policy, {
+              birthDate: child.birthDate,
+              municipalityCode: preference?.municipalityCode,
+            }).matched,
         );
         const statuses = matchedChildren
           .map((child) => statusFor(policy.id, child.id))
@@ -178,14 +228,21 @@ export function HomePage() {
           policy,
           priority: Math.min(...statuses.map(policyStatusPriority)),
           unread:
-            !policyTasksLoading && statuses.length > 0 && statuses.every((status) => status === 'new'),
+            !policyTasksLoading &&
+            statuses.length > 0 &&
+            statuses.every((status) => status === 'new'),
         };
       })
-      .filter((item): item is { policy: Policy; priority: number; unread: boolean } => item !== null)
+      .filter(
+        (item): item is { policy: Policy; priority: number; unread: boolean } =>
+          item !== null,
+      )
       .sort((a, b) => {
         if (a.priority !== b.priority) return a.priority - b.priority;
-        const aDeadline = a.policy.applicationDeadlineAt?.slice(0, 10) ?? '9999-12-31';
-        const bDeadline = b.policy.applicationDeadlineAt?.slice(0, 10) ?? '9999-12-31';
+        const aDeadline =
+          a.policy.applicationDeadlineAt?.slice(0, 10) ?? '9999-12-31';
+        const bDeadline =
+          b.policy.applicationDeadlineAt?.slice(0, 10) ?? '9999-12-31';
         return aDeadline.localeCompare(bDeadline);
       })
       .map((item) => ({ policy: item.policy, unread: item.unread }));
@@ -211,7 +268,9 @@ export function HomePage() {
     return t('home.place', { prefecture: t('home.prefecture'), city });
   }
 
-  function locationLabel(key: 'home.currentLocation' | 'home.residence'): string {
+  function locationLabel(
+    key: 'home.currentLocation' | 'home.residence',
+  ): string {
     return t(key, { place: '' }).trim();
   }
 
@@ -223,19 +282,21 @@ export function HomePage() {
       );
       if (nearest) {
         return (
-          <div className="flex min-h-11 items-center justify-between gap-3 rounded-xl border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm">
+          <div className="kodoko-control flex items-center justify-between gap-3 px-3 py-2 text-sm font-semibold text-gray-700">
             <span className="flex shrink-0 items-center gap-2">
               <span aria-hidden="true">📍</span>
               <span>{locationLabel('home.currentLocation')}</span>
             </span>
-            <span className="min-w-0 flex-1 text-right font-semibold text-gray-900">{locationPlace(nearest.nameJa)}</span>
+            <span className="min-w-0 flex-1 text-right font-semibold text-gray-900">
+              {locationPlace(nearest.nameJa)}
+            </span>
           </div>
         );
       }
     }
     if (recommendationLocation.source === 'municipality') {
       return (
-        <div className="flex min-h-11 items-center justify-between gap-3 rounded-xl border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm">
+        <div className="kodoko-control flex items-center justify-between gap-3 px-3 py-2 text-sm font-semibold text-gray-700">
           <span className="flex shrink-0 items-center gap-2">
             <span aria-hidden="true">🏠</span>
             <span>{locationLabel('home.residence')}</span>
@@ -247,12 +308,15 @@ export function HomePage() {
       );
     }
     return (
-      <div className="flex min-h-11 items-center justify-between gap-3 rounded-xl border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm">
+      <div className="kodoko-control flex items-center justify-between gap-3 px-3 py-2 text-sm font-semibold text-gray-700">
         <span className="flex min-w-0 items-center gap-2">
           <span aria-hidden="true">⚙️</span>
           <span>{t('home.noLocation')}</span>
         </span>
-        <Link to="/settings" className="font-medium text-brand-700">
+        <Link
+          to="/settings"
+          className="inline-flex min-h-9 items-center rounded-full bg-brand-50 px-2.5 font-semibold text-brand-700"
+        >
           {t('home.toSettings')}
         </Link>
       </div>
@@ -289,19 +353,28 @@ export function HomePage() {
     <div className="flex flex-col gap-4">
       <Card>
         <div className="flex items-center justify-between">
-          <h2 className="text-base font-semibold text-gray-900">{t('home.recommendationsTitle')}</h2>
-          <Link to="/places" className="text-sm font-medium text-brand-700">
+          <h2 className="text-base font-semibold text-gray-900">
+            {t('home.recommendationsTitle')}
+          </h2>
+          <Link
+            to="/places"
+            className="inline-flex min-h-10 items-center rounded-full bg-brand-50 px-3 text-sm font-semibold text-brand-700 shadow-sm"
+          >
             {t('home.allPlaces')}
           </Link>
         </div>
 
         <div className="mt-3 grid gap-2">
-          <div className="flex min-h-11 items-center justify-between gap-3 rounded-xl border border-gray-300 bg-white px-3 py-2 text-sm font-medium text-gray-700 shadow-sm">
+          <div className="kodoko-control flex items-center justify-between gap-3 px-3 py-2 text-sm font-semibold text-gray-700">
             <span className="flex shrink-0 items-center gap-2">
-              <span aria-hidden="true">{weather ? WEATHER_EMOJI[weather.condition] : '🌤️'}</span>
+              <span aria-hidden="true">
+                {weather ? WEATHER_EMOJI[weather.condition] : '🌤️'}
+              </span>
               <span>{t('home.currentWeather')}</span>
             </span>
-            <span className="min-w-0 flex-1 text-right font-semibold text-gray-900">{renderWeatherLabel()}</span>
+            <span className="min-w-0 flex-1 text-right font-semibold text-gray-900">
+              {renderWeatherLabel()}
+            </span>
           </div>
           {renderLocationInfo()}
         </div>
@@ -326,12 +399,18 @@ export function HomePage() {
           />
         </div>
 
-        {placesLoading && !hasPlaces && !isError && <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>}
+        {placesLoading && !hasPlaces && !isError && (
+          <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>
+        )}
 
         {isError && (
           <div className="mt-2 flex items-center gap-2 text-sm text-gray-500">
             <p>{t('common.error')}</p>
-            <button type="button" onClick={() => void refetch()} className="text-brand-700">
+            <button
+              type="button"
+              onClick={() => void refetch()}
+              className="text-brand-700"
+            >
               {t('common.retry')}
             </button>
           </div>
@@ -340,19 +419,31 @@ export function HomePage() {
         {!hasBlockingPlacesError && children.length === 0 && (
           <div className="mt-3 flex items-center justify-between">
             <p className="text-sm text-gray-500">{t('home.noChildYet')}</p>
-            <Link to="/children/new" className="text-sm font-medium text-brand-700">
+            <Link
+              to="/children/new"
+              className="inline-flex min-h-10 items-center rounded-full bg-brand-50 px-3 text-sm font-semibold text-brand-700 shadow-sm"
+            >
               {t('home.addChild')}
             </Link>
           </div>
         )}
 
-        {!hasBlockingPlacesError && children.length > 0 && selected.length === 0 && (
-          <p className="mt-3 text-sm text-gray-500">{t('home.noSelectedChildren')}</p>
-        )}
+        {!hasBlockingPlacesError &&
+          children.length > 0 &&
+          selected.length === 0 && (
+            <p className="mt-3 text-sm text-gray-500">
+              {t('home.noSelectedChildren')}
+            </p>
+          )}
 
-        {!hasBlockingPlacesError && selected.length > 0 && !placesLoading && recommendations.length === 0 && (
-          <p className="mt-3 text-sm text-gray-400">{t('home.noRecommendations')}</p>
-        )}
+        {!hasBlockingPlacesError &&
+          selected.length > 0 &&
+          !placesLoading &&
+          recommendations.length === 0 && (
+            <p className="mt-3 text-sm text-gray-400">
+              {t('home.noRecommendations')}
+            </p>
+          )}
 
         {!hasBlockingPlacesError &&
           recommendations.map((r, index) => {
@@ -362,8 +453,10 @@ export function HomePage() {
                 key={r.place.id}
                 to={`/places/${r.place.id}`}
                 state={{ backTo: '/home' }}
-                className={`mt-2 flex min-h-20 items-start gap-3 rounded-xl border p-3 shadow-sm transition hover:border-brand-300 hover:bg-brand-50/30 focus-visible:outline-brand-600 ${
-                  rank ? `${rank.border} ${rank.bg}` : 'border-gray-300 bg-white'
+                className={`kodoko-list-item mt-2 flex min-h-20 items-start gap-3 p-3 transition hover:border-brand-300 hover:bg-brand-50/30 focus-visible:outline-brand-600 ${
+                  rank
+                    ? `${rank.border} ${rank.bg}`
+                    : 'border-gray-300 bg-white'
                 }`}
               >
                 <span
@@ -383,15 +476,24 @@ export function HomePage() {
                       {r.place.name}
                     </span>
                   </span>
-                  <RecommendationReasons reasonCodes={r.reasonCodes} distanceKm={r.distanceKm} />
+                  <RecommendationReasons
+                    reasonCodes={r.reasonCodes}
+                    distanceKm={r.distanceKm}
+                  />
                 </span>
                 <span
                   className={`shrink-0 rounded-xl px-2.5 py-1.5 text-center text-xs font-bold shadow-md ${
-                    rank ? rank.score : 'bg-brand-700 text-white shadow-brand-100'
+                    rank
+                      ? rank.score
+                      : 'bg-brand-700 text-white shadow-brand-100'
                   }`}
                 >
-                  <span className="block text-[10px] leading-none opacity-90">{t('home.score')}</span>
-                  <span className="block text-base leading-tight">{r.score}</span>
+                  <span className="block text-[10px] leading-none opacity-90">
+                    {t('home.score')}
+                  </span>
+                  <span className="block text-base leading-tight">
+                    {r.score}
+                  </span>
                 </span>
               </Link>
             );
@@ -400,9 +502,14 @@ export function HomePage() {
 
       <Card>
         <div className="flex items-center justify-between">
-          <h2 className="text-base font-semibold text-gray-900">{t('home.currentChild')}</h2>
+          <h2 className="text-base font-semibold text-gray-900">
+            {t('home.currentChild')}
+          </h2>
           {!childLoading && children.length > 0 && (
-            <Link to="/children/new" className="text-sm font-medium text-brand-700">
+            <Link
+              to="/children/new"
+              className="inline-flex min-h-10 items-center rounded-full bg-brand-50 px-3 text-sm font-semibold text-brand-700 shadow-sm"
+            >
               {t('home.addChild')}
             </Link>
           )}
@@ -412,12 +519,17 @@ export function HomePage() {
         ) : children.length === 0 ? (
           <div className="mt-2 flex items-center justify-between">
             <p className="text-sm text-gray-500">{t('home.noChildYet')}</p>
-            <Link to="/children/new" className="text-sm font-medium text-brand-700">
+            <Link
+              to="/children/new"
+              className="inline-flex min-h-10 items-center rounded-full bg-brand-50 px-3 text-sm font-semibold text-brand-700 shadow-sm"
+            >
               {t('home.addChild')}
             </Link>
           </div>
         ) : (
-          <p className="mt-1 text-sm text-gray-500">{t('home.selectChildrenHint')}</p>
+          <p className="mt-1 text-sm text-gray-500">
+            {t('home.selectChildrenHint')}
+          </p>
         )}
         {childLoading ? null : children.length > 0 ? (
           <ul className="mt-2 flex flex-col gap-2">
@@ -426,15 +538,19 @@ export function HomePage() {
               return (
                 <li
                   key={child.id}
-                  className={`flex items-center gap-3 rounded-xl border px-2 py-2 shadow-sm ${
-                    isChecked ? 'border-brand-300 bg-brand-50/70' : 'border-gray-200 bg-white'
+                  className={`kodoko-list-item flex items-center gap-3 px-2 py-2 ${
+                    isChecked
+                      ? 'border-brand-300 bg-brand-50/70'
+                      : 'border-gray-200 bg-white'
                   }`}
                 >
                   <button
                     type="button"
                     onClick={() => toggle(child.id)}
                     aria-pressed={isChecked}
-                    aria-label={t('children.selectChild', { name: child.displayName })}
+                    aria-label={t('children.selectChild', {
+                      name: child.displayName,
+                    })}
                     className="touch-target flex min-w-0 flex-1 items-center gap-3 text-left"
                   >
                     <ChildAvatar
@@ -444,7 +560,9 @@ export function HomePage() {
                       selected={isChecked}
                     />
                     <span className="min-w-0">
-                      <span className={`block truncate text-base font-semibold ${isChecked ? 'text-brand-900' : 'text-gray-800'}`}>
+                      <span
+                        className={`block truncate text-base font-semibold ${isChecked ? 'text-brand-900' : 'text-gray-800'}`}
+                      >
                         {child.displayName}
                       </span>
                       <span className="block text-sm text-gray-500">
@@ -467,15 +585,22 @@ export function HomePage() {
 
       <Card>
         <div className="flex items-center justify-between">
-          <h2 className="text-base font-semibold text-gray-900">{t('home.weeklyKnowledge')}</h2>
-          <Link to="/knowledge" className="text-sm font-medium text-brand-700">
+          <h2 className="text-base font-semibold text-gray-900">
+            {t('home.weeklyKnowledge')}
+          </h2>
+          <Link
+            to="/knowledge"
+            className="inline-flex min-h-10 items-center rounded-full bg-brand-50 px-3 text-sm font-semibold text-brand-700 shadow-sm"
+          >
             {t('knowledge.viewAll')}
           </Link>
         </div>
         {knowledgeLoading ? (
           <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>
         ) : weeklyKnowledge.length === 0 ? (
-          <p className="mt-2 text-sm text-gray-400">{t('knowledge.noContent')}</p>
+          <p className="mt-2 text-sm text-gray-400">
+            {t('knowledge.noContent')}
+          </p>
         ) : (
           <ul className="mt-2 flex flex-col gap-2">
             {weeklyKnowledge.map((item) => {
@@ -485,16 +610,20 @@ export function HomePage() {
                   <Link
                     to={`/knowledge/${item.id}`}
                     state={{ backTo: '/home' }}
-                    className={`flex min-h-14 items-center gap-3 rounded-xl border px-3 py-2 shadow-sm transition hover:border-brand-300 ${
+                    className={`kodoko-list-item flex min-h-14 items-center gap-3 px-3 py-2 transition hover:border-brand-300 ${
                       unread
                         ? 'border-brand-300 bg-brand-50/70 hover:bg-brand-50'
                         : 'border-gray-200 bg-white hover:bg-brand-50/30'
                     }`}
                   >
-                    <span className="text-lg" aria-hidden="true">📘</span>
+                    <span className="text-lg" aria-hidden="true">
+                      📘
+                    </span>
                     <p
                       className={`min-w-0 flex-1 truncate text-sm ${
-                        unread ? 'font-semibold text-gray-900' : 'font-medium text-gray-700'
+                        unread
+                          ? 'font-semibold text-gray-900'
+                          : 'font-medium text-gray-700'
                       }`}
                     >
                       {item.title}
@@ -509,8 +638,13 @@ export function HomePage() {
 
       <Card>
         <div className="flex items-center justify-between">
-          <h2 className="text-base font-semibold text-gray-900">{t('home.policyReminders')}</h2>
-          <Link to="/policies" className="text-sm font-medium text-brand-700">
+          <h2 className="text-base font-semibold text-gray-900">
+            {t('home.policyReminders')}
+          </h2>
+          <Link
+            to="/policies"
+            className="inline-flex min-h-10 items-center rounded-full bg-brand-50 px-3 text-sm font-semibold text-brand-700 shadow-sm"
+          >
             {t('policies.viewAll')}
           </Link>
         </div>
@@ -525,21 +659,26 @@ export function HomePage() {
                 <Link
                   to={`/policies/${policy.id}`}
                   state={{ backTo: '/home' }}
-                  className={`flex min-h-14 items-center gap-3 rounded-xl border px-3 py-2 shadow-sm transition hover:border-brand-300 ${
-                    unread ? POLICY_REMINDER_ITEM_STYLES.unread : POLICY_REMINDER_ITEM_STYLES.read
+                  className={`kodoko-list-item flex min-h-14 items-center gap-3 px-3 py-2 transition hover:border-brand-300 ${
+                    unread
+                      ? POLICY_REMINDER_ITEM_STYLES.unread
+                      : POLICY_REMINDER_ITEM_STYLES.read
                   }`}
                 >
                   <span aria-hidden="true">📌</span>
                   <p
                     className={`min-w-0 flex-1 truncate text-sm ${
-                      unread ? 'font-semibold text-gray-900' : 'font-medium text-gray-700'
+                      unread
+                        ? 'font-semibold text-gray-900'
+                        : 'font-medium text-gray-700'
                     }`}
                   >
                     {policy.title}
                   </p>
                   {policy.applicationDeadlineAt && (
                     <span className="max-w-[45%] shrink-0 truncate text-xs text-gray-400">
-                      {t('policies.deadline')}: {policy.applicationDeadlineAt.slice(0, 10)}
+                      {t('policies.deadline')}:{' '}
+                      {policy.applicationDeadlineAt.slice(0, 10)}
                       {daysUntil(policy.applicationDeadlineAt) >= 0 &&
                         `（${t('policies.daysLeft', { days: daysUntil(policy.applicationDeadlineAt) })}）`}
                     </span>

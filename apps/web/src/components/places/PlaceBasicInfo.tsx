@@ -5,7 +5,13 @@ type PlaceBasicInfoProps = {
   place: Place;
 };
 
-function InfoRow({ label, children }: { label: string; children: React.ReactNode }) {
+function InfoRow({
+  label,
+  children,
+}: {
+  label: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="flex justify-between gap-4 py-1.5 text-sm">
       <dt className="shrink-0 text-gray-400">{label}</dt>
@@ -28,35 +34,45 @@ export function PlaceBasicInfo({ place }: PlaceBasicInfoProps) {
   const description =
     locale === 'ja'
       ? place.description
-      : place.descriptionZh ?? place.description;
+      : (place.descriptionZh ?? place.description);
 
   return (
     <div className="flex flex-col gap-3">
       {description && (
-        <section>
-          <h3 className="text-sm font-semibold text-gray-700">{t('places.descriptionTitle')}</h3>
+        <section className="kodoko-panel p-3">
+          <h3 className="text-sm font-semibold text-gray-700">
+            {t('places.descriptionTitle')}
+          </h3>
           <p className="mt-1.5 whitespace-pre-wrap text-sm leading-relaxed text-gray-600">
             {description}
           </p>
         </section>
       )}
 
-      <section>
-        <h3 className="text-sm font-semibold text-gray-700">{t('places.basicInfo')}</h3>
+      <section className="kodoko-panel p-3">
+        <h3 className="text-sm font-semibold text-gray-700">
+          {t('places.basicInfo')}
+        </h3>
         <dl className="mt-1 divide-y divide-gray-100">
           <InfoRow label={t('places.address')}>
             <a
               href={mapsUrl(place)}
               target="_blank"
               rel="noreferrer"
-              className="text-brand-700"
+              className="inline-flex min-h-10 items-center text-brand-700"
               title={t('places.openInMap')}
             >
               {place.address}
             </a>
           </InfoRow>
-          {place.businessHours && <InfoRow label={t('places.businessHours')}>{place.businessHours}</InfoRow>}
-          {place.closedDays && <InfoRow label={t('places.closedDays')}>{place.closedDays}</InfoRow>}
+          {place.businessHours && (
+            <InfoRow label={t('places.businessHours')}>
+              {place.businessHours}
+            </InfoRow>
+          )}
+          {place.closedDays && (
+            <InfoRow label={t('places.closedDays')}>{place.closedDays}</InfoRow>
+          )}
           {place.parking !== undefined && (
             <InfoRow label={t('places.parking')}>
               {place.parking ? t('places.parkingYes') : t('places.parkingNo')}
@@ -64,12 +80,17 @@ export function PlaceBasicInfo({ place }: PlaceBasicInfoProps) {
           )}
           {place.phone && (
             <InfoRow label={t('places.phone')}>
-              <a href={`tel:${place.phone}`} className="text-brand-700">
+              <a
+                href={`tel:${place.phone}`}
+                className="inline-flex min-h-10 items-center text-brand-700"
+              >
                 {place.phone}
               </a>
             </InfoRow>
           )}
-          {place.accessInfo && <InfoRow label={t('places.access')}>{place.accessInfo}</InfoRow>}
+          {place.accessInfo && (
+            <InfoRow label={t('places.access')}>{place.accessInfo}</InfoRow>
+          )}
         </dl>
       </section>
     </div>

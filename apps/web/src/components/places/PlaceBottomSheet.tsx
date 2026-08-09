@@ -30,18 +30,21 @@ export function PlaceBottomSheet({
     if (!selectedPlaceId || suppress) return;
     const scroller = listRef.current;
     if (!scroller) return;
-    const item = scroller.querySelector<HTMLElement>(`[data-place-id="${selectedPlaceId}"]`);
+    const item = scroller.querySelector<HTMLElement>(
+      `[data-place-id="${selectedPlaceId}"]`,
+    );
     if (!item) return;
     item.scrollIntoView({ block: 'start' });
   }, [selectedPlaceId]);
 
   const sorted = [...places].sort((a, b) => {
-    if (a.distanceKm !== null && b.distanceKm !== null) return a.distanceKm - b.distanceKm;
+    if (a.distanceKm !== null && b.distanceKm !== null)
+      return a.distanceKm - b.distanceKm;
     return 0;
   });
 
   return (
-    <div className="pointer-events-auto flex flex-col rounded-t-2xl border-t border-gray-200 bg-white shadow-[0_-6px_20px_rgba(15,23,42,0.12)]">
+    <div className="pointer-events-auto flex flex-col rounded-t-2xl border-t border-brand-100 bg-white/95 shadow-[0_-8px_0_rgba(249,95,20,0.06),0_-18px_30px_rgba(120,53,15,0.14)] backdrop-blur">
       <button
         type="button"
         onClick={onToggleCollapsed}
@@ -56,7 +59,7 @@ export function PlaceBottomSheet({
           </span>
         </span>
         <span
-          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-100 text-lg text-gray-600"
+          className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-50 text-lg text-brand-700"
           aria-hidden="true"
         >
           <svg
@@ -64,24 +67,35 @@ export function PlaceBottomSheet({
             className={`h-4 w-4 transition-transform ${collapsed ? 'rotate-180' : ''}`}
             fill="none"
           >
-            <path d="M5 8l5 5 5-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <path
+              d="M5 8l5 5 5-5"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </span>
       </button>
 
       {!collapsed && (
-        <div ref={listRef} className="max-h-[min(48vh,22rem)] overflow-y-auto px-3 pb-4">
+        <div
+          ref={listRef}
+          className="max-h-[min(48vh,22rem)] overflow-y-auto px-3 pb-4"
+        >
           {sorted.length === 0 && (
-            <p className="py-6 text-center text-sm text-gray-500">{t('places.noPlacesInRange')}</p>
+            <p className="py-6 text-center text-sm text-gray-500">
+              {t('places.noPlacesInRange')}
+            </p>
           )}
           <ul className="flex flex-col gap-2">
             {sorted.map((place) => {
               const active = place.id === selectedPlaceId;
               return (
-<li
+                <li
                   key={place.id}
                   data-place-id={place.id}
-                  className={`flex items-start gap-2 rounded-xl border p-3 shadow-sm transition ${
+                  className={`kodoko-list-item flex items-start gap-2 p-3 transition ${
                     active
                       ? 'border-brand-500 bg-brand-50/80 ring-2 ring-brand-100'
                       : 'border-gray-200 bg-white'
@@ -98,7 +112,9 @@ export function PlaceBottomSheet({
                     }`}
                   >
                     <div className="flex items-center justify-between gap-2">
-                      <span className="truncate text-sm font-semibold text-gray-900">{place.name}</span>
+                      <span className="truncate text-sm font-semibold text-gray-900">
+                        {place.name}
+                      </span>
                       {place.distanceKm !== null && (
                         <span className="shrink-0 text-xs text-gray-400">
                           {formatDistanceKm(place.distanceKm)}
@@ -109,16 +125,20 @@ export function PlaceBottomSheet({
                       <span>{CATEGORY_ICON[place.category]}</span>
                       <span>{t(`places.categories.${place.category}`)}</span>
                       {!place.ageSuitable && (
-                        <span className="ml-1 text-amber-600">{t('places.notAgeSuitable')}</span>
+                        <span className="ml-1 text-amber-600">
+                          {t('places.notAgeSuitable')}
+                        </span>
                       )}
                     </p>
                   </button>
-<Link
+                  <Link
                     to={`/places/${place.id}`}
                     state={{ backTo: '/places' }}
                     aria-label={`${t('common.details')}: ${place.name}`}
-                    className={`inline-flex min-h-10 shrink-0 items-center justify-center rounded-full border border-brand-200 px-4 text-sm font-semibold text-brand-700 shadow-sm transition focus-visible:outline-brand-600 ${
-                      active ? 'border-brand-300 bg-transparent' : 'border-brand-200 bg-white hover:border-brand-400 hover:bg-brand-50'
+                    className={`inline-flex min-h-10 min-h-11 shrink-0 items-center justify-center rounded-full border border-brand-200 px-4 text-sm font-semibold text-brand-700 shadow-sm transition focus-visible:outline-brand-600 ${
+                      active
+                        ? 'border-brand-300 bg-transparent'
+                        : 'border-brand-200 bg-white hover:border-brand-400 hover:bg-brand-50'
                     }`}
                   >
                     {t('common.details')}

@@ -7,7 +7,10 @@ export function ProfilePage() {
   return (
     <div>
       <PagePlaceholder title={t('nav.profile')} description="Sprint 7">
-        <Link to="/login" className="text-sm text-brand-700">
+        <Link
+          to="/login"
+          className="kodoko-button kodoko-button-secondary inline-flex px-4 py-2 text-sm font-semibold"
+        >
           {t('login.title')}
         </Link>
       </PagePlaceholder>

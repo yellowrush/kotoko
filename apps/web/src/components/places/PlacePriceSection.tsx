@@ -12,14 +12,21 @@ export function PlacePriceSection({ place }: PlacePriceSectionProps) {
 
   if (prices.length > 0 && first) {
     return (
-      <div className="mt-4 rounded-xl border border-gray-200 p-3">
-        <h3 className="text-sm font-semibold text-gray-700">{t('places.priceTitle')}</h3>
+      <div className="kodoko-panel mt-4 p-3">
+        <h3 className="text-sm font-semibold text-gray-700">
+          {t('places.priceTitle')}
+        </h3>
         <ul className="mt-2 divide-y divide-gray-100 text-sm">
           {prices.map((price) => (
-            <li key={price.id} className="flex items-baseline justify-between gap-2 py-1.5">
+            <li
+              key={price.id}
+              className="flex items-baseline justify-between gap-2 py-1.5"
+            >
               <span className="text-gray-600">
                 {price.labelJa}
-                {price.note ? <span className="ml-1 text-xs text-gray-400">{`(${price.note})`}</span> : null}
+                {price.note ? (
+                  <span className="ml-1 text-xs text-gray-400">{`(${price.note})`}</span>
+                ) : null}
               </span>
               <span className="font-medium text-gray-800">
                 {price.free || price.amountYen === undefined
@@ -44,7 +51,9 @@ export function PlacePriceSection({ place }: PlacePriceSectionProps) {
             {t('places.priceSource')}
           </a>
         </p>
-        <p className="mt-1 text-xs text-gray-400">{t('places.priceDisclaimer')}</p>
+        <p className="mt-1 text-xs text-gray-400">
+          {t('places.priceDisclaimer')}
+        </p>
       </div>
     );
   }
@@ -52,7 +61,10 @@ export function PlacePriceSection({ place }: PlacePriceSectionProps) {
   if (place.priceLevel !== undefined) {
     return (
       <p className="mt-4 text-sm text-gray-500">
-        {t('places.priceLabel')}: {place.priceLevel > 0 ? '￥'.repeat(place.priceLevel) : t('places.free')}
+        {t('places.priceLabel')}:{' '}
+        {place.priceLevel > 0
+          ? '￥'.repeat(place.priceLevel)
+          : t('places.free')}
       </p>
     );
   }

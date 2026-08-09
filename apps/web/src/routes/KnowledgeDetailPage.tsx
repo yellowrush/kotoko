@@ -1,7 +1,10 @@
 ﻿import { useEffect } from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 import { useAppTranslation } from '../hooks/useAppTranslation';
-import { useKnowledgeDetail, useKnowledgeProgress } from '../hooks/useKnowledge';
+import {
+  useKnowledgeDetail,
+  useKnowledgeProgress,
+} from '../hooks/useKnowledge';
 import { PageHeader } from '../components/PageHeader';
 import { detailBackTo } from '../lib/navigation';
 
@@ -9,7 +12,12 @@ export function KnowledgeDetailPage() {
   const { t } = useAppTranslation();
   const location = useLocation();
   const { knowledgeId } = useParams();
-  const { data: item, isLoading, isError, refetch } = useKnowledgeDetail(knowledgeId);
+  const {
+    data: item,
+    isLoading,
+    isError,
+    refetch,
+  } = useKnowledgeDetail(knowledgeId);
   const { markRead } = useKnowledgeProgress();
   const backTo = detailBackTo(location.state, '/knowledge');
 
@@ -26,7 +34,11 @@ export function KnowledgeDetailPage() {
     return (
       <div className="flex flex-col items-center gap-3 py-16 text-sm text-gray-500">
         <p>{t('common.error')}</p>
-        <button type="button" onClick={() => void refetch()} className="text-brand-700">
+        <button
+          type="button"
+          onClick={() => void refetch()}
+          className="text-brand-700"
+        >
           {t('common.retry')}
         </button>
       </div>
@@ -40,7 +52,10 @@ export function KnowledgeDetailPage() {
       {item.categories.length > 0 && (
         <div className="flex flex-wrap gap-1">
           {item.categories.map((category) => (
-            <span key={category} className="rounded-full bg-brand-50 px-2 py-0.5 text-xs text-brand-700">
+            <span
+              key={category}
+              className="kodoko-badge rounded-full bg-brand-50 px-2.5 py-1 text-xs font-semibold text-brand-700"
+            >
               {t(`knowledge.categories.${category}`)}
             </span>
           ))}
@@ -58,8 +73,10 @@ export function KnowledgeDetailPage() {
       </div>
 
       {item.sourceReferences.length > 0 && (
-        <div className="mt-6 rounded-xl bg-gray-50 p-3">
-          <h2 className="text-sm font-semibold text-gray-600">{t('knowledge.sources')}</h2>
+        <div className="kodoko-panel mt-6 p-3">
+          <h2 className="text-sm font-semibold text-gray-600">
+            {t('knowledge.sources')}
+          </h2>
           <ul className="mt-2 flex flex-col gap-1">
             {item.sourceReferences.map((source, index) => (
               <li key={index} className="text-sm">

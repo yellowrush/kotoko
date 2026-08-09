@@ -1,7 +1,13 @@
 ﻿import { useAppTranslation } from '../../hooks/useAppTranslation';
 import type { Place, PlaceMedia } from '@kodoko/domain';
 
-function PlaceMediaSlide({ media, index }: { media: PlaceMedia; index: number }) {
+function PlaceMediaSlide({
+  media,
+  index,
+}: {
+  media: PlaceMedia;
+  index: number;
+}) {
   if (media.type === 'video') {
     return (
       <div className="relative h-72 w-full shrink-0 snap-center bg-black">
@@ -32,12 +38,15 @@ type PlaceMediaCarouselProps = {
   fallbackEmoji: string;
 };
 
-export function PlaceMediaCarousel({ place, fallbackEmoji }: PlaceMediaCarouselProps) {
+export function PlaceMediaCarousel({
+  place,
+  fallbackEmoji,
+}: PlaceMediaCarouselProps) {
   const { t } = useAppTranslation();
 
   if (place.media.length === 0) {
     return (
-      <div className="flex h-40 flex-col items-center justify-center gap-2 rounded-xl bg-gradient-to-br from-brand-100 to-amber-50 text-sm text-gray-500">
+      <div className="kodoko-panel flex h-40 flex-col items-center justify-center gap-2 bg-gradient-to-br from-brand-100 to-amber-50 text-sm font-medium text-gray-500">
         <span className="text-6xl">{fallbackEmoji}</span>
         <span>{t('places.mediaPending')}</span>
       </div>
@@ -45,7 +54,7 @@ export function PlaceMediaCarousel({ place, fallbackEmoji }: PlaceMediaCarouselP
   }
 
   return (
-    <div className="relative overflow-hidden rounded-xl">
+    <div className="relative overflow-hidden rounded-lg border border-brand-100 shadow-[0_4px_0_rgba(249,95,20,0.08),0_14px_24px_rgba(120,53,15,0.14)]">
       <div className="no-scrollbar flex snap-x snap-mandatory overflow-x-auto">
         {place.media.map((media, index) => (
           <PlaceMediaSlide key={media.id} media={media} index={index} />

@@ -9,13 +9,22 @@ import { useActiveChild } from '../hooks/useActiveChild';
 import { filterPlaces } from '../lib/placeFilters';
 
 const PlacesMap = lazy(() =>
-  import('../components/places/PlacesMap').then((mod) => ({ default: mod.PlacesMap })),
+  import('../components/places/PlacesMap').then((mod) => ({
+    default: mod.PlacesMap,
+  })),
 );
 
 export function PlacesMapPage() {
   const { t } = useAppTranslation();
   const { data: places, isLoading, isError, refetch } = usePlaces();
-  const { filters, setCategory, setIndoorOutdoor, setRadius, setPlaceId, toggleTag } = usePlacesFilters();
+  const {
+    filters,
+    setCategory,
+    setIndoorOutdoor,
+    setRadius,
+    setPlaceId,
+    toggleTag,
+  } = usePlacesFilters();
   const { status, coords, requested, request } = useGeolocation();
   const { active } = useActiveChild();
   const [tileError, setTileError] = useState(false);
@@ -25,7 +34,12 @@ export function PlacesMapPage() {
   const ageMonths = active ? calculateAgeMonths(active.birthDate) : undefined;
 
   const filtered = useMemo(
-    () => filterPlaces(places ?? [], { ...filters, userLocation: coords ?? DEFAULT_CENTER }, ageMonths),
+    () =>
+      filterPlaces(
+        places ?? [],
+        { ...filters, userLocation: coords ?? DEFAULT_CENTER },
+        ageMonths,
+      ),
     [places, filters, coords, ageMonths],
   );
 
@@ -43,7 +57,11 @@ export function PlacesMapPage() {
     return (
       <div className="flex min-h-0 flex-1 flex-col items-center justify-center gap-3 text-sm text-gray-500">
         <p>{t('common.error')}</p>
-        <button type="button" onClick={() => void refetch()} className="text-brand-700">
+        <button
+          type="button"
+          onClick={() => void refetch()}
+          className="text-brand-700"
+        >
           {t('common.retry')}
         </button>
       </div>
@@ -96,7 +114,7 @@ export function PlacesMapPage() {
           <button
             type="button"
             onClick={request}
-            className="pointer-events-auto flex min-h-11 items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 shadow-md"
+            className="kodoko-control pointer-events-auto flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold text-gray-700"
           >
             <span aria-hidden>📍</span>
             {t('places.locate')}
@@ -110,7 +128,7 @@ export function PlacesMapPage() {
         )}
       </div>
 
-      <div className="z-10 bg-white pb-12">
+      <div className="z-10 bg-white/80 pb-24">
         <PlaceBottomSheet
           places={filtered}
           selectedPlaceId={filters.placeId}

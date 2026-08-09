@@ -35,7 +35,7 @@ export function ChildAvatar({
   return (
     <span
       aria-hidden
-      className={`relative inline-flex shrink-0 items-center justify-center rounded-full ${bg} ${SIZES[size]}`}
+      className={`relative inline-flex shrink-0 items-center justify-center rounded-full ring-2 ring-white shadow-[0_3px_0_rgba(249,95,20,0.14),0_10px_18px_rgba(120,53,15,0.12)] ${bg} ${SIZES[size]}`}
     >
       {pickEmoji(gender, ageMonths)}
       {selected !== undefined && (

@@ -27,24 +27,33 @@ export function FavoritesPage() {
       ) : (
         <ul className="flex flex-col gap-2">
           {favorites.map((place) => (
-            <li key={place.id} className="flex items-center gap-2 rounded-lg border border-gray-100 bg-white p-2">
+            <li
+              key={place.id}
+              className="kodoko-list-item flex items-center gap-2 p-2"
+            >
               <Link
                 to={`/places/${place.id}`}
                 state={{ backTo: '/favorites' }}
                 className="flex min-w-0 flex-1 items-center gap-2"
               >
-                <span className="shrink-0 text-lg">{CATEGORY_ICON[place.category]}</span>
+                <span className="shrink-0 text-lg">
+                  {CATEGORY_ICON[place.category]}
+                </span>
                 <span className="min-w-0">
-                  <span className="block truncate text-sm font-medium">{place.name}</span>
+                  <span className="block truncate text-sm font-medium">
+                    {place.name}
+                  </span>
                   <span className="text-xs text-gray-500">
-                    {coords ? formatDistanceKm(haversineDistanceKm(coords, place)) : place.address}
+                    {coords
+                      ? formatDistanceKm(haversineDistanceKm(coords, place))
+                      : place.address}
                   </span>
                 </span>
               </Link>
               <button
                 type="button"
                 onClick={() => void toggle(place.id)}
-                className="shrink-0 rounded-lg border border-rose-300 px-2 py-1 text-xs font-medium text-rose-600"
+                className="min-h-10 shrink-0 rounded-full border border-rose-300 bg-white px-3 py-1 text-xs font-semibold text-rose-600 shadow-sm"
               >
                 {t('places.favorited')}
               </button>

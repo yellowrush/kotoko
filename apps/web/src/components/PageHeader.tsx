@@ -12,9 +12,11 @@ export function PagePlaceholder({
   children?: ReactNode;
 }) {
   return (
-    <section className="flex flex-col items-center gap-2 py-16 text-center">
-      <h1 className="text-lg font-semibold">{title}</h1>
-      <p className="max-w-sm text-sm text-gray-500">{description}</p>
+    <section className="kodoko-card flex flex-col items-center gap-3 px-5 py-12 text-center">
+      <h1 className="text-xl font-bold text-gray-900">{title}</h1>
+      <p className="max-w-sm text-sm font-medium text-gray-500">
+        {description}
+      </p>
       {children}
     </section>
   );
@@ -36,13 +38,15 @@ export function PageHeader({
       {backTo && (
         <Link
           to={backTo}
-          className="mb-1 inline-flex items-center text-sm font-medium text-gray-600 hover:text-brand-700"
+          className="mb-2 inline-flex min-h-10 items-center rounded-full border border-brand-100 bg-white/80 px-3 text-sm font-semibold text-gray-600 shadow-sm hover:bg-brand-50 hover:text-brand-700"
         >
           ← {t('common.back')}
         </Link>
       )}
-      <div className="flex items-center justify-between">
-        <h1 className="text-lg font-semibold">{title}</h1>
+      <div className="flex items-center justify-between gap-3">
+        <h1 className="text-xl font-bold leading-tight text-gray-900">
+          {title}
+        </h1>
         {action}
       </div>
     </div>

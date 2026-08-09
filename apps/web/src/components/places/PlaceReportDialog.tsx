@@ -17,7 +17,9 @@ export function PlaceReportDialog({
   const [type, setType] = useState<PlaceReportType>('business_hours');
   const [detail, setDetail] = useState('');
   const [email, setEmail] = useState('');
-  const [status, setStatus] = useState<'idle' | 'queued' | 'done' | 'error'>('idle');
+  const [status, setStatus] = useState<'idle' | 'queued' | 'done' | 'error'>(
+    'idle',
+  );
   const [submitting, setSubmitting] = useState(false);
 
   if (!open) return null;
@@ -58,13 +60,17 @@ export function PlaceReportDialog({
         }}
         className="fixed inset-0 bg-black/40"
       />
-      <div className="relative z-10 w-full max-w-md rounded-t-2xl bg-white p-4 shadow-xl sm:rounded-2xl">
-        <h3 className="text-base font-semibold text-gray-900">{t('placeReport.title')}</h3>
+      <div className="kodoko-panel relative z-10 w-full max-w-md rounded-t-2xl bg-white p-4 shadow-xl sm:rounded-lg">
+        <h3 className="text-base font-semibold text-gray-900">
+          {t('placeReport.title')}
+        </h3>
 
         {status === 'done' || status === 'queued' ? (
           <div className="flex flex-col gap-3 py-6 text-center">
             <p className="text-sm text-gray-700">
-              {status === 'queued' ? t('placeReport.queuedOffline') : t('placeReport.submitted')}
+              {status === 'queued'
+                ? t('placeReport.queuedOffline')
+                : t('placeReport.submitted')}
             </p>
             <button
               type="button"
@@ -72,7 +78,7 @@ export function PlaceReportDialog({
                 reset();
                 onClose();
               }}
-              className="mx-auto rounded-lg border border-gray-300 px-4 py-1.5 text-sm text-gray-700"
+              className="kodoko-button kodoko-button-secondary mx-auto px-4 py-1.5 text-sm font-semibold"
             >
               {t('placeReport.close')}
             </button>
@@ -82,11 +88,13 @@ export function PlaceReportDialog({
             <p className="text-xs text-gray-500">{t('placeReport.why')}</p>
 
             <label className="text-sm text-gray-700">
-              <span className="text-xs font-medium text-gray-500">{t('placeReport.typeLabel')}</span>
+              <span className="text-xs font-medium text-gray-500">
+                {t('placeReport.typeLabel')}
+              </span>
               <select
                 value={type}
                 onChange={(e) => setType(e.target.value as PlaceReportType)}
-                className="mt-1 w-full rounded-lg border border-gray-300 p-2 text-sm outline-none focus:border-brand-500"
+                className="mt-1 w-full rounded-full border border-brand-100 p-2 text-sm outline-none focus:border-brand-500"
               >
                 {PLACE_REPORT_TYPES.map((rt) => (
                   <option key={rt} value={rt}>
@@ -97,29 +105,35 @@ export function PlaceReportDialog({
             </label>
 
             <label className="text-sm text-gray-700">
-              <span className="text-xs font-medium text-gray-500">{t('placeReport.detailLabel')}</span>
+              <span className="text-xs font-medium text-gray-500">
+                {t('placeReport.detailLabel')}
+              </span>
               <textarea
                 value={detail}
                 onChange={(e) => setDetail(e.target.value)}
                 placeholder={t('placeReport.detailPlaceholder')}
                 maxLength={2000}
                 rows={3}
-                className="mt-1 w-full resize-none rounded-lg border border-gray-300 p-2 text-sm outline-none focus:border-brand-500"
+                className="mt-1 w-full resize-none rounded-lg border border-brand-100 p-2 text-sm outline-none focus:border-brand-500"
               />
             </label>
 
             <label className="text-sm text-gray-700">
-              <span className="text-xs font-medium text-gray-500">{t('placeReport.emailLabel')}</span>
+              <span className="text-xs font-medium text-gray-500">
+                {t('placeReport.emailLabel')}
+              </span>
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="mt-1 w-full rounded-lg border border-gray-300 p-2 text-sm outline-none focus:border-brand-500"
+                className="mt-1 w-full rounded-full border border-brand-100 p-2 text-sm outline-none focus:border-brand-500"
               />
             </label>
 
             {status === 'error' && (
-              <p className="text-xs text-rose-600">{t('placeReport.submitFailed')}</p>
+              <p className="text-xs text-rose-600">
+                {t('placeReport.submitFailed')}
+              </p>
             )}
 
             <div className="mt-1 flex justify-end gap-2">
@@ -129,7 +143,7 @@ export function PlaceReportDialog({
                   reset();
                   onClose();
                 }}
-                className="rounded-lg border border-gray-300 px-3 py-1.5 text-sm text-gray-600"
+                className="kodoko-button kodoko-button-secondary min-h-10 px-3 py-1.5 text-sm font-semibold"
               >
                 {t('placeReport.close')}
               </button>
@@ -137,7 +151,7 @@ export function PlaceReportDialog({
                 type="button"
                 disabled={submitting}
                 onClick={() => void handleSubmit()}
-                className="rounded-lg bg-brand-600 px-3 py-1.5 text-sm font-medium text-white disabled:opacity-40"
+                className="kodoko-button kodoko-button-primary min-h-10 px-3 py-1.5 text-sm font-semibold disabled:opacity-40"
               >
                 {t('placeReport.submit')}
               </button>

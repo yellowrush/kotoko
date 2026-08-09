@@ -12,7 +12,7 @@ export function PolicyStatusBadge({ status }: { status: string }) {
   const { t } = useAppTranslation();
   return (
     <span
-      className={`shrink-0 rounded-full px-2 py-0.5 text-xs font-medium ${STATUS_STYLES[status] ?? STATUS_STYLES.new}`}
+      className={`kodoko-badge shrink-0 rounded-full px-2 py-0.5 text-xs font-semibold ${STATUS_STYLES[status] ?? STATUS_STYLES.new}`}
     >
       {t(`policies.status.${status}`)}
     </span>

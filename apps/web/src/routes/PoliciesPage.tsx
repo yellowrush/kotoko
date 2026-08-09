@@ -18,13 +18,19 @@ type PolicyView = 'applicable' | 'notApplicable' | 'all';
 
 const POLICY_VIEWS: PolicyView[] = ['applicable', 'notApplicable', 'all'];
 
-function PolicyItem({ policy, status }: { policy: Policy; status: PolicyTaskState['status'] }) {
+function PolicyItem({
+  policy,
+  status,
+}: {
+  policy: Policy;
+  status: PolicyTaskState['status'];
+}) {
   const { t } = useAppTranslation();
   return (
     <Link
       to={`/policies/${policy.id}`}
       state={{ backTo: '/policies' }}
-      className="grid grid-cols-[auto_1fr] gap-3 rounded-xl border border-gray-200 bg-white p-3 shadow-sm transition hover:border-brand-200 hover:bg-brand-50/30"
+      className="kodoko-list-item grid grid-cols-[auto_1fr] gap-3 p-3 transition hover:border-brand-200 hover:bg-brand-50/30"
     >
       <span className="mt-0.5 text-xl" aria-hidden="true">
         📌
@@ -35,11 +41,14 @@ function PolicyItem({ policy, status }: { policy: Policy; status: PolicyTaskStat
           <PolicyStatusBadge status={status} />
         </p>
         {policy.contextHint && (
-          <p className="mt-1 line-clamp-2 text-sm text-gray-600">{policy.contextHint}</p>
+          <p className="mt-1 line-clamp-2 text-sm text-gray-600">
+            {policy.contextHint}
+          </p>
         )}
         {policy.applicationDeadlineAt && (
           <p className="mt-2 text-sm text-gray-500">
-            {t('policies.deadline')}: {policy.applicationDeadlineAt.slice(0, 10)}
+            {t('policies.deadline')}:{' '}
+            {policy.applicationDeadlineAt.slice(0, 10)}
             {daysUntil(policy.applicationDeadlineAt) >= 0 &&
               `（${t('policies.daysLeft', { days: daysUntil(policy.applicationDeadlineAt) })}）`}
           </p>
@@ -64,22 +73,24 @@ export function PoliciesPage() {
       .filter(
         (policy) =>
           children.length === 0 ||
-          !children.some((child) =>
-            checkPolicyFor(policy, {
-              birthDate: child.birthDate,
-              municipalityCode: preference?.municipalityCode,
-            }).matched,
+          !children.some(
+            (child) =>
+              checkPolicyFor(policy, {
+                birthDate: child.birthDate,
+                municipalityCode: preference?.municipalityCode,
+              }).matched,
           ),
       )
       .map((policy) => ({ policy, status: 'new' as const }));
 
     const matchedItems = list
       .map((policy) => {
-        const matchedChildren = children.filter((child) =>
-          checkPolicyFor(policy, {
-            birthDate: child.birthDate,
-            municipalityCode: preference?.municipalityCode,
-          }).matched,
+        const matchedChildren = children.filter(
+          (child) =>
+            checkPolicyFor(policy, {
+              birthDate: child.birthDate,
+              municipalityCode: preference?.municipalityCode,
+            }).matched,
         );
         if (matchedChildren.length === 0) return null;
 
@@ -95,7 +106,10 @@ export function PoliciesPage() {
     return {
       applicable: matchedItems,
       notMatched: children.length > 0 ? unmatchedItems : [],
-      all: children.length > 0 ? [...matchedItems, ...unmatchedItems] : unmatchedItems,
+      all:
+        children.length > 0
+          ? [...matchedItems, ...unmatchedItems]
+          : unmatchedItems,
     };
   }, [policies, children, preference, statusFor]);
 
@@ -115,23 +129,34 @@ export function PoliciesPage() {
     <div>
       <PageHeader title={t('policies.title')} backTo="/home" />
 
-      {isLoading && <p className="text-sm text-gray-400">{t('common.loading')}</p>}
+      {isLoading && (
+        <p className="text-sm text-gray-400">{t('common.loading')}</p>
+      )}
 
       {isError && (
         <div className="flex items-center gap-2 text-sm text-gray-500">
           <p>{t('common.error')}</p>
-          <button type="button" onClick={() => void refetch()} className="text-brand-700">
+          <button
+            type="button"
+            onClick={() => void refetch()}
+            className="text-brand-700"
+          >
             {t('common.retry')}
           </button>
         </div>
       )}
 
-      {!isError && children.length === 0 && <p className="mb-3 text-sm text-gray-500">{t('policies.noChild')}</p>}
+      {!isError && children.length === 0 && (
+        <p className="mb-3 text-sm text-gray-500">{t('policies.noChild')}</p>
+      )}
 
       {!isError && !isLoading && (
-        <div className="mb-4 flex rounded-xl bg-gray-100 p-1 text-sm">
+        <div className="kodoko-segmented mb-4 flex p-1 text-sm">
           {POLICY_VIEWS.map((option) => {
-            const activeOption = children.length === 0 && option !== 'all' ? false : view === option;
+            const activeOption =
+              children.length === 0 && option !== 'all'
+                ? false
+                : view === option;
             return (
               <button
                 key={option}
@@ -139,10 +164,14 @@ export function PoliciesPage() {
                 onClick={() => setView(option)}
                 disabled={children.length === 0 && option !== 'all'}
                 className={`touch-target flex-1 rounded-lg px-2 py-1 font-medium ${
-                  activeOption ? 'bg-white text-brand-700 shadow-sm' : 'text-gray-500'
+                  activeOption
+                    ? 'bg-white text-brand-800 shadow-sm'
+                    : 'text-gray-500 hover:bg-white/50'
                 } disabled:text-gray-300`}
               >
-                {option === 'all' ? t('knowledge.views.all') : t(`policies.sections.${option}`)}
+                {option === 'all'
+                  ? t('knowledge.views.all')
+                  : t(`policies.sections.${option}`)}
               </button>
             );
           })}
@@ -174,8 +203,12 @@ const POLICY_STATUS_PRIORITY: Record<PolicyTaskState['status'], number> = {
   dismissed: 4,
 };
 
-function bestPolicyStatus(statuses: PolicyTaskState['status'][]): PolicyTaskState['status'] {
+function bestPolicyStatus(
+  statuses: PolicyTaskState['status'][],
+): PolicyTaskState['status'] {
   return statuses.reduce((best, current) =>
-    POLICY_STATUS_PRIORITY[current] < POLICY_STATUS_PRIORITY[best] ? current : best,
+    POLICY_STATUS_PRIORITY[current] < POLICY_STATUS_PRIORITY[best]
+      ? current
+      : best,
   );
 }

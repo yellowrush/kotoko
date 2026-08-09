@@ -9,7 +9,10 @@ type PlaceLabelChipsProps = {
   showLocation?: boolean;
 };
 
-export function PlaceLabelChips({ place, showLocation = true }: PlaceLabelChipsProps) {
+export function PlaceLabelChips({
+  place,
+  showLocation = true,
+}: PlaceLabelChipsProps) {
   const { t } = useAppTranslation();
 
   const labels = showLocation
@@ -23,7 +26,7 @@ export function PlaceLabelChips({ place, showLocation = true }: PlaceLabelChipsP
       {labels.map((label) => (
         <span
           key={label}
-          className="inline-flex items-center gap-1 rounded-full border border-brand-200 bg-brand-50 px-2.5 py-1 text-xs font-medium text-brand-800"
+          className="kodoko-badge inline-flex items-center gap-1 rounded-full border border-brand-200 bg-brand-50 px-2.5 py-1 text-xs font-semibold text-brand-800"
         >
           <span aria-hidden>{LABEL_ICON[label]}</span>
           {t(`places.labels.${label}`)}

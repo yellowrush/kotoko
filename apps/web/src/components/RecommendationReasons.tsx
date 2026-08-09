@@ -18,10 +18,15 @@ const REASON_I18N: Record<string, { key: string; withDistance?: boolean }> = {
   distance: { key: 'home.reasons.distance', withDistance: true },
 };
 
-export function RecommendationReasons({ reasonCodes, distanceKm }: RecommendationReasonsProps) {
+export function RecommendationReasons({
+  reasonCodes,
+  distanceKm,
+}: RecommendationReasonsProps) {
   const { t } = useAppTranslation();
 
-  const visible = [...new Set(reasonCodes)].filter((code) => code in REASON_I18N);
+  const visible = [...new Set(reasonCodes)].filter(
+    (code) => code in REASON_I18N,
+  );
   if (visible.length === 0) return null;
 
   return (
@@ -35,7 +40,10 @@ export function RecommendationReasons({ reasonCodes, distanceKm }: Recommendatio
             ? `${t(key)} ${formatDistanceKm(distanceKm)}`
             : t(key);
         return (
-          <span key={code} className="rounded-full bg-brand-50 px-2 py-0.5 text-sm text-brand-700">
+          <span
+            key={code}
+            className="kodoko-badge rounded-full bg-brand-50 px-2.5 py-0.5 text-sm font-semibold text-brand-700"
+          >
             {label}
           </span>
         );

@@ -118,7 +118,7 @@ export function AppLayout() {
                   key={item.to}
                   to={item.to}
                   className={({ isActive }) =>
-                    `flex min-h-12 flex-col items-center justify-center gap-1 rounded-full px-2 py-2 text-sm font-bold transition sm:text-base ${
+                    `mb-3 flex min-h-12 flex-col items-center justify-center gap-1 rounded-full px-2 py-2 text-sm font-bold transition sm:text-base ${
                       item.key === 'profile' ? 'col-start-1' : 'col-start-3'
                     } ${
                       isActive

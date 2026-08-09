@@ -5,6 +5,8 @@
     "loading": "読み込み中",
     "error": "エラーが発生しました",
     "retry": "再試行",
+    "tryAgainLater": "時間をおいてもう一度お試しください。",
+    "appUpdateAvailable": "新しいバージョンを読み込むため、ページを再読み込みしてください。",
     "save": "保存",
     "cancel": "キャンセル",
     "delete": "削除",

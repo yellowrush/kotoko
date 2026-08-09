@@ -7,9 +7,10 @@ import { usePlaces, usePlacesFilters } from '../hooks/usePlaces';
 import { DEFAULT_CENTER, useGeolocation } from '../hooks/useGeolocation';
 import { useActiveChild } from '../hooks/useActiveChild';
 import { filterPlaces } from '../lib/placeFilters';
+import { lazyWithStaleAssetRecovery } from '../lib/staleAssets';
 
 const PlacesMap = lazy(() =>
-  import('../components/places/PlacesMap').then((mod) => ({
+  lazyWithStaleAssetRecovery(() => import('../components/places/PlacesMap')).then((mod) => ({
     default: mod.PlacesMap,
   })),
 );

@@ -53,7 +53,10 @@ export default defineConfig({
         ],
       },
       workbox: {
+        clientsClaim: true,
+        cleanupOutdatedCaches: true,
         globPatterns: ['**/*.{js,css,html,svg,png,ico}'],
+        skipWaiting: true,
         // GitHub Pages 專案站台沒有 SPA fallback：真實檔案路徑由 404.html 承載，
         // Service Worker 離線導航則回退到已預快取的 index.html。
         navigateFallback: `${base}index.html`,

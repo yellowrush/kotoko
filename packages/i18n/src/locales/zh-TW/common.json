@@ -5,6 +5,8 @@
     "loading": "載入中",
     "error": "發生錯誤",
     "retry": "重試",
+    "tryAgainLater": "請稍後再試。",
+    "appUpdateAvailable": "需要重新載入頁面以使用最新版本。",
     "save": "儲存",
     "cancel": "取消",
     "delete": "刪除",

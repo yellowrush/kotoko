@@ -163,7 +163,7 @@ export function PoliciesPage() {
                 type="button"
                 onClick={() => setView(option)}
                 disabled={children.length === 0 && option !== 'all'}
-                className={`touch-target flex-1 rounded-lg px-2 py-1 font-medium ${
+                className={`touch-target flex-1 rounded-[1.35rem] px-2 py-1 font-medium first:rounded-l-full last:rounded-r-full ${
                   activeOption
                     ? 'bg-white text-brand-800 shadow-sm'
                     : 'text-gray-500 hover:bg-white/50'

@@ -16,7 +16,7 @@ function PlacesLineIcon() {
       aria-hidden="true"
       focusable="false"
       viewBox="0 0 48 48"
-      className="h-9 w-9 fill-none stroke-current"
+      className="kodoko-bottom-nav-flag h-9 w-9 fill-none stroke-current"
     >
       <path
         d="M19 36V11"
@@ -98,9 +98,9 @@ export function AppLayout() {
                     key={item.to}
                     to={item.to}
                     className={({ isActive }) =>
-                      `absolute left-1/2 top-1/2 z-10 flex h-[5.4rem] w-[5.4rem] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-1 rounded-full border-[3px] px-2 text-center font-extrabold transition sm:h-24 sm:w-24 ${
+                      `kodoko-bottom-nav-primary absolute left-1/2 top-1/2 z-10 flex h-[5.4rem] w-[5.4rem] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-1 rounded-full border-[3px] px-2 text-center font-extrabold transition sm:h-24 sm:w-24 ${
                         isActive
-                          ? 'border-brand-800 bg-brand-600 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.28),0_6px_0_rgba(119,39,4,0.38),0_20px_30px_rgba(120,53,15,0.3)]'
+                          ? 'is-active border-brand-800 bg-brand-600 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.28),0_6px_0_rgba(119,39,4,0.38),0_20px_30px_rgba(120,53,15,0.3)]'
                           : 'border-brand-300 bg-brand-50 text-brand-800 shadow-[inset_0_1px_0_rgba(255,255,255,0.8),0_6px_0_rgba(249,95,20,0.22),0_18px_28px_rgba(120,53,15,0.22)] hover:bg-brand-100'
                       }`
                     }
@@ -118,11 +118,11 @@ export function AppLayout() {
                   key={item.to}
                   to={item.to}
                   className={({ isActive }) =>
-                    `flex h-12 self-center rounded-full px-2 py-2 text-sm font-bold transition sm:text-base ${
+                    `kodoko-bottom-nav-side flex h-12 self-center rounded-full px-2 py-2 text-sm font-bold transition sm:text-base ${
                       item.key === 'profile' ? 'col-start-1' : 'col-start-3'
                     } ${
                       isActive
-                        ? 'items-center justify-center bg-brand-100 text-brand-800 shadow-inner'
+                        ? 'is-active items-center justify-center bg-brand-100 text-brand-800 shadow-inner'
                         : 'items-center justify-center text-gray-500 hover:bg-brand-50'
                     }`
                   }

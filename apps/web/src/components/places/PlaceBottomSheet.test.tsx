@@ -34,7 +34,13 @@ describe('PlaceBottomSheet', () => {
 
     render(
       <MemoryRouter>
-        <PlaceBottomSheet places={[place()]} selectedPlaceId={undefined} onSelect={onSelect} />
+        <PlaceBottomSheet
+          places={[place()]}
+          selectedPlaceId={undefined}
+          collapsed={false}
+          onToggleCollapsed={vi.fn()}
+          onSelect={onSelect}
+        />
       </MemoryRouter>,
     );
 

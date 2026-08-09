@@ -142,7 +142,7 @@ export function HomePage() {
   const { data: knowledge, isLoading: knowledgeLoading } = useKnowledge();
   const { readIds } = useKnowledgeProgress();
   const { data: policies, isLoading: policiesLoading } = usePolicies();
-  const { statusFor } = usePolicyTasksForChildren(selectedIds);
+  const { statusFor, loading: policyTasksLoading } = usePolicyTasksForChildren(selectedIds);
 
   // グループ人数は選択した子どもの人数に合わせて初期化する（最大 3 人以上）。
   useEffect(() => {
@@ -167,22 +167,24 @@ export function HomePage() {
           )
           .map((child) => statusFor(policy.id, child.id))
           .filter((status) => status !== 'dismissed');
-        if (statuses.length === 0) return null;
+if (statuses.length === 0) return null;
         return {
           policy,
           priority: Math.min(...statuses.map(policyStatusPriority)),
+          unread:
+            !policyTasksLoading && statuses.length > 0 && statuses.every((status) => status === 'new'),
         };
       })
-      .filter((item): item is { policy: Policy; priority: number } => item !== null)
+      .filter((item): item is { policy: Policy; priority: number; unread: boolean } => item !== null)
       .sort((a, b) => {
         if (a.priority !== b.priority) return a.priority - b.priority;
         const aDeadline = a.policy.applicationDeadlineAt?.slice(0, 10) ?? '9999-12-31';
         const bDeadline = b.policy.applicationDeadlineAt?.slice(0, 10) ?? '9999-12-31';
         return aDeadline.localeCompare(bDeadline);
       })
-      .map((item) => item.policy);
+      .map((item) => ({ policy: item.policy, unread: item.unread }));
     return list.slice(0, 3);
-  }, [policies, selected, preference, statusFor]);
+  }, [policies, selected, preference, statusFor, policyTasksLoading]);
 
   function renderWeatherLabel(): string {
     if (!coords) return t('home.weatherUnavailable');
@@ -469,22 +471,30 @@ export function HomePage() {
           <p className="mt-2 text-sm text-gray-400">{t('knowledge.noContent')}</p>
         ) : (
           <ul className="mt-2 flex flex-col gap-2">
-            {weeklyKnowledge.map((item) => (
-              <li key={item.id}>
-                <Link
-                  to={`/knowledge/${item.id}`}
-                  className="flex min-h-12 items-center gap-3 rounded-xl border border-gray-200 bg-white px-3 py-2 shadow-sm hover:border-brand-200 hover:bg-brand-50/30"
-                >
-                  <span className="text-lg" aria-hidden="true">📘</span>
-                  <p className="flex min-w-0 items-center gap-2 text-sm text-gray-700">
-                    {!readIds.has(item.id) && (
-                      <span className="h-2 w-2 shrink-0 rounded-full bg-brand-600" aria-hidden="true" />
-                    )}
-                    <span className="min-w-0 truncate font-medium">{item.title}</span>
-                  </p>
-                </Link>
-              </li>
-            ))}
+            {weeklyKnowledge.map((item) => {
+              const unread = !readIds.has(item.id);
+              return (
+                <li key={item.id}>
+                  <Link
+                    to={`/knowledge/${item.id}`}
+                    className={`flex min-h-14 items-center gap-3 rounded-xl border px-3 py-2 shadow-sm transition hover:border-brand-300 ${
+                      unread
+                        ? 'border-brand-300 bg-brand-50/70 hover:bg-brand-50'
+                        : 'border-gray-200 bg-white hover:bg-brand-50/30'
+                    }`}
+                  >
+                    <span className="text-lg" aria-hidden="true">📘</span>
+                    <p
+                      className={`min-w-0 flex-1 truncate text-sm ${
+                        unread ? 'font-semibold text-gray-900' : 'font-medium text-gray-700'
+                      }`}
+                    >
+                      {item.title}
+                    </p>
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         )}
       </Card>
@@ -502,22 +512,30 @@ export function HomePage() {
           <p className="mt-2 text-sm text-gray-400">{t('policies.noMatch')}</p>
         ) : (
           <ul className="mt-2 flex flex-col gap-2">
-            {policyReminders.map((policy) => (
+            {policyReminders.map(({ policy, unread }) => (
               <li key={policy.id}>
                 <Link
                   to={`/policies/${policy.id}`}
-                  className="block rounded-xl border border-gray-200 bg-white px-3 py-2 shadow-sm hover:border-brand-200 hover:bg-brand-50/30"
+                  className={`flex min-h-14 items-center gap-3 rounded-xl border px-3 py-2 shadow-sm transition hover:border-brand-300 ${
+                    unread
+                      ? 'border-brand-300 bg-brand-50/70 hover:bg-brand-50'
+                      : 'border-gray-200 bg-white hover:bg-brand-50/30'
+                  }`}
                 >
-                  <p className="flex items-center gap-2 text-sm font-medium text-gray-800">
-                    <span aria-hidden="true">📌</span>
-                    <span className="min-w-0 truncate">{policy.title}</span>
+                  <span aria-hidden="true">📌</span>
+                  <p
+                    className={`min-w-0 flex-1 truncate text-sm ${
+                      unread ? 'font-semibold text-gray-900' : 'font-medium text-gray-700'
+                    }`}
+                  >
+                    {policy.title}
                   </p>
                   {policy.applicationDeadlineAt && (
-                    <p className="text-xs text-gray-400">
+                    <span className="max-w-[45%] shrink-0 truncate text-xs text-gray-400">
                       {t('policies.deadline')}: {policy.applicationDeadlineAt.slice(0, 10)}
                       {daysUntil(policy.applicationDeadlineAt) >= 0 &&
                         `（${t('policies.daysLeft', { days: daysUntil(policy.applicationDeadlineAt) })}）`}
-                    </p>
+                    </span>
                   )}
                 </Link>
               </li>

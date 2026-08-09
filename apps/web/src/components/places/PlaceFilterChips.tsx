@@ -1,5 +1,4 @@
-﻿import { useState } from 'react';
-import { useAppTranslation } from '../../hooks/useAppTranslation';
+﻿import { useAppTranslation } from '../../hooks/useAppTranslation';
 import type { IndoorOutdoor, PlaceCategory } from '@kodoko/domain';
 import { CATEGORY_GROUP, PLACE_GROUPS } from '@kodoko/domain';
 import type { PlacesFilterState } from '../../hooks/usePlaces';
@@ -19,7 +18,6 @@ const CATEGORIES: PlaceCategory[] = [
   'event',
   'shop',
   'facility',
-  'other',
 ];
 
 const CATEGORY_GROUPS = PLACE_GROUPS.map((group) => ({
@@ -45,6 +43,8 @@ const RADIUS = [
 type PlaceFilterChipsProps = {
   filters: PlacesFilterState;
   resultCount: number;
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
   setCategory: (c: string | undefined) => void;
   setIndoorOutdoor: (v: string | undefined) => void;
   setRadius: (r: number | undefined) => void;
@@ -91,19 +91,20 @@ function ChipGroup({
 export function PlaceFilterChips({
   filters,
   resultCount,
+  open,
+  onOpenChange,
   setCategory,
   setIndoorOutdoor,
   setRadius,
   toggleTag,
 }: PlaceFilterChipsProps) {
   const { t } = useAppTranslation();
-  const [open, setOpen] = useState(false);
 
   return (
     <div className="relative">
       <button
         type="button"
-        onClick={() => setOpen((v) => !v)}
+        onClick={() => onOpenChange(!open)}
         aria-expanded={open}
         className="flex min-h-11 items-center gap-1.5 rounded-full border border-gray-200 bg-white px-3 py-1.5 text-sm font-medium text-gray-700 shadow-md"
       >
@@ -121,7 +122,7 @@ export function PlaceFilterChips({
           <button
             type="button"
             aria-label={t('common.collapse')}
-            onClick={() => setOpen(false)}
+            onClick={() => onOpenChange(false)}
             className="fixed inset-0 z-[20] cursor-default"
           />
           <div className="absolute left-0 top-full z-[30] mt-2 flex max-h-[min(70vh,28rem)] w-[min(92vw,24rem)] flex-col gap-2.5 overflow-y-auto overscroll-contain rounded-2xl border border-gray-200 bg-white p-3 shadow-xl">

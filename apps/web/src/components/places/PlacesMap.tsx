@@ -104,6 +104,14 @@ export function PlacesMap({
         if (!e.id || map.hasImage(e.id)) return;
         map.addImage(e.id, createFallbackIcon());
       });
+      // MapLibre 默认在控件初始接入时自动展开 attribution（maplibre-compact-show），
+      // 首次打开遮挡地图。样式加载完成后主动收起，用户仍可点击按钮展开。
+      map.on('load', () => {
+        const el = container.querySelector<HTMLElement>('.maplibregl-ctrl-attrib');
+        if (!el) return;
+        el.classList.remove('maplibregl-compact-show');
+        el.removeAttribute('open');
+      });
       mapRef.current = map;
       setMapReady(true);
     };

@@ -19,6 +19,8 @@ export function PlacesMapPage() {
   const { status, coords, requested, request } = useGeolocation();
   const { active } = useActiveChild();
   const [tileError, setTileError] = useState(false);
+  const [filterOpen, setFilterOpen] = useState(false);
+  const [sheetCollapsed, setSheetCollapsed] = useState(false);
 
   const ageMonths = active ? calculateAgeMonths(active.birthDate) : undefined;
 
@@ -80,6 +82,11 @@ export function PlacesMapPage() {
             <PlaceFilterChips
               filters={filters}
               resultCount={filtered.length}
+              open={filterOpen}
+              onOpenChange={(open) => {
+                setFilterOpen(open);
+                if (open) setSheetCollapsed(true);
+              }}
               setCategory={setCategory}
               setIndoorOutdoor={setIndoorOutdoor}
               setRadius={setRadius}
@@ -107,6 +114,14 @@ export function PlacesMapPage() {
         <PlaceBottomSheet
           places={filtered}
           selectedPlaceId={filters.placeId}
+          collapsed={sheetCollapsed}
+          onToggleCollapsed={() => {
+            setSheetCollapsed((v) => {
+              const next = !v;
+              if (next) setFilterOpen(false);
+              return next;
+            });
+          }}
           onSelect={setPlaceId}
         />
       </div>

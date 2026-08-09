@@ -1,4 +1,4 @@
-﻿import { useEffect, useRef, useState } from 'react';
+﻿import { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppTranslation } from '../../hooks/useAppTranslation';
 import type { FilteredPlace } from '../../lib/placeFilters';
@@ -8,12 +8,19 @@ import { CATEGORY_ICON } from './categoryMeta';
 type PlaceBottomSheetProps = {
   places: FilteredPlace[];
   selectedPlaceId?: string;
+  collapsed: boolean;
+  onToggleCollapsed: () => void;
   onSelect: (id: string) => void;
 };
 
-export function PlaceBottomSheet({ places, selectedPlaceId, onSelect }: PlaceBottomSheetProps) {
+export function PlaceBottomSheet({
+  places,
+  selectedPlaceId,
+  collapsed,
+  onToggleCollapsed,
+  onSelect,
+}: PlaceBottomSheetProps) {
   const { t } = useAppTranslation();
-  const [collapsed, setCollapsed] = useState(false);
   const listRef = useRef<HTMLDivElement>(null);
   const suppressScrollRef = useRef(false);
 
@@ -37,7 +44,7 @@ export function PlaceBottomSheet({ places, selectedPlaceId, onSelect }: PlaceBot
     <div className="pointer-events-auto flex flex-col rounded-t-2xl border-t border-gray-200 bg-white shadow-[0_-6px_20px_rgba(15,23,42,0.12)]">
       <button
         type="button"
-        onClick={() => setCollapsed((v) => !v)}
+        onClick={onToggleCollapsed}
         className="flex min-h-12 items-center justify-between gap-3 px-4 py-2 text-left focus-visible:outline-brand-600"
         aria-expanded={!collapsed}
         aria-label={collapsed ? t('common.expand') : t('common.collapse')}
@@ -71,11 +78,13 @@ export function PlaceBottomSheet({ places, selectedPlaceId, onSelect }: PlaceBot
             {sorted.map((place) => {
               const active = place.id === selectedPlaceId;
               return (
-                <li
+<li
                   key={place.id}
                   data-place-id={place.id}
-                  className={`flex items-start gap-2 rounded-xl border bg-white p-3 shadow-sm transition ${
-                    active ? 'border-brand-500 ring-2 ring-brand-100' : 'border-gray-200'
+                  className={`flex items-start gap-2 rounded-xl border p-3 shadow-sm transition ${
+                    active
+                      ? 'border-brand-500 bg-brand-50/80 ring-2 ring-brand-100'
+                      : 'border-gray-200 bg-white'
                   }`}
                 >
                   <button
@@ -85,7 +94,7 @@ export function PlaceBottomSheet({ places, selectedPlaceId, onSelect }: PlaceBot
                       onSelect(place.id);
                     }}
                     className={`min-w-0 flex-1 rounded-xl text-left transition focus-visible:outline-brand-600 ${
-                      active ? 'bg-brand-50/80' : 'bg-white hover:bg-gray-50'
+                      active ? 'bg-transparent' : 'bg-white hover:bg-gray-50'
                     }`}
                   >
                     <div className="flex items-center justify-between gap-2">
@@ -104,10 +113,12 @@ export function PlaceBottomSheet({ places, selectedPlaceId, onSelect }: PlaceBot
                       )}
                     </p>
                   </button>
-                  <Link
+<Link
                     to={`/places/${place.id}`}
                     aria-label={`${t('common.details')}: ${place.name}`}
-                    className="inline-flex min-h-10 shrink-0 items-center justify-center rounded-full border border-brand-200 bg-white px-4 text-sm font-semibold text-brand-700 shadow-sm transition hover:border-brand-400 hover:bg-brand-50 focus-visible:outline-brand-600"
+                    className={`inline-flex min-h-10 shrink-0 items-center justify-center rounded-full border border-brand-200 px-4 text-sm font-semibold text-brand-700 shadow-sm transition focus-visible:outline-brand-600 ${
+                      active ? 'border-brand-300 bg-transparent' : 'border-brand-200 bg-white hover:border-brand-400 hover:bg-brand-50'
+                    }`}
                   >
                     {t('common.details')}
                   </Link>

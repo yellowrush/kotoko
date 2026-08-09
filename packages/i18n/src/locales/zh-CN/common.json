@@ -22,7 +22,7 @@
   "nav": {
     "home": "首页",
     "places": "去哪玩",
-    "favorites": "我的收藏",
+    "favorites": "我的清单",
     "knowledge": "知识",
     "policies": "制度",
     "profile": "首頁",
@@ -326,8 +326,12 @@
     }
   },
   "favorites": {
-    "title": "我的收藏",
-    "empty": "还没有收藏的去处。在地点详情页点「加入收藏」即可。"
+    "title": "我的清单",
+    "empty": "还没有收藏的去处。在地点详情页点「加入收藏」即可。",
+    "tabs": {
+      "favorites": "收藏",
+      "visits": "去过的场所"
+    }
   },
   "placeVisits": {
     "title": "去过的场所",

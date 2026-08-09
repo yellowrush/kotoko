@@ -58,11 +58,6 @@ const FavoritesPage = lazy(() =>
     default: mod.FavoritesPage,
   })),
 );
-const PlaceVisitsPage = lazy(() =>
-  lazyWithStaleAssetRecovery(() => import('../routes/PlaceVisitsPage')).then((mod) => ({
-    default: mod.PlaceVisitsPage,
-  })),
-);
 const SettingsPage = lazy(() =>
   lazyWithStaleAssetRecovery(() => import('../routes/SettingsPage')).then((mod) => ({ default: mod.SettingsPage })),
 );
@@ -92,7 +87,6 @@ export const router = createBrowserRouter(
         { path: 'places/map', element: <Navigate to="/places" replace /> },
         { path: 'places/:placeId', element: routeElement(<PlaceDetailPage />) },
         { path: 'favorites', element: routeElement(<FavoritesPage />) },
-        { path: 'visits', element: routeElement(<PlaceVisitsPage />) },
         { path: 'children/new', element: routeElement(<ChildNewPage />) },
         { path: 'children/:childId/edit', element: routeElement(<ChildEditPage />) },
         { path: 'knowledge', element: routeElement(<KnowledgePage />) },

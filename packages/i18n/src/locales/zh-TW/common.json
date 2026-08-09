@@ -127,6 +127,7 @@
     "mediaCount": "共{{count}}張",
     "mediaPending": "照片準備中",
     "distance": "距 {{distance}}",
+    "visitCountAria": "{{name}}，去過 {{count}} 次",
     "descriptionTitle": "設施介紹",
     "basicInfo": "基本資訊",
     "businessHours": "營業時間",

@@ -127,6 +127,7 @@
     "mediaCount": "全{{count}}枚",
     "mediaPending": "写真は準備中です",
     "distance": "距 {{distance}}",
+    "visitCountAria": "{{name}}、行った回数 {{count}}回",
     "descriptionTitle": "施設について",
     "basicInfo": "基本情報",
     "businessHours": "営業時間",

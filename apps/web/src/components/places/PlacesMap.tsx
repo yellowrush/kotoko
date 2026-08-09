@@ -7,7 +7,12 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 import type { GeoPoint } from '@kodoko/domain';
 import type { FilteredPlace } from '../../lib/placeFilters';
 import type { StyleSpecification } from 'maplibre-gl';
-import { createFallbackIcon, patchOpenFreeMapStyle } from '../../lib/openFreeMapStylePatch';
+import {
+  createFallbackIcon,
+  patchOpenFreeMapStyle,
+} from '../../lib/openFreeMapStylePatch';
+import { getVisitMarkerToneClass } from '../../lib/placeVisitMarkers';
+import { useAppTranslation } from '../../hooks/useAppTranslation';
 import { CATEGORY_ICON } from './categoryMeta';
 
 const STYLE_URL =
@@ -21,25 +26,45 @@ export type PlacesMapProps = {
   initialCenter: GeoPoint;
   initialZoom?: number;
   userLocation?: GeoPoint | null;
+  visitCountsByPlaceId?: Record<string, number>;
   onStyleError?: () => void;
 };
 
 function markerElement() {
   const el = document.createElement('div');
-  el.className = 'relative flex h-8 w-8 cursor-pointer items-center justify-center';
+  el.className =
+    'relative flex h-8 w-8 cursor-pointer items-center justify-center';
+  el.setAttribute('role', 'button');
+  el.tabIndex = 0;
   const inner = document.createElement('div');
-  inner.className = 'flex h-full w-full items-center justify-center rounded-full border-2 text-base shadow-md transition';
+  inner.className =
+    'flex h-full w-full items-center justify-center rounded-full border-2 text-base shadow-md transition';
   el.appendChild(inner);
   return el;
 }
 
-function updateMarkerElement(el: HTMLElement, emoji: string, active: boolean) {
+function updateMarkerElement({
+  el,
+  emoji,
+  active,
+  visitCount,
+  label,
+}: {
+  el: HTMLElement;
+  emoji: string;
+  active: boolean;
+  visitCount: number;
+  label: string;
+}) {
   const inner = el.firstElementChild as HTMLElement;
+  el.title = label;
+  el.setAttribute('aria-label', label);
   inner.className = [
     'flex h-full w-full items-center justify-center rounded-full border-2 text-base shadow-md transition',
+    getVisitMarkerToneClass(visitCount),
     active
-      ? 'border-white bg-white scale-125 ring-2 ring-brand-600'
-      : 'border-brand-700 bg-white',
+      ? 'scale-125 border-white ring-2 ring-brand-600 shadow-lg'
+      : 'hover:scale-110',
   ].join(' ');
   inner.textContent = emoji;
 }
@@ -51,8 +76,10 @@ export function PlacesMap({
   initialCenter,
   initialZoom = 11,
   userLocation,
+  visitCountsByPlaceId = {},
   onStyleError,
 }: PlacesMapProps) {
+  const { t } = useAppTranslation();
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
   const [mapReady, setMapReady] = useState(false);
@@ -81,7 +108,9 @@ export function PlacesMap({
       try {
         const res = await fetch(STYLE_URL);
         if (res.ok) {
-          style = patchOpenFreeMapStyle((await res.json()) as StyleSpecification);
+          style = patchOpenFreeMapStyle(
+            (await res.json()) as StyleSpecification,
+          );
         }
       } catch {
         // 保持默认 URL 加载
@@ -98,7 +127,10 @@ export function PlacesMap({
         center: [centerPoint.longitude, centerPoint.latitude],
         zoom: user ? 13 : initialZoom,
       });
-      map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
+      map.addControl(
+        new maplibregl.NavigationControl({ showCompass: false }),
+        'top-right',
+      );
       map.on('error', () => onStyleErrorRef.current?.());
       map.on('styleimagemissing', (e) => {
         if (!e.id || map.hasImage(e.id)) return;
@@ -107,7 +139,9 @@ export function PlacesMap({
       // MapLibre 默认在控件初始接入时自动展开 attribution（maplibre-compact-show），
       // 首次打开遮挡地图。样式加载完成后主动收起，用户仍可点击按钮展开。
       map.on('load', () => {
-        const el = container.querySelector<HTMLElement>('.maplibregl-ctrl-attrib');
+        const el = container.querySelector<HTMLElement>(
+          '.maplibregl-ctrl-attrib',
+        );
         if (!el) return;
         el.classList.remove('maplibregl-compact-show');
         el.removeAttribute('open');
@@ -162,7 +196,8 @@ export function PlacesMap({
     if (userMarkerRef.current) userMarkerRef.current.remove();
     if (userLocation) {
       const el = document.createElement('div');
-      el.className = 'h-4 w-4 rounded-full border-2 border-white bg-blue-600 shadow-md';
+      el.className =
+        'h-4 w-4 rounded-full border-2 border-white bg-blue-600 shadow-md';
       userMarkerRef.current = new maplibregl.Marker({ element: el })
         .setLngLat([userLocation.longitude, userLocation.latitude])
         .addTo(map);
@@ -175,7 +210,8 @@ export function PlacesMap({
 
     const seen = new Set<string>();
     const list = [...places].sort((a, b) => {
-      if (a.distanceKm !== null && b.distanceKm !== null) return a.distanceKm - b.distanceKm;
+      if (a.distanceKm !== null && b.distanceKm !== null)
+        return a.distanceKm - b.distanceKm;
       return 0;
     });
 
@@ -187,12 +223,27 @@ export function PlacesMap({
       if (!marker) {
         const element = markerElement();
         element.addEventListener('click', () => onSelectRef.current(place.id));
+        element.addEventListener('keydown', (event) => {
+          if (event.key !== 'Enter' && event.key !== ' ') return;
+          event.preventDefault();
+          onSelectRef.current(place.id);
+        });
         marker = new maplibregl.Marker({ element })
           .setLngLat([place.longitude, place.latitude])
           .addTo(map);
         markersRef.current[place.id] = marker;
       }
-      updateMarkerElement(marker.getElement() as HTMLElement, CATEGORY_ICON[place.category], active);
+      const visitCount = visitCountsByPlaceId[place.id] ?? 0;
+      updateMarkerElement({
+        el: marker.getElement() as HTMLElement,
+        emoji: CATEGORY_ICON[place.category],
+        active,
+        visitCount,
+        label: t('places.visitCountAria', {
+          name: place.name,
+          count: visitCount,
+        }),
+      });
     });
 
     for (const id of Object.keys(markersRef.current)) {
@@ -202,7 +253,7 @@ export function PlacesMap({
         delete markersRef.current[id];
       }
     }
-  }, [places, selectedPlaceId, mapReady]);
+  }, [places, selectedPlaceId, mapReady, visitCountsByPlaceId, t]);
 
   return (
     <div className="absolute inset-0">

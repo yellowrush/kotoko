@@ -8,14 +8,21 @@ import { PlaceBottomSheet } from '../components/places/PlaceBottomSheet';
 import { usePlaces, usePlacesFilters } from '../hooks/usePlaces';
 import { DEFAULT_CENTER, useGeolocation } from '../hooks/useGeolocation';
 import { useActiveChild } from '../hooks/useActiveChild';
+import { usePlaceVisits } from '../hooks/usePlaceVisits';
 import { filterPlaces, formatDistanceKm } from '../lib/placeFilters';
 import type { FilteredPlace } from '../lib/placeFilters';
+import { countVisitsByPlaceId } from '../lib/placeVisitMarkers';
 import { lazyWithStaleAssetRecovery } from '../lib/staleAssets';
-import { pickRandomItem, subscribeRandomPlaceRequest } from '../lib/randomPlace';
+import {
+  pickRandomItem,
+  subscribeRandomPlaceRequest,
+} from '../lib/randomPlace';
 import { CATEGORY_ICON } from '../components/places/categoryMeta';
 
 const PlacesMap = lazy(() =>
-  lazyWithStaleAssetRecovery(() => import('../components/places/PlacesMap')).then((mod) => ({
+  lazyWithStaleAssetRecovery(
+    () => import('../components/places/PlacesMap'),
+  ).then((mod) => ({
     default: mod.PlacesMap,
   })),
 );
@@ -33,6 +40,7 @@ export function PlacesMapPage() {
   } = usePlacesFilters();
   const { status, coords, requested, request } = useGeolocation();
   const { active } = useActiveChild();
+  const { visits } = usePlaceVisits();
   const [tileError, setTileError] = useState(false);
   const [filterOpen, setFilterOpen] = useState(false);
   const [sheetCollapsed, setSheetCollapsed] = useState(false);
@@ -57,6 +65,10 @@ export function PlacesMapPage() {
   filteredRef.current = filtered;
 
   const center = coords ?? DEFAULT_CENTER;
+  const visitCountsByPlaceId = useMemo(
+    () => countVisitsByPlaceId(visits),
+    [visits],
+  );
 
   useEffect(() => {
     function onRandomPlaceRequest() {
@@ -129,6 +141,7 @@ export function PlacesMapPage() {
             initialCenter={center}
             initialZoom={coords ? 13 : 10}
             userLocation={coords}
+            visitCountsByPlaceId={visitCountsByPlaceId}
             onStyleError={() => setTileError(true)}
           />
         </Suspense>

@@ -19,24 +19,24 @@ function PlacesLineIcon() {
       className="h-9 w-9 fill-none stroke-current"
     >
       <path
-        d="M8 34c7-8 12 5 18-3s6-15 14-10"
+        d="M19 36V11"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="3"
       />
       <path
-        d="M14 29a5 5 0 1 0-7 0l3.5 6z"
+        d="M20 12c4-3 8 2 13-1v14c-5 3-9-2-13 1"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="3"
       />
       <path
-        d="M32 17v17M32 18c4-2 7-1 10 1v9c-3-2-6-3-10-1"
+        d="M12 38c5-3 19-3 24 0"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="3"
       />
-      <circle cx="10.5" cy="24.5" r="1.2" fill="currentColor" />
+      <circle cx="19" cy="10.5" r="1.8" fill="currentColor" />
     </svg>
   );
 }

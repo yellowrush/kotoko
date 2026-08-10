@@ -565,4 +565,36 @@ export const supplementPlaces: PlaceInput[] = [
     sourceCheckedAt: checkedAt,
     status: 'published',
   },
+  {
+    id: 'spadium-japon',
+    name: 'スパジアム ジャポン',
+    nameZh: 'Spadium Japon',
+    category: 'facility',
+    latitude: 35.7728547,
+    longitude: 139.5447069,
+    address: '東京都東久留米市上の原2-7-7',
+    municipalityCode: '13222',
+    suitableAgeMinMonths: 0,
+    suitableAgeMaxMonths: 216,
+    indoorOutdoor: 'mixed',
+    priceLevel: 2,
+    nursingRoom: true,
+    diaperChanging: true,
+    parking: true,
+    tags: ['dining'],
+    shortDescription:
+      '天然温泉・岩盤浴・フードコートを備えた大型温浴施設。乳幼児はベビーバス利用、授乳室・おむつ台あり。',
+    description:
+      '東久留米市の大型温浴施設。小学生以下は保護者同伴が必要で、オムツの取れていない乳幼児はベビーバスを利用します。館内にはフードコートやカフェがあり、授乳室とおむつ台も案内されています。',
+    descriptionZh:
+      '位於東久留米市的大型溫浴設施，設有天然溫泉、岩盤浴、餐飲區與親子可用設備。小學生以下需保護者陪同，尚未戒尿布的嬰幼兒需使用嬰兒浴盆。',
+    closedDays: '年中無休（施設メンテナンス休館あり）',
+    accessInfo:
+      '西武池袋線「東久留米駅」東口から西武バス約7分、「東久留米団地」下車すぐ。田無・東久留米・志木・朝霞台/北朝霞から無料シャトルバスあり。',
+    phone: '042-473-2828',
+    websiteUrl: 'https://www.spajapo.com/',
+    sourceUrl: 'https://www.spajapo.com/',
+    sourceCheckedAt: '2026-08-10T00:00:00.000Z',
+    status: 'published',
+  },
 ];

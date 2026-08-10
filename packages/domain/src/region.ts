@@ -30,6 +30,7 @@ export const MUNICIPALITIES: Municipality[] = [
   { code: '13121', nameJa: '足立区', latitude: 35.775, longitude: 139.804 },
   { code: '13122', nameJa: '葛飾区', latitude: 35.744, longitude: 139.847 },
   { code: '13123', nameJa: '江戸川区', latitude: 35.708, longitude: 139.868 },
+  { code: '13222', nameJa: '東久留米市', latitude: 35.758, longitude: 139.529 },
 ];
 
 export function findMunicipality(code?: string): Municipality | undefined {

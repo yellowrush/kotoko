@@ -51,6 +51,25 @@ describe('GET /api/v1/places', () => {
     await app.close();
   });
 
+  it('includes Spadium Japon as a public family-usable facility', async () => {
+    const app = buildApp();
+    const res = await app.inject({ method: 'GET', url: `${API_PREFIX}/places/spadium-japon` });
+    expect(res.statusCode).toBe(200);
+    expect(res.json()).toMatchObject({
+      id: 'spadium-japon',
+      category: 'facility',
+      municipalityCode: '13222',
+      nursingRoom: true,
+      diaperChanging: true,
+      parking: true,
+    });
+    expect(res.json().tags).toContain('dining');
+    expect(res.json().transitAccess).toContainEqual(
+      expect.objectContaining({ lineId: 'seibu-ikebukuro' }),
+    );
+    await app.close();
+  });
+
   it('filters by radius from a center point', async () => {
     const app = buildApp();
     // 東京駅付近を中心に半径 2km 以内の地点のみ返す

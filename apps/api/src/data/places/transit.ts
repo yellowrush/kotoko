@@ -110,6 +110,7 @@ export const placeTransitAccess: Record<string, PlaceTransitAccess[]> = {
   'echujima-park': [rail('jr-keiyo', '越中島', 5), rail('tokyo-metro-tozai', '門前仲町', 10), rail('toei-oedo', '門前仲町', 10)],
   'toyosu-park': [rail('tokyo-metro-yurakucho', '豊洲', 5), rail('yurikamome', '豊洲', 5)],
   'sendaihorikawa-park': [rail('tokyo-metro-tozai', '東陽町', 10), rail('tokyo-metro-tozai', '南砂町', 10), rail('toei-shinjuku', '大島', 10)],
+  'spadium-japon': [rail('seibu-ikebukuro', '東久留米')],
 };
 
 export function withTransitAccess(input: PlaceInput): PlaceInput {

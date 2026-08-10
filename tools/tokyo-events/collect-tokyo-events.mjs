@@ -6,6 +6,57 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const configPath = path.join(__dirname, 'sources.json');
 
+const CATEGORY_KEYWORDS = {
+  'flea-market': [
+    '\u30d5\u30ea\u30fc\u30de\u30fc\u30b1\u30c3\u30c8',
+    '\u86a4\u306e\u5e02',
+    '\u30d0\u30b6\u30fc',
+    '\u30ea\u30b5\u30a4\u30af\u30eb',
+  ],
+  parenting: [
+    '\u5b50\u80b2\u3066',
+    '\u80b2\u5150',
+    '\u89aa\u5b50',
+    '\u3053\u3069\u3082',
+    '\u5b50\u3069\u3082',
+    '\u5150\u7ae5',
+    '\u4e73\u5e7c\u5150',
+    '\u8d64\u3061\u3083\u3093',
+    '\u30ad\u30c3\u30ba',
+  ],
+  festival: [
+    '\u796d',
+    '\u796d\u308a',
+    '\u307e\u3064\u308a',
+    '\u795e\u8f3f',
+    '\u76c6\u8e0a\u308a',
+    '\u7e01\u65e5',
+  ],
+  seasonal: [
+    '\u685c',
+    '\u82b1\u706b',
+    '\u7d05\u8449',
+    '\u30a4\u30eb\u30df\u30cd\u30fc\u30b7\u30e7\u30f3',
+    '\u5b63\u7bc0',
+  ],
+  'child-friendly': [
+    '\u30ef\u30fc\u30af\u30b7\u30e7\u30c3\u30d7',
+    '\u8aad\u307f\u805e\u304b\u305b',
+    '\u5de5\u4f5c',
+    '\u4f53\u9a13',
+    '\u904a\u3073',
+  ],
+};
+
+const FIELD_KEYWORDS = {
+  title: ['\u540d\u79f0', '\u4ef6\u540d', '\u30bf\u30a4\u30c8\u30eb', '\u30a4\u30d9\u30f3\u30c8\u540d'],
+  startsAt: ['\u958b\u59cb', '\u958b\u50ac\u65e5', '\u5e74\u6708\u65e5'],
+  endsAt: ['\u7d42\u4e86'],
+  venueName: ['\u5834\u6240', '\u4f1a\u5834', '\u65bd\u8a2d'],
+  address: ['\u4f4f\u6240', '\u6240\u5728\u5730'],
+  sourceUrl: ['\u30ea\u30f3\u30af', '\u8a73\u7d30'],
+};
+
 function getArg(name, fallback) {
   const prefix = `--${name}=`;
   const match = process.argv.find((arg) => arg.startsWith(prefix));
@@ -27,21 +78,47 @@ function hashId(parts) {
   return createHash('sha256').update(parts.filter(Boolean).join('|')).digest('hex').slice(0, 16);
 }
 
+function includesAny(text, keywords) {
+  return keywords.some((keyword) => text.includes(keyword));
+}
+
 function candidateCategory(text) {
-  if (/フリーマーケット| flea|蚤の市|バザー|リサイクル/i.test(text)) return 'flea-market';
-  if (/子育て|育児|親子|こども|子ども|児童|乳幼児|赤ちゃん|キッズ/i.test(text)) return 'parenting';
-  if (/祭|祭り|まつり|神輿|盆踊り|縁日/i.test(text)) return 'festival';
-  if (/桜|花火|紅葉|イルミネーション|季節/i.test(text)) return 'seasonal';
-  if (/ワークショップ|読み聞かせ|工作|体験|遊び/i.test(text)) return 'child-friendly';
+  const normalized = text.toLowerCase();
+  if (includesAny(normalized, CATEGORY_KEYWORDS['flea-market']) || normalized.includes('flea')) {
+    return 'flea-market';
+  }
+  if (includesAny(normalized, CATEGORY_KEYWORDS.parenting)) return 'parenting';
+  if (includesAny(normalized, CATEGORY_KEYWORDS.festival)) return 'festival';
+  if (includesAny(normalized, CATEGORY_KEYWORDS.seasonal)) return 'seasonal';
+  if (includesAny(normalized, CATEGORY_KEYWORDS['child-friendly'])) return 'child-friendly';
   return 'general';
 }
 
 function confidenceFor(row, title, sourceUrl) {
   const text = Object.values(row).join(' ');
-  const hasDate = /date|日|開始|終了|開催|start|end/i.test(Object.keys(row).join(' '));
+  const keys = Object.keys(row).join(' ');
+  const hasDate =
+    /date|start|end|from|to/i.test(keys) ||
+    includesAny(keys, [
+      '\u65e5',
+      '\u958b\u59cb',
+      '\u7d42\u4e86',
+      '\u958b\u50ac',
+    ]);
   if (title && sourceUrl && hasDate) return 'high';
   if (title && sourceUrl) return 'medium';
-  if (/開催|イベント|祭|子育て|親子|バザー/.test(text)) return 'medium';
+  if (
+    includesAny(text, [
+      '\u958b\u50ac',
+      '\u30a4\u30d9\u30f3\u30c8',
+      '\u796d',
+      '\u5b50\u80b2\u3066',
+      '\u89aa\u5b50',
+      '\u30d0\u30b6\u30fc',
+    ])
+  ) {
+    return 'medium';
+  }
   return 'low';
 }
 
@@ -88,21 +165,25 @@ function parseCsv(text) {
   );
 }
 
-function firstValue(row, patterns) {
+function firstValue(row, fieldName, englishPatterns = []) {
+  const keywords = FIELD_KEYWORDS[fieldName] ?? [];
   for (const [key, value] of Object.entries(row)) {
-    if (patterns.some((pattern) => pattern.test(key)) && value) return value;
+    if (!value) continue;
+    if (includesAny(key, keywords) || englishPatterns.some((pattern) => pattern.test(key))) {
+      return value;
+    }
   }
   return undefined;
 }
 
 function normalizeRow(row, source, fetchedAt) {
-  const title = firstValue(row, [/名称/, /件名/, /タイトル/, /イベント名/, /^name$/i, /^title$/i]);
-  const startsAt = firstValue(row, [/開始/, /開催日/, /年月日/, /^start/i, /from/i]);
-  const endsAt = firstValue(row, [/終了/, /^end/i, /to/i]);
-  const venueName = firstValue(row, [/場所/, /会場/, /施設/, /^venue/i]);
-  const address = firstValue(row, [/住所/, /所在地/, /^address/i]);
+  const title = firstValue(row, 'title', [/^name$/i, /^title$/i]);
+  const startsAt = firstValue(row, 'startsAt', [/^start/i, /from/i]);
+  const endsAt = firstValue(row, 'endsAt', [/^end/i, /to/i]);
+  const venueName = firstValue(row, 'venueName', [/^venue/i]);
+  const address = firstValue(row, 'address', [/^address/i]);
   const sourceUrl =
-    firstValue(row, [/url/i, /URL/, /リンク/, /詳細/]) ?? source.url ?? source.packageUrl;
+    firstValue(row, 'sourceUrl', [/url/i]) ?? source.url ?? source.packageUrl;
   const text = Object.values(row).join(' ');
   const category = candidateCategory(`${title ?? ''} ${venueName ?? ''} ${text}`);
 
@@ -129,7 +210,10 @@ function normalizeRow(row, source, fetchedAt) {
 
 function parseCandidateDate(value) {
   if (!value) return undefined;
-  const normalized = String(value).replace(/[年月.]/g, '-').replace(/日/g, '').replace(/\//g, '-');
+  const normalized = String(value)
+    .replace(/[\u5e74\u6708.]/g, '-')
+    .replace(/\u65e5/g, '')
+    .replace(/\//g, '-');
   const match = normalized.match(/(\d{4})-(\d{1,2})-(\d{1,2})/);
   if (!match) return undefined;
   const [, year, month, day] = match;

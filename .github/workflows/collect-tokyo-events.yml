@@ -29,6 +29,7 @@ jobs:
         run: node tools/tokyo-events/collect-tokyo-events.mjs --output-dir=artifacts/tokyo-events
 
       - name: Upload candidate artifact
+        id: upload-candidates
         uses: actions/upload-artifact@v4
         with:
           name: tokyo-event-candidates
@@ -36,6 +37,8 @@ jobs:
 
       - name: Open review issue
         uses: actions/github-script@v7
+        env:
+          CANDIDATE_ARTIFACT_URL: ${{ steps.upload-candidates.outputs.artifact-url }}
         with:
           script: |
             const fs = require('node:fs');
@@ -51,6 +54,8 @@ jobs:
             const owner = context.repo.owner;
             const repo = context.repo.repo;
             const title = `Tokyo event candidates ${payload.runDate}`;
+            const runUrl = `${process.env.GITHUB_SERVER_URL}/${owner}/${repo}/actions/runs/${process.env.GITHUB_RUN_ID}`;
+            const artifactUrl = process.env.CANDIDATE_ARTIFACT_URL || runUrl;
             for (const label of [
               { name: 'content-intake', color: '0e8a16', description: 'Public content intake for human review' },
               { name: 'tokyo-events', color: '1d76db', description: 'Tokyo event candidate collection' },
@@ -61,17 +66,55 @@ jobs:
                 if (error.status !== 422) throw error;
               }
             }
+            const preview = payload.candidates.slice(0, 20).map((candidate, index) => [
+              `${index + 1}. ${candidate.title}`,
+              `   - Category: ${candidate.category}`,
+              `   - Date: ${candidate.startsAt || 'unknown'}${candidate.endsAt ? ` - ${candidate.endsAt}` : ''}`,
+              `   - Venue: ${candidate.venueName || candidate.address || 'unknown'}`,
+              `   - Source: ${candidate.sourceUrl}`,
+              `   - Confidence: ${candidate.confidence}`,
+            ].join('\n')).join('\n\n');
+            const errors = payload.errors.slice(0, 10).map((error) => [
+              `- ${error.source}`,
+              `  ${error.message}`,
+            ].join('\n')).join('\n');
+            const compactJson = JSON.stringify({
+              runDate: payload.runDate,
+              fetchedAt: payload.fetchedAt,
+              sourceCount: payload.sourceCount,
+              candidateCount: payload.candidates.length,
+              candidates: payload.candidates.slice(0, 20),
+              errors: payload.errors.slice(0, 10),
+            }, null, 2);
             const body = [
               `Daily public Tokyo event collection produced ${payload.candidates.length} candidates from ${payload.sourceCount} resources.`,
+              '',
+              `Full JSON artifact: ${artifactUrl}`,
+              `Workflow run: ${runUrl}`,
+              `Artifact file: \`${file}\``,
+              '',
+              'Candidate preview:',
+              '',
+              preview,
+              payload.candidates.length > 20 ? `\n\nShowing 20 of ${payload.candidates.length}. Use the artifact URL for the full JSON file.` : '',
+              '',
+              payload.errors.length ? 'Collector errors:' : 'Collector errors: 0',
+              payload.errors.length ? errors : '',
+              '',
+              '<details>',
+              '<summary>Preview JSON</summary>',
+              '',
+              '```json',
+              compactJson,
+              '```',
+              '',
+              '</details>',
               '',
               'Review rules:',
               '- Publish only public event/place data.',
               '- Do not add child profile, IndexedDB, contact, analytics, or private location data.',
               '- Confirm source URL, event date, venue, and license before editing app data.',
               '- Prefer official sources; commercial sources require explicit authorization.',
-              '',
-              `Artifact: \`${file}\``,
-              payload.errors.length ? `Errors: ${payload.errors.length}` : 'Errors: 0',
             ].join('\n');
 
             const existing = await github.paginate(github.rest.issues.listForRepo, {

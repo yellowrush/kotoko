@@ -1,4 +1,4 @@
-import type { Place } from '@kodoko/domain';
+import type { Place, PlaceInput } from '@kodoko/domain';
 import { derivePlaceFields } from '@kodoko/domain';
 import { basePlaces } from './base';
 import { childrenHallPlaces } from './children-halls';
@@ -34,7 +34,22 @@ const allInputs = [
   ...generatedEventPlaces,
 ];
 
-export const seedPlaces: Place[] = allInputs
+function eventDedupeKey(input: PlaceInput): string {
+  return `${input.name.normalize('NFKC').trim()}|${input.municipalityCode}`;
+}
+
+function dedupeEventPlaces(inputs: PlaceInput[]): PlaceInput[] {
+  const seen = new Set<string>();
+  return inputs.filter((input) => {
+    if (input.category !== 'event') return true;
+    const key = eventDedupeKey(input);
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+export const seedPlaces: Place[] = dedupeEventPlaces(allInputs)
   .map(withTransitAccess)
   .map(derivePlaceFields);
 

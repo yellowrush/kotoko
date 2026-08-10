@@ -355,8 +355,35 @@ function escapeNonAscii(text) {
   });
 }
 
-function placeDataSource(candidates, config) {
+function candidateMatchesCurated(candidate, curatedKeys) {
+  if (!curatedKeys || curatedKeys.size === 0) return false;
+  const key = `${candidate.title.normalize('NFKC').trim()}|${candidate.municipalityCode ?? ''}`;
+  return curatedKeys.has(key);
+}
+
+async function readCuratedEventKeys(placeDataPath) {
+  const curatedPath = path.join(path.dirname(path.resolve(placeDataPath)), 'events.ts');
+  let text;
+  try {
+    text = await readFile(curatedPath, 'utf8');
+  } catch {
+    return new Set();
+  }
+  const names = [];
+  const municipalityCodes = [];
+  for (const match of text.matchAll(/name:\s*'([^']*)'/g)) names.push(match[1]);
+  for (const match of text.matchAll(/municipalityCode:\s*'([^']*)'/g)) municipalityCodes.push(match[1]);
+  const keys = new Set();
+  const count = Math.max(names.length, municipalityCodes.length);
+  for (let i = 0; i < count; i += 1) {
+    keys.add(`${(names[i] ?? '').normalize('NFKC').trim()}|${municipalityCodes[i] ?? ''}`);
+  }
+  return keys;
+}
+
+function placeDataSource(candidates, config, curatedKeys) {
   const places = candidates
+    .filter((candidate) => !candidateMatchesCurated(candidate, curatedKeys))
     .map((candidate) => toPlaceInput(candidate, config))
     .filter(Boolean)
     .slice(0, config.placeData?.maxGeneratedEvents ?? 40);
@@ -414,7 +441,8 @@ async function main() {
 
   let generatedPlaceCount = 0;
   if (placeDataPath) {
-    const source = placeDataSource(candidates, config);
+    const curatedKeys = await readCuratedEventKeys(placeDataPath);
+    const source = placeDataSource(candidates, config, curatedKeys);
     generatedPlaceCount = (source.match(/category: 'event'/g) ?? []).length;
     await mkdir(path.dirname(path.resolve(placeDataPath)), { recursive: true });
     await writeFile(path.resolve(placeDataPath), source, 'utf8');

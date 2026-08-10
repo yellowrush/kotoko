@@ -102,7 +102,10 @@ export function getEventIconKind(place: IconPlace): EventIconKind {
       '\u30d5\u30ea\u30fc\u30de\u30fc\u30b1\u30c3\u30c8',
       '\u86a4\u306e\u5e02',
       '\u30d0\u30b6\u30fc',
-      '\u5e02',
+      '\u671d\u5e02',
+      '\u9aa8\u8463\u5e02',
+      '\u9752\u7a7a\u5e02',
+      '\u7523\u76f4\u5e02',
     ])
   ) {
     return 'market';
@@ -129,6 +132,7 @@ export function getEventIconKind(place: IconPlace): EventIconKind {
       'cherry',
       'illumination',
       '\u685c',
+      '\u3055\u304f\u3089',
       '\u7d05\u8449',
       '\u5b63\u7bc0',
       '\u30a4\u30eb\u30df\u30cd\u30fc\u30b7\u30e7\u30f3',

@@ -1,5 +1,14 @@
 import { describe, expect, it } from 'vitest';
 import { buildApp, API_PREFIX } from '../src/app';
+import { seedPlaces } from '../src/data/places';
+
+describe('seedPlaces event deduplication', () => {
+  it('contains exactly one entry per event name', () => {
+    const events = seedPlaces.filter((p) => p.category === 'event');
+    const names = events.map((p) => p.name);
+    expect(new Set(names).size).toBe(names.length);
+  });
+});
 
 describe('GET /api/v1/places', () => {
   it('returns only published places', async () => {
@@ -70,19 +79,30 @@ describe('GET /api/v1/places', () => {
     await app.close();
   });
 
-  it('includes generated Tokyo event places for the map', async () => {
+it('serves curated event places without duplicates from generated data', async () => {
     const app = buildApp();
     const res = await app.inject({
       method: 'GET',
-      url: `${API_PREFIX}/places/tokyo-event-1f5caf26e7f53ae3`,
+      url: `${API_PREFIX}/places?category=event`,
     });
     expect(res.statusCode).toBe(200);
-    expect(res.json()).toMatchObject({
-      id: 'tokyo-event-1f5caf26e7f53ae3',
-      category: 'event',
-      municipalityCode: '13107',
-      status: 'published',
+    const body = res.json();
+    const names = body.places.map((p: { name: string }) => p.name);
+    expect(new Set(names).size).toBe(names.length);
+    expect(names).toContain('すみだまつり・こどもまつり');
+    expect(names).toContain('隅田川花火大会');
+
+    const duplicate = await app.inject({
+      method: 'GET',
+      url: `${API_PREFIX}/places/tokyo-event-1f5caf26e7f53ae3`,
     });
+    expect(duplicate.statusCode).toBe(404);
+
+    const curated = await app.inject({
+      method: 'GET',
+      url: `${API_PREFIX}/places/sumida-matsuri-kodomo`,
+    });
+    expect(curated.statusCode).toBe(200);
     await app.close();
   });
 

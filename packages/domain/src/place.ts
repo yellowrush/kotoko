@@ -26,6 +26,18 @@ export type IndoorOutdoor = 'indoor' | 'outdoor' | 'mixed';
 export type ContentStatus = 'draft' | 'published' | 'archived';
 
 /**
+ * 毎年開催されるイベントの開催期間（月・日）。
+ * startDay / endDay を省略した場合は月の 1 日 / 末日として扱う。
+ * 例：さくらまつり 3月中旬〜4月上旬 → { startMonth: 3, startDay: 15, endMonth: 4, endDay: 10 }
+ */
+export type EventPeriod = {
+  startMonth: number;
+  startDay?: number;
+  endMonth: number;
+  endDay?: number;
+};
+
+/**
  * 详情页 label（受控枚举，配合 i18n 渲染 chips）。
  * indoorOutdoor 与布尔设施位是数据字段，labels 是展示层的派生视图。
  */
@@ -120,6 +132,7 @@ export type Place = {
   municipalityCode: string;
   suitableAgeMinMonths?: number;
   suitableAgeMaxMonths?: number;
+  eventPeriod?: EventPeriod;
   indoorOutdoor: IndoorOutdoor;
   priceLevel?: number;
   strollerFriendly?: boolean;

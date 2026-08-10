@@ -115,6 +115,14 @@ export const placeSchema = z.object({
   municipalityCode: z.string().min(1),
   suitableAgeMinMonths: z.number().int().nonnegative().optional(),
   suitableAgeMaxMonths: z.number().int().nonnegative().optional(),
+  eventPeriod: z
+    .object({
+      startMonth: z.number().int().min(1).max(12),
+      startDay: z.number().int().min(1).max(31).optional(),
+      endMonth: z.number().int().min(1).max(12),
+      endDay: z.number().int().min(1).max(31).optional(),
+    })
+    .optional(),
   indoorOutdoor,
   priceLevel: z.number().int().nonnegative().optional(),
   strollerFriendly: z.boolean().optional(),

@@ -19,6 +19,7 @@ import { usePreference } from '../hooks/usePreference';
 import { prioritizeKnowledgeForAges } from '../lib/knowledge';
 import { checkPolicyFor, daysUntil } from '../lib/policy';
 import { recommendForChild } from '../lib/recommendations';
+import { isEventInSeason } from '../lib/placeFilters';
 import { resolveRecommendationLocation } from '../lib/recommendationLocation';
 import { RecommendationReasons } from '../components/RecommendationReasons';
 import { AgeLabel } from '../components/AgeLabel';
@@ -387,7 +388,7 @@ export function HomePage() {
     () =>
       recommendForChild({
         children: selected,
-        places: places ?? [],
+        places: (places ?? []).filter((place) => isEventInSeason(place)),
         userLocation: recommendationLocation.point,
         maxDistanceKm: transportMode ? undefined : preference?.radiusKm,
         transportMode,

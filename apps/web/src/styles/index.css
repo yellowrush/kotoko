@@ -227,6 +227,10 @@
 
   .kodoko-bottom-nav-primary {
     overflow: visible;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
   }
 
   .kodoko-bottom-nav-primary::before,

@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { NavLink, Outlet, useLocation, Link } from 'react-router-dom';
+import { NavLink, Outlet, useLocation, Link, useNavigate } from 'react-router-dom';
 import { useAppTranslation } from '../hooks/useAppTranslation';
 import { requestRandomPlace } from '../lib/randomPlace';
 import { PwaInstallButton } from './PwaInstallButton';
@@ -54,6 +54,7 @@ function PlacesLineIcon() {
 export function AppLayout() {
   const { t } = useAppTranslation();
   const { pathname } = useLocation();
+  const navigate = useNavigate();
   const longPressTimerRef = useRef<number | null>(null);
   const longPressTriggeredRef = useRef(false);
   const randomAnimationTimerRef = useRef<number | null>(null);
@@ -73,13 +74,13 @@ export function AppLayout() {
     clearLongPressTimer();
     if (pathname !== '/places') return;
     longPressTriggeredRef.current = false;
-      longPressTimerRef.current = window.setTimeout(() => {
-        longPressTriggeredRef.current = true;
-        setRandomizingPlaces(true);
-        requestRandomPlace();
-        if (randomAnimationTimerRef.current !== null) {
-          window.clearTimeout(randomAnimationTimerRef.current);
-        }
+    longPressTimerRef.current = window.setTimeout(() => {
+      longPressTriggeredRef.current = true;
+      setRandomizingPlaces(true);
+      requestRandomPlace();
+      if (randomAnimationTimerRef.current !== null) {
+        window.clearTimeout(randomAnimationTimerRef.current);
+      }
       randomAnimationTimerRef.current = window.setTimeout(() => {
         setRandomizingPlaces(false);
         randomAnimationTimerRef.current = null;
@@ -150,10 +151,12 @@ export function AppLayout() {
             {NAV_ITEMS.map((item) => {
               const isPrimary = item.key === 'places';
               if (isPrimary) {
+                const isActive = isPlacesRoute(pathname);
                 return (
-                  <NavLink
+                  <button
                     key={item.to}
-                    to={item.to}
+                    type="button"
+                    aria-current={isActive ? 'page' : undefined}
                     onPointerDown={startPlacesLongPress}
                     onPointerUp={clearLongPressTimer}
                     onPointerCancel={clearLongPressTimer}
@@ -165,15 +168,16 @@ export function AppLayout() {
                     onTouchEnd={clearLongPressTimer}
                     onTouchCancel={clearLongPressTimer}
                     onDragStart={(event) => event.preventDefault()}
-                    onContextMenu={(event) => {
-                      if (pathname === '/places') event.preventDefault();
-                    }}
+                    onContextMenu={(event) => event.preventDefault()}
                     onClick={(event) => {
-                      if (!longPressTriggeredRef.current) return;
-                      event.preventDefault();
-                      longPressTriggeredRef.current = false;
+                      if (longPressTriggeredRef.current) {
+                        event.preventDefault();
+                        longPressTriggeredRef.current = false;
+                        return;
+                      }
+                      if (pathname !== '/places') navigate('/places');
                     }}
-                    className={({ isActive }) =>
+                    className={
                       `kodoko-bottom-nav-primary absolute left-1/2 top-1/2 z-10 flex h-[5.4rem] w-[5.4rem] -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center gap-1 rounded-full border-[3px] px-2 text-center font-extrabold transition sm:h-24 sm:w-24 ${
                         randomizingPlaces ? 'is-randomizing ' : ''
                       }${
@@ -187,7 +191,7 @@ export function AppLayout() {
                     <span className="text-[11px] leading-none sm:text-xs">
                       {t(`nav.${item.key}`)}
                     </span>
-                  </NavLink>
+                  </button>
                 );
               }
 

@@ -108,12 +108,13 @@ export function AppLayout() {
                 <Link
                   to="/home"
                   aria-label={t('common.appName')}
-                  className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-50 ring-1 ring-brand-100"
+                  className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl overflow-hidden bg-[#e44108] shadow-sm ring-1 ring-black/5"
                 >
+                  {/* 母アイコン apple-touch-icon.png のデザイン（こどこ＋ピン）を丸角正方形で拡大表示 */}
                   <img
                     src={`${import.meta.env.BASE_URL}favicon.svg`}
                     alt={t('common.appName')}
-                    className="h-8 w-auto"
+                    className="h-full w-full object-contain"
                   />
                 </Link>
                 <div className="min-w-0">

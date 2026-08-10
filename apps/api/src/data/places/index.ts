@@ -9,6 +9,7 @@ import { tokyoParkPlaces } from './tokyo-parks';
 import { trainMuseumPlaces } from './train-museums';
 import { librarySportPlaces } from './libraries-sports';
 import { supplementPlaces } from './supplements';
+import { eventPlaces } from './events';
 import { withTransitAccess } from './transit';
 
 /**
@@ -28,6 +29,7 @@ const allInputs = [
   ...trainMuseumPlaces,
   ...librarySportPlaces,
   ...supplementPlaces,
+  ...eventPlaces,
 ];
 
 export const seedPlaces: Place[] = allInputs

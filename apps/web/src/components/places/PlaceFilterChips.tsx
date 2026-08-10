@@ -90,6 +90,27 @@ function ChipGroup({
   );
 }
 
+function FilterLineIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      viewBox="0 0 24 24"
+      className="h-5 w-5 fill-none stroke-current"
+    >
+      <path
+        d="M5 7h14M8 12h8M10 17h4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2.4"
+      />
+      <circle cx="9" cy="7" r="1.8" fill="currentColor" />
+      <circle cx="15" cy="12" r="1.8" fill="currentColor" />
+      <circle cx="12" cy="17" r="1.8" fill="currentColor" />
+    </svg>
+  );
+}
+
 export function PlaceFilterChips({
   filters,
   resultCount,
@@ -107,13 +128,17 @@ export function PlaceFilterChips({
       <button
         type="button"
         onClick={() => onOpenChange(!open)}
+        aria-label={t('places.filters.label')}
         aria-expanded={open}
-        className="kodoko-control flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold text-gray-700"
+        className={`relative inline-flex h-10 w-10 items-center justify-center rounded-full border-2 text-brand-800 shadow-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 ${
+          open
+            ? 'border-brand-800 bg-brand-100 shadow-inner'
+            : 'border-brand-200 bg-brand-50 hover:bg-brand-100'
+        }`}
       >
-        <span aria-hidden>⚲</span>
-        <span>{t('places.filters.label')}</span>
+        <FilterLineIcon />
         {resultCount > 0 && (
-          <span className="rounded-full bg-brand-600 px-1.5 text-[10px] font-bold text-white">
+          <span className="absolute -right-1 -top-1 min-w-5 rounded-full border-2 border-white bg-brand-600 px-1 text-center text-[10px] font-bold leading-4 text-white">
             {resultCount}
           </span>
         )}

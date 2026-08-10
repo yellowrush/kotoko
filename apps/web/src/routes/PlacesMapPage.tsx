@@ -27,6 +27,25 @@ const PlacesMap = lazy(() =>
   })),
 );
 
+function LocationLineIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      viewBox="0 0 24 24"
+      className="h-5 w-5 fill-none stroke-current"
+    >
+      <circle cx="12" cy="12" r="5.2" strokeWidth="2.3" />
+      <path
+        d="M12 3.5v3M12 17.5v3M3.5 12h3M17.5 12h3"
+        strokeLinecap="round"
+        strokeWidth="2.3"
+      />
+      <circle cx="12" cy="12" r="1.7" fill="currentColor" />
+    </svg>
+  );
+}
+
 export function PlacesMapPage() {
   const { t } = useAppTranslation();
   const { data: places, isLoading, isError, refetch } = usePlaces();
@@ -170,11 +189,11 @@ export function PlacesMapPage() {
           </div>
           <button
             type="button"
+            aria-label={t('places.locate')}
             onClick={request}
-            className="kodoko-control pointer-events-auto flex items-center gap-1.5 px-3 py-1.5 text-sm font-semibold text-gray-700"
+            className="pointer-events-auto inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-brand-200 bg-brand-50 text-brand-800 shadow-sm transition hover:bg-brand-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
           >
-            <span aria-hidden>📍</span>
-            {t('places.locate')}
+            <LocationLineIcon />
           </button>
         </div>
 

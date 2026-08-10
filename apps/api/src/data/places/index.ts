@@ -9,6 +9,7 @@ import { tokyoParkPlaces } from './tokyo-parks';
 import { trainMuseumPlaces } from './train-museums';
 import { librarySportPlaces } from './libraries-sports';
 import { supplementPlaces } from './supplements';
+import { withTransitAccess } from './transit';
 
 /**
  * 公共地点数据聚合入口。
@@ -29,7 +30,9 @@ const allInputs = [
   ...supplementPlaces,
 ];
 
-export const seedPlaces: Place[] = allInputs.map(derivePlaceFields);
+export const seedPlaces: Place[] = allInputs
+  .map(withTransitAccess)
+  .map(derivePlaceFields);
 
 export function getPlaceById(id: string): Place | undefined {
   return seedPlaces.find((p) => p.id === id);

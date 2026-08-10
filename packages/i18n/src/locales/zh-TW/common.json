@@ -199,10 +199,25 @@
     },
     "filters": {
       "label": "篩選",
+      "sectionLocation": "探索方式",
       "sectionCategory": "分類",
       "sectionIndoorOutdoor": "室內外",
       "sectionRadius": "距離",
+      "sectionMunicipalityCommon": "常用行政區",
+      "sectionMunicipalityAll": "全部行政區",
+      "railHelp": "包含 JR、地下鐵、私鐵、都電等電車沿線。",
+      "emptyLocationOptions": "這組條件下沒有可選項目。",
       "sectionTags": "標籤",
+      "locationModes": {
+        "near": "附近",
+        "municipality": "行政區",
+        "rail": "電車沿線"
+      },
+      "railGroups": {
+        "jr": "JR",
+        "subway": "地下鐵",
+        "private": "私鐵・其他"
+      },
       "r3": "3km",
       "r5": "5km",
       "r10": "10km",

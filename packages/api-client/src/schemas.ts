@@ -84,6 +84,14 @@ const placeReservation = z.object({
   sourceUrl: z.string(),
 });
 
+const placeTransitAccess = z.object({
+  operator: z.string().min(1),
+  lineId: z.string().min(1),
+  lineName: z.string().min(1),
+  stationName: z.string().min(1),
+  walkMinutes: z.number().int().nonnegative().optional(),
+});
+
 const placeSource = z.object({
   type: z.enum(['official', 'open-data', 'review-platform', 'manual', 'report']),
   name: z.string().min(1),
@@ -129,6 +137,7 @@ export const placeSchema = z.object({
   closedDays: z.string().optional(),
   parking: z.boolean().optional(),
   accessInfo: z.string().optional(),
+  transitAccess: z.array(placeTransitAccess).optional(),
   phone: z.string().optional(),
   websiteUrl: z.string().optional(),
   googlePlaceId: z.string().optional(),

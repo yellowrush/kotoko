@@ -77,6 +77,50 @@ describe('filterPlaces', () => {
     const result = filterPlaces([place], {}, 12);
     expect(result[0]?.ageSuitable).toBe(false);
   });
+
+  it('filters by municipality when location mode is municipality', () => {
+    const koto = makePlace({ id: 'koto', municipalityCode: '13108' });
+    const shinagawa = makePlace({ id: 'shinagawa', municipalityCode: '13109' });
+    const result = filterPlaces([shinagawa, koto], {
+      locationMode: 'municipality',
+      municipalityCode: '13108',
+    });
+
+    expect(result.map((p) => p.id)).toEqual(['koto']);
+  });
+
+  it('filters by rail line when location mode is rail', () => {
+    const tozai = makePlace({
+      id: 'tozai',
+      transitAccess: [
+        {
+          operator: '東京メトロ',
+          lineId: 'tokyo-metro-tozai',
+          lineName: '東京メトロ東西線',
+          stationName: '木場',
+        },
+      ],
+    });
+    const plain = makePlace({ id: 'plain' });
+    const result = filterPlaces([plain, tozai], {
+      locationMode: 'rail',
+      railLineId: 'tokyo-metro-tozai',
+    });
+
+    expect(result.map((p) => p.id)).toEqual(['tozai']);
+  });
+
+  it('does not apply radius outside near mode', () => {
+    const far = makePlace({ id: 'far', municipalityCode: '13108', latitude: 34.0, longitude: 139.0 });
+    const result = filterPlaces([far], {
+      locationMode: 'municipality',
+      municipalityCode: '13108',
+      userLocation: TOKYO,
+      radiusKm: 1,
+    });
+
+    expect(result.map((p) => p.id)).toEqual(['far']);
+  });
 });
 
 describe('formatDistanceKm', () => {

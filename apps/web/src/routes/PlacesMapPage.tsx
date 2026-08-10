@@ -14,6 +14,10 @@ import type { FilteredPlace } from '../lib/placeFilters';
 import { countVisitsByPlaceId } from '../lib/placeVisitMarkers';
 import { lazyWithStaleAssetRecovery } from '../lib/staleAssets';
 import {
+  countPlacesByMunicipality,
+  countPlacesByRailLine,
+} from '../lib/placeLocationOptions';
+import {
   pickRandomItem,
   subscribeRandomPlaceRequest,
 } from '../lib/randomPlace';
@@ -53,7 +57,10 @@ export function PlacesMapPage() {
     filters,
     setCategory,
     setIndoorOutdoor,
+    setLocationMode,
     setRadius,
+    setMunicipality,
+    setRailLine,
     setPlaceId,
     toggleTag,
   } = usePlacesFilters();
@@ -82,6 +89,27 @@ export function PlacesMapPage() {
     [places, filters, coords, ageMonths],
   );
   filteredRef.current = filtered;
+  const locationCountBase = useMemo(
+    () =>
+      filterPlaces(
+        places ?? [],
+        {
+          category: filters.category,
+          indoorOutdoor: filters.indoorOutdoor,
+          tags: filters.tags,
+        },
+        ageMonths,
+      ),
+    [places, filters.category, filters.indoorOutdoor, filters.tags, ageMonths],
+  );
+  const municipalityCounts = useMemo(
+    () => countPlacesByMunicipality(locationCountBase),
+    [locationCountBase],
+  );
+  const railLineCounts = useMemo(
+    () => countPlacesByRailLine(locationCountBase),
+    [locationCountBase],
+  );
 
   const center = coords ?? DEFAULT_CENTER;
   const visitCountsByPlaceId = useMemo(
@@ -160,6 +188,14 @@ export function PlacesMapPage() {
             initialCenter={center}
             initialZoom={coords ? 13 : 10}
             userLocation={coords}
+            selectedMunicipalityCode={
+              filters.locationMode === 'municipality'
+                ? filters.municipalityCode
+                : undefined
+            }
+            selectedRailLineId={
+              filters.locationMode === 'rail' ? filters.railLineId : undefined
+            }
             visitCountsByPlaceId={visitCountsByPlaceId}
             onStyleError={() => setTileError(true)}
           />
@@ -176,6 +212,8 @@ export function PlacesMapPage() {
             <PlaceFilterChips
               filters={filters}
               resultCount={filtered.length}
+              municipalityCounts={municipalityCounts}
+              railLineCounts={railLineCounts}
               open={filterOpen}
               onOpenChange={(open) => {
                 setFilterOpen(open);
@@ -183,7 +221,10 @@ export function PlacesMapPage() {
               }}
               setCategory={setCategory}
               setIndoorOutdoor={setIndoorOutdoor}
+              setLocationMode={setLocationMode}
               setRadius={setRadius}
+              setMunicipality={setMunicipality}
+              setRailLine={setRailLine}
               toggleTag={toggleTag}
             />
           </div>

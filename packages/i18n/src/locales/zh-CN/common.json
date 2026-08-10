@@ -199,10 +199,25 @@
     },
     "filters": {
       "label": "筛选",
+      "sectionLocation": "探索方式",
       "sectionCategory": "分类",
       "sectionIndoorOutdoor": "室内外",
       "sectionRadius": "距离",
+      "sectionMunicipalityCommon": "常用行政区",
+      "sectionMunicipalityAll": "全部行政区",
+      "railHelp": "包含 JR、地铁、私铁、都电等电车沿线。",
+      "emptyLocationOptions": "这组条件下没有可选项目。",
       "sectionTags": "标签",
+      "locationModes": {
+        "near": "附近",
+        "municipality": "行政区",
+        "rail": "电车沿线"
+      },
+      "railGroups": {
+        "jr": "JR",
+        "subway": "地铁",
+        "private": "私铁・其他"
+      },
       "r3": "3km",
       "r5": "5km",
       "r10": "10km",

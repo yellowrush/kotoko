@@ -93,6 +93,14 @@ export type PlaceReservation = {
   sourceUrl: string;
 };
 
+export type PlaceTransitAccess = {
+  operator: string;
+  lineId: string;
+  lineName: string;
+  stationName: string;
+  walkMinutes?: number;
+};
+
 export type PlaceSourceType = 'official' | 'open-data' | 'review-platform' | 'manual' | 'report';
 
 export type PlaceSource = {
@@ -136,6 +144,7 @@ export type Place = {
   closedDays?: string;
   parking?: boolean;
   accessInfo?: string;
+  transitAccess?: PlaceTransitAccess[];
   phone?: string;
   websiteUrl?: string;
   googlePlaceId?: string;

@@ -1,11 +1,15 @@
 import type { Place, GeoPoint, PlaceTag } from '@kodoko/domain';
 import { haversineDistanceKm } from '@kodoko/recommendation';
+import type { PlacesLocationMode } from '../hooks/usePlaces';
 
 export type PlaceFilters = {
+  locationMode?: PlacesLocationMode;
   category?: string;
   indoorOutdoor?: string;
   tags?: string[];
   radiusKm?: number;
+  municipalityCode?: string;
+  railLineId?: string;
   userLocation?: GeoPoint;
 };
 
@@ -34,13 +38,22 @@ export function filterPlaces(
   filters: PlaceFilters,
   ageMonths?: number,
 ): FilteredPlace[] {
+  const locationMode = filters.locationMode ?? 'near';
   const result = places.filter((place) => {
     if (filters.category && place.category !== filters.category) return false;
     if (filters.indoorOutdoor && place.indoorOutdoor !== filters.indoorOutdoor) return false;
     if (filters.tags && filters.tags.length > 0 && !filters.tags.some((tag) => place.tags?.includes(tag as PlaceTag))) {
       return false;
     }
-    if (filters.userLocation && filters.radiusKm !== undefined) {
+    if (locationMode === 'municipality' && filters.municipalityCode) {
+      if (place.municipalityCode !== filters.municipalityCode) return false;
+    }
+    if (locationMode === 'rail' && filters.railLineId) {
+      if (!place.transitAccess?.some((access) => access.lineId === filters.railLineId)) {
+        return false;
+      }
+    }
+    if (locationMode === 'near' && filters.userLocation && filters.radiusKm !== undefined) {
       const dist = haversineDistanceKm(filters.userLocation, place);
       if (dist > filters.radiusKm) return false;
     }

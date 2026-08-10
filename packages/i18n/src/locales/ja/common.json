@@ -199,10 +199,25 @@
     },
     "filters": {
       "label": "フィルター",
+      "sectionLocation": "探し方",
       "sectionCategory": "カテゴリー",
       "sectionIndoorOutdoor": "屋内・屋外",
       "sectionRadius": "距離",
+      "sectionMunicipalityCommon": "よく使う区",
+      "sectionMunicipalityAll": "すべての区",
+      "railHelp": "JR・地下鉄・私鉄・都電など、電車沿線で絞り込みます。",
+      "emptyLocationOptions": "この条件で選べる項目はありません。",
       "sectionTags": "タグ",
+      "locationModes": {
+        "near": "近く",
+        "municipality": "行政区",
+        "rail": "電車沿線"
+      },
+      "railGroups": {
+        "jr": "JR",
+        "subway": "地下鉄",
+        "private": "私鉄・その他"
+      },
       "r3": "3km",
       "r5": "5km",
       "r10": "10km",

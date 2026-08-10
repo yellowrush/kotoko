@@ -42,6 +42,23 @@ describe('placeSchema', () => {
   it('rejects unknown tags', () => {
     expect(() => placeSchema.parse({ ...validPlace, tags: ['unknown-tag'] })).toThrow();
   });
+
+  it('accepts optional public transit access metadata', () => {
+    const parsed = placeSchema.parse({
+      ...validPlace,
+      transitAccess: [
+        {
+          operator: '東京メトロ',
+          lineId: 'tokyo-metro-tozai',
+          lineName: '東京メトロ東西線',
+          stationName: '木場',
+          walkMinutes: 8,
+        },
+      ],
+    });
+
+    expect(parsed.transitAccess?.[0]?.lineId).toBe('tokyo-metro-tozai');
+  });
 });
 
 describe('placeListSchema', () => {

@@ -11,6 +11,17 @@ import {
   createFallbackIcon,
   patchOpenFreeMapStyle,
 } from '../../lib/openFreeMapStylePatch';
+import {
+  boundsForFeatureCollection,
+  emptyFeatureCollection,
+  featuresByProperty,
+  municipalityOverlayLayers,
+  MUNICIPALITY_SOURCE_ID,
+  railOverlayLayers,
+  RAIL_LINE_SOURCE_ID,
+  RAIL_STATION_SOURCE_ID,
+  type OverlayFeatureCollection,
+} from '../../lib/placeMapOverlays';
 import { getVisitMarkerToneClass } from '../../lib/placeVisitMarkers';
 import { useAppTranslation } from '../../hooks/useAppTranslation';
 import { CATEGORY_ICON } from './categoryMeta';
@@ -26,9 +37,13 @@ export type PlacesMapProps = {
   initialCenter: GeoPoint;
   initialZoom?: number;
   userLocation?: GeoPoint | null;
+  selectedMunicipalityCode?: string;
+  selectedRailLineId?: string;
   visitCountsByPlaceId?: Record<string, number>;
   onStyleError?: () => void;
 };
+
+const GEO_ASSET_BASE = `${import.meta.env.BASE_URL}data/geo`;
 
 function markerElement() {
   const el = document.createElement('div');
@@ -76,6 +91,8 @@ export function PlacesMap({
   initialCenter,
   initialZoom = 11,
   userLocation,
+  selectedMunicipalityCode,
+  selectedRailLineId,
   visitCountsByPlaceId = {},
   onStyleError,
 }: PlacesMapProps) {
@@ -89,10 +106,17 @@ export function PlacesMap({
   const userMarkerRef = useRef<maplibregl.Marker | null>(null);
   const lastSelectedRef = useRef<string | undefined>(undefined);
   const lastUserLocRef = useRef<GeoPoint | undefined>(undefined);
+  const lastOverlayFocusRef = useRef<string | undefined>(undefined);
   const onSelectRef = useRef(onSelectPlace);
   onSelectRef.current = onSelectPlace;
   const onStyleErrorRef = useRef(onStyleError);
   onStyleErrorRef.current = onStyleError;
+  const [municipalityAsset, setMunicipalityAsset] =
+    useState<OverlayFeatureCollection>();
+  const [railLineAsset, setRailLineAsset] =
+    useState<OverlayFeatureCollection>();
+  const [railStationAsset, setRailStationAsset] =
+    useState<OverlayFeatureCollection>();
 
   useEffect(() => {
     const container = containerRef.current;
@@ -142,12 +166,13 @@ export function PlacesMap({
         const el = container.querySelector<HTMLElement>(
           '.maplibregl-ctrl-attrib',
         );
-        if (!el) return;
-        el.classList.remove('maplibregl-compact-show');
-        el.removeAttribute('open');
+        if (el) {
+          el.classList.remove('maplibregl-compact-show');
+          el.removeAttribute('open');
+        }
+        setMapReady(true);
       });
       mapRef.current = map;
-      setMapReady(true);
     };
 
     void init();
@@ -162,6 +187,63 @@ export function PlacesMap({
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  useEffect(() => {
+    let cancelled = false;
+
+    async function loadOverlayAssets() {
+      try {
+        const [municipality, railLines, railStations] = await Promise.all([
+          fetch(`${GEO_ASSET_BASE}/tokyo-municipalities.geojson`).then((res) =>
+            res.json(),
+          ),
+          fetch(`${GEO_ASSET_BASE}/rail-lines.geojson`).then((res) =>
+            res.json(),
+          ),
+          fetch(`${GEO_ASSET_BASE}/rail-stations.geojson`).then((res) =>
+            res.json(),
+          ),
+        ]);
+        if (cancelled) return;
+        setMunicipalityAsset(municipality as OverlayFeatureCollection);
+        setRailLineAsset(railLines as OverlayFeatureCollection);
+        setRailStationAsset(railStations as OverlayFeatureCollection);
+      } catch {
+        // Overlay assets are optional public map affordances; markers still work.
+      }
+    }
+
+    void loadOverlayAssets();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  useEffect(() => {
+    const currentMap = mapRef.current;
+    if (!currentMap || !mapReady) return;
+
+    const map = currentMap;
+    function ensureSource(sourceId: string) {
+      if (map.getSource(sourceId)) return;
+      map.addSource(sourceId, {
+        type: 'geojson',
+        data: emptyFeatureCollection(),
+      });
+    }
+
+    ensureSource(MUNICIPALITY_SOURCE_ID);
+    ensureSource(RAIL_LINE_SOURCE_ID);
+    ensureSource(RAIL_STATION_SOURCE_ID);
+
+    for (const layer of [
+      ...municipalityOverlayLayers(),
+      ...railOverlayLayers(),
+    ]) {
+      if (map.getLayer(layer.id)) continue;
+      map.addLayer(layer as unknown as maplibregl.LayerSpecification);
+    }
+  }, [mapReady]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -188,6 +270,61 @@ export function PlacesMap({
       zoom: 13,
     });
   }, [userLocation, mapReady]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !mapReady) return;
+    const source = map.getSource(MUNICIPALITY_SOURCE_ID) as
+      | maplibregl.GeoJSONSource
+      | undefined;
+    if (!source) return;
+
+    const selected = featuresByProperty(
+      municipalityAsset,
+      'code',
+      selectedMunicipalityCode,
+    );
+    source.setData(selected);
+    if (!selectedMunicipalityCode) return;
+
+    const bounds = boundsForFeatureCollection(selected);
+    const focusKey = `municipality:${selectedMunicipalityCode}`;
+    if (!bounds || lastOverlayFocusRef.current === focusKey) return;
+    lastOverlayFocusRef.current = focusKey;
+    map.fitBounds(bounds, { padding: 48, maxZoom: 13, duration: 650 });
+  }, [municipalityAsset, selectedMunicipalityCode, mapReady]);
+
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !mapReady) return;
+    const lineSource = map.getSource(RAIL_LINE_SOURCE_ID) as
+      | maplibregl.GeoJSONSource
+      | undefined;
+    const stationSource = map.getSource(RAIL_STATION_SOURCE_ID) as
+      | maplibregl.GeoJSONSource
+      | undefined;
+    if (!lineSource || !stationSource) return;
+
+    const selectedLines = featuresByProperty(
+      railLineAsset,
+      'lineId',
+      selectedRailLineId,
+    );
+    const selectedStations = featuresByProperty(
+      railStationAsset,
+      'lineId',
+      selectedRailLineId,
+    );
+    lineSource.setData(selectedLines);
+    stationSource.setData(selectedStations);
+    if (!selectedRailLineId) return;
+
+    const bounds = boundsForFeatureCollection(selectedLines);
+    const focusKey = `rail:${selectedRailLineId}`;
+    if (!bounds || lastOverlayFocusRef.current === focusKey) return;
+    lastOverlayFocusRef.current = focusKey;
+    map.fitBounds(bounds, { padding: 56, maxZoom: 12.5, duration: 650 });
+  }, [railLineAsset, railStationAsset, selectedRailLineId, mapReady]);
 
   useEffect(() => {
     const map = mapRef.current;

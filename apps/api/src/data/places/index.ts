@@ -10,6 +10,7 @@ import { trainMuseumPlaces } from './train-museums';
 import { librarySportPlaces } from './libraries-sports';
 import { supplementPlaces } from './supplements';
 import { eventPlaces } from './events';
+import { generatedEventPlaces } from './generated-events';
 import { withTransitAccess } from './transit';
 
 /**
@@ -30,6 +31,7 @@ const allInputs = [
   ...librarySportPlaces,
   ...supplementPlaces,
   ...eventPlaces,
+  ...generatedEventPlaces,
 ];
 
 export const seedPlaces: Place[] = allInputs

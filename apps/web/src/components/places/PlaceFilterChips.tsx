@@ -24,7 +24,6 @@ const CATEGORIES: PlaceCategory[] = [
   'toy-play',
   'amusement-park',
   'restaurant',
-  'event',
   'shop',
   'facility',
 ];
@@ -53,7 +52,6 @@ const RAIL_GROUPS: RailLineGroup[] = ['jr', 'subway', 'private'];
 
 type PlaceFilterChipsProps = {
   filters: PlacesFilterState;
-  resultCount: number;
   municipalityCounts: Record<string, number>;
   railLineCounts: Record<string, number>;
   open: boolean;
@@ -226,7 +224,6 @@ function FilterLineIcon() {
 
 export function PlaceFilterChips({
   filters,
-  resultCount,
   municipalityCounts,
   railLineCounts,
   open,
@@ -285,11 +282,6 @@ export function PlaceFilterChips({
         }`}
       >
         <FilterLineIcon />
-        {resultCount > 0 && (
-          <span className="absolute -right-1 -top-1 min-w-5 rounded-full border-2 border-white bg-brand-600 px-1 text-center text-[10px] font-bold leading-4 text-white">
-            {resultCount}
-          </span>
-        )}
       </button>
 
       {open && (

@@ -70,6 +70,22 @@ describe('GET /api/v1/places', () => {
     await app.close();
   });
 
+  it('includes generated Tokyo event places for the map', async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: 'GET',
+      url: `${API_PREFIX}/places/tokyo-event-1f5caf26e7f53ae3`,
+    });
+    expect(res.statusCode).toBe(200);
+    expect(res.json()).toMatchObject({
+      id: 'tokyo-event-1f5caf26e7f53ae3',
+      category: 'event',
+      municipalityCode: '13107',
+      status: 'published',
+    });
+    await app.close();
+  });
+
   it('filters by radius from a center point', async () => {
     const app = buildApp();
     // 東京駅付近を中心に半径 2km 以内の地点のみ返す

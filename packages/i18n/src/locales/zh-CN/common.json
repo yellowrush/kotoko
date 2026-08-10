@@ -104,6 +104,7 @@
     "map": "地图",
     "list": "列表",
     "locate": "定位到我",
+    "timeLimitedEvents": "限时活动",
     "locationDenied": "无法获取定位。可以拖动地图查找。",
     "mapTilesUnavailable": "无法加载地图数据。离线时可使用地点列表。",
     "spotsNear": "附近地点",

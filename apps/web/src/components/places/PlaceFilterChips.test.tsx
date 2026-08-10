@@ -26,7 +26,6 @@ afterEach(() => {
 function renderFilter(overrides: Partial<PlacesFilterState>) {
   const props = {
     filters: { ...baseFilters, ...overrides },
-    resultCount: 3,
     municipalityCounts: { '13108': 2, '13109': 1 },
     railLineCounts: { 'jr-sobu': 2, 'toden-arakawa': 1 },
     open: true,

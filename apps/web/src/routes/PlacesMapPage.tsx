@@ -21,7 +21,7 @@ import {
   pickRandomItem,
   subscribeRandomPlaceRequest,
 } from '../lib/randomPlace';
-import { CATEGORY_ICON } from '../components/places/categoryMeta';
+import { getPlaceIcon } from '../components/places/categoryMeta';
 
 const PlacesMap = lazy(() =>
   lazyWithStaleAssetRecovery(
@@ -46,6 +46,35 @@ function LocationLineIcon() {
         strokeWidth="2.3"
       />
       <circle cx="12" cy="12" r="1.7" fill="currentColor" />
+    </svg>
+  );
+}
+
+function TimeLimitedEventIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      viewBox="0 0 24 24"
+      className="h-5 w-5 fill-none stroke-current"
+    >
+      <path
+        d="M4.8 8.2a2.3 2.3 0 0 0 0 4.6l1.2 5.1h12l1.2-5.1a2.3 2.3 0 0 0 0-4.6L18 3.9H6z"
+        strokeLinejoin="round"
+        strokeWidth="2.1"
+      />
+      <path
+        d="M8.4 8.4h4.2M8.4 12h2.2"
+        strokeLinecap="round"
+        strokeWidth="2.1"
+      />
+      <circle cx="16.1" cy="12.2" r="3.2" fill="white" strokeWidth="2" />
+      <path
+        d="M16.1 10.4v2l1.25.9"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.8"
+      />
     </svg>
   );
 }
@@ -110,7 +139,6 @@ export function PlacesMapPage() {
     () => countPlacesByRailLine(locationCountBase),
     [locationCountBase],
   );
-
   const center = coords ?? DEFAULT_CENTER;
   const visitCountsByPlaceId = useMemo(
     () => countVisitsByPlaceId(visits),
@@ -148,6 +176,12 @@ export function PlacesMapPage() {
     [],
   );
 
+  function handleMapSelectPlace(id: string) {
+    setFilterOpen(false);
+    setSheetCollapsed(false);
+    setPlaceId(id);
+  }
+
   if (isLoading) {
     return (
       <div className="flex min-h-0 flex-1 items-center justify-center text-sm text-gray-400">
@@ -184,7 +218,7 @@ export function PlacesMapPage() {
           <PlacesMap
             places={filtered}
             selectedPlaceId={filters.placeId}
-            onSelectPlace={setPlaceId}
+            onSelectPlace={handleMapSelectPlace}
             initialCenter={center}
             initialZoom={coords ? 13 : 10}
             userLocation={coords}
@@ -211,7 +245,6 @@ export function PlacesMapPage() {
           <div className="pointer-events-auto w-fit">
             <PlaceFilterChips
               filters={filters}
-              resultCount={filtered.length}
               municipalityCounts={municipalityCounts}
               railLineCounts={railLineCounts}
               open={filterOpen}
@@ -228,6 +261,24 @@ export function PlacesMapPage() {
               toggleTag={toggleTag}
             />
           </div>
+          <button
+            type="button"
+            aria-label={`${t('places.categories.event')} ${t('places.filters.label')}`}
+            aria-pressed={filters.category === 'event'}
+            onClick={() => {
+              setFilterOpen(false);
+              setSheetCollapsed(true);
+              setCategory(filters.category === 'event' ? undefined : 'event');
+            }}
+            className={`pointer-events-auto inline-flex h-10 min-w-0 items-center justify-center gap-1.5 rounded-full border-2 px-3 text-sm font-bold shadow-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 ${
+              filters.category === 'event'
+                ? 'border-brand-800 bg-brand-600 text-white shadow-inner'
+                : 'border-brand-200 bg-brand-50 text-brand-800 hover:bg-brand-100'
+            }`}
+          >
+            <TimeLimitedEventIcon />
+            <span className="whitespace-nowrap">{t('places.timeLimitedEvents')}</span>
+          </button>
           <button
             type="button"
             aria-label={t('places.locate')}
@@ -308,7 +359,7 @@ function RandomPlaceDialog({
             className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-2 border-brand-900 bg-white text-4xl shadow-[0_5px_0_rgba(120,53,15,0.18)]"
             aria-hidden="true"
           >
-            {CATEGORY_ICON[place.category]}
+            {getPlaceIcon(place)}
           </div>
           <p className="mt-3 text-xs font-extrabold text-brand-700">
             {t('places.random.resultEyebrow')}

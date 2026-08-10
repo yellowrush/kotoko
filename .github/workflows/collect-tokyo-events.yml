@@ -6,8 +6,9 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   issues: write
+  pull-requests: write
 
 concurrency:
   group: collect-tokyo-events
@@ -26,7 +27,42 @@ jobs:
           node-version: 22
 
       - name: Collect candidates
-        run: node tools/tokyo-events/collect-tokyo-events.mjs --output-dir=artifacts/tokyo-events
+        run: node tools/tokyo-events/collect-tokyo-events.mjs --output-dir=artifacts/tokyo-events --write-place-data=apps/api/src/data/places/generated-events.ts
+
+      - name: Ensure content labels
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            for (const label of [
+              { name: 'content-intake', color: '0e8a16', description: 'Public content intake for human review' },
+              { name: 'tokyo-events', color: '1d76db', description: 'Tokyo event candidate collection' },
+            ]) {
+              try {
+                await github.rest.issues.createLabel({ owner, repo, ...label });
+              } catch (error) {
+                if (error.status !== 422) throw error;
+              }
+            }
+
+      - name: Create event data pull request
+        id: event-data-pr
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: content/tokyo-events-${{ github.run_id }}
+          base: develop
+          title: 'content(events): update Tokyo event places'
+          commit-message: 'content(events): update Tokyo event places'
+          labels: content-intake,tokyo-events
+          body: |
+            Daily Tokyo event collection updated public event place data.
+
+            Review rules:
+            - Publish only public event/place data.
+            - Do not add child profile, IndexedDB, contact, analytics, or private location data.
+            - Confirm source URL, event date, venue, and license before merging.
+            - Commercial sources require explicit authorization.
 
       - name: Upload candidate artifact
         id: upload-candidates
@@ -50,22 +86,16 @@ jobs:
               core.info('No Tokyo event candidates found.');
               return;
             }
+            const generatedEventFile = 'apps/api/src/data/places/generated-events.ts';
+            const generatedEventCount = fs.existsSync(generatedEventFile)
+              ? (fs.readFileSync(generatedEventFile, 'utf8').match(/category: 'event'/g) || []).length
+              : 0;
 
             const owner = context.repo.owner;
             const repo = context.repo.repo;
             const title = `Tokyo event candidates ${payload.runDate}`;
             const runUrl = `${process.env.GITHUB_SERVER_URL}/${owner}/${repo}/actions/runs/${process.env.GITHUB_RUN_ID}`;
             const artifactUrl = process.env.CANDIDATE_ARTIFACT_URL || runUrl;
-            for (const label of [
-              { name: 'content-intake', color: '0e8a16', description: 'Public content intake for human review' },
-              { name: 'tokyo-events', color: '1d76db', description: 'Tokyo event candidate collection' },
-            ]) {
-              try {
-                await github.rest.issues.createLabel({ owner, repo, ...label });
-              } catch (error) {
-                if (error.status !== 422) throw error;
-              }
-            }
             const preview = payload.candidates.slice(0, 20).map((candidate, index) => [
               `${index + 1}. ${candidate.title}`,
               `   - Category: ${candidate.category}`,
@@ -83,6 +113,7 @@ jobs:
               fetchedAt: payload.fetchedAt,
               sourceCount: payload.sourceCount,
               candidateCount: payload.candidates.length,
+              generatedEventCount,
               candidates: payload.candidates.slice(0, 20),
               errors: payload.errors.slice(0, 10),
             }, null, 2);
@@ -92,6 +123,8 @@ jobs:
               `Full JSON artifact: ${artifactUrl}`,
               `Workflow run: ${runUrl}`,
               `Artifact file: \`${file}\``,
+              `Generated map events: ${generatedEventCount}`,
+              `Event data PR: ${{ steps.event-data-pr.outputs.pull-request-url || 'no file changes' }}`,
               '',
               'Candidate preview:',
               '',

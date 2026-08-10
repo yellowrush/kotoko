@@ -24,7 +24,7 @@ import {
 } from '../../lib/placeMapOverlays';
 import { getVisitMarkerToneClass } from '../../lib/placeVisitMarkers';
 import { useAppTranslation } from '../../hooks/useAppTranslation';
-import { CATEGORY_ICON } from './categoryMeta';
+import { getPlaceIcon } from './categoryMeta';
 
 const STYLE_URL =
   import.meta.env.VITE_MAP_STYLE_URL ??
@@ -373,7 +373,7 @@ export function PlacesMap({
       const visitCount = visitCountsByPlaceId[place.id] ?? 0;
       updateMarkerElement({
         el: marker.getElement() as HTMLElement,
-        emoji: CATEGORY_ICON[place.category],
+        emoji: getPlaceIcon(place),
         active,
         visitCount,
         label: t('places.visitCountAria', {

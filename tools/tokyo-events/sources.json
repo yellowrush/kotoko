@@ -4,6 +4,74 @@
   "maxResources": 30,
   "requestTimeoutMs": 10000,
   "maxRowsPerResource": 500,
+  "placeData": {
+    "maxGeneratedEvents": 40,
+    "venueRules": [
+      {
+        "keywords": ["\u9326\u7cf8\u516c\u5712", "kinshi"],
+        "latitude": 35.6963,
+        "longitude": 139.8119,
+        "address": "\u6771\u4eac\u90fd\u58a8\u7530\u533a\u9326\u7cf84-15-1",
+        "municipalityCode": "13107"
+      },
+      {
+        "keywords": ["\u96c5\u4eac\u5e73", "\u58a8\u7530\u516c\u5712", "sumida park"],
+        "latitude": 35.7112,
+        "longitude": 139.8039,
+        "address": "\u6771\u4eac\u90fd\u58a8\u7530\u533a\u5411\u5cf6",
+        "municipalityCode": "13107"
+      },
+      {
+        "keywords": ["\u96c5\u6d66", "\u96c5\u6d66\u4f1a\u5834", "\u4e21\u56fd", "sumidagawa", "hanabi"],
+        "latitude": 35.705,
+        "longitude": 139.8099,
+        "address": "\u6771\u4eac\u90fd\u58a8\u7530\u533a\u58a8\u7530\u5ddd\u6cbf\u3044",
+        "municipalityCode": "13107"
+      },
+      {
+        "keywords": ["\u672c\u6240\u677e\u5742\u753a\u516c\u5712", "1214.tokyo", "kira"],
+        "latitude": 35.6982,
+        "longitude": 139.7986,
+        "address": "\u6771\u4eac\u90fd\u58a8\u7530\u533a\u4e21\u56fd3-13-9",
+        "municipalityCode": "13107"
+      },
+      {
+        "keywords": ["\u6b63\u798f\u5bfa", "shofukuji"],
+        "latitude": 35.7531,
+        "longitude": 139.4719,
+        "address": "\u6771\u4eac\u90fd\u6771\u6751\u5c71\u5e02\u91ce\u53e34-6-1",
+        "municipalityCode": "13213"
+      },
+      {
+        "keywords": ["\u6771\u6751\u5c71\u4e2d\u592e\u516c\u5712"],
+        "latitude": 35.7558,
+        "longitude": 139.4722,
+        "address": "\u6771\u4eac\u90fd\u6771\u6751\u5c71\u5e02\u5bcc\u58eb\u898b\u753a5-4-67",
+        "municipalityCode": "13213"
+      },
+      {
+        "keywords": ["\u6771\u6751\u5c71\u5e02\u5f79\u6240"],
+        "latitude": 35.753,
+        "longitude": 139.4681,
+        "address": "\u6771\u4eac\u90fd\u6771\u6751\u5c71\u5e02\u672c\u753a1-2-3",
+        "municipalityCode": "13213"
+      },
+      {
+        "keywords": ["\u79cb\u6d25\u795e\u793e"],
+        "latitude": 35.7399,
+        "longitude": 139.5099,
+        "address": "\u6771\u4eac\u90fd\u6771\u6751\u5c71\u5e02\u79cb\u6d25\u753a",
+        "municipalityCode": "13213"
+      },
+      {
+        "keywords": ["\u8acf\u8a2a\u795e\u793e"],
+        "latitude": 35.7493,
+        "longitude": 139.4688,
+        "address": "\u6771\u4eac\u90fd\u6771\u6751\u5c71\u5e02\u8acf\u8a2a\u753a",
+        "municipalityCode": "13213"
+      }
+    ]
+  },
   "ckan": {
     "baseUrl": "https://catalog.data.metro.tokyo.lg.jp/api/3/action/package_search",
     "queries": [

@@ -104,6 +104,7 @@
     "map": "マップ",
     "list": "リスト",
     "locate": "現在地へ",
+    "timeLimitedEvents": "期間限定",
     "locationDenied": "位置情報が利用できません。マップを動かして探せます。",
     "mapTilesUnavailable": "地図データを読み込めません。オフライン中は地点一覧をご利用ください。",
     "spotsNear": "近くのスポット",

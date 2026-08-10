@@ -104,6 +104,7 @@
     "map": "地圖",
     "list": "清單",
     "locate": "定位到我",
+    "timeLimitedEvents": "限時活動",
     "locationDenied": "無法使用位置。可拖動地圖尋找。",
     "mapTilesUnavailable": "無法載入地圖資料。離線時可使用景點清單。",
     "spotsNear": "附近景點",

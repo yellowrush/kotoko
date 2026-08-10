@@ -1,4 +1,4 @@
-import { beforeAll, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
 import { fireEvent, render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { i18n, initI18n } from '../../app/i18n';
@@ -26,6 +26,11 @@ const place = (overrides: Partial<FilteredPlace> = {}): FilteredPlace => ({
 
 beforeAll(async () => {
   await initI18n();
+});
+
+afterEach(() => {
+  Reflect.deleteProperty(HTMLElement.prototype, 'scrollIntoView');
+  vi.restoreAllMocks();
 });
 
 describe('PlaceBottomSheet', () => {
@@ -61,5 +66,49 @@ describe('PlaceBottomSheet', () => {
     expect(detailLink).toHaveClass('w-11');
     expect(detailLink).toHaveClass('shrink-0');
     expect(detailLink).toHaveAttribute('href', '/places/p1');
+  });
+
+  it('scrolls the selected place into view after the sheet expands', () => {
+    const scrollIntoView = vi.fn();
+    const requestAnimationFrame = vi
+      .spyOn(window, 'requestAnimationFrame')
+      .mockImplementation((callback) => {
+        callback(0);
+        return 1;
+      });
+    vi.spyOn(window, 'cancelAnimationFrame').mockImplementation(() => {});
+    Object.defineProperty(HTMLElement.prototype, 'scrollIntoView', {
+      configurable: true,
+      value: scrollIntoView,
+    });
+
+    const { rerender } = render(
+      <MemoryRouter>
+        <PlaceBottomSheet
+          places={[place(), place({ id: 'p2', name: 'Asakusa Event' })]}
+          selectedPlaceId="p2"
+          collapsed={true}
+          onToggleCollapsed={vi.fn()}
+          onSelect={vi.fn()}
+        />
+      </MemoryRouter>,
+    );
+
+    expect(scrollIntoView).not.toHaveBeenCalled();
+
+    rerender(
+      <MemoryRouter>
+        <PlaceBottomSheet
+          places={[place(), place({ id: 'p2', name: 'Asakusa Event' })]}
+          selectedPlaceId="p2"
+          collapsed={false}
+          onToggleCollapsed={vi.fn()}
+          onSelect={vi.fn()}
+        />
+      </MemoryRouter>,
+    );
+
+    expect(requestAnimationFrame).toHaveBeenCalled();
+    expect(scrollIntoView).toHaveBeenCalledWith({ block: 'start' });
   });
 });

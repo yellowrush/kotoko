@@ -55,6 +55,9 @@ const FIELD_KEYWORDS = {
   venueName: ['\u5834\u6240', '\u4f1a\u5834', '\u65bd\u8a2d'],
   address: ['\u4f4f\u6240', '\u6240\u5728\u5730'],
   sourceUrl: ['\u30ea\u30f3\u30af', '\u8a73\u7d30'],
+  municipalityCode: ['\u81ea\u6cbb\u4f53\u30b3\u30fc\u30c9', '\u5e02\u533a\u753a\u6751\u30b3\u30fc\u30c9'],
+  latitude: ['\u7def\u5ea6'],
+  longitude: ['\u7d4c\u5ea6'],
 };
 
 function getArg(name, fallback) {
@@ -79,14 +82,12 @@ function hashId(parts) {
 }
 
 function includesAny(text, keywords) {
-  return keywords.some((keyword) => text.includes(keyword));
+  return keywords.some((keyword) => text.includes(keyword.toLowerCase()));
 }
 
 function candidateCategory(text) {
   const normalized = text.toLowerCase();
-  if (includesAny(normalized, CATEGORY_KEYWORDS['flea-market']) || normalized.includes('flea')) {
-    return 'flea-market';
-  }
+  if (includesAny(normalized, CATEGORY_KEYWORDS['flea-market']) || normalized.includes('flea')) return 'flea-market';
   if (includesAny(normalized, CATEGORY_KEYWORDS.parenting)) return 'parenting';
   if (includesAny(normalized, CATEGORY_KEYWORDS.festival)) return 'festival';
   if (includesAny(normalized, CATEGORY_KEYWORDS.seasonal)) return 'seasonal';
@@ -99,26 +100,10 @@ function confidenceFor(row, title, sourceUrl) {
   const keys = Object.keys(row).join(' ');
   const hasDate =
     /date|start|end|from|to/i.test(keys) ||
-    includesAny(keys, [
-      '\u65e5',
-      '\u958b\u59cb',
-      '\u7d42\u4e86',
-      '\u958b\u50ac',
-    ]);
+    includesAny(keys, ['\u65e5', '\u958b\u59cb', '\u7d42\u4e86', '\u958b\u50ac']);
   if (title && sourceUrl && hasDate) return 'high';
   if (title && sourceUrl) return 'medium';
-  if (
-    includesAny(text, [
-      '\u958b\u50ac',
-      '\u30a4\u30d9\u30f3\u30c8',
-      '\u796d',
-      '\u5b50\u80b2\u3066',
-      '\u89aa\u5b50',
-      '\u30d0\u30b6\u30fc',
-    ])
-  ) {
-    return 'medium';
-  }
+  if (includesAny(text, ['\u958b\u50ac', '\u30a4\u30d9\u30f3\u30c8', '\u796d', '\u5b50\u80b2\u3066', '\u89aa\u5b50', '\u30d0\u30b6\u30fc'])) return 'medium';
   return 'low';
 }
 
@@ -169,21 +154,30 @@ function firstValue(row, fieldName, englishPatterns = []) {
   const keywords = FIELD_KEYWORDS[fieldName] ?? [];
   for (const [key, value] of Object.entries(row)) {
     if (!value) continue;
-    if (includesAny(key, keywords) || englishPatterns.some((pattern) => pattern.test(key))) {
+    const normalizedKey = key.toLowerCase();
+    if (includesAny(normalizedKey, keywords) || englishPatterns.some((pattern) => pattern.test(key))) {
       return value;
     }
   }
   return undefined;
 }
 
+function parseNumber(value) {
+  if (value === undefined || value === null || value === '') return undefined;
+  const n = Number(String(value).replace(',', '.'));
+  return Number.isFinite(n) ? n : undefined;
+}
+
 function normalizeRow(row, source, fetchedAt) {
   const title = firstValue(row, 'title', [/^name$/i, /^title$/i]);
   const startsAt = firstValue(row, 'startsAt', [/^start/i, /from/i]);
   const endsAt = firstValue(row, 'endsAt', [/^end/i, /to/i]);
-  const venueName = firstValue(row, 'venueName', [/^venue/i]);
+  const venueName = firstValue(row, 'venueName', [/^venue/i, /place/i]);
   const address = firstValue(row, 'address', [/^address/i]);
-  const sourceUrl =
-    firstValue(row, 'sourceUrl', [/url/i]) ?? source.url ?? source.packageUrl;
+  const sourceUrl = firstValue(row, 'sourceUrl', [/url/i]) ?? source.url ?? source.packageUrl;
+  const municipalityCode = firstValue(row, 'municipalityCode', [/municipality.*code/i, /city.*code/i]);
+  const latitude = parseNumber(firstValue(row, 'latitude', [/lat/i]));
+  const longitude = parseNumber(firstValue(row, 'longitude', [/lon/i, /lng/i]));
   const text = Object.values(row).join(' ');
   const category = candidateCategory(`${title ?? ''} ${venueName ?? ''} ${text}`);
 
@@ -197,6 +191,9 @@ function normalizeRow(row, source, fetchedAt) {
     endsAt,
     venueName,
     address,
+    municipalityCode,
+    latitude,
+    longitude,
     sourceName: source.name,
     sourceUrl,
     fetchedAt,
@@ -286,9 +283,103 @@ async function rowsFromResource(resource, config) {
   return parseCsv(text).slice(0, config.maxRowsPerResource);
 }
 
+function findVenueRule(candidate, rules) {
+  const text = [
+    candidate.title,
+    candidate.venueName,
+    candidate.address,
+    candidate.sourceUrl,
+  ]
+    .filter(Boolean)
+    .join(' ')
+    .toLowerCase();
+  return rules.find((rule) => includesAny(text, rule.keywords ?? []));
+}
+
+function toPlaceInput(candidate, config) {
+  const rule = findVenueRule(candidate, config.placeData?.venueRules ?? []);
+  const latitude = candidate.latitude ?? rule?.latitude;
+  const longitude = candidate.longitude ?? rule?.longitude;
+  if (latitude === undefined || longitude === undefined) return undefined;
+
+  const sourceCheckedAt = candidate.fetchedAt;
+  const address = candidate.address ?? rule?.address ?? candidate.venueName ?? 'Tokyo';
+  const municipalityCode = candidate.municipalityCode ?? rule?.municipalityCode;
+  if (!municipalityCode) return undefined;
+
+  const datePart = candidate.startsAt
+    ? `Date: ${candidate.startsAt}${candidate.endsAt ? ` - ${candidate.endsAt}` : ''}. `
+    : '';
+  const venuePart = candidate.venueName ? `Venue: ${candidate.venueName}. ` : '';
+  const tags = candidate.category === 'parenting' || candidate.category === 'child-friendly'
+    ? ['stroller-friendly']
+    : undefined;
+
+  return {
+    id: candidate.id,
+    name: candidate.title,
+    category: 'event',
+    latitude,
+    longitude,
+    address,
+    municipalityCode,
+    suitableAgeMinMonths: 0,
+    suitableAgeMaxMonths: 216,
+    indoorOutdoor: 'outdoor',
+    priceLevel: 0,
+    strollerFriendly: candidate.category === 'parenting' || candidate.category === 'child-friendly',
+    tags,
+    shortDescription: `${datePart}${venuePart}Collected from public Tokyo event data; confirm current details at the official source.`,
+    websiteUrl: candidate.sourceUrl,
+    sourceUrl: candidate.sourceUrl,
+    sourceCheckedAt,
+    status: 'published',
+    provenance: [
+      {
+        type: 'open-data',
+        name: candidate.sourceName,
+        url: candidate.sourceUrl,
+        fetchedAt: candidate.fetchedAt,
+      },
+    ],
+  };
+}
+
+function escapeNonAscii(text) {
+  return text.replace(/[^\x20-\x7E\r\n\t]/g, (char) => {
+    const code = char.codePointAt(0);
+    if (code === undefined) return char;
+    return code <= 0xffff
+      ? `\\u${code.toString(16).padStart(4, '0')}`
+      : `\\u{${code.toString(16)}}`;
+  });
+}
+
+function placeDataSource(candidates, config) {
+  const places = candidates
+    .map((candidate) => toPlaceInput(candidate, config))
+    .filter(Boolean)
+    .slice(0, config.placeData?.maxGeneratedEvents ?? 40);
+  const body = JSON.stringify(places, null, 2)
+    .replace(/"([^"]+)":/g, '$1:')
+    .replace(/"event"/g, "'event'")
+    .replace(/"outdoor"/g, "'outdoor'")
+    .replace(/"published"/g, "'published'")
+    .replace(/"open-data"/g, "'open-data'")
+    .replace(/"stroller-friendly"/g, "'stroller-friendly'");
+
+  return escapeNonAscii(`import type { PlaceInput } from '@kodoko/domain';
+
+// Generated by tools/tokyo-events/collect-tokyo-events.mjs.
+// Review generated diffs before merging. Only public event data is included.
+export const generatedEventPlaces: PlaceInput[] = ${body};
+`);
+}
+
 async function main() {
   const config = JSON.parse(await readFile(configPath, 'utf8'));
   const outputDir = path.resolve(getArg('output-dir', path.join(__dirname, 'out')));
+  const placeDataPath = getArg('write-place-data', undefined);
   const fetchedAt = new Date().toISOString();
   const runDate = todayIsoDate(config.timezone);
   const errors = [];
@@ -321,7 +412,22 @@ async function main() {
     'utf8',
   );
 
-  console.log(JSON.stringify({ outputPath, sourceCount: resources.length, candidateCount: candidates.length, errorCount: errors.length }));
+  let generatedPlaceCount = 0;
+  if (placeDataPath) {
+    const source = placeDataSource(candidates, config);
+    generatedPlaceCount = (source.match(/category: 'event'/g) ?? []).length;
+    await mkdir(path.dirname(path.resolve(placeDataPath)), { recursive: true });
+    await writeFile(path.resolve(placeDataPath), source, 'utf8');
+  }
+
+  console.log(JSON.stringify({
+    outputPath,
+    placeDataPath,
+    sourceCount: resources.length,
+    candidateCount: candidates.length,
+    generatedPlaceCount,
+    errorCount: errors.length,
+  }));
 }
 
 main().catch((error) => {

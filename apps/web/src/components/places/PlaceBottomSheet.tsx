@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useAppTranslation } from '../../hooks/useAppTranslation';
 import type { FilteredPlace } from '../../lib/placeFilters';
 import { formatDistanceKm } from '../../lib/placeFilters';
-import { CATEGORY_ICON } from './categoryMeta';
+import { getPlaceIcon } from './categoryMeta';
 
 type PlaceBottomSheetProps = {
   places: FilteredPlace[];
@@ -25,17 +25,21 @@ export function PlaceBottomSheet({
   const suppressScrollRef = useRef(false);
 
   useEffect(() => {
+    if (collapsed || !selectedPlaceId) return;
     const suppress = suppressScrollRef.current;
     suppressScrollRef.current = false;
-    if (!selectedPlaceId || suppress) return;
+    if (suppress) return;
     const scroller = listRef.current;
     if (!scroller) return;
-    const item = scroller.querySelector<HTMLElement>(
-      `[data-place-id="${selectedPlaceId}"]`,
-    );
-    if (!item) return;
-    item.scrollIntoView({ block: 'start' });
-  }, [selectedPlaceId]);
+    const frame = window.requestAnimationFrame(() => {
+      const item = scroller.querySelector<HTMLElement>(
+        `[data-place-id="${selectedPlaceId}"]`,
+      );
+      if (!item) return;
+      item.scrollIntoView({ block: 'start' });
+    });
+    return () => window.cancelAnimationFrame(frame);
+  }, [collapsed, places, selectedPlaceId]);
 
   const sorted = [...places].sort((a, b) => {
     if (a.distanceKm !== null && b.distanceKm !== null)
@@ -114,7 +118,7 @@ export function PlaceBottomSheet({
                         className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-brand-50 text-base ring-1 ring-brand-100"
                         aria-hidden="true"
                       >
-                        {CATEGORY_ICON[place.category]}
+                        {getPlaceIcon(place)}
                       </span>
                       <div className="min-w-0">
                         <p className="truncate text-sm font-bold leading-snug text-gray-900">

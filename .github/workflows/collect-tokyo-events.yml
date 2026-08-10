@@ -1,0 +1,101 @@
+name: Collect Tokyo Events
+
+on:
+  schedule:
+    - cron: '30 21 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: collect-tokyo-events
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    name: Collect public Tokyo event candidates
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Collect candidates
+        run: node tools/tokyo-events/collect-tokyo-events.mjs --output-dir=artifacts/tokyo-events
+
+      - name: Upload candidate artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: tokyo-event-candidates
+          path: artifacts/tokyo-events/*.json
+
+      - name: Open review issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('node:fs');
+            const path = require('node:path');
+            const dir = 'artifacts/tokyo-events';
+            const file = fs.readdirSync(dir).find((name) => name.endsWith('.json'));
+            const payload = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8'));
+            if (!payload.candidates.length) {
+              core.info('No Tokyo event candidates found.');
+              return;
+            }
+
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const title = `Tokyo event candidates ${payload.runDate}`;
+            for (const label of [
+              { name: 'content-intake', color: '0e8a16', description: 'Public content intake for human review' },
+              { name: 'tokyo-events', color: '1d76db', description: 'Tokyo event candidate collection' },
+            ]) {
+              try {
+                await github.rest.issues.createLabel({ owner, repo, ...label });
+              } catch (error) {
+                if (error.status !== 422) throw error;
+              }
+            }
+            const body = [
+              `Daily public Tokyo event collection produced ${payload.candidates.length} candidates from ${payload.sourceCount} resources.`,
+              '',
+              'Review rules:',
+              '- Publish only public event/place data.',
+              '- Do not add child profile, IndexedDB, contact, analytics, or private location data.',
+              '- Confirm source URL, event date, venue, and license before editing app data.',
+              '- Prefer official sources; commercial sources require explicit authorization.',
+              '',
+              `Artifact: \`${file}\``,
+              payload.errors.length ? `Errors: ${payload.errors.length}` : 'Errors: 0',
+            ].join('\n');
+
+            const existing = await github.paginate(github.rest.issues.listForRepo, {
+              owner,
+              repo,
+              state: 'open',
+              labels: 'content-intake,tokyo-events',
+              per_page: 100,
+            });
+            const sameDay = existing.find((issue) => issue.title === title);
+            if (sameDay) {
+              await github.rest.issues.createComment({
+                owner,
+                repo,
+                issue_number: sameDay.number,
+                body,
+              });
+              return;
+            }
+
+            await github.rest.issues.create({
+              owner,
+              repo,
+              title,
+              body,
+              labels: ['content-intake', 'tokyo-events'],
+            });

@@ -1,0 +1,27 @@
+{
+  "timezone": "Asia/Tokyo",
+  "lookaheadDays": 45,
+  "maxResources": 30,
+  "requestTimeoutMs": 10000,
+  "maxRowsPerResource": 500,
+  "ckan": {
+    "baseUrl": "https://catalog.data.metro.tokyo.lg.jp/api/3/action/package_search",
+    "queries": [
+      "イベント一覧",
+      "子育て イベント",
+      "親子 イベント",
+      "祭り",
+      "フリーマーケット",
+      "バザー"
+    ],
+    "resourceFormats": ["CSV", "JSON"]
+  },
+  "optionalSources": [
+    {
+      "id": "eventbank",
+      "name": "EventBank",
+      "enabledByEnv": "EVENTBANK_API_URL",
+      "notes": "Enable only after confirming API contract, redistribution terms, and attribution requirements."
+    }
+  ]
+}

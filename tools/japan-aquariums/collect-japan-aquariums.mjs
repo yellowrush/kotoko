@@ -82,7 +82,7 @@ function normalizeName(value) {
 function canonicalName(value) {
   return normalizeName(value)
     .replace(
-      /^海の中道海洋生態科学館（マリンワールド海の中道）$/,
+      /^海の中道海洋生態科学館[（(]マリンワールド海の中道[）)]$/,
       "マリンワールド海の中道",
     )
     .replace(
@@ -90,7 +90,7 @@ function canonicalName(value) {
       "世界淡水魚園水族館 アクア・トトぎふ",
     )
     .replace(
-      /^島根県立しまね海洋館（アクアス）$/,
+      /^島根県立しまね海洋館[（(]アクアス[）)]$/,
       "島根県立しまね海洋館 アクアス",
     )
     .replace(/^関西電力宮津エネルギー研究所・丹後魚っ知館$/, "丹後魚っ知館")

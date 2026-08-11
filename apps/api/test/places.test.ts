@@ -208,6 +208,31 @@ describe("GET /api/v1/places", () => {
     await app.close();
   });
 
+  it("serves generated Japan aquarium places from open map data", async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places?category=aquarium`,
+    });
+    expect(res.statusCode).toBe(200);
+    const body = res.json();
+    const names = body.places.map((p: { name: string }) => p.name);
+    expect(body.total).toBeGreaterThanOrEqual(100);
+    expect(names).toContain("鴨川シーワールド");
+    expect(names).toContain("海遊館");
+    expect(names).toContain("京都水族館");
+    expect(names).toContain("名古屋港水族館");
+    expect(names).toContain("沖縄美ら海水族館");
+    expect(names).toContain("マリンワールド海の中道");
+    expect(names).toContain("世界淡水魚園水族館 アクア・トトぎふ");
+    expect(names).toContain("島根県立しまね海洋館 アクアス");
+    expect(
+      names.filter((name: string) => name === "サンシャイン水族館"),
+    ).toHaveLength(1);
+    expect(names).not.toContain("サンシャイン国際水族館");
+    await app.close();
+  });
+
   it("serves curated event places without duplicates from generated data", async () => {
     const app = buildApp();
     const res = await app.inject({

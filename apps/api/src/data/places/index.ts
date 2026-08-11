@@ -1,17 +1,20 @@
-import type { Place, PlaceInput } from '@kodoko/domain';
-import { derivePlaceFields } from '@kodoko/domain';
-import { basePlaces } from './base';
-import { childrenHallPlaces } from './children-halls';
-import { toyPlayPlaces } from './toy-plays';
-import { amusementParkPlaces } from './amusement-parks';
-import { waterParkPlaces } from './water-parks';
-import { tokyoParkPlaces } from './tokyo-parks';
-import { trainMuseumPlaces } from './train-museums';
-import { librarySportPlaces } from './libraries-sports';
-import { supplementPlaces } from './supplements';
-import { eventPlaces } from './events';
-import { generatedEventPlaces } from './generated-events';
-import { withTransitAccess } from './transit';
+import type { Place, PlaceInput } from "@kodoko/domain";
+import { derivePlaceFields } from "@kodoko/domain";
+import { basePlaces } from "./base";
+import { childrenHallPlaces } from "./children-halls";
+import { toyPlayPlaces } from "./toy-plays";
+import { amusementParkPlaces } from "./amusement-parks";
+import { waterParkPlaces } from "./water-parks";
+import { tokyoParkPlaces } from "./tokyo-parks";
+import { trainMuseumPlaces } from "./train-museums";
+import { librarySportPlaces } from "./libraries-sports";
+import { supplementPlaces } from "./supplements";
+import { generatedAquariumPlaces } from "./generated-aquariums";
+import { generatedZooPlaces } from "./generated-zoos";
+import { zooSupplementPlaces } from "./zoo-supplements";
+import { eventPlaces } from "./events";
+import { generatedEventPlaces } from "./generated-events";
+import { withTransitAccess } from "./transit";
 
 /**
  * 公共地点数据聚合入口。
@@ -30,18 +33,21 @@ const allInputs = [
   ...trainMuseumPlaces,
   ...librarySportPlaces,
   ...supplementPlaces,
+  ...generatedAquariumPlaces,
+  ...generatedZooPlaces,
+  ...zooSupplementPlaces,
   ...eventPlaces,
   ...generatedEventPlaces,
 ];
 
 function eventDedupeKey(input: PlaceInput): string {
-  return `${input.name.normalize('NFKC').trim()}|${input.municipalityCode}`;
+  return `${input.name.normalize("NFKC").trim()}|${input.municipalityCode}`;
 }
 
 function dedupeEventPlaces(inputs: PlaceInput[]): PlaceInput[] {
   const seen = new Set<string>();
   return inputs.filter((input) => {
-    if (input.category !== 'event') return true;
+    if (input.category !== "event") return true;
     const key = eventDedupeKey(input);
     if (seen.has(key)) return false;
     seen.add(key);

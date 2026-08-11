@@ -18,6 +18,8 @@
     "test:local-db": "pnpm --filter @kodoko/local-db test",
     "test:migrations": "pnpm --filter @kodoko/local-db test:migrations",
     "collect:tokyo-events": "node tools/tokyo-events/collect-tokyo-events.mjs",
+    "collect:japan-aquariums": "node tools/japan-aquariums/collect-japan-aquariums.mjs",
+    "collect:japan-zoos": "node tools/japan-zoos/collect-japan-zoos.mjs",
     "clean": "turbo run clean && rm -rf node_modules"
   },
   "devDependencies": {

@@ -106,6 +106,42 @@ describe('GET /api/v1/places', () => {
     await app.close();
   });
 
+  it('serves Tokyo Toy Museum official media links', async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: 'GET',
+      url: `${API_PREFIX}/places/tokyo-toy-museum`,
+    });
+    expect(res.statusCode).toBe(200);
+    expect(res.json()).toMatchObject({
+      websiteUrl: 'https://art-play.or.jp/ttm/',
+      sourceUrl: 'https://art-play.or.jp/ttm/',
+    });
+    expect(res.json().media).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          type: 'image',
+          url: 'https://art-play.or.jp/ttm/assets/img/common/img_ogp.png',
+          cover: true,
+        }),
+        expect.objectContaining({
+          type: 'video',
+          url: 'https://art-play.or.jp/ttm/assets/img/index/movie.mp4',
+          thumbnailUrl: 'https://art-play.or.jp/ttm/assets/img/index/img_poster.jpg',
+        }),
+        expect.objectContaining({
+          type: 'video',
+          url: 'https://www.instagram.com/reel/Dbc3FssSMkk/',
+        }),
+        expect.objectContaining({
+          type: 'video',
+          url: 'https://www.youtube.com/channel/UCfMLoKVg_lC4J6YDIfVh8uQ',
+        }),
+      ]),
+    );
+    await app.close();
+  });
+
   it('serves curated event places without duplicates from generated data', async () => {
     const app = buildApp();
     const res = await app.inject({

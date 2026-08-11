@@ -79,7 +79,34 @@ describe('GET /api/v1/places', () => {
     await app.close();
   });
 
-it('serves curated event places without duplicates from generated data', async () => {
+  it('serves Kameido children hall source media links', async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: 'GET',
+      url: `${API_PREFIX}/places/children-hall-kameido`,
+    });
+    expect(res.statusCode).toBe(200);
+    expect(res.json().media).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          type: 'image',
+          url: 'https://fukushi.unchusha.com/kameido/kameido.jpg',
+          cover: true,
+        }),
+        expect.objectContaining({
+          type: 'video',
+          url: 'https://www.instagram.com/kotojido_kame/',
+        }),
+        expect.objectContaining({
+          type: 'video',
+          url: 'https://twitter.com/kotojido_kame/',
+        }),
+      ]),
+    );
+    await app.close();
+  });
+
+  it('serves curated event places without duplicates from generated data', async () => {
     const app = buildApp();
     const res = await app.inject({
       method: 'GET',

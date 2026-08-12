@@ -219,10 +219,7 @@
         "subway": "地下鉄",
         "private": "私鉄・その他"
       },
-      "r3": "3km",
-      "r5": "5km",
-      "r10": "10km",
-      "r20": "20km"
+      "radiusUnit": "km"
     },
     "filterIndoor": {
       "indoor": "屋内",

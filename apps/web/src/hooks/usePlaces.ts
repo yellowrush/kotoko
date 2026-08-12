@@ -24,9 +24,27 @@ export type PlacesFilterState = {
   placeId: string | undefined;
 };
 
-const RADIUS_OPTIONS = ['3', '5', '10', '20'] as const;
 const LOCATION_MODES: PlacesLocationMode[] = ['near', 'municipality', 'rail'];
+export const MIN_PLACES_RADIUS_KM = 1;
 export const DEFAULT_PLACES_RADIUS_KM = 3;
+export const MAX_PLACES_RADIUS_KM = 20;
+
+function parseRadiusParam(radiusParam: string | null) {
+  const radiusKm = Number(radiusParam);
+  return Number.isInteger(radiusKm) &&
+    radiusKm >= MIN_PLACES_RADIUS_KM &&
+    radiusKm <= MAX_PLACES_RADIUS_KM
+    ? radiusKm
+    : undefined;
+}
+
+function normalizeRadiusKm(radiusKm: number | undefined) {
+  if (radiusKm === undefined || !Number.isFinite(radiusKm)) return undefined;
+  return Math.min(
+    MAX_PLACES_RADIUS_KM,
+    Math.max(MIN_PLACES_RADIUS_KM, Math.round(radiusKm)),
+  );
+}
 
 type UsePlacesOptions = {
   enabled?: boolean;
@@ -90,9 +108,7 @@ export function usePlacesFilters() {
     const radiusParam = searchParams.get('radius');
     const radiusKm =
       locationMode === 'near'
-        ? RADIUS_OPTIONS.includes(radiusParam as (typeof RADIUS_OPTIONS)[number])
-          ? Number(radiusParam)
-          : DEFAULT_PLACES_RADIUS_KM
+        ? parseRadiusParam(radiusParam) ?? DEFAULT_PLACES_RADIUS_KM
         : undefined;
     const municipalityCode =
       locationMode === 'municipality'
@@ -150,14 +166,17 @@ export function usePlacesFilters() {
     [searchParams, update],
   );
   const setRadius = useCallback(
-    (radiusKm: number | undefined) =>
+    (radiusKm: number | undefined) => {
+      const normalizedRadiusKm = normalizeRadiusKm(radiusKm);
       update({
         mode: undefined,
-        radius: radiusKm ? String(radiusKm) : undefined,
+        radius:
+          normalizedRadiusKm === undefined ? undefined : String(normalizedRadiusKm),
         municipality: undefined,
         rail: undefined,
         place: undefined,
-      }),
+      });
+    },
     [update],
   );
   const setMunicipality = useCallback(

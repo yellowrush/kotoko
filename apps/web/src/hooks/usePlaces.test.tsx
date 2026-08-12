@@ -49,6 +49,39 @@ describe('usePlacesFilters', () => {
     expect(screen.getByTestId('radius')).toHaveTextContent('3');
   });
 
+  it('accepts 1km radius params', () => {
+    render(
+      <MemoryRouter initialEntries={['/places?radius=1']}>
+        <Harness />
+      </MemoryRouter>,
+    );
+
+    expect(screen.getByTestId('mode')).toHaveTextContent('near');
+    expect(screen.getByTestId('radius')).toHaveTextContent('1');
+  });
+
+  it('accepts the 20km upper-bound radius param', () => {
+    render(
+      <MemoryRouter initialEntries={['/places?radius=20']}>
+        <Harness />
+      </MemoryRouter>,
+    );
+
+    expect(screen.getByTestId('mode')).toHaveTextContent('near');
+    expect(screen.getByTestId('radius')).toHaveTextContent('20');
+  });
+
+  it('falls back to the default radius for unsupported radius params', () => {
+    render(
+      <MemoryRouter initialEntries={['/places?radius=21']}>
+        <Harness />
+      </MemoryRouter>,
+    );
+
+    expect(screen.getByTestId('mode')).toHaveTextContent('near');
+    expect(screen.getByTestId('radius')).toHaveTextContent('3');
+  });
+
   it('parses location mode specific params', () => {
     render(
       <MemoryRouter

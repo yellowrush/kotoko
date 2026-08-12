@@ -5,9 +5,12 @@ import type {
   PlaceCategory,
 } from "@kodoko/domain";
 import { CATEGORY_GROUP, PLACE_GROUPS } from "@kodoko/domain";
-import type {
-  PlacesFilterState,
-  PlacesLocationMode,
+import {
+  DEFAULT_PLACES_RADIUS_KM,
+  MAX_PLACES_RADIUS_KM,
+  MIN_PLACES_RADIUS_KM,
+  type PlacesFilterState,
+  type PlacesLocationMode,
 } from "../../hooks/usePlaces";
 import {
   COMMON_MUNICIPALITY_CODES,
@@ -43,13 +46,6 @@ const INDOOR_OPTIONS: { value: IndoorOutdoor; key: string }[] = [
 ];
 
 const TAGS = ["dining", "group-play"] as const;
-
-const RADIUS = [
-  { value: 3, key: "r3" },
-  { value: 5, key: "r5" },
-  { value: 10, key: "r10" },
-  { value: 20, key: "r20" },
-] as const;
 
 const RAIL_GROUPS: RailLineGroup[] = ["jr", "subway", "private"];
 
@@ -105,14 +101,19 @@ function CountSuffix({ count }: { count: number }) {
 
 function ChipGroup({
   title,
+  titleMeta,
   children,
 }: {
   title: string;
+  titleMeta?: React.ReactNode;
   children: React.ReactNode;
 }) {
   return (
     <div>
-      <p className="mb-1.5 text-xs font-semibold text-gray-500">{title}</p>
+      <div className="mb-1.5 flex items-center justify-between gap-2">
+        <p className="text-xs font-semibold text-gray-500">{title}</p>
+        {titleMeta}
+      </div>
       <div className="flex flex-wrap gap-1.5">{children}</div>
     </div>
   );
@@ -143,40 +144,6 @@ function ModeButton({
     >
       {icon}
       <span className="min-w-0 whitespace-nowrap">{children}</span>
-    </button>
-  );
-}
-
-function RadiusRadioOption({
-  active,
-  onClick,
-  children,
-}: {
-  active: boolean;
-  onClick: () => void;
-  children: React.ReactNode;
-}) {
-  return (
-    <button
-      type="button"
-      role="radio"
-      aria-checked={active}
-      onClick={onClick}
-      className={`grid min-h-11 grid-cols-[auto_1fr] items-center gap-2 rounded-lg border px-3 py-2 text-left text-sm font-bold transition ${
-        active
-          ? "border-brand-500 bg-brand-50 text-brand-900 shadow-inner"
-          : "border-gray-200 bg-white text-gray-700 hover:border-brand-200 hover:bg-brand-50/40"
-      }`}
-    >
-      <span
-        aria-hidden="true"
-        className={`flex h-4 w-4 items-center justify-center rounded-full border ${
-          active ? "border-brand-700 bg-brand-600" : "border-gray-300 bg-white"
-        }`}
-      >
-        {active && <span className="h-1.5 w-1.5 rounded-full bg-white" />}
-      </span>
-      <span className="min-w-0 truncate">{children}</span>
     </button>
   );
 }
@@ -275,6 +242,8 @@ export function PlaceFilterChips({
   toggleTag,
 }: PlaceFilterChipsProps) {
   const { t } = useAppTranslation();
+  const radiusUnit = t("places.filters.radiusUnit");
+  const currentRadiusKm = filters.radiusKm ?? DEFAULT_PLACES_RADIUS_KM;
   const commonMunicipalities = COMMON_MUNICIPALITY_CODES.reduce<Municipality[]>(
     (items, code) => {
       const municipality = MUNICIPALITY_BY_CODE.get(code);
@@ -352,21 +321,36 @@ export function PlaceFilterChips({
             </ChipGroup>
 
             {filters.locationMode === "near" && (
-              <ChipGroup title={t("places.filters.sectionRadius")}>
-                <div
-                  role="radiogroup"
-                  aria-label={t("places.filters.sectionRadius")}
-                  className="grid grid-cols-2 gap-1.5 rounded-xl border border-gray-200 bg-gray-50 p-2"
-                >
-                  {RADIUS.map((r) => (
-                    <RadiusRadioOption
-                      key={r.key}
-                      active={filters.radiusKm === r.value}
-                      onClick={() => setRadius(r.value)}
-                    >
-                      {t(`places.filters.${r.key}`)}
-                    </RadiusRadioOption>
-                  ))}
+              <ChipGroup
+                title={t("places.filters.sectionRadius")}
+                titleMeta={
+                  <span
+                    aria-live="polite"
+                    className="rounded-full bg-brand-50 px-2.5 py-1 text-sm font-bold text-brand-800"
+                  >
+                    {currentRadiusKm} {radiusUnit}
+                  </span>
+                }
+              >
+                <div className="w-full rounded-xl border border-gray-200 bg-gray-50 px-3 py-3">
+                  <input
+                    type="range"
+                    min={MIN_PLACES_RADIUS_KM}
+                    max={MAX_PLACES_RADIUS_KM}
+                    step={1}
+                    value={currentRadiusKm}
+                    onChange={(event) => setRadius(Number(event.target.value))}
+                    aria-label={t("places.filters.sectionRadius")}
+                    aria-valuetext={`${currentRadiusKm} ${radiusUnit}`}
+                    className="h-2 w-full cursor-pointer accent-brand-600"
+                  />
+                  <div
+                    aria-hidden="true"
+                    className="mt-2 flex justify-between text-xs font-semibold text-gray-500"
+                  >
+                    <span>{MIN_PLACES_RADIUS_KM}</span>
+                    <span>{MAX_PLACES_RADIUS_KM}</span>
+                  </div>
                 </div>
               </ChipGroup>
             )}

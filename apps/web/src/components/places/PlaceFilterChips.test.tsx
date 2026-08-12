@@ -78,22 +78,25 @@ describe('PlaceFilterChips location modes', () => {
     expect(props.setLocationMode).toHaveBeenCalledWith('rail');
   });
 
-  it('renders radius as a distinct non-cancelable radio group', () => {
+  it('renders radius as a 1-20km slider with the unit beside the value', () => {
     const props = renderFilter({ locationMode: 'near', radiusKm: 3 });
 
-    const radiusGroup = screen.getByRole('radiogroup', {
+    const slider = screen.getByRole('slider', {
       name: i18n.t('places.filters.sectionRadius'),
     });
-    const radius3 = within(radiusGroup).getByRole('radio', {
-      name: i18n.t('places.filters.r3'),
-    });
 
-    expect(radiusGroup).toHaveClass('grid', 'grid-cols-2', 'rounded-xl');
-    expect(radius3).toHaveAttribute('aria-checked', 'true');
-    expect(radius3).not.toHaveAttribute('aria-pressed');
+    expect(slider).toHaveAttribute('min', '1');
+    expect(slider).toHaveAttribute('max', '20');
+    expect(slider).toHaveAttribute('step', '1');
+    expect(slider).toHaveValue('3');
+    expect(screen.getByText(`3 ${i18n.t('places.filters.radiusUnit')}`)).toHaveAttribute(
+      'aria-live',
+      'polite',
+    );
+    expect(screen.queryByText('20km')).not.toBeInTheDocument();
 
-    fireEvent.click(radius3);
-    expect(props.setRadius).toHaveBeenCalledWith(3);
+    fireEvent.change(slider, { target: { value: '12' } });
+    expect(props.setRadius).toHaveBeenCalledWith(12);
   });
 
   it('renders common and all municipality chips with counts', () => {

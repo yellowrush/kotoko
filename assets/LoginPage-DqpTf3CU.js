@@ -1,1 +1,0 @@
-import{a as i,j as e}from"./index-D5oiO1e6.js";import{P as n}from"./PageHeader-Cwsn3nQQ.js";function o(){const{t}=i();return e.jsx(n,{title:t("login.title"),description:t("login.description"),children:e.jsx("span",{className:"text-xs text-gray-400",children:"Sprint 7"})})}export{o as LoginPage};

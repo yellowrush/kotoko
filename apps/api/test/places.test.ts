@@ -167,6 +167,53 @@ describe("GET /api/v1/places", () => {
     await app.close();
   });
 
+  it("serves family-useful commercial facilities through the facility category", async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places?category=facility`,
+    });
+    expect(res.statusCode).toBe(200);
+    const body = res.json();
+    const names = body.places.map((p: { name: string }) => p.name);
+    expect(body.total).toBeGreaterThanOrEqual(4650);
+    expect(names).toContain("アーバンドック ららぽーと豊洲");
+    expect(names).toContain("アリオ亀有");
+    expect(names).toContain("アカチャンホンポ");
+    expect(names).toContain("(株)西松屋チェーン 群馬前橋店");
+    expect(names).toContain("トイザらス");
+    expect(names).not.toContain("(株)久米商店");
+    expect(names.some((name: string) => name.includes("オートモール"))).toBe(
+      false,
+    );
+    expect(names.some((name: string) => name.includes("パチンコ"))).toBe(false);
+    expect(names.some((name: string) => name.includes("駐車場"))).toBe(false);
+    await app.close();
+  });
+
+  it("serves family-friendly restaurants through the restaurant category", async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places?category=restaurant`,
+    });
+    expect(res.statusCode).toBe(200);
+    const body = res.json();
+    const names = body.places.map((p: { name: string }) => p.name);
+    expect(body.total).toBeGreaterThanOrEqual(6331);
+    expect(names).toContain("Bamiyan");
+    expect(
+      body.places.every(
+        (p: { category: string; tags?: string[] }) =>
+          p.category === "restaurant" && p.tags?.includes("dining"),
+      ),
+    ).toBe(true);
+    expect(
+      names.some((name: string) => /bar|pub|adult|pachinko/i.test(name)),
+    ).toBe(false);
+    await app.close();
+  });
+
   it("serves Kameido children hall source media links", async () => {
     const app = buildApp();
     const res = await app.inject({
@@ -500,9 +547,14 @@ describe("GET /api/v1/places", () => {
       url: `${API_PREFIX}/places?latitude=35.6812&longitude=139.7671&radius=2`,
     });
     expect(res.statusCode).toBe(200);
+    const wider = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places?latitude=35.6812&longitude=139.7671`,
+    });
+    expect(wider.statusCode).toBe(200);
     const body = res.json();
     expect(body.places.length).toBeGreaterThan(0);
-    expect(body.places.length).toBeLessThan(80);
+    expect(body.places.length).toBeLessThan(wider.json().places.length);
     await app.close();
   });
 

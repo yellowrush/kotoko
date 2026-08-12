@@ -25,6 +25,8 @@
     "collect:japan-libraries": "node tools/japan-libraries/collect-japan-libraries.mjs",
     "collect:japan-museums": "node tools/japan-museums/collect-japan-museums.mjs",
     "collect:japan-playgrounds": "node tools/japan-playgrounds/collect-japan-playgrounds.mjs",
+    "collect:japan-restaurants": "node tools/japan-restaurants/collect-japan-restaurants.mjs",
+    "collect:japan-shops": "node tools/japan-shops/collect-japan-shops.mjs",
     "collect:japan-toy-plays": "node tools/japan-toy-plays/collect-japan-toy-plays.mjs",
     "collect:japan-zoos": "node tools/japan-zoos/collect-japan-zoos.mjs",
     "clean": "turbo run clean && rm -rf node_modules"

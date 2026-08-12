@@ -18,6 +18,8 @@ import { generatedIndoorPlayPlaces } from "./generated-indoor-plays";
 import { generatedLibraryPlaces } from "./generated-libraries";
 import { generatedMuseumPlaces } from "./generated-museums";
 import { generatedPlaygroundPlaces } from "./generated-playgrounds";
+import { generatedRestaurantPlaces } from "./generated-restaurants";
+import { generatedShopFacilityPlaces } from "./generated-shop-facilities";
 import { generatedZooPlaces } from "./generated-zoos";
 import { zooSupplementPlaces } from "./zoo-supplements";
 import { eventPlaces } from "./events";
@@ -50,6 +52,8 @@ const allInputs = [
   ...generatedLibraryPlaces,
   ...generatedMuseumPlaces,
   ...generatedPlaygroundPlaces,
+  ...generatedRestaurantPlaces,
+  ...generatedShopFacilityPlaces,
   ...generatedZooPlaces,
   ...zooSupplementPlaces,
   ...eventPlaces,

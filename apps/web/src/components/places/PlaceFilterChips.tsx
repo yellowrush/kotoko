@@ -1,31 +1,34 @@
-import { useAppTranslation } from '../../hooks/useAppTranslation';
-import type { IndoorOutdoor, Municipality, PlaceCategory } from '@kodoko/domain';
-import { CATEGORY_GROUP, PLACE_GROUPS } from '@kodoko/domain';
+import { useAppTranslation } from "../../hooks/useAppTranslation";
+import type {
+  IndoorOutdoor,
+  Municipality,
+  PlaceCategory,
+} from "@kodoko/domain";
+import { CATEGORY_GROUP, PLACE_GROUPS } from "@kodoko/domain";
 import type {
   PlacesFilterState,
   PlacesLocationMode,
-} from '../../hooks/usePlaces';
+} from "../../hooks/usePlaces";
 import {
   COMMON_MUNICIPALITY_CODES,
   MUNICIPALITY_BY_CODE,
   RAIL_LINE_OPTIONS,
   type RailLineGroup,
-} from '../../lib/placeLocationOptions';
+} from "../../lib/placeLocationOptions";
 
 const CATEGORIES: PlaceCategory[] = [
-  'park',
-  'playground',
-  'museum',
-  'zoo',
-  'aquarium',
-  'library',
-  'indoor-play',
-  'children-hall',
-  'toy-play',
-  'amusement-park',
-  'restaurant',
-  'shop',
-  'facility',
+  "park",
+  "playground",
+  "museum",
+  "zoo",
+  "aquarium",
+  "library",
+  "indoor-play",
+  "children-hall",
+  "toy-play",
+  "amusement-park",
+  "restaurant",
+  "facility",
 ];
 
 const CATEGORY_GROUPS = PLACE_GROUPS.map((group) => ({
@@ -34,21 +37,21 @@ const CATEGORY_GROUPS = PLACE_GROUPS.map((group) => ({
 })).filter((g) => g.categories.length > 0);
 
 const INDOOR_OPTIONS: { value: IndoorOutdoor; key: string }[] = [
-  { value: 'indoor', key: 'indoor' },
-  { value: 'outdoor', key: 'outdoor' },
-  { value: 'mixed', key: 'mixed' },
+  { value: "indoor", key: "indoor" },
+  { value: "outdoor", key: "outdoor" },
+  { value: "mixed", key: "mixed" },
 ];
 
-const TAGS = ['dining', 'group-play'] as const;
+const TAGS = ["dining", "group-play"] as const;
 
 const RADIUS = [
-  { value: 3, key: 'r3' },
-  { value: 5, key: 'r5' },
-  { value: 10, key: 'r10' },
-  { value: 20, key: 'r20' },
+  { value: 3, key: "r3" },
+  { value: 5, key: "r5" },
+  { value: 10, key: "r10" },
+  { value: 20, key: "r20" },
 ] as const;
 
-const RAIL_GROUPS: RailLineGroup[] = ['jr', 'subway', 'private'];
+const RAIL_GROUPS: RailLineGroup[] = ["jr", "subway", "private"];
 
 type PlaceFilterChipsProps = {
   filters: PlacesFilterState;
@@ -80,8 +83,8 @@ function Chip({
       onClick={onClick}
       className={`min-h-10 shrink-0 rounded-full border px-3 py-1.5 text-sm font-semibold shadow-sm transition ${
         active
-          ? 'border-brand-700 bg-brand-600 text-white'
-          : 'border-brand-100 bg-white/95 text-gray-600 hover:bg-brand-50'
+          ? "border-brand-700 bg-brand-600 text-white"
+          : "border-brand-100 bg-white/95 text-gray-600 hover:bg-brand-50"
       }`}
     >
       {children}
@@ -133,8 +136,8 @@ function ModeButton({
       onClick={onClick}
       className={`inline-flex min-h-10 min-w-0 items-center justify-center gap-1.5 rounded-full px-2 py-1.5 text-sm font-bold transition ${
         active
-          ? 'bg-brand-600 text-white shadow-sm'
-          : 'bg-white text-gray-600 hover:bg-brand-50'
+          ? "bg-brand-600 text-white shadow-sm"
+          : "bg-white text-gray-600 hover:bg-brand-50"
       }`}
     >
       {icon}
@@ -144,7 +147,7 @@ function ModeButton({
 }
 
 function LocationModeIcon({ mode }: { mode: PlacesLocationMode }) {
-  if (mode === 'near') {
+  if (mode === "near") {
     return (
       <svg
         aria-hidden="true"
@@ -163,7 +166,7 @@ function LocationModeIcon({ mode }: { mode: PlacesLocationMode }) {
     );
   }
 
-  if (mode === 'municipality') {
+  if (mode === "municipality") {
     return (
       <svg
         aria-hidden="true"
@@ -263,8 +266,7 @@ export function PlaceFilterChips({
     lines: RAIL_LINE_OPTIONS.filter(
       (line) =>
         line.group === group &&
-        ((railLineCounts[line.id] ?? 0) > 0 ||
-          filters.railLineId === line.id),
+        ((railLineCounts[line.id] ?? 0) > 0 || filters.railLineId === line.id),
     ),
   })).filter((item) => item.lines.length > 0);
 
@@ -273,12 +275,12 @@ export function PlaceFilterChips({
       <button
         type="button"
         onClick={() => onOpenChange(!open)}
-        aria-label={t('places.filters.label')}
+        aria-label={t("places.filters.label")}
         aria-expanded={open}
         className={`relative inline-flex h-10 w-10 items-center justify-center rounded-full border-2 text-brand-800 shadow-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 ${
           open
-            ? 'border-brand-800 bg-brand-100 shadow-inner'
-            : 'border-brand-200 bg-brand-50 hover:bg-brand-100'
+            ? "border-brand-800 bg-brand-100 shadow-inner"
+            : "border-brand-200 bg-brand-50 hover:bg-brand-100"
         }`}
       >
         <FilterLineIcon />
@@ -288,14 +290,14 @@ export function PlaceFilterChips({
         <>
           <button
             type="button"
-            aria-label={t('common.collapse')}
+            aria-label={t("common.collapse")}
             onClick={() => onOpenChange(false)}
             className="fixed inset-0 z-[20] cursor-default"
           />
           <div className="kodoko-panel absolute left-0 top-full z-[30] mt-2 flex max-h-[min(70vh,28rem)] w-[min(92vw,24rem)] flex-col gap-2.5 overflow-y-auto overscroll-contain p-3">
-            <ChipGroup title={t('places.filters.sectionLocation')}>
+            <ChipGroup title={t("places.filters.sectionLocation")}>
               <div className="grid w-full grid-cols-3 gap-1 rounded-full border border-brand-100 bg-brand-50 p-1">
-                {(['near', 'municipality', 'rail'] as const).map((mode) => (
+                {(["near", "municipality", "rail"] as const).map((mode) => (
                   <ModeButton
                     key={mode}
                     active={filters.locationMode === mode}
@@ -308,8 +310,8 @@ export function PlaceFilterChips({
               </div>
             </ChipGroup>
 
-            {filters.locationMode === 'near' && (
-              <ChipGroup title={t('places.filters.sectionRadius')}>
+            {filters.locationMode === "near" && (
+              <ChipGroup title={t("places.filters.sectionRadius")}>
                 {RADIUS.map((r) => (
                   <Chip
                     key={r.key}
@@ -326,9 +328,11 @@ export function PlaceFilterChips({
               </ChipGroup>
             )}
 
-            {filters.locationMode === 'municipality' && (
+            {filters.locationMode === "municipality" && (
               <>
-                <ChipGroup title={t('places.filters.sectionMunicipalityCommon')}>
+                <ChipGroup
+                  title={t("places.filters.sectionMunicipalityCommon")}
+                >
                   {commonMunicipalities.map((municipality) => (
                     <Chip
                       key={municipality.code}
@@ -349,7 +353,7 @@ export function PlaceFilterChips({
                   ))}
                 </ChipGroup>
 
-                <ChipGroup title={t('places.filters.sectionMunicipalityAll')}>
+                <ChipGroup title={t("places.filters.sectionMunicipalityAll")}>
                   {allMunicipalities.map((municipality) => (
                     <Chip
                       key={municipality.code}
@@ -371,17 +375,17 @@ export function PlaceFilterChips({
                   {commonMunicipalities.length === 0 &&
                     allMunicipalities.length === 0 && (
                       <p className="text-sm text-gray-500">
-                        {t('places.filters.emptyLocationOptions')}
+                        {t("places.filters.emptyLocationOptions")}
                       </p>
                     )}
                 </ChipGroup>
               </>
             )}
 
-            {filters.locationMode === 'rail' && (
+            {filters.locationMode === "rail" && (
               <>
                 <p className="text-xs font-medium leading-relaxed text-gray-500">
-                  {t('places.filters.railHelp')}
+                  {t("places.filters.railHelp")}
                 </p>
                 {railLinesByGroup.map(({ group, lines }) => (
                   <ChipGroup
@@ -408,13 +412,13 @@ export function PlaceFilterChips({
                 ))}
                 {railLinesByGroup.length === 0 && (
                   <p className="text-sm text-gray-500">
-                    {t('places.filters.emptyLocationOptions')}
+                    {t("places.filters.emptyLocationOptions")}
                   </p>
                 )}
               </>
             )}
 
-            <ChipGroup title={t('places.filters.sectionCategory')}>
+            <ChipGroup title={t("places.filters.sectionCategory")}>
               {CATEGORY_GROUPS.map(({ group, categories }) => (
                 <div key={group} className="flex flex-col gap-1.5">
                   <p className="text-[11px] font-semibold text-gray-400">
@@ -439,7 +443,7 @@ export function PlaceFilterChips({
               ))}
             </ChipGroup>
 
-            <ChipGroup title={t('places.filters.sectionIndoorOutdoor')}>
+            <ChipGroup title={t("places.filters.sectionIndoorOutdoor")}>
               {INDOOR_OPTIONS.map((opt) => (
                 <Chip
                   key={opt.value}
@@ -457,7 +461,7 @@ export function PlaceFilterChips({
               ))}
             </ChipGroup>
 
-            <ChipGroup title={t('places.filters.sectionTags')}>
+            <ChipGroup title={t("places.filters.sectionTags")}>
               {TAGS.map((tag) => (
                 <Chip
                   key={tag}

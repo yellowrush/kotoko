@@ -189,14 +189,35 @@ export function PlacesMap({
   }, []);
 
   useEffect(() => {
+    if (!selectedMunicipalityCode || municipalityAsset) return;
     let cancelled = false;
 
-    async function loadOverlayAssets() {
+    async function loadMunicipalityAsset() {
       try {
-        const [municipality, railLines, railStations] = await Promise.all([
-          fetch(`${GEO_ASSET_BASE}/tokyo-municipalities.geojson`).then((res) =>
-            res.json(),
-          ),
+        const municipality = await fetch(
+          `${GEO_ASSET_BASE}/tokyo-municipalities.geojson`,
+        ).then((res) => res.json());
+        if (!cancelled) {
+          setMunicipalityAsset(municipality as OverlayFeatureCollection);
+        }
+      } catch {
+        // Overlay assets are optional public map affordances; markers still work.
+      }
+    }
+
+    void loadMunicipalityAsset();
+    return () => {
+      cancelled = true;
+    };
+  }, [municipalityAsset, selectedMunicipalityCode]);
+
+  useEffect(() => {
+    if (!selectedRailLineId || (railLineAsset && railStationAsset)) return;
+    let cancelled = false;
+
+    async function loadRailAssets() {
+      try {
+        const [railLines, railStations] = await Promise.all([
           fetch(`${GEO_ASSET_BASE}/rail-lines.geojson`).then((res) =>
             res.json(),
           ),
@@ -205,7 +226,6 @@ export function PlacesMap({
           ),
         ]);
         if (cancelled) return;
-        setMunicipalityAsset(municipality as OverlayFeatureCollection);
         setRailLineAsset(railLines as OverlayFeatureCollection);
         setRailStationAsset(railStations as OverlayFeatureCollection);
       } catch {
@@ -213,11 +233,11 @@ export function PlacesMap({
       }
     }
 
-    void loadOverlayAssets();
+    void loadRailAssets();
     return () => {
       cancelled = true;
     };
-  }, []);
+  }, [railLineAsset, railStationAsset, selectedRailLineId]);
 
   useEffect(() => {
     const currentMap = mapRef.current;

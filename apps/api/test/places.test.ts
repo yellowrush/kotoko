@@ -72,6 +72,63 @@ describe("GET /api/v1/places", () => {
     await app.close();
   });
 
+  it("filters by municipality and rail line before returning places", async () => {
+    const app = buildApp();
+    const municipality = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places?municipality=13222`,
+    });
+    expect(municipality.statusCode).toBe(200);
+    expect(municipality.json().places).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ id: "spadium-japon" }),
+      ]),
+    );
+    expect(
+      municipality
+        .json()
+        .places.every(
+          (p: { municipalityCode: string }) => p.municipalityCode === "13222",
+        ),
+    ).toBe(true);
+
+    const rail = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places?rail=seibu-ikebukuro`,
+    });
+    expect(rail.statusCode).toBe(200);
+    expect(rail.json().places).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({ id: "spadium-japon" }),
+      ]),
+    );
+    expect(
+      rail
+        .json()
+        .places.every((p: { transitAccess?: { lineId: string }[] }) =>
+          p.transitAccess?.some(
+            (access) => access.lineId === "seibu-ikebukuro",
+          ),
+        ),
+    ).toBe(true);
+    await app.close();
+  });
+
+  it("returns lightweight place facets for filter chips", async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places/facets?tags=dining`,
+    });
+    expect(res.statusCode).toBe(200);
+    const body = res.json();
+    expect(body.total).toBeGreaterThan(0);
+    expect(body.municipalities["13222"]).toBeGreaterThan(0);
+    expect(body.railLines["seibu-ikebukuro"]).toBeGreaterThan(0);
+    expect(body.places).toBeUndefined();
+    await app.close();
+  });
+
   it("exposes public transit access metadata for rail filtering", async () => {
     const app = buildApp();
     const res = await app.inject({
@@ -233,6 +290,57 @@ describe("GET /api/v1/places", () => {
     await app.close();
   });
 
+  it("serves generated major metro indoor play places from open map data", async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places?category=indoor-play`,
+    });
+    expect(res.statusCode).toBe(200);
+    const body = res.json();
+    const names = body.places.map((p: { name: string }) => p.name);
+    expect(body.total).toBeGreaterThanOrEqual(34);
+    expect(names).toContain("アソブーン ~ASOBooN~");
+    expect(names).toContain("あっぴぃ高輪子育てひろば");
+    expect(names).toContain("ファンタジーキッズリゾート海老名");
+    expect(names).toContain("ボーネルンド プレイヴィル");
+    expect(names).toContain("子育てひろば江戸川橋");
+    expect(names).toContain("子育て支援センター「はんだっこ」");
+    expect(names).toContain("親と子のつどいの広場 とぴあ");
+    expect(names).not.toContain("カオルキッズランド");
+    expect(names).not.toContain("グローバルキッズパーク");
+    expect(names).not.toContain("フレンドキッズランド 田柄第二園");
+    await app.close();
+  });
+
+  it("serves generated major metro children hall places from open map data", async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places?category=children-hall`,
+    });
+    expect(res.statusCode).toBe(200);
+    const body = res.json();
+    const names = body.places.map((p: { name: string }) => p.name);
+    expect(body.total).toBeGreaterThanOrEqual(1700);
+    expect(names).toContain("あずさわ児童館");
+    expect(names).toContain("くにたち西児童館");
+    expect(names).toContain("えびなこどもセンター");
+    expect(names).toContain("あま市立美和児童館");
+    expect(names).toContain("がまごおり児童館");
+    expect(names).toContain("すずらんだい児童館");
+    expect(
+      names.filter((name: string) => name === "江東区立亀戸児童館"),
+    ).toHaveLength(1);
+    expect(names).not.toContain("AED(西部児童館)");
+    expect(names).not.toContain("カインズ八王子長房店前(児童館前)");
+    expect(names.some((name: string) => name.includes("児童相談所"))).toBe(
+      false,
+    );
+    expect(names.some((name: string) => name.includes("児童遊園"))).toBe(false);
+    await app.close();
+  });
+
   it("serves generated major metro playground places from open map data", async () => {
     const app = buildApp();
     const res = await app.inject({
@@ -294,6 +402,22 @@ describe("GET /api/v1/places", () => {
     const body = res.json();
     expect(body.places.length).toBeGreaterThan(0);
     expect(body.places.length).toBeLessThan(80);
+    await app.close();
+  });
+
+  it("defaults center-point searches to a 3km radius", async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places?latitude=35.6812&longitude=139.7671`,
+    });
+    expect(res.statusCode).toBe(200);
+    const body = res.json();
+    const publishedCount = seedPlaces.filter(
+      (p) => p.status === "published",
+    ).length;
+    expect(body.places.length).toBeGreaterThan(0);
+    expect(body.places.length).toBeLessThan(publishedCount);
     await app.close();
   });
 

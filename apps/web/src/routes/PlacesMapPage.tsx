@@ -5,7 +5,12 @@ import { Link } from 'react-router-dom';
 import { useAppTranslation } from '../hooks/useAppTranslation';
 import { PlaceFilterChips } from '../components/places/PlaceFilterChips';
 import { PlaceBottomSheet } from '../components/places/PlaceBottomSheet';
-import { usePlaces, usePlacesFilters } from '../hooks/usePlaces';
+import {
+  DEFAULT_PLACES_RADIUS_KM,
+  usePlaceFacets,
+  usePlaces,
+  usePlacesFilters,
+} from '../hooks/usePlaces';
 import { DEFAULT_CENTER, useGeolocation } from '../hooks/useGeolocation';
 import { useActiveChild } from '../hooks/useActiveChild';
 import { usePlaceVisits } from '../hooks/usePlaceVisits';
@@ -81,7 +86,6 @@ function TimeLimitedEventIcon() {
 
 export function PlacesMapPage() {
   const { t } = useAppTranslation();
-  const { data: places, isLoading, isError, refetch } = usePlaces();
   const {
     filters,
     setCategory,
@@ -94,6 +98,49 @@ export function PlacesMapPage() {
     toggleTag,
   } = usePlacesFilters();
   const { status, coords, requested, request } = useGeolocation();
+  const center = coords ?? DEFAULT_CENTER;
+  const placesQuery = useMemo(() => {
+    const base = {
+      category: filters.category,
+      indoorOutdoor: filters.indoorOutdoor,
+      tags: filters.tags,
+    };
+
+    if (filters.locationMode === 'municipality' && filters.municipalityCode) {
+      return { ...base, municipalityCode: filters.municipalityCode };
+    }
+
+    if (filters.locationMode === 'rail' && filters.railLineId) {
+      return { ...base, railLineId: filters.railLineId };
+    }
+
+    return {
+      ...base,
+      latitude: center.latitude,
+      longitude: center.longitude,
+      radius: filters.radiusKm ?? DEFAULT_PLACES_RADIUS_KM,
+    };
+  }, [
+    center.latitude,
+    center.longitude,
+    filters.category,
+    filters.indoorOutdoor,
+    filters.locationMode,
+    filters.municipalityCode,
+    filters.radiusKm,
+    filters.railLineId,
+    filters.tags,
+  ]);
+  const facetQuery = useMemo(
+    () => ({
+      category: filters.category,
+      indoorOutdoor: filters.indoorOutdoor,
+      tags: filters.tags,
+    }),
+    [filters.category, filters.indoorOutdoor, filters.tags],
+  );
+  const { data: places, isLoading, isError, refetch } = usePlaces(placesQuery);
+  const { data: placeFacets } = usePlaceFacets(facetQuery);
   const { active } = useActiveChild();
   const { visits } = usePlaceVisits();
   const [tileError, setTileError] = useState(false);
@@ -132,14 +179,15 @@ export function PlacesMapPage() {
     [places, filters.category, filters.indoorOutdoor, filters.tags, ageMonths],
   );
   const municipalityCounts = useMemo(
-    () => countPlacesByMunicipality(locationCountBase),
-    [locationCountBase],
+    () =>
+      placeFacets?.municipalities ??
+      countPlacesByMunicipality(locationCountBase),
+    [locationCountBase, placeFacets?.municipalities],
   );
   const railLineCounts = useMemo(
-    () => countPlacesByRailLine(locationCountBase),
-    [locationCountBase],
+    () => placeFacets?.railLines ?? countPlacesByRailLine(locationCountBase),
+    [locationCountBase, placeFacets?.railLines],
   );
-  const center = coords ?? DEFAULT_CENTER;
   const visitCountsByPlaceId = useMemo(
     () => countVisitsByPlaceId(visits),
     [visits],

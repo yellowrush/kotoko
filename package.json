@@ -19,6 +19,8 @@
     "test:migrations": "pnpm --filter @kodoko/local-db test:migrations",
     "collect:tokyo-events": "node tools/tokyo-events/collect-tokyo-events.mjs",
     "collect:japan-aquariums": "node tools/japan-aquariums/collect-japan-aquariums.mjs",
+    "collect:japan-children-halls": "node tools/japan-children-halls/collect-japan-children-halls.mjs",
+    "collect:japan-indoor-plays": "node tools/japan-indoor-plays/collect-japan-indoor-plays.mjs",
     "collect:japan-playgrounds": "node tools/japan-playgrounds/collect-japan-playgrounds.mjs",
     "collect:japan-zoos": "node tools/japan-zoos/collect-japan-zoos.mjs",
     "clean": "turbo run clean && rm -rf node_modules"

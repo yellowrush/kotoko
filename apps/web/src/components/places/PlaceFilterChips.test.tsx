@@ -9,7 +9,7 @@ const baseFilters: PlacesFilterState = {
   category: undefined,
   indoorOutdoor: undefined,
   tags: [],
-  radiusKm: undefined,
+  radiusKm: 3,
   municipalityCode: undefined,
   railLineId: undefined,
   placeId: undefined,

@@ -1,6 +1,12 @@
 import { z } from 'zod';
 import type { ApiClient } from './client';
-import { placeListSchema, placeSchema, type PlaceDTO } from './schemas';
+import {
+  placeFacetsSchema,
+  placeListSchema,
+  placeSchema,
+  type PlaceDTO,
+  type PlaceFacetsDTO,
+} from './schemas';
 import type { PlaceReportType } from '@kodoko/domain';
 
 export type PlaceQuery = {
@@ -10,6 +16,8 @@ export type PlaceQuery = {
   latitude?: number;
   longitude?: number;
   radius?: number;
+  municipalityCode?: string;
+  railLineId?: string;
   locale?: string;
 };
 
@@ -21,6 +29,8 @@ function buildQueryString(query: PlaceQuery): string {
   if (query.latitude !== undefined) params.set('latitude', String(query.latitude));
   if (query.longitude !== undefined) params.set('longitude', String(query.longitude));
   if (query.radius !== undefined) params.set('radius', String(query.radius));
+  if (query.municipalityCode) params.set('municipality', query.municipalityCode);
+  if (query.railLineId) params.set('rail', query.railLineId);
   if (query.locale) params.set('locale', query.locale);
   const s = params.toString();
   return s ? `?${s}` : '';
@@ -33,6 +43,14 @@ export async function fetchPlaces(
   const data = await client.get<unknown>(`/places${buildQueryString(query)}`);
   const parsed = placeListSchema.parse(data);
   return parsed.places;
+}
+
+export async function fetchPlaceFacets(
+  client: ApiClient,
+  query: Pick<PlaceQuery, 'category' | 'indoorOutdoor' | 'tags'> = {},
+): Promise<PlaceFacetsDTO> {
+  const data = await client.get<unknown>(`/places/facets${buildQueryString(query)}`);
+  return placeFacetsSchema.parse(data);
 }
 
 export async function fetchPlace(client: ApiClient, placeId: string): Promise<PlaceDTO> {

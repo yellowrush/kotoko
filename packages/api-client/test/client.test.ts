@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from 'vitest';
 import { ApiClient, ApiError } from '../src/client';
 import { fetchContentVersion } from '../src/content';
-import { submitPlaceReport } from '../src/places';
+import { fetchPlaceFacets, fetchPlaces, submitPlaceReport } from '../src/places';
 
 function jsonResponse(status: number, body: unknown): Response {
   return new Response(JSON.stringify(body), { status, headers: { 'Content-Type': 'application/json' } });
@@ -98,6 +98,52 @@ describe('submitPlaceReport', () => {
     await expect(
       submitPlaceReport(client, 'ueno-park', { type: 'other' }),
     ).rejects.toThrow();
+  });
+});
+
+describe('places client', () => {
+  it('sends server-side place filters in the query string', async () => {
+    const fetchImpl = vi.fn().mockResolvedValue(
+      jsonResponse(200, { places: [], total: 0 }),
+    );
+    const client = new ApiClient({ baseUrl: 'https://api.example.com', fetchImpl });
+
+    await fetchPlaces(client, {
+      category: 'facility',
+      tags: ['dining', 'quiet-zone'],
+      latitude: 35.6812,
+      longitude: 139.7671,
+      radius: 3,
+      municipalityCode: '13222',
+      railLineId: 'seibu-ikebukuro',
+    });
+
+    expect(fetchImpl).toHaveBeenCalledWith(
+      'https://api.example.com/places?category=facility&tags=dining%2Cquiet-zone&latitude=35.6812&longitude=139.7671&radius=3&municipality=13222&rail=seibu-ikebukuro',
+      expect.objectContaining({ method: 'GET' }),
+    );
+  });
+
+  it('fetches lightweight place facets', async () => {
+    const fetchImpl = vi.fn().mockResolvedValue(
+      jsonResponse(200, {
+        municipalities: { '13222': 1 },
+        railLines: { 'seibu-ikebukuro': 1 },
+        total: 1,
+      }),
+    );
+    const client = new ApiClient({ baseUrl: 'https://api.example.com', fetchImpl });
+
+    const result = await fetchPlaceFacets(client, {
+      category: 'facility',
+      tags: ['dining'],
+    });
+
+    expect(result.municipalities['13222']).toBe(1);
+    expect(fetchImpl).toHaveBeenCalledWith(
+      'https://api.example.com/places/facets?category=facility&tags=dining',
+      expect.objectContaining({ method: 'GET' }),
+    );
   });
 });
 

@@ -158,8 +158,15 @@ export const placeListSchema = z.object({
   total: z.number().int().nonnegative(),
 });
 
+export const placeFacetsSchema = z.object({
+  municipalities: z.record(z.number().int().nonnegative()),
+  railLines: z.record(z.number().int().nonnegative()),
+  total: z.number().int().nonnegative(),
+});
+
 export type PlaceDTO = z.infer<typeof placeSchema>;
 export type PlaceListDTO = z.infer<typeof placeListSchema>;
+export type PlaceFacetsDTO = z.infer<typeof placeFacetsSchema>;
 export type { Place };
 
 const knowledgeCategory = z.enum([

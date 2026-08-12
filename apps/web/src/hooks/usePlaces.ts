@@ -2,7 +2,13 @@ import { useCallback, useMemo } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import { useSearchParams } from 'react-router-dom';
 import type { Place } from '@kodoko/domain';
-import { fetchPlaces, fetchPlace } from '@kodoko/api-client';
+import {
+  fetchPlace,
+  fetchPlaceFacets,
+  fetchPlaces,
+  type PlaceFacetsDTO,
+  type PlaceQuery,
+} from '@kodoko/api-client';
 import { getApiClient } from '../lib/api';
 
 export type PlacesLocationMode = 'near' | 'municipality' | 'rail';
@@ -20,11 +26,45 @@ export type PlacesFilterState = {
 
 const RADIUS_OPTIONS = ['3', '5', '10', '20'] as const;
 const LOCATION_MODES: PlacesLocationMode[] = ['near', 'municipality', 'rail'];
+export const DEFAULT_PLACES_RADIUS_KM = 3;
 
-export function usePlaces() {
+type UsePlacesOptions = {
+  enabled?: boolean;
+};
+
+type PlaceFacetQuery = Pick<PlaceQuery, 'category' | 'indoorOutdoor' | 'tags'>;
+
+function normalizePlaceQuery(query: PlaceQuery = {}): PlaceQuery {
+  const tags = query.tags?.filter(Boolean).sort();
+  return {
+    category: query.category,
+    indoorOutdoor: query.indoorOutdoor,
+    tags: tags && tags.length > 0 ? tags : undefined,
+    latitude: query.latitude,
+    longitude: query.longitude,
+    radius: query.radius,
+    municipalityCode: query.municipalityCode,
+    railLineId: query.railLineId,
+    locale: query.locale,
+  };
+}
+
+export function usePlaces(query: PlaceQuery = {}, options: UsePlacesOptions = {}) {
+  const normalizedQuery = normalizePlaceQuery(query);
   return useQuery<Place[]>({
-    queryKey: ['places'],
-    queryFn: async () => fetchPlaces(getApiClient()),
+    queryKey: ['places', normalizedQuery],
+    queryFn: async () => fetchPlaces(getApiClient(), normalizedQuery),
+    enabled: options.enabled ?? true,
+    placeholderData: (previous) => previous,
+  });
+}
+
+export function usePlaceFacets(query: PlaceFacetQuery = {}) {
+  const normalizedQuery = normalizePlaceQuery(query);
+  return useQuery<PlaceFacetsDTO>({
+    queryKey: ['place-facets', normalizedQuery],
+    queryFn: async () => fetchPlaceFacets(getApiClient(), normalizedQuery),
+    placeholderData: (previous) => previous,
   });
 }
 
@@ -48,9 +88,12 @@ export function usePlacesFilters() {
     const indoorOutdoor = searchParams.get('indoorOutdoor') ?? undefined;
     const tags = (searchParams.get('tags') ?? '').split(',').filter(Boolean);
     const radiusParam = searchParams.get('radius');
-    const radiusKm = locationMode === 'near' && RADIUS_OPTIONS.includes(radiusParam as (typeof RADIUS_OPTIONS)[number])
-      ? Number(radiusParam)
-      : undefined;
+    const radiusKm =
+      locationMode === 'near'
+        ? RADIUS_OPTIONS.includes(radiusParam as (typeof RADIUS_OPTIONS)[number])
+          ? Number(radiusParam)
+          : DEFAULT_PLACES_RADIUS_KM
+        : undefined;
     const municipalityCode =
       locationMode === 'municipality'
         ? (searchParams.get('municipality') ?? undefined)

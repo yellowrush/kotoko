@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import {
   placeSchema,
   placeListSchema,
+  placeFacetsSchema,
   knowledgeSchema,
   knowledgeListSchema,
   policySchema,
@@ -71,6 +72,18 @@ describe('placeListSchema', () => {
     expect(() =>
       placeListSchema.parse({ places: [{ ...validPlace, latitude: 'x' }], total: 1 }),
     ).toThrow();
+  });
+});
+
+describe('placeFacetsSchema', () => {
+  it('accepts municipality and rail count maps', () => {
+    const parsed = placeFacetsSchema.parse({
+      municipalities: { '13108': 2 },
+      railLines: { 'tokyo-metro-tozai': 2 },
+      total: 2,
+    });
+
+    expect(parsed.railLines['tokyo-metro-tozai']).toBe(2);
   });
 });
 

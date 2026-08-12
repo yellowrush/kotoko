@@ -8,9 +8,12 @@ import {
   type Policy,
   type PolicyTaskState,
 } from '@kodoko/domain';
-import type { TransportMode } from '@kodoko/recommendation';
+import {
+  TRANSPORT_MAX_DISTANCE_KM,
+  type TransportMode,
+} from '@kodoko/recommendation';
 import { useSelectedChildren } from '../hooks/useSelectedChildren';
-import { usePlaces } from '../hooks/usePlaces';
+import { DEFAULT_PLACES_RADIUS_KM, usePlaces } from '../hooks/usePlaces';
 import { useGeolocation } from '../hooks/useGeolocation';
 import { useWeather } from '../hooks/useWeather';
 import { useKnowledge, useKnowledgeProgress } from '../hooks/useKnowledge';
@@ -214,23 +217,40 @@ export function HomePage() {
     toggle,
     loading: childLoading,
   } = useSelectedChildren();
+  const { coords } = useGeolocation();
+  const { preference } = usePreference();
+  const [transportMode, setTransportMode] = useState<
+    TransportMode | undefined
+  >();
+  const [groupSize, setGroupSize] = useState<number | undefined>();
+  const recommendationLocation = useMemo(
+    () => resolveRecommendationLocation(coords, preference?.municipalityCode),
+    [coords, preference?.municipalityCode],
+  );
+  const recommendationPoint = recommendationLocation.point;
+  const homePlacesRadiusKm =
+    transportMode === undefined
+      ? (preference?.radiusKm ?? DEFAULT_PLACES_RADIUS_KM)
+      : TRANSPORT_MAX_DISTANCE_KM[transportMode];
+  const homePlacesQuery = useMemo(() => {
+    if (!recommendationPoint) return {};
+    return {
+      latitude: recommendationPoint.latitude,
+      longitude: recommendationPoint.longitude,
+      radius: homePlacesRadiusKm,
+    };
+  }, [homePlacesRadiusKm, recommendationPoint]);
   const {
     data: places,
     isLoading: placesLoading,
     isError,
     refetch,
-  } = usePlaces();
-  const { coords } = useGeolocation();
-  const { preference } = usePreference();
+  } = usePlaces(homePlacesQuery, { enabled: !!recommendationPoint });
   const {
     data: weather,
     isPending: weatherPending,
     isError: weatherError,
   } = useWeather(coords);
-  const [transportMode, setTransportMode] = useState<
-    TransportMode | undefined
-  >();
-  const [groupSize, setGroupSize] = useState<number | undefined>();
   const { data: knowledge, isLoading: knowledgeLoading } = useKnowledge();
   const { readIds } = useKnowledgeProgress();
   const { data: policies, isLoading: policiesLoading } = usePolicies();
@@ -326,11 +346,6 @@ export function HomePage() {
       : label;
   }
 
-  const recommendationLocation = useMemo(
-    () => resolveRecommendationLocation(coords, preference?.municipalityCode),
-    [coords, preference?.municipalityCode],
-  );
-
   function locationPlace(city: string): string {
     return t('home.place', { prefecture: t('home.prefecture'), city });
   }
@@ -390,7 +405,7 @@ export function HomePage() {
         children: selected,
         places: (places ?? []).filter((place) => isEventInSeason(place)),
         userLocation: recommendationLocation.point,
-        maxDistanceKm: transportMode ? undefined : preference?.radiusKm,
+        maxDistanceKm: transportMode ? undefined : homePlacesRadiusKm,
         transportMode,
         groupSize,
         indoorOutdoorPreference: preference?.indoorOutdoorPreference,
@@ -402,7 +417,7 @@ export function HomePage() {
       recommendationLocation.point,
       transportMode,
       groupSize,
-      preference?.radiusKm,
+      homePlacesRadiusKm,
       preference?.indoorOutdoorPreference,
       weather,
     ],

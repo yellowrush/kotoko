@@ -10,6 +10,8 @@ import { trainMuseumPlaces } from "./train-museums";
 import { librarySportPlaces } from "./libraries-sports";
 import { supplementPlaces } from "./supplements";
 import { generatedAquariumPlaces } from "./generated-aquariums";
+import { generatedChildrenHallPlaces } from "./generated-children-halls";
+import { generatedIndoorPlayPlaces } from "./generated-indoor-plays";
 import { generatedPlaygroundPlaces } from "./generated-playgrounds";
 import { generatedZooPlaces } from "./generated-zoos";
 import { zooSupplementPlaces } from "./zoo-supplements";
@@ -35,6 +37,8 @@ const allInputs = [
   ...librarySportPlaces,
   ...supplementPlaces,
   ...generatedAquariumPlaces,
+  ...generatedChildrenHallPlaces,
+  ...generatedIndoorPlayPlaces,
   ...generatedPlaygroundPlaces,
   ...generatedZooPlaces,
   ...zooSupplementPlaces,

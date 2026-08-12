@@ -3,7 +3,10 @@ import { derivePlaceFields } from "@kodoko/domain";
 import { basePlaces } from "./base";
 import { childrenHallPlaces } from "./children-halls";
 import { toyPlayPlaces } from "./toy-plays";
+import { generatedToyPlayPlaces } from "./generated-toy-plays";
+import { toyMuseumSupplementPlaces } from "./toy-museum-supplements";
 import { amusementParkPlaces } from "./amusement-parks";
+import { generatedAmusementParkPlaces } from "./generated-amusement-parks";
 import { waterParkPlaces } from "./water-parks";
 import { tokyoParkPlaces } from "./tokyo-parks";
 import { trainMuseumPlaces } from "./train-museums";
@@ -30,7 +33,10 @@ const allInputs = [
   ...basePlaces,
   ...childrenHallPlaces,
   ...toyPlayPlaces,
+  ...generatedToyPlayPlaces,
+  ...toyMuseumSupplementPlaces,
   ...amusementParkPlaces,
+  ...generatedAmusementParkPlaces,
   ...waterParkPlaces,
   ...tokyoParkPlaces,
   ...trainMuseumPlaces,

@@ -341,6 +341,56 @@ describe("GET /api/v1/places", () => {
     await app.close();
   });
 
+  it("serves toy play places from generated and official public sources", async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places?category=toy-play`,
+    });
+    expect(res.statusCode).toBe(200);
+    const body = res.json();
+    const names = body.places.map((p: { name: string }) => p.name);
+    expect(body.total).toBeGreaterThanOrEqual(12);
+    expect(names).toContain("東京おもちゃ美術館");
+    expect(names).toContain("柴又のおもちゃ博物館");
+    expect(names).toContain("現代玩具博物館・オルゴール夢館");
+    expect(names).toContain("檜原森のおもちゃ美術館");
+    expect(names).toContain("焼津おもちゃ美術館");
+    expect(names).toContain("那賀町山のおもちゃ美術館");
+    expect(names).toContain("やんばる森のおもちゃ美術館");
+    expect(names.some((name: string) => name.includes("トイザらス"))).toBe(
+      false,
+    );
+    expect(names.some((name: string) => name.includes("販売"))).toBe(false);
+    await app.close();
+  });
+
+  it("serves generated Japan amusement park places from open map data", async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places?category=amusement-park`,
+    });
+    expect(res.statusCode).toBe(200);
+    const body = res.json();
+    const names = body.places.map((p: { name: string }) => p.name);
+    expect(body.total).toBeGreaterThanOrEqual(65);
+    expect(names).toContain("浅草花やしき");
+    expect(names).toContain("東京サマーランド");
+    expect(names).toContain("ジブリパーク");
+    expect(names).toContain("ジャングリア沖縄");
+    expect(names).toContain("ナガシマスパーランド");
+    expect(names).toContain("ひらかたパーク");
+    expect(names).toContain("志摩スペイン村");
+    expect(names).toContain("日本モンキーパーク");
+    expect(names).toContain("東京ディズニーランド");
+    expect(names).not.toContain("Dynam amusement park");
+    expect(names).not.toContain("遊園地ゾーン");
+    expect(names).not.toContain("石の遊園地");
+    expect(names.some((name: string) => name.includes("児童遊園"))).toBe(false);
+    await app.close();
+  });
+
   it("serves generated major metro playground places from open map data", async () => {
     const app = buildApp();
     const res = await app.inject({

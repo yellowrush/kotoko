@@ -1,5 +1,5 @@
 import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest';
-import { cleanup, fireEvent, render, screen } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen, within } from '@testing-library/react';
 import { i18n, initI18n } from '../../app/i18n';
 import { PlaceFilterChips } from './PlaceFilterChips';
 import type { PlacesFilterState } from '../../hooks/usePlaces';
@@ -47,26 +47,53 @@ describe('PlaceFilterChips location modes', () => {
   it('renders location modes as a full-width segmented tab control with icons', () => {
     const props = renderFilter({ locationMode: 'municipality' });
 
-    const near = screen.getByRole('button', {
+    const locationGroup = screen.getByRole('radiogroup', {
+      name: i18n.t('places.filters.sectionLocation'),
+    });
+    const near = within(locationGroup).getByRole('radio', {
       name: i18n.t('places.filters.locationModes.near'),
     });
-    const municipality = screen.getByRole('button', {
+    const municipality = within(locationGroup).getByRole('radio', {
       name: i18n.t('places.filters.locationModes.municipality'),
     });
-    const rail = screen.getByRole('button', {
+    const rail = within(locationGroup).getByRole('radio', {
       name: i18n.t('places.filters.locationModes.rail'),
     });
 
     expect(near.parentElement).toHaveClass('grid', 'w-full', 'grid-cols-3');
-    expect(municipality).toHaveAttribute('aria-pressed', 'true');
+    expect(within(locationGroup).getAllByRole('radio')).toHaveLength(3);
+    expect(near).toHaveAttribute('aria-checked', 'false');
+    expect(municipality).toHaveAttribute('aria-checked', 'true');
+    expect(rail).toHaveAttribute('aria-checked', 'false');
     expect(municipality.querySelector('svg')).toHaveAttribute(
       'aria-hidden',
       'true',
     );
     expect(municipality.querySelector('span')).toHaveClass('whitespace-nowrap');
 
+    fireEvent.click(municipality);
+    expect(props.setLocationMode).not.toHaveBeenCalled();
+
     fireEvent.click(rail);
     expect(props.setLocationMode).toHaveBeenCalledWith('rail');
+  });
+
+  it('renders radius as a distinct non-cancelable radio group', () => {
+    const props = renderFilter({ locationMode: 'near', radiusKm: 3 });
+
+    const radiusGroup = screen.getByRole('radiogroup', {
+      name: i18n.t('places.filters.sectionRadius'),
+    });
+    const radius3 = within(radiusGroup).getByRole('radio', {
+      name: i18n.t('places.filters.r3'),
+    });
+
+    expect(radiusGroup).toHaveClass('grid', 'grid-cols-2', 'rounded-xl');
+    expect(radius3).toHaveAttribute('aria-checked', 'true');
+    expect(radius3).not.toHaveAttribute('aria-pressed');
+
+    fireEvent.click(radius3);
+    expect(props.setRadius).toHaveBeenCalledWith(3);
   });
 
   it('renders common and all municipality chips with counts', () => {

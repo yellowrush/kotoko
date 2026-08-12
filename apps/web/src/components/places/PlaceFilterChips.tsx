@@ -132,7 +132,8 @@ function ModeButton({
   return (
     <button
       type="button"
-      aria-pressed={active}
+      role="radio"
+      aria-checked={active}
       onClick={onClick}
       className={`inline-flex min-h-10 min-w-0 items-center justify-center gap-1.5 rounded-full px-2 py-1.5 text-sm font-bold transition ${
         active
@@ -142,6 +143,40 @@ function ModeButton({
     >
       {icon}
       <span className="min-w-0 whitespace-nowrap">{children}</span>
+    </button>
+  );
+}
+
+function RadiusRadioOption({
+  active,
+  onClick,
+  children,
+}: {
+  active: boolean;
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <button
+      type="button"
+      role="radio"
+      aria-checked={active}
+      onClick={onClick}
+      className={`grid min-h-11 grid-cols-[auto_1fr] items-center gap-2 rounded-lg border px-3 py-2 text-left text-sm font-bold transition ${
+        active
+          ? "border-brand-500 bg-brand-50 text-brand-900 shadow-inner"
+          : "border-gray-200 bg-white text-gray-700 hover:border-brand-200 hover:bg-brand-50/40"
+      }`}
+    >
+      <span
+        aria-hidden="true"
+        className={`flex h-4 w-4 items-center justify-center rounded-full border ${
+          active ? "border-brand-700 bg-brand-600" : "border-gray-300 bg-white"
+        }`}
+      >
+        {active && <span className="h-1.5 w-1.5 rounded-full bg-white" />}
+      </span>
+      <span className="min-w-0 truncate">{children}</span>
     </button>
   );
 }
@@ -296,12 +331,18 @@ export function PlaceFilterChips({
           />
           <div className="kodoko-panel absolute left-0 top-full z-[30] mt-2 flex max-h-[min(70vh,28rem)] w-[min(92vw,24rem)] flex-col gap-2.5 overflow-y-auto overscroll-contain p-3">
             <ChipGroup title={t("places.filters.sectionLocation")}>
-              <div className="grid w-full grid-cols-3 gap-1 rounded-full border border-brand-100 bg-brand-50 p-1">
+              <div
+                role="radiogroup"
+                aria-label={t("places.filters.sectionLocation")}
+                className="grid w-full grid-cols-3 gap-1 rounded-full border border-brand-100 bg-brand-50 p-1"
+              >
                 {(["near", "municipality", "rail"] as const).map((mode) => (
                   <ModeButton
                     key={mode}
                     active={filters.locationMode === mode}
-                    onClick={() => setLocationMode(mode)}
+                    onClick={() => {
+                      if (filters.locationMode !== mode) setLocationMode(mode);
+                    }}
                     icon={<LocationModeIcon mode={mode} />}
                   >
                     {t(`places.filters.locationModes.${mode}`)}
@@ -312,19 +353,21 @@ export function PlaceFilterChips({
 
             {filters.locationMode === "near" && (
               <ChipGroup title={t("places.filters.sectionRadius")}>
-                {RADIUS.map((r) => (
-                  <Chip
-                    key={r.key}
-                    active={filters.radiusKm === r.value}
-                    onClick={() =>
-                      setRadius(
-                        filters.radiusKm === r.value ? undefined : r.value,
-                      )
-                    }
-                  >
-                    {t(`places.filters.${r.key}`)}
-                  </Chip>
-                ))}
+                <div
+                  role="radiogroup"
+                  aria-label={t("places.filters.sectionRadius")}
+                  className="grid grid-cols-2 gap-1.5 rounded-xl border border-gray-200 bg-gray-50 p-2"
+                >
+                  {RADIUS.map((r) => (
+                    <RadiusRadioOption
+                      key={r.key}
+                      active={filters.radiusKm === r.value}
+                      onClick={() => setRadius(r.value)}
+                    >
+                      {t(`places.filters.${r.key}`)}
+                    </RadiusRadioOption>
+                  ))}
+                </div>
               </ChipGroup>
             )}
 

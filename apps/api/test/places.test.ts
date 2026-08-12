@@ -290,6 +290,57 @@ describe("GET /api/v1/places", () => {
     await app.close();
   });
 
+  it("serves generated Japan museum places from open map data", async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places?category=museum`,
+    });
+    expect(res.statusCode).toBe(200);
+    const body = res.json();
+    const names = body.places.map((p: { name: string }) => p.name);
+    expect(body.total).toBeGreaterThanOrEqual(2300);
+    expect(names).toContain("国立科学博物館");
+    expect(names).toContain("日本科学未来館");
+    expect(names).toContain("鉄道博物館");
+    expect(names).toContain("京都鉄道博物館");
+    expect(names).toContain("江戸東京博物館");
+    expect(names).toContain("三鷹の森ジブリ美術館");
+    expect(names).toContain("消防博物館");
+    expect(names).toContain("東京国立博物館");
+    expect(names).toContain("トヨタ産業技術記念館");
+    expect(names).not.toContain("Tokyo Toy Museum");
+    expect(
+      names.some((name: string) => name.includes("ミュージアムショップ")),
+    ).toBe(false);
+    expect(names.some((name: string) => name.includes("駐車場"))).toBe(false);
+    await app.close();
+  });
+
+  it("serves generated Japan library places from open map data", async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places?category=library`,
+    });
+    expect(res.statusCode).toBe(200);
+    const body = res.json();
+    const names = body.places.map((p: { name: string }) => p.name);
+    expect(body.total).toBeGreaterThanOrEqual(3400);
+    expect(names).toContain("国際こども図書館");
+    expect(names).toContain("国立国会図書館・東京本館");
+    expect(names).toContain("京都府立図書館");
+    expect(names).toContain("大阪府立中央図書館");
+    expect(names).toContain("札幌市中央図書館");
+    expect(names).toContain("福岡県立図書館");
+    expect(names).toContain("沖縄県立図書館");
+    expect(names).not.toContain("Library");
+    expect(names.some((name: string) => name.includes("大学"))).toBe(false);
+    expect(names.some((name: string) => name.includes("書店"))).toBe(false);
+    expect(names.some((name: string) => name.includes("駐車場"))).toBe(false);
+    await app.close();
+  });
+
   it("serves generated major metro indoor play places from open map data", async () => {
     const app = buildApp();
     const res = await app.inject({

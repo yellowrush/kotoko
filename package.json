@@ -22,6 +22,8 @@
     "collect:japan-aquariums": "node tools/japan-aquariums/collect-japan-aquariums.mjs",
     "collect:japan-children-halls": "node tools/japan-children-halls/collect-japan-children-halls.mjs",
     "collect:japan-indoor-plays": "node tools/japan-indoor-plays/collect-japan-indoor-plays.mjs",
+    "collect:japan-libraries": "node tools/japan-libraries/collect-japan-libraries.mjs",
+    "collect:japan-museums": "node tools/japan-museums/collect-japan-museums.mjs",
     "collect:japan-playgrounds": "node tools/japan-playgrounds/collect-japan-playgrounds.mjs",
     "collect:japan-toy-plays": "node tools/japan-toy-plays/collect-japan-toy-plays.mjs",
     "collect:japan-zoos": "node tools/japan-zoos/collect-japan-zoos.mjs",

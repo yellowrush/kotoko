@@ -1,5 +1,10 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
+import {
+  enrichOsmElementsWithWikidata,
+  mediaFromOsmTags,
+  officialWebsiteUrlFromTags,
+} from "../lib/osm-place-enrichment.mjs";
 
 const OVERPASS_ENDPOINT =
   process.env.OVERPASS_ENDPOINT ?? "https://overpass-api.de/api/interpreter";
@@ -129,6 +134,8 @@ function parseArgs(argv) {
   for (const arg of argv) {
     if (arg.startsWith("--output="))
       args.output = arg.slice("--output=".length);
+    if (arg.startsWith("--from-json="))
+      args.fromJson = arg.slice("--from-json=".length);
     if (arg === "--merge-existing") args.mergeExisting = true;
     if (arg.startsWith("--prefectures="))
       args.prefectures = arg
@@ -229,8 +236,10 @@ function toPlaceInput(element) {
   const tags = element.tags ?? {};
   const name = canonicalName(getName(tags));
   const { latitude, longitude } = getCoordinate(element);
-  const websiteUrl = tags.website ?? tags["contact:website"];
   const osmUrl = sourceUrlFor(element);
+  const placeId = slugify(`${element.type}/${element.id}`);
+  const websiteUrl = officialWebsiteUrlFromTags(tags);
+  const media = mediaFromOsmTags(tags, { id: placeId, name });
   const addressParts = [
     tags["addr:province"],
     tags["addr:county"],
@@ -243,7 +252,7 @@ function toPlaceInput(element) {
   ].filter(Boolean);
 
   return {
-    id: slugify(`${element.type}/${element.id}`),
+    id: placeId,
     name,
     category: "toy-play",
     latitude,
@@ -258,6 +267,7 @@ function toPlaceInput(element) {
     nursingRoom: undefined,
     diaperChanging: undefined,
     tags: ["group-play", "stroller-friendly"],
+    ...(media.length > 0 ? { media } : {}),
     websiteUrl,
     sourceUrl: websiteUrl ?? osmUrl,
     sourceCheckedAt: CHECKED_AT,
@@ -436,14 +446,47 @@ out center tags;`;
   return fetchElements(query);
 }
 
-async function collect(prefectureCodes = PREFECTURE_CODES) {
+async function collectFromElements(elements) {
   const byKey = new Map();
   const existingNames = await getExistingPlaceNames();
+  for (const element of elements) {
+    const tags = element.tags ?? {};
+    const name = getName(tags);
+    const { latitude, longitude } = getCoordinate(element);
+    if (!name || !Number.isFinite(latitude) || !Number.isFinite(longitude))
+      continue;
+    if (!isLikelyStandaloneToyPlay(element, existingNames)) continue;
+    const municipalityKey =
+      tags["KSJ2:AAC"] ??
+      tags["addr:city"] ??
+      `${latitude.toFixed(2)},${longitude.toFixed(2)}`;
+    const nameKey = canonicalName(name).normalize("NFKC");
+    const dedupeKey = `${nameKey}|${municipalityKey}`;
+    const previous = byKey.get(dedupeKey);
+    if (!previous || evidenceScore(element) > evidenceScore(previous)) {
+      byKey.set(dedupeKey, element);
+    }
+  }
+
+  const selectedElements = [...byKey.values()];
+  await enrichOsmElementsWithWikidata(selectedElements);
+  const places = selectedElements.map(toPlaceInput);
+  places.sort((a, b) => a.name.localeCompare(b.name, "ja"));
+  return places;
+}
+
+async function collectFromJson(inputPath) {
+  const payload = JSON.parse(await readFile(inputPath, "utf8"));
+  return collectFromElements(payload.elements ?? []);
+}
+
+async function collect(prefectureCodes = PREFECTURE_CODES) {
+  const elements = [];
   const failedPrefectureCodes = [];
   for (const prefectureCode of prefectureCodes) {
-    let elements = [];
+    let prefectureElements = [];
     try {
-      elements = await collectPrefecture(prefectureCode);
+      prefectureElements = await collectPrefecture(prefectureCode);
     } catch (error) {
       failedPrefectureCodes.push(prefectureCode);
       console.warn(
@@ -454,30 +497,12 @@ async function collect(prefectureCodes = PREFECTURE_CODES) {
       continue;
     }
     console.log(
-      `Fetched ${elements.length} toy-play candidates from ${prefectureCode}`,
+      `Fetched ${prefectureElements.length} toy-play candidates from ${prefectureCode}`,
     );
-    for (const element of elements) {
-      const tags = element.tags ?? {};
-      const name = getName(tags);
-      const { latitude, longitude } = getCoordinate(element);
-      if (!name || !Number.isFinite(latitude) || !Number.isFinite(longitude))
-        continue;
-      if (!isLikelyStandaloneToyPlay(element, existingNames)) continue;
-      const municipalityKey =
-        tags["KSJ2:AAC"] ??
-        tags["addr:city"] ??
-        `${latitude.toFixed(2)},${longitude.toFixed(2)}`;
-      const nameKey = canonicalName(name).normalize("NFKC");
-      const dedupeKey = `${nameKey}|${municipalityKey}`;
-      const previous = byKey.get(dedupeKey);
-      if (!previous || evidenceScore(element) > evidenceScore(previous)) {
-        byKey.set(dedupeKey, element);
-      }
-    }
+    elements.push(...prefectureElements);
   }
 
-  const places = [...byKey.values()].map(toPlaceInput);
-  places.sort((a, b) => a.name.localeCompare(b.name, "ja"));
+  const places = await collectFromElements(elements);
   if (failedPrefectureCodes.length > 0) {
     console.warn(
       `Skipped ${failedPrefectureCodes.length} prefectures: ${failedPrefectureCodes.join(
@@ -489,7 +514,9 @@ async function collect(prefectureCodes = PREFECTURE_CODES) {
 }
 
 const args = parseArgs(process.argv.slice(2));
-const places = await collect(args.prefectures);
+const places = args.fromJson
+  ? await collectFromJson(args.fromJson)
+  : await collect(args.prefectures);
 await mkdir(dirname(args.output), { recursive: true });
 await writeFile(
   args.output,

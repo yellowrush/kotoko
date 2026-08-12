@@ -23,7 +23,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/9494933796",
+    websiteUrl: "https://www.skylark.co.jp/bamiyan/",
+    sourceUrl: "https://www.skylark.co.jp/bamiyan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -52,7 +53,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/9934011786",
+    websiteUrl: "https://www.skylark.co.jp/bamiyan/",
+    sourceUrl: "https://www.skylark.co.jp/bamiyan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -632,7 +634,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/6134182910",
+    websiteUrl: "https://www.dennys.jp/",
+    sourceUrl: "https://www.dennys.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -661,7 +664,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/563669823",
+    websiteUrl: "https://www.joyfull.co.jp/",
+    sourceUrl: "https://www.joyfull.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -690,7 +694,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/2604549341",
+    websiteUrl: "https://www.joyfull.co.jp/",
+    sourceUrl: "https://www.joyfull.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -719,7 +724,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/4981483521",
+    websiteUrl: "https://www.joyfull.co.jp/",
+    sourceUrl: "https://www.joyfull.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -748,7 +754,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/5935625911",
+    websiteUrl: "https://www.joyfull.co.jp/",
+    sourceUrl: "https://www.joyfull.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -777,7 +784,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/6697991857",
+    websiteUrl: "https://www.joyfull.co.jp/",
+    sourceUrl: "https://www.joyfull.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -806,7 +814,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/250679475",
+    websiteUrl: "https://www.joyfull.co.jp/",
+    sourceUrl: "https://www.joyfull.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -835,7 +844,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/293521856",
+    websiteUrl: "https://www.joyfull.co.jp/",
+    sourceUrl: "https://www.joyfull.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -864,7 +874,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/615566696",
+    websiteUrl: "https://www.joyfull.co.jp/",
+    sourceUrl: "https://www.joyfull.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -893,7 +904,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/638999585",
+    websiteUrl: "https://www.joyfull.co.jp/",
+    sourceUrl: "https://www.joyfull.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -922,7 +934,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/6771688485",
+    websiteUrl: "https://www.joyfull.co.jp/",
+    sourceUrl: "https://www.joyfull.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -951,7 +964,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/6780439385",
+    websiteUrl: "https://www.joyfull.co.jp/",
+    sourceUrl: "https://www.joyfull.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -980,7 +994,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/6796356788",
+    websiteUrl: "https://www.joyfull.co.jp/",
+    sourceUrl: "https://www.joyfull.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1009,7 +1024,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/6779168785",
+    websiteUrl: "https://www.joyfull.co.jp/",
+    sourceUrl: "https://www.joyfull.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1038,7 +1054,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/4757562656",
+    websiteUrl: "https://www.joyfull.co.jp/",
+    sourceUrl: "https://www.joyfull.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1067,7 +1084,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/4526255276",
+    websiteUrl: "https://www.joyfull.co.jp/",
+    sourceUrl: "https://www.joyfull.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1096,7 +1114,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/12267213901",
+    websiteUrl: "https://www.kurasushi.co.jp/",
+    sourceUrl: "https://www.kurasushi.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1272,7 +1291,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/4795969424",
+    websiteUrl: "https://www.royalhost.jp/",
+    sourceUrl: "https://www.royalhost.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1301,7 +1321,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/6824674192",
+    websiteUrl: "https://www.royalhost.jp/",
+    sourceUrl: "https://www.royalhost.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1330,7 +1351,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/8507134890",
+    websiteUrl: "https://www.royalhost.jp/",
+    sourceUrl: "https://www.royalhost.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1360,7 +1382,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     diaperChanging: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining", "diaper-changing"],
-    sourceUrl: "https://www.openstreetmap.org/node/13310620579",
+    websiteUrl: "https://www.royalhost.jp/",
+    sourceUrl: "https://www.royalhost.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1389,7 +1412,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/13463867373",
+    websiteUrl: "https://www.royalhost.jp/",
+    sourceUrl: "https://www.royalhost.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1418,7 +1442,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/1176481576",
+    websiteUrl: "https://www.royalhost.jp/",
+    sourceUrl: "https://www.royalhost.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1447,7 +1472,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/10848267364",
+    websiteUrl: "https://www.saizeriya.co.jp/",
+    sourceUrl: "https://www.saizeriya.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1476,7 +1502,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/12757194702",
+    websiteUrl: "https://www.saizeriya.co.jp/",
+    sourceUrl: "https://www.saizeriya.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1505,7 +1532,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/13196950901",
+    websiteUrl: "https://www.saizeriya.co.jp/",
+    sourceUrl: "https://www.saizeriya.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1534,8 +1562,7 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    websiteUrl: "https://www.instagram.com/servo_1932/",
-    sourceUrl: "https://www.instagram.com/servo_1932/",
+    sourceUrl: "https://www.openstreetmap.org/node/11656195760",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1654,7 +1681,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/7614732687",
+    websiteUrl: "https://www.akindo-sushiro.co.jp/",
+    sourceUrl: "https://www.akindo-sushiro.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1715,7 +1743,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/13478334301",
+    websiteUrl: "https://www.akindo-sushiro.co.jp/",
+    sourceUrl: "https://www.akindo-sushiro.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -4402,6 +4431,18 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
+    media: [
+      {
+        id: "osm-restaurant-2e952e57-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gusto_Shibuya-D%C5%8Dgenzaka.jpg",
+        alt: "ガスト public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Gusto_Shibuya-D%C5%8Dgenzaka.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1721953818",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -15515,8 +15556,7 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    websiteUrl: "store-info.skylark.co.jp",
-    sourceUrl: "store-info.skylark.co.jp",
+    sourceUrl: "https://www.openstreetmap.org/node/5906354030",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -27799,7 +27839,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/723289370",
+    websiteUrl: "https://store-info.skylark.co.jp/gusto/map/012841",
+    sourceUrl: "https://store-info.skylark.co.jp/gusto/map/012841",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -32738,6 +32779,18 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
+    media: [
+      {
+        id: "osm-restaurant-8a63f02f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E6%84%9B%E7%9F%A5%E7%9C%8C%E8%B1%8A%E6%A9%8B%E5%B8%82_20241020_1558.jpg",
+        alt: "ガスト豊橋橋良店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E6%84%9B%E7%9F%A5%E7%9C%8C%E8%B1%8A%E6%A9%8B%E5%B8%82_20241020_1558.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/1324984955",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -58237,8 +58290,7 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    websiteUrl: "cocos-jpn.co.jp",
-    sourceUrl: "cocos-jpn.co.jp",
+    sourceUrl: "https://www.openstreetmap.org/node/7416203977",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -86775,7 +86827,10 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/12826442207",
+    websiteUrl:
+      "https://www.aeon.jp/sc/soyora-nagaharaekimae/img/floorguide.pdf",
+    sourceUrl:
+      "https://www.aeon.jp/sc/soyora-nagaharaekimae/img/floorguide.pdf",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -94627,6 +94682,18 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
+    media: [
+      {
+        id: "osm-restaurant-aa47682b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shabuyo_Shonai-dori_20191013-02.jpg",
+        alt: "しゃぶ葉 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shabuyo_Shonai-dori_20191013-02.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/927998284",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -120308,8 +120375,7 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    websiteUrl: "akindo-sushiro.co.jp",
-    sourceUrl: "akindo-sushiro.co.jp",
+    sourceUrl: "https://www.openstreetmap.org/node/13378481460",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -128724,8 +128790,7 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    websiteUrl: "skylark.co.jp",
-    sourceUrl: "skylark.co.jp",
+    sourceUrl: "https://www.openstreetmap.org/node/7492553637",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -141173,8 +141238,7 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    websiteUrl: "hamazushi.com",
-    sourceUrl: "hamazushi.com",
+    sourceUrl: "https://www.openstreetmap.org/node/4623360291",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -141958,8 +142022,7 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    websiteUrl: "hama-sushi.co.jp",
-    sourceUrl: "hama-sushi.co.jp",
+    sourceUrl: "https://www.openstreetmap.org/node/5203761850",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -173627,10 +173690,7 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    websiteUrl:
-      "https://pkg.navitime.co.jp/matsuyafoods/spot/detail?code=0000000209",
-    sourceUrl:
-      "https://pkg.navitime.co.jp/matsuyafoods/spot/detail?code=0000000209",
+    sourceUrl: "https://www.openstreetmap.org/node/10046353233",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -174420,7 +174480,20 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/node/11062734959",
+    media: [
+      {
+        id: "osm-restaurant-fa99c033-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fujiya_Isezaki-ch%C5%8Do.JPG",
+        alt: "不二家レストラン 横浜センター店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fujiya_Isezaki-ch%C5%8Do.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://shop.fujiya-peko.co.jp/b/fujiya/info/84161/",
+    sourceUrl: "https://shop.fujiya-peko.co.jp/b/fujiya/info/84161/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -176979,8 +177052,7 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    websiteUrl: "store-info.skylark.co.jp",
-    sourceUrl: "store-info.skylark.co.jp",
+    sourceUrl: "https://www.openstreetmap.org/node/7432033043",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -177973,7 +178045,8 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/485484669",
+    websiteUrl: "https://store-info.skylark.co.jp/yumean/map/130197",
+    sourceUrl: "https://store-info.skylark.co.jp/yumean/map/130197",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -180339,8 +180412,7 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    websiteUrl: "https://www.instagram.com/wanonaka/",
-    sourceUrl: "https://www.instagram.com/wanonaka/",
+    sourceUrl: "https://www.openstreetmap.org/node/10006286164",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -180369,8 +180441,7 @@ export const generatedRestaurantPlaces: PlaceInput[] = [
     strollerFriendly: true,
     tags: ["dining", "stroller-friendly"],
     labels: ["dining"],
-    websiteUrl: "https://www.instagram.com/wanonaka/",
-    sourceUrl: "https://www.instagram.com/wanonaka/",
+    sourceUrl: "https://www.openstreetmap.org/way/1092595046",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [

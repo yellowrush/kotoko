@@ -1118,6 +1118,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c748c288-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aity_Shopping_Center_Toyooka.jpg",
+        alt: "Aity public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aity_Shopping_Center_Toyooka.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/55435041",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -1231,6 +1243,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c8f57aa0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AKIBA%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%82%BAZONE.jpg",
+        alt: "AKIBAカルチャーズZONE public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AKIBA%E3%82%AB%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC%E3%82%BAZONE.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.akibacultureszone.com",
     sourceUrl: "https://www.akibacultureszone.com",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -1373,6 +1397,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-1f2e5b6e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ao_Building_20241020.jpg",
+        alt: "Ao public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ao_Building_20241020.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/209692980",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -1485,6 +1521,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-109a5cf5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aqeru_Maebashi.jpg",
+        alt: "AQERU前橋 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Aqeru_Maebashi.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/286521794",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -2325,6 +2372,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-3cdb5738-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/BiVi_Fujieda_150712.JPG",
+        alt: "BiVi藤枝 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:BiVi_Fujieda_150712.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/455487565",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -2465,7 +2524,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1066686486",
+    websiteUrl: "https://e-zofukuoka.com/",
+    sourceUrl: "https://e-zofukuoka.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -3112,6 +3172,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-759fdb71-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/CeeU_Yokohama.jpg",
+        alt: "CeeU Yokohama public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:CeeU_Yokohama.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://ceeu-yokohama.aeonmall.com/",
     sourceUrl: "https://ceeu-yokohama.aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -3254,6 +3325,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-96900409-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yokohama_station_west_exit.jpeg",
+        alt: "CIAL横浜 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yokohama_station_west_exit.jpeg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/7565535548",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -3484,7 +3567,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/345045046",
+    websiteUrl: "https://ciina-ciina.com/tonden/",
+    sourceUrl: "https://ciina-ciina.com/tonden/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -3710,7 +3794,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/396326759",
+    media: [
+      {
+        id: "osm-shop-facility-0a5c8b49-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%82%B3%E3%82%B3%E3%83%AD%E6%B9%AF%E6%B2%A2.jpg",
+        alt: "CoCoLo湯沢 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%82%B3%E3%82%B3%E3%83%AD%E6%B9%AF%E6%B2%A2.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://jenic.jp/cocolo/floor/?sc_name=yuzawa",
+    sourceUrl: "https://jenic.jp/cocolo/floor/?sc_name=yuzawa",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -3822,6 +3919,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-e041eb5a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/COREDO_1_2019.jpg",
+        alt: "COREDO室町1 (室町東三井ビルディング) public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:COREDO_1_2019.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/181930209",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -3850,6 +3958,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-00410dbb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Coredo_muromachi_2_nihonbashi_tokyo_2014.jpg",
+        alt: "COREDO室町2 (室町古河三井ビルディング) public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Coredo_muromachi_2_nihonbashi_tokyo_2014.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://mitsui-shopping-park.com/urban/muromachi/",
     sourceUrl: "https://mitsui-shopping-park.com/urban/muromachi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -3879,6 +3999,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ff410c28-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Coredo_muromachi_3_nihonbashi_tokyo_2014.jpg",
+        alt: "Coredo室町3 (室町ちばぎん三井ビルディング) public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Coredo_muromachi_3_nihonbashi_tokyo_2014.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/629051415",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -4104,6 +4236,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-bcc282b8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/D-naha.JPG",
+        alt: "D-naha public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:D-naha.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/94233167",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -5428,7 +5571,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/654234331",
+    websiteUrl: "http://www.seibu-shop.jp/emio/floorguide/?fcd=14",
+    sourceUrl: "http://www.seibu-shop.jp/emio/floorguide/?fcd=14",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -5680,6 +5824,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-9a6ad5e4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/FKD-Shopping-Mall-Utsunomiya-IC.JPG",
+        alt: "FKDインターパーク店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:FKD-Shopping-Mall-Utsunomiya-IC.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/196502978",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -6186,6 +6342,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c5f7ff2c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/GINZA_SIX2a.jpg",
+        alt: "GINZA SIX public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:GINZA_SIX2a.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://ginza6.tokyo/",
     sourceUrl: "https://ginza6.tokyo/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -6859,6 +7026,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-527fa17f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Osaka%2C_hep_navio_01.jpg",
+        alt: "HEP NAVIO public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Osaka%2C_hep_navio_01.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/174789734",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -7195,7 +7374,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/710277652",
+    media: [
+      {
+        id: "osm-shop-facility-e3c6146e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Iias_okinawa.jpg",
+        alt: "iias沖縄豊崎 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Iias_okinawa.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://toyosaki.iias.jp/",
+    sourceUrl: "https://toyosaki.iias.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -7223,7 +7414,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1292682383",
+    websiteUrl: "https://kasugai.iias.jp/",
+    sourceUrl: "https://kasugai.iias.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -7392,6 +7584,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f988d2e3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/LUCUA_1100_at_2nd_April_2015.JPG",
+        alt: "Ishi-usubiki Nihachi Soba Sobashiki LUCUA Osaka public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:LUCUA_1100_at_2nd_April_2015.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/1313244350",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -7816,6 +8020,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-004bf849-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/JR_Central_Towers.jpg",
+        alt: "JRセントラルタワーズ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:JR_Central_Towers.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.towers.jp/",
     sourceUrl: "https://www.towers.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -8296,7 +8512,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/627624637",
+    media: [
+      {
+        id: "osm-shop-facility-d7f78db7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/DSC01773%E5%BB%BA%E7%89%A9%E6%AD%A3%E9%9D%A2.jpg",
+        alt: "KITE MITE MATSIDO public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:DSC01773%E5%BB%BA%E7%89%A9%E6%AD%A3%E9%9D%A2.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://kitemite.co.jp/",
+    sourceUrl: "https://kitemite.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -8353,7 +8582,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/683271777",
+    media: [
+      {
+        id: "osm-shop-facility-9c6a8aad-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kitte_Hakata_SE_from_Hakata_Station_Hakata_Exit_INT_9-1_Hakata-eki-ch%C5%AB%C5%8Dgai_Hakata-ku_Fukuoka_20230801.jpg",
+        alt: "Kitte Hakata public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kitte_Hakata_SE_from_Hakata_Station_Hakata_Exit_INT_9-1_Hakata-eki-ch%C5%AB%C5%8Dgai_Hakata-ku_Fukuoka_20230801.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://kitte-hakata.jp/",
+    sourceUrl: "https://kitte-hakata.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -8691,6 +8933,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c31bc26c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/HachinoheShoppingCenter-LAPIA.jpg",
+        alt: "LAPIA public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:HachinoheShoppingCenter-LAPIA.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/356146639",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -9113,6 +9367,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-61bdf367-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/KanayamaStation-NorthGate.jpg",
+        alt: "Loop金山 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:KanayamaStation-NorthGate.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/178288356",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -9141,7 +9407,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/7013247722",
+    media: [
+      {
+        id: "osm-shop-facility-18dd0fe5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/LOVINA_01.jpg",
+        alt: "Lovina public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:LOVINA_01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.jre-abc.com/wp/lovina/index/",
+    sourceUrl: "https://www.jre-abc.com/wp/lovina/index/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -9309,7 +9587,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/511303237",
+    media: [
+      {
+        id: "osm-shop-facility-ecf910b6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Atami_Station.jpg",
+        alt: "LUSCA public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Atami_Station.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.lusca.co.jp/atami/",
+    sourceUrl: "https://www.lusca.co.jp/atami/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -9393,6 +9683,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-e6808775-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Luz_SHONAN_TSUJIDO.JPG",
+        alt: "Luz 湘南辻堂 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Luz_SHONAN_TSUJIDO.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/224622912",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -9618,7 +9920,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/226663233",
+    media: [
+      {
+        id: "osm-shop-facility-fd063c66-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/MARK_IS_minatomirai_5.jpg",
+        alt: "MARK IS みなとみらい public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:MARK_IS_minatomirai_5.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.mec-markis.jp/mm/",
+    sourceUrl: "https://www.mec-markis.jp/mm/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -9677,7 +9992,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/217132714",
+    media: [
+      {
+        id: "osm-shop-facility-7977aa83-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Markis_Shizuoka.JPG",
+        alt: "MARK IS 静岡 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Markis_Shizuoka.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://mec-markis.jp/shizuoka/",
+    sourceUrl: "https://mec-markis.jp/shizuoka/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -10013,7 +10341,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/142376764",
+    media: [
+      {
+        id: "osm-shop-facility-93974bb1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Apita.toukaidori.jpg",
+        alt: "MEGAドン・キホーテUNY public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Apita.toukaidori.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.donki.com/store/shop_detail.php?shop_id=472",
+    sourceUrl: "http://www.donki.com/store/shop_detail.php?shop_id=472",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -10240,7 +10581,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/347255616",
+    media: [
+      {
+        id: "osm-shop-facility-59785a7a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/MIDORI%E6%9D%BE%E6%9C%AC_(49160).jpg",
+        alt: "MI DO RI public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:MIDORI%E6%9D%BE%E6%9C%AC_(49160).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.eki-midori.com/matsumoto/",
+    sourceUrl: "https://www.eki-midori.com/matsumoto/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -10296,7 +10650,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/133907871",
+    websiteUrl: "https://www.eki-midori.com/nagano/",
+    sourceUrl: "https://www.eki-midori.com/nagano/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -10716,7 +11071,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1303716409",
+    media: [
+      {
+        id: "osm-shop-facility-37e94041-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Monaka_in_Morioka_City_20241109a.jpg",
+        alt: "monaka public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Monaka_in_Morioka_City_20241109a.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://monaka-morioka.com/",
+    sourceUrl: "https://monaka-morioka.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -10856,6 +11224,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ae877b44-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mozo_AEON_Wonder_City_Shopping_Center_02.JPG",
+        alt: "MOZO ワンダーシティ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mozo_AEON_Wonder_City_Shopping_Center_02.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.mozo-wondercity.com/",
     sourceUrl: "https://www.mozo-wondercity.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -11420,6 +11800,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ba01f541-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/New-shimbashi-bldg-2017.jpg",
+        alt: "NEWしんばしビル public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:New-shimbashi-bldg-2017.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/24013305",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -11591,6 +11983,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-4a1ecbbc-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/NU_Chayamachi_Osaka_Japan01-r.jpg",
+        alt: "NU茶屋町 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:NU_Chayamachi_Osaka_Japan01-r.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://nu-chayamachi.com/sp/",
     sourceUrl: "https://nu-chayamachi.com/sp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -11620,6 +12024,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-49f333a8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chayamachi_Osaka_Japan07o.jpg",
+        alt: "NU茶屋町プラス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Chayamachi_Osaka_Japan07o.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/162157502",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -11705,6 +12121,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-bf5062df-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fujisawa_Odakyu_Department_Store.jpg",
+        alt: "ODAKYU湘南GATE public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fujisawa_Odakyu_Department_Store.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/335513949",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -11761,6 +12189,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-bf56d6a0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Oh!me.jpg",
+        alt: "Oh ! Me 大津テラス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Oh!me.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://ohmeotsu.jp/",
     sourceUrl: "https://ohmeotsu.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -11932,7 +12371,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/308827648",
+    media: [
+      {
+        id: "osm-shop-facility-06b15c0d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/ONOMICHI_U2_%E2%80%94_1.jpg",
+        alt: "ONOMICHI U2 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:ONOMICHI_U2_%E2%80%94_1.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://onomichi-u2.com/",
+    sourceUrl: "https://onomichi-u2.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -12016,7 +12468,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/12406880",
+    media: [
+      {
+        id: "osm-shop-facility-45b1f913-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Okazaki-Kamimyodaijicho-7.jpg",
+        alt: "OTO RIVERSIDE TERRACE public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Okazaki-Kamimyodaijicho-7.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://oto-riversideterrace.com/",
+    sourceUrl: "https://oto-riversideterrace.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -13137,7 +13602,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/207878488",
+    media: [
+      {
+        id: "osm-shop-facility-c2bf62bd-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Recipeshimokita-building-dec26-2015.jpg",
+        alt: "Recipe SHIMOKITA public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Recipeshimokita-building-dec26-2015.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.recipeshimokita.jp/",
+    sourceUrl: "http://www.recipeshimokita.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -13614,6 +14092,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a956e9d0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/S-PAL_Sendai_20160321.jpeg",
+        alt: "S-PAL仙台II public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:S-PAL_Sendai_20160321.jpeg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.s-pal.jp/sendai/",
     sourceUrl: "https://www.s-pal.jp/sendai/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -13699,6 +14189,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-1f81f4b9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/SAKURA-MACHI-Kumamoto.jpg",
+        alt: "SAKURA MACHI Kumamoto public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:SAKURA-MACHI-Kumamoto.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://sakuramachi-kumamoto.jp/",
     sourceUrl: "https://sakuramachi-kumamoto.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -14206,6 +14708,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b7462373-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shibuya_109_-_3.jpg",
+        alt: "SHIBUYA 109 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shibuya_109_-_3.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://shibuya109.jp",
     sourceUrl: "https://shibuya109.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -14347,7 +14861,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1075142157",
+    media: [
+      {
+        id: "osm-shop-facility-1784dc84-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/SOCOLA%E6%AD%A6%E8%94%B5%E5%B0%8F%E9%87%91%E4%BA%95%E3%82%AF%E3%83%AD%E3%82%B9.jpg",
+        alt: "SOCOLA武蔵小金井クロス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:SOCOLA%E6%AD%A6%E8%94%B5%E5%B0%8F%E9%87%91%E4%BA%95%E3%82%AF%E3%83%AD%E3%82%B9.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://musashikoganei.socola-sc.jp/",
+    sourceUrl: "https://musashikoganei.socola-sc.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -15133,6 +15660,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c1c0169f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gotanda_TOC-building.JPG",
+        alt: "TOCビル public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Gotanda_TOC-building.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/163566454",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -15469,6 +16008,16 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-eaebe3fe-image-1",
+        type: "image",
+        url: "http://images.koriyama.io/20150516/1431746283.jpg",
+        alt: "Toy’s Kanno public image",
+        sourceUrl: "http://images.koriyama.io/20150516/1431746283.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/3530949690",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -16197,6 +16746,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-36c35a95-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/V_town_akutami.jpg",
+        alt: "Vタウン 芥見店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:V_town_akutami.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/159355802",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -16649,6 +17209,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     diaperChanging: true,
     tags: ["stroller-friendly"],
     labels: ["diaper-changing"],
+    media: [
+      {
+        id: "osm-shop-facility-ca1a7588-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E5%A4%96%E8%A6%B3.jpg",
+        alt: "Yotsubako public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E5%A4%96%E8%A6%B3.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/206275177",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -16903,6 +17475,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     diaperChanging: true,
     tags: ["stroller-friendly"],
     labels: ["diaper-changing"],
+    media: [
+      {
+        id: "osm-shop-facility-adf76f7e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Urban_Dock_LaLaport_Toyosu5.JPG",
+        alt: "アーバンドック ららぽーと豊洲 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Urban_Dock_LaLaport_Toyosu5.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://toyosu.lalaport.jp/",
     sourceUrl: "http://toyosu.lalaport.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -16990,6 +17574,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-8716cee0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/I-MALL_Miyoshi_20151031.JPG",
+        alt: "アイ・モール三好 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:I-MALL_Miyoshi_20151031.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/miyoshi/",
     sourceUrl: "https://www.aeon.jp/sc/miyoshi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -18592,7 +19188,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/20192029",
+    media: [
+      {
+        id: "osm-shop-facility-15f44b41-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AQUA_WALK_Ogaki_Shopping_Center_02.JPG",
+        alt: "アクアウォーク大垣 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AQUA_WALK_Ogaki_Shopping_Center_02.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://walk-uny.com/aqua-walk/",
+    sourceUrl: "https://walk-uny.com/aqua-walk/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -18620,6 +19229,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b9244220-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aqua-City_Odaiba.jpg",
+        alt: "アクアシテイお台場 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aqua-City_Odaiba.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aquacity.jp/",
     sourceUrl: "https://www.aquacity.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -18705,6 +19326,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-e0295c38-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takatsuki_st01s3300.jpg",
+        alt: "アクトアモーレ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takatsuki_st01s3300.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/7990944846",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -18929,6 +19562,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-38a5c948-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Acrossmall-Shinkamagaya_2024.jpg",
+        alt: "アクロスモール新鎌ヶ谷 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Acrossmall-Shinkamagaya_2024.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://shinkama.acrossmall.jp/",
     sourceUrl: "https://shinkama.acrossmall.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -19211,6 +19856,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-433faf0c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%82%A2%E3%82%B8%E3%82%A2%E5%A4%AA%E5%B9%B3%E6%B4%8B%E3%83%88%E3%83%AC%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC_%E5%85%A8%E6%99%AF.JPG",
+        alt: "アジア太平洋トレードセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%82%A2%E3%82%B8%E3%82%A2%E5%A4%AA%E5%B9%B3%E6%B4%8B%E3%83%88%E3%83%AC%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC_%E5%85%A8%E6%99%AF.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://s.atc-co.com/index.php",
     sourceUrl: "http://s.atc-co.com/index.php",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -19296,6 +19953,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-2c03def4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/ASUNAL-KANAYAMA.jpg",
+        alt: "アスナル金山 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:ASUNAL-KANAYAMA.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.asunal.jp/",
     sourceUrl: "https://www.asunal.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -19325,6 +19994,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-2a061a65-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/ASUNAL-KANAYAMA.jpg",
+        alt: "アスナル金山 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:ASUNAL-KANAYAMA.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.asunal.jp/",
     sourceUrl: "https://www.asunal.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -19383,7 +20064,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/358452301",
+    media: [
+      {
+        id: "osm-shop-facility-eb1063a4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AZ_Kumagaya.JPG",
+        alt: "アズ熊谷 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:AZ_Kumagaya.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.takasakitb.co.jp/az-kumagaya/",
+    sourceUrl: "https://www.takasakitb.co.jp/az-kumagaya/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -19553,7 +20246,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/587700672",
+    websiteUrl: "https://www.green-stage.jp/mall/63",
+    sourceUrl: "https://www.green-stage.jp/mall/63",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -19862,7 +20556,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/750631562",
+    media: [
+      {
+        id: "osm-shop-facility-ef467c42-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Atr%C3%A9_Yotsuya_-_Mapillary_(953719575792409).jpg",
+        alt: "アトレ四谷 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Atr%C3%A9_Yotsuya_-_Mapillary_(953719575792409).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.atre.co.jp/store/yotsuya",
+    sourceUrl: "https://www.atre.co.jp/store/yotsuya",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -19974,6 +20681,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-4915e930-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Atre_Kawagoe.JPG",
+        alt: "アトレ川越 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Atre_Kawagoe.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/160065670",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -20594,6 +21312,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-e2e06bbc-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/APITA_TOWN_Inazawa.jpg",
+        alt: "アピタタウン稲沢 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:APITA_TOWN_Inazawa.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://apitatown-inazawa.com/",
     sourceUrl: "https://apitatown-inazawa.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -20680,6 +21410,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-71fc41df-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/APITA_Kuwana.jpg",
+        alt: "アピタ桑名店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:APITA_Kuwana.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/210958432",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -20764,6 +21505,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ff07263c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Apita.nagoyakita.jpg",
+        alt: "アピタ名古屋北店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Apita.nagoyakita.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/263177670",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -20988,6 +21741,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-4148a52c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/ABENO_Q's_MALL.jpg",
+        alt: "あべのキューズタウン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:ABENO_Q's_MALL.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/232504678",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -21101,6 +21865,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-50a5fc8c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Amagasaki_Q's_Mall.jpg",
+        alt: "あまがさきキューズモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Amagasaki_Q's_Mall.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://qs-mall.jp/amagasaki/",
     sourceUrl: "http://qs-mall.jp/amagasaki/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -21245,6 +22021,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-31bd7701-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagasakieki-amu.JPG",
+        alt: "アミュプラザ長崎 本館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagasakieki-amu.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://amu-n.co.jp/",
     sourceUrl: "https://amu-n.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -21668,6 +22456,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-113b3f66-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fukaya_Ario_Fukaya_2.JPG",
+        alt: "アリオ 深谷 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fukaya_Ario_Fukaya_2.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/444554791",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -21696,6 +22496,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-280d840e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ario_Kameari.JPG",
+        alt: "アリオ亀有 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Ario_Kameari.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://kameari.ario.jp/",
     sourceUrl: "https://kameari.ario.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -21753,6 +22564,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f381993a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ario_Sapporo.jpg",
+        alt: "アリオ札幌 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Ario_Sapporo.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.ario-sapporo.jp/",
     sourceUrl: "http://www.ario-sapporo.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -21782,6 +22604,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-02a1d01f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ario_Ueda.JPG",
+        alt: "アリオ上田 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Ario_Ueda.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/174642905",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -21838,7 +22671,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/32618771",
+    media: [
+      {
+        id: "osm-shop-facility-197d90c4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ario_Nishiarai_20210422_154315.jpg",
+        alt: "アリオ西新井 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ario_Nishiarai_20210422_154315.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://nishiarai.ario.jp/",
+    sourceUrl: "https://nishiarai.ario.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -21866,7 +22712,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/169606494",
+    media: [
+      {
+        id: "osm-shop-facility-42bf4fb8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ario_Kawaguchi_001.JPG",
+        alt: "アリオ川口 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ario_Kawaguchi_001.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://kawaguchi.ario.jp/",
+    sourceUrl: "https://kawaguchi.ario.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -21894,6 +22753,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d961b90b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ario_Soga01.jpg",
+        alt: "アリオ蘇我 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Ario_Soga01.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://soga.ario.jp/",
     sourceUrl: "https://soga.ario.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -21923,6 +22793,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-6c7703e3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ario_Kurashiki_01.JPG",
+        alt: "アリオ倉敷 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ario_Kurashiki_01.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.ario-kurashiki.jp/",
     sourceUrl: "https://www.ario-kurashiki.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -21952,6 +22834,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-bf71845c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ario_Yao.JPG",
+        alt: "アリオ八尾 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Ario_Yao.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/159639800",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -22009,6 +22902,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-3713f3f2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ario_Kitasuna_20121219.jpg",
+        alt: "アリオ北砂 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ario_Kitasuna_20121219.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/88961601",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -22121,6 +23026,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-73b28088-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AL.PLAZA_Ibaraki.JPG",
+        alt: "アル・プラザ茨木 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AL.PLAZA_Ibaraki.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/601087616",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -22149,6 +23066,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-3aeef217-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/ALPLAZA_Kanazawa.jpg",
+        alt: "アル・プラザ金沢 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:ALPLAZA_Kanazawa.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/183895149",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -22177,6 +23106,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f4719e1f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/ALPLAZA_Kanazawa.jpg",
+        alt: "アル・プラザ金沢 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:ALPLAZA_Kanazawa.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/1079496565",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -22205,6 +23146,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-1728c3cf-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Heiwado_Ritto_from_west%2C_2021.jpg",
+        alt: "アル・プラザ栗東 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Heiwado_Ritto_from_west%2C_2021.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/441721175",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -22233,6 +23186,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-544653a2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Alksh20.4.jpg",
+        alt: "アル・プラザ鹿島 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Alksh20.4.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/595098777",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -22289,6 +23253,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-fa107a86-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AL.PLAZA_Minakuchi_2017.jpg",
+        alt: "アル・プラザ水口 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AL.PLAZA_Minakuchi_2017.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.alplaza-minakuchi.jp/",
     sourceUrl: "https://www.alplaza-minakuchi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -22458,7 +23434,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/17380949",
+    media: [
+      {
+        id: "osm-shop-facility-112aa115-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Arcakit.jpg",
+        alt: "アルカキット錦糸町 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Arcakit.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://mitsui-shopping-park.com/arcakit/",
+    sourceUrl: "https://mitsui-shopping-park.com/arcakit/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -22514,6 +23502,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-6faf131c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hotel_Metropolitan_Akita_20180520.jpg",
+        alt: "アルス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hotel_Metropolitan_Akita_20180520.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.caoca.net/",
     sourceUrl: "https://www.caoca.net/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -22572,7 +23572,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/332630990",
+    websiteUrl: "http://altimall.jp",
+    sourceUrl: "http://altimall.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -22685,6 +23686,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d88e6fe2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/ALNE-TSUYAMA.jpg",
+        alt: "アルネ津山 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:ALNE-TSUYAMA.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/388238203",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -23191,7 +24203,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/5388335670",
+    websiteUrl: "https://www.takasakitb.co.jp/e-maebashi/",
+    sourceUrl: "https://www.takasakitb.co.jp/e-maebashi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -23219,7 +24232,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/443946603",
+    websiteUrl: "https://www.takasakitb.co.jp/e-kagohara/",
+    sourceUrl: "https://www.takasakitb.co.jp/e-kagohara/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -23304,6 +24318,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-06004528-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/EBeanS_2023-12-23.jpg",
+        alt: "イービーンズ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:EBeanS_2023-12-23.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.e-beans.jp/",
     sourceUrl: "https://www.e-beans.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -23704,6 +24730,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a0772035-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Miyakonojo_SC_2008_02.jpg",
+        alt: "イオン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Miyakonojo_SC_2008_02.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/4757342621",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -23872,6 +24910,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-191cb161-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_MALL_Suzuka_(1).JPG",
+        alt: "イオン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C3%86ON_MALL_Suzuka_(1).JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/aeon/suzukabellcity/",
     sourceUrl: "https://www.aeon.jp/aeon/suzukabellcity/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -24041,7 +25091,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/117077463",
+    media: [
+      {
+        id: "osm-shop-facility-83d52565-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeonkagoshima.jpg",
+        alt: "イオン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Aeonkagoshima.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://kagoshima-aeonmall.com/",
+    sourceUrl: "https://kagoshima-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -24650,6 +25712,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c004fec5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Green_Plaza_Daian.jpg",
+        alt: "イオン 大安店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Green_Plaza_Daian.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E5%A4%A7%E5%AE%89%E5%BA%97/",
     sourceUrl:
@@ -24738,6 +25812,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-19c9879b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_Iwaki.jpg",
+        alt: "イオンいわき public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:%C3%86ON_Iwaki.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/iwaki/",
     sourceUrl: "https://www.aeon.jp/sc/iwaki/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -25133,6 +26218,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-adfd17ea-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Shin-Ibaraki.JPG",
+        alt: "イオンスタイル新茨木 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Shin-Ibaraki.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/134495135",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -25358,6 +26455,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ee854f56-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_kamisato_SC_002.JPG",
+        alt: "イオンタウン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_kamisato_SC_002.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/616935069",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -25500,6 +26609,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-4fbe43f8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Town_Toyomi.JPG",
+        alt: "イオンタウンとよみ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Town_Toyomi.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/relation/5975718",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -25584,7 +26705,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/545657836",
+    media: [
+      {
+        id: "osm-shop-facility-f0d7afac-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_TOWN_Iga-Ueno.jpg",
+        alt: "イオンタウン伊賀上野 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_TOWN_Iga-Ueno.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.aeontown.co.jp/igaueno/",
+    sourceUrl: "https://www.aeontown.co.jp/igaueno/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -25725,6 +26859,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ee94aadc-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_TOWN_Kamaishi.jpg",
+        alt: "イオンタウン釜石 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_TOWN_Kamaishi.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeontown.co.jp/kamaishi/",
     sourceUrl: "https://www.aeontown.co.jp/kamaishi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -25754,6 +26900,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-97db773f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Town_Tateyama.JPG",
+        alt: "イオンタウン館山 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Town_Tateyama.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/234267932",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -25810,6 +26968,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-4a651aca-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%82%A4%E3%82%AA%E3%83%B3%E3%82%BF%E3%82%A6%E3%83%B3%E9%83%A1%E5%B1%B1.JPG",
+        alt: "イオンタウン郡山 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%82%A4%E3%82%AA%E3%83%B3%E3%82%BF%E3%82%A6%E3%83%B3%E9%83%A1%E5%B1%B1.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/719716192",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -25866,6 +27036,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-0e82cc72-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_TOWN_EBETSU.jpg",
+        alt: "イオンタウン江別 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_TOWN_EBETSU.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeontown.co.jp/ebetsu/",
     sourceUrl: "https://www.aeontown.co.jp/ebetsu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -25895,7 +27077,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/243737953",
+    media: [
+      {
+        id: "osm-shop-facility-a0dc6ce6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_TOWN_Sanuma_202508.jpg",
+        alt: "イオンタウン佐沼 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_TOWN_Sanuma_202508.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.aeontown.co.jp/sanuma/",
+    sourceUrl: "https://www.aeontown.co.jp/sanuma/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -26036,6 +27231,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-bcff7f91-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/LOC_CITY_Moriya_Shopping_Center_001.jpg",
+        alt: "イオンタウン守谷 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:LOC_CITY_Moriya_Shopping_Center_001.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/189363347",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -26232,6 +27439,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-4b568bb8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeon_chikusa_shopping_center.JPG",
+        alt: "イオンタウン千種 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aeon_chikusa_shopping_center.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/150726943",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -26288,6 +27507,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-2cab1fbe-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/LOC_City_Ogaki_Shopping_Center_03.JPG",
+        alt: "イオンタウン大垣 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:LOC_City_Ogaki_Shopping_Center_03.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeontown.co.jp/ogaki/",
     sourceUrl: "https://www.aeontown.co.jp/ogaki/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -26317,7 +27548,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/494121491",
+    websiteUrl: "https://www.aeontown.co.jp/higashinarashino/",
+    sourceUrl: "https://www.aeontown.co.jp/higashinarashino/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -26373,6 +27605,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c2986bac-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Town_Noshiro.jpg",
+        alt: "イオンタウン能代 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Town_Noshiro.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeontown.co.jp/noshiro/",
     sourceUrl: "https://www.aeontown.co.jp/noshiro/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -26430,6 +27674,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c62da45e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeon_town_mino.JPG",
+        alt: "イオンタウン美濃 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Aeon_town_mino.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/632106087",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -26514,6 +27769,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d08d6473-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Town_Fuji-Minami.JPG",
+        alt: "イオンタウン富士南 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Town_Fuji-Minami.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/273284086",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -26570,7 +27837,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/454412912",
+    websiteUrl: "https://www.aeontown.co.jp/toyohashihashira/",
+    sourceUrl: "https://www.aeontown.co.jp/toyohashihashira/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -26655,7 +27923,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/383218915",
+    websiteUrl: "https://www.aeontown.co.jp/meisei/",
+    sourceUrl: "https://www.aeontown.co.jp/meisei/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -26683,7 +27952,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/446469311",
+    media: [
+      {
+        id: "osm-shop-facility-c5cff645-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Town_Kisarazu-Jozai.JPG",
+        alt: "イオンタウン木更津請西 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Town_Kisarazu-Jozai.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.aeontown.co.jp/kisarazu/",
+    sourceUrl: "http://www.aeontown.co.jp/kisarazu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -26711,6 +27993,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-64efd415-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Green_City_AEON_Kisarazu.jpg",
+        alt: "イオンタウン木更津朝日 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Green_City_AEON_Kisarazu.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/239869430",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -26796,6 +28090,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-5876361a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Arimatsu_Shopping_Center.JPG",
+        alt: "イオンタウン有松 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Arimatsu_Shopping_Center.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/496302188",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -26908,6 +28214,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c222e8cf-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Daiei_Plaza_oshima.jpg",
+        alt: "イオンプラザ大島店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Daiei_Plaza_oshima.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/451045122",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -27020,6 +28338,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c739e4c5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeonmall_Kumamoto_Panorama.JPG",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aeonmall_Kumamoto_Panorama.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/14056133923",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -27048,6 +28378,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-04be3ef6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_MALL_Odaka_(6).JPG",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C3%86ON_MALL_Odaka_(6).JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://odaka-aeonmall.com/",
     sourceUrl: "https://odaka-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -27106,6 +28448,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-82f09833-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_Musashimurayama.jpg",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_Musashimurayama.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://musashimurayama-aeonmall.com/",
     sourceUrl: "https://musashimurayama-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -27193,6 +28547,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-57e2ae87-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Fuso_Shopping_Center_03.JPG",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Fuso_Shopping_Center_03.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/133117035",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -27337,6 +28703,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-15bf3ac4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_MALL_Rinkusennan.jpg",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C3%86ON_MALL_Rinkusennan.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://rinkusennan-aeonmall.com/",
     sourceUrl: "https://rinkusennan-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -27395,6 +28773,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c8a5f9ab-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_MALL_Nagoya_Dome-mae.jpg",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C3%86ON_MALL_Nagoya_Dome-mae.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/158182418",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -27423,6 +28813,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-38d3b91a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Mall_Funabashi.JPG",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Mall_Funabashi.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/funabashi/",
     sourceUrl: "https://www.aeon.jp/sc/funabashi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -27452,6 +28854,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-57d2ee17-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Mall_Choshi.JPG",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Mall_Choshi.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/choshi/",
     sourceUrl: "https://www.aeon.jp/sc/choshi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -27509,6 +28923,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-1bbf31fa-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeonmall_Miyazaki_2008_10.jpg",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aeonmall_Miyazaki_2008_10.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/197921534",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -27537,6 +28963,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-95937294-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_Fukutsu.jpg",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_Fukutsu.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://fukutsu-aeonmall.com/",
     sourceUrl: "https://fukutsu-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -27623,6 +29061,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-70afdd9a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_MALL_Kashihara_1.JPG",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C3%86ON_MALL_Kashihara_1.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/228010042",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -27680,6 +29130,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-9bfb3f5b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_FUKUOKA_ITO.jpg",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_FUKUOKA_ITO.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://fukuokaito-aeonmall.com/",
     sourceUrl: "https://fukuokaito-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -27767,6 +29229,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-5c1a91e9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_MALL_KASAI-HOJO.JPG",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C3%86ON_MALL_KASAI-HOJO.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://kasaihojyo-aeonmall.com/",
     sourceUrl: "https://kasaihojyo-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -27796,6 +29270,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-63d385e5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_MALL_Suzuka_(1).JPG",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C3%86ON_MALL_Suzuka_(1).JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://suzuka-aeonmall.com/",
     sourceUrl: "https://suzuka-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -27970,6 +29456,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-37bca05f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Shibata_Shopping_Center.jpg",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Shibata_Shopping_Center.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/shibata/",
     sourceUrl: "https://www.aeon.jp/sc/shibata/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -27999,6 +29497,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-34de3ec9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_Takaoka_047.jpg",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_Takaoka_047.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://takaoka-aeonmall.com/",
     sourceUrl: "https://takaoka-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -28056,6 +29566,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-77416b7c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeonmall_Niihama_01.JPG",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aeonmall_Niihama_01.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/411094389",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -28344,6 +29866,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c5ed6f03-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeonmall_Miyakonojo-ekimae_2016.JPG",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aeonmall_Miyakonojo-ekimae_2016.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/609505942",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -28632,6 +30166,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-35baa701-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_Takaoka_047.jpg",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_Takaoka_047.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://takaoka-aeonmall.com/",
     sourceUrl: "https://takaoka-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -28801,7 +30347,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1279147805",
+    media: [
+      {
+        id: "osm-shop-facility-df3f232b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_SUZAKA_2025_08.jpg",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_SUZAKA_2025_08.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://suzaka.aeonmall.com/",
+    sourceUrl: "https://suzaka.aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -28970,6 +30529,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-04120095-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A2%E3%83%BC%E3%83%AB%E7%AD%91%E7%B4%AB%E9%87%8E.jpg",
+        alt: "イオンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A2%E3%83%BC%E3%83%AB%E7%AD%91%E7%B4%AB%E9%87%8E.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://chikushino-aeonmall.com/",
     sourceUrl: "https://chikushino-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -28999,6 +30570,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-3dc91b91-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_Kyotogojyo.JPG",
+        alt: "イオンモール 京都五条 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_Kyotogojyo.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://kyotogojyo-aeonmall.com/",
     sourceUrl: "https://kyotogojyo-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -29056,6 +30639,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-943360e7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Kahoku_Shopping_Center.jpg",
+        alt: "イオンモールかほく public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Kahoku_Shopping_Center.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/3199303298",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -29084,6 +30679,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-652cbfea-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_Tsukuba_outside.JPG",
+        alt: "イオンモールつくば public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_Tsukuba_outside.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://tsukuba-aeonmall.com/",
     sourceUrl: "https://tsukuba-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -29141,7 +30748,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/7120913",
+    media: [
+      {
+        id: "osm-shop-facility-d283d1d7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_AsahikawanishiSC.JPG",
+        alt: "イオンモール旭川西 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_AsahikawanishiSC.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://asahikawanishi-aeonmall.com/",
+    sourceUrl: "https://asahikawanishi-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -29169,7 +30789,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/186758442",
+    media: [
+      {
+        id: "osm-shop-facility-142ea618-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_Itami_Terrace.JPG",
+        alt: "イオンモール伊丹 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_Itami_Terrace.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://itami-aeonmall.com/",
+    sourceUrl: "https://itami-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -29197,6 +30830,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a8472601-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_Itami_Koya.JPG",
+        alt: "イオンモール伊丹昆陽 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_Itami_Koya.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/198994415",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -29225,6 +30870,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-6e0036b4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_MALL_Ibaraki_(1).JPG",
+        alt: "イオンモール茨木 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C3%86ON_MALL_Ibaraki_(1).JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/853545045",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -29253,6 +30910,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ba27a911-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_Hanyu.JPG",
+        alt: "イオンモール羽生 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_Hanyu.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://hanyu-aeonmall.com/",
     sourceUrl: "https://hanyu-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -29282,7 +30951,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/72385487",
+    media: [
+      {
+        id: "osm-shop-facility-acaacffb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeon_Urawa_Misono_Shopping_Center01.jpg",
+        alt: "イオンモール浦和美園 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aeon_Urawa_Misono_Shopping_Center01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.aeon.jp/sc/urawamisono/",
+    sourceUrl: "https://www.aeon.jp/sc/urawamisono/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -29310,6 +30992,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-5c7ce7be-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeon-Mall-Okazaki-4.jpg",
+        alt: "イオンモール岡崎 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aeon-Mall-Okazaki-4.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/1545659077",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -29338,6 +31032,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f65664be-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Mall_Okayama.jpg",
+        alt: "イオンモール岡山 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Mall_Okayama.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://aeonmall-okayama.com/",
     sourceUrl: "https://aeonmall-okayama.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -29367,6 +31073,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-366c42f4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEONshiomtuma_Juli_2010.jpg",
+        alt: "イオンモール下妻 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEONshiomtuma_Juli_2010.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/765609093",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -29423,6 +31141,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d9594e62-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_CINEMA_Kumiyama.JPG",
+        alt: "イオンモール久御山 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_CINEMA_Kumiyama.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/193843663",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -29510,6 +31240,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-53c30957-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_MALL_Kyoto_Katsuragawa_(1).JPG",
+        alt: "イオンモール京都桂川 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C3%86ON_MALL_Kyoto_Katsuragawa_(1).JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://kyotokatsuragawa-aeonmall.com/",
     sourceUrl: "https://kyotokatsuragawa-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -29539,7 +31281,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/105716317",
+    websiteUrl: "http://www.aeon.jp/sc/kushiroshowa/",
+    sourceUrl: "http://www.aeon.jp/sc/kushiroshowa/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -29567,6 +31310,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-6eb5b622-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEONMALLHIROSHIMAGION_01.jpg",
+        alt: "イオンモール広島祇園 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEONMALLHIROSHIMAGION_01.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://gion.aeonmall.com/",
     sourceUrl: "https://gion.aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -29596,6 +31351,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-34513a9d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_HIROSHIMAFUCHU_20120108.jpg",
+        alt: "イオンモール広島府中 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_HIROSHIMAFUCHU_20120108.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://hiroshimafuchu-aeonmall.com/",
     sourceUrl: "https://hiroshimafuchu-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -29653,6 +31420,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b097a534-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_MALL_Takanohara_on_5th_April_2025.jpg",
+        alt: "イオンモール高の原 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C3%86ON_MALL_Takanohara_on_5th_April_2025.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/177146047",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -29681,6 +31460,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d6f49cc1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/CKT20111-C11-15_AEON_Mall_Takasaki.jpg",
+        alt: "イオンモール高崎 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:CKT20111-C11-15_AEON_Mall_Takasaki.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://takasaki-aeonmall.com/",
     sourceUrl: "https://takasaki-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -29852,6 +31643,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ce6ac8d9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_MALL_Sakai_Kitahanada.jpg",
+        alt: "イオンモール堺北花田 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C3%86ON_MALL_Sakai_Kitahanada.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://sakaikitahanada-aeonmall.com",
     sourceUrl: "https://sakaikitahanada-aeonmall.com",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -29881,6 +31684,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-6e17b8b3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_Sapporo_Hassamu.jpg",
+        alt: "イオンモール札幌発寒 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_Sapporo_Hassamu.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/sapporohassamu/",
     sourceUrl: "https://www.aeon.jp/sc/sapporohassamu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -29910,6 +31725,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a4da42f6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Mall_Sapporo_Naebo.jpg",
+        alt: "イオンモール札幌苗穂 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Mall_Sapporo_Naebo.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/sapporonaebo/",
     sourceUrl: "https://www.aeon.jp/sc/sapporonaebo/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -29939,6 +31766,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-abd3b03c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_Sapporo_Hiraoka.jpg",
+        alt: "イオンモール札幌平岡 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_Sapporo_Hiraoka.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/sapporohiraoka/",
     sourceUrl: "https://www.aeon.jp/sc/sapporohiraoka/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -29997,6 +31836,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-6f107a02-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_MALL_Shijonawate.JPG",
+        alt: "イオンモール四條畷 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C3%86ON_MALL_Shijonawate.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://shijonawate-aeonmall.com/",
     sourceUrl: "https://shijonawate-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -30026,6 +31877,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-33577b4b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Mall_Akita_20200531b.jpg",
+        alt: "イオンモール秋田 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Mall_Akita_20200531b.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://akita-aeonmall.com/",
     sourceUrl: "https://akita-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -30055,6 +31918,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-51a58e4c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Mall_Kasukabe_001.jpg",
+        alt: "イオンモール春日部 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Mall_Kasukabe_001.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/2808008145",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -30111,6 +31986,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-9b2658de-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeon_Mall_Shinkomatsu.jpg",
+        alt: "イオンモール新小松 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aeon_Mall_Shinkomatsu.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://shinkomatsu-aeonmall.com/",
     sourceUrl: "https://shinkomatsu-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -30197,6 +32084,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a9ca2032-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeon_koubekita.JPG",
+        alt: "イオンモール神戸北 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Aeon_koubekita.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/375676919",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -30253,6 +32151,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-610c4c0c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeon-mall-narita20190816.jpg",
+        alt: "イオンモール成田 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aeon-mall-narita20190816.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://narita-aeonmall.com/",
     sourceUrl: "https://narita-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -30282,6 +32192,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-7a4de07f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Mall_Morioka_20230610b.jpg",
+        alt: "イオンモール盛岡 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Mall_Morioka_20230610b.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://morioka-aeonmall.com/",
     sourceUrl: "https://morioka-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -30368,6 +32290,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d9f0ffb2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_Sendai-kamisugi_202510b.jpg",
+        alt: "イオンモール仙台上杉 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_Sendai-kamisugi_202510b.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://sendaikamisugi.aeonmall.com/",
     sourceUrl: "https://sendaikamisugi.aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -30481,7 +32415,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/9159308",
+    media: [
+      {
+        id: "osm-shop-facility-7477107b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Mall_Kurashiki.jpg",
+        alt: "イオンモール倉敷 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Mall_Kurashiki.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://kurashiki-aeonmall.com/",
+    sourceUrl: "https://kurashiki-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -30621,6 +32568,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-bb928954-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Mall_Tamadairanomori_Daytime.jpg",
+        alt: "イオンモール多摩平の森 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Mall_Tamadairanomori_Daytime.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://tamadairanomori-aeonmall.com/",
     sourceUrl: "https://tamadairanomori-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -30650,6 +32609,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-95010ff9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeon-Ogaki-Shopping_Center01.JPG",
+        alt: "イオンモール大垣 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aeon-Ogaki-Shopping_Center01.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/2905316531",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -30678,6 +32649,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a5238f83-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_Omagari.jpg",
+        alt: "イオンモール大曲 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_Omagari.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/omagari/",
     sourceUrl: "https://www.aeon.jp/sc/omagari/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -30707,6 +32690,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-e6154370-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Mall_Osaka_Dome_City.jpg",
+        alt: "イオンモール大阪ドームシティ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Mall_Osaka_Dome_City.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/osakadomecity/",
     sourceUrl: "https://www.aeon.jp/sc/osakadomecity/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -30736,6 +32731,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f3566633-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E5%A4%A7%E7%89%9F%E7%94%B0%E3%82%BB%E3%83%B3%E3%83%88%E3%83%A9%E3%83%AB%E3%82%B7%E3%83%8D%E3%83%9E%E5%A4%96%E8%A6%8B.JPG",
+        alt: "イオンモール大牟田 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E7%89%9F%E7%94%B0%E3%82%BB%E3%83%B3%E3%83%88%E3%83%A9%E3%83%AB%E3%82%B7%E3%83%8D%E3%83%9E%E5%A4%96%E8%A6%8B.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/272012415",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -30820,7 +32827,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/8369236",
+    media: [
+      {
+        id: "osm-shop-facility-dda84e01-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Tsuyama_Shopping_Center.jpg",
+        alt: "イオンモール津山 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Tsuyama_Shopping_Center.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.aeon.jp/sc/tsuyama/",
+    sourceUrl: "https://www.aeon.jp/sc/tsuyama/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -30848,6 +32868,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-0bfa87f7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Mall_Tsudanuma.jpg",
+        alt: "イオンモール津田沼North public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Mall_Tsudanuma.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/tsudanuma/",
     sourceUrl: "https://www.aeon.jp/sc/tsudanuma/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -30905,7 +32937,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/6497821764",
+    websiteUrl: "https://tsuminami-aeonmall.com/",
+    sourceUrl: "https://tsuminami-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -30961,6 +32994,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ea31cd1d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_TOMAKOMAI.JPG",
+        alt: "イオンモール苫小牧 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_TOMAKOMAI.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://tomakomai.aeonmallhokkaido.com/",
     sourceUrl: "https://tomakomai.aeonmallhokkaido.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31019,6 +33064,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-6e0681fe-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Mall_Hinode_3.jpg",
+        alt: "イオンモール日の出 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Mall_Hinode_3.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://hinode-aeonmall.com/",
     sourceUrl: "https://hinode-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31048,6 +33105,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-53432ed9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Hiezu_Shopping_Center_1.jpg",
+        alt: "イオンモール日吉津 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Hiezu_Shopping_Center_1.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/hiezu/",
     sourceUrl: "https://www.aeon.jp/sc/hiezu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31077,6 +33146,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c59d59fd-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_MALL_Atsuta_2.JPG",
+        alt: "イオンモール熱田 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C3%86ON_MALL_Atsuta_2.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/194176864",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -31134,6 +33215,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-5787501d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Yahata-higashi_SC.JPG",
+        alt: "イオンモール八幡東 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Yahata-higashi_SC.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/relation/1303260",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -31162,6 +33255,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-2a909b47-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_Tomiya.jpg",
+        alt: "イオンモール富谷 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_Tomiya.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/tomiya/",
     sourceUrl: "https://www.aeon.jp/sc/tomiya/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31191,6 +33296,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-e19268a1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_Futtsu.JPG",
+        alt: "イオンモール富津 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_Futtsu.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://futtsu-aeonmall.com/",
     sourceUrl: "https://futtsu-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31220,6 +33337,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-de187a45-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_MALL_FUKUOKA_LUCLE.jpg",
+        alt: "イオンモール福岡 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_MALL_FUKUOKA_LUCLE.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://fukuoka-aeonmall.com/",
     sourceUrl: "https://fukuoka-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31249,7 +33378,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/695894961",
+    media: [
+      {
+        id: "osm-shop-facility-57702536-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Mall_Makuhari-Shintoshin_'Grand_Mall'_under_construction_20131201-2.jpg",
+        alt: "イオンモール幕張新都心 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Mall_Makuhari-Shintoshin_'Grand_Mall'_under_construction_20131201-2.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://makuharishintoshin-aeonmall.com/",
+    sourceUrl: "https://makuharishintoshin-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -31277,6 +33419,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b94e58fd-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeonmall_natori_airi.JPG",
+        alt: "イオンモール名取 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aeonmall_natori_airi.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://natori-aeonmall.com/",
     sourceUrl: "https://natori-aeonmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31334,7 +33488,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/91657760",
+    media: [
+      {
+        id: "osm-shop-facility-757c54da-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Yono_SC_001.JPG",
+        alt: "イオンモール与野 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Yono_SC_001.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.aeon.jp/sc/yono/",
+    sourceUrl: "https://www.aeon.jp/sc/yono/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -31390,6 +33557,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c57c20d8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeon-morinosato.JPG",
+        alt: "イオンもりの里店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aeon-morinosato.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E3%82%82%E3%82%8A%E3%81%AE%E9%87%8C%E5%BA%97/",
     sourceUrl:
@@ -31620,6 +33799,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a2c77444-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/SHOPPERS_PLAZA_Ebina.jpg",
+        alt: "イオン海老名 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:SHOPPERS_PLAZA_Ebina.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.shoppers-plaza.jp/ebina/index.php",
     sourceUrl: "http://www.shoppers-plaza.jp/ebina/index.php",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31733,6 +33924,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-31e98867-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_OMI_HACHIMAN_SHOPPING_CENTER_NO.1.jpg",
+        alt: "イオン近江八幡ショッピングセンター 1番街 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_OMI_HACHIMAN_SHOPPING_CENTER_NO.1.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/oumihachiman/",
     sourceUrl: "https://www.aeon.jp/sc/oumihachiman/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31846,6 +34049,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-18d62baf-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON.Hiro.JPG",
+        alt: "イオン広店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:AEON.Hiro.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/608252902",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -31874,6 +34088,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f7a4651c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Takatsuki2.JPG",
+        alt: "イオン高槻 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Takatsuki2.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://www.aeon.com/store/%E3%82%A4%E3%82%AA%E3%83%B3/%E3%82%A4%E3%82%AA%E3%83%B3%E9%AB%98%E6%A7%BB%E5%BA%97/",
     sourceUrl:
@@ -31934,6 +34160,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c5bd0e24-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Sapporo_Soen.jpg",
+        alt: "イオン札幌桑園ショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Sapporo_Soen.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/167189395",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -31962,6 +34200,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-86ad0d40-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Sapporo_Motomachi.jpg",
+        alt: "イオン札幌元町ショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Sapporo_Motomachi.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/sapporomotomachi/",
     sourceUrl: "https://www.aeon.jp/sc/sapporomotomachi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -32019,6 +34269,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-35b87e51-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Spporo_Nishioka.jpg",
+        alt: "イオン札幌西岡ショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Spporo_Nishioka.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/sapporonishioka/",
     sourceUrl: "https://www.aeon.jp/sc/sapporonishioka/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -32133,6 +34395,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-530fe4a0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/JUSCO_%E6%99%82%E6%B4%A5%E5%BA%97.jpg",
+        alt: "イオン時津ショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:JUSCO_%E6%99%82%E6%B4%A5%E5%BA%97.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/832540438",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -32161,6 +34435,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-8c1ed31e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_WAKAMATSU_SHOPPING_CENTER.jpg",
+        alt: "イオン若松ショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C3%86ON_WAKAMATSU_SHOPPING_CENTER.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://wakamatsu.aeonkyushu.com/",
     sourceUrl: "https://wakamatsu.aeonkyushu.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -32275,6 +34561,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-aded5409-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Joetsu_Shopping_Center_ACORE_April2020.jpg",
+        alt: "イオン上越ショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Joetsu_Shopping_Center_ACORE_April2020.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/aeon/joetsu/",
     sourceUrl: "https://www.aeon.jp/aeon/joetsu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -32304,6 +34602,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-acad965a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shoppers_Plaza_Shin-urayasu.jpg",
+        alt: "イオン新浦安ショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shoppers_Plaza_Shin-urayasu.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/shinurayasu/",
     sourceUrl: "https://www.aeon.jp/sc/shinurayasu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -32333,6 +34643,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-98b25707-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeon-Niigata-Aoyama.jpg",
+        alt: "イオン新潟青山ショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aeon-Niigata-Aoyama.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/1287641122",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -32473,6 +34795,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-0e5f8613-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEONDaitou_20140223.jpg",
+        alt: "イオン大塔ショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEONDaitou_20140223.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/639969192",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -32530,6 +34864,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-56c9ba43-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tennouchou_SATY_001.JPG",
+        alt: "イオン天王町ショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tennouchou_SATY_001.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/296303528",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -32642,7 +34988,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/739741759",
+    websiteUrl: "https://fujiidera-sc.com/",
+    sourceUrl: "https://fujiidera-sc.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -32698,6 +35045,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b2dba531-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Haebaru_Shopping_Center.jpg",
+        alt: "イオン南風原SC public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Haebaru_Shopping_Center.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://aeon-ryukyu.jp",
     sourceUrl: "https://aeon-ryukyu.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -32842,6 +35201,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-23b282f6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Itabashi.jpg",
+        alt: "イオン板橋ショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:AEON_Itabashi.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/53799374",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -32899,6 +35269,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-cf0f7ff7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aeon_Honami_Shop20150705.jpg",
+        alt: "イオン穂波ショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aeon_Honami_Shop20150705.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/548062218",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -32927,7 +35309,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/986872046",
+    media: [
+      {
+        id: "osm-shop-facility-7b64199b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E6%B0%B8%E6%97%BA%E5%A4%A2%E6%A8%82%E5%9F%8E%E5%8C%97%E6%88%B8%E7%94%B0.jpg",
+        alt: "イオン北戸田ショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E6%B0%B8%E6%97%BA%E5%A4%A2%E6%A8%82%E5%9F%8E%E5%8C%97%E6%88%B8%E7%94%B0.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.aeon.jp/sc/kitatoda/",
+    sourceUrl: "https://www.aeon.jp/sc/kitatoda/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -32955,6 +35350,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-e5562a65-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON_Chatan_Shopping_Center_1.JPG",
+        alt: "イオン北谷店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON_Chatan_Shopping_Center_1.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://aeon-ryukyu.jp/",
     sourceUrl: "https://aeon-ryukyu.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -32984,7 +35391,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/471402516",
+    websiteUrl: "http://www.aeon.jp/sc/nayoro/",
+    sourceUrl: "http://www.aeon.jp/sc/nayoro/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -33097,7 +35505,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/97767421",
+    media: [
+      {
+        id: "osm-shop-facility-affd44be-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ikspiari.jpg",
+        alt: "イクスピアリ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Ikspiari.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.ikspiari.com/",
+    sourceUrl: "https://www.ikspiari.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -33212,6 +35632,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-0b14c5eb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Momotaroodori01s3200.jpg",
+        alt: "イコットニコット public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Momotaroodori01s3200.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://icotnicot.jp/",
     sourceUrl: "https://icotnicot.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -33551,6 +35983,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-8d13db63-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tokyo_Disneyland_Dec_2019_-_3.jpg",
+        alt: "イッツ・ア・スモールワールド public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tokyo_Disneyland_Dec_2019_-_3.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.tokyodisneyresort.jp/tdl/attraction/detail/172/",
     sourceUrl: "https://www.tokyodisneyresort.jp/tdl/attraction/detail/172/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -33580,8 +36024,7 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    websiteUrl: "izuhara-tiara.com",
-    sourceUrl: "izuhara-tiara.com",
+    sourceUrl: "https://www.openstreetmap.org/way/436802691",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -33918,7 +36361,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/2741290",
+    websiteUrl: "https://www.iyotetsu-takashimaya.co.jp/",
+    sourceUrl: "https://www.iyotetsu-takashimaya.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -34031,6 +36475,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-91ce559f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/WISTE.JPG",
+        alt: "ウイステ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:WISTE.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.wiste.jp/",
     sourceUrl: "https://www.wiste.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -34060,7 +36515,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/169861518",
+    websiteUrl: "https://www.wira-ooi.jp/",
+    sourceUrl: "https://www.wira-ooi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -34172,6 +36628,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-9ec0521c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%82%A6%E3%82%A4%E3%83%B3%E3%82%B0%E3%83%99%E3%82%A4%E5%B0%8F%E6%A8%BD%E5%A4%96%E8%A6%B3%E7%94%BB%E5%83%8F.jpg",
+        alt: "ウイングベイ小樽 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%82%A6%E3%82%A4%E3%83%B3%E3%82%B0%E3%83%99%E3%82%A4%E5%B0%8F%E6%A8%BD%E5%A4%96%E8%A6%B3%E7%94%BB%E5%83%8F.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://wingbay-otaru.co.jp/",
     sourceUrl: "https://wingbay-otaru.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -34539,6 +37007,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b06a2642-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/UNICUS_Chichibu.JPG",
+        alt: "ウニクス秩父 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:UNICUS_Chichibu.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.unicus-sc.jp/chichibu/",
     sourceUrl: "https://www.unicus-sc.jp/chichibu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -34906,6 +37386,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-fc9cf1a7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Souvenirwinkel_%E2%80%9COmiyage_Kaid%C5%8D%E2%80%9D_in_Ekie_Hiroshima%2C_-17_oktober_2018.jpg",
+        alt: "エキエ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Souvenirwinkel_%E2%80%9COmiyage_Kaid%C5%8D%E2%80%9D_in_Ekie_Hiroshima%2C_-17_oktober_2018.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.ekie.jp/",
     sourceUrl: "https://www.ekie.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -35583,7 +38075,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/198533823",
+    websiteUrl: "http://www.toyama-esta.com/",
+    sourceUrl: "http://www.toyama-esta.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -35669,7 +38162,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/753521420",
+    websiteUrl: "https://www.s-pal.jp/yamagata/",
+    sourceUrl: "https://www.s-pal.jp/yamagata/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -35753,7 +38247,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/569800792",
+    media: [
+      {
+        id: "osm-shop-facility-b1dabec3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Senmaya_Shopping_Mall_S-Pia.jpg",
+        alt: "エスピア public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Senmaya_Shopping_Mall_S-Pia.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://s-pia.co.jp/",
+    sourceUrl: "http://s-pia.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -35809,6 +38316,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-727a4b16-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/S-Mall_Main.JPG",
+        alt: "エスモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:S-Mall_Main.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.happy-s-mall.com/",
     sourceUrl: "https://www.happy-s-mall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -36149,7 +38667,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/2700365",
+    media: [
+      {
+        id: "osm-shop-facility-62893cdb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Emifull_masaki_ogange_cort.jpg",
+        alt: "エミフルMASAKI public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Emifull_masaki_ogange_cort.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://emifull.jp/",
+    sourceUrl: "http://emifull.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -36261,6 +38792,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-31bae8bb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mstown_Satte_001.JPG",
+        alt: "エムズタウン幸手 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mstown_Satte_001.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.maruetsu-kaihatsu.co.jp/mstown/satte/index.html",
     sourceUrl: "https://www.maruetsu-kaihatsu.co.jp/mstown/satte/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -36656,7 +39199,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/556016945",
+    media: [
+      {
+        id: "osm-shop-facility-60761c22-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Orchid_Park_Gifu01.jpg",
+        alt: "オーキッドパーク 西棟 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Orchid_Park_Gifu01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://my.edion.jp/shop/gifu-orchidpark.php",
+    sourceUrl: "https://my.edion.jp/shop/gifu-orchidpark.php",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -36684,7 +39240,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/556017388",
+    media: [
+      {
+        id: "osm-shop-facility-3ea2a646-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Orchid_Park_Gifu01.jpg",
+        alt: "オーキッドパーク 東棟 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Orchid_Park_Gifu01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://my.edion.jp/shop/gifu-orchidpark.php",
+    sourceUrl: "https://my.edion.jp/shop/gifu-orchidpark.php",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -37104,6 +39673,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b63934e6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sog%C5%8D_Chiba%2C_Aurora_Mall_JUNNU.jpg",
+        alt: "オーロラモールジュンヌ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sog%C5%8D_Chiba%2C_Aurora_Mall_JUNNU.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/144791409",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -37692,7 +40273,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/121540714",
+    media: [
+      {
+        id: "osm-shop-facility-0a454284-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/OPSIA_misumi_2008_0621.jpg",
+        alt: "オプシアミスミ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:OPSIA_misumi_2008_0621.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.opsia.jp/",
+    sourceUrl: "http://www.opsia.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -39065,7 +41659,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/17372631",
+    media: [
+      {
+        id: "osm-shop-facility-e40b683c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Olinas_2013-02-10.JPG",
+        alt: "オリナスモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Olinas_2013-02-10.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.olinas.jp/",
+    sourceUrl: "https://www.olinas.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -40673,6 +43280,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-0f657695-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Colorful_Town_Gifu2008-1.jpg",
+        alt: "カラフルタウン岐阜 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Colorful_Town_Gifu2008-1.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/155526785",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -40757,6 +43376,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-701cd877-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kobe_Information_Culture_Bldg_20110424-001.jpg",
+        alt: "カルメニ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kobe_Information_Culture_Bldg_20110424-001.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/7804328016",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -41121,6 +43752,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-37fa1b97-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kitaoji-Town-01.jpg",
+        alt: "キタオオジタウン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kitaoji-Town-01.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/relation/1616212",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -41774,6 +44417,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-931525ae-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Q-STA_2009.JPG",
+        alt: "キュースタ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Q-STA_2009.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.q-sta.jp/",
     sourceUrl: "https://www.q-sta.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -41943,6 +44597,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b3844228-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/KirarinaKeioKichijoji_201410.jpg",
+        alt: "キラリナ京王吉祥寺 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:KirarinaKeioKichijoji_201410.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.kirarinakeiokichijoji.jp",
     sourceUrl: "https://www.kirarinakeiokichijoji.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -42196,6 +44862,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-936da0e5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Cookieplaza_kuki.jpg",
+        alt: "クッキープラザ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Cookieplaza_kuki.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.cookieplaza.com/",
     sourceUrl: "https://www.cookieplaza.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -42593,6 +45271,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     diaperChanging: true,
     tags: ["stroller-friendly"],
     labels: ["diaper-changing"],
+    media: [
+      {
+        id: "osm-shop-facility-b3067f46-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Grand_Tree_Musashi-Kosugi_20150201-1.jpg",
+        alt: "グランツリー武蔵小杉 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Grand_Tree_Musashi-Kosugi_20150201-1.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://grand-tree.jp",
     sourceUrl: "https://grand-tree.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -42622,6 +45312,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b7057eac-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/GRANDIR_ICHII.jpg",
+        alt: "グランディールイチイ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:GRANDIR_ICHII.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/261026354",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -42762,6 +45463,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-9d8873c4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E5%A4%9A%E6%91%A9%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%A6%E3%83%B3%E3%81%AB%E3%81%82%E3%82%8B%E8%A4%87%E5%90%88%E5%95%86%E6%A5%AD%E6%96%BD%E8%A8%AD%E3%80%8C%E3%81%90%E3%82%8A%E3%83%BC%E3%82%93%E3%81%86%E3%81%89%E3%83%BC%E3%81%8F%E5%A4%9A%E6%91%A9%E3%80%8D150920.JPG",
+        alt: "ぐりーんうぉーく多摩 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E5%A4%9A%E6%91%A9%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%A6%E3%83%B3%E3%81%AB%E3%81%82%E3%82%8B%E8%A4%87%E5%90%88%E5%95%86%E6%A5%AD%E6%96%BD%E8%A8%AD%E3%80%8C%E3%81%90%E3%82%8A%E3%83%BC%E3%82%93%E3%81%86%E3%81%89%E3%83%BC%E3%81%8F%E5%A4%9A%E6%91%A9%E3%80%8D150920.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.gw-tama.jp/",
     sourceUrl: "http://www.gw-tama.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -42903,6 +45616,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-9e6e9e5e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Crysta_Nagahori_in_201408.JPG",
+        alt: "クリスタ長堀 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Crysta_Nagahori_in_201408.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.crystaweb.jp/",
     sourceUrl: "https://www.crystaweb.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -43832,6 +46557,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b4cd6317-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/KEYAKI-WALK_Maebashi_001.JPG",
+        alt: "けやきウォーク前橋 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:KEYAKI-WALK_Maebashi_001.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.keyaki-walk.com",
     sourceUrl: "http://www.keyaki-walk.com",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -44675,6 +47412,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-5b69070e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/COCOLIA_Tama_Center.JPG",
+        alt: "ココリア多摩センター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:COCOLIA_Tama_Center.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/131174932",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -45329,6 +48078,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-43fff1c0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/COM_TOWN_2009.jpg",
+        alt: "コムタウン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:COM_TOWN_2009.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/4613248990",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -45526,6 +48286,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-039d4fce-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hulic_Minatomirai_2017-03_(Colette_Mare).jpg",
+        alt: "コレットマーレ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hulic_Minatomirai_2017-03_(Colette_Mare).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://colettemare-yokohama.com/",
     sourceUrl: "https://colettemare-yokohama.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -45584,6 +48356,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f97a0e98-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Corowa_K%C5%8Dshien_on_3rd_September_2023.jpg",
+        alt: "コロワ甲子園 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Corowa_K%C5%8Dshien_on_3rd_September_2023.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://corowa.jp/",
     sourceUrl: "https://corowa.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -45613,7 +48397,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/414786289",
+    media: [
+      {
+        id: "osm-shop-facility-44e8343e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/COMFOMALL_Uchinada_-_Max_value.jpg",
+        alt: "コンフォモール内灘 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:COMFOMALL_Uchinada_-_Max_value.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://comfomall.com/",
+    sourceUrl: "http://comfomall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -45837,8 +48634,7 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    websiteUrl: "https://www.hotpepper.jp/strJ001008579/",
-    sourceUrl: "https://www.hotpepper.jp/strJ001008579/",
+    sourceUrl: "https://www.openstreetmap.org/way/304167151",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -45866,6 +48662,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d4346bc6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Themallsendai.jpg",
+        alt: "ザ・モール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Themallsendai.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://themallsendai.com/",
     sourceUrl: "https://themallsendai.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -46290,7 +49097,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/242834581",
+    media: [
+      {
+        id: "osm-shop-facility-856387d2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sakura_Mall_001.jpg",
+        alt: "さくらモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sakura_Mall_001.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.sakuramall.co.jp/",
+    sourceUrl: "https://www.sakuramall.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -46486,6 +49306,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-1de24b22-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sapporo_Factory1.JPG",
+        alt: "サッポロファクトリー public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sapporo_Factory1.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://sapporofactory.jp/",
     sourceUrl: "https://sapporofactory.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -46825,6 +49657,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b90ccf75-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/San-A_Hamby_Town.JPG",
+        alt: "サンエーハンビータウン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:San-A_Hamby_Town.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.san-a.co.jp/",
     sourceUrl: "https://www.san-a.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -46911,6 +49755,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a8dd17ec-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/San-A_Gushikawa_Main_City.JPG",
+        alt: "サンエー具志川メインシティ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:San-A_Gushikawa_Main_City.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.san-a.co.jp/",
     sourceUrl: "https://www.san-a.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -46940,6 +49796,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-7bfef1dd-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/San-A_Kyozuka_City.JPG",
+        alt: "サンエー経塚シティ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:San-A_Kyozuka_City.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/367554716",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -46968,6 +49836,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a13f8a5c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/SAN-A_Nishihara_City.jpg",
+        alt: "サンエー西原シティ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:SAN-A_Nishihara_City.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.san-a.co.jp/",
     sourceUrl: "https://www.san-a.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -46997,6 +49877,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ed792d29-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/San-A_Tomishiro_Wing_City.JPG",
+        alt: "サンエー豊見城ウィングシティ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:San-A_Tomishiro_Wing_City.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.san-a.co.jp/",
     sourceUrl: "https://www.san-a.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -47222,7 +50114,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/3244606862",
+    media: [
+      {
+        id: "osm-shop-facility-c2563cab-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mago_main_building_ac_(2).jpg",
+        alt: "サンサンシティマーゴ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mago_main_building_ac_(2).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.ma-go.co.jp/",
+    sourceUrl: "https://www.ma-go.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -47335,6 +50240,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d7e7cdbb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Suncity_Ikeda_2021-11_ac.jpg",
+        alt: "サンシティ池田 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Suncity_Ikeda_2021-11_ac.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.suncity-ikeda.com/",
     sourceUrl: "http://www.suncity-ikeda.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -47392,6 +50309,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d5519f14-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sunshine_Sakae_001.JPG",
+        alt: "サンシャインサカエ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sunshine_Sakae_001.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.sunshine-sakae.jp/",
     sourceUrl: "http://www.sunshine-sakae.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -47421,6 +50350,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-e431acab-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sunshine_City_2012.JPG",
+        alt: "サンシャインシティ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sunshine_City_2012.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://sunshinecity.jp/",
     sourceUrl: "https://sunshinecity.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -47450,6 +50391,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-2d2b2942-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sunshine_Wharf_Kobe.jpg",
+        alt: "サンシャインワーフ神戸 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sunshine_Wharf_Kobe.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/873024429",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -47506,7 +50459,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/13751494240",
+    media: [
+      {
+        id: "osm-shop-facility-2307aaf8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/The_second_floor_entrance_in_the_Sun_Station_Terrace_south_pavilio.JPG",
+        alt: "さんすて public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:The_second_floor_entrance_in_the_Sun_Station_Terrace_south_pavilio.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://sun-ste.com/okayama-ichibangai/",
+    sourceUrl: "https://sun-ste.com/okayama-ichibangai/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -47534,7 +50500,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/13751494241",
+    media: [
+      {
+        id: "osm-shop-facility-2407ac8b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/The_second_floor_entrance_in_the_Sun_Station_Terrace_south_pavilio.JPG",
+        alt: "さんすて岡山 西館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:The_second_floor_entrance_in_the_Sun_Station_Terrace_south_pavilio.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://sun-ste.com/okayama-ichibangai/",
+    sourceUrl: "https://sun-ste.com/okayama-ichibangai/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -47562,7 +50541,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/12495360655",
+    media: [
+      {
+        id: "osm-shop-facility-d0e5cfd0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/The_second_floor_entrance_in_the_Sun_Station_Terrace_south_pavilio.JPG",
+        alt: "さんすて岡山 南館1F public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:The_second_floor_entrance_in_the_Sun_Station_Terrace_south_pavilio.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://sun-ste.com/okayama-ichibangai/",
+    sourceUrl: "https://sun-ste.com/okayama-ichibangai/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -47618,6 +50610,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-538dd35e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sun_Station_Terrace_Kurashiki_east_gate.jpg",
+        alt: "さんすて倉敷 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sun_Station_Terrace_Kurashiki_east_gate.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://kurashikieki-sc.jp",
     sourceUrl: "http://kurashikieki-sc.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -47647,7 +50651,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/6937129825",
+    media: [
+      {
+        id: "osm-shop-facility-4b994e0a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fukuyama_st08n3872.jpg",
+        alt: "さんすて福山 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fukuyama_st08n3872.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://sun-ste.com/fukuyama/",
+    sourceUrl: "https://sun-ste.com/fukuyama/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -47871,6 +50888,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-07b1fc96-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%82%B5%E3%83%B3%E3%83%88%E3%83%A0%E3%83%BC%E3%83%B3%E6%9F%BF%E7%94%B0%E5%B7%9D.jpg",
+        alt: "サントムーン柿田川 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%82%B5%E3%83%B3%E3%83%88%E3%83%A0%E3%83%BC%E3%83%B3%E6%9F%BF%E7%94%B0%E5%B7%9D.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/382845764",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -47899,7 +50928,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/417442224",
+    websiteUrl: "http://www.carino.co.jp/ajisu/",
+    sourceUrl: "http://www.carino.co.jp/ajisu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -47955,6 +50985,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-5c13aca5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/SunPatio_Omachi_202412b.jpg",
+        alt: "サンパティオ大町 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:SunPatio_Omachi_202412b.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/4585252369",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -48011,6 +51053,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-dbf9cd88-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sunpia%2C_T%C5%8Dgane_Shopping_Center.jpg",
+        alt: "サンピア public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sunpia%2C_T%C5%8Dgane_Shopping_Center.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.sunpia.co.jp/",
     sourceUrl: "https://www.sunpia.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -48068,6 +51122,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-744b0869-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sanpiaza.jpg",
+        alt: "サンピアザ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Sanpiaza.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.sunpi-duo.com/",
     sourceUrl: "http://www.sunpi-duo.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -48265,6 +51330,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-535b292f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/SUN_MARCHE_APITA-KAN_2016.JPG",
+        alt: "サンマルシェ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:SUN_MARCHE_APITA-KAN_2016.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/554034193",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -48293,6 +51370,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-847f1aa7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/SUNMALL_20140428-1.JPG",
+        alt: "サンモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:SUNMALL_20140428-1.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.sunmall.co.jp/",
     sourceUrl: "https://www.sunmall.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -48862,6 +51951,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a5fbcbbc-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/SunRoad_Aomori_in_March_2024.jpg",
+        alt: "サンロード青森 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:SunRoad_Aomori_in_March_2024.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.sunroad.or.jp/",
     sourceUrl: "https://www.sunroad.or.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -49351,6 +52452,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-8972bb44-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%82%B7%E3%83%BC%E3%83%A2%E3%83%BC%E3%83%AB%E4%B8%8B%E9%96%A2%E6%AD%A3%E9%9D%A2%E5%85%A8%E6%99%AF%EF%BC%882023%E5%B9%B49%E6%9C%88%EF%BC%89.jpg",
+        alt: "シーモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%82%B7%E3%83%BC%E3%83%A2%E3%83%BC%E3%83%AB%E4%B8%8B%E9%96%A2%E6%AD%A3%E9%9D%A2%E5%85%A8%E6%99%AF%EF%BC%882023%E5%B9%B49%E6%9C%88%EF%BC%89.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.seamall.jp/",
     sourceUrl: "https://www.seamall.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -49380,7 +52493,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/160892976",
+    media: [
+      {
+        id: "osm-shop-facility-15041621-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagano_C-one_building2.jpg",
+        alt: "シーワン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagano_C-one_building2.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://c-one.me/",
+    sourceUrl: "http://c-one.me/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -49692,6 +52818,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-5a6fe795-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/GYRE_Omotesando_-_panoramio.jpg",
+        alt: "ジャイル public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:GYRE_Omotesando_-_panoramio.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://gyre-omotesando.com",
     sourceUrl: "https://gyre-omotesando.com",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -49833,7 +52971,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/416251621",
+    websiteUrl: "https://jumbosquarekashiba.jimdofree.com/",
+    sourceUrl: "https://jumbosquarekashiba.jimdofree.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -50342,6 +53481,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     diaperChanging: true,
     tags: ["stroller-friendly"],
     labels: ["diaper-changing"],
+    media: [
+      {
+        id: "osm-shop-facility-288826e5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Joshin_Senrioka.JPG",
+        alt: "ジョーシン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Joshin_Senrioka.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://store.joshin.co.jp/detail/1780/",
     sourceUrl: "https://store.joshin.co.jp/detail/1780/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -50626,7 +53777,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/490451477",
+    media: [
+      {
+        id: "osm-shop-facility-f55adefa-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sipy.jpg",
+        alt: "ショッピングセンターシピィ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Sipy.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://sipy.jp/index.html",
+    sourceUrl: "http://sipy.jp/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -50766,6 +53929,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-cf4e42e8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Alplaza_Yokaichi.JPG",
+        alt: "ショッピングプラザアピア public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Alplaza_Yokaichi.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/388178288",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -50907,7 +54082,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/121657290",
+    websiteUrl: "https://www.sawaracity.jp/",
+    sourceUrl: "https://www.sawaracity.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -51413,6 +54589,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d694ed0e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/SymphonyPlazaNumadate.jpg",
+        alt: "シンフォニープラザ沼館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:SymphonyPlazaNumadate.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://acrossplaza.jp/symphony/",
     sourceUrl: "https://acrossplaza.jp/symphony/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -51498,7 +54686,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/207574098",
+    websiteUrl: "http://www.su-k.jp/",
+    sourceUrl: "http://www.su-k.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -51638,6 +54827,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-07453dcb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/SQUARE_MALL.JPG",
+        alt: "スクエアモール鹿児島宇宿店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:SQUARE_MALL.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/121540711",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -52005,6 +55205,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-3875b338-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Stellar_town.jpg",
+        alt: "ステラタウン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Stellar_town.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.stellartown.com/stellar/",
     sourceUrl: "https://www.stellartown.com/stellar/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -52119,7 +55330,22 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/552767889",
+    media: [
+      {
+        id: "osm-shop-facility-b12f83c6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aqua_Kisarazu_Hall-B_2019Aug.jpg",
+        alt: "スパークルシティ木更津 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aqua_Kisarazu_Hall-B_2019Aug.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "https://web.archive.org/web/20000816163354/http://www.sogo.gr.jp/",
+    sourceUrl:
+      "https://web.archive.org/web/20000816163354/http://www.sogo.gr.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -52485,7 +55711,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/88444055",
+    websiteUrl: "https://www.certe.gr.jp/",
+    sourceUrl: "https://www.certe.gr.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -52541,7 +55768,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/104224892",
+    media: [
+      {
+        id: "osm-shop-facility-0eacca7f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/SELVA_viewed_from_the_multi-story_parking_garage_of_Izumi-chuo_Sta..JPG",
+        alt: "セルバ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:SELVA_viewed_from_the_multi-story_parking_garage_of_Izumi-chuo_Sta..JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.selvaselva.com/",
+    sourceUrl: "http://www.selvaselva.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -52597,6 +55837,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-1f8a36ba-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kofu_station_celeo.JPG",
+        alt: "セレオ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kofu_station_celeo.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.celeo.co.jp/kofu/",
     sourceUrl: "https://www.celeo.co.jp/kofu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -52626,7 +55878,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/155535370",
+    websiteUrl: "https://www.celeo.co.jp/shiten/index.php?scd=6",
+    sourceUrl: "https://www.celeo.co.jp/shiten/index.php?scd=6",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -52767,6 +56020,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-4081db49-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kobe_Sannomiya09s3200.jpg",
+        alt: "センタープラザ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kobe_Sannomiya09s3200.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/182670862",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -52993,6 +56258,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-162e1d14-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sogo_Yokohama.jpg",
+        alt: "そごう public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Sogo_Yokohama.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.sogo-seibu.jp/yokohama/",
     sourceUrl: "https://www.sogo-seibu.jp/yokohama/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -53022,7 +56298,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/10899506728",
+    media: [
+      {
+        id: "osm-shop-facility-77792073-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hiroshima-Sogo_2019.JPG",
+        alt: "そごう public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hiroshima-Sogo_2019.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.sogo-seibu.jp/hiroshima/",
+    sourceUrl: "https://www.sogo-seibu.jp/hiroshima/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -53050,7 +56339,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/144791944",
+    media: [
+      {
+        id: "osm-shop-facility-6eddcc7a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sog%C5%8D_Chiba_20111210.jpg",
+        alt: "そごう public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sog%C5%8D_Chiba_20111210.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.sogo-seibu.jp/chiba/",
+    sourceUrl: "https://www.sogo-seibu.jp/chiba/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -53163,6 +56465,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a11a6718-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%81%9D%E3%82%88%E3%82%89%E4%BB%8A%E6%B2%BB%E9%A6%AC%E8%B6%8A.jpg",
+        alt: "そよら今治馬越 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%81%9D%E3%82%88%E3%82%89%E4%BB%8A%E6%B2%BB%E9%A6%AC%E8%B6%8A.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/soyora-imabariumagoe/",
     sourceUrl: "https://www.aeon.jp/sc/soyora-imabariumagoe/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -53305,6 +56619,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-93fb0f4c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bon_Belta_Narita_Department_Store.JPG",
+        alt: "そよら成田ニュータウン 本館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Bon_Belta_Narita_Department_Store.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeon.jp/sc/soyora-naritanewtown/",
     sourceUrl: "https://www.aeon.jp/sc/soyora-naritanewtown/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -53334,7 +56660,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1278800343",
+    websiteUrl: "https://www.aeon.jp/sc/soyora-musashisayama/",
+    sourceUrl: "https://www.aeon.jp/sc/soyora-musashisayama/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -53362,7 +56689,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1301046461",
+    websiteUrl: "https://www.aeon.jp/sc/soyora-fukuikaihotsu/",
+    sourceUrl: "https://www.aeon.jp/sc/soyora-fukuikaihotsu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -53390,7 +56718,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1268567394",
+    media: [
+      {
+        id: "osm-shop-facility-5db5f208-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AEON-Soyora-Suzukashiroko.jpg",
+        alt: "そよら鈴鹿白子 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AEON-Soyora-Suzukashiroko.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.aeon.jp/sc/soyora-suzukashiroko/",
+    sourceUrl: "https://www.aeon.jp/sc/soyora-suzukashiroko/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -53418,6 +56759,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-8fc32920-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Solaria_Stage_Building_-_01.JPG",
+        alt: "ソラリアステージ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Solaria_Stage_Building_-_01.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.solariastage.com/",
     sourceUrl: "https://www.solariastage.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -53447,7 +56800,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/207839944",
+    media: [
+      {
+        id: "osm-shop-facility-5ed3bca7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Solariaplaza_afterrenewal-front.jpg",
+        alt: "ソラリアプラザ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Solariaplaza_afterrenewal-front.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.solariaplaza.com/",
+    sourceUrl: "https://www.solariaplaza.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -53952,6 +57318,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c6acbc1b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Zepp_DiverCity.JPG",
+        alt: "ダイバーシティ東京 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Zepp_DiverCity.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://mitsui-shopping-park.com/divercity-tokyo/",
     sourceUrl: "https://mitsui-shopping-park.com/divercity-tokyo/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -54210,6 +57587,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-db03e5da-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takashimaya-Times-Square.jpg",
+        alt: "タカシマヤタイムズスクエア public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takashimaya-Times-Square.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.takashimaya.co.jp/shinjuku/timessquare/",
     sourceUrl: "https://www.takashimaya.co.jp/shinjuku/timessquare/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -54548,7 +57937,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1307056950",
+    media: [
+      {
+        id: "osm-shop-facility-164cb777-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tama_Plaza_Terrace_01.jpg",
+        alt: "たまプラーザテラス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tama_Plaza_Terrace_01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.tamaplaza-terrace.com/",
+    sourceUrl: "https://www.tamaplaza-terrace.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -55577,6 +58979,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-de14e8f0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/DAYZ_TOWN_TSUKUBA_April_2012.jpg",
+        alt: "デイズタウン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:DAYZ_TOWN_TSUKUBA_April_2012.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.dayztown.com/",
     sourceUrl: "https://www.dayztown.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -55747,6 +59161,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ce9c89ad-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/DECKS_Tokyo_Beach2.jpg",
+        alt: "デックス東京ビーチ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:DECKS_Tokyo_Beach2.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.odaiba-decks.com/",
     sourceUrl: "https://www.odaiba-decks.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -56006,7 +59432,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/611530850",
+    websiteUrl: "https://terracemall.com/matsudo/",
+    sourceUrl: "https://terracemall.com/matsudo/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -56034,6 +59461,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-49f14afd-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Terracemall_Shonan_North_Bus_Terminal_Side.jpg",
+        alt: "テラスモール湘南 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Terracemall_Shonan_North_Bus_Terminal_Side.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/224622053",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -56062,6 +59501,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f876177b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/High_buildings_and_shopping_mall_from_Nayabashi.jpg",
+        alt: "テラッセ納屋橋 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:High_buildings_and_shopping_mall_from_Nayabashi.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://terrasse-nayabashi.com/",
     sourceUrl: "https://terrasse-nayabashi.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -56091,6 +59542,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-493baf69-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Terasso-himeji2.jpg",
+        alt: "テラッソ姫路 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Terasso-himeji2.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://terasso.jp/",
     sourceUrl: "https://terasso.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -59153,7 +62616,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/115710801",
+    websiteUrl: "http://www.tokiwa-portal.com/",
+    sourceUrl: "http://www.tokiwa-portal.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -59181,7 +62645,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1383254468",
+    media: [
+      {
+        id: "osm-shop-facility-122e8a4f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/TOKIWA_DEPARTMENT_STORE_BEPPU_01.jpg",
+        alt: "トキハ 別府店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:TOKIWA_DEPARTMENT_STORE_BEPPU_01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.tokiwa-dept.co.jp/beppu/",
+    sourceUrl: "https://www.tokiwa-dept.co.jp/beppu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -59350,7 +62827,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/244709265",
+    websiteUrl: "https://www.tocotocosquare.com/",
+    sourceUrl: "https://www.tocotocosquare.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -59579,7 +63057,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/100583545",
+    media: [
+      {
+        id: "osm-shop-facility-e2a44262-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tonarie-Utsunomiya.jpg",
+        alt: "トナリエ宇都宮 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tonarie-Utsunomiya.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.tonarie.jp/utsunomiya/",
+    sourceUrl: "https://www.tonarie.jp/utsunomiya/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -59607,6 +63098,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f5b05e89-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Lalasquare_yokkaichi.jpg",
+        alt: "トナリエ四日市 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Lalasquare_yokkaichi.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.lalasquare-y.com/",
     sourceUrl: "http://www.lalasquare-y.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -59692,7 +63195,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/442871359",
+    websiteUrl: "http://www.tonarie.jp/minamisenri/",
+    sourceUrl: "http://www.tonarie.jp/minamisenri/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -59776,7 +63280,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/2985559080",
+    media: [
+      {
+        id: "osm-shop-facility-4ef9cedf-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tono_Shopping_Center_Topia.jpg",
+        alt: "とぴあ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tono_Shopping_Center_Topia.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.tono-topia.or.jp/",
+    sourceUrl: "https://www.tono-topia.or.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -59804,6 +63321,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-0a739bce-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Topylec_Plaza.jpg",
+        alt: "トピレックプラザ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Topylec_Plaza.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/195203472",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -60149,7 +63677,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/13758881357",
+    media: [
+      {
+        id: "osm-shop-facility-6e3ad452-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kito-Kito_Hiroba_Toyamarusye.jpg",
+        alt: "とやマルシェ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kito-Kito_Hiroba_Toyamarusye.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.toyamarche.jp/",
+    sourceUrl: "https://www.toyamarche.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -61047,8 +64588,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    websiteUrl: "www.torejaras.com",
-    sourceUrl: "www.torejaras.com",
+    websiteUrl: "https://www.torejaras.com",
+    sourceUrl: "https://www.torejaras.com",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -61835,7 +65376,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/160892905",
+    media: [
+      {
+        id: "osm-shop-facility-11f2c847-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagano_Tokyu_Department_Store_2016-12_1.jpg",
+        alt: "ながの東急百貨店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagano_Tokyu_Department_Store_2016-12_1.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.nagano-tokyu.co.jp/",
+    sourceUrl: "https://www.nagano-tokyu.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -62087,6 +65641,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-50030979-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/NaraFamily.jpg",
+        alt: "ならファミリー public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:NaraFamily.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://narafa.jp/",
     sourceUrl: "https://narafa.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -62228,7 +65793,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/4767321429",
+    media: [
+      {
+        id: "osm-shop-facility-df306aa1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Namba1.jpg",
+        alt: "なんばCITY本館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Namba1.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.nanbacity.com/index.html",
+    sourceUrl: "http://www.nanbacity.com/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -62368,6 +65945,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d8d1707d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/150328_Namba_Parks_Osaka_Japan01bs3.jpg",
+        alt: "なんばパークス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:150328_Namba_Parks_Osaka_Japan01bs3.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://nambaparks.com/",
     sourceUrl: "https://nambaparks.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -62397,6 +65986,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-0e351e48-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Namba_Marui_Osaka_Japan01-r.jpg",
+        alt: "なんばマルイ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Namba_Marui_Osaka_Japan01-r.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.0101.co.jp/",
     sourceUrl: "http://www.0101.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -62739,7 +66340,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/604972050",
+    media: [
+      {
+        id: "osm-shop-facility-b3cf3572-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kagoshima_Airport01n4592.jpg",
+        alt: "ニシムタスカイマーケット鴨池店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kagoshima_Airport01n4592.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://koj-ab.co.jp/en/",
+    sourceUrl: "http://koj-ab.co.jp/en/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -62852,7 +66466,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/358452180",
+    media: [
+      {
+        id: "osm-shop-facility-ba418355-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/NITTOH_MALL.JPG",
+        alt: "ニット-モール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:NITTOH_MALL.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.nittohmall.com/",
+    sourceUrl: "https://www.nittohmall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -62992,6 +66618,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b5ef542c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/NITORI_MALL_Higashiosaka2.JPG",
+        alt: "ニトリモール東大阪 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:NITORI_MALL_Higashiosaka2.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/1278158045",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -63244,6 +66882,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-13b7e4f6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Northport_Mall.jpg",
+        alt: "ノースポート・モール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Northport_Mall.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://northport.jp",
     sourceUrl: "https://northport.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -65247,7 +68896,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/289139401",
+    media: [
+      {
+        id: "osm-shop-facility-4aab528c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Patoria_(nanao_city).jpg",
+        alt: "パトリア public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Patoria_(nanao_city).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://patria.co.jp/",
+    sourceUrl: "https://patria.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -65387,6 +69049,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-71260945-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/HANINS_Ginowan.JPG",
+        alt: "はにんす宜野湾 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:HANINS_Ginowan.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/272225875",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -65927,6 +69600,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-70f061ae-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Urawa_Parco_2015_12.JPG",
+        alt: "パルコ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Urawa_Parco_2015_12.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://urawa.parco.jp/",
     sourceUrl: "https://urawa.parco.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -66157,6 +69842,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-4d31d780-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Inashikipalna.jpg",
+        alt: "パルナ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Inashikipalna.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/126621591",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -66297,6 +69993,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-835ed216-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pallet_Kumoji_Naha_Okinawa03s3s4500.jpg",
+        alt: "パレットくもじ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Pallet_Kumoji_Naha_Okinawa03s3s4500.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.palette-kumoji.co.jp/",
     sourceUrl: "https://www.palette-kumoji.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -66976,7 +70684,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/328718501",
+    websiteUrl: "https://piakaifu.com/",
+    sourceUrl: "https://piakaifu.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -67763,7 +71472,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1126418943",
+    media: [
+      {
+        id: "osm-shop-facility-1f64d502-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/VIERRA_MAITA.jpg",
+        alt: "ビエラ蒔田 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:VIERRA_MAITA.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.jrwd.co.jp/vierra/maita.html",
+    sourceUrl: "https://www.jrwd.co.jp/vierra/maita.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -67932,6 +71653,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f9542f5a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Pieri_Moriyama_-_Dec_30%2C_2013.jpg",
+        alt: "ピエリ守山 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Pieri_Moriyama_-_Dec_30%2C_2013.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://pieri.sc/",
     sourceUrl: "http://pieri.sc/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -67961,6 +71694,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-cc0e85d7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/PEONY-WALK_Higashimatsuyama_Shopping_Center.jpg",
+        alt: "ピオニウォーク東松山 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:PEONY-WALK_Higashimatsuyama_Shopping_Center.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.peonywalk.com/",
     sourceUrl: "http://www.peonywalk.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -67990,6 +71735,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f6073ccf-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hirakata_VIE.ORNER_Main_Building_on_2nd_February_2025.jpg",
+        alt: "ビオルネ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hirakata_VIE.ORNER_Main_Building_on_2nd_February_2025.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.vie-orner.com/",
     sourceUrl: "https://www.vie-orner.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -68019,7 +71776,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/248278262",
+    media: [
+      {
+        id: "osm-shop-facility-f27a24b0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Piole_Himeji_Main_Building.JPG",
+        alt: "ピオレ姫路 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Piole_Himeji_Main_Building.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://piole.jp/himeji/",
+    sourceUrl: "https://piole.jp/himeji/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -68244,6 +72014,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-1b7e398d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/BIG_HOP_Garden_Mall_Inzai.JPG",
+        alt: "ビッグホップガーデンモール印西 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:BIG_HOP_Garden_Mall_Inzai.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/3125661580",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -68272,7 +72054,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/55798487",
+    media: [
+      {
+        id: "osm-shop-facility-c96b912a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/BICQLO.JPG",
+        alt: "ビックロ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:BICQLO.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.biccamera.com/bc/i/shop/shoplist/shop116.jsp",
+    sourceUrl: "https://www.biccamera.com/bc/i/shop/shoplist/shop116.jsp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -68805,6 +72599,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-1db9a325-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/VINA_WALK_Ebina.jpg",
+        alt: "ビナフロント public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:VINA_WALK_Ebina.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/500749214",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -68861,6 +72667,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-8452df4c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Heiwado_Viva_City_Hikone.jpg",
+        alt: "ビバシティ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Heiwado_Viva_City_Hikone.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.vivacity.co.jp/",
     sourceUrl: "https://www.vivacity.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -69060,6 +72878,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-5c3a3380-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Youme_town_Munakata.JPG",
+        alt: "ビバモール赤間 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Youme_town_Munakata.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/392680859",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -69373,6 +73203,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-79c82375-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/HIRORO_(Hirosaki%2C_Japan).jpg",
+        alt: "ヒロロ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:HIRORO_(Hirosaki%2C_Japan).jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/274159822",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -69431,7 +73273,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/12735607420",
+    media: [
+      {
+        id: "osm-shop-facility-d550ab91-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/FASHION_CRUISE_NEWPORT_HITACHINAKA.jpg",
+        alt: "ファッションクルーズ ニューポートひたちなか public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:FASHION_CRUISE_NEWPORT_HITACHINAKA.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://fashion-cruise.jp/",
+    sourceUrl: "https://fashion-cruise.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -69571,6 +73426,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-368a3f7c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Favore001.jpg",
+        alt: "ファボーレ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Favore001.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.favore.jp/",
     sourceUrl: "https://www.favore.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -69770,6 +73636,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-953f549b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Feeeal%E6%97%AD%E5%B7%9D%E5%85%A5%E5%8F%A3.JPG",
+        alt: "フィール旭川 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Feeeal%E6%97%AD%E5%B7%9D%E5%85%A5%E5%8F%A3.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/141783228",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -69967,6 +73845,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-1a90dbfb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/FeriE_Minamikusatsu_ac_(1).jpg",
+        alt: "フェリエ南草津 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:FeriE_Minamikusatsu_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://ferit.jp/",
     sourceUrl: "https://ferit.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -70505,6 +74395,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-3196b02f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fonte_Akita_20130923.jpg",
+        alt: "フォンテAKITA public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fonte_Akita_20130923.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.fonte-akita.jp/",
     sourceUrl: "https://www.fonte-akita.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -70702,6 +74604,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-540801e8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fuji_grand_Anan.jpg",
+        alt: "フジグラン 阿南 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fuji_grand_Anan.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/3379746106",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -70842,6 +74756,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-1603fc18-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fuji_Grand_Matsuyama_20240726.jpg",
+        alt: "フジグラン松山 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fuji_Grand_Matsuyama_20240726.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://www.the-fuji.com/store/shop/ehime/grand_matsuyama.html",
     sourceUrl: "https://www.the-fuji.com/store/shop/ehime/grand_matsuyama.html",
@@ -70872,6 +74798,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-9173b94d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fuji_Grand_Kannabe.JPG",
+        alt: "フジグラン神辺 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fuji_Grand_Kannabe.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://www.the-fuji.com/store/shop/hiroshima/grand_kannabe.html",
     sourceUrl:
@@ -70931,6 +74869,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-6d0eb753-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fuji_GRAND_KITAJIMA.JPG",
+        alt: "フジグラン北島 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fuji_GRAND_KITAJIMA.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/313839245",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -70959,6 +74909,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f982da77-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fuji_GRAND_Midorii_200807.JPG",
+        alt: "フジグラン緑井 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fuji_GRAND_Midorii_200807.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/497324285",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -71351,7 +75313,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/41969707",
+    media: [
+      {
+        id: "osm-shop-facility-46d6974c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudo_Plare03.jpg",
+        alt: "プラーレ松戸 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudo_Plare03.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.plare-shopping.com/",
+    sourceUrl: "http://www.plare-shopping.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -71463,6 +75438,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-825a538f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Plaza_House_Shopping_Center.jpg",
+        alt: "プラザハウスショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Plaza_House_Shopping_Center.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://plazahouse.net/",
     sourceUrl: "https://plazahouse.net/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -71662,6 +75649,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-5e286dc0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%83%95%E3%83%A9%E3%83%8E%E3%83%9E%E3%83%AB%E3%82%B7%E3%82%A7%E5%A4%96%E8%A6%B3.jpg",
+        alt: "フラノマルシェ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%83%95%E3%83%A9%E3%83%8E%E3%83%9E%E3%83%AB%E3%82%B7%E3%82%A7%E5%A4%96%E8%A6%B3.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://marche.furano.jp/",
     sourceUrl: "https://marche.furano.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -71833,6 +75832,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b3a88f92-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/BRANCH_Fukuoka_Shimobaru.jpg",
+        alt: "ブランチ福岡下原 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:BRANCH_Fukuoka_Shimobaru.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.branch-sc.com/f-shimobaru/",
     sourceUrl: "https://www.branch-sc.com/f-shimobaru/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -72061,6 +76072,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-79bec766-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Blumermaitamon.JPG",
+        alt: "ブルメール舞多聞 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Blumermaitamon.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://b-maitamon.jp/",
     sourceUrl: "https://b-maitamon.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -72090,7 +76112,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/447222370",
+    media: [
+      {
+        id: "osm-shop-facility-b067a11a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fululu_Garden_Yachiyo_Ito_Yokado_Yachiyo_01.jpg",
+        alt: "フルルガーデン八千代 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fululu_Garden_Yachiyo_Ito_Yokado_Yachiyo_01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.fululu.net/",
+    sourceUrl: "https://www.fululu.net/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -72400,6 +76435,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-664ebbf1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Oita_tokiwa_ind_kasugaura.jpg",
+        alt: "フレスポ春日浦 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Oita_tokiwa_ind_kasugaura.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/182345595",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -72684,7 +76731,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/209136274",
+    websiteUrl: "https://plena-makuhari.com/",
+    sourceUrl: "https://plena-makuhari.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -72768,7 +76816,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/196053204",
+    media: [
+      {
+        id: "osm-shop-facility-a0fa6385-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Plenty.JPG",
+        alt: "プレンティ 専門店一番館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Plenty.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.plenty.jp/",
+    sourceUrl: "https://www.plenty.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -72796,7 +76856,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/3438234913",
+    websiteUrl: "https://www.frente-sasazuka.com/",
+    sourceUrl: "https://www.frente-sasazuka.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -72824,6 +76885,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-e665a649-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Frente_Nishinomiya.JPG",
+        alt: "フレンテ西宮 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Frente_Nishinomiya.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/289043743",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -72852,7 +76925,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/121694565",
+    websiteUrl: "http://www.keio-ekichika.com/station/meidaimae/",
+    sourceUrl: "http://www.keio-ekichika.com/station/meidaimae/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -73024,6 +77098,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-cd720836-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flore_Kamogawa_Shopping_Center.JPG",
+        alt: "フローレ鴨川ショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Flore_Kamogawa_Shopping_Center.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/377078162",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -73304,6 +77390,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-267a75d0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/BayDream-Shimizu.jpg",
+        alt: "ベイドリーム清水 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:BayDream-Shimizu.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/174435320",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -74011,7 +78109,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/9570153",
+    media: [
+      {
+        id: "osm-shop-facility-160b9cf6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Bell_Mall_West_Side.jpg",
+        alt: "ベルモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Bell_Mall_West_Side.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.bellmall.co.jp/",
+    sourceUrl: "https://www.bellmall.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -75928,6 +80039,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-e6c2008f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Polka_Tenmaya_Happy_Town.jpg",
+        alt: "ポルカ天満屋ハピータウン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Polka_Tenmaya_Happy_Town.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.polka-takahashi.jp/",
     sourceUrl: "http://www.polka-takahashi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -76042,6 +80165,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-685ad1a7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/MARK_IS_fukuoka-momochi_20181124.jpg",
+        alt: "マークイズ福岡ももち public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:MARK_IS_fukuoka-momochi_20181124.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.mec-markis.jp/fukuoka-momochi/",
     sourceUrl: "https://www.mec-markis.jp/fukuoka-momochi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -76671,7 +80806,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     diaperChanging: true,
     tags: ["stroller-friendly"],
     labels: ["nursing-room", "diaper-changing"],
-    sourceUrl: "https://www.openstreetmap.org/way/429041521",
+    websiteUrl: "https://www.aeon-hokkaido.jp/mv/shop/yakumo/",
+    sourceUrl: "https://www.aeon-hokkaido.jp/mv/shop/yakumo/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -77037,7 +81173,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/198533820",
+    media: [
+      {
+        id: "osm-shop-facility-177ac11c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Marier01st3200.jpg",
+        alt: "マリエ とやま public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Marier01st3200.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.marier-toyama.co.jp/",
+    sourceUrl: "https://www.marier-toyama.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -77093,7 +81241,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/788612206",
+    media: [
+      {
+        id: "osm-shop-facility-569e2919-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takamatsu_symbol_tower07s3872.jpg",
+        alt: "マリタイムプラザ高松 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takamatsu_symbol_tower07s3872.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://maripla.jp/",
+    sourceUrl: "https://maripla.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -77149,6 +81310,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f1f33f2d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/MARINE_%26_WALK_YOKOHAMA_05.jpg",
+        alt: "マリンアンドウォーク public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:MARINE_%26_WALK_YOKOHAMA_05.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.marineandwalk.jp/",
     sourceUrl: "https://www.marineandwalk.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -77206,6 +81379,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ff6d4edb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Marui-City-Shibuya-01.jpg",
+        alt: "マルイ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Marui-City-Shibuya-01.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.0101.co.jp/090/",
     sourceUrl: "https://www.0101.co.jp/090/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -77658,6 +81843,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-8f9fa62b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%83%9E%E3%83%AB%E3%83%99%E3%83%AB%E5%A0%82.jpg",
+        alt: "マルベル堂 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%83%9E%E3%83%AB%E3%83%99%E3%83%AB%E5%A0%82.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://marubell.co.jp/bell/index.html",
     sourceUrl: "http://marubell.co.jp/bell/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -77775,7 +81972,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/118998708",
+    media: [
+      {
+        id: "osm-shop-facility-a0a5288a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Maruya_gardens_ac.jpg",
+        alt: "マルヤガーデンズ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Maruya_gardens_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.maruya-gardens.com/",
+    sourceUrl: "https://www.maruya-gardens.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -77917,6 +82127,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-265f1081-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/MiNara_2021%2C1.jpg",
+        alt: "ミ・ナーラ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:MiNara_2021%2C1.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.mina-ra.com",
     sourceUrl: "https://www.mina-ra.com",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -77974,6 +82196,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f1405b98-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mina_Tenjin_and_shoppers_fukuoka_2011A.jpg",
+        alt: "ミーナ天神 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mina_Tenjin_and_shoppers_fukuoka_2011A.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/261667489",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -78002,7 +82236,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/58199839",
+    websiteUrl: "https://www.mewe.jp/",
+    sourceUrl: "https://www.mewe.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -78058,7 +82293,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/3737850937",
+    websiteUrl: "https://www.miel-k.jp/",
+    sourceUrl: "https://www.miel-k.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -78086,6 +82322,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-9cb1c0ca-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mioka.jpg",
+        alt: "ミオカ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Mioka.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/1104840322",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -78311,7 +82558,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/3686518128",
+    media: [
+      {
+        id: "osm-shop-facility-238aeae2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/MTS_ISE_ver_2013.jpg",
+        alt: "ミタス伊勢 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:MTS_ISE_ver_2013.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://mts-ise.com/",
+    sourceUrl: "https://mts-ise.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -78451,6 +82711,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-85198b30-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Minakuru_Kariya_2021-11_ac_(1).jpg",
+        alt: "みなくる刈谷 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Minakuru_Kariya_2021-11_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/224054718",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -78507,7 +82779,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/911314775",
+    media: [
+      {
+        id: "osm-shop-facility-c89565a7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/MM_-_Grand_Central_Tower_10.jpg",
+        alt: "みなとみらいグランドセントラルテラス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:MM_-_Grand_Central_Tower_10.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.mm-gct.com/",
+    sourceUrl: "https://www.mm-gct.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -79156,6 +83441,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-e236c974-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mizusawa_maple_00.jpg",
+        alt: "メイプル public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mizusawa_maple_00.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/785327049",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -79352,7 +83649,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/493683763",
+    websiteUrl: "http://www.meglia-net.jp/",
+    sourceUrl: "http://www.meglia-net.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -79719,6 +84017,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-317d05e2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Metro-Plaza-Shibuya.jpg",
+        alt: "メトロプラザ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Metro-Plaza-Shibuya.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://shibuya-metroplaza.com/",
     sourceUrl: "https://shibuya-metroplaza.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -79862,7 +84172,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/215404371",
+    media: [
+      {
+        id: "osm-shop-facility-72b9b1d2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Iias_TSUKUBA_view.jpg",
+        alt: "モール棟 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Iias_TSUKUBA_view.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://tsukuba.iias.jp/",
+    sourceUrl: "https://tsukuba.iias.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -79974,6 +84297,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-bb9f6062-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mozaic-garden007.jpg",
+        alt: "モザイク public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mozaic-garden007.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/531285807",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -80002,6 +84337,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c729bb2f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mosaic_Mall_Kohoku.jpg",
+        alt: "モザイクモール港北 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mosaic_Mall_Kohoku.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/157362866",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -80170,6 +84517,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-fe3f975c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mallage_Shobu.jpg",
+        alt: "モラージュ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Mallage_Shobu.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.mallage.com/shobu/",
     sourceUrl: "http://www.mallage.com/shobu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -80257,6 +84615,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-9e02293f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mallage_Kashiwa.JPG",
+        alt: "モラージュ柏 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mallage_Kashiwa.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/2323908761",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -80454,6 +84824,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a393217c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Morinomiya_Q's_MALL_BASE_(1).jpg",
+        alt: "もりのみやキューズモールBASE public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Morinomiya_Q's_MALL_BASE_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://qs-mall.jp/morinomiya/",
     sourceUrl: "https://qs-mall.jp/morinomiya/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -81279,7 +85661,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/11843644",
+    websiteUrl: "http://www.yourelm.co.jp/narita/",
+    sourceUrl: "http://www.yourelm.co.jp/narita/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -81307,7 +85690,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/219408283",
+    websiteUrl: "http://yourelm-mio.jp/",
+    sourceUrl: "http://yourelm-mio.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -81364,6 +85748,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b4fb4d7f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yukari_Plaza_20190905.jpg",
+        alt: "ユーカリプラザ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yukari_Plaza_20190905.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/187056140",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -81759,6 +86155,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ab32a07c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/You_me_town_hakata_20150501.jpg",
+        alt: "ゆめタウン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:You_me_town_hakata_20150501.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.izumi.jp/hakata/",
     sourceUrl: "https://www.izumi.jp/hakata/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -81959,6 +86367,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f385d4cc-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Youme_Town_Takamatsu.jpg",
+        alt: "ゆめタウン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Youme_Town_Takamatsu.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.izumi.jp/tenpo/takamatsu",
     sourceUrl: "https://www.izumi.jp/tenpo/takamatsu",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -82044,6 +86464,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-31283a1c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/You_me_Town_Hamasen_2011.JPG",
+        alt: "ゆめタウンはません public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:You_me_Town_Hamasen_2011.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/5826248807",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -82156,6 +86588,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-4350e804-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%82%86%E3%82%81%E3%82%BF%E3%82%A6%E3%83%B3%E4%B9%85%E7%95%99%E7%B1%B3.jpg",
+        alt: "ゆめタウン久留米 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%82%86%E3%82%81%E3%82%BF%E3%82%A6%E3%83%B3%E4%B9%85%E7%95%99%E7%B1%B3.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/424866490",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -82184,6 +86628,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-33fd0329-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/You_me_Town_Kure_2014.JPG",
+        alt: "ゆめタウン呉 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:You_me_Town_Kure_2014.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.izumi.jp/tenpo/kure",
     sourceUrl: "https://www.izumi.jp/tenpo/kure",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -82241,6 +86697,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-587b351b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Youmetown_Yukuhashi.jpg",
+        alt: "ゆめタウン行橋 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Youmetown_Yukuhashi.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/544336290",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -82269,6 +86737,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a000d0fc-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Youme_Town_Takamatsu.jpg",
+        alt: "ゆめタウン高松 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Youme_Town_Takamatsu.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/2502731165",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -82297,6 +86777,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a3b3a494-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/You_Me_Town_Takahashi.jpg",
+        alt: "ゆめタウン高梁 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:You_Me_Town_Takahashi.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.izumi.jp/tenpo/takahashi/",
     sourceUrl: "https://www.izumi.jp/tenpo/takahashi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -82326,6 +86818,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-e57c86fd-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/You_me_town_Kurose.jpg",
+        alt: "ゆめタウン黒瀬 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:You_me_town_Kurose.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/6166096197",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -82354,6 +86858,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-cd40b182-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Youme_Town_Mitoyo.jpg",
+        alt: "ゆめタウン三豊 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Youme_Town_Mitoyo.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.izumi.jp/tenpo/mitoyo",
     sourceUrl: "https://www.izumi.jp/tenpo/mitoyo",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -82411,6 +86927,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-9e023b89-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/You_me_Town_Otake_20140927.JPG",
+        alt: "ゆめたうん大竹 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:You_me_Town_Otake_20140927.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1945692304",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -82439,6 +86967,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-9f06ac47-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%82%86%E3%82%81%E3%82%BF%E3%82%A6%E3%83%B3%E5%A4%A7%E7%89%9F%E7%94%B0.jpg",
+        alt: "ゆめタウン大牟田 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%82%86%E3%82%81%E3%82%BF%E3%82%A6%E3%83%B3%E5%A4%A7%E7%89%9F%E7%94%B0.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/548888841",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -82467,6 +87007,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-9ac99a7f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%82%86%E3%82%81%E3%82%BF%E3%82%A6%E3%83%B3%E7%AD%91%E7%B4%AB%E9%87%8E.jpg",
+        alt: "ゆめタウン筑紫野 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%82%86%E3%82%81%E3%82%BF%E3%82%A6%E3%83%B3%E7%AD%91%E7%B4%AB%E9%87%8E.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/3049162934",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -82551,6 +87103,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-117a34f3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Youmetown_Nakatsu.jpg",
+        alt: "ゆめタウン中津 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Youmetown_Nakatsu.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/210753426",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -82579,6 +87143,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-44ff38c8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Youme_Town_Chofu_2012.JPG",
+        alt: "ゆめタウン長府 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Youme_Town_Chofu_2012.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/4101081694",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -82635,6 +87211,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c0b335af-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Youme-tokushima.JPG",
+        alt: "ゆめタウン徳島 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Youme-tokushima.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/290147274",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -82720,6 +87308,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-4b944ac3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Beppu_youme_town.jpg",
+        alt: "ゆめタウン別府 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Beppu_youme_town.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.izumi.jp/tenpo/beppu",
     sourceUrl: "https://www.izumi.jp/tenpo/beppu",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -82749,6 +87349,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-26e621d0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yume-town_yume-site.JPG",
+        alt: "ゆめタウン夢彩都 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yume-town_yume-site.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/255538625",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -83450,6 +88062,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d8760815-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yodobashi-Akiba_2015.JPG",
+        alt: "ヨドバシカメラ マルチメディアAkiba public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yodobashi-Akiba_2015.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.yodobashi-akiba.com/",
     sourceUrl: "https://www.yodobashi-akiba.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -83537,6 +88161,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     diaperChanging: true,
     tags: ["stroller-friendly"],
     labels: ["diaper-changing"],
+    media: [
+      {
+        id: "osm-shop-facility-d9473d73-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Supermarket_Yoneya_Happy-mall_store.jpg",
+        alt: "よねや public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Supermarket_Yoneya_Happy-mall_store.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://www.nices.co.jp/shop/%e3%82%88%e3%81%ad%e3%82%84%e3%83%8f%e3%83%83%e3%83%94%e3%83%bc%e3%83%a2%e3%83%bc%e3%83%ab%e5%ba%97",
     sourceUrl:
@@ -83766,6 +88402,15 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     diaperChanging: true,
     tags: ["stroller-friendly"],
     labels: ["diaper-changing"],
+    media: [
+      {
+        id: "osm-shop-facility-36a0647a-video-1",
+        type: "video",
+        url: "https://www.youtube.com/channel/UCs_EuQ7ZlC8Wn-Ah2zeKR5w",
+        alt: "ライフ public video",
+        sourceUrl: "https://www.youtube.com/channel/UCs_EuQ7ZlC8Wn-Ah2zeKR5w",
+      },
+    ],
     websiteUrl: "https://www.lifecorp.jp/",
     sourceUrl: "https://www.lifecorp.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -83823,7 +88468,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1092090940",
+    websiteUrl: "https://www.mfmc.co.jp/contract/retail/4700",
+    sourceUrl: "https://www.mfmc.co.jp/contract/retail/4700",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -84047,7 +88693,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/7321694978",
+    websiteUrl: "https://rakuseinu.com",
+    sourceUrl: "https://rakuseinu.com",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -84160,7 +88807,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/904184681",
+    media: [
+      {
+        id: "osm-shop-facility-0537439c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chigasaki-Sta-N.JPG",
+        alt: "ラスカ茅ヶ崎 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Chigasaki-Sta-N.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.lusca.co.jp/chigasaki/",
+    sourceUrl: "https://www.lusca.co.jp/chigasaki/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -84272,6 +88932,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-fa80a4c5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/APITA_Nishiyamato.jpg",
+        alt: "ラスパ西大和 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:APITA_Nishiyamato.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://apita-nishiyamato.com/",
     sourceUrl: "https://apita-nishiyamato.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -84301,6 +88973,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c622ac6e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/RASPA_Otagawa_South.jpg",
+        alt: "ラスパ太田川 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:RASPA_Otagawa_South.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/502606512",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -84329,7 +89013,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/350351469",
+    media: [
+      {
+        id: "osm-shop-facility-ed24148f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/RASPA_Hakusan_West_20241109.jpg",
+        alt: "ラスパ白山 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:RASPA_Hakusan_West_20241109.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.uny.co.jp/store/pickup-shop/raspahakusan/",
+    sourceUrl: "http://www.uny.co.jp/store/pickup-shop/raspahakusan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -84442,6 +89139,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-6c68abcf-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Latov_ac.jpg",
+        alt: "ラトブ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Latov_ac.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.latov.com/",
     sourceUrl: "https://www.latov.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -84499,6 +89207,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-85f99e7a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Lapio_in_Komaki_ac.jpg",
+        alt: "ラピオ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Lapio_in_Komaki_ac.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/666947436",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -84527,6 +89247,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-fa5c55e3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Laforet-Harajuku-Tokyo-02.jpg",
+        alt: "ラフォーレ原宿 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Laforet-Harajuku-Tokyo-02.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.laforet.ne.jp/",
     sourceUrl: "https://www.laforet.ne.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -84729,6 +89461,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a58c7e16-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/LaLagarden-Nagamachi.jpg",
+        alt: "ララガーデン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:LaLagarden-Nagamachi.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://mitsui-shopping-park.com/lalag-nagamachi/",
     sourceUrl: "https://mitsui-shopping-park.com/lalag-nagamachi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -84758,7 +89502,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/162138561",
+    media: [
+      {
+        id: "osm-shop-facility-56c1c116-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mitsui_Shopping_Park_LALA_GARDEN_KASUKABE_in_May%2C_2010.jpg",
+        alt: "ララガーデン春日部 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mitsui_Shopping_Park_LALA_GARDEN_KASUKABE_in_May%2C_2010.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://mitsui-shopping-park.com/lalag-kasukabe/",
+    sourceUrl: "https://mitsui-shopping-park.com/lalag-kasukabe/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -84786,7 +89543,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/176968909",
+    media: [
+      {
+        id: "osm-shop-facility-b2e4fe72-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/LaLa_garden_Kawaguchi_001.JPG",
+        alt: "ララガーデン川口 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:LaLa_garden_Kawaguchi_001.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://mitsui-shopping-park.com/lalag-kawaguchi/",
+    sourceUrl: "https://mitsui-shopping-park.com/lalag-kawaguchi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -84899,6 +89669,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-894bd19e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A9%E3%83%A9%E3%83%91%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC.jpg",
+        alt: "ララパーク public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%82%A4%E3%82%AA%E3%83%B3%E3%83%A9%E3%83%A9%E3%83%91%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aeontown.co.jp/lalapark/",
     sourceUrl: "https://www.aeontown.co.jp/lalapark/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -85040,7 +89822,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/72645577",
+    media: [
+      {
+        id: "osm-shop-facility-762a9b86-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E5%BB%BA%E7%89%A9%E5%85%A8%E6%99%AF%E3%81%AE%E6%92%AE%E5%BD%B1.jpg",
+        alt: "ららぽーと TOKYO−BAY North Gate public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E5%BB%BA%E7%89%A9%E5%85%A8%E6%99%AF%E3%81%AE%E6%92%AE%E5%BD%B1.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://mitsui-shopping-park.com/lalaport/tokyo-bay/",
+    sourceUrl: "https://mitsui-shopping-park.com/lalaport/tokyo-bay/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -85097,6 +89892,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f83474f7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/LaLaport_TOKYO-BAY.jpg",
+        alt: "ららぽーとTOKYO-BAY public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:LaLaport_TOKYO-BAY.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://mitsui-shopping-park.com/lalaport/tokyo-bay/",
     sourceUrl: "https://mitsui-shopping-park.com/lalaport/tokyo-bay/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -85126,6 +89933,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-35aafeab-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/LaLaport_Yokohama_Central_Court_2010.JPG",
+        alt: "ららぽーと横浜 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:LaLaport_Yokohama_Central_Court_2010.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/relation/10932190",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -85154,6 +89973,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-da321a67-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/LaLaport-Ebina.jpg",
+        alt: "ららぽーと海老名 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:LaLaport-Ebina.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://mitsui-shopping-park.com/lalaport/ebina/",
     sourceUrl: "https://mitsui-shopping-park.com/lalaport/ebina/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -85183,6 +90013,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-aaf71723-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/LaLaport-Ebina.jpg",
+        alt: "ららぽーと海老名 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:LaLaport-Ebina.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/relation/12409962",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -85211,6 +90052,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-fd891f6e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/LaLaport_Koshien.jpg",
+        alt: "ららぽーと甲子園 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:LaLaport_Koshien.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://mitsui-shopping-park.com/lalaport/koshien/",
     sourceUrl: "https://mitsui-shopping-park.com/lalaport/koshien/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -85325,6 +90178,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-1361f428-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mitsui_lalaport_hiratsuka.jpg",
+        alt: "ららぽーと湘南平塚 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mitsui_lalaport_hiratsuka.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.lalaport-shonanhiratsuka.com/",
     sourceUrl: "http://www.lalaport-shonanhiratsuka.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -85354,6 +90219,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-817ddfca-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/LaLaportshoppingcenterKashiwanoha.jpg",
+        alt: "ららぽーと柏の葉 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:LaLaportshoppingcenterKashiwanoha.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/28573572",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -85439,7 +90316,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/631591939",
+    media: [
+      {
+        id: "osm-shop-facility-02fc1ecd-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/LaLaport-Nagoyaminatoaquls.jpg",
+        alt: "ららぽーと名古屋みなとアクルス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:LaLaport-Nagoyaminatoaquls.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://mitsui-shopping-park.com/lalaport/minatoaquls/",
+    sourceUrl: "https://mitsui-shopping-park.com/lalaport/minatoaquls/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -85496,6 +90386,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-cd0422a1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Lalaportizumi.jpg",
+        alt: "ららぽーと和泉 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Lalaportizumi.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://mitsui-shopping-park.com/lalaport/izumi/",
     sourceUrl: "https://mitsui-shopping-park.com/lalaport/izumi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -85525,7 +90426,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/45537790",
+    media: [
+      {
+        id: "osm-shop-facility-eb23a73d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yokohama_Landmark_Tower_02_cropped.jpg",
+        alt: "ランドマークプラザ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yokohama_Landmark_Tower_02_cropped.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.yokohama-landmark.jp/",
+    sourceUrl: "https://www.yokohama-landmark.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -85749,6 +90663,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a5015070-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Resora_obu.jpg",
+        alt: "リソラ大府ショッピングテラス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Resora_obu.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/321456613",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -85864,6 +90789,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-42032e04-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/LINOAS_SEIBU.jpg",
+        alt: "リノアス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:LINOAS_SEIBU.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/159659110",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -86426,6 +91362,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-3b2e3b78-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Rinku_Pleasure_Town_SEACLE.jpg",
+        alt: "りんくうプレジャータウンシークル public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Rinku_Pleasure_Town_SEACLE.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.seacle.jp/",
     sourceUrl: "https://www.seacle.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -86681,7 +91629,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/666222931",
+    media: [
+      {
+        id: "osm-shop-facility-55319c04-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Luvit_town_nakatsugawa.jpg",
+        alt: "ルビットタウン中津川 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Luvit_town_nakatsugawa.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://luvit-town.jp/nakatsugawa/",
+    sourceUrl: "https://luvit-town.jp/nakatsugawa/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -86765,7 +91726,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/16502754",
+    media: [
+      {
+        id: "osm-shop-facility-9bb144e2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shinjuku-STA_East-entrance_2023.jpg",
+        alt: "ルミネエスト新宿 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shinjuku-STA_East-entrance_2023.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.lumine.ne.jp/est/",
+    sourceUrl: "https://www.lumine.ne.jp/est/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -86851,7 +91825,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/116596174",
+    media: [
+      {
+        id: "osm-shop-facility-ef5f9a6b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Lumine_Shinjuku.jpg",
+        alt: "ルミネ新宿 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Lumine_Shinjuku.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.lumine.ne.jp/shinjuku/",
+    sourceUrl: "https://www.lumine.ne.jp/shinjuku/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87021,7 +92008,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/13583165697",
+    websiteUrl: "https://www.lumine.ne.jp/yurakucho/",
+    sourceUrl: "https://www.lumine.ne.jp/yurakucho/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87895,7 +92883,22 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/5522637126",
+    media: [
+      {
+        id: "osm-shop-facility-bca6e60b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/WAI_PLAZA_Wajima_1.jpg",
+        alt: "ワイプラザ輪島 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:WAI_PLAZA_Wajima_1.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "https://www.yasusaki.co.jp/store_detail/%e3%83%af%e3%82%a4%e3%83%97%e3%83%a9%e3%82%b6%e8%bc%aa%e5%b3%b6%e5%ba%97/",
+    sourceUrl:
+      "https://www.yasusaki.co.jp/store_detail/%e3%83%af%e3%82%a4%e3%83%97%e3%83%a9%e3%82%b6%e8%bc%aa%e5%b3%b6%e5%ba%97/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87979,7 +92982,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/193830877",
+    media: [
+      {
+        id: "osm-shop-facility-c9ac4b07-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/One's_Mall%2C_Chiba.jpg",
+        alt: "ワンズモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:One's_Mall%2C_Chiba.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.ones-mall.net/",
+    sourceUrl: "https://www.ones-mall.net/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -88119,7 +93135,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/191354337",
+    websiteUrl: "https://ise-misono-sc.jp/",
+    sourceUrl: "https://ise-misono-sc.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -88260,6 +93277,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d3657c07-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Isetan_Tachikawa_0804.jpg",
+        alt: "伊勢丹 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Isetan_Tachikawa_0804.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/93417200",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -88738,7 +93767,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/4387346193",
+    websiteUrl: "https://yokosuka-mores.jp/",
+    sourceUrl: "https://yokosuka-mores.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -88766,7 +93796,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/143670068",
+    media: [
+      {
+        id: "osm-shop-facility-d03f65cc-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yokohama_VIVRE.jpg",
+        alt: "横浜ビブレ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Yokohama_VIVRE.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.vivre-shop.jp/yokohama",
+    sourceUrl: "https://www.vivre-shop.jp/yokohama",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -88794,7 +93836,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/8442421179",
+    media: [
+      {
+        id: "osm-shop-facility-9151a55c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/BAY_QUARTER_YOKOHAMA_01.JPG",
+        alt: "横浜ベイクォーター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:BAY_QUARTER_YOKOHAMA_01.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.yokohama-bayquarter.com/",
+    sourceUrl: "https://www.yokohama-bayquarter.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -88822,7 +93877,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/909264189",
+    media: [
+      {
+        id: "osm-shop-facility-2581f5e3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/BAY_QUARTER_YOKOHAMA_01.JPG",
+        alt: "横浜ベイクォーター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:BAY_QUARTER_YOKOHAMA_01.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.yokohama-bayquarter.com/",
+    sourceUrl: "https://www.yokohama-bayquarter.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -88934,6 +94002,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c4490a10-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Okayama_VIVRE.jpg",
+        alt: "岡山ビブレ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Okayama_VIVRE.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/12570416059",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -89018,6 +94097,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-0980ff56-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Okajima_20240630.png",
+        alt: "岡島 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Okajima_20240630.png",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1794325919",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -89074,6 +94165,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-aea1829e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ogikubo_townseven.jpg",
+        alt: "荻窪タウンセブン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ogikubo_townseven.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.town7.net/",
     sourceUrl: "https://www.town7.net/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -89611,7 +94714,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/5761152721",
+    media: [
+      {
+        id: "osm-shop-facility-0305514f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kawaramachi_Flag.jpg",
+        alt: "瓦町FLAG public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kawaramachi_Flag.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.tenmaya.co.jp/takamatsu/",
+    sourceUrl: "http://www.tenmaya.co.jp/takamatsu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -89723,7 +94839,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/182670552",
+    media: [
+      {
+        id: "osm-shop-facility-c87861d1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kobe_Marui_Japan01s3.jpg",
+        alt: "丸井 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kobe_Marui_Japan01s3.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.0101.co.jp/083/",
+    sourceUrl: "https://www.0101.co.jp/083/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91192,7 +96321,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/385648256",
+    websiteUrl: "http://www.miyakocity.com/",
+    sourceUrl: "http://www.miyakocity.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91276,6 +96406,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-403a80b4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/USHIMADO_%D0%A2%D0%95%D0%A0%D0%95%D0%9C%D0%9E%D0%9A_exterior_1.jpg",
+        alt: "牛窓テレモーク public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:USHIMADO_%D0%A2%D0%95%D0%A0%D0%95%D0%9C%D0%9E%D0%9A_exterior_1.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://ushimadotepemok.com/",
     sourceUrl: "https://ushimadotepemok.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -91362,6 +96504,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-5461f71e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Keio_Mall_Annex_and_around_-53319.jpeg",
+        alt: "京王モールアネックス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Keio_Mall_Annex_and_around_-53319.jpeg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.keiochika.co.jp/mall/",
     sourceUrl: "https://www.keiochika.co.jp/mall/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -91419,7 +96573,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/155917520",
+    websiteUrl: "http://www.keio-ekichika.com/station/takahatafudo/",
+    sourceUrl: "http://www.keio-ekichika.com/station/takahatafudo/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91447,7 +96602,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/2196765056",
+    websiteUrl: "http://www.keio-ekichika.com/station/keiotamacenter/",
+    sourceUrl: "http://www.keio-ekichika.com/station/keiotamacenter/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91532,7 +96688,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/55897085",
+    media: [
+      {
+        id: "osm-shop-facility-b741f3b0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shinjuku_Keio_Department_Store_2012.JPG",
+        alt: "京王百貨店新宿店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shinjuku_Keio_Department_Store_2012.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.keionet.com/info/shinjuku/",
+    sourceUrl: "https://www.keionet.com/info/shinjuku/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91672,6 +96841,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-78bc9baa-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Coms_Garden0019.jpg",
+        alt: "京橋コムズガーデン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Coms_Garden0019.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://coms.osaka-chikagai.jp/",
     sourceUrl: "https://coms.osaka-chikagai.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -91701,7 +96882,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/6640371676",
+    media: [
+      {
+        id: "osm-shop-facility-fec13fc2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Keihan_City_Mall_in_201409.JPG",
+        alt: "京阪シティモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Keihan_City_Mall_in_201409.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.citymall.jp/",
+    sourceUrl: "https://www.citymall.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91729,7 +96923,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/2128434816",
+    websiteUrl: "http://keihan-mall.jp/",
+    sourceUrl: "http://keihan-mall.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91870,6 +97065,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-39285d41-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Avanti_-_panoramio.jpg",
+        alt: "京都アバンティ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Avanti_-_panoramio.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.kyoto-avanti.com",
     sourceUrl: "https://www.kyoto-avanti.com",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -91899,6 +97106,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-79be6237-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kyotofamily.JPG",
+        alt: "京都ファミリー public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Kyotofamily.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://kyotofamily.com",
     sourceUrl: "https://kyotofamily.com",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -92467,7 +97685,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/9893409337",
+    media: [
+      {
+        id: "osm-shop-facility-d8cd32d5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/MeitetsuM%2CZA.JPG",
+        alt: "金沢エムザ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:MeitetsuM%2CZA.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.kmza.jp/",
+    sourceUrl: "https://www.kmza.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -92495,7 +97725,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/220985532",
+    media: [
+      {
+        id: "osm-shop-facility-4bfa7751-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kanazawa_Station_AEON_Kanazawa.jpg",
+        alt: "金沢フォーラス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kanazawa_Station_AEON_Kanazawa.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.forus.co.jp/kanazawa",
+    sourceUrl: "https://www.forus.co.jp/kanazawa",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -92720,6 +97963,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b3dfc1f1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kushiro_Fisherman's_Wharf_MOO01n.jpg",
+        alt: "釧路フィッシャーマンズワーフMOO public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kushiro_Fisherman's_Wharf_MOO01n.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.moo946.com/",
     sourceUrl: "http://www.moo946.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -92806,6 +98061,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f3aac660-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/KyodoCorty.jpg",
+        alt: "経堂コルティ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:KyodoCorty.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/311704092",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -93230,6 +98496,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-688ae0c9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/You_me_Town_Hikari_no_Mori_2010.JPG",
+        alt: "光の森 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:You_me_Town_Hikari_no_Mori_2010.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/relation/13658855",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -93624,7 +98902,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/359031147",
+    media: [
+      {
+        id: "osm-shop-facility-582ae747-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hiroshima_mitsukoshi_201109.JPG",
+        alt: "広島三越 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hiroshima_mitsukoshi_201109.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.mitsukoshi.mistore.jp/hiroshima.html",
+    sourceUrl: "https://www.mitsukoshi.mistore.jp/hiroshima.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -93793,7 +99084,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/556025263",
+    media: [
+      {
+        id: "osm-shop-facility-c3944889-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ezuriko_Shopping_Center%2C_PAL_180520.jpg",
+        alt: "江釣子ショッピングセンターパル public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ezuriko_Shopping_Center%2C_PAL_180520.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://esc-pal.com/",
+    sourceUrl: "https://esc-pal.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -93849,6 +99153,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-11b263ec-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kohnandai_05.jpg",
+        alt: "港南台バーズ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Kohnandai_05.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.konandai-birds.com/",
     sourceUrl: "https://www.konandai-birds.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -93878,6 +99193,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-4d31de65-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kohoku_tokyu_department_Aug_2006.jpg",
+        alt: "港北TOKYU S.C. public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kohoku_tokyu_department_Aug_2006.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/250157923",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -93906,6 +99233,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-75acad7c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/KOHOKU-MINAMO.JPG",
+        alt: "港北みなも public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:KOHOKU-MINAMO.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/148654362",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -94075,7 +99413,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/244649490",
+    media: [
+      {
+        id: "osm-shop-facility-b5faf367-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takasaki-station_west.JPG",
+        alt: "高崎モントレー public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takasaki-station_west.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.takasakitb.co.jp/t-montres/",
+    sourceUrl: "https://www.takasakitb.co.jp/t-montres/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -94161,7 +99512,22 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/380024398",
+    media: [
+      {
+        id: "osm-shop-facility-b7d8b0e4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takamatsu-Mitsukoshi.JPG",
+        alt: "高松三越 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takamatsu-Mitsukoshi.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.mitsukoshi.co.jp/shop?EcLogicName=storeinfo.storetopInfo&tenpoCd=16",
+    sourceUrl:
+      "http://www.mitsukoshi.co.jp/shop?EcLogicName=storeinfo.storetopInfo&tenpoCd=16",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -94189,7 +99555,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/183842504",
+    media: [
+      {
+        id: "osm-shop-facility-1be8b6c4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Koch_daimaru01s3872.jpg",
+        alt: "高知大丸 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Koch_daimaru01s3872.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.kochi-daimaru.co.jp/",
+    sourceUrl: "https://www.kochi-daimaru.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -94274,6 +99653,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d32f17c9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takashimaya_Nihonbashi_Store_2010.jpg",
+        alt: "高島屋 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takashimaya_Nihonbashi_Store_2010.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.takashimaya.co.jp/osaka",
     sourceUrl: "https://www.takashimaya.co.jp/osaka",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -94587,6 +99978,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-589ee4e0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takashimaya_east_annex_-_panoramio.jpg",
+        alt: "高島屋東別館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takashimaya_east_annex_-_panoramio.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/208965148",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -94896,7 +100299,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/12151950470",
+    websiteUrl: "http://www.saga-tamaya.co.jp/",
+    sourceUrl: "http://www.saga-tamaya.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -95036,6 +100440,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c0ebe4a0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/MaxValu_Sunada-bashi_Shopping_Center_20150921.JPG",
+        alt: "砂田橋ショッピングセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:MaxValu_Sunada-bashi_Shopping_Center_20150921.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/199290603",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -95204,6 +100620,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b1c5407c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Umeda_Hankyu_Department_Store.JPG",
+        alt: "阪急うめだ本店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Umeda_Hankyu_Department_Store.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.hankyu-dept.co.jp/honten",
     sourceUrl: "https://www.hankyu-dept.co.jp/honten",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -95233,7 +100661,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/332292109",
+    media: [
+      {
+        id: "osm-shop-facility-b2c0a180-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hankyu_Kappa-yokocho.JPG",
+        alt: "阪急かっぱ横丁 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hankyu_Kappa-yokocho.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://kappa.hankyu.co.jp/",
+    sourceUrl: "https://kappa.hankyu.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -95374,7 +100815,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/2391624258",
+    websiteUrl: "https://website.hankyu-dept.co.jp/takatsuki/",
+    sourceUrl: "https://website.hankyu-dept.co.jp/takatsuki/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -95487,7 +100929,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/69730567",
+    media: [
+      {
+        id: "osm-shop-facility-1da69622-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/HANKYU_NISHINOMIYA_GARDENS.JPG",
+        alt: "阪急西宮ガーデンズ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:HANKYU_NISHINOMIYA_GARDENS.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://nishinomiya-gardens.com/",
+    sourceUrl: "https://nishinomiya-gardens.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -96051,6 +101506,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-c72f9fec-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Stellar_Place_Sapporo_exterior.jpg",
+        alt: "札幌ステラプレイス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Stellar_Place_Sapporo_exterior.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.stellarplace.net/",
     sourceUrl: "https://www.stellarplace.net/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -96080,6 +101547,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-2923482d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sapporo_PARCO_01.jpg",
+        alt: "札幌パルコ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sapporo_PARCO_01.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://sapporo.parco.jp/",
     sourceUrl: "https://sapporo.parco.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -96109,6 +101588,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a2c5526f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sapporo_Mitsukoshi_Building_02.jpg",
+        alt: "札幌三越 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sapporo_Mitsukoshi_Building_02.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.mitsukoshi.mistore.jp/sapporo.html",
     sourceUrl: "https://www.mitsukoshi.mistore.jp/sapporo.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -96446,6 +101937,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b943c865-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sendai_Mitsukoshi_Departmentstore.jpg",
+        alt: "三越 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sendai_Mitsukoshi_Departmentstore.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://mitsukoshi.mistore.jp/",
     sourceUrl: "https://mitsukoshi.mistore.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -96926,7 +102429,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/20160422",
+    media: [
+      {
+        id: "osm-shop-facility-f1d3d563-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yamakataya_Department_Store_and_Asahi-dori_Station.jpg",
+        alt: "山形屋 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yamakataya_Department_Store_and_Asahi-dori_Station.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.yamakataya.co.jp/",
+    sourceUrl: "https://www.yamakataya.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -97627,6 +103143,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-12c1fe15-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E9%B9%BF%E5%B3%B6%E3%82%B7%E3%83%A7%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC.jpg",
+        alt: "鹿島ショッピングセンター エブリア public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E9%B9%BF%E5%B3%B6%E3%82%B7%E3%83%A7%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/359234312",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -97936,6 +103464,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-bf3f574b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Akita_OPA_20180520.jpg",
+        alt: "秋田オーパ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Akita_OPA_20180520.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.opa-club.com/akita",
     sourceUrl: "https://www.opa-club.com/akita",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -98139,6 +103679,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-edaac9df-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AKIHABARA_New_Radio_Kaikan.jpg",
+        alt: "秋葉原ラジオ会館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:AKIHABARA_New_Radio_Kaikan.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.akihabara-radiokaikan.co.jp/",
     sourceUrl: "https://www.akihabara-radiokaikan.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -98168,6 +103720,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d8c599c9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shibuya_Parco_191229b.jpg",
+        alt: "渋谷パルコ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shibuya_Parco_191229b.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://shibuya.parco.jp/",
     sourceUrl: "https://shibuya.parco.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -98197,6 +103761,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-9f114177-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shibuya_Hikarie_%E2%85%A1.JPG",
+        alt: "渋谷ヒカリエ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shibuya_Hikarie_%E2%85%A1.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.hikarie.jp/",
     sourceUrl: "https://www.hikarie.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -98425,6 +104001,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-3b87328b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Odakyu_ace_entrance_shinjuku_tokyo_2009.JPG",
+        alt: "小田急エース public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Odakyu_ace_entrance_shinjuku_tokyo_2009.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.odakyu-ace.jp/",
     sourceUrl: "https://www.odakyu-ace.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -98595,7 +104183,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/11251996215",
+    media: [
+      {
+        id: "osm-shop-facility-02fdfeb4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Odakyu-Department-Store_Shinjuku-Store.jpg",
+        alt: "小田急百貨店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Odakyu-Department-Store_Shinjuku-Store.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.odakyu-dept.co.jp/",
+    sourceUrl: "https://www.odakyu-dept.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -98623,7 +104224,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/294442348",
+    websiteUrl: "https://www.odakyu-dept.co.jp/machida/index.html",
+    sourceUrl: "https://www.odakyu-dept.co.jp/machida/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -98932,6 +104534,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-104c65e6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsuya_Ginza_2012.jpg",
+        alt: "松屋銀座 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsuya_Ginza_2012.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.matsuya.com/",
     sourceUrl: "https://www.matsuya.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -99241,6 +104855,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-3341fc12-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsuzakaya_Shizuoka.jpg",
+        alt: "松坂屋 静岡店 (本館) public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsuzakaya_Shizuoka.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.matsuzakaya.co.jp/shizuoka/",
     sourceUrl: "https://www.matsuzakaya.co.jp/shizuoka/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -99270,6 +104896,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-2c6a451f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsuzakaya-toyota.jpg",
+        alt: "松坂屋 豊田店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsuzakaya-toyota.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/227944893",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -99438,7 +105076,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/178710566",
+    websiteUrl: "https://www.shonan-fill.com/",
+    sourceUrl: "https://www.shonan-fill.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -99606,6 +105245,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-1d953c2c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/UEHONMACHI_YUFURA_3.JPG",
+        alt: "上本町YUFURA public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:UEHONMACHI_YUFURA_3.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/4702733747",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -99916,7 +105567,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1225793891",
+    websiteUrl: "https://shintsunashima-square.com/",
+    sourceUrl: "https://shintsunashima-square.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -99972,7 +105624,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1413072463",
+    media: [
+      {
+        id: "osm-shop-facility-35bf06c8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Subnade_entrance_shinjuku_tokyo_2009.JPG",
+        alt: "新宿サブナード public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Subnade_entrance_shinjuku_tokyo_2009.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.subnade.co.jp/",
+    sourceUrl: "http://www.subnade.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -100000,6 +105665,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ad7bb6a7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shinjuku_piccadilly_2009.JPG",
+        alt: "新宿ピカデリー public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shinjuku_piccadilly_2009.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/relation/16518772",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -100028,6 +105705,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-bea52a98-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Flags_(Shinjuku).jpg",
+        alt: "新宿フラッグス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Flags_(Shinjuku).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.flagsweb.jp",
     sourceUrl: "https://www.flagsweb.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -100085,6 +105774,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-5e2646cb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Marui-City-Shibuya-01.jpg",
+        alt: "新宿マルイ本館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Marui-City-Shibuya-01.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.0101.co.jp/003/",
     sourceUrl: "https://www.0101.co.jp/003/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -100114,6 +105815,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-6b51a225-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shinshizuoka-cenova.jpg",
+        alt: "新静岡セノバ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shinshizuoka-cenova.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.cenova.jp/",
     sourceUrl: "https://www.cenova.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -100396,7 +106109,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/230775847",
+    media: [
+      {
+        id: "osm-shop-facility-23e8dc5c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/130720_Kobe_Anpanman_Children's_Museum_%26_Mall_Kobe_Japan01s3.jpg",
+        alt: "神戸アンパンマンこどもミュージアム&モール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:130720_Kobe_Anpanman_Children's_Museum_%26_Mall_Kobe_Japan01s3.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.kobe-anpanman.jp/",
+    sourceUrl: "https://www.kobe-anpanman.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -100452,7 +106178,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/133487365",
+    media: [
+      {
+        id: "osm-shop-facility-0f8aac29-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hankyu_Department_Stores_Kobe_store_20191104.jpg",
+        alt: "神戸阪急 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hankyu_Department_Stores_Kobe_store_20191104.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.hankyu-dept.co.jp/kobe/",
+    sourceUrl: "https://www.hankyu-dept.co.jp/kobe/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -101324,7 +107063,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/95741110",
+    media: [
+      {
+        id: "osm-shop-facility-b1615ecb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Seijyo_Corty.JPG",
+        alt: "成城corty public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Seijyo_Corty.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.odakyu-sc.com/seijo-corty/",
+    sourceUrl: "https://www.odakyu-sc.com/seijo-corty/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -101439,6 +107190,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-0d066a8f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hoshigaoka_Mitsukoshi_20150527.JPG",
+        alt: "星ヶ丘三越 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hoshigaoka_Mitsukoshi_20150527.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/155091427",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -101523,7 +107286,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/10901058734",
+    websiteUrl: "https://www.hoshiten-qlay.com/",
+    sourceUrl: "https://www.hoshiten-qlay.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -101551,7 +107315,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/10901058736",
+    websiteUrl: "https://www.hoshiten-qlay.com/",
+    sourceUrl: "https://www.hoshiten-qlay.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -101579,7 +107344,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/10901058735",
+    websiteUrl: "https://www.hoshiten-qlay.com/",
+    sourceUrl: "https://www.hoshiten-qlay.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -101607,7 +107373,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/10901058737",
+    websiteUrl: "https://www.hoshiten-qlay.com/",
+    sourceUrl: "https://www.hoshiten-qlay.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -101944,6 +107711,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-038523bc-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nishi-ginza_chance_center.jpg",
+        alt: "西銀座 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nishi-ginza_chance_center.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.nishiginza.co.jp/",
     sourceUrl: "https://www.nishiginza.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -119438,6 +125217,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-fbba41c5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Akita_Chuo_Building_20190707.jpg",
+        alt: "西武 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Akita_Chuo_Building_20190707.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.sogo-seibu.jp/akita/",
     sourceUrl: "https://www.sogo-seibu.jp/akita/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -121097,6 +126888,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-fbd241a0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/PEWRE_Chitose.JPG",
+        alt: "千歳ステーションプラザ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:PEWRE_Chitose.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.pewre.com/",
     sourceUrl: "https://www.pewre.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -121350,7 +127152,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/160932209",
+    media: [
+      {
+        id: "osm-shop-facility-d8c9d0b9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kawasaki-DICE.JPG",
+        alt: "川崎ダイス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Kawasaki-DICE.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.kawasaki-dice.jp/",
+    sourceUrl: "https://www.kawasaki-dice.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -121406,6 +127220,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-396566d0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/KawasakiLeFront.jpg",
+        alt: "川崎ルフロン public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:KawasakiLeFront.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.lefront.jp/",
     sourceUrl: "https://www.lefront.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -121604,6 +127430,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-97a40ed3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Asakusa-ROX.JPG",
+        alt: "浅草ROX public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Asakusa-ROX.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.rox.co.jp/",
     sourceUrl: "https://www.rox.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -121662,6 +127499,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ce6bde01-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Funabashi_Face_Bdg.jpg",
+        alt: "船橋フェイスビル public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Funabashi_Face_Bdg.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/94499940",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -121888,7 +127737,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/645895970",
+    websiteUrl: "https://sotetsu-life.com/sagamino/",
+    sourceUrl: "https://sotetsu-life.com/sagamino/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -122114,6 +127964,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-4eaefbbf-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E5%A4%9A%E6%91%A9%E3%82%AB%E3%83%AA%E3%83%A8%E3%83%B3%E9%A4%A8.jpg",
+        alt: "多摩カリヨン館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E5%A4%9A%E6%91%A9%E3%82%AB%E3%83%AA%E3%83%A8%E3%83%B3%E9%A4%A8.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/2195653901",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -122142,6 +128004,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-331f8e82-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Daikanyama_T-SITE_2016-04-04.jpg",
+        alt: "代官山 T-SITE public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Daikanyama_T-SITE_2016-04-04.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://real.tsite.jp/daikanyama/",
     sourceUrl: "http://real.tsite.jp/daikanyama/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -122199,6 +128073,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-f03c1fa3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Daimaru_Shinsaibashi_Kitakan.JPG",
+        alt: "大丸 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Daimaru_Shinsaibashi_Kitakan.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.daimaru.co.jp/umedamise/",
     sourceUrl: "https://www.daimaru.co.jp/umedamise/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -122372,6 +128258,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a004a6bc-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Daimaru_Kobe_Kyukyoryuchi.jpg",
+        alt: "大丸 神戸店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Daimaru_Kobe_Kyukyoryuchi.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.daimaru.co.jp/kobe/",
     sourceUrl: "https://www.daimaru.co.jp/kobe/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -122486,6 +128384,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-24601479-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/GranTokyo_North_Tower.JPG",
+        alt: "大丸東京店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:GranTokyo_North_Tower.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.daimaru.co.jp/",
     sourceUrl: "https://www.daimaru.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -122515,7 +128425,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/27237609",
+    websiteUrl: "https://www.sogo-seibu.jp/omiya/",
+    sourceUrl: "https://www.sogo-seibu.jp/omiya/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -122769,7 +128680,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/104121025",
+    media: [
+      {
+        id: "osm-shop-facility-44245d43-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/RESORT_OUTLETS_OARAI_view.jpg",
+        alt: "大洗シーサイドステーション public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:RESORT_OUTLETS_OARAI_view.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://oarai-seaside.com/",
+    sourceUrl: "https://oarai-seaside.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -123222,6 +129146,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a427c54a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Wakkanai_Fukukoichiba_18-06-02.jpg",
+        alt: "稚内副港市場 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Wakkanai_Fukukoichiba_18-06-02.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://fukkoichiba.hokkaido.jp/",
     sourceUrl: "https://fukkoichiba.hokkaido.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -123927,6 +129863,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-1b1e8078-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Toba_Shopping_Plaza_Hello_20090301.jpg",
+        alt: "鳥羽ショッピングプラザ ハロー public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Toba_Shopping_Plaza_Hello_20090301.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/714311873",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -123955,6 +129903,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-da132f6c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Toba_1_ban_gai.jpg",
+        alt: "鳥羽一番街 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Toba_1_ban_gai.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.toba1ban.co.jp/",
     sourceUrl: "https://www.toba1ban.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -124322,7 +130281,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/843356420",
+    media: [
+      {
+        id: "osm-shop-facility-b107e162-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tenjin-underground-mall.jpg",
+        alt: "天神地下街 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tenjin-underground-mall.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.tenchika.com/",
+    sourceUrl: "https://www.tenchika.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -124548,6 +130520,17 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-a83e75de-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tenmayaoffice.jpg",
+        alt: "天満屋 本館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Tenmayaoffice.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.tenmaya.co.jp/okayama/",
     sourceUrl: "https://www.tenmaya.co.jp/okayama/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -124690,6 +130673,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-200f7476-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fukuyama_Tenmaya02bs3200.jpg",
+        alt: "天満屋福山店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fukuyama_Tenmaya02bs3200.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.tenmaya.co.jp/fukuyama/",
     sourceUrl: "https://www.tenmaya.co.jp/fukuyama/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -125307,6 +131302,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-fe311759-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tokyu_Plaza_Ginza_20241021.jpg",
+        alt: "東急プラザ銀座 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tokyu_Plaza_Ginza_20241021.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://ginza.tokyu-plaza.com/",
     sourceUrl: "https://ginza.tokyu-plaza.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -125422,6 +131429,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ee48d564-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sapporo-Tokyu-Department-Store01.JPG",
+        alt: "東急百貨店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sapporo-Tokyu-Department-Store01.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.tokyu-dept.co.jp/",
     sourceUrl: "https://www.tokyu-dept.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -125451,6 +131470,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-39a4138a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tokyu_Kichijoji_201410.JPG",
+        alt: "東急百貨店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tokyu_Kichijoji_201410.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.tokyu-dept.co.jp/kichijouji/",
     sourceUrl: "https://www.tokyu-dept.co.jp/kichijouji/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -125480,6 +131511,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-ae2e03bd-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E6%9D%B1%E6%80%A5%E7%99%BE%E8%B2%A8%E5%BA%97%E3%81%9F%E3%81%BE%E3%83%97%E3%83%A9%E3%83%BC%E3%82%B6%E5%BA%97_-_Mapillary_(1236059693482116).jpg",
+        alt: "東急百貨店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E6%80%A5%E7%99%BE%E8%B2%A8%E5%BA%97%E3%81%9F%E3%81%BE%E3%83%97%E3%83%A9%E3%83%BC%E3%82%B6%E5%BA%97_-_Mapillary_(1236059693482116).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.tokyu-dept.co.jp/tama-plaza/",
     sourceUrl: "https://www.tokyu-dept.co.jp/tama-plaza/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -125537,6 +131580,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-8d44489a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tokyo_Soramachi_2012.JPG",
+        alt: "東京ソラマチ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tokyo_Soramachi_2012.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.tokyo-solamachi.jp/",
     sourceUrl: "https://www.tokyo-solamachi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -125566,6 +131621,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-59fc53ed-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tokyo_Midtown_Hibiya.jpg",
+        alt: "東京ミッドタウン日比谷 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tokyo_Midtown_Hibiya.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.hibiya.tokyo-midtown.com.e.adj.hp.transer.com/en/",
     sourceUrl: "http://www.hibiya.tokyo-midtown.com.e.adj.hp.transer.com/en/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -125595,6 +131662,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-b6aad548-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tokyo-Kotsu-Kaikan-02.jpg",
+        alt: "東京交通会館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tokyo-Kotsu-Kaikan-02.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.kotsukaikan.co.jp/",
     sourceUrl: "https://www.kotsukaikan.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -125624,6 +131703,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-4665e6fa-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Higashitotsukanishiguchiplaza.JPG",
+        alt: "東戸塚西口プラザ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Higashitotsukanishiguchiplaza.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/162199317",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -125764,6 +131855,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-3c68776d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tobu_hope_center_entrance_ikebukuro_toshima_tokyo_2009.JPG",
+        alt: "東武ホープセンター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tobu_hope_center_entrance_ikebukuro_toshima_tokyo_2009.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://tobuhopecenter.jp/",
     sourceUrl: "https://tobuhopecenter.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -125821,7 +131924,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/100583550",
+    media: [
+      {
+        id: "osm-shop-facility-d9a1f5a0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tobu_Utsunomiya_Department_Store_from_City_Hall.jpg",
+        alt: "東武宇都宮百貨店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tobu_Utsunomiya_Department_Store_from_City_Hall.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.tobu-u-dept.jp/",
+    sourceUrl: "http://www.tobu-u-dept.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -125877,7 +131993,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1097708412",
+    media: [
+      {
+        id: "osm-shop-facility-04aa3fdf-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Station-Funabashi-North-Entry.jpg",
+        alt: "東武百貨店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Station-Funabashi-North-Entry.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.tobu-dept.jp/funabashi/",
+    sourceUrl: "https://www.tobu-dept.jp/funabashi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -125989,7 +132118,19 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/205749231",
+    media: [
+      {
+        id: "osm-shop-facility-32f80d4a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/FUJII_DAIMARU.JPG",
+        alt: "藤井大丸 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:FUJII_DAIMARU.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.fujiidaimaru.co.jp/",
+    sourceUrl: "https://www.fujiidaimaru.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -126073,7 +132214,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/225757247",
+    media: [
+      {
+        id: "osm-shop-facility-4bfe67a0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fujisaki_Department_Store_main_building_2022.jpg",
+        alt: "藤崎 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fujisaki_Department_Store_main_building_2022.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.fujisaki.co.jp/",
+    sourceUrl: "http://www.fujisaki.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -126440,6 +132594,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-6c07450f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Naha_Main_Place03n3200.jpg",
+        alt: "那覇メインプレイス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Naha_Main_Place03n3200.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.san-a.co.jp/nahamainplace/",
     sourceUrl: "https://www.san-a.co.jp/nahamainplace/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -126526,6 +132692,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-82a7af61-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Minamisoma_Jusmall.jpg",
+        alt: "南相馬ジャスモール public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Minamisoma_Jusmall.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/3697969202",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -126638,7 +132816,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1717430687",
+    media: [
+      {
+        id: "osm-shop-facility-7865fb34-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tokyu_Department_Store(HIYOSHI).JPG",
+        alt: "日吉東急 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tokyu_Department_Store(HIYOSHI).JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.tokyu-dept.co.jp/hiyoshi/",
+    sourceUrl: "https://www.tokyu-dept.co.jp/hiyoshi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -126750,6 +132941,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-911f874a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E6%97%A5%E7%94%9F%E4%B8%AD%E5%A4%AE%E3%82%B5%E3%83%94%E3%82%A8_-_panoramio.jpg",
+        alt: "日生中央サピエ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E6%97%A5%E7%94%9F%E4%B8%AD%E5%A4%AE%E3%82%B5%E3%83%94%E3%82%A8_-_panoramio.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/127049075",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -126807,7 +133010,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/7872611",
+    media: [
+      {
+        id: "osm-shop-facility-5070e7ec-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mitsukoshi_Nihonbashi_main_store_5.jpg",
+        alt: "日本橋三越本店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mitsukoshi_Nihonbashi_main_store_5.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.mistore.jp/store/nihombashi.html",
+    sourceUrl: "https://www.mistore.jp/store/nihombashi.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -126835,7 +133051,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/449621789",
+    media: [
+      {
+        id: "osm-shop-facility-0a9985b7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nihonbashimuromachi_Mitsui_Tower_View_201912.jpg",
+        alt: "日本橋室町三井タワー [COREDO室町テラス] public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nihonbashimuromachi_Mitsui_Tower_View_201912.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.muromachi-mitsui-tower.jp/",
+    sourceUrl: "https://www.muromachi-mitsui-tower.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -126920,7 +133149,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/289138158",
+    media: [
+      {
+        id: "osm-shop-facility-65950d18-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Noto_Shokusai_Ichiba_-_Nanao%2C_Ishikawa%2C_Japan_-_DSC00704.jpg",
+        alt: "能登食祭市場 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Noto_Shokusai_Ichiba_-_Nanao%2C_Ishikawa%2C_Japan_-_DSC00704.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.shokusai.co.jp/",
+    sourceUrl: "http://www.shokusai.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -127032,7 +133274,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/5809137353",
+    media: [
+      {
+        id: "osm-shop-facility-7e3e8982-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hakata_Hankyu_Depart_2011.jpg",
+        alt: "博多阪急 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hakata_Hankyu_Depart_2011.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.hankyu-dept.co.jp/hakata/",
+    sourceUrl: "http://www.hankyu-dept.co.jp/hakata/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -127175,7 +133430,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/385706525",
+    media: [
+      {
+        id: "osm-shop-facility-3642de32-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/KASHIWA_TAKASHIMAYA_SHIN-KAN.JPG",
+        alt: "柏高島屋 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:KASHIWA_TAKASHIMAYA_SHIN-KAN.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.takashimaya.co.jp/kashiwa/stemo/",
+    sourceUrl: "https://www.takashimaya.co.jp/kashiwa/stemo/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -127430,6 +133698,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-d572a484-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yaesu_shopping_mall_entrance_tokyo_station_2009.JPG",
+        alt: "八重洲地下街 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yaesu_shopping_mall_entrance_tokyo_station_2009.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.yaechika.com/",
     sourceUrl: "https://www.yaechika.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -127487,7 +133767,8 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/443942146",
+    websiteUrl: "https://www.yagihashi.co.jp/",
+    sourceUrl: "https://www.yagihashi.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -127655,6 +133936,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-20718b24-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ekimaecho%2C_Himeji%2C_Hyogo_Prefecture_670-0927%2C_Japan_-_panoramio.jpg",
+        alt: "姫路山陽百貨店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ekimaecho%2C_Himeji%2C_Hyogo_Prefecture_670-0927%2C_Japan_-_panoramio.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.sanyo-dp.co.jp/index.html",
     sourceUrl: "https://www.sanyo-dp.co.jp/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -127712,6 +134005,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-3e21d8f9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Omotesando_Hills_2012.JPG",
+        alt: "表参道ヒルズ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Omotesando_Hills_2012.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.omotesandohills.com",
     sourceUrl: "http://www.omotesandohills.com",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -127769,6 +134074,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-187ac2af-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyama_Station_Front_CiC.jpg",
+        alt: "富山ステーションフロントCiC public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Toyama_Station_Front_CiC.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.cicnavi.com/",
     sourceUrl: "https://www.cicnavi.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -127967,6 +134284,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-e4ecf212-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Solaria_Terminal_Building_-_01.JPG",
+        alt: "福岡三越 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Solaria_Terminal_Building_-_01.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.iwataya-mitsukoshi.mistore.jp/mitsukoshi.html",
     sourceUrl: "https://www.iwataya-mitsukoshi.mistore.jp/mitsukoshi.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -128024,7 +134353,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/359030898",
+    media: [
+      {
+        id: "osm-shop-facility-3fba23d5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fukuya-honten_140812.JPG",
+        alt: "福屋 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fukuya-honten_140812.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.fukuya-dept.co.jp/honten/",
+    sourceUrl: "https://www.fukuya-dept.co.jp/honten/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -128504,7 +134846,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1159017723",
+    media: [
+      {
+        id: "osm-shop-facility-f2e4712b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E8%B1%8A%E6%B4%B2%E5%8D%83%E5%AE%A2%E4%B8%87%E6%9D%A5%E3%81%A8%E7%92%B0%E7%8A%B62%E5%8F%B7%E7%B7%9A.jpg",
+        alt: "豊洲 千客万来 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E8%B1%8A%E6%B4%B2%E5%8D%83%E5%AE%A2%E4%B8%87%E6%9D%A5%E3%81%A8%E7%92%B0%E7%8A%B62%E5%8F%B7%E7%B7%9A.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.toyosu-senkyakubanrai.jp/",
+    sourceUrl: "https://www.toyosu-senkyakubanrai.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -128926,6 +135281,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-3c93d02c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Makinohara_MORE.JPG",
+        alt: "牧の原MORE public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Makinohara_MORE.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/3125661626",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -128982,6 +135349,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-8392e641-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hirakata-T-SITE.jpg",
+        alt: "枚方T-SITE public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hirakata-T-SITE.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://real.tsite.jp/hirakata/",
     sourceUrl: "http://real.tsite.jp/hirakata/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -130191,6 +136570,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-fab949eb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Konoha_Mall_Hashimoto.jpg",
+        alt: "木の葉モール橋本 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Konoha_Mall_Hashimoto.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://konohamall.com/",
     sourceUrl: "https://konohamall.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -130220,6 +136611,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-85e4fe3b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kinouti_department_store%2C_Akita%2C_Japan_-_20080428.jpg",
+        alt: "木内百貨店 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kinouti_department_store%2C_Akita%2C_Japan_-_20080428.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/463013579",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -130613,6 +137016,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-0d781758-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yodoyabashi-Mitsui-Bldg-200803.jpg",
+        alt: "淀屋橋 odona public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yodoyabashi-Mitsui-Bldg-200803.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/148657763",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -130641,7 +137056,20 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/153529789",
+    media: [
+      {
+        id: "osm-shop-facility-f9d3b1b0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Qanat_Rakuhoku_20100224-001.jpg",
+        alt: "洛北阪急スクエア public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Qanat_Rakuhoku_20100224-001.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://hankyu-square.jp/",
+    sourceUrl: "https://hankyu-square.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -130949,6 +137377,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-1da10c2e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E5%92%8C%E6%AD%8C%E5%B1%B1%E3%83%9F%E3%82%AA.jpg",
+        alt: "和歌山ミオ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E5%92%8C%E6%AD%8C%E5%B1%B1%E3%83%9F%E3%82%AA.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.wakayama-mio.co.jp/",
     sourceUrl: "https://www.wakayama-mio.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -130978,6 +137418,16 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-e51d6759-image-1",
+        type: "image",
+        url: "http://images.koriyama.io/20150516/1431757447.jpg",
+        alt: "和久屋 public image",
+        sourceUrl: "http://images.koriyama.io/20150516/1431757447.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://waku-8.com/",
     sourceUrl: "https://waku-8.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -131007,6 +137457,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-9d4f8274-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ginza_Wako_20241021.jpg",
+        alt: "和光 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ginza_Wako_20241021.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.wako.co.jp/",
     sourceUrl: "https://www.wako.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -131177,6 +137639,18 @@ export const generatedShopFacilityPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["stroller-friendly"],
+    media: [
+      {
+        id: "osm-shop-facility-510e9782-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takashimaya_Nihonbashi_Store_2010.jpg",
+        alt: "髙島屋 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takashimaya_Nihonbashi_Store_2010.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.takashimaya.co.jp/okayama/",
     sourceUrl: "https://www.takashimaya.co.jp/okayama/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",

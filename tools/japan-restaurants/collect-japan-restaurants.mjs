@@ -1,5 +1,10 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
+import {
+  enrichOsmElementsWithWikidata,
+  mediaFromOsmTags,
+  officialWebsiteUrlFromTags,
+} from "../lib/osm-place-enrichment.mjs";
 
 const OVERPASS_ENDPOINT =
   process.env.OVERPASS_ENDPOINT ?? "https://overpass-api.de/api/interpreter";
@@ -104,6 +109,17 @@ const EXACT_EXCLUDE_NAMES = new Set([
   "食堂",
   "Dining",
 ]);
+
+const RESTAURANT_BRAND_WEBSITES = [
+  [/^Bamiyan\b/i, "https://www.skylark.co.jp/bamiyan/"],
+  [/^Denny's\b/i, "https://www.dennys.jp/"],
+  [/^Joyfull\b/i, "https://www.joyfull.co.jp/"],
+  [/^Kura Sushi\b/i, "https://www.kurasushi.co.jp/"],
+  [/^Royal Host\b/i, "https://www.royalhost.jp/"],
+  [/^Saizeriya\b/i, "https://www.saizeriya.co.jp/"],
+  [/^Soup Stock Tokyo\b/i, "https://www.soup-stock-tokyo.com/"],
+  [/^Sushiro\b/i, "https://www.akindo-sushiro.co.jp/"],
+];
 
 const EXCLUDE_PATTERNS = [
   "居酒屋",
@@ -288,6 +304,10 @@ function isRestaurantAmenity(tags) {
   return ["restaurant", "food_court", "fast_food"].includes(tags.amenity);
 }
 
+function brandWebsiteUrlFor(name) {
+  return RESTAURANT_BRAND_WEBSITES.find(([pattern]) => pattern.test(name))?.[1];
+}
+
 function isLikelyFamilyFriendlyRestaurant(element, existingNames) {
   const tags = element.tags ?? {};
   const rawName = getName(tags);
@@ -346,8 +366,11 @@ function toPlaceInput(element) {
   const tags = element.tags ?? {};
   const name = canonicalName(getName(tags));
   const { latitude, longitude } = getCoordinate(element);
-  const websiteUrl = tags.website ?? tags["contact:website"];
   const osmUrl = sourceUrlFor(element);
+  const placeId = slugify(`${element.type}/${element.id}`);
+  const websiteUrl =
+    officialWebsiteUrlFromTags(tags) ?? brandWebsiteUrlFor(name);
+  const media = mediaFromOsmTags(tags, { id: placeId, name });
   const nursingRoom = hasNursingRoom(tags);
   const diaperChanging = hasDiaperChanging(tags);
   const labels = ["dining"];
@@ -355,7 +378,7 @@ function toPlaceInput(element) {
   if (diaperChanging) labels.push("diaper-changing");
 
   return {
-    id: slugify(`${element.type}/${element.id}`),
+    id: placeId,
     name,
     category: "restaurant",
     latitude,
@@ -372,6 +395,7 @@ function toPlaceInput(element) {
     ...(diaperChanging ? { diaperChanging } : {}),
     tags: ["dining", "stroller-friendly"],
     labels,
+    ...(media.length > 0 ? { media } : {}),
     ...(websiteUrl
       ? {
           websiteUrl,
@@ -567,7 +591,9 @@ async function collectFromElements(elements) {
     }
   }
 
-  const places = [...byKey.values()].map(toPlaceInput);
+  const selectedElements = [...byKey.values()];
+  await enrichOsmElementsWithWikidata(selectedElements);
+  const places = selectedElements.map(toPlaceInput);
   places.sort((a, b) => a.name.localeCompare(b.name, "ja"));
   return places;
 }

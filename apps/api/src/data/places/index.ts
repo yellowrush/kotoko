@@ -60,6 +60,40 @@ const allInputs = [
   ...generatedEventPlaces,
 ];
 
+const kameidoThirdPlaygroundOfficialUrl =
+  "https://www.city.koto.lg.jp/470601/shisetsuannai/kokyo/koen/jidokoen/16566.html";
+
+const placeInputPatches: Record<string, Partial<PlaceInput>> = {
+  "osm-playground-8b67993b": {
+    address: "東京都江東区亀戸3-12-10",
+    municipalityCode: "13108",
+    websiteUrl: kameidoThirdPlaygroundOfficialUrl,
+    sourceUrl: kameidoThirdPlaygroundOfficialUrl,
+    sourceCheckedAt: "2026-08-13T00:00:00.000Z",
+    media: [
+      {
+        id: "osm-playground-8b67993b-placeholder",
+        type: "image",
+        url: "/media/placeholder/playground-1.svg",
+        alt: "亀戸三丁目第3児童遊園の仮画像",
+        credit:
+          "Kodoko placeholder (official public page has no reusable media; OSM way 148642773)",
+        license: "placeholder-blocked",
+        sourceUrl: kameidoThirdPlaygroundOfficialUrl,
+        cover: true,
+      },
+    ],
+    provenance: [
+      {
+        type: "official",
+        name: "江東区 亀戸三丁目児童遊園",
+        url: kameidoThirdPlaygroundOfficialUrl,
+        fetchedAt: "2026-08-13T00:00:00.000Z",
+      },
+    ],
+  },
+};
+
 function eventDedupeKey(input: PlaceInput): string {
   return `${input.name.normalize("NFKC").trim()}|${input.municipalityCode}`;
 }
@@ -75,7 +109,21 @@ function dedupeEventPlaces(inputs: PlaceInput[]): PlaceInput[] {
   });
 }
 
+function applyPlaceInputPatch(input: PlaceInput): PlaceInput {
+  const patch = placeInputPatches[input.id];
+  if (!patch) return input;
+
+  return {
+    ...input,
+    ...patch,
+    provenance: patch.provenance
+      ? [...patch.provenance, ...(input.provenance ?? [])]
+      : input.provenance,
+  };
+}
+
 export const seedPlaces: Place[] = dedupeEventPlaces(allInputs)
+  .map(applyPlaceInputPatch)
   .map(withTransitAccess)
   .map(derivePlaceFields);
 

@@ -330,6 +330,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-c1e1587f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hiroshima_City_Childrens_Library_2021-03_ac.jpg",
+        alt: "5-Daysこども図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hiroshima_City_Childrens_Library_2021-03_ac.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.library.city.hiroshima.jp/kodomo/",
     sourceUrl: "http://www.library.city.hiroshima.jp/kodomo/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -1515,7 +1527,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/579628393",
+    media: [
+      {
+        id: "osm-library-0c785eb9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shibata_Station_Complex_Ikunesu_Shibata_exterior_ac.jpg",
+        alt: "イクネスしばた public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shibata_Station_Complex_Ikunesu_Shibata_exterior_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.ikunesu-shibata.jp/index.html",
+    sourceUrl: "http://www.ikunesu-shibata.jp/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1994,6 +2019,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-d8889f1a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Biblioteko_de_JEI.jpg",
+        alt: "エスペラント図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Biblioteko_de_JEI.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.jei.or.jp/hp/materialo/bibli_e.htm",
     sourceUrl: "https://www.jei.or.jp/hp/materialo/bibli_e.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -2163,7 +2200,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/589137556",
+    media: [
+      {
+        id: "osm-library-bb070cbc-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Otepia_Kochi_Library_ac_(3).jpg",
+        alt: "オーテピア public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Otepia_Kochi_Library_ac_(3).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://otepia.kochi.jp/",
+    sourceUrl: "https://otepia.kochi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -2191,6 +2241,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-d53edc88-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Allobu_exterior_in_2018_ac_(1).jpg",
+        alt: "おおぶ文化交流の杜図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Allobu_exterior_in_2018_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/500216386",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -2978,6 +3040,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-68327ee5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Uraranomori_Library_in_Yamauchi.jpg",
+        alt: "こども絵本図書館詩楽の森 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Uraranomori_Library_in_Yamauchi.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.seiwafukushikai.net/facility/urara.html",
     sourceUrl: "https://www.seiwafukushikai.net/facility/urara.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -3148,6 +3222,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-ed9bece8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%81%93%E3%82%82%E3%82%8C%E3%81%B3%E5%A4%A7%E5%92%8C%E7%94%B0%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
+        alt: "こもれび大和田図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%81%93%E3%82%82%E3%82%8C%E3%81%B3%E5%A4%A7%E5%92%8C%E7%94%B0%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/2356798099",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -4033,7 +4119,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420975052",
+    websiteUrl: "https://www.library-city-motosu.jp/",
+    sourceUrl: "https://www.library-city-motosu.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -4117,6 +4204,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-a391d13a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sendai_Mediatheque_2009.jpg",
+        alt: "せんだいメディアテーク public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sendai_Mediatheque_2009.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.smt.jp/",
     sourceUrl: "https://www.smt.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -4344,7 +4443,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420975567",
+    websiteUrl: "http://www.town.tarui.lg.jp/docs/2014121200049/",
+    sourceUrl: "http://www.town.tarui.lg.jp/docs/2014121200049/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -4457,7 +4557,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/7056206505",
+    websiteUrl: "http://tsugaru-city-lib.sakura.ne.jp/",
+    sourceUrl: "http://tsugaru-city-lib.sakura.ne.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -4485,7 +4586,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/464251756",
+    media: [
+      {
+        id: "osm-library-e0f2076f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tsukubamirai_Public_Library.jpg",
+        alt: "つくばみらい市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tsukubamirai_Public_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://lib.city.tsukubamirai.lg.jp/",
+    sourceUrl: "https://lib.city.tsukubamirai.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -4513,6 +4627,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-0502348b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tsukuba_Public_Library_02.jpg",
+        alt: "つくば市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tsukuba_Public_Library_02.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://www.city.tsukuba.lg.jp/kankobunka/bunka/toshokan/index.html",
     sourceUrl:
@@ -4771,6 +4897,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-36022499-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hatsukaichi_City_Hall_Complex009.JPG",
+        alt: "はつかいち市民図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hatsukaichi_City_Hall_Complex009.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.hiroshima-hatsukaichi-lib.jp/docshp/",
     sourceUrl: "https://www.hiroshima-hatsukaichi-lib.jp/docshp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -5701,7 +5839,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423045926",
+    websiteUrl: "http://www.town.minabe.lg.jp/tosyokan/",
+    sourceUrl: "http://www.town.minabe.lg.jp/tosyokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -5786,7 +5925,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423947957",
+    media: [
+      {
+        id: "osm-library-82844c65-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Miyoshi_City_Central_Library_before_2016_ac_(1).jpg",
+        alt: "みよし市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Miyoshi_City_Central_Library_before_2016_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.city.aichi-miyoshi.lg.jp/library/",
+    sourceUrl: "http://www.city.aichi-miyoshi.lg.jp/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -5814,7 +5966,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/991470311",
+    media: [
+      {
+        id: "osm-library-06d03de4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mirai_on_Library.jpg",
+        alt: "ミライon図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mirai_on_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://miraionlibrary.jp/",
+    sourceUrl: "https://miraionlibrary.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -6938,7 +7103,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423986456",
+    websiteUrl: "https://www.aisai-lib.jp/?page_id=66",
+    sourceUrl: "https://www.aisai-lib.jp/?page_id=66",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -6966,6 +7132,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-a7165863-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aikawa_town_Library_2019-05-05_sa.jpg",
+        alt: "愛川町図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aikawa_town_Library_2019-05-05_sa.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library-aikawa-unet.ocn.ne.jp/",
     sourceUrl: "https://www.library-aikawa-unet.ocn.ne.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -7023,7 +7201,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/73419031",
+    media: [
+      {
+        id: "osm-library-2d3aa981-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aichi_Prefectural_Library01.jpg",
+        alt: "愛知県図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aichi_Prefectural_Library01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.aichi-pref-library.jp/",
+    sourceUrl: "https://www.aichi-pref-library.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -7051,7 +7242,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/204405279",
+    media: [
+      {
+        id: "osm-library-618c20aa-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ehime_Prefectural_Library_2021-08_ac.jpg",
+        alt: "愛媛県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ehime_Prefectural_Library_2021-08_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www01.ufinity.jp/ehime/",
+    sourceUrl: "http://www01.ufinity.jp/ehime/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -7192,6 +7396,15 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-4a76f042-video-1",
+        type: "video",
+        url: "https://www.youtube.com/@asahikawa_city_library",
+        alt: "旭川市中央図書館 public video",
+        sourceUrl: "https://www.youtube.com/@asahikawa_city_library",
+      },
+    ],
     websiteUrl: "https://www2.lib.city.asahikawa.hokkaido.jp/",
     sourceUrl: "https://www2.lib.city.asahikawa.hokkaido.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -7221,6 +7434,15 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-66b2dee5-video-1",
+        type: "video",
+        url: "https://www.youtube.com/@asahikawa_city_library",
+        alt: "旭川市中央図書館 東旭川分室 public video",
+        sourceUrl: "https://www.youtube.com/@asahikawa_city_library",
+      },
+    ],
     websiteUrl: "https://www2.lib.city.asahikawa.hokkaido.jp/",
     sourceUrl: "https://www2.lib.city.asahikawa.hokkaido.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -7250,7 +7472,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/7707277",
+    media: [
+      {
+        id: "osm-library-67b80d53-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ashiya-City-Library01s3872.jpg",
+        alt: "芦屋市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ashiya-City-Library01s3872.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.ashiya-city-library.jp/",
+    sourceUrl: "http://www.ashiya-city-library.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -7419,7 +7654,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420831773",
+    websiteUrl: "http://www.ayaselib.jp",
+    sourceUrl: "http://www.ayaselib.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -7727,7 +7963,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/6455797835",
+    media: [
+      {
+        id: "osm-library-513537cd-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Anforet_4F_2017-06-01_ac_(2).jpg",
+        alt: "安城市図書情報館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Anforet_4F_2017-06-01_ac_(2).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.anjo.aichi.jp/",
+    sourceUrl: "https://www.library.city.anjo.aichi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -7923,7 +8172,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/10714040",
+    media: [
+      {
+        id: "osm-library-7cf2dea7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Iga_City_Ueno_Library_ac.jpg",
+        alt: "伊賀市上野図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Iga_City_Ueno_Library_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.iga-library.jp/?p=26",
+    sourceUrl: "http://www.iga-library.jp/?p=26",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -8007,6 +8269,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-80e3295d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Isehara_City_Library.jpg",
+        alt: "伊勢原市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Isehara_City_Library.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.lib-isehara.jp/",
     sourceUrl: "https://www.lib-isehara.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -8176,7 +8450,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420977054",
+    media: [
+      {
+        id: "osm-library-30e3da13-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ise_City_Ise_Library.jpg",
+        alt: "伊勢市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ise_City_Ise_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://iselib.city.ise.mie.jp/",
+    sourceUrl: "https://iselib.city.ise.mie.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -8625,6 +8912,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-6c2e52f2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E4%BC%8A%E4%B8%87%E9%87%8C%E5%B8%82%E6%B0%91%E5%9B%B3%E6%9B%B8%E9%A4%A8_%E5%A4%96%E8%A6%B3.JPG",
+        alt: "伊万里市民図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E4%B8%87%E9%87%8C%E5%B8%82%E6%B0%91%E5%9B%B3%E6%9B%B8%E9%A4%A8_%E5%A4%96%E8%A6%B3.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.city.imari.saga.jp/",
     sourceUrl: "https://www.library.city.imari.saga.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -9048,7 +9347,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/464683203",
+    media: [
+      {
+        id: "osm-library-2d7ebebb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ichinoseki_City_Hanaizumi_Library_202510a.jpg",
+        alt: "一関市立花泉図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ichinoseki_City_Hanaizumi_Library_202510a.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "https://www.city.ichinoseki.iwate.jp/library/guide/hanaizumi/index.html",
+    sourceUrl:
+      "https://www.city.ichinoseki.iwate.jp/library/guide/hanaizumi/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -9076,7 +9390,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/8356335194",
+    media: [
+      {
+        id: "osm-library-d16be171-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ichinoseki_City_Senmaya_Library_202408.jpg",
+        alt: "一関市立千厩図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ichinoseki_City_Senmaya_Library_202408.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "https://www.city.ichinoseki.iwate.jp/library/guide/senmaya/index.html",
+    sourceUrl:
+      "https://www.city.ichinoseki.iwate.jp/library/guide/senmaya/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -9104,7 +9433,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/478268441",
+    websiteUrl: "http://www.library.city.ichinoseki.iwate.jp/guide/daito/",
+    sourceUrl: "http://www.library.city.ichinoseki.iwate.jp/guide/daito/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -9160,7 +9490,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423947421",
+    websiteUrl:
+      "http://www.lib.city.ichinomiya.aichi.jp/division/kisogawa/index.html",
+    sourceUrl:
+      "http://www.lib.city.ichinomiya.aichi.jp/division/kisogawa/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -9216,7 +9549,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423947403",
+    websiteUrl:
+      "http://www.lib.city.ichinomiya.aichi.jp/division/bisai/index.html",
+    sourceUrl:
+      "http://www.lib.city.ichinomiya.aichi.jp/division/bisai/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -9300,6 +9636,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-c3bcd7ea-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Iki_City_Gonoura_Library.jpg",
+        alt: "壱岐市立郷ノ浦図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Iki_City_Gonoura_Library.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1423801588",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -9636,7 +9984,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423995630",
+    media: [
+      {
+        id: "osm-library-e147793e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Inazawa_City_Heiwa_Library_20161217.jpg",
+        alt: "稲沢市立平和町図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Inazawa_City_Heiwa_Library_20161217.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.inazawa.aichi.jp/ka_annai/toshokan/shisetu/heiwa.html",
+    sourceUrl:
+      "http://www.city.inazawa.aichi.jp/ka_annai/toshokan/shisetu/heiwa.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -9664,7 +10027,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/524003437",
+    websiteUrl: "http://www.inami-library.jp",
+    sourceUrl: "http://www.inami-library.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -9692,6 +10056,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-8a529116-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Inashiki_city_Public_library_%26_History_museum.jpg",
+        alt: "稲敷市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Inashiki_city_Public_library_%26_History_museum.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/325708051",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -9720,6 +10096,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-691f07df-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ibaraki_Prefectural_Library_2021-12_ac_(1).jpg",
+        alt: "茨城県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ibaraki_Prefectural_Library_2021-12_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.lib.pref.ibaraki.jp/home/index.htm",
     sourceUrl: "https://www.lib.pref.ibaraki.jp/home/index.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -9833,6 +10221,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-2629c422-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C3%86ON_MALL_Ibaraki_(3).JPG",
+        alt: "茨木市立穂積図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C3%86ON_MALL_Ibaraki_(3).JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1423012236",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -10537,7 +10937,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/621682589",
+    websiteUrl:
+      "http://www.city.ube.yamaguchi.jp/koukyouannai/bunkakyouiku/manabinomori_kusu/",
+    sourceUrl:
+      "http://www.city.ube.yamaguchi.jp/koukyouannai/bunkakyouiku/manabinomori_kusu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -10565,7 +10968,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/180718040",
+    media: [
+      {
+        id: "osm-library-98e1daf8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ube_City_Library_ac_(1).jpg",
+        alt: "宇部市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ube_City_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.city.ube.yamaguchi.jp/kyouyou/toshokan/",
+    sourceUrl: "http://www.city.ube.yamaguchi.jp/kyouyou/toshokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -10705,7 +11121,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423011285",
+    websiteUrl:
+      "https://www.city.habikino.lg.jp/shisei/shisetsuannai/toshokan/6212.html",
+    sourceUrl:
+      "https://www.city.habikino.lg.jp/shisei/shisetsuannai/toshokan/6212.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -10733,7 +11152,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423011278",
+    websiteUrl:
+      "https://www.city.habikino.lg.jp/soshiki/shougaigakushu/syougaku_tosyokan/syougaku_tosyokan_furuichi/827.html",
+    sourceUrl:
+      "https://www.city.habikino.lg.jp/soshiki/shougaigakushu/syougaku_tosyokan/syougaku_tosyokan_furuichi/827.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -10761,7 +11183,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423011277",
+    websiteUrl:
+      "https://www.city.habikino.lg.jp/shisei/shisetsuannai/toshokan/6213.html",
+    sourceUrl:
+      "https://www.city.habikino.lg.jp/shisei/shisetsuannai/toshokan/6213.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -10789,7 +11214,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423011276",
+    websiteUrl:
+      "https://www.city.habikino.lg.jp/shisei/shisetsuannai/toshokan/6209.html",
+    sourceUrl:
+      "https://www.city.habikino.lg.jp/shisei/shisetsuannai/toshokan/6209.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -10817,7 +11245,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423011279",
+    websiteUrl:
+      "https://www.city.habikino.lg.jp/shisei/shisetsuannai/toshokan/6214.html",
+    sourceUrl:
+      "https://www.city.habikino.lg.jp/shisei/shisetsuannai/toshokan/6214.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -10845,7 +11276,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423011293",
+    websiteUrl:
+      "https://www.city.habikino.lg.jp/shisei/shisetsuannai/toshokan/6210.html",
+    sourceUrl:
+      "https://www.city.habikino.lg.jp/shisei/shisetsuannai/toshokan/6210.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -11380,6 +11814,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-54473993-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Urayasu_City_Central_Library.JPG",
+        alt: "浦安市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Urayasu_City_Central_Library.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1420741174",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -11665,6 +12111,15 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-279fae2c-video-1",
+        type: "video",
+        url: "https://www.youtube.com/@asahikawa_city_library",
+        alt: "永山図書館 public video",
+        sourceUrl: "https://www.youtube.com/@asahikawa_city_library",
+      },
+    ],
     websiteUrl: "https://www2.lib.city.asahikawa.hokkaido.jp/",
     sourceUrl: "https://www2.lib.city.asahikawa.hokkaido.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -12116,7 +12571,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/550672225",
+    media: [
+      {
+        id: "osm-library-23299737-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nobeoka_City_Librar.jpg",
+        alt: "延岡市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nobeoka_City_Librar.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.city.nobeoka.miyazaki.jp/site/library/",
+    sourceUrl: "https://www.city.nobeoka.miyazaki.jp/site/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -12509,6 +12977,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-6e9aa709-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yokote_City_Archives.jpg",
+        alt: "横手市公文書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yokote_City_Archives.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.city.yokote.lg.jp/shisetsu/1001529/1003878.html",
     sourceUrl: "https://www.city.yokote.lg.jp/shisetsu/1001529/1003878.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -12538,6 +13018,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-5fbb7f7d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Interior_of_Ao-na_in_Yokote_City_(Atrium).jpg",
+        alt: "横手市立横手図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Interior_of_Ao-na_in_Yokote_City_(Atrium).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.city.yokote.lg.jp/shisetsu/1001527/1004540.html",
     sourceUrl: "https://www.city.yokote.lg.jp/shisetsu/1001527/1004540.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -12963,6 +13455,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-c19529e9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yokohamaisogoku.jpg",
+        alt: "横浜市磯子図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yokohamaisogoku.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.city.yokohama.lg.jp/kyoiku/library/chiiki/isogo/",
     sourceUrl: "https://www.city.yokohama.lg.jp/kyoiku/library/chiiki/isogo/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -13135,6 +13639,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-60ef6891-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/YamauchiLibrary.JPG",
+        alt: "横浜市山内図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:YamauchiLibrary.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://yamauchi-lib.jp",
     sourceUrl: "https://yamauchi-lib.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -13253,6 +13769,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-f342b055-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yokohama_Central_Library.jpg",
+        alt: "横浜市中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yokohama_Central_Library.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.city.yokohama.lg.jp/kyoiku/library/",
     sourceUrl: "https://www.city.yokohama.lg.jp/kyoiku/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -13685,6 +14213,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-a8cb83a8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Okayama_Prefectural_Library_2021-08_ac.jpg",
+        alt: "岡山県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Okayama_Prefectural_Library_2021-08_ac.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.libnet.pref.okayama.jp/",
     sourceUrl: "https://www.libnet.pref.okayama.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -13854,6 +14394,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-f318c737-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Okayama_City_Central_Library_exterior_ac_(1).jpg",
+        alt: "岡山市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Okayama_City_Central_Library_exterior_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://www.city.okayama.jp/kyouiku/chuotoshokan/chuotoshokan_00004.html",
     sourceUrl:
@@ -13944,7 +14496,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/169226103",
+    media: [
+      {
+        id: "osm-library-80f7d8c5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Okinawa_Prefectural_Archives.jpg",
+        alt: "沖縄県公文書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Okinawa_Prefectural_Archives.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.archives.pref.okinawa.jp/",
+    sourceUrl: "https://www.archives.pref.okinawa.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -14170,7 +14735,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/731228470",
+    media: [
+      {
+        id: "osm-library-55e26bc9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Onna_Village_Culture_And_Information_Center_2019-09-13_(13)_sa.jpg",
+        alt: "恩納村文化情報センター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Onna_Village_Culture_And_Information_Center_2019-09-13_(13)_sa.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.onna-culture.jp/cultural-information-center/",
+    sourceUrl: "http://www.onna-culture.jp/cultural-information-center/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -14507,7 +15085,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/587206546",
+    websiteUrl: "http://www.lib.shimotsuma.ibaraki.jp/",
+    sourceUrl: "http://www.lib.shimotsuma.ibaraki.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -14733,7 +15312,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420976115",
+    websiteUrl: "http://lib.city.shimoda.shizuoka.jp/",
+    sourceUrl: "http://lib.city.shimoda.shizuoka.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -15069,6 +15649,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-c54b09ef-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kasai_City_Library_ac_(1).jpg",
+        alt: "加西市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kasai_City_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.city.kasai.hyogo.jp/site/library/",
     sourceUrl: "https://www.city.kasai.hyogo.jp/site/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -15126,6 +15718,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-359524e2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kato_buntaro02s2816.jpg",
+        alt: "加藤文太郎記念図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kato_buntaro02s2816.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://www.town.shinonsen.hyogo.jp/page/index.php?mode=detail&page_id=93e6f79aa3f465235290c7b3f8a1c7bd",
     sourceUrl:
@@ -15213,7 +15817,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/237768742",
+    media: [
+      {
+        id: "osm-library-98652651-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kani_City_Library_2024-02_ac_(1).jpg",
+        alt: "可児市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kani_City_Library_2024-02_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.kani-lib.jp/",
+    sourceUrl: "http://www.kani-lib.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -15802,6 +16419,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-a8ec17c3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Abisuta_in_Abiko.jpg",
+        alt: "我孫子市民図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Abisuta_in_Abiko.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1420739519",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -15886,7 +16515,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/11399718196",
+    websiteUrl: "http://www.memuro-lib.net",
+    sourceUrl: "http://www.memuro-lib.net",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -15943,7 +16573,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1985329213",
+    media: [
+      {
+        id: "osm-library-d1186295-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Aizuwakamatsu_General_Lifelong_Learning_Center.jpg",
+        alt: "会津図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Aizuwakamatsu_General_Lifelong_Learning_Center.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://library.city.aizuwakamatsu.fukushima.jp/",
+    sourceUrl: "https://library.city.aizuwakamatsu.fukushima.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -15971,7 +16614,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/4746867662",
+    websiteUrl: "http://lib.town.ama.shimane.jp/index.php",
+    sourceUrl: "http://lib.town.ama.shimane.jp/index.php",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -16111,7 +16755,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423071406",
+    media: [
+      {
+        id: "osm-library-7112076a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kainan_nobinos_2021-09_ac_(2).jpg",
+        alt: "海南nobinos public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kainan_nobinos_2021-09_ac_(2).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://kainan-nobinos.jp/",
+    sourceUrl: "https://kainan-nobinos.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -16139,7 +16796,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423071405",
+    websiteUrl:
+      "https://www.city.kainan.lg.jp/kakubusho/kyoikuiinkai/shogaigakusyuka/simotutosyokan/1345705042586.html",
+    sourceUrl:
+      "https://www.city.kainan.lg.jp/kakubusho/kyoikuiinkai/shogaigakusyuka/simotutosyokan/1345705042586.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -16251,7 +16911,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/211568317",
+    media: [
+      {
+        id: "osm-library-e919f251-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/EbinaCityLibrary_2015-10-04_1.JPG",
+        alt: "海老名市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:EbinaCityLibrary_2015-10-04_1.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://ebina.city-library.jp/library/",
+    sourceUrl: "https://ebina.city-library.jp/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -16308,6 +16981,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-26c5758a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ebina_City_Arima_Library_201510.JPG",
+        alt: "海老名市立有馬図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ebina_City_Arima_Library_201510.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.arimalib-kadokomi.com/",
     sourceUrl: "https://www.arimalib-kadokomi.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -16365,7 +17050,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423015762",
+    websiteUrl: "http://www.city.kaizuka.osaka.jp/tosho/",
+    sourceUrl: "http://www.city.kaizuka.osaka.jp/tosho/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -16478,7 +17164,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/514000110",
+    media: [
+      {
+        id: "osm-library-509b22bf-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kakamigahara_City_Central_Library_2021-10_ac_(3).jpg",
+        alt: "各務原市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kakamigahara_City_Central_Library_2021-10_ac_(3).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.city.kakamigahara.lg.jp/shisetsu/1886/001989.html",
+    sourceUrl: "http://www.city.kakamigahara.lg.jp/shisetsu/1886/001989.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -17068,7 +17767,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420916738",
+    media: [
+      {
+        id: "osm-library-d2b810db-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Namerikawa_City_Library_2026-04_ac.jpg",
+        alt: "滑川市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Namerikawa_City_Library_2026-04_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://svlib.city.namerikawa.toyama.jp/top.html",
+    sourceUrl: "http://svlib.city.namerikawa.toyama.jp/top.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -17265,7 +17977,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420797168",
+    media: [
+      {
+        id: "osm-library-1bbdae67-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kameari_Library%2C_Katsushika_02.jpg",
+        alt: "葛飾区立亀有図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kameari_Library%2C_Katsushika_02.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.lib.city.katsushika.lg.jp/contents",
+    sourceUrl: "https://www.lib.city.katsushika.lg.jp/contents",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -17490,7 +18215,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420797171",
+    media: [
+      {
+        id: "osm-library-0ebb5b59-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Katsushika_city_Tateishi_library_20200501_152638.jpg",
+        alt: "葛飾区立立石図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Katsushika_city_Tateishi_library_20200501_152638.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.lib.city.katsushika.lg.jp/libguide_0102guide.html",
+    sourceUrl: "http://www.lib.city.katsushika.lg.jp/libguide_0102guide.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -17546,6 +18284,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-3810b719-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gamagori_City_Library_2020-03_ac_(2).jpg",
+        alt: "蒲郡市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Gamagori_City_Library_2020-03_ac_(2).jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/446529374",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -17856,7 +18606,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/567218200",
+    websiteUrl:
+      "http://www.city.chino.lg.jp/www/contents/1000001432000/index.html",
+    sourceUrl:
+      "http://www.city.chino.lg.jp/www/contents/1000001432000/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -17940,6 +18693,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-5057561e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kariya_City_Central_Library_2016_ac_(1).jpg",
+        alt: "刈谷市中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kariya_City_Central_Library_2016_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1423948984",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -17996,6 +18761,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-eaafe0cc-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kariya_Fujimatsu_Library_2013-08B.JPG",
+        alt: "刈谷市富士松図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kariya_Fujimatsu_Library_2013-08B.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/5105536906",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -18108,7 +18885,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/278555755",
+    websiteUrl:
+      "http://www.city.sagae.yamagata.jp/kurashi/shisetsu/bunkashogaigakusyu/sagaelibrary/index.html",
+    sourceUrl:
+      "http://www.city.sagae.yamagata.jp/kurashi/shisetsu/bunkashogaigakusyu/sagaelibrary/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -18306,7 +19086,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1674378656",
+    media: [
+      {
+        id: "osm-library-97d97b1d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Seki_City_Library_2018-06_ac.jpg",
+        alt: "関市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Seki_City_Library_2018-06_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://ufinity08.jp.fujitsu.com/sekilib/",
+    sourceUrl: "http://ufinity08.jp.fujitsu.com/sekilib/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -18418,7 +19211,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420743692",
+    media: [
+      {
+        id: "osm-library-95cc6f18-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tateyama_City_Library_ac.jpg",
+        alt: "館山市図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tateyama_City_Library_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.city.tateyama.chiba.jp/library/",
+    sourceUrl: "http://www.city.tateyama.chiba.jp/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -18530,6 +19336,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-5af3fa31-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Marugame_City_Central_Library_exterior_ac_(1).jpg",
+        alt: "丸亀市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Marugame_City_Central_Library_exterior_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.marugame-city-library.jp/TOSHOW/html/info_1.html",
     sourceUrl: "https://www.marugame-city-library.jp/TOSHOW/html/info_1.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -18700,6 +19518,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-7d70a32e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Iwamizawa-city-library.JPG",
+        alt: "岩見沢市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Iwamizawa-city-library.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://lib.city.iwamizawa.hokkaido.jp",
     sourceUrl: "https://lib.city.iwamizawa.hokkaido.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -18925,7 +19755,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/5181117521",
+    media: [
+      {
+        id: "osm-library-14cee9f0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Iwate_Prefectural_Library_ac_(2).jpg",
+        alt: "岩手県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Iwate_Prefectural_Library_ac_(2).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.pref.iwate.jp/",
+    sourceUrl: "https://www.library.pref.iwate.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -19205,6 +20048,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-d20d971a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kiyama_Town_Library.jpg",
+        alt: "基山町立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kiyama_Town_Library.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://kiyama.libweb.jp/index.html",
     sourceUrl: "https://kiyama.libweb.jp/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -19234,6 +20089,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-865f34c2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shiota_Library_and_Museum_of_History_and_Folklore.jpg",
+        alt: "嬉野市塩田図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shiota_Library_and_Museum_of_History_and_Folklore.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.city.ureshino.lg.jp/toshokan.html",
     sourceUrl: "https://www.city.ureshino.lg.jp/toshokan.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -19320,7 +20187,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420982213",
+    media: [
+      {
+        id: "osm-library-3d869f44-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ginantyou_rekisiminzoku_siryoukan.JPG",
+        alt: "岐南町図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ginantyou_rekisiminzoku_siryoukan.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.lics-saas.nexs-service.jp/ginan/index.html",
+    sourceUrl: "https://www.lics-saas.nexs-service.jp/ginan/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -19348,7 +20228,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420982450",
+    media: [
+      {
+        id: "osm-library-4b9d08c3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gifu_Prefectural_Library01.JPG",
+        alt: "岐阜県図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Gifu_Prefectural_Library01.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.pref.gifu.lg.jp/",
+    sourceUrl: "http://www.library.pref.gifu.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -19657,7 +20550,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/5162609831",
+    websiteUrl: "http://www.city.kesennuma.lg.jp/www/contents/1269927018517/",
+    sourceUrl: "http://www.city.kesennuma.lg.jp/www/contents/1269927018517/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -19685,7 +20579,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/733786949",
+    media: [
+      {
+        id: "osm-library-80e5e285-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/KihoUdono_library.JPG",
+        alt: "紀宝町立鵜殿図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:KihoUdono_library.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://lib.town.kiho.mie.jp/",
+    sourceUrl: "http://lib.town.kiho.mie.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -19769,7 +20676,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422959598",
+    websiteUrl: "http://www.library.city.kameoka.kyoto.jp/",
+    sourceUrl: "http://www.library.city.kameoka.kyoto.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -19912,7 +20820,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/717178311",
+    media: [
+      {
+        id: "osm-library-17530b89-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kitto_terrace_ac.jpg",
+        alt: "亀山市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kitto_terrace_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.city.kameyama.mie.jp/library/",
+    sourceUrl: "https://www.city.kameyama.mie.jp/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -20418,6 +21339,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-3a6e6f55-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yoshinogari_Town_Chuo_Community_Center.jpg",
+        alt: "吉野ヶ里町中央公民館図書室 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yoshinogari_Town_Chuo_Community_Center.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://www.town.yoshinogari.lg.jp/lifeinfo/soshiki/shakai_kyoiku/2/2_1/1/365.html",
     sourceUrl:
@@ -20449,6 +21382,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-ad75e023-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Higashisefuri_Community_Center.jpg",
+        alt: "吉野ヶ里町東脊振公民館図書室 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Higashisefuri_Community_Center.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://www.town.yoshinogari.lg.jp/lifeinfo/soshiki/shakai_kyoiku/2/2_1/1/365.html",
     sourceUrl:
@@ -20508,7 +21453,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423654475",
+    websiteUrl:
+      "http://www.city.yoshinogawa.lg.jp/06facilities/06yama/index.html",
+    sourceUrl:
+      "http://www.city.yoshinogawa.lg.jp/06facilities/06yama/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -21236,7 +22184,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/475771676",
+    media: [
+      {
+        id: "osm-library-261c56f7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Miyazaki_Prefectural_Library_200710.JPG",
+        alt: "宮崎県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Miyazaki_Prefectural_Library_200710.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www2.lib.pref.miyazaki.lg.jp/",
+    sourceUrl: "http://www2.lib.pref.miyazaki.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -21293,7 +22254,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/80175860",
+    media: [
+      {
+        id: "osm-library-2b2139ce-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/MiyagiPrefecturalLibrary.jpg",
+        alt: "宮城県図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:MiyagiPrefecturalLibrary.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.pref.miyagi.jp/",
+    sourceUrl: "http://www.library.pref.miyagi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -21406,6 +22380,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-5424c7d7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Miyazu_City_Library_Shigesaburo_Maeo_corner_ac_(3).jpg",
+        alt: "宮津市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Miyazu_City_Library_Shigesaburo_Maeo_corner_ac_(3).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.city.miyazu.kyoto.jp/site/tosyokan/",
     sourceUrl: "https://www.city.miyazu.kyoto.jp/site/tosyokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -21435,7 +22421,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1390377691",
+    websiteUrl: "http://www.vill.miyada.nagano.jp/index.php?f=hp&ci=10462",
+    sourceUrl: "http://www.vill.miyada.nagano.jp/index.php?f=hp&ci=10462",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -21575,7 +22562,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420917905",
+    websiteUrl: "http://www.lib.city.uozu.toyama.jp/",
+    sourceUrl: "http://www.lib.city.uozu.toyama.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -21631,6 +22619,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-31b40b98-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/KUMIHAMA_library_-2019.6.30(3).jpg",
+        alt: "京丹後市立久美浜図書室 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:KUMIHAMA_library_-2019.6.30(3).jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1422960000",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -21743,7 +22743,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422960016",
+    websiteUrl:
+      "http://www.city.kyotango.kyoto.jp/kurashi/kyoiku/toshokan/kyotango_city_library/mineyama/",
+    sourceUrl:
+      "http://www.city.kyotango.kyoto.jp/kurashi/kyoiku/toshokan/kyotango_city_library/mineyama/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -22250,7 +23253,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/201086152",
+    media: [
+      {
+        id: "osm-library-872a34c0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kyoto_Asny_and_City_Central_Library_20090502-001.jpg",
+        alt: "京都市中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kyoto_Asny_and_City_Central_Library_20090502-001.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www2.kyotocitylib.jp/?page_id=219",
+    sourceUrl: "https://www2.kyotocitylib.jp/?page_id=219",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -22418,6 +23434,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-c7defe74-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kyoto_Institute%2C_Library_and_Archives_ac_(1).jpg",
+        alt: "京都府立京都学・歴彩館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kyoto_Institute%2C_Library_and_Archives_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.pref.kyoto.jp/rekisaikan/index.html",
     sourceUrl: "https://www.pref.kyoto.jp/rekisaikan/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -22447,6 +23475,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-bfefe7ce-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kyoto_Prefectural_Library_20120901-001.jpg",
+        alt: "京都府立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kyoto_Prefectural_Library_20120901-001.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.pref.kyoto.jp/",
     sourceUrl: "https://www.library.pref.kyoto.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -22787,7 +23827,21 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/244245621",
+    media: [
+      {
+        id: "osm-library-5849585d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kiryu_City_Library.JPG",
+        alt: "桐生市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kiryu_City_Library.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "https://www.city.kiryu.lg.jp/shisetsu/bunka/library/index.html",
+    sourceUrl: "https://www.city.kiryu.lg.jp/shisetsu/bunka/library/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -23011,7 +24065,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1315528659",
+    websiteUrl: "http://www.konkokyo.or.jp/konko-library/",
+    sourceUrl: "http://www.konkokyo.or.jp/konko-library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -23067,6 +24122,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-341d9724-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kanazawa_Umimirai_Library_exterior_ac_(4).jpg",
+        alt: "金沢海みらい図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kanazawa_Umimirai_Library_exterior_ac_(4).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.lib.kanazawa.ishikawa.jp/umimirai/",
     sourceUrl: "https://www.lib.kanazawa.ishikawa.jp/umimirai/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -23096,7 +24163,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/296797586",
+    media: [
+      {
+        id: "osm-library-c305a0bc-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kanazawa_Tamagawa_Library.jpg",
+        alt: "金沢市立玉川図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kanazawa_Tamagawa_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.lib.kanazawa.ishikawa.jp/?page_id=113",
+    sourceUrl: "https://www.lib.kanazawa.ishikawa.jp/?page_id=113",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -23124,7 +24204,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420935533",
+    websiteUrl: "http://www.lib.kanazawa.ishikawa.jp/jyouhoku.htm",
+    sourceUrl: "http://www.lib.kanazawa.ishikawa.jp/jyouhoku.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -23575,7 +24656,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423808753",
+    media: [
+      {
+        id: "osm-library-21c29c59-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kumamoto_Prefectural_Library_ac_(1).jpg",
+        alt: "熊本県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kumamoto_Prefectural_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.pref.kumamoto.jp/",
+    sourceUrl: "https://www.library.pref.kumamoto.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -23659,7 +24753,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423808451",
+    media: [
+      {
+        id: "osm-library-6d130c3e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kumamoto_City_Library_2026-03_ac.jpg",
+        alt: "熊本市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kumamoto_City_Library_2026-03_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www2-library.kumamoto-kmm.ed.jp/",
+    sourceUrl: "http://www2-library.kumamoto-kmm.ed.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -23687,7 +24794,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420994307",
+    media: [
+      {
+        id: "osm-library-7e1afcfb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kumano_City_Cultural_Exchange_Center_2020-01_ac_(1).jpg",
+        alt: "熊野市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kumano_City_Cultural_Exchange_Center_2020-01_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.zd.ztv.ne.jp/kumano-toshokan/",
+    sourceUrl: "http://www.zd.ztv.ne.jp/kumano-toshokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -23772,6 +24892,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-4229edba-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kuriyama_Town_Library_ac_(1).jpg",
+        alt: "栗山町図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kuriyama_Town_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://library.town.kuriyama.hokkaido.jp",
     sourceUrl: "https://library.town.kuriyama.hokkaido.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -23915,7 +25047,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420990228",
+    media: [
+      {
+        id: "osm-library-7467a38b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kuwana_KLC_ac_(1).jpg",
+        alt: "桑名市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kuwana_KLC_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://kcl.kuwana-library.jp/",
+    sourceUrl: "http://kcl.kuwana-library.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -24000,7 +25145,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/351101200",
+    media: [
+      {
+        id: "osm-library-41f6b7e6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gunma_Prefectural_Library.jpg",
+        alt: "群馬県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Gunma_Prefectural_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.pref.gunma.jp/",
+    sourceUrl: "https://www.library.pref.gunma.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -24056,7 +25214,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1917301803",
+    websiteUrl: "https://www.archives.pref.gunma.jp/",
+    sourceUrl: "https://www.archives.pref.gunma.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -24280,7 +25439,19 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/4725390277",
+    media: [
+      {
+        id: "osm-library-f04a5bee-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Eniwa-toshokan.png",
+        alt: "恵庭市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Eniwa-toshokan.png",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://opac.city.eniwa.hokkaido.jp/",
+    sourceUrl: "http://opac.city.eniwa.hokkaido.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -24336,7 +25507,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/3740274933",
+    websiteUrl: "http://library.city.ena.lg.jp/",
+    sourceUrl: "http://library.city.ena.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -24756,7 +25928,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/87243538",
+    media: [
+      {
+        id: "osm-library-09e83491-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagano_Prefectural_Library_exterior_ac_(3).jpg",
+        alt: "県立長野図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagano_Prefectural_Library_exterior_ac_(3).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.knowledge.pref.nagano.lg.jp/",
+    sourceUrl: "https://www.knowledge.pref.nagano.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -25129,7 +26314,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420178869",
+    media: [
+      {
+        id: "osm-library-b65ef750-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Toda_Toda_City_Library_1.JPG",
+        alt: "戸田市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Toda_Toda_City_Library_1.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://library.toda.saitama.jp/",
+    sourceUrl: "https://library.toda.saitama.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -25241,7 +26439,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/631234878",
+    media: [
+      {
+        id: "osm-library-ba0803dd-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Komono_Town_Library_2019-10_ac_(1).jpg",
+        alt: "菰野町図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Komono_Town_Library_2019-10_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.town.komono.mie.jp/library/",
+    sourceUrl: "http://www.town.komono.mie.jp/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -25438,7 +26649,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423798269",
+    media: [
+      {
+        id: "osm-library-36f5be8f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gotoh_city_library-20150427.png",
+        alt: "五島市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Gotoh_city_library-20150427.png",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www2.city.goto.nagasaki.jp/",
+    sourceUrl: "http://www2.city.goto.nagasaki.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -25495,7 +26719,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1363804368",
+    websiteUrl: "https://ilisod001.apsel.jp/gojo/wopc/pc/pages/TopPage.jsp",
+    sourceUrl: "https://ilisod001.apsel.jp/gojo/wopc/pc/pages/TopPage.jsp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -25804,7 +27029,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/10679580356",
+    websiteUrl: "https://www.town.miyota.nagano.jp/library/index.html",
+    sourceUrl: "https://www.town.miyota.nagano.jp/library/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -25832,6 +27058,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-5542ef45-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyokawa_City_Mito_Library_entrance_ac.jpg",
+        alt: "御津図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Toyokawa_City_Mito_Library_entrance_ac.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://libweb.lib.city.toyokawa.aichi.jp/contents/?page_id=177",
     sourceUrl:
@@ -25919,7 +27157,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423067382",
+    websiteUrl:
+      "http://www.city.gobo.wakayama.jp/sosiki/kyoikuiin/tosyokan/index.html",
+    sourceUrl:
+      "http://www.city.gobo.wakayama.jp/sosiki/kyoikuiin/tosyokan/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -25975,7 +27216,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422984023",
+    websiteUrl: "http://www.katanotoshokan.jp/",
+    sourceUrl: "http://www.katanotoshokan.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -26003,7 +27245,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422983995",
+    websiteUrl: "http://www.katanotoshokan.jp/",
+    sourceUrl: "http://www.katanotoshokan.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -26087,7 +27330,19 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1119948775",
+    media: [
+      {
+        id: "osm-library-b447585a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kosei_Library.jpg",
+        alt: "佼成図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Kosei_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.kosei-kai.or.jp/030katsudo/0308/030807/",
+    sourceUrl: "http://www.kosei-kai.or.jp/030katsudo/0308/030807/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -26288,7 +27543,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420815135",
+    media: [
+      {
+        id: "osm-library-4551ad3c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Atsugi_city_plaza_20161002.jpg",
+        alt: "厚木市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Atsugi_city_plaza_20161002.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.atsugi.kanagawa.jp/shiminbenri/kosodatekyoiku/toshokan/index.html",
+    sourceUrl:
+      "http://www.city.atsugi.kanagawa.jp/shiminbenri/kosodatekyoiku/toshokan/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -26543,7 +27813,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423985329",
+    websiteUrl: "http://www.happiness.kota.aichi.jp/library",
+    sourceUrl: "http://www.happiness.kota.aichi.jp/library",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -26627,7 +27898,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423637478",
+    media: [
+      {
+        id: "osm-library-972e527f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E5%BA%83%E5%B3%B6%E7%9C%8C%E6%83%85%E5%A0%B1%E3%83%97%E3%83%A9%E3%82%B601.jpg",
+        alt: "広島県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E5%BA%83%E5%B3%B6%E7%9C%8C%E6%83%85%E5%A0%B1%E3%83%97%E3%83%A9%E3%82%B601.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www2.hplibra.pref.hiroshima.jp/",
+    sourceUrl: "https://www2.hplibra.pref.hiroshima.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -26655,6 +27939,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-3d192b4e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/HIROSHIMA_CITY_MANGA_LIBRARY_190616-1a.JPG",
+        alt: "広島市まんが図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:HIROSHIMA_CITY_MANGA_LIBRARY_190616-1a.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.library.city.hiroshima.jp/manga",
     sourceUrl: "http://www.library.city.hiroshima.jp/manga",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -26684,6 +27980,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-f12bb83c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hiroshima_City_Central_Library_2021-03_ac_(2).jpg",
+        alt: "広島市映像文化ライブラリー public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hiroshima_City_Central_Library_2021-03_ac_(2).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.cf.city.hiroshima.jp/eizou/",
     sourceUrl: "http://www.cf.city.hiroshima.jp/eizou/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -26881,6 +28189,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-be873f66-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E5%BA%83%E5%B3%B6%E5%B8%82%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A801.jpg",
+        alt: "広島市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E5%BA%83%E5%B3%B6%E5%B8%82%E7%AB%8B%E4%B8%AD%E5%A4%AE%E5%9B%B3%E6%9B%B8%E9%A4%A801.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.city.hiroshima.jp/",
     sourceUrl: "https://www.library.city.hiroshima.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -26910,6 +28230,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-73aec0a4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/JMS_Plaza%2C_Hiroshima_01.jpg",
+        alt: "広島市立中区図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:JMS_Plaza%2C_Hiroshima_01.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1423636717",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -26938,6 +28270,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-5d98d7b3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E5%BA%83%E5%B3%B6%E5%B8%82%E6%9D%B1%E5%8C%BA%E6%B0%91%E6%96%87%E5%8C%96%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC01.JPG",
+        alt: "広島市立東区図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E5%BA%83%E5%B3%B6%E5%B8%82%E6%9D%B1%E5%8C%BA%E6%B0%91%E6%96%87%E5%8C%96%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC01.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1423636781",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -27050,7 +28394,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/4434655454",
+    media: [
+      {
+        id: "osm-library-0b736238-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hirosaki_City_Pubric_Library.JPG",
+        alt: "弘前市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hirosaki_City_Pubric_Library.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.city.hirosaki.aomori.jp/tosho/index.html",
+    sourceUrl: "http://www.city.hirosaki.aomori.jp/tosho/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -27442,7 +28799,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420787700",
+    websiteUrl: "http://www.koto-lib.tokyo.jp/029_lib_kame.html",
+    sourceUrl: "http://www.koto-lib.tokyo.jp/029_lib_kame.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -27893,6 +29251,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-f99d4db5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kinomoto_Kohoku_Library_ac.jpg",
+        alt: "江北図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kinomoto_Kohoku_Library_ac.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/1135902717",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -27921,6 +29291,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-cf701851-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Navel_in_Kohoku%2C_Saga.jpg",
+        alt: "江北町ネイブル図書コーナー public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Navel_in_Kohoku%2C_Saga.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://kouhoku-navel.com/tosyo.html",
     sourceUrl: "http://kouhoku-navel.com/tosyo.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -28006,6 +29388,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-881a6a40-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E6%B8%AF%E5%8C%BA%E7%AB%8B%E9%AB%98%E8%BC%AA%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
+        alt: "港区立高輪図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E6%B8%AF%E5%8C%BA%E7%AB%8B%E9%AB%98%E8%BC%AA%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1420789258",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -28034,7 +29428,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420789259",
+    websiteUrl: "http://www.lib.city.minato.tokyo.jp/j/azabu.cgi",
+    sourceUrl: "http://www.lib.city.minato.tokyo.jp/j/azabu.cgi",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -28315,7 +29710,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420932892",
+    websiteUrl: "http://libnet.city.kofu.yamanashi.jp/lib/",
+    sourceUrl: "http://libnet.city.kofu.yamanashi.jp/lib/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -28707,6 +30103,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-5662dd87-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kagawa_prefectural_library.jpg",
+        alt: "香川県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kagawa_prefectural_library.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.pref.kagawa.lg.jp/",
     sourceUrl: "https://www.library.pref.kagawa.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -28989,7 +30397,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/427607128",
+    media: [
+      {
+        id: "osm-library-4f6e3b2c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takasago_City_Library_ac_(1).jpg",
+        alt: "高砂市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takasago_City_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://takasago-lib.jp/",
+    sourceUrl: "https://takasago-lib.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -29017,7 +30438,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420713195",
+    websiteUrl: "https://lib.city.takasaki.gunma.jp/",
+    sourceUrl: "https://lib.city.takasaki.gunma.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -29045,7 +30467,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1736545392",
+    media: [
+      {
+        id: "osm-library-ea7935c1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takasaki_City_General_Health_Center_and_Central_Library.JPG",
+        alt: "高崎市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takasaki_City_General_Health_Center_and_Central_Library.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://lib.city.takasaki.gunma.jp/viewer/info.html?id=28",
+    sourceUrl: "https://lib.city.takasaki.gunma.jp/viewer/info.html?id=28",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -29073,7 +30508,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1421002910",
+    media: [
+      {
+        id: "osm-library-930d80fe-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takayama_City_Library_2020-03_ac_(5).jpg",
+        alt: "高山市図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takayama_City_Library_2020-03_ac_(5).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.takayama.gifu.jp/",
+    sourceUrl: "https://www.library.takayama.gifu.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -29187,6 +30635,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-a7c6804f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takamatsu_City_Central_Library_exterior_ac_(2).jpg",
+        alt: "高松市中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takamatsu_City_Central_Library_exterior_ac_(2).jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1423746327",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -29272,7 +30732,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423018552",
+    websiteUrl: "http://takaishi-lib.jp/",
+    sourceUrl: "http://takaishi-lib.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -29300,7 +30761,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423018553",
+    websiteUrl: "http://takaishi-lib.jp/",
+    sourceUrl: "http://takaishi-lib.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -29356,7 +30818,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/176635557",
+    media: [
+      {
+        id: "osm-library-e7b75870-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kochi_Prefectural_Archives_01.jpg",
+        alt: "高知県立公文書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kochi_Prefectural_Archives_01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.pref.kochi.lg.jp/soshiki/110000/110202/",
+    sourceUrl: "https://www.pref.kochi.lg.jp/soshiki/110000/110202/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -29552,7 +31027,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423018273",
+    media: [
+      {
+        id: "osm-library-2bf49abb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takatsuki-Abuyama-City-library.jpg",
+        alt: "高槻市立阿武山図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takatsuki-Abuyama-City-library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.city.takatsuki.osaka.jp/",
+    sourceUrl: "http://www.library.city.takatsuki.osaka.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -29580,7 +31068,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423018253",
+    media: [
+      {
+        id: "osm-library-a3ef4775-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takatsuki-siba-City-Library.jpg",
+        alt: "高槻市立芝生図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takatsuki-siba-City-Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.city.takatsuki.osaka.jp/",
+    sourceUrl: "http://www.library.city.takatsuki.osaka.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -29608,7 +31109,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/7486081591",
+    media: [
+      {
+        id: "osm-library-b9fcccd3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takatsuki-City-Central-library.jpg",
+        alt: "高槻市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takatsuki-City-Central-library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.city.takatsuki.osaka.jp/",
+    sourceUrl: "http://www.library.city.takatsuki.osaka.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -29664,7 +31178,21 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/7566476285",
+    media: [
+      {
+        id: "osm-library-1ecff420-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takatsuki-Hattori-City-library.jpg",
+        alt: "高槻市立服部図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takatsuki-Hattori-City-library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.library.city.takatsuki.osaka.jp/lib_06_hattori.html",
+    sourceUrl: "http://www.library.city.takatsuki.osaka.jp/lib_06_hattori.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -29889,6 +31417,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-6932b0d3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takahagi_City_Public_Library_2011.JPG",
+        alt: "高萩市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takahagi_City_Public_Library_2011.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/104626133",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -30001,7 +31541,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1424004882",
+    media: [
+      {
+        id: "osm-library-80ea8c13-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takahama_City_Library_ac_(2).jpg",
+        alt: "高浜市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takahama_City_Library_ac_(2).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.takahama-lib.jp",
+    sourceUrl: "http://www.takahama-lib.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -30398,7 +31951,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1019037094",
+    media: [
+      {
+        id: "osm-library-f12dea11-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Koshi_city_Nishigoshi_library.jpg",
+        alt: "合志市西合志図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Koshi_city_Nishigoshi_library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.koshi-lib.jp/shisetsu/nishigoshi/",
+    sourceUrl: "http://www.koshi-lib.jp/shisetsu/nishigoshi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -30482,7 +32048,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/2768956946",
+    media: [
+      {
+        id: "osm-library-5c414696-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/International_Library_of_Children's_Literature.jpg",
+        alt: "国際こども図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:International_Library_of_Children's_Literature.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.kodomo.go.jp/",
+    sourceUrl: "http://www.kodomo.go.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -30510,7 +32089,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/8068971329",
+    media: [
+      {
+        id: "osm-library-365defd1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Japan_Foundation_Library.jpg",
+        alt: "国際交流基金ライブラリー public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Japan_Foundation_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.jpf.go.jp/j/about/jfic/lib/index.html",
+    sourceUrl: "https://www.jpf.go.jp/j/about/jfic/lib/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -30622,6 +32214,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-745d3bbe-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/National_Archives_of_Japan_Tsukuba_Annex.JPG",
+        alt: "国立公文書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:National_Archives_of_Japan_Tsukuba_Annex.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.archives.go.jp/index.html",
     sourceUrl: "https://www.archives.go.jp/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -30679,7 +32283,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/147614340",
+    media: [
+      {
+        id: "osm-library-3b269b7d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kansai-kan_of_the_National_Diet_Library_201610a.jpg",
+        alt: "国立国会図書館 関西館 本館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kansai-kan_of_the_National_Diet_Library_201610a.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.ndl.go.jp/jp/kansai/index.html",
+    sourceUrl: "https://www.ndl.go.jp/jp/kansai/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -30735,6 +32352,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-e9d19e17-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/NDL_Tokyo01st3200.jpg",
+        alt: "国立国会図書館・東京本館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:NDL_Tokyo01st3200.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.ndl.go.jp/jp/service/tokyo/",
     sourceUrl: "https://www.ndl.go.jp/jp/service/tokyo/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31269,6 +32898,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-59b36c8a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Saga_Prefectural_Library_ac_(1).jpg",
+        alt: "佐賀県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Saga_Prefectural_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.tosyo-saga.jp/",
     sourceUrl: "https://www.tosyo-saga.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31298,6 +32939,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-95374beb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E4%BD%90%E8%B3%80%E5%B8%82%E7%AB%8B%E5%9B%B3%E6%9B%B8%E9%A4%A8_201506.JPG",
+        alt: "佐賀市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E4%BD%90%E8%B3%80%E5%B8%82%E7%AB%8B%E5%9B%B3%E6%9B%B8%E9%A4%A8_201506.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.lib.saga.saga.jp/",
     sourceUrl: "https://www.lib.saga.saga.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31356,6 +33009,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-00317137-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Saga_City_Shisei_General_Civic_Center.jpg",
+        alt: "佐賀市立図書館久保田館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Saga_City_Shisei_General_Civic_Center.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.lib.saga.saga.jp/?page_id=591",
     sourceUrl: "https://www.lib.saga.saga.jp/?page_id=591",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31501,6 +33166,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-f93bf38e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Morodomicho_Community_Center.jpg",
+        alt: "佐賀市立図書館諸富館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Morodomicho_Community_Center.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.lib.saga.saga.jp/?page_id=109",
     sourceUrl: "https://www.lib.saga.saga.jp/?page_id=109",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31559,6 +33236,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-0c984a18-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Wellness_Yamato.jpg",
+        alt: "佐賀市立図書館大和館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Wellness_Yamato.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.lib.saga.saga.jp/?page_id=108",
     sourceUrl: "https://www.lib.saga.saga.jp/?page_id=108",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31588,6 +33277,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-f83bf1fb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Higashiyoka_Cultural_Hall.jpg",
+        alt: "佐賀市立図書館東与賀館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Higashiyoka_Cultural_Hall.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.lib.saga.saga.jp/?page_id=110",
     sourceUrl: "https://www.lib.saga.saga.jp/?page_id=110",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31646,6 +33347,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-119851f7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Saga_Forester_Fuji.jpg",
+        alt: "佐賀市立図書館富士館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Saga_Forester_Fuji.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.lib.saga.saga.jp/?page_id=111",
     sourceUrl: "https://www.lib.saga.saga.jp/?page_id=111",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -31872,6 +33585,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-1245c427-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sasebo_city_library.jpg",
+        alt: "佐世保市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sasebo_city_library.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1423799114",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -32491,7 +34216,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420822363",
+    media: [
+      {
+        id: "osm-library-a7c28463-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Zama_City_Library.jpg",
+        alt: "座間市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Zama_City_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.zama.kanagawa.jp/html/",
+    sourceUrl: "http://www.library.zama.kanagawa.jp/html/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -32941,7 +34679,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423017582",
+    websiteUrl: "http://www3.city.hannan.osaka.jp/",
+    sourceUrl: "http://www3.city.hannan.osaka.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -32969,7 +34708,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422987791",
+    websiteUrl: "http://jinken-fureai.jp/?page_id=108",
+    sourceUrl: "http://jinken-fureai.jp/?page_id=108",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -33025,7 +34765,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422987841",
+    websiteUrl: "http://www.lib-sakai.jp/shisetu/s_sei.htm",
+    sourceUrl: "http://www.lib-sakai.jp/shisetu/s_sei.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -33053,6 +34794,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-b755fba6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sakai_City_Central_Library.jpg",
+        alt: "堺市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sakai_City_Central_Library.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://www.city.sakai.lg.jp/kosodate/library/shisetu/s_tyuou.html",
     sourceUrl:
@@ -33084,7 +34837,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422987784",
+    websiteUrl: "http://www.lib-sakai.jp/shisetu/s_naka.htm",
+    sourceUrl: "http://www.lib-sakai.jp/shisetu/s_naka.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -33112,7 +34866,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422987811",
+    websiteUrl: "http://www.lib-sakai.jp/shisetu/s_tomi.htm",
+    sourceUrl: "http://www.lib-sakai.jp/shisetu/s_tomi.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -33140,7 +34895,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422987812",
+    websiteUrl: "http://www.lib-sakai.jp/shisetu/s_hatu.htm",
+    sourceUrl: "http://www.lib-sakai.jp/shisetu/s_hatu.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -33168,7 +34924,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/11032181377",
+    websiteUrl: "http://www.lib-sakai.jp/shisetu/s_izu.htm",
+    sourceUrl: "http://www.lib-sakai.jp/shisetu/s_izu.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -33196,7 +34953,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422987797",
+    websiteUrl: "http://www.lib-sakai.jp/shisetu/s_toga.htm",
+    sourceUrl: "http://www.lib-sakai.jp/shisetu/s_toga.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -33224,7 +34982,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422987798",
+    websiteUrl: "http://www.lib-sakai.jp/shisetu/s_miki.htm",
+    sourceUrl: "http://www.lib-sakai.jp/shisetu/s_miki.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -33252,7 +35011,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422987832",
+    websiteUrl: "http://www.lib-sakai.jp/shisetu/s_miha.htm",
+    sourceUrl: "http://www.lib-sakai.jp/shisetu/s_miha.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -33280,7 +35040,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422987795",
+    websiteUrl: "http://www.lib-sakai.jp/shisetu/s_kita.htm",
+    sourceUrl: "http://www.lib-sakai.jp/shisetu/s_kita.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -33533,6 +35294,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-b80a9b59-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Atsubetsu_Library.JPG",
+        alt: "札幌市中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Atsubetsu_Library.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.city.sapporo.jp/toshokan/sisetu/chuo/chuo.html",
     sourceUrl: "https://www.city.sapporo.jp/toshokan/sisetu/chuo/chuo.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -34325,7 +36098,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/618545331",
+    media: [
+      {
+        id: "osm-library-4bca42d5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sannohe_Town_Library.jpg",
+        alt: "三戸町立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sannohe_Town_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.town.sannohe.aomori.jp/",
+    sourceUrl: "http://www.town.sannohe.aomori.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -34409,6 +36195,17 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-7b10928d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Meisho_Kaikan.JPG",
+        alt: "三康図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Meisho_Kaikan.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://sanko-bunka-kenkyujo.or.jp/",
     sourceUrl: "https://sanko-bunka-kenkyujo.or.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -34718,7 +36515,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/985984105",
+    media: [
+      {
+        id: "osm-library-a9948ef6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mie_Center_For_the_Arts_ac_(1).jpg",
+        alt: "三重県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mie_Center_For_the_Arts_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.pref.mie.lg.jp/",
+    sourceUrl: "http://www.library.pref.mie.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -34970,7 +36780,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423048483",
+    media: [
+      {
+        id: "osm-library-58d2d109-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sanda_City_Library_ac_(1).jpg",
+        alt: "三田市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sanda_City_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://sanda-city-lib.jp/",
+    sourceUrl: "https://sanda-city-lib.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -35222,6 +37045,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-7854ef29-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Miki_City_Central_Library_ac.jpg",
+        alt: "三木市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Miki_City_Central_Library_ac.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/5011710710",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -35337,7 +37172,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/6355869161",
+    websiteUrl: "http://www.town.yamanouchi.nagano.jp/library/index.html",
+    sourceUrl: "http://www.town.yamanouchi.nagano.jp/library/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -35449,7 +37285,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/465818513",
+    media: [
+      {
+        id: "osm-library-b72edc32-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yamaguchi_Library_2021-08_ac_(1).jpg",
+        alt: "山口県立山口図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yamaguchi_Library_2021-08_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://library.pref.yamaguchi.lg.jp/",
+    sourceUrl: "https://library.pref.yamaguchi.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -35674,6 +37523,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-2f87f644-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yamanakako_public_library_for_the_people's_creativity.JPG",
+        alt: "山中湖情報創造館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yamanakako_public_library_for_the_people's_creativity.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.lib-yamanakako.jp/",
     sourceUrl: "http://www.lib-yamanakako.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -36096,6 +37957,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-d7a14037-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E5%BB%BA%E8%A8%AD%E4%B8%AD%E3%81%AE%E5%B1%B1%E6%A2%A8%E7%9C%8C%E7%AB%8B%E5%9B%B3%E6%9B%B8%E9%A4%A8.JPG",
+        alt: "山梨県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E5%BB%BA%E8%A8%AD%E4%B8%AD%E3%81%AE%E5%B1%B1%E6%A2%A8%E7%9C%8C%E7%AB%8B%E5%9B%B3%E6%9B%B8%E9%A4%A8.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.lib.pref.yamanashi.jp/",
     sourceUrl: "https://www.lib.pref.yamanashi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -36265,7 +38138,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420979205",
+    media: [
+      {
+        id: "osm-library-535fb999-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yokkaichi_City_Library_exterior_in_Sep._2017_ac_(1).jpg",
+        alt: "四日市市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yokkaichi_City_Library_exterior_in_Sep._2017_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.yokkaichi-lib.jp/",
+    sourceUrl: "http://www.yokkaichi-lib.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -36405,7 +38291,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422986225",
+    websiteUrl: "https://www.library.city.shijonawate.lg.jp/",
+    sourceUrl: "https://www.library.city.shijonawate.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -36433,7 +38320,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422986227",
+    websiteUrl: "https://www.library.city.shijonawate.lg.jp/",
+    sourceUrl: "https://www.library.city.shijonawate.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -36545,6 +38433,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-8eca7822-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ichikai_Town_Library_%26_Museum_of_History_and_Folklore.jpg",
+        alt: "市貝町立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ichikai_Town_Library_%26_Museum_of_History_and_Folklore.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.ichikai.tochigi.jp/",
     sourceUrl: "https://www.library.ichikai.tochigi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -36574,7 +38474,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/570462599",
+    media: [
+      {
+        id: "osm-library-38fd78c2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ichihara_City_Central_Library.jpg",
+        alt: "市原市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ichihara_City_Central_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.ichihara.chiba.jp",
+    sourceUrl: "http://www.library.ichihara.chiba.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -36686,7 +38599,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420733663",
+    websiteUrl: "http://www.city.ichikawa.lg.jp/library/index.html",
+    sourceUrl: "http://www.city.ichikawa.lg.jp/library/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -36826,7 +38740,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/159843403",
+    media: [
+      {
+        id: "osm-library-7aae7398-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Okaya_city_library.jpg",
+        alt: "市立岡谷図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Okaya_city_library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.city.okaya.lg.jp/site/kyouiku/1165.html",
+    sourceUrl: "http://www.city.okaya.lg.jp/site/kyouiku/1165.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -36854,7 +38781,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1212936242",
+    media: [
+      {
+        id: "osm-library-770a9b37-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Okaya_city_library.jpg",
+        alt: "市立岡谷図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Okaya_city_library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.city.okaya.lg.jp/site/kyouiku/1165.html",
+    sourceUrl: "http://www.city.okaya.lg.jp/site/kyouiku/1165.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -36882,7 +38822,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/16420453",
+    media: [
+      {
+        id: "osm-library-349d5bcf-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Okaya_city_library.jpg",
+        alt: "市立岡谷図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Okaya_city_library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.city.okaya.lg.jp/site/kyouiku/1165.html",
+    sourceUrl: "http://www.city.okaya.lg.jp/site/kyouiku/1165.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -37050,7 +39003,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/4977727907",
+    media: [
+      {
+        id: "osm-library-e2feada3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Komoro_Plaza_exterior_ac_(2).jpg",
+        alt: "市立小諸図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Komoro_Plaza_exterior_ac_(2).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "https://www.city.komoro.lg.jp/official/benri/facility_map/shisetsuannai/bunkakyoyoshisetsu/ichiritsukomorotoshokan/4993.html",
+    sourceUrl:
+      "https://www.city.komoro.lg.jp/official/benri/facility_map/shisetsuannai/bunkakyoyoshisetsu/ichiritsukomorotoshokan/4993.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -37078,6 +39046,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-335e665a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Otaru_City_Library.jpg",
+        alt: "市立小樽図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Otaru_City_Library.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.otaru-lib.jp/",
     sourceUrl: "https://www.otaru-lib.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -37191,7 +39171,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/476080811",
+    websiteUrl: "http://www.city.suzaka.nagano.jp/enjoy/shisetsu/tosyokan/",
+    sourceUrl: "http://www.city.suzaka.nagano.jp/enjoy/shisetsu/tosyokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -37387,7 +39368,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423633819",
+    media: [
+      {
+        id: "osm-library-443eab56-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hiroshima_Takehara_City_Takehara_Syoin_Library_2021-03_ac.jpg",
+        alt: "市立竹原書院図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hiroshima_Takehara_City_Takehara_Syoin_Library_2021-03_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://takeharashoin.jp/",
+    sourceUrl: "https://takeharashoin.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -37527,7 +39521,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/478551137",
+    media: [
+      {
+        id: "osm-library-e1f88816-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Public_Library_of_Iiyama_City.jpg",
+        alt: "市立飯山図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Public_Library_of_Iiyama_City.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.iiyama.nagano.jp/soshiki/shimingakusyuusien/toshokan/",
+    sourceUrl:
+      "http://www.city.iiyama.nagano.jp/soshiki/shimingakusyuusien/toshokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -37751,7 +39760,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420988735",
+    media: [
+      {
+        id: "osm-library-1d613435-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shima_City_Library.jpg",
+        alt: "志摩市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shima_City_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.lics-saas.nexs-service.jp/shima/index.html",
+    sourceUrl: "https://www.lics-saas.nexs-service.jp/shima/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -37863,7 +39885,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/701325479",
+    websiteUrl: "http://www.minc.ne.jp/ibusukilib/",
+    sourceUrl: "http://www.minc.ne.jp/ibusukilib/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -38172,6 +40195,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-a5c79df1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shiga_Prefectural_Library_exterior_ac_(2).jpg",
+        alt: "滋賀県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shiga_Prefectural_Library_exterior_ac_(2).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.shiga-pref-library.jp/",
     sourceUrl: "https://www.shiga-pref-library.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -38370,7 +40405,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/467181471",
+    websiteUrl: "http://www.library.pref.kagoshima.jp/amami/",
+    sourceUrl: "http://www.library.pref.kagoshima.jp/amami/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -38398,7 +40434,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/relation/20682175",
+    media: [
+      {
+        id: "osm-library-5df79f0f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kagoshima_Prefectural_Library_ac_(1).jpg",
+        alt: "鹿児島県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kagoshima_Prefectural_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.pref.kagoshima.jp/honkan/",
+    sourceUrl: "http://www.library.pref.kagoshima.jp/honkan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -38454,7 +40503,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/290279549",
+    media: [
+      {
+        id: "osm-library-e804f002-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kagoshima_City_Library.jpg",
+        alt: "鹿児島市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kagoshima_City_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://lib.kagoshima-city.jp/",
+    sourceUrl: "https://lib.kagoshima-city.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -38482,7 +40544,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/461659423",
+    media: [
+      {
+        id: "osm-library-cde119e1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kanuma_City_Library.jpg",
+        alt: "鹿沼市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kanuma_City_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://tosyo.city.kanuma.tochigi.jp/",
+    sourceUrl: "http://tosyo.city.kanuma.tochigi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -38510,7 +40585,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/447941912",
+    media: [
+      {
+        id: "osm-library-e90e7bce-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kanuma_City_Library.jpg",
+        alt: "鹿沼市立図書館粟野館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kanuma_City_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://tosyo.city.kanuma.tochigi.jp/",
+    sourceUrl: "http://tosyo.city.kanuma.tochigi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -38538,7 +40626,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/422810620",
+    media: [
+      {
+        id: "osm-library-a9fdf094-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kanuma_City_Library.jpg",
+        alt: "鹿沼市立図書館東分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kanuma_City_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://tosyo.city.kanuma.tochigi.jp/",
+    sourceUrl: "http://tosyo.city.kanuma.tochigi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -38566,6 +40667,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-b250c399-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kashima_City_Able.jpg",
+        alt: "鹿島市民図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kashima_City_Able.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.city.kashima.saga.jp/",
     sourceUrl: "https://www.library.city.kashima.saga.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -38595,7 +40708,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/108285949",
+    websiteUrl: "http://opac.city.kashima.ibaraki.jp/index.html",
+    sourceUrl: "http://opac.city.kashima.ibaraki.jp/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -38652,7 +40766,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423059281",
+    media: [
+      {
+        id: "osm-library-e60a4ebb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shiso_City_Library.JPG",
+        alt: "宍粟市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shiso_City_Library.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.shiso.lg.jp/soshiki/kyoikuiinkai/siritutoshokan/",
+    sourceUrl:
+      "http://www.city.shiso.lg.jp/soshiki/kyoikuiinkai/siritutoshokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -38961,7 +41090,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423087269",
+    websiteUrl: "https://www.city.tambasasayama.lg.jp/chuotoshokan/index.html",
+    sourceUrl: "https://www.city.tambasasayama.lg.jp/chuotoshokan/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -39550,7 +41680,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/236370180",
+    websiteUrl: "http://library.city.sakata.lg.jp/",
+    sourceUrl: "http://library.city.sakata.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -39973,7 +42104,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/507220344",
+    media: [
+      {
+        id: "osm-library-55303c00-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sumoto_Library_Sumoto_Awaji_Island_Japan01bs5.jpg",
+        alt: "洲本市立 洲本図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sumoto_Library_Sumoto_Awaji_Island_Japan01bs5.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.lics-saas.nexs-service.jp/sumoto/index.html",
+    sourceUrl: "https://www.lics-saas.nexs-service.jp/sumoto/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -40029,6 +42173,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-18565947-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Akita_Prefectural_Library2.jpg",
+        alt: "秋田県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Akita_Prefectural_Library2.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.apl.pref.akita.jp/",
     sourceUrl: "https://www.apl.pref.akita.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -40117,6 +42273,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-31fa3280-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Akita_Municipal_Central_Library_Meitokukan_20180520.jpg",
+        alt: "秋田市立図書館 明徳館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Akita_Municipal_Central_Library_Meitokukan_20180520.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://www.city.akita.lg.jp/kurashi/shakai-shogai/1008469/1008846/",
     sourceUrl:
@@ -40350,7 +42518,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420917613",
+    websiteUrl: "http://www.vill.funahashi.toyama.jp/facility/library/",
+    sourceUrl: "http://www.vill.funahashi.toyama.jp/facility/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -40406,6 +42575,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-c6343926-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tokamachi_Information_Hall_exterior_ac_(1).jpg",
+        alt: "十日町情報館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tokamachi_Information_Hall_exterior_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://www.city.tokamachi.lg.jp/shisetsu/S014/1455332677158.html",
     sourceUrl:
@@ -40437,6 +42618,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-7a5094f3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Towada_Public_library.jpg",
+        alt: "十和田市民図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Towada_Public_library.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/relation/20636086",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -40829,7 +43022,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/11953874726",
+    media: [
+      {
+        id: "osm-library-cc3c4007-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Culture_Forum_Kasugai_exterior_ac_(4).jpg",
+        alt: "春日井市図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Culture_Forum_Kasugai_exterior_ac_(4).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.kasugai-lib.jp/",
+    sourceUrl: "https://www.kasugai-lib.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -40857,7 +43063,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423761278",
+    media: [
+      {
+        id: "osm-library-18ed2949-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kasuga_City_community_bus_terminal.jpg",
+        alt: "春日市民図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kasuga_City_community_bus_terminal.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.city.kasuga.fukuoka.jp/hp/",
+    sourceUrl: "http://www.library.city.kasuga.fukuoka.jp/hp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -41028,7 +43247,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/27396507",
+    media: [
+      {
+        id: "osm-library-a146369e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tokorozawa_City_Library_20090722.jpg",
+        alt: "所沢市立所沢図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tokorozawa_City_Library_20090722.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.tokorozawa-library.jp/",
+    sourceUrl: "https://www.tokorozawa-library.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -41591,7 +43823,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420776543",
+    media: [
+      {
+        id: "osm-library-2bfb17e3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Koganei_City_Library.jpg",
+        alt: "小金井市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Koganei_City_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.koganei.tokyo.jp/",
+    sourceUrl: "https://www.library.koganei.tokyo.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -41871,6 +44116,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-0a27bae2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Komatsu_municipal_library.jpg",
+        alt: "小松市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Komatsu_municipal_library.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.city.komatsu.lg.jp/soshiki/toshokan/index.html",
     sourceUrl: "https://www.city.komatsu.lg.jp/soshiki/toshokan/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -41928,6 +44185,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-4c731baf-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ogi_City_Ashikari_Regional_Community_Center.jpg",
+        alt: "小城市民図書館芦刈分室 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ogi_City_Ashikari_Regional_Community_Center.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://library.city.ogi.saga.jp/",
     sourceUrl: "http://library.city.ogi.saga.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -41957,6 +44226,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-497316f6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ogi_City_Ushizu_Community_Center.jpg",
+        alt: "小城市民図書館牛津分室 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ogi_City_Ushizu_Community_Center.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://library.city.ogi.saga.jp/",
     sourceUrl: "http://library.city.ogi.saga.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -41986,6 +44267,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-5bd299ff-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Doing_Mikatsuki.jpg",
+        alt: "小城市民図書館三日月館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Doing_Mikatsuki.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://library.city.ogi.saga.jp/",
     sourceUrl: "http://library.city.ogi.saga.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -42015,6 +44308,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-58d29546-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ogi_Hall_of_Ogi_City_Library_20171202-1.jpg",
+        alt: "小城市民図書館小城館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ogi_Hall_of_Ogi_City_Library_20171202-1.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://library.city.ogi.saga.jp/",
     sourceUrl: "http://library.city.ogi.saga.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -43420,7 +45725,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423002469",
+    websiteUrl: "http://www.city.matsubara.osaka.jp/index.cfm/10",
+    sourceUrl: "http://www.city.matsubara.osaka.jp/index.cfm/10",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -43448,7 +45754,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423002458",
+    websiteUrl: "http://www.city.matsubara.osaka.jp/index.cfm/10",
+    sourceUrl: "http://www.city.matsubara.osaka.jp/index.cfm/10",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -43476,7 +45783,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423002486",
+    websiteUrl: "http://www.city.matsubara.osaka.jp/index.cfm/10",
+    sourceUrl: "http://www.city.matsubara.osaka.jp/index.cfm/10",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -43646,7 +45954,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/3951211965",
+    media: [
+      {
+        id: "osm-library-8cb22d66-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudocity_Tokiwadaira_shimin_center01.jpg",
+        alt: "松戸市立図書館 常盤平分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudocity_Tokiwadaira_shimin_center01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/2tokiwadaira.html",
+    sourceUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/2tokiwadaira.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -43674,7 +45997,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740594",
+    media: [
+      {
+        id: "osm-library-94f01ae4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudo_kogasaki_shimin_center01.jpg",
+        alt: "松戸市立図書館古ケ崎分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudo_kogasaki_shimin_center01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/20kogasaki.html",
+    sourceUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/20kogasaki.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -43702,7 +46040,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740590",
+    media: [
+      {
+        id: "osm-library-90f01498-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gokou_shimin_center02.jpg",
+        alt: "松戸市立図書館五香分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Gokou_shimin_center02.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.city.matsudo.chiba.jp/library/shisetu/14gokou.html",
+    sourceUrl: "http://www.city.matsudo.chiba.jp/library/shisetu/14gokou.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -43730,7 +46081,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740599",
+    websiteUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/3koganehara.html",
+    sourceUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/3koganehara.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -43758,7 +46112,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420754625",
+    media: [
+      {
+        id: "osm-library-464afbde-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudo_kogane_shimin_center02.jpg",
+        alt: "松戸市立図書館小金分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudo_kogane_shimin_center02.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.city.matsudo.chiba.jp/library/shisetu/5kogane.html",
+    sourceUrl: "http://www.city.matsudo.chiba.jp/library/shisetu/5kogane.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -43786,7 +46153,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740598",
+    websiteUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/24koganekita.html",
+    sourceUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/24koganekita.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -43814,7 +46184,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740625",
+    media: [
+      {
+        id: "osm-library-532ff6b1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudo_matsuhidai_shimin_center_01.jpg",
+        alt: "松戸市立図書館松飛台分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudo_matsuhidai_shimin_center_01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/13matuhidai.html",
+    sourceUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/13matuhidai.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -43842,7 +46227,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740608",
+    media: [
+      {
+        id: "osm-library-c22a9540-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shinmatsudo_shimin_center.jpg",
+        alt: "松戸市立図書館新松戸分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shinmatsudo_shimin_center.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/4sinmatudo.html",
+    sourceUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/4sinmatudo.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -43870,7 +46270,21 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740617",
+    media: [
+      {
+        id: "osm-library-512db4f4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudo_citylibraly_toubu.jpg",
+        alt: "松戸市立図書館東部分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudo_citylibraly_toubu.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "https://www.city.matsudo.chiba.jp/library/shisetu/31toubu.html",
+    sourceUrl: "https://www.city.matsudo.chiba.jp/library/shisetu/31toubu.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -43926,7 +46340,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420754612",
+    media: [
+      {
+        id: "osm-library-2f4d1640-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudo_20seikigaoka_shimin_center01.jpg",
+        alt: "松戸市立図書館二十世紀が丘分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudo_20seikigaoka_shimin_center01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/32nijyuseiki.html",
+    sourceUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/32nijyuseiki.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -43954,7 +46383,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420754644",
+    media: [
+      {
+        id: "osm-library-c345b077-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudo_mabashi_higashi_shimin_center_01.jpg",
+        alt: "松戸市立図書館馬橋東分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudo_mabashi_higashi_shimin_center_01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/22mabasihigasi.html",
+    sourceUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/22mabasihigasi.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -43982,7 +46426,21 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740637",
+    media: [
+      {
+        id: "osm-library-413218f2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudo_mabashi_shimin_center_03.jpg",
+        alt: "松戸市立図書館馬橋分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudo_mabashi_shimin_center_03.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/21mabasi.html",
+    sourceUrl: "http://www.city.matsudo.chiba.jp/library/shisetu/21mabasi.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -44010,7 +46468,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740591",
+    media: [
+      {
+        id: "osm-library-91f0162b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudo_hachigasaki_library01.jpg",
+        alt: "松戸市立図書館八ケ崎分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudo_hachigasaki_library01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/23hatigasaki.html",
+    sourceUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/23hatigasaki.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -44038,7 +46511,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740592",
+    media: [
+      {
+        id: "osm-library-92f017be-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudo_Yahashira_shimin_center_02.jpg",
+        alt: "松戸市立図書館八柱分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudo_Yahashira_shimin_center_02.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/12yahasira.html",
+    sourceUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/12yahasira.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -44066,7 +46554,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/3455524831",
+    media: [
+      {
+        id: "osm-library-08aaa43c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudo_City_Library.jpg",
+        alt: "松戸市立図書館本館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudo_City_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.city.matsudo.chiba.jp/library/",
+    sourceUrl: "http://www.city.matsudo.chiba.jp/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -44094,7 +46595,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/478556766",
+    media: [
+      {
+        id: "osm-library-230488dc-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudo_minoridai_shimin_center_02.jpg",
+        alt: "松戸市立図書館稔台分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudo_minoridai_shimin_center_02.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/11minoridai.html",
+    sourceUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/11minoridai.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -44122,7 +46638,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/6981879080",
+    media: [
+      {
+        id: "osm-library-6919a6c4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudo_city_library_akira_branch02.jpg",
+        alt: "松戸市立図書館明分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudo_city_library_akira_branch02.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.city.matsudo.chiba.jp/library/shisetu/10akira.html",
+    sourceUrl: "http://www.city.matsudo.chiba.jp/library/shisetu/10akira.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -44150,7 +46679,21 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420754639",
+    media: [
+      {
+        id: "osm-library-3e48b0af-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudo_Yakiri_kominkan02.jpg",
+        alt: "松戸市立図書館矢切分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudo_Yakiri_kominkan02.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/30yakiri.html",
+    sourceUrl: "http://www.city.matsudo.chiba.jp/library/shisetu/30yakiri.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -44178,7 +46721,21 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740593",
+    media: [
+      {
+        id: "osm-library-93f01951-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Matsudo_mutsumi_shimin_center02.jpg",
+        alt: "松戸市立図書館六実分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Matsudo_mutsumi_shimin_center02.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/15mutumi.html",
+    sourceUrl: "http://www.city.matsudo.chiba.jp/library/shisetu/15mutumi.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -44206,7 +46763,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1397159542",
+    websiteUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/33wanagaya.html",
+    sourceUrl:
+      "http://www.city.matsudo.chiba.jp/library/shisetu/33wanagaya.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -44346,7 +46906,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420989723",
+    websiteUrl: "http://www.library-matsusaka.jp/",
+    sourceUrl: "http://www.library-matsusaka.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -44514,7 +47075,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/5049479896",
+    websiteUrl: "http://www.matsukawavill-lib.annexis.jp/",
+    sourceUrl: "http://www.matsukawavill-lib.annexis.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -44542,7 +47104,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/516756868",
+    websiteUrl: "https://www.nanshin-lib.jp/matsukawa/",
+    sourceUrl: "https://www.nanshin-lib.jp/matsukawa/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -44796,6 +47359,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-a271a62f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Numazu_City_Library_exterior_ac_(1).jpg",
+        alt: "沼津市立戸田図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Numazu_City_Library_exterior_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.tosyokan.city.numazu.shizuoka.jp/",
     sourceUrl: "https://www.tosyokan.city.numazu.shizuoka.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -44825,6 +47400,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-a771ae0e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Numazu_City_Library_exterior_ac_(1).jpg",
+        alt: "沼津市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Numazu_City_Library_exterior_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.tosyokan.city.numazu.shizuoka.jp/",
     sourceUrl: "https://www.tosyokan.city.numazu.shizuoka.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -45078,7 +47665,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/12227822128",
+    websiteUrl: "http://www.kaminoyama-lib.jp",
+    sourceUrl: "http://www.kaminoyama-lib.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -45106,7 +47694,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/11668380891",
+    websiteUrl: "https://horonlibrary.blogspot.com/",
+    sourceUrl: "https://horonlibrary.blogspot.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -45527,6 +48116,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-5d9f3f4d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kamimine_Town_Furusato_Gakkan.jpg",
+        alt: "上峰町図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kamimine_Town_Furusato_Gakkan.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://kamimine.milib.jp/",
     sourceUrl: "https://kamimine.milib.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -45612,7 +48213,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/772858328",
+    websiteUrl: "http://www.iga-sjk.or.jp/hand_detail.php?id=31",
+    sourceUrl: "http://www.iga-sjk.or.jp/hand_detail.php?id=31",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -45780,6 +48382,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-3c5d933b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hitachiota_public_library.jpg",
+        alt: "常陸太田市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hitachiota_public_library.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/829059157",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -45893,7 +48507,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422992780",
+    websiteUrl:
+      "http://www.city.neyagawa.osaka.jp/organization_list/kyoiku_shakaikyoiku/tyuutosyo/tosyotop/",
+    sourceUrl:
+      "http://www.city.neyagawa.osaka.jp/organization_list/kyoiku_shakaikyoiku/tyuutosyo/tosyotop/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -45977,7 +48594,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/9765934449",
+    websiteUrl: "http://www.shinhidaka-library.jp/",
+    sourceUrl: "http://www.shinhidaka-library.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -46062,7 +48680,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/329321183",
+    websiteUrl: "https://www.pref-lib.niigata.niigata.jp/",
+    sourceUrl: "https://www.pref-lib.niigata.niigata.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -46370,7 +48989,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423067962",
+    media: [
+      {
+        id: "osm-library-c8a5eb7a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shingu_City_Library_2021-10_ac_(1).jpg",
+        alt: "新宮市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shingu_City_Library_2021-10_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.shingu.lg.jp/forms/info/info.aspx?info_id=18990",
+    sourceUrl:
+      "http://www.city.shingu.lg.jp/forms/info/info.aspx?info_id=18990",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -46990,7 +49624,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/53256747",
+    websiteUrl: "https://www.lics-saas.nexs-service.jp/shinshiro/index.htm",
+    sourceUrl: "https://www.lics-saas.nexs-service.jp/shinshiro/index.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -47245,7 +49880,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/6407219737",
+    media: [
+      {
+        id: "osm-library-b9515466-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shibata_City_History_Library_ac.jpg",
+        alt: "新発田市立歴史図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shibata_City_History_Library_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.histlib-shibata.jp/",
+    sourceUrl: "https://www.histlib-shibata.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -47693,6 +50341,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-76cd7328-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Moka_City_Library%2C_March_2022.jpg",
+        alt: "真岡市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Moka_City_Library%2C_March_2022.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.moka-lib.jp/",
     sourceUrl: "https://www.moka-lib.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -47722,6 +50382,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-20a63489-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Maniwa_city_office_Katsuyama_branch.jpg",
+        alt: "真庭市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Maniwa_city_office_Katsuyama_branch.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/6446405741",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -47806,6 +50478,15 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-9ea2c76d-video-1",
+        type: "video",
+        url: "https://www.youtube.com/@asahikawa_city_library",
+        alt: "神楽図書館 public video",
+        sourceUrl: "https://www.youtube.com/@asahikawa_city_library",
+      },
+    ],
     websiteUrl: "https://www2.lib.city.asahikawa.hokkaido.jp/",
     sourceUrl: "https://www2.lib.city.asahikawa.hokkaido.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -47835,6 +50516,17 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-72db49e0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Jingu-bunko_16.jpg",
+        alt: "神宮文庫 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Jingu-bunko_16.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.isejingu.or.jp/about/cultural/#bunko",
     sourceUrl: "https://www.isejingu.or.jp/about/cultural/#bunko",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -47864,7 +50556,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423081838",
+    websiteUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/facilities/shinnagata_lib.html",
+    sourceUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/facilities/shinnagata_lib.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -47892,7 +50587,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423082644",
+    websiteUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/facilities/suma_lib.html",
+    sourceUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/facilities/suma_lib.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -47920,7 +50618,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423081497",
+    media: [
+      {
+        id: "osm-library-49ce7e91-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tarumi_ward-office.JPG",
+        alt: "神戸市立垂水図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tarumi_ward-office.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/facilities/tarumi_lib.html",
+    sourceUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/facilities/tarumi_lib.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -47948,7 +50661,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423082500",
+    websiteUrl:
+      "https://www.city.kobe.lg.jp/a09222/kosodate/lifelong/toshokan/facilities/nishi_lib.html",
+    sourceUrl:
+      "https://www.city.kobe.lg.jp/a09222/kosodate/lifelong/toshokan/facilities/nishi_lib.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -47976,7 +50692,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/182502627",
+    media: [
+      {
+        id: "osm-library-eb21d450-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kobe_municipal_central_library01s3200.jpg",
+        alt: "神戸市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kobe_municipal_central_library01s3200.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/top/",
+    sourceUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/top/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -48004,7 +50735,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/6192408516",
+    websiteUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/facilities/nada_lib.html",
+    sourceUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/facilities/nada_lib.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -48032,7 +50766,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423081247",
+    websiteUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/facilities/hyogo_lib.html",
+    sourceUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/facilities/hyogo_lib.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -48060,7 +50797,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423081311",
+    websiteUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/facilities/hokushin_lib.html",
+    sourceUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/facilities/hokushin_lib.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -48088,7 +50828,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423081305",
+    websiteUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/facilities/kita_lib.html",
+    sourceUrl:
+      "http://www.city.kobe.lg.jp/information/institution/institution/library/facilities/kita_lib.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -48144,7 +50887,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1221353573",
+    websiteUrl: "http://www.town.godo.gifu.jp/contents/library/library01.html",
+    sourceUrl: "http://www.town.godo.gifu.jp/contents/library/library01.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -48172,6 +50916,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-56986b03-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kanzaki_City_Chuo_Civic_Center.jpg",
+        alt: "神埼市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kanzaki_City_Chuo_Civic_Center.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.kanzaki-city-library.com/",
     sourceUrl: "https://www.kanzaki-city-library.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -48201,6 +50957,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-ce0892cb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kanzaki_Sefuri_Community_Center_in_2022.jpg",
+        alt: "神埼市立図書館脊振分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kanzaki_Sefuri_Community_Center_in_2022.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.kanzaki-city-library.com/",
     sourceUrl: "https://www.kanzaki-city-library.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -48230,6 +50998,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-1e0d9615-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kanzaki_City_Chiyoda_Civic_Center_December_2023.jpg",
+        alt: "神埼市立図書館千代田分館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kanzaki_City_Chiyoda_Civic_Center_December_2023.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.kanzaki-city-library.com/",
     sourceUrl: "https://www.kanzaki-city-library.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -48429,6 +51209,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-35705dd0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Appearance_of_Kanagawa_Prefectural_Archives.jpeg",
+        alt: "神奈川県立公文書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Appearance_of_Kanagawa_Prefectural_Archives.jpeg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.pref.kanagawa.jp/cnt/f1040/",
     sourceUrl: "http://www.pref.kanagawa.jp/cnt/f1040/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -48458,6 +51250,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-f94bf20f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kanagawa_honkan03.jpg",
+        alt: "神奈川県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kanagawa_honkan03.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.klnet.pref.kanagawa.jp/yokohama/index.html",
     sourceUrl: "https://www.klnet.pref.kanagawa.jp/yokohama/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -48599,6 +51403,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-c85edc11-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hadanoshi-CulturePark-fountain.jpg",
+        alt: "秦野市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hadanoshi-CulturePark-fountain.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://library-hadano.jp/",
     sourceUrl: "https://library-hadano.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -48684,6 +51500,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-9a8abba2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hitoyoshi_City_Library.jpg",
+        alt: "人吉市図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hitoyoshi_City_Library.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1423798334",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -49553,7 +52381,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422985863",
+    websiteUrl: "http://www.lib.suita.osaka.jp/",
+    sourceUrl: "http://www.lib.suita.osaka.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -49581,7 +52410,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422985900",
+    websiteUrl: "http://www.lib.suita.osaka.jp/",
+    sourceUrl: "http://www.lib.suita.osaka.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -49609,7 +52439,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/459825698",
+    websiteUrl: "http://www.lib.suita.osaka.jp/?page_id=200",
+    sourceUrl: "http://www.lib.suita.osaka.jp/?page_id=200",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -49637,7 +52468,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422985878",
+    websiteUrl: "http://www.lib.suita.osaka.jp/",
+    sourceUrl: "http://www.lib.suita.osaka.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -49721,7 +52553,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423926297",
+    websiteUrl: "http://www2.city.tarumizu.lg.jp/",
+    sourceUrl: "http://www2.city.tarumizu.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -49889,7 +52722,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/753328817",
+    media: [
+      {
+        id: "osm-library-cdb68feb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Seibu_Library_in_Mito.jpg",
+        alt: "水戸市立西部図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Seibu_Library_in_Mito.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library-mito.jp/contents/tosyokan/seibu.html",
+    sourceUrl: "http://www.library-mito.jp/contents/tosyokan/seibu.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -50114,7 +52960,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420995557",
+    media: [
+      {
+        id: "osm-library-14533e8d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mizuho_City_Library_ac_(1).jpg",
+        alt: "瑞穂市図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mizuho_City_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library-mizuho-gifu.jp/",
+    sourceUrl: "http://www.library-mizuho-gifu.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -50170,7 +53029,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420995561",
+    websiteUrl: "http://www.library-mizuho-gifu.jp/",
+    sourceUrl: "http://www.library-mizuho-gifu.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -50198,7 +53058,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420789921",
+    media: [
+      {
+        id: "osm-library-e791cef1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mizuho_Town_Library_ac_(1).jpg",
+        alt: "瑞穂町図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mizuho_Town_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.mizuho.tokyo.jp",
+    sourceUrl: "http://www.library.mizuho.tokyo.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -50226,7 +53099,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/586793475",
+    media: [
+      {
+        id: "osm-library-3e33cce5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Mizunami_City_Library_exterior_ac_(1).jpg",
+        alt: "瑞浪市民図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Mizunami_City_Library_exterior_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://library.city.mizunami.gifu.jp/tosho/index.asp",
+    sourceUrl: "http://library.city.mizunami.gifu.jp/tosho/index.asp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -50427,7 +53313,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420766055",
+    media: [
+      {
+        id: "osm-library-70dad660-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E7%83%8F%E5%B1%B1%E5%8C%BA%E6%B0%91%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC.jpg",
+        alt: "世田谷区立烏山図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E7%83%8F%E5%B1%B1%E5%8C%BA%E6%B0%91%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://libweb.city.setagaya.tokyo.jp/library/karasuyama_lib.html",
+    sourceUrl:
+      "http://libweb.city.setagaya.tokyo.jp/library/karasuyama_lib.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -50773,7 +53674,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420766061",
+    websiteUrl: "http://libweb.city.setagaya.tokyo.jp/library/kasuya_lib.html",
+    sourceUrl: "http://libweb.city.setagaya.tokyo.jp/library/kasuya_lib.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -50914,7 +53816,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423991572",
+    media: [
+      {
+        id: "osm-library-77473985-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Seto_City_Library_exterior_ac_(7b).jpg",
+        alt: "瀬戸市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Seto_City_Library_exterior_ac_(7b).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.lib.seto.aichi.jp",
+    sourceUrl: "http://www.lib.seto.aichi.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -51645,6 +54560,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-f4cb2ce1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fukui_city_Shimizu_Library.jpg",
+        alt: "清水町立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fukui_city_Shimizu_Library.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1420948708",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -52182,6 +55109,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-2d033ed2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Morioka_Municipal_Library_1.jpg",
+        alt: "盛岡市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Morioka_Municipal_Library_1.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/138312544",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -53224,7 +56163,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/565648632",
+    media: [
+      {
+        id: "osm-library-e8c32130-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nishio_City_Shiro_Ozaki_Memorial_Museum_exterior_ac_(1).jpg",
+        alt: "西尾市立吉良図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nishio_City_Shiro_Ozaki_Memorial_Museum_exterior_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "https://www.library.city.nishio.aichi.jp/contents/facility-top/facility/annex2",
+    sourceUrl:
+      "https://www.library.city.nishio.aichi.jp/contents/facility-top/facility/annex2",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -53392,6 +56346,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-21e6e240-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nishiwaki_Miraie_exterior_2019-11_ac_(1).jpg",
+        alt: "西脇市図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nishiwaki_Miraie_exterior_2019-11_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.city.nishiwaki.lg.jp/miraie/tosyokan/index.html",
     sourceUrl: "https://www.city.nishiwaki.lg.jp/miraie/tosyokan/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -53421,7 +56387,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420799831",
+    websiteUrl: "http://www.vill.aogashima.tokyo.jp/life/facilities.html",
+    sourceUrl: "http://www.vill.aogashima.tokyo.jp/life/facilities.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -53533,7 +56500,19 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/2344480285",
+    media: [
+      {
+        id: "osm-library-a7ce81c4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/AUGA.JPG",
+        alt: "青森市民図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:AUGA.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.aomori.aomori.jp/acl/index.html",
+    sourceUrl: "https://www.library.city.aomori.aomori.jp/acl/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -53961,7 +56940,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1421002492",
+    media: [
+      {
+        id: "osm-library-c9b35063-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shizuoka_Prefectural_Library_exterior_ac.jpg",
+        alt: "静岡県立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shizuoka_Prefectural_Library_exterior_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.tosyokan.pref.shizuoka.jp/",
+    sourceUrl: "http://www.tosyokan.pref.shizuoka.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -54017,7 +57009,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1483251455",
+    media: [
+      {
+        id: "osm-library-750d0e7c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shizuoka_City_Pegasart_Building_ac.jpg",
+        alt: "静岡市立御幸町図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shizuoka_City_Pegasart_Building_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.toshokan.city.shizuoka.jp/",
+    sourceUrl: "http://www.toshokan.city.shizuoka.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -54526,6 +57531,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-12e24783-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ishikawa_Prefectural_Library_2022-07_ac_(1).jpg",
+        alt: "石川県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ishikawa_Prefectural_Library_2022-07_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.pref.ishikawa.lg.jp/",
     sourceUrl: "https://www.library.pref.ishikawa.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -54753,7 +57770,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/519877469",
+    media: [
+      {
+        id: "osm-library-26d87309-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ako_City_Library_2021-03_ac_(6).jpg",
+        alt: "赤穂市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ako_City_Library_2021-03_ac_(6).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.ako-city-lib.com",
+    sourceUrl: "http://www.ako-city-lib.com",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -54781,6 +57811,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-e3a88f0a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Settsu_City_Library.JPG",
+        alt: "摂津市民図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Settsu_City_Library.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/498040620",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -54809,7 +57851,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1660087267",
+    media: [
+      {
+        id: "osm-library-af901865-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shitara_Town_Library_interior_ac_(1).jpg",
+        alt: "設楽町民図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shitara_Town_Library_interior_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.town.shitara.aichi.jp/sp/index.cfm/15",
+    sourceUrl: "http://www.town.shitara.aichi.jp/sp/index.cfm/15",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -54922,7 +57977,19 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420770188",
+    media: [
+      {
+        id: "osm-library-8bc88eac-image-1",
+        type: "image",
+        url: "https://upload.wikimedia.org/wikipedia/commons/2/2e/Yonbancho-library.webp",
+        alt: "千代田区立四番町図書館 public image",
+        sourceUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/2/2e/Yonbancho-library.webp",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.chiyoda.tokyo.jp/facilities/yonbancho/",
+    sourceUrl: "http://www.library.chiyoda.tokyo.jp/facilities/yonbancho/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -54950,7 +58017,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420770192",
+    websiteUrl: "http://www.library.chiyoda.tokyo.jp/facilities/kanda/",
+    sourceUrl: "http://www.library.chiyoda.tokyo.jp/facilities/kanda/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -54978,6 +58046,17 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-92c899b1-image-1",
+        type: "image",
+        url: "https://upload.wikimedia.org/wikipedia/commons/6/68/Kudan_Common_Government_Office_Building_No-3.JPG",
+        alt: "千代田区立千代田図書館 public image",
+        sourceUrl:
+          "https://upload.wikimedia.org/wikipedia/commons/6/68/Kudan_Common_Government_Office_Building_No-3.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.chiyoda.tokyo.jp/chiyoda/",
     sourceUrl: "https://www.library.chiyoda.tokyo.jp/chiyoda/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -55007,7 +58086,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420785508",
+    media: [
+      {
+        id: "osm-library-7cf7116c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hibiya_Library_%26_Museum_2016.JPG",
+        alt: "千代田区立日比谷図書文化館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hibiya_Library_%26_Museum_2016.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://hibiyal.jp/hibiya/index.html",
+    sourceUrl: "http://hibiyal.jp/hibiya/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -55063,6 +58155,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-187c2ed8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/ChibaPrefecturalArchives.jpg",
+        alt: "千葉県文書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:ChibaPrefecturalArchives.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.pref.chiba.lg.jp/bunshokan/",
     sourceUrl: "https://www.pref.chiba.lg.jp/bunshokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -55092,7 +58196,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/504907469",
+    media: [
+      {
+        id: "osm-library-455958fe-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/SeibuToshokanMatsudo01.jpg",
+        alt: "千葉県立 西部図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:SeibuToshokanMatsudo01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.pref.chiba.lg.jp/guide/west/index.html",
+    sourceUrl: "http://www.library.pref.chiba.lg.jp/guide/west/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -55120,6 +58237,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-cd2e86f2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chiba_Prefectural_Central_Library_2022-05_ac_(1).jpg",
+        alt: "千葉県立 中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Chiba_Prefectural_Central_Library_2022-05_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.pref.chiba.lg.jp/guide/central/",
     sourceUrl: "https://www.library.pref.chiba.lg.jp/guide/central/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -55149,6 +58278,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-7dd46ea9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chiba-prefectural-east-library%2CAsahi-city%2CJapan.JPG",
+        alt: "千葉県立東部図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Chiba-prefectural-east-library%2CAsahi-city%2CJapan.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.pref.chiba.lg.jp/guide/east/index.html",
     sourceUrl: "https://www.library.pref.chiba.lg.jp/guide/east/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -55374,7 +58515,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420728428",
+    media: [
+      {
+        id: "osm-library-63da0fe6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chiba_City_Central_Library_ac_(2).jpg",
+        alt: "千葉市中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Chiba_City_Central_Library_ac_(2).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.city.chiba.jp/",
+    sourceUrl: "http://www.library.city.chiba.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -56193,7 +59347,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/2241867884",
+    media: [
+      {
+        id: "osm-library-523a2fdc-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kawasaki_City_Nakahara_Public_Library_Ent.jpeg",
+        alt: "川崎市立中原図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kawasaki_City_Nakahara_Public_Library_Ent.jpeg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.library.city.kawasaki.jp/riyou_libmap/libinfo_06.html",
+    sourceUrl:
+      "http://www.library.city.kawasaki.jp/riyou_libmap/libinfo_06.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -56333,6 +59502,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-7a8041d5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kawakami_library.jpg",
+        alt: "川上村立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kawakami_library.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1423061811",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -56361,6 +59542,17 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-f489fc3f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Asutekawanishi.JPG",
+        alt: "川西市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Asutekawanishi.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.lics-saas.nexs-service.jp/kawanishi/",
     sourceUrl: "https://www.lics-saas.nexs-service.jp/kawanishi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -56615,7 +59807,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423005640",
+    websiteUrl: "http://www.city.izumiotsu.lg.jp/kakuka/kyoikuiinkai/toshokan/",
+    sourceUrl: "http://www.city.izumiotsu.lg.jp/kakuka/kyoikuiinkai/toshokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -56671,7 +59864,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423005585",
+    websiteUrl: "http://www.toshokan-sennan.jp/",
+    sourceUrl: "http://www.toshokan-sennan.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -56840,7 +60034,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420742574",
+    websiteUrl:
+      "http://www.city.funabashi.chiba.jp/shisetsu/toshokankominkan/0001/0001/0001/p011016.html",
+    sourceUrl:
+      "http://www.city.funabashi.chiba.jp/shisetsu/toshokankominkan/0001/0001/0001/p011016.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -56952,7 +60149,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/11887775853",
+    websiteUrl: "https://www.tosyokan.city.maebashi.gunma.jp/kodomo/index.htm",
+    sourceUrl: "https://www.tosyokan.city.maebashi.gunma.jp/kodomo/index.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -57008,7 +60206,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420709544",
+    media: [
+      {
+        id: "osm-library-571ff3f8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Maebashi_City_Library.JPG",
+        alt: "前橋市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Maebashi_City_Library.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.tosyokan.city.maebashi.gunma.jp/",
+    sourceUrl: "https://www.tosyokan.city.maebashi.gunma.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -57655,6 +60866,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-d5bf2539-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Building_of_Sagamihara_City_Library.jpg",
+        alt: "相模原市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Building_of_Sagamihara_City_Library.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.lib.sagamihara.kanagawa.jp/shisetu/index01.html",
     sourceUrl: "http://www.lib.sagamihara.kanagawa.jp/shisetu/index01.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -58333,7 +61556,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420798483",
+    media: [
+      {
+        id: "osm-library-bdbae66c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E8%B6%B3%E7%AB%8B%E5%8C%BA%E4%BF%9D%E5%A1%9A%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC.jpg",
+        alt: "足立区立保塚図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E8%B6%B3%E7%AB%8B%E5%8C%BA%E4%BF%9D%E5%A1%9A%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.adachi.tokyo.jp/toshokan/shisetsu/toshokan/014.html",
+    sourceUrl:
+      "http://www.city.adachi.tokyo.jp/toshokan/shisetsu/toshokan/014.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -58557,7 +61795,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423049823",
+    websiteUrl: "https://www.town.taka.lg.jp/library/",
+    sourceUrl: "https://www.town.taka.lg.jp/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -58585,7 +61824,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/4500296591",
+    websiteUrl: "https://tagajo.city-library.jp/",
+    sourceUrl: "https://tagajo.city-library.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -58669,6 +61909,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-f0a1d56a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Taku_City_Central_Community_Center.jpg",
+        alt: "多久市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Taku_City_Central_Community_Center.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://lib.city.taku.saga.jp/",
     sourceUrl: "http://lib.city.taku.saga.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -58726,7 +61978,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420980572",
+    media: [
+      {
+        id: "osm-library-f10b5266-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Manabi_Park_Tajimi_exterior_ac_(3).jpg",
+        alt: "多治見市図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Manabi_Park_Tajimi_exterior_ac_(3).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.lib.tajimi.gifu.jp/",
+    sourceUrl: "http://www.lib.tajimi.gifu.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -59009,7 +62274,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/158700627",
+    media: [
+      {
+        id: "osm-library-ed10d6d3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Taishichoritsu_Library.jpg",
+        alt: "太子町立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Taishichoritsu_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://lib.town.taishi.hyogo.jp/",
+    sourceUrl: "https://lib.town.taishi.hyogo.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -59065,7 +62343,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/444989487",
+    media: [
+      {
+        id: "osm-library-df2ad082-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Art_Museum_%26_Library%2C_Ota_ac_(2).jpg",
+        alt: "太田市美術館・図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Art_Museum_%26_Library%2C_Ota_ac_(2).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.artmuseumlibraryota.jp/",
+    sourceUrl: "https://www.artmuseumlibraryota.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -59373,6 +62664,25 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-670eb0d4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/131012_Obihiro_City_Library_Hokkaido_Japan01s5.jpg",
+        alt: "帯広市図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:131012_Obihiro_City_Library_Hokkaido_Japan01s5.jpg",
+        cover: true,
+      },
+      {
+        id: "osm-library-670eb0d4-video-2",
+        type: "video",
+        url: "https://youtube.com/channel/UCZCTNlTm_UmyA_enjPjNkTg",
+        alt: "帯広市図書館 public video",
+        sourceUrl: "https://youtube.com/channel/UCZCTNlTm_UmyA_enjPjNkTg",
+      },
+    ],
     websiteUrl: "https://www.lib-obihiro.jp/",
     sourceUrl: "https://www.lib-obihiro.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -59879,7 +63189,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420928861",
+    media: [
+      {
+        id: "osm-library-989497c3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Otsuki_City_Library.JPG",
+        alt: "大月市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Otsuki_City_Library.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.otsuki.yamanashi.jp/bunka/shisetsu/bunka-sisetsu-toshokan.html",
+    sourceUrl:
+      "http://www.city.otsuki.yamanashi.jp/bunka/shisetsu/bunka-sisetsu-toshokan.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -59963,7 +63288,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/71504966",
+    websiteUrl: "http://www4.city.osakasayama.osaka.jp",
+    sourceUrl: "http://www4.city.osakasayama.osaka.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60048,7 +63374,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422989747",
+    media: [
+      {
+        id: "osm-library-3a1c95bf-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Osaka-abeno-City-Library.jpg",
+        alt: "大阪市立阿倍野図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Osaka-abeno-City-Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=137",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=137",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60076,7 +63415,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422989637",
+    media: [
+      {
+        id: "osm-library-26ac5a4f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Osaka_Asahi_city_library.jpg",
+        alt: "大阪市立旭図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Osaka_Asahi_city_library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=136",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=136",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60104,7 +63456,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/962912042",
+    media: [
+      {
+        id: "osm-library-fb918f7f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Minato_Ward_Community_Center.JPG",
+        alt: "大阪市立港図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Minato_Ward_Community_Center.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=155",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=155",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60132,7 +63497,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422989661",
+    media: [
+      {
+        id: "osm-library-b0a4e4c8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Osaka_Konohana_city_library.jpg",
+        alt: "大阪市立此花図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Osaka_Konohana_city_library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=139",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=139",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60189,7 +63567,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422989538",
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=142",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=142",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60217,7 +63596,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422989579",
+    media: [
+      {
+        id: "osm-library-61f3b6a8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Joutou_Ward_Complex.jpg",
+        alt: "大阪市立城東図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Joutou_Ward_Complex.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=141",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=141",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60245,7 +63637,19 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422989688",
+    media: [
+      {
+        id: "osm-library-35bdbb0d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ikuno_Library.jpg",
+        alt: "大阪市立生野図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Ikuno_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=138",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=138",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60273,7 +63677,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422989717",
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=148",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=148",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60301,7 +63706,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422989722",
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=149",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=149",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60329,7 +63735,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422989598",
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=144",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=144",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60357,6 +63764,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-2c9deff2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Osaka_Municipal_Central_Library_ac_exterior_(1).jpg",
+        alt: "大阪市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Osaka_Municipal_Central_Library_ac_exterior_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.oml.city.osaka.lg.jp/",
     sourceUrl: "https://www.oml.city.osaka.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -60386,7 +63805,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422989779",
+    media: [
+      {
+        id: "osm-library-c819a3b2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E9%B6%B4%E8%A6%8B%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
+        alt: "大阪市立鶴見図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E9%B6%B4%E8%A6%8B%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=145",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=145",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60414,7 +63846,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422989610",
+    media: [
+      {
+        id: "osm-library-b7a72e64-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shimanouchi_Library.jpg",
+        alt: "大阪市立島之内図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shimanouchi_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=140",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=140",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60442,7 +63887,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422989642",
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=150",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=150",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60470,6 +63916,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-892d7c96-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Higashinari_Ward_Community_Center.JPG",
+        alt: "大阪市立東成図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Higashinari_Ward_Community_Center.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=151",
     sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=151",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -60499,7 +63957,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1080511584",
+    media: [
+      {
+        id: "osm-library-20d3dedf-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Osaka-higashiyodogawa-City-_Library.jpg",
+        alt: "大阪市立東淀川図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Osaka-higashiyodogawa-City-_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=152",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=152",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60527,7 +63998,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422989700",
+    media: [
+      {
+        id: "osm-library-bf12d9c2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Osaka_City_Fukushima_Library.JPG",
+        alt: "大阪市立福島図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Osaka_City_Fukushima_Library.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=154",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=154",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60584,7 +64068,19 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422989558",
+    media: [
+      {
+        id: "osm-library-e6ee77d9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kita_Library.jpg",
+        alt: "大阪市立北図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Kita_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.oml.city.osaka.lg.jp/?page_id=398",
+    sourceUrl: "https://www.oml.city.osaka.lg.jp/?page_id=398",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60612,7 +64108,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422989678",
+    media: [
+      {
+        id: "osm-library-b3a2aaea-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Osaka_Yodogawa_city_library.jpg",
+        alt: "大阪市立淀川図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Osaka_Yodogawa_city_library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=157",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=157",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60640,7 +64149,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/7639856140",
+    websiteUrl: "http://www.oml.city.osaka.lg.jp/?page_id=147",
+    sourceUrl: "http://www.oml.city.osaka.lg.jp/?page_id=147",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60696,7 +64206,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/209510166",
+    media: [
+      {
+        id: "osm-library-6c233183-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Osaka_Prefectural_Central_Library_201611.jpg",
+        alt: "大阪府立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Osaka_Prefectural_Central_Library_201611.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.pref.osaka.jp/central/index3.htm",
+    sourceUrl: "http://www.library.pref.osaka.jp/central/index3.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -60724,6 +64247,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-87fa30d9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Osaka_Nakanosima_Library.jpg",
+        alt: "大阪府立中之島図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Osaka_Nakanosima_Library.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.library.pref.osaka.jp/site/nakato/",
     sourceUrl: "http://www.library.pref.osaka.jp/site/nakato/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -61063,7 +64598,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/13638109548",
+    media: [
+      {
+        id: "osm-library-5e88103c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Daisen_City_Archives_20181202.jpg",
+        alt: "大仙市アーカイブズ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Daisen_City_Archives_20181202.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.city.daisen.lg.jp/archive/contents-9947",
+    sourceUrl: "https://www.city.daisen.lg.jp/archive/contents-9947",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -61175,7 +64723,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420980698",
+    media: [
+      {
+        id: "osm-library-65a2a8d3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%C5%8Cdai_Town_Library_20101024.jpg",
+        alt: "大台町立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%C5%8Cdai_Town_Library_20101024.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.ma.mctv.ne.jp/~odai-to/",
+    sourceUrl: "http://www.ma.mctv.ne.jp/~odai-to/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -61203,7 +64764,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/505068030",
+    media: [
+      {
+        id: "osm-library-000fe07b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Oya_Soichi_Bunko.JPG",
+        alt: "大宅壮一文庫 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Oya_Soichi_Bunko.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://oya-bunko.or.jp/",
+    sourceUrl: "https://oya-bunko.or.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -61344,7 +64918,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422941857",
+    media: [
+      {
+        id: "osm-library-82eb482b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Otsu_City_Library_exterior_ac.jpg",
+        alt: "大津市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Otsu_City_Library_exterior_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.otsu.shiga.jp/",
+    sourceUrl: "https://www.library.otsu.shiga.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -61936,7 +65523,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/2008214135",
+    websiteUrl: "https://www.librarydaito.jp",
+    sourceUrl: "https://www.librarydaito.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -61964,7 +65552,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422987993",
+    websiteUrl: "https://www.librarydaito.jp",
+    sourceUrl: "https://www.librarydaito.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -61992,7 +65581,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/8447560114",
+    websiteUrl: "https://www.librarydaito.jp/",
+    sourceUrl: "https://www.librarydaito.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -62076,6 +65666,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-008e2253-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyonokuni_information_library_building_1.jpg",
+        alt: "大分県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Toyonokuni_information_library_building_1.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/125452926",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -62104,6 +65706,17 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-53a3a1c0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/ConpalHall.jpg",
+        alt: "大分市民図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:ConpalHall.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1423865841",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -62160,7 +65773,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423758217",
+    websiteUrl: "http://www.library.city.omuta.fukuoka.jp",
+    sourceUrl: "http://www.library.city.omuta.fukuoka.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -62328,7 +65942,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423758276",
+    websiteUrl: "http://www.madokapialibrary.jp/",
+    sourceUrl: "http://www.madokapialibrary.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -63115,6 +66730,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-58d4452a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ogijima_Library_exterior_ac_(1).jpg",
+        alt: "男木島図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ogijima_Library_exterior_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://ogijima-library.or.jp/",
     sourceUrl: "https://ogijima-library.or.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -63284,7 +66911,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423994160",
+    websiteUrl: "http://library.city.chiryu.aichi.jp/",
+    sourceUrl: "http://library.city.chiryu.aichi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -63481,7 +67109,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423005191",
+    websiteUrl: "http://lib-ikedacity.jp/index.html",
+    sourceUrl: "http://lib-ikedacity.jp/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -63509,7 +67138,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/9355059524",
+    media: [
+      {
+        id: "osm-library-a17978db-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ikeda_City_Library_2021-11_ac.jpg",
+        alt: "池田市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ikeda_City_Library_2021-11_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://lib-ikedacity.jp/honkan/index.html",
+    sourceUrl: "http://lib-ikedacity.jp/honkan/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -63537,7 +67179,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423005198",
+    websiteUrl: "http://lib-ikedacity.jp/plaza/index.html",
+    sourceUrl: "http://lib-ikedacity.jp/plaza/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -63565,7 +67208,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420990987",
+    media: [
+      {
+        id: "osm-library-926ec235-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Gifu_Ikeda_Town_Library_ac.jpg",
+        alt: "池田町図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Gifu_Ikeda_Town_Library_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.town.ikeda.gifu.jp/library/",
+    sourceUrl: "http://www.town.ikeda.gifu.jp/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -63649,7 +67305,19 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/656450760",
+    media: [
+      {
+        id: "osm-library-9b47f15e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ikeda_Bunko.JPG",
+        alt: "池田文庫 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Ikeda_Bunko.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.hankyu-bunka.or.jp/ikedabunko/",
+    sourceUrl: "https://www.hankyu-bunka.or.jp/ikedabunko/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -63705,7 +67373,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/260057205",
+    websiteUrl: "http://www.city.wakkanai.hokkaido.jp/toshokan/",
+    sourceUrl: "http://www.city.wakkanai.hokkaido.jp/toshokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -63733,7 +67402,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423883393",
+    media: [
+      {
+        id: "osm-library-75e71da2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Taketa_Municipal_Library_ac_(1).jpg",
+        alt: "竹田市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Taketa_Municipal_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://taketa.milib.jp/TOSHOW/asp/index.aspx",
+    sourceUrl: "https://taketa.milib.jp/TOSHOW/asp/index.aspx",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -63789,7 +67471,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/4877057173",
+    media: [
+      {
+        id: "osm-library-970117d5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Chikusei_City_Central_Library.jpg",
+        alt: "筑西市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Chikusei_City_Central_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://library-city-chikusei.jp/",
+    sourceUrl: "http://library-city-chikusei.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -64630,7 +68325,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1303086202",
+    media: [
+      {
+        id: "osm-library-aca392f6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nakasendo_Mitake-kan_ac.jpg",
+        alt: "中山道みたけ館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nakasendo_Mitake-kan_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.town.mitake.gifu.jp/hp_ka/11gakusyu/mitakekan/index.html",
+    sourceUrl:
+      "http://www.town.mitake.gifu.jp/hp_ka/11gakusyu/mitakekan/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -64742,7 +68452,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422987785",
+    websiteUrl: "http://www.lib-sakai.jp/shisetu/s_higa.htm",
+    sourceUrl: "http://www.lib-sakai.jp/shisetu/s_higa.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -64826,7 +68537,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/212723756",
+    media: [
+      {
+        id: "osm-library-6f20ff0a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nakatsu_Obata_Commemoration_Library.jpg",
+        alt: "中津市立小幡記念図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nakatsu_Obata_Commemoration_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://libwebsv.city-nakatsu.jp/2010.html",
+    sourceUrl: "https://libwebsv.city-nakatsu.jp/2010.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -64910,6 +68634,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-99dcda3f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nakatsugawa_City_Library_2024-02_ac.jpg",
+        alt: "中津川市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nakatsugawa_City_Library_2024-02_ac.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1420976563",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -65221,7 +68957,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/67831601",
+    websiteUrl: "http://www3.city.tokyo-nakano.lg.jp/tosho/riyou/KAN_05.html",
+    sourceUrl: "http://www3.city.tokyo-nakano.lg.jp/tosho/riyou/KAN_05.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -65423,7 +69160,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/160307190",
+    media: [
+      {
+        id: "osm-library-4f9d7574-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Library_of_Nakano_City_in_Nagano_Pref_enterance.jpg",
+        alt: "中野市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Library_of_Nakano_City_in_Nagano_Pref_enterance.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.nakano-lib.jp",
+    sourceUrl: "http://www.nakano-lib.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -65507,7 +69257,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/586343271",
+    websiteUrl:
+      "https://www.town.tadaoka.osaka.jp/?ka_details=%e5%9b%b3%e6%9b%b8%e9%a4%a80",
+    sourceUrl:
+      "https://www.town.tadaoka.osaka.jp/?ka_details=%e5%9b%b3%e6%9b%b8%e9%a4%a80",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -65563,6 +69316,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-52d1d57b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E6%9C%9D%E9%9C%9E%E5%B8%82%E7%AB%8B%E5%9B%B3%E6%9B%B8%E9%A4%A8_-_Mapillary_(844753750393029).jpg",
+        alt: "朝霞市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E6%9C%9D%E9%9C%9E%E5%B8%82%E7%AB%8B%E5%9B%B3%E6%9B%B8%E9%A4%A8_-_Mapillary_(844753750393029).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.asakalib.jp",
     sourceUrl: "https://www.asakalib.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -65873,7 +69638,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420790192",
+    websiteUrl: "https://www.library.city.machida.tokyo.jp/facilities/",
+    sourceUrl: "https://www.library.city.machida.tokyo.jp/facilities/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -66070,7 +69836,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420916824",
+    websiteUrl: "http://kamiichilibweb.town.kamiichi.toyama.jp/",
+    sourceUrl: "http://kamiichilibweb.town.kamiichi.toyama.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -66546,6 +70313,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-5de53f75-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagasaki_Prefectural_Library.jpg",
+        alt: "長崎県立長崎図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagasaki_Prefectural_Library.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1423822076",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -66658,7 +70437,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423821384",
+    media: [
+      {
+        id: "osm-library-1527c956-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagasaki_City_Library_2023-08_ac_(1).jpg",
+        alt: "長崎市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagasaki_City_Library_2023-08_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://lib.city.nagasaki.nagasaki.jp/index.html",
+    sourceUrl: "http://lib.city.nagasaki.nagasaki.jp/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -66770,7 +70562,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1421001678",
+    websiteUrl: "https://www.town.nagaizumi.lg.jp/soshiki/syogai/4/index.html",
+    sourceUrl: "https://www.town.nagaizumi.lg.jp/soshiki/syogai/4/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -67051,7 +70844,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/161731261",
+    websiteUrl: "http://library.nagano-ngn.ed.jp/",
+    sourceUrl: "http://library.nagano-ngn.ed.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -67135,6 +70929,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-a9597071-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Toba_City_Public_Library_20091004.jpg",
+        alt: "鳥羽市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Toba_City_Public_Library_20091004.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1421003053",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -67219,7 +71025,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423096360",
+    media: [
+      {
+        id: "osm-library-b3e076ca-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tottori_Prefectural_Library_1.jpg",
+        alt: "鳥取県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tottori_Prefectural_Library_1.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.pref.tottori.jp/",
+    sourceUrl: "https://www.library.pref.tottori.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -67359,6 +71178,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-4bfad275-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tosu_City_Library_2024.jpg",
+        alt: "鳥栖市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tosu_City_Library_2024.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.city.tosu.lg.jp/site/library/",
     sourceUrl: "https://www.city.tosu.lg.jp/site/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -67556,6 +71387,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-71dc6db0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E6%B4%A5%E5%B1%B1%E5%B8%82%E7%AB%8B%E5%9B%B3%E6%9B%B8%E9%A4%A8%E6%9C%AC%E9%A4%A8.jpg",
+        alt: "津山市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E6%B4%A5%E5%B1%B1%E5%B8%82%E7%AB%8B%E5%9B%B3%E6%9B%B8%E9%A4%A8%E6%9C%AC%E9%A4%A8.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://tsuyamalib.tvt.ne.jp/index.html",
     sourceUrl: "https://tsuyamalib.tvt.ne.jp/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -68432,7 +72275,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/160728407",
+    media: [
+      {
+        id: "osm-library-b9994efe-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tendo_Civic_Library_Main_Entrance.jpg",
+        alt: "天童市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tendo_Civic_Library_Main_Entrance.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.tendo-lib-unet.ocn.ne.jp",
+    sourceUrl: "http://www.tendo-lib-unet.ocn.ne.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -68657,7 +72513,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423992838",
+    media: [
+      {
+        id: "osm-library-8805002f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tahara_city_library1.JPG",
+        alt: "田原市中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tahara_city_library1.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www2.city.tahara.aichi.jp/section/library/",
+    sourceUrl: "http://www2.city.tahara.aichi.jp/section/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -69022,6 +72891,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-7a6ff001-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Miyakonojo_City_Library_2010.JPG",
+        alt: "都城市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Miyakonojo_City_Library_2010.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://mallmall.info/library.html",
     sourceUrl: "https://mallmall.info/library.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -69107,7 +72988,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420934848",
+    media: [
+      {
+        id: "osm-library-6ac23739-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Center_of_town_planning_and_Interaction%2C_Tsuru_2015-11-21_(1)_sa.jpg",
+        alt: "都留市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Center_of_town_planning_and_Interaction%2C_Tsuru_2015-11-21_(1)_sa.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.lib.city.tsuru.yamanashi.jp",
+    sourceUrl: "http://www.lib.city.tsuru.yamanashi.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -69219,7 +73113,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1276779572",
+    media: [
+      {
+        id: "osm-library-a95d2fed-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tsuchiura_City_Lifelong_Learning_Building_2012.JPG",
+        alt: "土浦市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tsuchiura_City_Lifelong_Learning_Building_2012.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.t-lib.jp/",
+    sourceUrl: "http://www.t-lib.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -69443,7 +73350,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1161705828",
+    websiteUrl: "https://www.city.karatsu.lg.jp/kyoiku/toshokan/index.html",
+    sourceUrl: "https://www.city.karatsu.lg.jp/kyoiku/toshokan/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -69555,6 +73463,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-076fcbc1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Karatsu_City_Ouchi_Library.jpg",
+        alt: "唐津市相知図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Karatsu_City_Ouchi_Library.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl:
       "https://www.city.karatsu.lg.jp/kindai-toshokan/kyoiku/toshokan/ochi/shisetsu.html",
     sourceUrl:
@@ -69726,6 +73646,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-5d09a893-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Shimane_Prefectural_Library_2022_ac_(4).jpg",
+        alt: "島根県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Shimane_Prefectural_Library_2022_ac_(4).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://lib-shimane.jp/",
     sourceUrl: "https://lib-shimane.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -69839,7 +73771,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422993629",
+    websiteUrl: "http://www.town.shimamoto.osaka.jp",
+    sourceUrl: "http://www.town.shimamoto.osaka.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -70343,7 +74276,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1350619775",
+    media: [
+      {
+        id: "osm-library-70146485-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Goethe_Archive_Tokyo.jpg",
+        alt: "東京ゲーテ記念館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Goethe_Archive_Tokyo.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://goethe.jp/",
+    sourceUrl: "http://goethe.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -70399,7 +74345,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1340201411",
+    media: [
+      {
+        id: "osm-library-c698b6b0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tokyo_Metropolitan_Tama_Library_exterior_ac_(2).jpg",
+        alt: "東京都立多摩図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tokyo_Metropolitan_Tama_Library_exterior_ac_(2).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.metro.tokyo.lg.jp/guide/tama_library/",
+    sourceUrl: "https://www.library.metro.tokyo.lg.jp/guide/tama_library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -70427,7 +74386,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423988829",
+    websiteUrl:
+      "http://www.town.aichi-togo.lg.jp/syogai/tosyo/kyouiku/bunka/toshokan/tougouchouritsu.html",
+    sourceUrl:
+      "http://www.town.aichi-togo.lg.jp/syogai/tosyo/kyouiku/bunka/toshokan/tougouchouritsu.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -70595,7 +74557,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/11503401714",
+    media: [
+      {
+        id: "osm-library-9c11f5ef-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tomi_city_library_1.jpg",
+        alt: "東御市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tomi_city_library_1.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.city.tomi.nagano.jp/tosyokan/",
+    sourceUrl: "http://www.city.tomi.nagano.jp/tosyokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -70623,6 +74598,15 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-05517c45-video-1",
+        type: "video",
+        url: "https://www.youtube.com/@asahikawa_city_library",
+        alt: "東光図書館 public video",
+        sourceUrl: "https://www.youtube.com/@asahikawa_city_library",
+      },
+    ],
     websiteUrl: "https://www2.lib.city.asahikawa.hokkaido.jp/",
     sourceUrl: "https://www2.lib.city.asahikawa.hokkaido.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -70907,6 +74891,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-789cea60-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Higamatsu_Terrace06.jpg",
+        alt: "東松戸地域館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Higamatsu_Terrace06.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/11594096243",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -70935,6 +74931,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-2a61bb61-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takasaka_library.jpg",
+        alt: "東松山市立高坂図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Takasaka_library.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.libcity.higashimatsuyama.saitama.jp",
     sourceUrl: "https://www.libcity.higashimatsuyama.saitama.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -70964,6 +74972,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-e6b9ba7b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Higashimatsuyama_municipal_library.jpg",
+        alt: "東松山市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Higashimatsuyama_municipal_library.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.libcity.higashimatsuyama.saitama.jp",
     sourceUrl: "https://www.libcity.higashimatsuyama.saitama.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -71754,7 +75774,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423072928",
+    media: [
+      {
+        id: "osm-library-c4738a8e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yuasa_Town_Public_Library_2021-09_ac_(1).jpg",
+        alt: "湯浅町立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yuasa_Town_Public_Library_2021-09_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://yuasa.ed.jp/publics/index/21/",
+    sourceUrl: "http://yuasa.ed.jp/publics/index/21/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -72146,7 +76179,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/225059753",
+    media: [
+      {
+        id: "osm-library-3fef6a8b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tokushima_prefectural_library05bs5.jpg",
+        alt: "徳島県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tokushima_prefectural_library05bs5.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.tokushima-ec.ed.jp/",
+    sourceUrl: "http://www.library.tokushima-ec.ed.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -72174,6 +76220,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-10b8243f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E5%BE%B3%E5%B3%B6%E5%B8%82%E7%AB%8B%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpeg",
+        alt: "徳島市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E5%BE%B3%E5%B3%B6%E5%B8%82%E7%AB%8B%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpeg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://www.city.tokushima.tokushima.jp/toshokan/",
     sourceUrl: "http://www.city.tokushima.tokushima.jp/toshokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -72287,7 +76345,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/116915441",
+    media: [
+      {
+        id: "osm-library-99491a77-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tochigi_Prefectural_Library_ac_(1).jpg",
+        alt: "栃木県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tochigi_Prefectural_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.lib.pref.tochigi.lg.jp/",
+    sourceUrl: "http://www.lib.pref.tochigi.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -72513,7 +76584,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/98093568",
+    media: [
+      {
+        id: "osm-library-db0622e1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nara_Prefectural_library.jpg",
+        alt: "奈良県立図書情報館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nara_Prefectural_library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.pref.nara.jp/",
+    sourceUrl: "https://www.library.pref.nara.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -72765,7 +76849,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/977753190",
+    websiteUrl: "http://www2.city.nasushiobara.lg.jp/toshokan/",
+    sourceUrl: "http://www2.city.nasushiobara.lg.jp/toshokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -73077,7 +77162,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420926069",
+    media: [
+      {
+        id: "osm-library-5cddbc11-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E5%86%85%E7%81%98%E7%94%BA%E6%96%87%E5%8C%96%E4%BC%9A%E9%A4%A8.jpg",
+        alt: "内灘町立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E5%86%85%E7%81%98%E7%94%BA%E6%96%87%E5%8C%96%E4%BC%9A%E9%A4%A8.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www4.town.uchinada.lg.jp/",
+    sourceUrl: "http://www4.town.uchinada.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -73554,7 +77652,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/4374479445",
+    media: [
+      {
+        id: "osm-library-4cd9964b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E5%8D%97%E9%AD%9A%E6%B2%BC%E5%B8%82%E5%9B%B3%E6%9B%B8%E9%A4%A8.JPG",
+        alt: "南魚沼市図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E5%8D%97%E9%AD%9A%E6%B2%BC%E5%B8%82%E5%9B%B3%E6%9B%B8%E9%A4%A8.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.city.minamiuonuma.niigata.jp/toshokan/",
+    sourceUrl: "https://www.city.minamiuonuma.niigata.jp/toshokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -74764,6 +78875,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-358f6d24-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Amagasaki_City_Library01bbs3s3840.jpg",
+        alt: "尼崎市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Amagasaki_City_Library01bbs3s3840.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.amagasaki-library.jp/",
     sourceUrl: "https://www.amagasaki-library.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -75045,7 +79168,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1310712609",
+    media: [
+      {
+        id: "osm-library-6c600c40-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nisshin_City_Library_exterior_ac_(1).jpg",
+        alt: "日進市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nisshin_City_Library_exterior_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://lib.city.nisshin.lg.jp/",
+    sourceUrl: "https://lib.city.nisshin.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -75269,7 +79405,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/155279493",
+    media: [
+      {
+        id: "osm-library-60be7b64-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Japan_Braille_Library_entrance_2012-01-26.JPG",
+        alt: "日本点字図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Japan_Braille_Library_entrance_2012-01-26.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.nittento.or.jp",
+    sourceUrl: "https://www.nittento.or.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -75353,7 +79502,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420781252",
+    websiteUrl:
+      "https://www.lib.city.hino.lg.jp/hnolib_doc200801/sisetu/tyuou.htm",
+    sourceUrl:
+      "https://www.lib.city.hino.lg.jp/hnolib_doc200801/sisetu/tyuou.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -75717,7 +79869,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420913396",
+    websiteUrl: "https://www.town.nyuzen.toyama.jp/gyosei/tosho/index.html",
+    sourceUrl: "https://www.town.nyuzen.toyama.jp/gyosei/tosho/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -75801,7 +79954,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420994502",
+    media: [
+      {
+        id: "osm-library-eb62effe-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Atami_City_Library_in_2019-03_ac.jpg",
+        alt: "熱海市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Atami_City_Library_in_2019-03_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.atami-toshokan.jp/index.asp",
+    sourceUrl: "http://www.atami-toshokan.jp/index.asp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76194,7 +80360,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423004131",
+    websiteUrl: "http://library.city.kashiwara.osaka.jp",
+    sourceUrl: "http://library.city.kashiwara.osaka.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76222,7 +80389,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423004146",
+    websiteUrl: "http://library.city.kashiwara.osaka.jp",
+    sourceUrl: "http://library.city.kashiwara.osaka.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76250,7 +80418,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/2307515815",
+    websiteUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/17_kodomo.html",
+    sourceUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/17_kodomo.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76278,7 +80447,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740891",
+    websiteUrl:
+      "http://tosho.city.kashiwa.lg.jp/homepage/html/06_eirakudai.html",
+    sourceUrl:
+      "http://tosho.city.kashiwa.lg.jp/homepage/html/06_eirakudai.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76306,7 +80478,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740842",
+    websiteUrl:
+      "http://tosho.city.kashiwa.lg.jp/homepage/html/08_hikarigaoka.html",
+    sourceUrl:
+      "http://tosho.city.kashiwa.lg.jp/homepage/html/08_hikarigaoka.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76334,7 +80509,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740898",
+    websiteUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/10_takata.html",
+    sourceUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/10_takata.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76362,7 +80538,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740897",
+    websiteUrl:
+      "http://tosho.city.kashiwa.lg.jp/homepage/html/16_takayanagi.html",
+    sourceUrl:
+      "http://tosho.city.kashiwa.lg.jp/homepage/html/16_takayanagi.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76390,7 +80569,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740889",
+    websiteUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/11_nedo.html",
+    sourceUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/11_nedo.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76418,7 +80598,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740882",
+    websiteUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/13_matuba.html",
+    sourceUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/13_matuba.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76446,7 +80627,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740892",
+    websiteUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/15_shonan.html",
+    sourceUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/15_shonan.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76474,7 +80656,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740874",
+    websiteUrl:
+      "http://tosho.city.kashiwa.lg.jp/homepage/html/12_shindenhara.html",
+    sourceUrl:
+      "http://tosho.city.kashiwa.lg.jp/homepage/html/12_shindenhara.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76530,7 +80715,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740895",
+    websiteUrl:
+      "http://tosho.city.kashiwa.lg.jp/homepage/html/03_nishihara.html",
+    sourceUrl:
+      "http://tosho.city.kashiwa.lg.jp/homepage/html/03_nishihara.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76558,7 +80746,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740857",
+    websiteUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/07_masuo.html",
+    sourceUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/07_masuo.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76586,7 +80775,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740893",
+    websiteUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/02_tanaka.html",
+    sourceUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/02_tanaka.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76614,7 +80804,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740894",
+    websiteUrl:
+      "http://tosho.city.kashiwa.lg.jp/homepage/html/14_hujigokoro.html",
+    sourceUrl:
+      "http://tosho.city.kashiwa.lg.jp/homepage/html/14_hujigokoro.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76642,7 +80835,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740846",
+    websiteUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/04_nanbu.html",
+    sourceUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/04_nanbu.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76670,7 +80864,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420740858",
+    websiteUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/05_huse.html",
+    sourceUrl: "http://tosho.city.kashiwa.lg.jp/homepage/html/05_huse.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -76698,7 +80893,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/395236087",
+    websiteUrl:
+      "http://tosho.city.kashiwa.lg.jp/homepage/html/01_toyosikidai.html",
+    sourceUrl:
+      "http://tosho.city.kashiwa.lg.jp/homepage/html/01_toyosikidai.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -77207,6 +81405,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-96e32417-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fukudomi_Yuaikan.jpg",
+        alt: "白石町ゆうあい図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fukudomi_Yuaikan.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.town.shiroishi.lg.jp/jyuumin/manabu/toshokan.html",
     sourceUrl: "https://www.town.shiroishi.lg.jp/jyuumin/manabu/toshokan.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -77292,7 +81502,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/4928109303",
+    media: [
+      {
+        id: "osm-library-aa424e4f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hakuba_Village_Library_exterior_ac.jpg",
+        alt: "白馬村図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hakuba_Village_Library_exterior_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "https://www.vill.hakuba.lg.jp/gyosei/soshikikarasagasu/shogaigakushusportska/hakubamuratoshokan/",
+    sourceUrl:
+      "https://www.vill.hakuba.lg.jp/gyosei/soshikikarasagasu/shogaigakushusportska/hakubamuratoshokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -77379,7 +81604,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/946730727",
+    websiteUrl: "http://www.town.shiraoi.hokkaido.jp/bunya/tosyokan/",
+    sourceUrl: "http://www.town.shiraoi.hokkaido.jp/bunya/tosyokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -77463,6 +81689,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-0a32f1f9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hakodate_City_Central_Library.JPG",
+        alt: "函館市中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hakodate_City_Central_Library.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://hakodate-lib.jp/",
     sourceUrl: "https://hakodate-lib.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -77745,6 +81983,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-0a5344bf-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hachinohe_City_Media_Library_Center.jpg",
+        alt: "八戸市図書情報センター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hachinohe_City_Media_Library_Center.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1494619119",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -77773,7 +82023,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/756967055",
+    media: [
+      {
+        id: "osm-library-4c0b77d7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hachinohe_City_Public_Library.jpg",
+        alt: "八戸市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hachinohe_City_Public_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.lib.hachinohe.aomori.jp/",
+    sourceUrl: "http://www.lib.hachinohe.aomori.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -77801,6 +82064,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-b2293669-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hachinohe_City_Nango_Public_Library.jpg",
+        alt: "八戸市立南郷図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hachinohe_City_Nango_Public_Library.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/556254764",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -78448,7 +82723,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422984949",
+    websiteUrl: "https://web-lib.city.yao.osaka.jp/eachlib/yamamoto/index.html",
+    sourceUrl: "https://web-lib.city.yao.osaka.jp/eachlib/yamamoto/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -78476,7 +82752,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422984950",
+    websiteUrl: "https://web-lib.city.yao.osaka.jp/eachlib/shiki/index.html",
+    sourceUrl: "https://web-lib.city.yao.osaka.jp/eachlib/shiki/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -78504,7 +82781,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/13731236247",
+    websiteUrl: "https://web-lib.city.yao.osaka.jp/eachlib/yao/index.html",
+    sourceUrl: "https://web-lib.city.yao.osaka.jp/eachlib/yao/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -78532,7 +82810,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/458201182",
+    websiteUrl: "https://web-lib.city.yao.osaka.jp/eachlib/ryuge/index.html",
+    sourceUrl: "https://web-lib.city.yao.osaka.jp/eachlib/ryuge/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -78617,7 +82896,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423949201",
+    websiteUrl: "http://www.city.handa.lg.jp/contents/tosho.html",
+    sourceUrl: "http://www.city.handa.lg.jp/contents/tosho.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -79124,7 +83404,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/5543883019",
+    websiteUrl: "http://www.iida.nanshin-lib.jp/",
+    sourceUrl: "http://www.iida.nanshin-lib.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -79152,7 +83433,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/340213075",
+    media: [
+      {
+        id: "osm-library-eb958f20-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Iida_City_Central_Library_exterior_in_Apr._2018_ac.jpg",
+        alt: "飯田市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Iida_City_Central_Library_exterior_in_Apr._2018_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.nanshin-lib.jp/iida/",
+    sourceUrl: "http://www.nanshin-lib.jp/iida/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -79208,7 +83502,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/263938623",
+    websiteUrl:
+      "https://www.town.iijima.lg.jp/soshikiichiran/kyoiku/s_gakusyu/library/index.html",
+    sourceUrl:
+      "https://www.town.iijima.lg.jp/soshikiichiran/kyoiku/s_gakusyu/library/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -79544,7 +83841,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/479056924",
+    media: [
+      {
+        id: "osm-library-2304680b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hida_City_Library_ac_(1).jpg",
+        alt: "飛騨市図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hida_City_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://hida-lib.jp/",
+    sourceUrl: "http://hida-lib.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -79572,7 +83882,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1424004382",
+    websiteUrl: "http://www1.vill.tobishima.lg.jp/library/index.html",
+    sourceUrl: "http://www1.vill.tobishima.lg.jp/library/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -79684,7 +83995,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/3480640099",
+    media: [
+      {
+        id: "osm-library-bee7540d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Owariasahi_City_Library_2021-10_ac_(1).jpg",
+        alt: "尾張旭市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Owariasahi_City_Library_2021-10_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.owariasahi.lg.jp/kurasi/kyouiku/shougaigakushuu/tosho/",
+    sourceUrl:
+      "http://www.city.owariasahi.lg.jp/kurasi/kyouiku/shougaigakushuu/tosho/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -79826,7 +84152,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420982060",
+    media: [
+      {
+        id: "osm-library-84f5519c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Owase_City_Central_Community_Center_ac_(1).jpg",
+        alt: "尾鷲市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Owase_City_Central_Community_Center_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "http://www.city.owase.lg.jp/contents_detail.php?co=kak&frmId=9158",
+    sourceUrl:
+      "http://www.city.owase.lg.jp/contents_detail.php?co=kak&frmId=9158",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -80134,6 +84475,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-7e753893-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fukui_city_Miyama_Library.jpg",
+        alt: "美山町立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fukui_city_Miyama_Library.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1420949756",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -80386,7 +84739,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423996265",
+    websiteUrl: "http://www.town.aichi-mihama.lg.jp/lib/index.html",
+    sourceUrl: "http://www.town.aichi-mihama.lg.jp/lib/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -80414,7 +84768,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423088958",
+    websiteUrl: "http://www.town.aichi-mihama.lg.jp/lib/",
+    sourceUrl: "http://www.town.aichi-mihama.lg.jp/lib/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -80638,7 +84993,21 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423058744",
+    media: [
+      {
+        id: "osm-library-0daaf976-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Joukaku-center.jpg",
+        alt: "姫路市立城内図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Joukaku-center.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "https://www.city.himeji.lg.jp/bousai/category/2-5-4-4-3-0-0-0-0-0.html",
+    sourceUrl:
+      "https://www.city.himeji.lg.jp/bousai/category/2-5-4-4-3-0-0-0-0-0.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -81426,7 +85795,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420999601",
+    media: [
+      {
+        id: "osm-library-4fc075c3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hamamatsu_Municipal_Hosoe_Library.JPG",
+        alt: "浜松市立細江図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hamamatsu_Municipal_Hosoe_Library.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.lib-city-hamamatsu.jp/access/hosoe.htm",
+    sourceUrl: "http://www.lib-city-hamamatsu.jp/access/hosoe.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -81568,7 +85950,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420992499",
+    media: [
+      {
+        id: "osm-library-b793565f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hamamatsu_City_Central_Library_exterior_ac_(1).jpg",
+        alt: "浜松市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hamamatsu_City_Central_Library_exterior_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.lib-city-hamamatsu.jp/access/chuo.htm",
+    sourceUrl: "http://www.lib-city-hamamatsu.jp/access/chuo.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -81821,7 +86216,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423616822",
+    websiteUrl: "http://www.library.city.hamada.shimane.jp/",
+    sourceUrl: "http://www.library.city.hamada.shimane.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -81877,7 +86273,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/144867624",
+    media: [
+      {
+        id: "osm-library-9d6e980d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E5%90%8D%E5%B7%A5%E5%A4%A7%E5%9B%B3%E6%9B%B8%E9%A4%A820210126.jpg",
+        alt: "付属図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E5%90%8D%E5%B7%A5%E5%A4%A7%E5%9B%B3%E6%9B%B8%E9%A4%A820210126.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.lib.nitech.ac.jp",
+    sourceUrl: "http://www.lib.nitech.ac.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -81989,7 +86398,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420915065",
+    media: [
+      {
+        id: "osm-library-3adc34af-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyama_Prefectural_Library.jpg",
+        alt: "富山県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Toyama_Prefectural_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.lib.pref.toyama.jp/index.aspx",
+    sourceUrl: "http://www.lib.pref.toyama.jp/index.aspx",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -82717,7 +87139,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420929321",
+    media: [
+      {
+        id: "osm-library-9a5ff1db-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fujiyoshida_Civic_Hall.JPG",
+        alt: "富士吉田市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fujiyoshida_Civic_Hall.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://flib.fujinet.ed.jp/",
+    sourceUrl: "http://flib.fujinet.ed.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -83083,7 +87518,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422992450",
+    websiteUrl: "http://www.city.tondabayashi.osaka.jp/public/section/library/",
+    sourceUrl: "http://www.city.tondabayashi.osaka.jp/public/section/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -83111,7 +87547,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/5907569555",
+    websiteUrl: "http://www.city.tondabayashi.osaka.jp/public/section/library/",
+    sourceUrl: "http://www.city.tondabayashi.osaka.jp/public/section/library/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -83845,7 +88282,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/174050894",
+    media: [
+      {
+        id: "osm-library-93600ea1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hitotsubashi_University_Library_Clock_Tower_Building_(2).jpg",
+        alt: "附属図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hitotsubashi_University_Library_Clock_Tower_Building_(2).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.lib.hit-u.ac.jp/",
+    sourceUrl: "https://www.lib.hit-u.ac.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -84267,7 +88717,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423989687",
+    media: [
+      {
+        id: "osm-library-acc2151b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Taketoyo_Town_Library_2019-08_ac_(2).jpg",
+        alt: "武豊町立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Taketoyo_Town_Library_2019-08_ac_(2).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.lib.town.taketoyo.lg.jp",
+    sourceUrl: "http://www.lib.town.taketoyo.lg.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -84323,6 +88786,17 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-f5bac5c5-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Takeo_cl_00.JPG",
+        alt: "武雄市図書館・歴史資料館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Takeo_cl_00.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://takeo.city-library.jp/",
     sourceUrl: "https://takeo.city-library.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -84352,7 +88826,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/561043921",
+    websiteUrl:
+      "https://lib.city.maizuru.kyoto.jp/opac/wopc/pc/pages/TopPage.jsp",
+    sourceUrl:
+      "https://lib.city.maizuru.kyoto.jp/opac/wopc/pc/pages/TopPage.jsp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -84408,7 +88885,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1025078021",
+    websiteUrl:
+      "https://lib.city.maizuru.kyoto.jp/opac/wopc/pc/pages/TopPage.jsp",
+    sourceUrl:
+      "https://lib.city.maizuru.kyoto.jp/opac/wopc/pc/pages/TopPage.jsp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -84492,7 +88972,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/753377547",
+    media: [
+      {
+        id: "osm-library-ff88128d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E7%A6%8F%E4%BA%95%E7%9C%8C%E7%AB%8B%E8%8B%A5%E7%8B%AD%E5%9B%B3%E6%9B%B8%E5%AD%A6%E7%BF%92%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC.jpg",
+        alt: "福井県立若狭図書学習センター public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E7%A6%8F%E4%BA%95%E7%9C%8C%E7%AB%8B%E8%8B%A5%E7%8B%AD%E5%9B%B3%E6%9B%B8%E5%AD%A6%E7%BF%92%E3%82%BB%E3%83%B3%E3%82%BF%E3%83%BC.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library-archives.pref.fukui.jp/?page_id=161",
+    sourceUrl: "http://www.library-archives.pref.fukui.jp/?page_id=161",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -84520,7 +89013,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420949538",
+    media: [
+      {
+        id: "osm-library-e6d2d5bd-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fukui_pref-lib.jpg",
+        alt: "福井県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Fukui_pref-lib.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "https://www.library-archives.pref.fukui.lg.jp/tosyo/index.html",
+    sourceUrl: "https://www.library-archives.pref.fukui.lg.jp/tosyo/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -84548,6 +89054,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-af9a8a3a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fukui_city_Midori_Library.jpg",
+        alt: "福井市立みどり図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fukui_city_Midori_Library.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1420949294",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -84576,6 +89094,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-5870c075-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fukui_city_Sakuragi_Library.jpg",
+        alt: "福井市立桜木図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fukui_city_Sakuragi_Library.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/10939075474",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -84604,6 +89134,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-ad9a8714-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fukui_city_Fukui_Library.jpg",
+        alt: "福井市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fukui_city_Fukui_Library.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1420949296",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -84632,7 +89174,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/570403776",
+    media: [
+      {
+        id: "osm-library-55766384-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fukuokakentosho01.jpg",
+        alt: "福岡県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fukuokakentosho01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www2.lib.pref.fukuoka.jp/",
+    sourceUrl: "https://www2.lib.pref.fukuoka.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -84773,7 +89328,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423780659",
+    media: [
+      {
+        id: "osm-library-ae407637-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fukuoka_City_Sawara_Library_2-1_Momochi-2-ch%C5%8Dme_Sawara-ku_Fukuoka_City_20230317.jpg",
+        alt: "福岡市早良図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fukuoka_City_Sawara_Library_2-1_Momochi-2-ch%C5%8Dme_Sawara-ku_Fukuoka_City_20230317.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://toshokan.city.fukuoka.lg.jp/spots/detail/6",
+    sourceUrl: "http://toshokan.city.fukuoka.lg.jp/spots/detail/6",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -84801,7 +89369,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/801797775",
+    media: [
+      {
+        id: "osm-library-84a86036-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fukuokasogolibrary.JPG",
+        alt: "福岡市総合図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fukuokasogolibrary.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://toshokan.city.fukuoka.lg.jp/index.php",
+    sourceUrl: "http://toshokan.city.fukuoka.lg.jp/index.php",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -85474,6 +90055,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-423462f0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Fukushima-Pref-Library03.jpg",
+        alt: "福島県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Fukushima-Pref-Library03.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.fcs.ed.jp/",
     sourceUrl: "https://www.library.fcs.ed.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -85840,6 +90433,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-864d0966-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hyogo_Prefectural_Library_2019-07_ac_(3).jpg",
+        alt: "兵庫県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hyogo_Prefectural_Library_2019-07_ac_(3).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.pref.hyogo.lg.jp/",
     sourceUrl: "https://www.library.pref.hyogo.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -86067,6 +90672,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-f2d1763a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hiratsuka_City_Chuo_Library_01.jpg",
+        alt: "平塚市中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hiratsuka_City_Chuo_Library_01.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.lib.city.hiratsuka.kanagawa.jp/",
     sourceUrl: "https://www.lib.city.hiratsuka.kanagawa.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -86238,7 +90855,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423994228",
+    media: [
+      {
+        id: "osm-library-e203d086-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hekinan_City_Library_ac_(3).jpg",
+        alt: "碧南市民図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hekinan_City_Library_ac_(3).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.hekinan.aichi.jp/",
+    sourceUrl: "https://www.library.city.hekinan.aichi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -86716,6 +91346,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-bb99db44-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyooka_City_Library01st4000.jpg",
+        alt: "豊岡市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Toyooka_City_Library01st4000.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "http://lib.city.toyooka.lg.jp/",
     sourceUrl: "http://lib.city.toyooka.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -86942,6 +91584,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-a303e0f0-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/EmCAMPUS_2022-04_ac_(7).jpg",
+        alt: "豊橋市まちなか図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:EmCAMPUS_2022-04_ac_(7).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.toyohashi.aichi.jp/facility/machinaka/",
     sourceUrl: "https://www.library.toyohashi.aichi.jp/facility/machinaka/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -87029,6 +91683,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-3ad0d5fe-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyohashi_City_Library01.jpg",
+        alt: "豊橋市中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Toyohashi_City_Library01.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.toyohashi.aichi.jp/facility/chuou/",
     sourceUrl: "https://www.library.toyohashi.aichi.jp/facility/chuou/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -87284,7 +91950,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/209494900",
+    media: [
+      {
+        id: "osm-library-110df916-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyokawa_City_Otowa_Library_(2012.08.13).jpg",
+        alt: "豊川市音羽図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Toyokawa_City_Otowa_Library_(2012.08.13).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://uenosato.net/~moji/henkan/kana_skm.html",
+    sourceUrl: "http://uenosato.net/~moji/henkan/kana_skm.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87312,7 +91991,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/173454892",
+    media: [
+      {
+        id: "osm-library-84061fae-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyokawa_City_Library_(2011.12.04).jpg",
+        alt: "豊川市中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Toyokawa_City_Library_(2011.12.04).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://libweb.lib.city.toyokawa.aichi.jp/",
+    sourceUrl: "https://libweb.lib.city.toyokawa.aichi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87368,7 +92060,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/618785090",
+    websiteUrl: "http://www.lib.toyonaka.osaka.jp/guide/library/hat.html",
+    sourceUrl: "http://www.lib.toyonaka.osaka.jp/guide/library/hat.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87424,7 +92117,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/198569067",
+    websiteUrl:
+      "https://www.lib.toyonaka.osaka.jp/guide/library/okamachi_2.html",
+    sourceUrl:
+      "https://www.lib.toyonaka.osaka.jp/guide/library/okamachi_2.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87452,7 +92148,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423015236",
+    websiteUrl: "http://www.lib.toyonaka.osaka.jp/guide/library/hotaru.html",
+    sourceUrl: "http://www.lib.toyonaka.osaka.jp/guide/library/hotaru.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87508,7 +92205,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423015084",
+    media: [
+      {
+        id: "osm-library-6eebf7aa-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Senri_Culture_Center.JPG",
+        alt: "豊中市立千里図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Senri_Culture_Center.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.lib.toyonaka.osaka.jp/guide/library/senri.html",
+    sourceUrl: "https://www.lib.toyonaka.osaka.jp/guide/library/senri.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87536,7 +92246,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423015201",
+    websiteUrl: "http://www.lib.toyonaka.osaka.jp/guide/library/higashi.html",
+    sourceUrl: "http://www.lib.toyonaka.osaka.jp/guide/library/higashi.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87564,7 +92275,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/195058808",
+    media: [
+      {
+        id: "osm-library-97b2b6e9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/ToyonakaCityLibrary-NobatakeBranch20150904.JPG",
+        alt: "豊中市立野畑図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:ToyonakaCityLibrary-NobatakeBranch20150904.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.lib.toyonaka.osaka.jp/guide/library/noba.html",
+    sourceUrl: "http://www.lib.toyonaka.osaka.jp/guide/library/noba.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87648,7 +92372,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1424001142",
+    media: [
+      {
+        id: "osm-library-02f75159-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Toyota_city_library_entrance.JPG",
+        alt: "豊田市中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Toyota_city_library_entrance.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.toyota.aichi.jp/",
+    sourceUrl: "http://www.library.toyota.aichi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87676,7 +92413,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420798092",
+    websiteUrl: "http://www.library.toshima.tokyo.jp/",
+    sourceUrl: "http://www.library.toshima.tokyo.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87732,7 +92470,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420798080",
+    websiteUrl: "http://www.library.toshima.tokyo.jp/",
+    sourceUrl: "http://www.library.toshima.tokyo.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87760,7 +92499,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420798083",
+    websiteUrl: "http://www.library.toshima.tokyo.jp/",
+    sourceUrl: "http://www.library.toshima.tokyo.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87788,7 +92528,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420798084",
+    websiteUrl: "http://www.library.toshima.tokyo.jp/",
+    sourceUrl: "http://www.library.toshima.tokyo.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87816,7 +92557,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420798086",
+    media: [
+      {
+        id: "osm-library-0747954f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ikebukuro_Library.jpg",
+        alt: "豊島区立池袋図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ikebukuro_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.toshima.tokyo.jp/",
+    sourceUrl: "http://www.library.toshima.tokyo.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87844,7 +92598,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/3364847290",
+    websiteUrl: "http://www.library.toshima.tokyo.jp/",
+    sourceUrl: "http://www.library.toshima.tokyo.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87900,7 +92655,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/218192390",
+    websiteUrl: "http://www.library.toshima.tokyo.jp/",
+    sourceUrl: "http://www.library.toshima.tokyo.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -87957,7 +92713,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423015622",
+    websiteUrl: "http://www1.ocn.ne.jp/~toyono/",
+    sourceUrl: "http://www1.ocn.ne.jp/~toyono/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -88153,6 +92910,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-04078c5e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hokkaidouritutoshokan.JPG",
+        alt: "北海道立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hokkaidouritutoshokan.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.pref.hokkaido.jp/",
     sourceUrl: "https://www.library.pref.hokkaido.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -88378,7 +93147,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/295800784",
+    media: [
+      {
+        id: "osm-library-af4c16d2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kitakyusyu_Central_Library.jpg",
+        alt: "北九州市立中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kitakyusyu_Central_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.toshokan.city.kitakyushu.jp/branches/chuo/",
+    sourceUrl: "https://www.toshokan.city.kitakyushu.jp/branches/chuo/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -88630,7 +93412,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/6360006829",
+    websiteUrl: "https://www.city.sapporo.jp/toshokan/sisetu/kita-s.html",
+    sourceUrl: "https://www.city.sapporo.jp/toshokan/sisetu/kita-s.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -89565,7 +94348,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/4138936367",
+    websiteUrl: "http://www.lib.city-hokuto.ed.jp/sutama/",
+    sourceUrl: "http://www.lib.city-hokuto.ed.jp/sutama/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -89705,7 +94489,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420926771",
+    websiteUrl: "http://www.lib.city-hokuto.ed.jp/hakushu/",
+    sourceUrl: "http://www.lib.city-hokuto.ed.jp/hakushu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -89733,7 +94518,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420926773",
+    websiteUrl: "http://www.lib.city-hokuto.ed.jp/kindaichi/",
+    sourceUrl: "http://www.lib.city-hokuto.ed.jp/kindaichi/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -89789,7 +94575,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420929869",
+    websiteUrl: "http://www.lib.city-hokuto.ed.jp/kobuchisawa/",
+    sourceUrl: "http://www.lib.city-hokuto.ed.jp/kobuchisawa/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -89845,7 +94632,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/313787181",
+    websiteUrl: "http://www.town.kitajima.lg.jp/hole/index.html",
+    sourceUrl: "http://www.town.kitajima.lg.jp/hole/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -89986,7 +94774,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420169411",
+    websiteUrl: "http://www.library.kitamoto.saitama.jp/toshokan/",
+    sourceUrl: "http://www.library.kitamoto.saitama.jp/toshokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -90378,7 +95167,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/4796454624",
+    websiteUrl: "http://www.city.kesennuma.lg.jp/www/contents/1269927018517/",
+    sourceUrl: "http://www.city.kesennuma.lg.jp/www/contents/1269927018517/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -90689,7 +95479,9 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/2590506069",
+    websiteUrl:
+      "http://www.city.hirakata.osaka.jp/site/sub-annai/sugahara.html",
+    sourceUrl: "http://www.city.hirakata.osaka.jp/site/sub-annai/sugahara.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -90745,7 +95537,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423003335",
+    websiteUrl: "http://www.city.hirakata.osaka.jp/site/sub-annai/tuda.html",
+    sourceUrl: "http://www.city.hirakata.osaka.jp/site/sub-annai/tuda.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -90801,7 +95594,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423003369",
+    websiteUrl: "http://www.city.hirakata.osaka.jp/site/sub-annai/makino.html",
+    sourceUrl: "http://www.city.hirakata.osaka.jp/site/sub-annai/makino.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -90970,6 +95764,15 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-d5452ba1-video-1",
+        type: "video",
+        url: "https://www.youtube.com/@asahikawa_city_library",
+        alt: "末広図書館 public video",
+        sourceUrl: "https://www.youtube.com/@asahikawa_city_library",
+      },
+    ],
     websiteUrl: "https://www2.lib.city.asahikawa.hokkaido.jp/",
     sourceUrl: "https://www2.lib.city.asahikawa.hokkaido.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -91083,7 +95886,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423010547",
+    websiteUrl: "http://www.city.minoh.lg.jp/library/annai/sakuragaoka.html",
+    sourceUrl: "http://www.city.minoh.lg.jp/library/annai/sakuragaoka.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91111,7 +95915,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/194897827",
+    websiteUrl: "http://www.city.minoh.lg.jp/library/annai/seinan.html",
+    sourceUrl: "http://www.city.minoh.lg.jp/library/annai/seinan.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91223,7 +96028,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1239268739",
+    websiteUrl: "http://www.town.minowa.nagano.jp/list/tosyokan.html",
+    sourceUrl: "http://www.town.minowa.nagano.jp/list/tosyokan.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91365,7 +96171,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423950662",
+    media: [
+      {
+        id: "osm-library-e6c1f4f8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagoya_city_Minato_library-20150201.jpg",
+        alt: "名古屋市港図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagoya_city_Minato_library-20150201.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_minato.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_minato.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91393,7 +96212,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423950544",
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_shidami.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_shidami.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91421,7 +96241,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423950496",
+    media: [
+      {
+        id: "osm-library-b5d02539-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagoya_City_Moriyama_Library_exterior_ac_(1).jpg",
+        alt: "名古屋市守山図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagoya_City_Moriyama_Library_exterior_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_moriyama.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_moriyama.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91449,7 +96282,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423950683",
+    media: [
+      {
+        id: "osm-library-d79f4b19-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagoya_city_Mizuho_Library_and_Mizuho_Playhouse-20150725.jpg",
+        alt: "名古屋市瑞穂図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagoya_city_Mizuho_Library_and_Mizuho_Playhouse-20150725.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_mizuho.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_mizuho.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91477,7 +96323,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423950768",
+    media: [
+      {
+        id: "osm-library-d74f813d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagoya_city_Nishi_library_and_Nishi_Playhouse-20150203.jpg",
+        alt: "名古屋市西図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagoya_city_Nishi_library_and_Nishi_Playhouse-20150203.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_nishi.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_nishi.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91533,7 +96392,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/269744416",
+    media: [
+      {
+        id: "osm-library-6077adc4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagoya_city_Chikusa_library-20150112.jpg",
+        alt: "名古屋市千種図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagoya_city_Chikusa_library-20150112.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.library.city.nagoya.jp/guide/m_chikusa.html",
+    sourceUrl: "http://www.library.city.nagoya.jp/guide/m_chikusa.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91561,7 +96433,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423950419",
+    media: [
+      {
+        id: "osm-library-3ee4849c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagoya_city_Nakagawa_library_and_Nakagawa_Playhouse-20150211.jpg",
+        alt: "名古屋市中川図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagoya_city_Nakagawa_library_and_Nakagawa_Playhouse-20150211.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_nakagawa.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_nakagawa.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91589,7 +96474,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423950425",
+    media: [
+      {
+        id: "osm-library-b2dcec73-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagoya_City_Nakamura_Library_ac_(1).jpg",
+        alt: "名古屋市中村図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagoya_City_Nakamura_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_nakamura.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_nakamura.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91617,6 +96515,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-641d7028-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagoya_City_Tsuruma_Central_Library_exterior_ac_(1).jpg",
+        alt: "名古屋市鶴舞中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagoya_City_Tsuruma_Central_Library_exterior_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.library.city.nagoya.jp/guide/m_tsuruma.html",
     sourceUrl: "https://www.library.city.nagoya.jp/guide/m_tsuruma.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -91646,7 +96556,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423950486",
+    media: [
+      {
+        id: "osm-library-b3cde37c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagoya_city_Tenpaku_library-20150203.jpg",
+        alt: "名古屋市天白図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagoya_city_Tenpaku_library-20150203.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_tenpaku.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_tenpaku.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91674,7 +96597,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423950561",
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_higashi.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_higashi.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91702,7 +96626,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/5034687317",
+    media: [
+      {
+        id: "osm-library-27aaca60-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagoya_City_Tokushige_Library_entrance_ac.jpg",
+        alt: "名古屋市徳重図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagoya_City_Tokushige_Library_entrance_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_tokushige.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_tokushige.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91730,7 +96667,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423950455",
+    media: [
+      {
+        id: "osm-library-b2daaddc-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagoya_city_Minami_library_and_Minami_Playhouse-20150114.jpg",
+        alt: "名古屋市南図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagoya_city_Minami_library_and_Minami_Playhouse-20150114.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_minami.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_minami.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91758,7 +96708,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423950456",
+    media: [
+      {
+        id: "osm-library-b5dab295-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagoya_City_Nanyo_Library_ac_(1).jpg",
+        alt: "名古屋市南陽図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagoya_City_Nanyo_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_nanyo.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_nanyo.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91786,7 +96749,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/514652107",
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_kusunoki.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_kusunoki.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91814,7 +96778,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423950670",
+    media: [
+      {
+        id: "osm-library-eec44027-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Atsuta_Ward_Office_ac.jpg",
+        alt: "名古屋市熱田図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Atsuta_Ward_Office_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_atsuta.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_atsuta.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91842,7 +96819,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423950506",
+    media: [
+      {
+        id: "osm-library-a367044f-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagoya_City_Tomida_Library_in_2019-04_ac.jpg",
+        alt: "名古屋市富田図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagoya_City_Tomida_Library_in_2019-04_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_tomida.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_tomida.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91870,7 +96860,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423950442",
+    media: [
+      {
+        id: "osm-library-47d7c6d4-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagoya-city_Kita_Library_130623.JPG",
+        alt: "名古屋市北図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagoya-city_Kita_Library_130623.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_kita.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_kita.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91898,7 +96901,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423950467",
+    media: [
+      {
+        id: "osm-library-44d344ed-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagoya_city_Meito_library-20161112.jpg",
+        alt: "名古屋市名東図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagoya_city_Meito_library-20161112.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_meito.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_meito.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -91926,7 +96942,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/174252847",
+    websiteUrl: "https://www.library.city.nagoya.jp/guide/m_midori.html",
+    sourceUrl: "https://www.library.city.nagoya.jp/guide/m_midori.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -92010,6 +97027,17 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-3ff96b44-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Donguriann.JPG",
+        alt: "名取市図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Donguriann.JPG",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://lib.city.natori.miyagi.jp/web/",
     sourceUrl: "https://lib.city.natori.miyagi.jp/web/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -92039,7 +97067,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/705024554",
+    media: [
+      {
+        id: "osm-library-24e0d4a9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nabari_city_library.JPG",
+        alt: "名張市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nabari_city_library.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.nabari-library.jp",
+    sourceUrl: "http://www.nabari-library.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -92210,7 +97251,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/316037272",
+    media: [
+      {
+        id: "osm-library-7b094814-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Naruto_City_Library.jpg",
+        alt: "鳴門市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Naruto_City_Library.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.city.naruto.tokushima.jp/manabu/kyoiku/toshokan/",
+    sourceUrl: "https://www.city.naruto.tokushima.jp/manabu/kyoiku/toshokan/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -92325,7 +97379,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/3640110648",
+    websiteUrl: "https://www.kisotosho.jp/TOSHOW/asp/index.aspx",
+    sourceUrl: "https://www.kisotosho.jp/TOSHOW/asp/index.aspx",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -92381,6 +97436,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-34baded2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Meguro_City_Yakumo_Chuo_Library.jpg",
+        alt: "目黒区立 八雲中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Meguro_City_Yakumo_Chuo_Library.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.meguro-library.jp/",
     sourceUrl: "https://www.meguro-library.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -92611,7 +97678,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/376471885",
+    websiteUrl: "http://www.library.kadoma.osaka.jp/",
+    sourceUrl: "http://www.library.kadoma.osaka.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -92753,7 +97821,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422945045",
+    media: [
+      {
+        id: "osm-library-ef86cb10-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yasu_Library_ac_(1).jpg",
+        alt: "野洲図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yasu_Library_ac_(1).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.lics-saas.nexs-service.jp/yasu/",
+    sourceUrl: "https://www.lics-saas.nexs-service.jp/yasu/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -93005,7 +98086,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423985506",
+    websiteUrl: "http://www.yatomi-library.com/",
+    sourceUrl: "http://www.yatomi-library.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -93369,6 +98451,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-b68eb295-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yanagisawa_bunko01s2048.jpg",
+        alt: "柳澤文庫 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Yanagisawa_bunko01s2048.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.yanagisawabunko.or.jp/",
     sourceUrl: "https://www.yanagisawabunko.or.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -93538,6 +98632,17 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-532f2bf8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Arita_Rathaus.jpg",
+        alt: "有田町西図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Arita_Rathaus.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aritalibrary.com/",
     sourceUrl: "https://www.aritalibrary.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -93567,6 +98672,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-522f2a65-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Arita_Town_Lifelong_Learning_Center_ac_(1).jpg",
+        alt: "有田町東図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Arita_Town_Lifelong_Learning_Center_ac_(1).jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.aritalibrary.com/",
     sourceUrl: "https://www.aritalibrary.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -94466,7 +99583,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/1149038642",
+    media: [
+      {
+        id: "osm-library-fef1bdcd-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Rissei_Garden_Hulic_Kyoto_20200812-001.jpg",
+        alt: "立誠図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Rissei_Garden_Hulic_Kyoto_20200812-001.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.hulic.co.jp/business/rent/hotel/272",
+    sourceUrl: "https://www.hulic.co.jp/business/rent/hotel/272",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -94663,7 +99793,10 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420795492",
+    websiteUrl:
+      "http://www.city.tachikawa.lg.jp/toshokan/shisetsu/toshokan/007.html",
+    sourceUrl:
+      "http://www.city.tachikawa.lg.jp/toshokan/shisetsu/toshokan/007.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -94747,7 +99880,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420795494",
+    websiteUrl: "https://www.library.tachikawa.tokyo.jp/",
+    sourceUrl: "https://www.library.tachikawa.tokyo.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -95027,6 +100161,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-ef691c72-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ryugasaki_Public_Library_2010.jpg",
+        alt: "龍ヶ崎市立 中央図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ryugasaki_Public_Library_2010.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/93094549",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -95083,7 +100229,22 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/262167540",
+    media: [
+      {
+        id: "osm-library-5032d406-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hyogo_Tatsuno_City_Tatsuno_Library_2021-03_ac.jpg",
+        alt: "龍野市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hyogo_Tatsuno_City_Tatsuno_Library_2021-03_ac.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl:
+      "https://www.city.tatsuno.lg.jp/library/shisetsu/index.html#tatsuno",
+    sourceUrl:
+      "https://www.city.tatsuno.lg.jp/library/shisetsu/index.html#tatsuno",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -95168,6 +100329,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-63548a96-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E8%87%A8%E5%B7%9D%E3%81%BF%E3%82%93%E3%81%AA%E3%81%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
+        alt: "臨川みんなの図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E8%87%A8%E5%B7%9D%E3%81%BF%E3%82%93%E3%81%AA%E3%81%AE%E5%9B%B3%E6%9B%B8%E9%A4%A8.jpg",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/9813704442",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -95252,7 +100425,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1421000892",
+    websiteUrl: "http://www.tanpopo.ne.jp/~wakyo/04tosyokann/04.html",
+    sourceUrl: "http://www.tanpopo.ne.jp/~wakyo/04tosyokann/04.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -95280,7 +100454,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/439357654",
+    media: [
+      {
+        id: "osm-library-288248c7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Suzuka_City_Library_20100308.jpg",
+        alt: "鈴鹿市立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Suzuka_City_Library_20100308.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://lib.city.suzuka.lg.jp/",
+    sourceUrl: "https://lib.city.suzuka.lg.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -95422,7 +100609,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/way/59831513",
+    websiteUrl: "http://www.lib.nerima.tokyo.jp/institution/5",
+    sourceUrl: "http://www.lib.nerima.tokyo.jp/institution/5",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -95646,7 +100834,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420796041",
+    media: [
+      {
+        id: "osm-library-3ebd51e8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nerima_Library_2013-02-24.JPG",
+        alt: "練馬区立練馬図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nerima_Library_2013-02-24.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.lib.nerima.tokyo.jp/institution/detail/4",
+    sourceUrl: "https://www.lib.nerima.tokyo.jp/institution/detail/4",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -95817,6 +101018,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-ebbdd490-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Wakayama_Prefectural_library.JPG",
+        alt: "和歌山県立図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Wakayama_Prefectural_library.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/node/1423056735",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -95958,6 +101171,18 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-library-fa595ffb-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Wako_City_Library_1.jpg",
+        alt: "和光市図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Wako_City_Library_1.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.wakolib.jp",
     sourceUrl: "https://www.wakolib.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -96016,7 +101241,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1422986006",
+    websiteUrl: "http://www.library.izumi.osaka.jp/library/city/index.html",
+    sourceUrl: "http://www.library.izumi.osaka.jp/library/city/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -96044,7 +101270,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/4275237468",
+    websiteUrl: "http://www.library.izumi.osaka.jp/library/izumi/index.html",
+    sourceUrl: "http://www.library.izumi.osaka.jp/library/izumi/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -96324,7 +101551,8 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1420786789",
+    websiteUrl: "http://www.vill.hinohara.tokyo.jp/0000000054.html",
+    sourceUrl: "http://www.vill.hinohara.tokyo.jp/0000000054.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -96465,7 +101693,20 @@ export const generatedLibraryPlaces: PlaceInput[] = [
     priceLevel: 0,
     strollerFriendly: true,
     tags: ["quiet-zone", "stroller-friendly"],
-    sourceUrl: "https://www.openstreetmap.org/node/1423818784",
+    media: [
+      {
+        id: "osm-library-2c0cbc66-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Isahaya_City_Library_01.jpg",
+        alt: "諫早市立諫早図書館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Isahaya_City_Library_01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.lib.isahaya.nagasaki.jp/isahaya/isahaya_top.html",
+    sourceUrl: "http://www.lib.isahaya.nagasaki.jp/isahaya/isahaya_top.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [

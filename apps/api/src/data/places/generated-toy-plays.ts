@@ -49,6 +49,18 @@ export const generatedToyPlayPlaces: PlaceInput[] = [
     indoorOutdoor: "indoor",
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly"],
+    media: [
+      {
+        id: "osm-toy-play-c40f337d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Japan_Museum_of_Contemporary_Toy_and_Hall_of_Music_Box.jpg",
+        alt: "現代玩具博物館・オルゴール夢館 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Japan_Museum_of_Contemporary_Toy_and_Hall_of_Music_Box.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://toymuseum.wixsite.com/official",
     sourceUrl: "https://toymuseum.wixsite.com/official",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",

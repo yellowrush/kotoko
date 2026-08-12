@@ -1,5 +1,10 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
+import {
+  enrichOsmElementsWithWikidata,
+  mediaFromOsmTags,
+  officialWebsiteUrlFromTags,
+} from "../lib/osm-place-enrichment.mjs";
 
 const OVERPASS_ENDPOINT =
   process.env.OVERPASS_ENDPOINT ?? "https://overpass-api.de/api/interpreter";
@@ -305,8 +310,10 @@ function toPlaceInput(element) {
   const tags = element.tags ?? {};
   const name = canonicalName(getName(tags));
   const { latitude, longitude } = getCoordinate(element);
-  const websiteUrl = tags.website ?? tags["contact:website"];
   const osmUrl = sourceUrlFor(element);
+  const placeId = slugify(`${element.type}/${element.id}`);
+  const websiteUrl = officialWebsiteUrlFromTags(tags);
+  const media = mediaFromOsmTags(tags, { id: placeId, name });
   const addressParts = [
     tags["addr:province"],
     tags["addr:county"],
@@ -319,7 +326,7 @@ function toPlaceInput(element) {
   ].filter(Boolean);
 
   return {
-    id: slugify(`${element.type}/${element.id}`),
+    id: placeId,
     name,
     category: "museum",
     latitude,
@@ -335,6 +342,7 @@ function toPlaceInput(element) {
     nursingRoom: undefined,
     diaperChanging: undefined,
     tags: ["group-play", "stroller-friendly"],
+    ...(media.length > 0 ? { media } : {}),
     websiteUrl,
     sourceUrl: websiteUrl ?? osmUrl,
     sourceCheckedAt: CHECKED_AT,
@@ -529,7 +537,9 @@ async function collectFromElements(elements) {
     }
   }
 
-  const places = [...byKey.values()].map(toPlaceInput);
+  const selectedElements = [...byKey.values()];
+  await enrichOsmElementsWithWikidata(selectedElements);
+  const places = selectedElements.map(toPlaceInput);
   places.sort((a, b) => a.name.localeCompare(b.name, "ja"));
   return places;
 }

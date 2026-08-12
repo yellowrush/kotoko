@@ -22,7 +22,20 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/248451390",
+    media: [
+      {
+        id: "osm-amusement-park-5351a4e7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Panda_Adventure_World_Shirahama.JPG",
+        alt: "アドベンチャーワールド public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Panda_Adventure_World_Shirahama.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.aws-s.com/",
+    sourceUrl: "https://www.aws-s.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -78,7 +91,20 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/1136507271",
+    media: [
+      {
+        id: "osm-amusement-park-b8712c1e-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kodomonosiro20220815_3.jpg",
+        alt: "えひめこどもの城 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kodomonosiro20220815_3.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.i-kodomo.jp/",
+    sourceUrl: "http://www.i-kodomo.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -192,6 +218,18 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-20d76aa1-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kamine_Park%2C_Ibaraki_01.jpg",
+        alt: "かみねレジャーランド public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Kamine_Park%2C_Ibaraki_01.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://kaminepark.sakura.ne.jp/leisure.htm",
     sourceUrl: "https://kaminepark.sakura.ne.jp/leisure.htm",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -279,6 +317,18 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-ba3cf635-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Satsuki_and_Mei%E2%80%99s_House_from_observation_platform_-_1.jpg",
+        alt: "ジブリパーク public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Satsuki_and_Mei%E2%80%99s_House_from_observation_platform_-_1.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://ghibli-park.jp",
     sourceUrl: "https://ghibli-park.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -393,6 +443,18 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-2cf460d2-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Dazaifu_Amuzement_Park_20150815.jpg",
+        alt: "だざいふ遊園地 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Dazaifu_Amuzement_Park_20150815.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.dazaifuyuuenchi.com/",
     sourceUrl: "https://www.dazaifuyuuenchi.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -480,7 +542,20 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/384774527",
+    media: [
+      {
+        id: "osm-amusement-park-20abfb14-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/TsukubaWanWanLand(Entrance).jpg",
+        alt: "つくばわんわんランド public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:TsukubaWanWanLand(Entrance).jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://wanwan-land.co.jp/",
+    sourceUrl: "https://wanwan-land.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -564,6 +639,18 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-12653190-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Tokushima_Family_Land2.JPG",
+        alt: "とくしま ファミリーランド public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Tokushima_Family_Land2.JPG",
+        cover: true,
+      },
+    ],
     sourceUrl: "https://www.openstreetmap.org/way/226023934",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
@@ -592,7 +679,20 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/475662154",
+    media: [
+      {
+        id: "osm-amusement-park-df0262c3-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Entrance_of_Tochinoki_Family_Land.jpg",
+        alt: "とちのきファミリーランド public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Entrance_of_Tochinoki_Family_Land.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.park-tochigi.com/tochinoki/",
+    sourceUrl: "http://www.park-tochigi.com/tochinoki/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -620,6 +720,18 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-44dc4d44-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E4%BC%8A%E5%8B%A2%E3%81%AE%E5%AE%89%E5%9C%9F%E5%9F%8E_ADUCHI_CASTLE_%2C_ISE_-_panoramio.jpg",
+        alt: "ともいきの国 伊勢忍者キングダム public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E4%BC%8A%E5%8B%A2%E3%81%AE%E5%AE%89%E5%9C%9F%E5%9F%8E_ADUCHI_CASTLE_%2C_ISE_-_panoramio.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.ise-jokamachi.jp/",
     sourceUrl: "https://www.ise-jokamachi.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -649,6 +761,18 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-d20e5ba8-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nagashima_spa_land_skyview.jpg",
+        alt: "ナガシマスパーランド public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nagashima_spa_land_skyview.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.nagashima-onsen.co.jp/spaland/index.html",
     sourceUrl: "https://www.nagashima-onsen.co.jp/spaland/index.html",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -706,6 +830,18 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-554a6684-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Harmony_Land_01.jpg",
+        alt: "ハーモニーランド public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Harmony_Land_01.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.harmonyland.jp/",
     sourceUrl: "https://www.harmonyland.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -735,6 +871,17 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-3997edf7-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hirakata_Park.jpg",
+        alt: "ひらかたパーク public image",
+        credit: "Wikimedia Commons",
+        sourceUrl: "https://commons.wikimedia.org/wiki/File:Hirakata_Park.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.hirakatapark.co.jp/",
     sourceUrl: "https://www.hirakatapark.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -793,6 +940,18 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-976bad48-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%83%9D%E3%83%AB%E3%83%88%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91.jpg",
+        alt: "ポルトヨーロッパ public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%83%9D%E3%83%AB%E3%83%88%E3%83%A8%E3%83%BC%E3%83%AD%E3%83%83%E3%83%91.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.marinacity.com/porto/",
     sourceUrl: "https://www.marinacity.com/porto/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -822,6 +981,18 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-37b8a5cf-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Moominvalley_Park_2019e.jpg",
+        alt: "ムーミンバレーパーク public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Moominvalley_Park_2019e.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://metsa-hanno.com/",
     sourceUrl: "https://metsa-hanno.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -851,7 +1022,20 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
-    sourceUrl: "https://www.openstreetmap.org/relation/8102292",
+    media: [
+      {
+        id: "osm-amusement-park-ce07eb50-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/20080804_LAGUNASIA.jpg",
+        alt: "ラグナシア public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:20080804_LAGUNASIA.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.laguna-gamagori.co.jp",
+    sourceUrl: "http://www.laguna-gamagori.co.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1025,7 +1209,20 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/438892178",
+    media: [
+      {
+        id: "osm-amusement-park-e8eb901d-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E6%A1%90%E7%94%9F%E3%81%8C%E5%B2%A1%E5%85%AC%E5%9C%92_%E9%81%8A%E5%9C%92%E5%9C%B0%E5%85%A8%E6%99%AF.JPG",
+        alt: "桐生が岡遊園地 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E6%A1%90%E7%94%9F%E3%81%8C%E5%B2%A1%E5%85%AC%E5%9C%92_%E9%81%8A%E5%9C%92%E5%9C%B0%E5%85%A8%E6%99%AF.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.city.kiryu.lg.jp/zoo/",
+    sourceUrl: "http://www.city.kiryu.lg.jp/zoo/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1053,7 +1250,20 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/497399486",
+    media: [
+      {
+        id: "osm-amusement-park-89b5b820-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Enakyo_wonderland.JPG",
+        alt: "恵那峡ワンダーランド public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Enakyo_wonderland.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.enakyo-wonderland.jp/",
+    sourceUrl: "http://www.enakyo-wonderland.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1081,7 +1291,8 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/539366067",
+    websiteUrl: "https://www.omochaoukoku.com/karuizawa/",
+    sourceUrl: "https://www.omochaoukoku.com/karuizawa/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1109,7 +1320,20 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/192646740",
+    media: [
+      {
+        id: "osm-amusement-park-aaa158fa-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nikko_Edo-Mura_7.jpg",
+        alt: "江戸ワンダーランド日光江戸村 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nikko_Edo-Mura_7.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://edowonderland.net/",
+    sourceUrl: "http://edowonderland.net/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1137,6 +1361,18 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-0c250138-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/La_Villa_Espa%C3%B1ola_de_Shima%2C_Parque_Espa%C3%B1a_-_Plaza_de_Mayor.jpg",
+        alt: "志摩スペイン村 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:La_Villa_Espa%C3%B1ola_de_Shima%2C_Parque_Espa%C3%B1a_-_Plaza_de_Mayor.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.parque-net.com/",
     sourceUrl: "https://www.parque-net.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -1194,7 +1430,20 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/256526395",
+    media: [
+      {
+        id: "osm-amusement-park-d784609c-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ikoma_Hikoutou01.jpg",
+        alt: "生駒山上遊園地 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Ikoma_Hikoutou01.jpg",
+        cover: true,
+      },
+    ],
+    websiteUrl: "https://www.ikomasanjou.com/",
+    sourceUrl: "https://www.ikomasanjou.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1222,6 +1471,18 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-e09dbd75-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Asakusa_Hanayashiki_-01.jpg",
+        alt: "浅草花やしき public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Asakusa_Hanayashiki_-01.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.hanayashiki.net/",
     sourceUrl: "https://www.hanayashiki.net/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -1363,6 +1624,18 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-d4cd628a-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Toei_Kyoto_Studio_Park_from_above.jpg",
+        alt: "東映太秦映画村 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Toei_Kyoto_Studio_Park_from_above.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://global.toei-eigamura.com/",
     sourceUrl: "https://global.toei-eigamura.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -1392,6 +1665,18 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-d67f4794-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E6%9D%B1%E4%BA%AC%E3%82%B5%E3%83%9E%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89.jpg",
+        alt: "東京サマーランド public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E4%BA%AC%E3%82%B5%E3%83%9E%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://www.summerland.co.jp/",
     sourceUrl: "https://www.summerland.co.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -1421,6 +1706,18 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-321cb1d6-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Sega_Joypolis_Odaiba.jpg",
+        alt: "東京ジョイポリス public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Sega_Joypolis_Odaiba.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://tokyo-joypolis.com/",
     sourceUrl: "https://tokyo-joypolis.com/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -1450,6 +1747,18 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
+    media: [
+      {
+        id: "osm-amusement-park-d0e44398-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/%E3%83%89%E3%82%A4%E3%83%84%E6%9D%91%E3%82%A4%E3%83%AB%E3%83%9F.jpg",
+        alt: "東京ドイツ村 public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:%E3%83%89%E3%82%A4%E3%83%84%E6%9D%91%E3%82%A4%E3%83%AB%E3%83%9F.jpg",
+        cover: true,
+      },
+    ],
     websiteUrl: "https://t-doitsumura.co.jp",
     sourceUrl: "https://t-doitsumura.co.jp",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
@@ -1536,7 +1845,20 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/243183188",
+    media: [
+      {
+        id: "osm-amusement-park-8eff1be9-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Nihonmonkeypark.JPG",
+        alt: "日本モンキーパーク public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Nihonmonkeypark.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.japan-monkeypark.jp/",
+    sourceUrl: "http://www.japan-monkeypark.jp/",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [
@@ -1620,7 +1942,20 @@ export const generatedAmusementParkPlaces: PlaceInput[] = [
     priceLevel: 3,
     strollerFriendly: true,
     tags: ["group-play", "stroller-friendly", "dining"],
-    sourceUrl: "https://www.openstreetmap.org/way/469918805",
+    media: [
+      {
+        id: "osm-amusement-park-3fb2bc4b-commons-1",
+        type: "image",
+        url: "https://commons.wikimedia.org/wiki/Special:Redirect/file/Hokkaido-Greenland-amusement-park.JPG",
+        alt: "北海道グリーンランド public image",
+        credit: "Wikimedia Commons",
+        sourceUrl:
+          "https://commons.wikimedia.org/wiki/File:Hokkaido-Greenland-amusement-park.JPG",
+        cover: true,
+      },
+    ],
+    websiteUrl: "http://www.h-greenland.com",
+    sourceUrl: "http://www.h-greenland.com",
     sourceCheckedAt: "2026-08-12T00:00:00.000Z",
     status: "published",
     provenance: [

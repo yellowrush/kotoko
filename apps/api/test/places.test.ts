@@ -214,6 +214,94 @@ describe("GET /api/v1/places", () => {
     await app.close();
   });
 
+  it("keeps generated public website and media fields renderable", () => {
+    const generatedPlaces = seedPlaces.filter((place) =>
+      place.id.startsWith("osm-"),
+    );
+    expect(generatedPlaces.some((place) => place.websiteUrl)).toBe(true);
+    expect(generatedPlaces.some((place) => place.media.length > 0)).toBe(true);
+    expect([
+      ...new Set(
+        generatedPlaces
+          .filter((place) => place.media.length > 0)
+          .map((place) => place.category),
+      ),
+    ]).toEqual(
+      expect.arrayContaining([
+        "amusement-park",
+        "aquarium",
+        "facility",
+        "library",
+        "museum",
+        "restaurant",
+        "zoo",
+      ]),
+    );
+    expect(
+      generatedPlaces.every(
+        (place) =>
+          !place.websiteUrl ||
+          !/(facebook|instagram|youtube|photos\.app\.goo\.gl|maps\.google|tripadvisor|tabelog|hotpepper)/i.test(
+            place.websiteUrl,
+          ),
+      ),
+    ).toBe(true);
+    expect(
+      generatedPlaces
+        .flatMap((place) => place.media)
+        .every(
+          (media) =>
+            media.type === "video" ||
+            /commons\.wikimedia\.org\/wiki\/Special:Redirect\/file\/|[.](jpe?g|png|gif|webp|svg)([?#].*)?$/i.test(
+              media.url,
+            ),
+      ),
+    ).toBe(true);
+  });
+
+  it("serves an official source and placeholder image for the Kameido playground without reusable public media", async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places/osm-playground-8b67993b`,
+    });
+    const officialUrl =
+      "https://www.city.koto.lg.jp/470601/shisetsuannai/kokyo/koen/jidokoen/16566.html";
+
+    expect(res.statusCode).toBe(200);
+    expect(res.json()).toMatchObject({
+      id: "osm-playground-8b67993b",
+      category: "playground",
+      address: "東京都江東区亀戸3-12-10",
+      municipalityCode: "13108",
+      websiteUrl: officialUrl,
+      sourceUrl: officialUrl,
+    });
+    expect(res.json().media).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          type: "image",
+          url: "/media/placeholder/playground-1.svg",
+          license: "placeholder-blocked",
+          cover: true,
+        }),
+      ]),
+    );
+    expect(res.json().provenance).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          type: "official",
+          url: officialUrl,
+        }),
+        expect.objectContaining({
+          type: "open-data",
+          url: "https://www.openstreetmap.org/way/148642773",
+        }),
+      ]),
+    );
+    await app.close();
+  });
+
   it("serves Kameido children hall source media links", async () => {
     const app = buildApp();
     const res = await app.inject({

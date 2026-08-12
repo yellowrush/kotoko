@@ -10,6 +10,7 @@ import { trainMuseumPlaces } from "./train-museums";
 import { librarySportPlaces } from "./libraries-sports";
 import { supplementPlaces } from "./supplements";
 import { generatedAquariumPlaces } from "./generated-aquariums";
+import { generatedPlaygroundPlaces } from "./generated-playgrounds";
 import { generatedZooPlaces } from "./generated-zoos";
 import { zooSupplementPlaces } from "./zoo-supplements";
 import { eventPlaces } from "./events";
@@ -34,6 +35,7 @@ const allInputs = [
   ...librarySportPlaces,
   ...supplementPlaces,
   ...generatedAquariumPlaces,
+  ...generatedPlaygroundPlaces,
   ...generatedZooPlaces,
   ...zooSupplementPlaces,
   ...eventPlaces,

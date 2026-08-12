@@ -233,6 +233,29 @@ describe("GET /api/v1/places", () => {
     await app.close();
   });
 
+  it("serves generated major metro playground places from open map data", async () => {
+    const app = buildApp();
+    const res = await app.inject({
+      method: "GET",
+      url: `${API_PREFIX}/places?category=playground`,
+    });
+    expect(res.statusCode).toBe(200);
+    const body = res.json();
+    const names = body.places.map((p: { name: string }) => p.name);
+    expect(body.total).toBeGreaterThanOrEqual(2500);
+    expect(names).toContain("あかぎ児童遊園");
+    expect(names).toContain("にいじゅくプレイパーク");
+    expect(names).toContain("北馬込わんぱく児童公園");
+    expect(names).toContain("文京区立白山四丁目第二児童遊園");
+    expect(names).toContain("西鶴間七丁目児童遊園");
+    expect(names).toContain("南千倉児童遊園");
+    expect(names).toContain("熊之庄新宮西児童遊園");
+    expect(names).toContain("新金岡3丁1番児童遊園");
+    expect(names).toContain("あしや児童遊園地");
+    expect(names).not.toContain("Airoport Playground");
+    await app.close();
+  });
+
   it("serves curated event places without duplicates from generated data", async () => {
     const app = buildApp();
     const res = await app.inject({

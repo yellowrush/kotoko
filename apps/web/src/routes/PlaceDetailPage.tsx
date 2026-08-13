@@ -12,8 +12,11 @@ import { useGeolocation } from '../hooks/useGeolocation';
 import { useWeather } from '../hooks/useWeather';
 import { placeGeneralCodes, scorePlaceForChild } from '../lib/recommendations';
 import { RecommendationReasons } from '../components/RecommendationReasons';
-import { CATEGORY_ICON } from '../components/places/categoryMeta';
 import { PlaceMediaCarousel } from '../components/places/PlaceMediaCarousel';
+import {
+  getGoogleMapsSearchUrl,
+  hasPublicPlaceMedia,
+} from '../components/places/placePlaceholderMedia';
 import { PlaceReservationSection } from '../components/places/PlaceReservationSection';
 import { PlaceBasicInfo } from '../components/places/PlaceBasicInfo';
 import { PlaceComments } from '../components/places/PlaceComments';
@@ -49,6 +52,33 @@ function ExternalLinkIcon() {
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2.2"
+      />
+    </svg>
+  );
+}
+
+function GoogleMapsIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className="h-7 w-7"
+    >
+      <path
+        d="M12 3.2c-3.2 0-5.7 2.5-5.7 5.6 0 4.2 5.7 11.7 5.7 11.7s5.7-7.5 5.7-11.7c0-3.1-2.5-5.6-5.7-5.6Z"
+        className="fill-brand-600"
+      />
+      <path
+        d="M12 6.2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Z"
+        className="fill-white"
+      />
+      <path
+        d="M4.6 19.8 8.2 16l2.2 2.1-2.5 2.7H5.3c-.8 0-1.1-.5-.7-1Z"
+        className="fill-emerald-500"
+      />
+      <path
+        d="M19.4 19.8 15.8 16l-2.2 2.1 2.5 2.7h2.6c.8 0 1.1-.5.7-1Z"
+        className="fill-sky-500"
       />
     </svg>
   );
@@ -175,6 +205,20 @@ export function PlaceDetailPage() {
   const officialUrl = place.websiteUrl ?? place.sourceUrl;
   const backTo = detailBackTo(location.state, '/places');
   const distanceKm = coords ? haversineDistanceKm(coords, place) : null;
+  const googleMapsPhotosLabel = t('places.googleMapsPhotos');
+
+  const googleMapsPhotosAction = !hasPublicPlaceMedia(place) ? (
+    <a
+      href={getGoogleMapsSearchUrl(place)}
+      target="_blank"
+      rel="noreferrer"
+      aria-label={googleMapsPhotosLabel}
+      title={googleMapsPhotosLabel}
+      className="inline-flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 border-white/90 bg-white/95 text-brand-700 shadow-[0_3px_0_rgba(120,53,15,0.18),0_10px_18px_rgba(0,0,0,0.16)] backdrop-blur hover:bg-brand-50"
+    >
+      <GoogleMapsIcon />
+    </a>
+  ) : undefined;
 
   const officialSiteAction = officialUrl ? (
     <a
@@ -187,6 +231,14 @@ export function PlaceDetailPage() {
       <ExternalLinkIcon />
     </a>
   ) : undefined;
+
+  const mediaAction =
+    googleMapsPhotosAction || officialSiteAction ? (
+      <div className="flex items-center gap-2">
+        {googleMapsPhotosAction}
+        {officialSiteAction}
+      </div>
+    ) : undefined;
 
   return (
     <div>
@@ -213,8 +265,7 @@ export function PlaceDetailPage() {
 
       <PlaceMediaCarousel
         place={place}
-        fallbackEmoji={CATEGORY_ICON[place.category]}
-        action={officialSiteAction}
+        action={mediaAction}
       />
 
       <div className="mt-3 grid grid-cols-3 gap-2">

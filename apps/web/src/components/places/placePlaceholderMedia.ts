@@ -1,4 +1,4 @@
-import type { Place, PlaceCategory } from '@kodoko/domain';
+import type { Place, PlaceCategory, PlaceMedia } from '@kodoko/domain';
 
 const CATEGORY_PLACEHOLDER_PREFIX: Record<PlaceCategory, string> = {
   park: 'park',
@@ -41,6 +41,17 @@ export function getPlacePlaceholderImageUrl(
 ): string {
   const prefix = CATEGORY_PLACEHOLDER_PREFIX[place.category];
   return `/media/placeholder/${prefix}-${placeholderVariant(place.id)}.svg`;
+}
+
+export function isPlaceholderPlaceMedia(media: PlaceMedia): boolean {
+  return (
+    media.url.includes('/media/placeholder/') ||
+    /placeholder/i.test(media.license ?? '')
+  );
+}
+
+export function hasPublicPlaceMedia(place: Pick<Place, 'media'>): boolean {
+  return place.media.some((media) => !isPlaceholderPlaceMedia(media));
 }
 
 export function getGoogleMapsSearchUrl(

@@ -6,6 +6,7 @@ import { PlaceMediaCarousel } from './PlaceMediaCarousel';
 import {
   getGoogleMapsSearchUrl,
   getPlacePlaceholderImageUrl,
+  hasPublicPlaceMedia,
 } from './placePlaceholderMedia';
 
 function makePlace(overrides: Partial<Place> = {}): Place {
@@ -38,7 +39,17 @@ afterEach(() => {
 describe('PlaceMediaCarousel', () => {
   it('renders a category placeholder image when public media is missing', () => {
     const { container } = render(
-      <PlaceMediaCarousel place={makePlace()} fallbackEmoji="*" />,
+      <PlaceMediaCarousel
+        place={makePlace()}
+        action={
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Kameido"
+            aria-label={i18n.t('places.googleMapsPhotos')}
+          >
+            M
+          </a>
+        }
+      />,
     );
 
     const image = container.querySelector('img');
@@ -51,35 +62,34 @@ describe('PlaceMediaCarousel', () => {
     const oldPendingLabel = ['写真', 'は準備中です'].join('');
 
     expect(link).toHaveAttribute('href', expect.stringContaining('google.com'));
+    expect(screen.queryByText(i18n.t('places.googleMapsPhotos'))).not.toBeInTheDocument();
     expect(screen.queryByText(oldPendingLabel)).not.toBeInTheDocument();
   });
 
   it('treats placeholder-only media as missing public media', () => {
-    render(
-      <PlaceMediaCarousel
-        place={makePlace({
-          media: [
-            {
-              id: 'osm-playground-8b67993b-placeholder',
-              type: 'image',
-              url: '/media/placeholder/playground-1.svg',
-              alt: '亀戸三丁目第3児童遊園',
-              credit: 'Kodoko placeholder',
-              license: 'placeholder-blocked',
-              sourceUrl: 'https://example.com/kameido-playground',
-              cover: true,
-            },
-          ],
-        })}
-        fallbackEmoji="*"
-      />,
-    );
+    const place = makePlace({
+      media: [
+        {
+          id: 'osm-playground-8b67993b-placeholder',
+          type: 'image',
+          url: '/media/placeholder/playground-1.svg',
+          alt: '亀戸三丁目第3児童遊園',
+          credit: 'Kodoko placeholder',
+          license: 'placeholder-blocked',
+          sourceUrl: 'https://example.com/kameido-playground',
+          cover: true,
+        },
+      ],
+    });
 
+    render(<PlaceMediaCarousel place={place} />);
+
+    expect(hasPublicPlaceMedia(place)).toBe(false);
     expect(
-      screen.getByRole('link', {
+      screen.queryByRole('link', {
         name: i18n.t('places.googleMapsPhotos'),
       }),
-    ).toHaveAttribute('href', expect.stringContaining('google.com'));
+    ).not.toBeInTheDocument();
   });
 
   it('binds video media URLs to the rendered player', () => {
@@ -99,7 +109,6 @@ describe('PlaceMediaCarousel', () => {
             },
           ],
         })}
-        fallbackEmoji="*"
       />,
     );
 

@@ -126,7 +126,7 @@
     "favorited": "已收藏",
     "officialSite": "官網",
     "mediaCount": "共{{count}}張",
-    "mediaPending": "照片準備中",
+    "googleMapsPhotos": "在 Google 地圖查看照片",
     "distance": "距 {{distance}}",
     "visitCountAria": "{{name}}，去過 {{count}} 次",
     "descriptionTitle": "設施介紹",

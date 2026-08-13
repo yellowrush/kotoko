@@ -24,6 +24,7 @@ import { generatedZooPlaces } from "./generated-zoos";
 import { zooSupplementPlaces } from "./zoo-supplements";
 import { eventPlaces } from "./events";
 import { generatedEventPlaces } from "./generated-events";
+import { generatedMediaSupplements } from "./generated-media-supplements";
 import { withTransitAccess } from "./transit";
 
 /**
@@ -63,7 +64,10 @@ const allInputs = [
 const kameidoThirdPlaygroundOfficialUrl =
   "https://www.city.koto.lg.jp/470601/shisetsuannai/kokyo/koen/jidokoen/16566.html";
 
-const placeInputPatches: Record<string, Partial<PlaceInput>> = {
+const manualPlaceInputPatches: Record<string, Partial<PlaceInput>> = {
+  "children-hall-asakusa": {
+    media: [],
+  },
   "osm-playground-8b67993b": {
     address: "東京都江東区亀戸3-12-10",
     municipalityCode: "13108",
@@ -94,6 +98,11 @@ const placeInputPatches: Record<string, Partial<PlaceInput>> = {
   },
 };
 
+const placeInputPatchIds = new Set([
+  ...Object.keys(manualPlaceInputPatches),
+  ...Object.keys(generatedMediaSupplements),
+]);
+
 function eventDedupeKey(input: PlaceInput): string {
   return `${input.name.normalize("NFKC").trim()}|${input.municipalityCode}`;
 }
@@ -110,7 +119,20 @@ function dedupeEventPlaces(inputs: PlaceInput[]): PlaceInput[] {
 }
 
 function applyPlaceInputPatch(input: PlaceInput): PlaceInput {
-  const patch = placeInputPatches[input.id];
+  if (!placeInputPatchIds.has(input.id)) return input;
+  const manualPatch = manualPlaceInputPatches[input.id] ?? {};
+  const generatedPatch = generatedMediaSupplements[input.id] ?? {};
+  const patch = {
+    ...manualPatch,
+    ...generatedPatch,
+    provenance:
+      manualPatch.provenance || generatedPatch.provenance
+        ? [
+            ...(generatedPatch.provenance ?? []),
+            ...(manualPatch.provenance ?? []),
+          ]
+        : undefined,
+  };
   if (!patch) return input;
 
   return {

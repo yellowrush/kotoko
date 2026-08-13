@@ -1,12 +1,55 @@
 import { describe, expect, it } from "vitest";
 import { buildApp, API_PREFIX } from "../src/app";
 import { seedPlaces } from "../src/data/places";
+import { generatedMediaSupplements } from "../src/data/places/generated-media-supplements";
 
 describe("seedPlaces event deduplication", () => {
   it("contains exactly one entry per event name", () => {
     const events = seedPlaces.filter((p) => p.category === "event");
     const names = events.map((p) => p.name);
     expect(new Set(names).size).toBe(names.length);
+  });
+});
+
+describe("generated media supplements", () => {
+  it("keeps generated supplement media free of generic social and UI assets", () => {
+    const urls = Object.values(generatedMediaSupplements)
+      .flatMap((supplement) => supplement.media ?? [])
+      .map((media) => media.url);
+
+    expect(urls.length).toBeGreaterThanOrEqual(50);
+    expect(urls.some((url) => url.includes("greenland.co.jp"))).toBe(true);
+    expect(
+      urls.some((url) =>
+        /ogp|ogimage|summary|twitter|facebook|favicon|logo|slogo|rogo|sprite|placeholder|line_add_friends|btn|button|banner|bnr|loading|download|instagram|noscript|clearspacer/i.test(
+          url,
+        ),
+      ),
+    ).toBe(false);
+  });
+
+  it("does not keep Wikimedia matches for overly generic place names", () => {
+    expect(generatedMediaSupplements).not.toHaveProperty(
+      "osm-aquarium-023c9e6c",
+    );
+    expect(generatedMediaSupplements).not.toHaveProperty(
+      "osm-aquarium-de44f742",
+    );
+    expect(generatedMediaSupplements).not.toHaveProperty(
+      "osm-aquarium-e586e13f",
+    );
+    expect(generatedMediaSupplements).not.toHaveProperty(
+      "osm-indoor-play-6276bec6",
+    );
+  });
+});
+
+describe("place media corrections", () => {
+  it("does not publish known mismatched child hall media as a real photo", () => {
+    const place = seedPlaces.find((p) => p.id === "children-hall-asakusa");
+
+    expect(place?.name).toBe("台東区立浅草児童館");
+    expect(place?.media).toEqual([]);
   });
 });
 

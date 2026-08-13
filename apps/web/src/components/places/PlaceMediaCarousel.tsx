@@ -1,7 +1,10 @@
 import type { ReactNode } from 'react';
 import type { Place, PlaceMedia } from '@kodoko/domain';
 import { useAppTranslation } from '../../hooks/useAppTranslation';
-import { getPlacePlaceholderImageUrl } from './placePlaceholderMedia';
+import {
+  getGoogleMapsSearchUrl,
+  getPlacePlaceholderImageUrl,
+} from './placePlaceholderMedia';
 
 function PlaceMediaSlide({
   media,
@@ -18,6 +21,7 @@ function PlaceMediaSlide({
           controls
           preload="metadata"
           poster={media.thumbnailUrl}
+          src={media.url}
           aria-label={media.alt ?? `video-${index + 1}`}
         />
       </div>
@@ -36,6 +40,13 @@ function PlaceMediaSlide({
   );
 }
 
+function isPlaceholderMedia(media: PlaceMedia): boolean {
+  return (
+    media.url.includes('/media/placeholder/') ||
+    /placeholder/i.test(media.license ?? '')
+  );
+}
+
 type PlaceMediaCarouselProps = {
   place: Place;
   fallbackEmoji: string;
@@ -48,9 +59,11 @@ export function PlaceMediaCarousel({
   action,
 }: PlaceMediaCarouselProps) {
   const { t } = useAppTranslation();
+  const visibleMedia = place.media.filter((media) => !isPlaceholderMedia(media));
 
-  if (place.media.length === 0) {
+  if (visibleMedia.length === 0) {
     const placeholderUrl = getPlacePlaceholderImageUrl(place);
+    const googleMapsUrl = getGoogleMapsSearchUrl(place);
 
     return (
       <div className="relative h-72 overflow-hidden rounded-lg border border-brand-100 bg-gray-100 shadow-[0_4px_0_rgba(249,95,20,0.08),0_14px_24px_rgba(120,53,15,0.14)]">
@@ -71,7 +84,14 @@ export function PlaceMediaCarousel({
           >
             {fallbackEmoji}
           </span>
-          <span>{t('places.mediaPending')}</span>
+          <a
+            href={googleMapsUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex min-h-10 items-center rounded-full border-2 border-white/80 bg-white/95 px-3 py-1.5 text-sm font-bold text-brand-700 shadow-[0_3px_0_rgba(120,53,15,0.18)] backdrop-blur hover:bg-brand-50"
+          >
+            {t('places.googleMapsPhotos')}
+          </a>
         </div>
         {action && <div className="absolute bottom-3 right-3">{action}</div>}
       </div>
@@ -81,13 +101,13 @@ export function PlaceMediaCarousel({
   return (
     <div className="relative overflow-hidden rounded-lg border border-brand-100 shadow-[0_4px_0_rgba(249,95,20,0.08),0_14px_24px_rgba(120,53,15,0.14)]">
       <div className="no-scrollbar flex snap-x snap-mandatory overflow-x-auto">
-        {place.media.map((media, index) => (
+        {visibleMedia.map((media, index) => (
           <PlaceMediaSlide key={media.id} media={media} index={index} />
         ))}
       </div>
-      {place.media.length > 1 && (
+      {visibleMedia.length > 1 && (
         <span className="absolute right-3 top-3 rounded-full bg-black/50 px-2 py-0.5 text-xs font-medium text-white">
-          {t('places.mediaCount', { count: place.media.length })}
+          {t('places.mediaCount', { count: visibleMedia.length })}
         </span>
       )}
       {action && <div className="absolute bottom-3 right-3">{action}</div>}

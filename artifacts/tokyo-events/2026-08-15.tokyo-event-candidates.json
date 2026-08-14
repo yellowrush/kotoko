@@ -1,0 +1,501 @@
+{
+  "runDate": "2026-08-15",
+  "fetchedAt": "2026-08-14T21:39:49.862Z",
+  "sourceCount": 30,
+  "candidates": [
+    {
+      "id": "tokyo-event-1f5caf26e7f53ae3",
+      "title": "すみだまつり・こどもまつり",
+      "category": "parenting",
+      "startsAt": "10月初旬頃",
+      "venueName": "錦糸公園ほか",
+      "sourceName": "墨田区 / イベント一覧",
+      "sourceUrl": "https://sumidamatsuri.com/",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-d8e18c3645890054",
+      "title": "地蔵まつり",
+      "category": "festival",
+      "startsAt": "11月3日",
+      "endsAt": "11月3日",
+      "venueName": "正福寺",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-d81f83a724f7e152",
+      "title": "吉良祭・元禄市",
+      "category": "festival",
+      "startsAt": "12月頃",
+      "venueName": "吉良邸跡（本所松坂町公園）",
+      "sourceName": "墨田区 / イベント一覧",
+      "sourceUrl": "https://www.1214.tokyo/p2",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-dbaebf24f04dbc55",
+      "title": "節分祭",
+      "category": "festival",
+      "startsAt": "2月3日",
+      "endsAt": "2月3日",
+      "venueName": "大善院",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-d901ffea072376cf",
+      "title": "墨堤さくらまつり",
+      "category": "festival",
+      "startsAt": "3月中旬頃",
+      "endsAt": "4月上旬頃",
+      "venueName": "隅田公園・墨堤",
+      "sourceName": "墨田区 / イベント一覧",
+      "sourceUrl": "https://visit-sumida.jp/event/sakuramatsuri2024/",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-f1e2c55e47976de6",
+      "title": "東村山春の緑の祭典",
+      "category": "flea-market",
+      "startsAt": "4月29日",
+      "endsAt": "4月29日",
+      "venueName": "都立 東村山中央公園",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-33ec4c0377afc5bd",
+      "title": "早慶レガッタ",
+      "category": "seasonal",
+      "startsAt": "4月頃",
+      "venueName": "隅田川　新大橋～桜橋",
+      "sourceName": "墨田区 / イベント一覧",
+      "sourceUrl": "http://the-regatta.com/",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-bef0ab924512628b",
+      "title": "秋津神社例大祭",
+      "category": "festival",
+      "startsAt": "7月27日",
+      "endsAt": "7月28日",
+      "venueName": "秋津神社",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-223fcbf6131a319b",
+      "title": "隅田川花火大会",
+      "category": "seasonal",
+      "startsAt": "7月下旬",
+      "venueName": "隅田川",
+      "sourceName": "墨田区 / イベント一覧",
+      "sourceUrl": "https://www.sumidagawa-hanabi.com/",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-47479f77c5322394",
+      "title": "諏訪神社例大祭",
+      "category": "festival",
+      "startsAt": "8月26日",
+      "endsAt": "8月27日",
+      "venueName": "諏訪神社",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-51b69ad6f735f483",
+      "title": "エコライフフェア",
+      "category": "flea-market",
+      "startsAt": "開催日時 未定",
+      "venueName": "東村山市立中央公民館",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-efcce5a118d56622",
+      "title": "輝け！東村山っ子育成塾",
+      "category": "child-friendly",
+      "startsAt": "開催日時 未定",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-e0844d6dbf163af7",
+      "title": "市民の集い",
+      "category": "parenting",
+      "startsAt": "開催日時 未定",
+      "address": "132136",
+      "latitude": 35.759786,
+      "longitude": 139.466863,
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-cd16f326d04d9a51",
+      "title": "親子バス見学会",
+      "category": "parenting",
+      "startsAt": "開催日時 未定",
+      "venueName": "市内施設、市外工場など",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "無",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-58c39002fef3e558",
+      "title": "東村山市青少年健全育成大会",
+      "category": "child-friendly",
+      "startsAt": "開催日時 未定",
+      "address": "132136",
+      "latitude": 35.759786,
+      "longitude": 139.466863,
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-32ab9fc8765edfb7",
+      "title": "東村山市民文化祭",
+      "category": "festival",
+      "startsAt": "開催日時 未定",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-74e13fe0a5ee6d40",
+      "title": "天王森de劇場まつり",
+      "category": "festival",
+      "startsAt": "開始日 10月下旬;終了日 10月下旬",
+      "venueName": "天王森公園",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-eb6681c7be17b0f8",
+      "title": "秋津町氷川神社例大祭",
+      "category": "festival",
+      "startsAt": "開始日 10月上旬;終了日 10月上旬",
+      "venueName": "氷川神社",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-5984927466393c47",
+      "title": "東村山市民産業まつり",
+      "category": "festival",
+      "startsAt": "開始日 11月第2土曜;終了日 11月第2日曜",
+      "venueName": "東村山市役所周辺",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-1af297c5ba3a67ad",
+      "title": "さくらまつり",
+      "category": "festival",
+      "startsAt": "開始日 4月上旬;終了日 4月上旬",
+      "venueName": "市内各所",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-0233bfb7dc740dd3",
+      "title": "大岱稲荷神社春の例大祭",
+      "category": "festival",
+      "startsAt": "開始日 4月中旬;終了日 4月中旬",
+      "venueName": "大岱稲荷神社",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-a063f88d4369d0dd",
+      "title": "空堀川・川まつり",
+      "category": "festival",
+      "startsAt": "開始日 5月下旬;終了日 5月下旬",
+      "venueName": "空堀川周辺",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-5037df38d499cc72",
+      "title": "東村山菖蒲まつり",
+      "category": "festival",
+      "startsAt": "開始日 6月上～中旬;終了日 6月上～中旬",
+      "venueName": "北山公園",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-a8a34c52455abee2",
+      "title": "八坂神社例大祭",
+      "category": "festival",
+      "startsAt": "開始日 7月中旬の土曜;終了日 7月中旬の日曜",
+      "venueName": "八坂神社",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-cf1049a0c4a02420",
+      "title": "野際神社夏祭り",
+      "category": "festival",
+      "startsAt": "開始日 7月中旬の土曜;終了日 7月中旬の日曜",
+      "venueName": "野際神社",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-f6bb967340a2906f",
+      "title": "全生園納涼祭",
+      "category": "festival",
+      "startsAt": "開始日 8月上旬;終了日 8月上旬",
+      "venueName": "多磨全生園",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-d89364f2150ca229",
+      "title": "北山わんぱく夏まつり",
+      "category": "festival",
+      "startsAt": "開始日 8月上旬;終了日 8月上旬",
+      "venueName": "北山公園",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-bce7c645233abc21",
+      "title": "猿田彦神社例大祭",
+      "category": "festival",
+      "startsAt": "開始日 8月上旬の土曜;終了日 8月上旬の日曜",
+      "venueName": "猿田彦神社",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-3630f6c2c1ca4ee2",
+      "title": "多摩湖町氷川神社例大祭",
+      "category": "festival",
+      "startsAt": "開始日 9月上旬;終了日 9月上旬",
+      "venueName": "氷川神社",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-363188c0e9473396",
+      "title": "萩山八幡神社例大祭",
+      "category": "festival",
+      "startsAt": "開始日 9月第1日曜;終了日 9月第1日曜",
+      "venueName": "萩山八幡神社",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-e6b5f951cddd835b",
+      "title": "どんこい祭",
+      "category": "festival",
+      "startsAt": "開始日 9月中旬;終了日 9月中旬",
+      "venueName": "天王森公園",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    },
+    {
+      "id": "tokyo-event-b037676045d84dad",
+      "title": "金山神社例大祭",
+      "category": "festival",
+      "startsAt": "開始日 9月中旬の土曜;終了日 9月中旬の日曜",
+      "venueName": "金山神社",
+      "sourceName": "東村山市 / イベント一覧",
+      "sourceUrl": "https://www.opendata.metro.tokyo.lg.jp/higashimurayama/20240619_event.csv",
+      "fetchedAt": "2026-08-14T21:39:49.862Z",
+      "confidence": "high",
+      "reviewNotes": [
+        "Needs human review before publishing as public content.",
+        "Imported from CSV resource."
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "source": "https://www.city.bunkyo.lg.jp/documents/6059/131059_event.csv",
+      "message": "HTTP 404 https://www.city.bunkyo.lg.jp/documents/6059/131059_event.csv"
+    }
+  ]
+}

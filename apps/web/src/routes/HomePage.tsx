@@ -99,6 +99,25 @@ const POLICY_REMINDER_ITEM_STYLES = {
   read: 'border-gray-200 bg-white hover:bg-white',
 } as const;
 
+function ListSkeleton({
+  rows = 3,
+  rowHeight = 'min-h-14',
+}: {
+  rows?: number;
+  rowHeight?: string;
+}) {
+  return (
+    <ul className="mt-2 flex flex-col gap-2" aria-hidden="true">
+      {Array.from({ length: rows }, (_, index) => (
+        <li
+          key={index}
+          className={`${rowHeight} w-full animate-pulse rounded-[1.1rem] border-2 border-gray-200 bg-gray-100`}
+        />
+      ))}
+    </ul>
+  );
+}
+
 function FilterLineIcon() {
   return (
     <svg
@@ -488,7 +507,7 @@ export function HomePage() {
         )}
 
         {placesLoading && !hasPlaces && !isError && (
-          <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>
+          <ListSkeleton rows={3} rowHeight="min-h-20" />
         )}
 
         {isError && (
@@ -603,7 +622,7 @@ export function HomePage() {
           )}
         </div>
         {childLoading ? (
-          <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>
+          <ListSkeleton rows={2} rowHeight="min-h-16" />
         ) : children.length === 0 ? (
           <div className="mt-2 flex items-center justify-between">
             <p className="text-sm text-gray-500">{t('home.noChildYet')}</p>
@@ -684,7 +703,7 @@ export function HomePage() {
           </Link>
         </div>
         {knowledgeLoading ? (
-          <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>
+          <ListSkeleton rows={3} />
         ) : weeklyKnowledge.length === 0 ? (
           <p className="mt-2 text-sm text-gray-400">
             {t('knowledge.noContent')}
@@ -737,7 +756,7 @@ export function HomePage() {
           </Link>
         </div>
         {policiesLoading ? (
-          <p className="mt-2 text-sm text-gray-400">{t('common.loading')}</p>
+          <ListSkeleton rows={3} />
         ) : policyReminders.length === 0 ? (
           <p className="mt-2 text-sm text-gray-400">{t('policies.noMatch')}</p>
         ) : (

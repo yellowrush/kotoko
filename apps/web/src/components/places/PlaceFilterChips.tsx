@@ -227,6 +227,35 @@ function FilterLineIcon() {
   );
 }
 
+function TimeLimitedEventIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      viewBox="0 0 24 24"
+      className="h-5 w-5 fill-none stroke-current"
+    >
+      <path
+        d="M4.8 8.2a2.3 2.3 0 0 0 0 4.6l1.2 5.1h12l1.2-5.1a2.3 2.3 0 0 0 0-4.6L18 3.9H6z"
+        strokeLinejoin="round"
+        strokeWidth="2.1"
+      />
+      <path
+        d="M8.4 8.4h4.2M8.4 12h2.2"
+        strokeLinecap="round"
+        strokeWidth="2.1"
+      />
+      <circle cx="16.1" cy="12.2" r="3.2" fill="white" strokeWidth="2" />
+      <path
+        d="M16.1 10.4v2l1.25.9"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.8"
+      />
+    </svg>
+  );
+}
+
 export function PlaceFilterChips({
   filters,
   municipalityCounts,
@@ -281,10 +310,10 @@ export function PlaceFilterChips({
         onClick={() => onOpenChange(!open)}
         aria-label={t("places.filters.label")}
         aria-expanded={open}
-        className={`relative inline-flex h-10 w-10 items-center justify-center rounded-full border-2 text-brand-800 shadow-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 ${
+        className={`relative inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-brand-800 text-white shadow-md transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 ${
           open
-            ? "border-brand-800 bg-brand-100 shadow-inner"
-            : "border-brand-200 bg-brand-50 hover:bg-brand-100"
+            ? "bg-brand-600 shadow-inner"
+            : "bg-brand-700 hover:bg-brand-800"
         }`}
       >
         <FilterLineIcon />
@@ -498,6 +527,22 @@ export function PlaceFilterChips({
                   {t(`places.tags.${tag}`)}
                 </Chip>
               ))}
+            </ChipGroup>
+
+            <ChipGroup title={t("places.timeLimitedEvents")}>
+              <Chip
+                active={filters.category === "event"}
+                onClick={() =>
+                  setCategory(
+                    filters.category === "event" ? undefined : "event",
+                  )
+                }
+              >
+                <span className="inline-flex items-center gap-1.5">
+                  <TimeLimitedEventIcon />
+                  {t("places.timeLimitedEvents")}
+                </span>
+              </Chip>
             </ChipGroup>
           </div>
         </>

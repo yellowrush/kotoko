@@ -22,6 +22,7 @@ export type PlacesFilterState = {
   municipalityCode: string | undefined;
   railLineId: string | undefined;
   placeId: string | undefined;
+  query: string | undefined;
 };
 
 const LOCATION_MODES: PlacesLocationMode[] = ['near', 'municipality', 'rail'];
@@ -113,10 +114,11 @@ export function usePlacesFilters() {
     const municipalityCode =
       locationMode === 'municipality'
         ? (searchParams.get('municipality') ?? undefined)
-        : undefined;
+: undefined;
     const railLineId =
       locationMode === 'rail' ? (searchParams.get('rail') ?? undefined) : undefined;
     const placeId = searchParams.get('place') ?? undefined;
+    const query = searchParams.get('q') ?? undefined;
     return {
       locationMode,
       category,
@@ -126,6 +128,7 @@ export function usePlacesFilters() {
       municipalityCode,
       railLineId,
       placeId,
+      query,
     };
   }, [searchParams]);
 
@@ -203,6 +206,14 @@ export function usePlacesFilters() {
   );
   const setPlaceId = useCallback((placeId: string | undefined) => update({ place: placeId }), [update]);
 
+  const setQuery = useCallback(
+    (query: string | undefined) => {
+      const normalized = query?.trim() || undefined;
+      update({ q: normalized, place: undefined });
+    },
+    [update],
+  );
+
   const toggleTag = useCallback(
     (tag: string) => {
       setSearchParams((prev) => {
@@ -219,7 +230,7 @@ export function usePlacesFilters() {
     [setSearchParams],
   );
 
-  return {
+return {
     filters,
     setCategory,
     setIndoorOutdoor,
@@ -228,6 +239,7 @@ export function usePlacesFilters() {
     setMunicipality,
     setRailLine,
     setPlaceId,
+    setQuery,
     toggleTag,
   };
 }

@@ -55,30 +55,19 @@ function LocationLineIcon() {
   );
 }
 
-function TimeLimitedEventIcon() {
+function SearchLineIcon() {
   return (
     <svg
       aria-hidden="true"
       focusable="false"
       viewBox="0 0 24 24"
-      className="h-5 w-5 fill-none stroke-current"
+      className="h-5 w-5 shrink-0 fill-none stroke-current"
     >
+      <circle cx="10.8" cy="10.8" r="6.2" strokeWidth="2.2" />
       <path
-        d="M4.8 8.2a2.3 2.3 0 0 0 0 4.6l1.2 5.1h12l1.2-5.1a2.3 2.3 0 0 0 0-4.6L18 3.9H6z"
-        strokeLinejoin="round"
-        strokeWidth="2.1"
-      />
-      <path
-        d="M8.4 8.4h4.2M8.4 12h2.2"
+        d="M15.5 15.5 20 20"
         strokeLinecap="round"
-        strokeWidth="2.1"
-      />
-      <circle cx="16.1" cy="12.2" r="3.2" fill="white" strokeWidth="2" />
-      <path
-        d="M16.1 10.4v2l1.25.9"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        strokeWidth="1.8"
+        strokeWidth="2.6"
       />
     </svg>
   );
@@ -92,9 +81,10 @@ export function PlacesMapPage() {
     setIndoorOutdoor,
     setLocationMode,
     setRadius,
-    setMunicipality,
+setMunicipality,
     setRailLine,
     setPlaceId,
+    setQuery,
     toggleTag,
   } = usePlacesFilters();
   const { status, coords, requested, request } = useGeolocation();
@@ -145,6 +135,9 @@ export function PlacesMapPage() {
   const { visits } = usePlaceVisits();
   const [tileError, setTileError] = useState(false);
   const [filterOpen, setFilterOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const [searchDraft, setSearchDraft] = useState('');
+  const searchInputRef = useRef<HTMLInputElement>(null);
   const [sheetCollapsed, setSheetCollapsed] = useState(false);
   const [randomPlace, setRandomPlace] = useState<FilteredPlace | null>(null);
   const [randomPickerOpen, setRandomPickerOpen] = useState(false);
@@ -154,6 +147,14 @@ export function PlacesMapPage() {
   setPlaceIdRef.current = setPlaceId;
 
   const ageMonths = active ? calculateAgeMonths(active.birthDate) : undefined;
+
+  useEffect(() => {
+    if (searchOpen) searchInputRef.current?.focus();
+  }, [searchOpen]);
+
+  useEffect(() => {
+    setSearchDraft(filters.query ?? '');
+  }, [filters.query]);
 
   const filtered = useMemo(
     () =>
@@ -296,9 +297,12 @@ export function PlacesMapPage() {
               municipalityCounts={municipalityCounts}
               railLineCounts={railLineCounts}
               open={filterOpen}
-              onOpenChange={(open) => {
+onOpenChange={(open) => {
                 setFilterOpen(open);
-                if (open) setSheetCollapsed(true);
+                if (open) {
+                  setSearchOpen(false);
+                  setSheetCollapsed(true);
+                }
               }}
               setCategory={setCategory}
               setIndoorOutdoor={setIndoorOutdoor}
@@ -309,29 +313,88 @@ export function PlacesMapPage() {
               toggleTag={toggleTag}
             />
           </div>
-          <button
-            type="button"
-            aria-label={`${t('places.categories.event')} ${t('places.filters.label')}`}
-            aria-pressed={filters.category === 'event'}
-            onClick={() => {
-              setFilterOpen(false);
-              setSheetCollapsed(true);
-              setCategory(filters.category === 'event' ? undefined : 'event');
-            }}
-            className={`pointer-events-auto inline-flex h-10 min-w-0 items-center justify-center gap-1.5 rounded-full border-2 px-3 text-sm font-bold shadow-sm transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 ${
-              filters.category === 'event'
-                ? 'border-brand-800 bg-brand-600 text-white shadow-inner'
-                : 'border-brand-200 bg-brand-50 text-brand-800 hover:bg-brand-100'
-            }`}
-          >
-            <TimeLimitedEventIcon />
-            <span className="whitespace-nowrap">{t('places.timeLimitedEvents')}</span>
-          </button>
+{searchOpen ? (
+            <label className="pointer-events-auto flex w-40 min-w-0 shrink-0 items-center gap-1.5 rounded-full bg-white/95 px-3 shadow-md transition">
+              <span className="shrink-0 text-gray-500">
+                <SearchLineIcon />
+              </span>
+              <input
+                ref={searchInputRef}
+                type="text"
+                inputMode="search"
+                value={searchDraft}
+                onChange={(event) => {
+                  setSearchDraft(event.target.value);
+                  setQuery(event.target.value);
+                }}
+                onFocus={() => {
+                  setFilterOpen(false);
+                  setSheetCollapsed(true);
+                }}
+                onKeyDown={(event) => {
+                  if (event.key === 'Escape') {
+                    setSearchDraft('');
+                    setQuery('');
+                    setSearchOpen(false);
+                  }
+                }}
+                onBlur={() => {
+                  if (!searchDraft) setSearchOpen(false);
+                }}
+                placeholder={t('places.searchPlaceholder')}
+                aria-label={t('places.searchAriaLabel')}
+                className="h-10 min-w-0 flex-1 bg-transparent text-sm font-semibold text-gray-900 outline-none placeholder:text-gray-400"
+              />
+              {searchDraft && (
+                <button
+                  type="button"
+                  aria-label={t('places.clearSearch')}
+                  onClick={() => {
+                    setSearchDraft('');
+                    setQuery('');
+                  }}
+                  className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gray-200 text-sm font-bold text-gray-600 transition hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
+                >
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 20 20"
+                    className="h-3.5 w-3.5 fill-none stroke-current"
+                  >
+                    <path
+                      d="M5 5l10 10M15 5L5 15"
+                      strokeLinecap="round"
+                      strokeWidth="2.6"
+                    />
+                  </svg>
+                </button>
+              )}
+            </label>
+          ) : (
+            <button
+              type="button"
+              aria-label={t('places.searchAriaLabel')}
+              aria-expanded={searchOpen}
+              onClick={() => {
+                setFilterOpen(false);
+                setSheetCollapsed(true);
+                setSearchOpen(true);
+              }}
+              className="pointer-events-auto relative inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-brand-800 bg-brand-700 text-white shadow-md transition hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
+            >
+              <SearchLineIcon />
+              {searchDraft && (
+                <span
+                  aria-hidden="true"
+                  className="absolute right-1.5 top-1.5 h-2 w-2 rounded-full bg-amber-400 ring-2 ring-brand-800"
+                />
+              )}
+            </button>
+          )}
           <button
             type="button"
             aria-label={t('places.locate')}
             onClick={request}
-            className="pointer-events-auto inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-brand-200 bg-brand-50 text-brand-800 shadow-sm transition hover:bg-brand-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
+            className="pointer-events-auto inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-brand-800 bg-brand-700 text-white shadow-md transition hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
           >
             <LocationLineIcon />
           </button>

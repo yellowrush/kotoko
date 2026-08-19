@@ -12,7 +12,19 @@ export type PlaceFilters = {
   railLineId?: string;
   userLocation?: GeoPoint;
   referenceDate?: string;
+  query?: string;
 };
+
+function normalizeQuery(value: string | undefined): string {
+  return (value ?? '').trim().toLocaleLowerCase();
+}
+
+export function matchesPlaceQuery(place: Place, query: string | undefined): boolean {
+  const q = normalizeQuery(query);
+  if (!q) return true;
+  const haystack = [place.name, place.nameZh ?? ''].join(' ').toLocaleLowerCase();
+  return haystack.includes(q);
+}
 
 export type FilteredPlace = Place & {
   distanceKm: number | null;
@@ -70,13 +82,14 @@ export function filterPlaces(
 ): FilteredPlace[] {
   const locationMode = filters.locationMode ?? 'near';
   const referenceDate = parseReferenceDate(filters.referenceDate);
-  const result = places.filter((place) => {
+const result = places.filter((place) => {
     if (place.category === 'event' && !isEventInSeason(place, referenceDate)) return false;
     if (filters.category && place.category !== filters.category) return false;
     if (filters.indoorOutdoor && place.indoorOutdoor !== filters.indoorOutdoor) return false;
     if (filters.tags && filters.tags.length > 0 && !filters.tags.some((tag) => place.tags?.includes(tag as PlaceTag))) {
       return false;
     }
+    if (!matchesPlaceQuery(place, filters.query)) return false;
     if (locationMode === 'municipality' && filters.municipalityCode) {
       if (place.municipalityCode !== filters.municipalityCode) return false;
     }

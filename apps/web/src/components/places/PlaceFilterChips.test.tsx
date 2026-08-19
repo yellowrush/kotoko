@@ -13,6 +13,7 @@ const baseFilters: PlacesFilterState = {
   municipalityCode: undefined,
   railLineId: undefined,
   placeId: undefined,
+  query: undefined,
 };
 
 beforeAll(async () => {
@@ -117,5 +118,29 @@ describe('PlaceFilterChips location modes', () => {
 
     fireEvent.click(screen.getByRole('button', { name: /JR総武線/ }));
     expect(props.setRailLine).toHaveBeenCalledWith('jr-sobu');
+  });
+
+  it('renders the time-limited events toggle under tags', () => {
+    const props = renderFilter({});
+
+    const toggle = screen.getByRole('button', {
+      name: i18n.t('places.timeLimitedEvents'),
+    });
+    expect(toggle).toHaveTextContent(i18n.t('places.timeLimitedEvents'));
+    expect(toggle).not.toHaveClass('bg-brand-600');
+
+    fireEvent.click(toggle);
+    expect(props.setCategory).toHaveBeenCalledWith('event');
+  });
+
+  it('shows the time-limited events toggle active when the event category is selected', () => {
+    renderFilter({ category: 'event' });
+
+    const toggle = screen.getByRole('button', {
+      name: i18n.t('places.timeLimitedEvents'),
+    });
+    expect(toggle).toHaveClass('bg-brand-600');
+
+    fireEvent.click(toggle);
   });
 });

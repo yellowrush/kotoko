@@ -1,6 +1,6 @@
 import type { Place } from '@kodoko/domain';
 import { describe, expect, it } from 'vitest';
-import { filterPlaces, isEventInSeason } from './placeFilters';
+import { filterPlaces, isEventInSeason, matchesPlaceQuery } from './placeFilters';
 
 function makePlace(overrides: Partial<Place>): Place {
   return {
@@ -100,5 +100,98 @@ describe('filterPlaces event season filtering', () => {
       'jizo-matsuri-higashimurayama',
       'suwa-jinja-reitaisai-higashimurayama',
     ]);
+  });
+});
+
+describe('matchesPlaceQuery', () => {
+  const ueno = makePlace({
+    id: 'ueno-park',
+    category: 'park',
+    name: '上野恩賜公園',
+    nameZh: '上野恩赐公园',
+    address: '東京都台東区上野公園5-20',
+    shortDescription: '桜や美術館が楽しめる公園。',
+    tags: ['dining'],
+  });
+
+  it('matches the place name', () => {
+    expect(matchesPlaceQuery(ueno, '上野')).toBe(true);
+  });
+
+  it('matches the zh name variant', () => {
+    expect(matchesPlaceQuery(ueno, '恩赐')).toBe(true);
+  });
+
+  it('does not match the address', () => {
+    expect(matchesPlaceQuery(ueno, '台東区')).toBe(false);
+  });
+
+  it('does not match the short description', () => {
+    expect(matchesPlaceQuery(ueno, '桜')).toBe(false);
+  });
+
+  it('does not match a tag', () => {
+    expect(matchesPlaceQuery(ueno, 'dining')).toBe(false);
+  });
+
+  it('is case-insensitive for latin text in names', () => {
+    const latin = makePlace({ id: 'latin', category: 'park', name: 'Shinjuku Gyoen' });
+    expect(matchesPlaceQuery(latin, 'shinjuku')).toBe(true);
+  });
+
+  it('ignores surrounding whitespace', () => {
+    expect(matchesPlaceQuery(ueno, '  上野  ')).toBe(true);
+  });
+
+  it('returns false when nothing matches', () => {
+    expect(matchesPlaceQuery(ueno, '大阪')).toBe(false);
+  });
+
+  it('treats empty or missing query as match-all', () => {
+    expect(matchesPlaceQuery(ueno, '')).toBe(true);
+    expect(matchesPlaceQuery(ueno, undefined)).toBe(true);
+    expect(matchesPlaceQuery(ueno, '   ')).toBe(true);
+  });
+});
+
+describe('filterPlaces query filtering', () => {
+  it('filters places by text query', () => {
+    const ueno = makePlace({
+      id: 'ueno-park',
+      category: 'park',
+      name: '上野恩賜公園',
+      address: '東京都台東区上野公園5-20',
+    });
+    const kasai = makePlace({
+      id: 'kasai-rinkai-park',
+      category: 'park',
+      name: '葛西臨海公園',
+      address: '東京都江戸川区臨海町6',
+    });
+    const filtered = filterPlaces(
+      [ueno, kasai],
+      { query: '葛西', referenceDate: '2026-08-10' },
+    );
+    expect(filtered.map((p) => p.id)).toEqual(['kasai-rinkai-park']);
+  });
+
+  it('combines query with other filters', () => {
+    const park = makePlace({
+      id: 'ueno-park',
+      category: 'park',
+      name: '上野恩賜公園',
+      address: '東京都台東区上野公園5-20',
+    });
+    const museum = makePlace({
+      id: 'ueno-museum',
+      category: 'museum',
+      name: '上野の森美術館',
+      address: '東京都台東区上野公園1-2',
+    });
+    const filtered = filterPlaces(
+      [park, museum],
+      { category: 'park', query: '上野', referenceDate: '2026-08-10' },
+    );
+    expect(filtered.map((p) => p.id)).toEqual(['ueno-park']);
   });
 });

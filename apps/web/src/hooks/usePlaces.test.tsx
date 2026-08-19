@@ -12,7 +12,7 @@ import { usePlacesFilters } from './usePlaces';
 afterEach(() => cleanup());
 
 function Harness() {
-  const { filters, setMunicipality, setRailLine, setRadius } =
+  const { filters, setMunicipality, setRailLine, setRadius, setQuery } =
     usePlacesFilters();
   const location = useLocation();
 
@@ -23,6 +23,7 @@ function Harness() {
       <output data-testid="municipality">{filters.municipalityCode ?? ''}</output>
       <output data-testid="rail">{filters.railLineId ?? ''}</output>
       <output data-testid="place">{filters.placeId ?? ''}</output>
+      <output data-testid="query">{filters.query ?? ''}</output>
       <output data-testid="search">{location.search}</output>
       <button type="button" onClick={() => setMunicipality('13108')}>
         municipality
@@ -32,6 +33,12 @@ function Harness() {
       </button>
       <button type="button" onClick={() => setRadius(5)}>
         radius
+      </button>
+      <button type="button" onClick={() => setQuery('上野')}>
+        query
+      </button>
+      <button type="button" onClick={() => setQuery('')}>
+        clear-query
       </button>
     </div>
   );
@@ -131,5 +138,45 @@ describe('usePlacesFilters', () => {
       expect(search).not.toContain('municipality=');
     });
     expect(screen.getByTestId('mode')).toHaveTextContent('near');
+  });
+});
+
+describe('usePlacesFilters query', () => {
+  it('reads the query from the q param', () => {
+    render(
+      <MemoryRouter initialEntries={['/places?q=上野']}>
+        <Harness />
+      </MemoryRouter>,
+    );
+
+    expect(screen.getByTestId('query')).toHaveTextContent('上野');
+  });
+
+  it('sets and clears the query param', async () => {
+    render(
+      <MemoryRouter initialEntries={['/places?category=park&place=p1']}>
+        <Harness />
+      </MemoryRouter>,
+    );
+
+    fireEvent.click(screen.getByRole('button', { name: 'query' }));
+
+    await waitFor(() => {
+      const search = screen.getByTestId('search').textContent ?? '';
+      expect(search).toContain('category=park');
+      expect(search).toContain('q=');
+      expect(decodeURIComponent(search)).toContain('q=上野');
+      expect(search).not.toContain('place=');
+    });
+    expect(screen.getByTestId('query')).toHaveTextContent('上野');
+
+    fireEvent.click(screen.getByRole('button', { name: 'clear-query' }));
+
+    await waitFor(() => {
+      const search = screen.getByTestId('search').textContent ?? '';
+      expect(search).toContain('category=park');
+      expect(search).not.toContain('q=');
+    });
+    expect(screen.getByTestId('query')).toHaveTextContent('');
   });
 });

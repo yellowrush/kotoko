@@ -5,7 +5,7 @@ import type { PlaceInput } from '@kodoko/domain';
 // Records all current "期間限定" event cards from the Tokyo Metropolitan children's
 // event portal. Coordinates use the host municipality centroid (venue-level
 // geocoding pending human review). Review generated diffs before merging.
-export const kodomoEventPlaces: PlaceInput[] = [
+export const generatedKodomoEventPlaces: PlaceInput[] = [
   {
     id: "kodomo-event-908c689976b8",
     name: "愛知・名古屋2026大会を応援！都庁展望室パブリックビューイング",

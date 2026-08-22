@@ -24,6 +24,7 @@ import { generatedZooPlaces } from "./generated-zoos";
 import { zooSupplementPlaces } from "./zoo-supplements";
 import { eventPlaces } from "./events";
 import { generatedEventPlaces } from "./generated-events";
+import { generatedKodomoEventPlaces } from "./generated-kodomo-events";
 import { generatedMediaSupplements } from "./generated-media-supplements";
 import { withTransitAccess } from "./transit";
 
@@ -59,6 +60,7 @@ const allInputs = [
   ...zooSupplementPlaces,
   ...eventPlaces,
   ...generatedEventPlaces,
+  ...generatedKodomoEventPlaces,
 ];
 
 const kameidoThirdPlaygroundOfficialUrl =
@@ -144,10 +146,78 @@ function applyPlaceInputPatch(input: PlaceInput): PlaceInput {
   };
 }
 
+const PLACEHOLDER_PREFIX: Record<string, string> = {
+  park: "park",
+  playground: "playground",
+  museum: "museum",
+  zoo: "zoo",
+  aquarium: "aquarium",
+  library: "library",
+  facility: "facility",
+  "indoor-play": "indoor-play",
+  shop: "shop",
+  restaurant: "restaurant",
+  event: "event",
+  other: "facility",
+  "children-hall": "children-hall",
+  "toy-play": "toy-play",
+  "amusement-park": "amusement-park",
+};
+
+function placeholderImageUrl(category: string, id: string): string {
+  const prefix = PLACEHOLDER_PREFIX[category] ?? "facility";
+  const checksum = [...id].reduce((sum, char) => sum + char.charCodeAt(0), 0);
+  const variant = (checksum % 3) + 1;
+  return `/media/placeholder/${prefix}-${variant}.svg`;
+}
+
+function isPlaceholderMedia(media: { url: string; license?: string }): boolean {
+  return (
+    media.url.includes("/media/placeholder/") ||
+    /placeholder/i.test(media.license ?? "")
+  );
+}
+
+// メディアを明示的に指定した場所（実画像・空・手動 placeholder を含む）は
+// 自動補完の対象外とする。children-hall-asakusa のように「意図的に空」とした
+// 場所もここで守られる。
+function authorSetMedia(id: string): boolean {
+  const manual = manualPlaceInputPatches[id];
+  const generated = generatedMediaSupplements[id];
+  return Boolean(
+    (manual && "media" in manual) || (generated && "media" in generated),
+  );
+}
+
+function withPlaceholderMedia(place: Place): Place {
+  if (authorSetMedia(place.id)) return place;
+  const hasImage = place.media.some(
+    (m) => m.type === "image" && !isPlaceholderMedia(m),
+  );
+  if (hasImage) return place;
+  const url = placeholderImageUrl(place.category, place.id);
+  return {
+    ...place,
+    media: [
+      ...place.media,
+      {
+        id: `${place.id}-placeholder`,
+        type: "image",
+        url,
+        alt: place.name,
+        credit: "Kodoko placeholder",
+        license: "placeholder-blocked",
+        cover: true,
+      },
+    ],
+  };
+}
+
 export const seedPlaces: Place[] = dedupeEventPlaces(allInputs)
   .map(applyPlaceInputPatch)
   .map(withTransitAccess)
-  .map(derivePlaceFields);
+  .map(derivePlaceFields)
+  .map(withPlaceholderMedia);
 
 export function getPlaceById(id: string): Place | undefined {
   return seedPlaces.find((p) => p.id === id);

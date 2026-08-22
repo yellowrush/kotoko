@@ -24,11 +24,11 @@ import {
 } from '../../lib/placeMapOverlays';
 import { getVisitMarkerToneClass } from '../../lib/placeVisitMarkers';
 import { useAppTranslation } from '../../hooks/useAppTranslation';
-import { getPlaceIcon } from './categoryMeta';
+import { getPlaceColor, getPlaceIcon } from './categoryMeta';
 
 const STYLE_URL =
   import.meta.env.VITE_MAP_STYLE_URL ??
-  'https://tiles.openfreemap.org/styles/liberty';
+  `${import.meta.env.BASE_URL}data/map/kodoko-q-style.json`;
 
 export type PlacesMapProps = {
   places: FilteredPlace[];
@@ -48,12 +48,12 @@ const GEO_ASSET_BASE = `${import.meta.env.BASE_URL}data/geo`;
 function markerElement() {
   const el = document.createElement('div');
   el.className =
-    'relative flex h-8 w-8 cursor-pointer items-center justify-center';
+    'relative flex h-9 w-9 cursor-pointer items-center justify-center';
   el.setAttribute('role', 'button');
   el.tabIndex = 0;
   const inner = document.createElement('div');
   inner.className =
-    'flex h-full w-full items-center justify-center rounded-full border-2 text-base shadow-md transition';
+    'flex h-full w-full items-center justify-center rounded-full border-[3px] border-white text-lg shadow-md transition';
   el.appendChild(inner);
   return el;
 }
@@ -63,24 +63,25 @@ function updateMarkerElement({
   emoji,
   active,
   visitCount,
+  color,
   label,
 }: {
   el: HTMLElement;
   emoji: string;
   active: boolean;
   visitCount: number;
+  color: string;
   label: string;
 }) {
   const inner = el.firstElementChild as HTMLElement;
   el.title = label;
   el.setAttribute('aria-label', label);
   inner.className = [
-    'flex h-full w-full items-center justify-center rounded-full border-2 text-base shadow-md transition',
+    'flex h-full w-full items-center justify-center rounded-full border-[3px] border-white text-lg shadow-md transition',
     getVisitMarkerToneClass(visitCount),
-    active
-      ? 'scale-125 border-white ring-2 ring-brand-600 shadow-lg'
-      : 'hover:scale-110',
+    active ? 'scale-125' : 'hover:scale-110',
   ].join(' ');
+  inner.style.backgroundColor = color;
   inner.textContent = emoji;
 }
 
@@ -149,7 +150,7 @@ export function PlacesMap({
         container,
         style,
         center: [centerPoint.longitude, centerPoint.latitude],
-        zoom: user ? 13 : initialZoom,
+        zoom: initialZoom,
       });
       map.addControl(
         new maplibregl.NavigationControl({ showCompass: false }),
@@ -287,9 +288,9 @@ export function PlacesMap({
     lastUserLocRef.current = userLocation;
     map.flyTo({
       center: [userLocation.longitude, userLocation.latitude],
-      zoom: 13,
+      zoom: initialZoom,
     });
-  }, [userLocation, mapReady]);
+  }, [userLocation, mapReady, initialZoom]);
 
   useEffect(() => {
     const map = mapRef.current;
@@ -396,6 +397,7 @@ export function PlacesMap({
         emoji: getPlaceIcon(place),
         active,
         visitCount,
+        color: getPlaceColor(place),
         label: t('places.visitCountAria', {
           name: place.name,
           count: visitCount,

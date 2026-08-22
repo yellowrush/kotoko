@@ -79,8 +79,8 @@ function Chip({
       onClick={onClick}
       className={`min-h-10 shrink-0 rounded-full border px-3 py-1.5 text-sm font-semibold shadow-sm transition ${
         active
-          ? "border-brand-700 bg-brand-600 text-white"
-          : "border-brand-100 bg-white/95 text-gray-600 hover:bg-brand-50"
+          ? "border-brand-300 bg-brand-50 text-brand-800"
+          : "border-gray-200 bg-white text-gray-600 hover:bg-gray-50"
       }`}
     >
       {children}
@@ -138,8 +138,8 @@ function ModeButton({
       onClick={onClick}
       className={`inline-flex min-h-10 min-w-0 items-center justify-center gap-1.5 rounded-full px-2 py-1.5 text-sm font-bold transition ${
         active
-          ? "bg-brand-600 text-white shadow-sm"
-          : "bg-white text-gray-600 hover:bg-brand-50"
+          ? "bg-brand-50 text-brand-700"
+          : "bg-white text-gray-600 hover:bg-gray-50"
       }`}
     >
       {icon}
@@ -310,10 +310,8 @@ export function PlaceFilterChips({
         onClick={() => onOpenChange(!open)}
         aria-label={t("places.filters.label")}
         aria-expanded={open}
-        className={`relative inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-brand-800 text-white shadow-md transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 ${
-          open
-            ? "bg-brand-600 shadow-inner"
-            : "bg-brand-700 hover:bg-brand-800"
+        className={`relative inline-flex h-10 w-10 items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-700 shadow-md transition hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 ${
+          open ? "border-brand-200 bg-brand-50 text-brand-700" : ""
         }`}
       >
         <FilterLineIcon />
@@ -332,7 +330,7 @@ export function PlaceFilterChips({
               <div
                 role="radiogroup"
                 aria-label={t("places.filters.sectionLocation")}
-                className="grid w-full grid-cols-3 gap-1 rounded-full border border-brand-100 bg-brand-50 p-1"
+                className="grid w-full grid-cols-3 gap-1 rounded-xl border border-gray-200 bg-gray-50 p-1"
               >
                 {(["near", "municipality", "rail"] as const).map((mode) => (
                   <ModeButton
@@ -355,7 +353,7 @@ export function PlaceFilterChips({
                 titleMeta={
                   <span
                     aria-live="polite"
-                    className="rounded-full bg-brand-50 px-2.5 py-1 text-sm font-bold text-brand-800"
+                    className="rounded-full bg-gray-100 px-2.5 py-1 text-sm font-bold text-gray-700"
                   >
                     {currentRadiusKm} {radiusUnit}
                   </span>

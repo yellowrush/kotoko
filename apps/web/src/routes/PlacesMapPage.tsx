@@ -269,7 +269,7 @@ setMunicipality,
             selectedPlaceId={filters.placeId}
             onSelectPlace={handleMapSelectPlace}
             initialCenter={center}
-            initialZoom={coords ? 13 : 10}
+            initialZoom={15}
             userLocation={coords}
             selectedMunicipalityCode={
               filters.locationMode === 'municipality'
@@ -314,7 +314,7 @@ onOpenChange={(open) => {
             />
           </div>
 {searchOpen ? (
-            <label className="pointer-events-auto flex w-40 min-w-0 shrink-0 items-center gap-1.5 rounded-full bg-white/95 px-3 shadow-md transition">
+            <label className="pointer-events-auto flex min-w-0 flex-1 max-w-[64vw] items-center gap-1.5 rounded-xl border border-gray-200 bg-white px-3 shadow-md transition">
               <span className="shrink-0 text-gray-500">
                 <SearchLineIcon />
               </span>
@@ -343,7 +343,7 @@ onOpenChange={(open) => {
                 }}
                 placeholder={t('places.searchPlaceholder')}
                 aria-label={t('places.searchAriaLabel')}
-                className="h-10 min-w-0 flex-1 bg-transparent text-sm font-semibold text-gray-900 outline-none placeholder:text-gray-400"
+                className="h-10 min-w-0 flex-1 bg-transparent text-sm font-semibold text-gray-900 outline-none placeholder:font-normal placeholder:text-gray-400"
               />
               {searchDraft && (
                 <button
@@ -353,7 +353,7 @@ onOpenChange={(open) => {
                     setSearchDraft('');
                     setQuery('');
                   }}
-                  className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-gray-200 text-sm font-bold text-gray-600 transition hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
+                  className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-gray-200 text-sm font-bold text-gray-600 transition hover:bg-gray-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
                 >
                   <svg
                     aria-hidden="true"
@@ -379,13 +379,13 @@ onOpenChange={(open) => {
                 setSheetCollapsed(true);
                 setSearchOpen(true);
               }}
-              className="pointer-events-auto relative inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-brand-800 bg-brand-700 text-white shadow-md transition hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
+              className="pointer-events-auto relative inline-flex h-10 w-10 items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-700 shadow-md transition hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
             >
               <SearchLineIcon />
               {searchDraft && (
                 <span
                   aria-hidden="true"
-                  className="absolute right-1.5 top-1.5 h-2 w-2 rounded-full bg-amber-400 ring-2 ring-brand-800"
+                  className="absolute right-1.5 top-1.5 h-2 w-2 rounded-full bg-amber-400 ring-2 ring-white"
                 />
               )}
             </button>
@@ -394,7 +394,7 @@ onOpenChange={(open) => {
             type="button"
             aria-label={t('places.locate')}
             onClick={request}
-            className="pointer-events-auto inline-flex h-10 w-10 items-center justify-center rounded-full border-2 border-brand-800 bg-brand-700 text-white shadow-md transition hover:bg-brand-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
+            className="pointer-events-auto inline-flex h-10 w-10 items-center justify-center rounded-xl border border-gray-200 bg-white text-gray-700 shadow-md transition hover:bg-gray-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600"
           >
             <LocationLineIcon />
           </button>

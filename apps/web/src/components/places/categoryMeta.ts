@@ -18,6 +18,34 @@ export const CATEGORY_ICON: Record<PlaceCategory, string> = {
   'amusement-park': '\u{1F3A1}',
 };
 
+// 粉彩「Q 版」地圖 marker 底色：與 CATEGORY_ICON 一一對應，用於地圖上的圓形貼紙 marker。
+export const CATEGORY_COLOR: Record<PlaceCategory, string> = {
+  park: '#8fd694',
+  playground: '#7fd1c4',
+  museum: '#c9a0e0',
+  zoo: '#f4a6c0',
+  aquarium: '#6fc3e8',
+  library: '#f0b86e',
+  facility: '#9aa7b5',
+  'indoor-play': '#f6a6a0',
+  shop: '#f2c14e',
+  restaurant: '#ef8e6f',
+  event: '#ff9aa2',
+  other: '#b0b7c0',
+  'children-hall': '#a0d8b3',
+  'toy-play': '#f7b7d2',
+  'amusement-park': '#ffb38a',
+};
+
+export const EVENT_COLOR: Record<EventIconKind, string> = {
+  festival: '#ff8fab',
+  fireworks: '#ff9e6d',
+  market: '#f6c453',
+  parenting: '#8ecae6',
+  seasonal: '#b8e0a0',
+  general: '#ff9aa2',
+};
+
 export type EventIconKind =
   | 'festival'
   | 'fireworks'
@@ -163,4 +191,12 @@ export function getPlaceIcon(place: IconPlace): string {
     return EVENT_ICON[getEventIconKind(place)];
   }
   return CATEGORY_ICON[place.category];
+}
+
+// 地圖 marker 的 Q 版粉彩底色。event 依活動類型取色，其餘依類別。
+export function getPlaceColor(place: IconPlace): string {
+  if (place.category === 'event') {
+    return EVENT_COLOR[getEventIconKind(place)];
+  }
+  return CATEGORY_COLOR[place.category];
 }

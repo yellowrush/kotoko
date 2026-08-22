@@ -45,7 +45,7 @@ function Harness() {
 }
 
 describe('usePlacesFilters', () => {
-  it('defaults the near mode radius to 3km', () => {
+  it('defaults the near mode radius to 1km', () => {
     render(
       <MemoryRouter initialEntries={['/places']}>
         <Harness />
@@ -53,7 +53,7 @@ describe('usePlacesFilters', () => {
     );
 
     expect(screen.getByTestId('mode')).toHaveTextContent('near');
-    expect(screen.getByTestId('radius')).toHaveTextContent('3');
+    expect(screen.getByTestId('radius')).toHaveTextContent('1');
   });
 
   it('accepts 1km radius params', () => {
@@ -86,7 +86,7 @@ describe('usePlacesFilters', () => {
     );
 
     expect(screen.getByTestId('mode')).toHaveTextContent('near');
-    expect(screen.getByTestId('radius')).toHaveTextContent('3');
+    expect(screen.getByTestId('radius')).toHaveTextContent('1');
   });
 
   it('parses location mode specific params', () => {

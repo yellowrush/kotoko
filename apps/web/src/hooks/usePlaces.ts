@@ -27,7 +27,7 @@ export type PlacesFilterState = {
 
 const LOCATION_MODES: PlacesLocationMode[] = ['near', 'municipality', 'rail'];
 export const MIN_PLACES_RADIUS_KM = 1;
-export const DEFAULT_PLACES_RADIUS_KM = 3;
+export const DEFAULT_PLACES_RADIUS_KM = 1;
 export const MAX_PLACES_RADIUS_KM = 20;
 
 function parseRadiusParam(radiusParam: string | null) {

@@ -18,15 +18,16 @@ export function countVisitsByPlaceId(
   }, {});
 }
 
+// 回訪熱度改以 marker 外圈 ring 呈現，避免覆蓋 Q 版貼紙底色。
 export function getVisitMarkerToneClass(count: number): string {
   switch (getVisitMarkerTone(count)) {
     case 'high':
-      return 'border-amber-500 bg-amber-300 text-amber-950';
+      return 'ring-4 ring-amber-500';
     case 'medium':
-      return 'border-brand-600 bg-brand-500 text-white';
+      return 'ring-4 ring-brand-600';
     case 'low':
-      return 'border-orange-300 bg-orange-100 text-orange-900';
+      return 'ring-2 ring-orange-300';
     case 'none':
-      return 'border-brand-700 bg-white text-gray-900';
+      return 'ring-0';
   }
 }
